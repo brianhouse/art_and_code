@@ -1,11 +1,11 @@
 # ART 112: DIGITAL MEDIA I
 
-Time: Tuesday / Thursday 8:50-11:20, ROOM ???  
+Time: Tuesday / Thursday 8:50-11:20, Fields 205
 Place: 
 Online: [http://brianhouse.github.io/art112](http://brianhouse.github.io/art112)  
 
 Professor Brian House ([brianhouse@lclark.edu](mailto:brianhouse@lclark.edu))  
-Office hours: [OH signup ??](http)
+Office hours: Monday 10:00–14:00 [Sign up](https://sjunkins.wordpress.com/2016/01/06/scheduling-appointment-with-google-forms/)
 
 
 ## Course Description
@@ -17,16 +17,17 @@ Introduction to computer programming for artists. With creative coding, students
 ### Week 1
 
 #### Tuesday 9/3
-- In-class reading: [Alan Turing](reading/turing.pdf)
+- In-class readings: [Sol Lewitt](readings/lewitt.pdf) and [Yoko Ono](readings/ono.pdf)
 
 #### Thursday 9/5
-- Begin [Exercise #1: ??](exercises/01_logo.md)
+- Begin [Exercise #1: Turtle drawing](exercises/01_logo.md)
 - Code Studio
 
 ### Week 2
 
 #### Tuesday 9/10
-- Logo crit
+- Turtle drawing crit
+- In-class reading: [Alan Turing](readings/turing.pdf)
 
 #### Thursday 9/12
 - Begin [Exercise #2: Narrative Maze](exercises/02_maze.md)
@@ -37,6 +38,7 @@ Introduction to computer programming for artists. With creative coding, students
 
 #### Tuesday 9/17
 - Narrative Maze crit
+- In-class reading: [Tim Berners-Lee](readings/berners_lee.pdf)
 
 #### Thursday 9/19
 - Begin [Exercise #3: Web Mod](exercises/03_webmod.md)
@@ -47,6 +49,7 @@ Introduction to computer programming for artists. With creative coding, students
 
 #### Tuesday 9/24
 - Web Mod crit
+- In-class reading: [Harold Cohen](readings/cohen.pdf)
 
 #### Thursday 9/26
 - Begin [Exercise #4: Digital interpretation](exercises/04_interpretation.md)
@@ -57,6 +60,7 @@ Introduction to computer programming for artists. With creative coding, students
 
 #### Tuesday 10/1
 - Digital Interpretation crit
+- In-class reading: []()
 
 #### Thursday 10/3
 - Begin [Exercise #5: Generative Screensaver](exercises/05_screensaver.md)
@@ -76,6 +80,7 @@ FALL BREAK -- NO CLASS
 ### Week 7
 
 #### Tuesday 10/15
+- In-class reading: [Alan Kay](readings/kay.pdf)
 
 #### Thursday 10/17
 
@@ -84,6 +89,7 @@ FALL BREAK -- NO CLASS
 
 #### Tuesday 10/22
 - Drawing Tool crit
+- In-class reading: [Laetitia Sonami](readings/sonami.pdf)
 
 #### Thursday 10/24
 - Begin [Exercise #7: Touch Instrument 1](exercises/06_touch_instrument_1.md)
@@ -93,6 +99,7 @@ FALL BREAK -- NO CLASS
 ### Week 9
 
 #### Tuesday 10/29
+- In-class reading: [Laura Kurgan](readings/kurgan.pdf)
 
 #### Thursday 10/31
 - Begin [Exercise #7 cont'd: Touch Instrument 2](exercises/06_touch_instrument_2.md)
@@ -103,6 +110,7 @@ FALL BREAK -- NO CLASS
 
 #### Tuesday 11/5
 - Touch Instrument crit
+- In-class reading: [Rosa Menkman](readings/menkman.pdf)
 
 #### Thursday 11/7
 - Begin [Exercise #8: Magic Mirror](exercises/08_magic_mirror.md)
@@ -113,6 +121,7 @@ FALL BREAK -- NO CLASS
 
 #### Tuesday 11/12
 - Crit Magic Mirror
+- In-class reading: [](readings/weiser.pdf)
 - Introduction to Arduino
 
 #### Thursday 11/14
