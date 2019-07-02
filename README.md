@@ -1,16 +1,46 @@
 # ART 112: DIGITAL MEDIA I
 
-Time: Tuesday / Thursday 8:50-11:20, Fields 205
-Place: 
-Online: [http://brianhouse.github.io/art112](http://brianhouse.github.io/art112)  
+Tuesday / Thursday 8:50-11:20, Fields 205  
+[http://brianhouse.github.io/ART112](http://brianhouse.github.io/ART112)  
 
-Professor Brian House ([brianhouse@lclark.edu](mailto:brianhouse@lclark.edu))  
-Office hours: Monday 10:00–14:00 [Sign up](https://sjunkins.wordpress.com/2016/01/06/scheduling-appointment-with-google-forms/)
-
+Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
+Office hours by [appointment](https://sjunkins.wordpress.com/2016/01/06/scheduling-appointment-with-google-forms/)  
+Code studio open ____  
 
 ## Course Description
+Introduction to computer programming for artists. With creative coding, students will explore graphics and animation, sound, real-time video processing, the web, physical sensors, and augmented reality. Accompanying critical discussion will unpack historical and contemporary issues in digital media. Through practical and theoretical investigations, students will gain a foundation for working with digital form. No prior experience is required.
 
-Introduction to computer programming for artists. With creative coding, students will explore graphics and animation, sound, real-time video processing, the web, physical sensors, and augmented reality. Accompanying critical discussion will unpack historical and contemporary issues in digital media. Through practical and theoretical investigations, students will gain a foundation for working with the digital as a material. No prior experience is required.
+#### Objectives:
+- Gain proficiency programming in javascript with [p5.js](https://p5js.org)
+- Cultivate an ability to think abstractly in terms of algorithms
+- Understand the broad historical context of contemporary digital tools
+- Survey artists working formally with code and digital media
+- Build a foundation for expanding into other areas of media art practice
+
+
+## Requirements
+
+Attendance and participation
+
+## Resources and Policies
+
+### Syllabus
+The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
+
+### Course Fee
+There is a course fee automatically paid through student accounts when registered for this class. The fee helps cover software licensing and sensor hardware. However, open source software will be used whenever possible.
+
+### Laptop Use
+Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred. If you do not have access to a laptop, email me and we will make arrangements to borrow a machine. **Any use of laptops for other purposes, such as social media, will count as an absence for that class.**
+
+### Code Studio
+
+### Academic Integrity
+Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College’s ‘Policies and Procedures’ webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
+
+### Disability Disclosure
+If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation  to the Student Support Services Office in Albany Quadrangle (x7156). Staff in the SSSO will notify us of the accommodations for which you are eligible; please also make an appointment to discuss with me personally.
+
 
 ## Schedule
 
