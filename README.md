@@ -30,6 +30,8 @@ Each student will give two 10-minute presentations on an artist working in digit
 ### Reading
 Each week we will read short primary texts in class that are important to the development of digital form. 
 
+In addition, it is recommended that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course.
+
 
 ## Resources and Policies
 
@@ -60,7 +62,7 @@ If you have a disability that may impact your academic performance, you may requ
 ### Week 1
 
 #### Tuesday 9/3
-- In-class readings: [Sol Lewitt](readings/lewitt.pdf) and [Yoko Ono](readings/ono.pdf)
+- In-class reading and discussion: [Sol Lewitt](readings/lewitt.pdf) and [Yoko Ono](readings/ono.pdf)
 
 #### Thursday 9/5
 - Begin [Sketch #1: Turtle drawing](assignments/01_logo.md)
@@ -70,10 +72,10 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Tuesday 9/10
 - Turtle drawing crit
-- In-class reading: [Alan Turing](readings/turing.pdf)
+- In-class reading and discussion: [Alan Turing, "Computing Machinery and Intelligence"](readings/turing.pdf)
 
 #### Thursday 9/12
-- Begin [Sketch #2: Narrative Maze](assignments/02_maze.md)
+- Begin [Sketch #2: Narrative Maze](assignments/02_narrative_maze.md)
 - Code Studio
 
 
@@ -81,10 +83,10 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Tuesday 9/17
 - Narrative Maze crit
-- In-class reading: [Tim Berners-Lee](readings/berners_lee.pdf)
+- In-class reading and discussion: [Tim Berners-Lee, "The World-Wide Web"](readings/berners_lee.pdf)
 
 #### Thursday 9/19
-- Begin [Sketch #3: Web Mod](assignments/03_webmod.md)
+- Begin [Sketch #3: Web Mod](assignments/03_web_mod.md)
 - Code Studio
 
 
@@ -92,10 +94,10 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Tuesday 9/24
 - Web Mod crit
-- In-class reading: [Harold Cohen](readings/cohen.pdf)
+- In-class reading and discussion: [Harold Cohen, "What's an Image?"](readings/cohen.pdf)
 
 #### Thursday 9/26
-- Begin [Sketch #4: Digital interpretation](assignments/04_interpretation.md)
+- Begin [Sketch #4: Digital Interpretation](assignments/04_interpretation.md)
 - Code Studio
 
 
@@ -103,7 +105,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Tuesday 10/1
 - Digital Interpretation crit
-- In-class reading: []()
+- In-class reading and discussion: [Lillian Schwartz, from _The Computer Artist's Handbook_](readings/schwartz.pdf)
 
 #### Thursday 10/3
 - Begin [Sketch #5: Generative Screensaver](assignments/05_screensaver.md)
@@ -123,7 +125,7 @@ FALL BREAK—NO CLASS
 ### Week 7
 
 #### Tuesday 10/15
-- In-class reading: [Alan Kay](readings/kay.pdf)
+- In-class reading and discussion: [Alan Kay, "A Personal Computer for Children of All Ages"](readings/kay.pdf)
 
 #### Thursday 10/17
 
@@ -132,20 +134,20 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 10/22
 - Drawing Tool crit
-- In-class reading: [Laetitia Sonami](readings/sonami.pdf)
+- In-class reading and discussion: [Tara Rodgers interviews Laetitia Sonami](readings/sonami.pdf)
 
 #### Thursday 10/24
-- Begin [Sketch #7: Touch Instrument 1](assignments/06_touch_instrument_1.md)
+- Begin [Sketch #7: Touch Instrument 1](assignments/07_touch_instrument.md) (Part 1)
 - Code Studio
 
 
 ### Week 9
 
 #### Tuesday 10/29
-- In-class reading: [Laura Kurgan](readings/kurgan.pdf)
+- In-class reading and discussion: [Laura Kurgan, "You Are Here: Information Drift"](readings/kurgan.pdf)
 
 #### Thursday 10/31
-- Begin [Sketch #7 cont'd: Touch Instrument 2](assignments/06_touch_instrument_2.md)
+- Begin [Sketch #7 cont'd: Touch Instrument 2](assignments/07_touch_instrument.md) (Part 2)
 - Code Studio
 
 
@@ -153,7 +155,7 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 11/5
 - Touch Instrument crit
-- In-class reading: [Rosa Menkman](readings/menkman.pdf)
+- In-class reading and discussion: [Rosa Menkman, "Beyond Resolution"](readings/menkman.pdf)
 
 #### Thursday 11/7
 - Begin [Sketch #8: Magic Mirror](assignments/08_magic_mirror.md)
@@ -164,7 +166,7 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 11/12
 - Magic Mirror crit
-- In-class reading: [](readings/weiser.pdf)
+- In-class reading and discussion: [Mark Weiser, "The Computer for the 21st Century"](readings/weiser.pdf)
 - Introduction to Arduino
 
 #### Thursday 11/14
@@ -186,7 +188,7 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 11/26
 - Introduction to projection mapping
-- In-class reading: Guerrilla Projection
+- In-class reading and discussion: [Ali Momeni and Stephanie Sherman, "A Manual for Urban Projection"](readings/A-Manual-For-Urban-Projection.pdf)
 - Begin [Final Project: Projected Worlds](assignments/10_projected_worlds.md)
 
 #### Thursday 11/28
@@ -213,3 +215,14 @@ THANKSGIVING BREAK—NO CLASS
 #### Tuesday 12/17
 Final work projected on architecture around campus
 
+
+
+
+###### TODO
+
+Readings:
+- Scan Schwartz Text
+- Annotate selections
+
+  
+Artist presentation list
