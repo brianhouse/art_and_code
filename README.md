@@ -1,7 +1,7 @@
 # ART 112: DIGITAL MEDIA I
 
 Tuesday / Thursday 8:50-11:20, Fields 205  
-[http://brianhouse.github.io/ART112](http://brianhouse.github.io/ART112)  
+[https://github.com/brianhouse/ART112](https://github.com/brianhouse/ART112)  
 
 Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
 Office hours by [appointment](https://sjunkins.wordpress.com/2016/01/06/scheduling-appointment-with-google-forms/)  
@@ -22,21 +22,24 @@ Introduction to computer programming for artists. With creative coding, students
 ### Sketches
 This course is built around a progression of ten open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be critiqued during class in small groups. 
 
-Sketches cumulatively account for 90% of your final grade; the final project counts double. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches as follows: *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise; *satisfactory* sketches are functional and conceptually sound as expected; *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements.
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches as follows:
+- *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise  
+- *satisfactory* sketches are functional and conceptually sound as expected  
+- *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements.  
 
 ### Survey presentations
 Each student will give two 10-minute presentations on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and show one or two artworks in detail. Students should comment thoughtfully on how the work relates to themes discussed in class as well as to their own practices. Students will choose artists to present from an approved list on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Reading
-Each week we will read short primary texts in class that are important to the development of digital form. 
+Each week we will read short primary texts in class that are important to the development of digital form. These will be provided as PDFs.
 
 In addition, it is recommended that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course.
 
+### Attendance and participation
+You must attend and thoughtfully participate in every class. An unexcused absence will result in a reduction of your final grade by 5%. Excused absences must be discussed with me *prior* to the class to arrange for completing missed work. Being late twice will be treated as the equivalent of one absence. 
+
 
 ## Resources and Policies
-
-### Attendance and participation
-You must attend and thoughtfully participate in every class. An unexcused absence will result in a reduction of your final grade by 5%. Excused absenses must be discussed with me *prior* to the class to arrange for completing missed work. Being late twice will be treated as the equivalent of one absence. 
 
 ### Syllabus
 The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
@@ -45,7 +48,7 @@ The version of this syllabus posted online will be updated periodically and is t
 There is a course fee automatically paid through student accounts when registered for this class. The fee helps cover software licensing and sensor hardware. However, open source software will be used whenever possible.
 
 ### Laptop Use
-Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred. If you do not have access to a laptop, email me and we will make arrangements to borrow a machine. **Any use of laptops for other purposes, such as social media, will count as an absence for that class.**
+Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred. If you do not have access to a laptop, email me and we will make arrangements for you to borrow a machine. **Any use of laptops for other purposes, such as social media, will count as an absence for that class.**
 
 ### Code Studio
 All students must complete their own work but are encouraged to help each other. To facilitate collective learning, Fields 205 will be open for working on ART112 sketches and other code projects at the times posted above.
@@ -65,7 +68,7 @@ If you have a disability that may impact your academic performance, you may requ
 - In-class reading and discussion: [Sol Lewitt](readings/lewitt.pdf) and [Yoko Ono](readings/ono.pdf)
 
 #### Thursday 9/5
-- Begin [Sketch #1: Turtle drawing](assignments/01_logo.md)
+- Begin [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
 - Code Studio
 
 ### Week 2
@@ -214,15 +217,3 @@ THANKSGIVING BREAK—NO CLASS
 
 #### Tuesday 12/17
 Final work projected on architecture around campus
-
-
-
-
-###### TODO
-
-Readings:
-- Scan Schwartz Text
-- Annotate selections
-
-  
-Artist presentation list
