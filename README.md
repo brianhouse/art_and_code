@@ -66,6 +66,9 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Tuesday 9/3
 - In-class reading and discussion: [Sol Lewitt](readings/lewitt.pdf) and [Yoko Ono](readings/ono.pdf)
+<!-- 
+    This is hidden content 
+-->
 
 #### Thursday 9/5
 - Begin [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
