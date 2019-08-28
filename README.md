@@ -91,7 +91,7 @@ If you have a disability that may impact your academic performance, you may requ
 - Survey presentations 1: 
 - Turtle drawing crit
 - In-class reading and discussion: Alan Turing, "Computing Machinery and Intelligence"
-- **Homework**: play [Zork]()
+- **Homework**: play [Zork](disks/zork_1.dsk)
 <!--
 30  Survey presentations
 40  Explain crit format
