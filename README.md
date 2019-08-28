@@ -22,7 +22,8 @@ Introduction to computer programming for artists. With creative coding, students
 ### Sketches
 This course is built around a progression of open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be critiqued during class in small groups. 
 
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches as follows:
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches as follows:  
+  
 - *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise  
 - *satisfactory* sketches are functional and conceptually sound as expected  
 - *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
@@ -127,6 +128,7 @@ If you have a disability that may impact your academic performance, you may requ
 - Narrative Maze crit
 - Introduction to HTML
 - **Homework**: read Tim Berners-Lee, "The World-Wide Web" (1994)
+
 <!--
     
 60  Crit  
@@ -252,7 +254,7 @@ FALL BREAK—NO CLASS
 - Begin [Final Project: Projected Worlds](assignments/10_projected_worlds.md)
 
 #### Thursday 11/28
-THANKSGIVING BREAK—NO CLASS
+THANKSGIVING BREAK—NO CLASS  
 
 
 ### Week 14
@@ -268,9 +270,9 @@ THANKSGIVING BREAK—NO CLASS
 ### Week 15
 
 #### Tuesday 12/10
-- Code Studio
+- Prepare final work
 
-### Week 16
+### Exam Week
 
-#### Tuesday 12/17
+#### Tuesday 12/17 18:00–21:00
 Final work projected on campus
