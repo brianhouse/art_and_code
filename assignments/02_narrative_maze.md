@@ -1,17 +1,18 @@
 # Sketch #2: Narrative Maze
 
-Using BASIC, create an interactive story (such as Zork) where the reader/interactor moves from one “room” to another using keyboard commands. For full credit, your program must demonstrate at least 10 different “rooms”; you may also want to have objects that can be carried between rooms and which have an affect on the narrative. 
+Using BASIC, create an interactive story (such as Zork) where the reader/interactor moves from one "room" to another using keyboard commands. For full credit, your program must demonstrate at least 5 different "rooms"; you may also want to have objects that can be carried between rooms and which have an affect on the narrative. 
 
-Commands you’ll use:
-`PRINT`
-`INPUT`
-`IF`
-`GOTO`
+Key statements:
+`PRINT "HELLO WORLD`
+`INPUT A$`
+`IF ... GOTO`
+
+Commands to compare strings:
 `LEFT$`
 `RIGHT$`
 `MID$`
 
-Other fun commands:
+Other fun statements:
 `INVERSE`
 `NORMAL`
 `FLASH`

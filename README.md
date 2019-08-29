@@ -8,7 +8,9 @@ Office hours by [appointment](https://docs.google.com/spreadsheets/d/178ENdP0jey
 Code studio open Monday 13:00–15:00
 
 ## Course Description
-Introduction to computer programming for artists. With creative coding, students will explore graphics and animation, sound, real-time video processing, the web, physical sensors, and augmented reality. Accompanying critical discussion will unpack historical and contemporary issues in digital media. Through practical and theoretical investigations, students will gain a foundation for working with digital form. No prior experience is required.
+Introduction to computer programming for artists. With creative coding, students will explore graphics and animation, sound, real-time video processing, the web, physical sensors, and augmented reality. Accompanying critical discussion will unpack historical and contemporary issues in digital media. Through practical and theoretical investigations, students will gain a foundation for working with digital form.  
+
+No prior experience is required. But asking questions is!
 
 #### Objectives:
 - Cultivate an ability to think abstractly in terms of algorithms
@@ -23,7 +25,7 @@ Introduction to computer programming for artists. With creative coding, students
 This course is built around a progression of open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be critiqued during class in small groups. 
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches as follows:  
-  
+
 - *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise  
 - *satisfactory* sketches are functional and conceptually sound as expected  
 - *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
@@ -58,7 +60,7 @@ All students must complete their own work but are encouraged to help each other.
 Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College's 'Policies and Procedures' webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
 
 ### Accommodations
-If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation  to the Student Support Services Office in Albany Quadrangle (x7156). Staff in the SSSO will notify me of the accommodations for which you are eligible; please also make an appointment to discuss with me personally.
+If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation  to the Student Support Services Office in Albany Quadrangle (x7192). Staff in the SSSO will notify me of the accommodations for which you are eligible; please also make an appointment to discuss with me personally.
 
 
 ## Schedule
@@ -75,11 +77,13 @@ If you have a disability that may impact your academic performance, you may requ
     Read Ono and Lewitt
     Drawing exercise
     Show and discuss exercise
+    Show sampling of digital artists
 -->
 
 #### Thursday 9/5
 - Overview of [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
 - In-class sketch and crit, [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
+- **Homework**: read Alan Turing, "Computing Machinery and Intelligence" (1950)
 
 <!--
     30  Demo: LOGO
@@ -99,7 +103,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Tuesday 9/10
 - Survey presentations 1: 
-- In-class reading and discussion: Alan Turing, "Computing Machinery and Intelligence" (1950)
+- In-class discussion, Turing 
 - Introduction to [BASIC](https://en.wikipedia.org/wiki/BASIC)
 - **Homework**: install [virtualii](https://www.virtualii.com) and play [Zork](disks/zork_i.dsk)
 <!--
