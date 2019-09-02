@@ -177,7 +177,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Thursday 9/26
 - Begin [Sketch #4: Digital Interpretation](assignments/04_interpretation.md)
-- Code Studio
+- Code Studio  
 
 
 ### Week 5
