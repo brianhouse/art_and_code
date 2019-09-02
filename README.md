@@ -125,7 +125,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Thursday 9/12
 - Begin [Sketch #2: Narrative Maze](assignments/02_narrative_maze.md)
-- Code Studio
+- Code Studio  
 <!--
     assignment
     reiterate
@@ -137,7 +137,7 @@ If you have a disability that may impact your academic performance, you may requ
 #### Tuesday 9/17
 - Narrative Maze crit
 - Introduction to HTML
-- **Homework**: read Tim Berners-Lee, "The World-Wide Web" (1994)
+- **Homework**: read Tim Berners-Lee, "The World-Wide Web" (1994)  
 
 <!--
     
@@ -160,7 +160,8 @@ If you have a disability that may impact your academic performance, you may requ
 - Survey presentations 2: Jodi, Roman Verostko
 - Web Mod crit
 - In-class reading and discussion: Harold Cohen, "What's an Image?" (1979)
-- Introduction to [p5.js](https://p5js.org)
+- Introduction to [p5.js](https://p5js.org)  
+
 <!--
 
 45  Crit
