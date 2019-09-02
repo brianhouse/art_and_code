@@ -1,10 +1,12 @@
-# Sketch #0: Score for Drawing
+# Sketch #0: Drawing Code
 
-Write step by step instructions (a "score") that when followed will result in a drawing.
+Make a drawing. Keep it simple and take only two minutes to do it. It can be abstract or figurative.
 
-(Once you have written your instructions, don't verbally amend them.)
+Now write step by step instructions (a "score") that when followed will result in this drawing.
 
-Have two people follow your instructions and display the results together.
+Give the instructions to someone else and have them follow them to make a new drawing. 
 
-Keep your instructions for next week.
+Display the two drawings together.
+
+(Keep your instructions for next week.)
 

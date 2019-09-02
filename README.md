@@ -31,7 +31,7 @@ Sketches cumulatively account for 90% of your final grade. In order to receive c
 - *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
 
 ### Survey presentations
-Each student will give a 10-minute presentations on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and show one or two artworks in detail. Students should comment thoughtfully on how the work relates to themes discussed in class as well as to their own practices. Students will choose artists to present from an approved list on a first-come, first-served basis. These presentations make up 10% of your final grade.
+Each student will give a 10-minute presentations on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and show one or two artworks in detail. Students should comment thoughtfully on how the work relates to themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Reading
 Each week we will read short primary texts in class that are important to the development of digital form. These will be provided in class.
@@ -72,12 +72,14 @@ If you have a disability that may impact your academic performance, you may requ
 - In-class reading and discussion: Sol Lewitt and Yoko Ono
 <!-- 
     Fill out surveys
+    Roster: 1 additional space but big waitlist, please drop soon if you wont take it (priority to sophomore art majors?)
     Introduction riff: what is digital media? computer, algorithm
     Review syllabus
     Read Ono and Lewitt
     Drawing exercise
     Show and discuss exercise
     Show sampling of digital artists
+    Reiterate roster
 -->
 
 #### Thursday 9/5
@@ -86,35 +88,39 @@ If you have a disability that may impact your academic performance, you may requ
 - **Homework**: read Alan Turing, "Computing Machinery and Intelligence" (1950)
 
 <!--
+    10  Intros
     30  Demo: LOGO
-    60  Code studio
-    60  Crit
+    55  Code studio
+    55  Crit
     Explain crit format
 
-    16 students is 4 groups of 4, or 4 groups of 3 and 1 of 4
+    16 students is 4 groups of 4, in tables
 
-    discuss each person for "5" minutes, 30 minutes total
+    discuss each person for "5" minutes, 40 minutes total
 
-    then we need a report from each group, 20 more minutes
+    - construction / concept / context
+    
+    - compliment something
+    - suggest an improvement (not a different idea) -- you have to do both!
+    - ask a question 
         
 -->
 
 ### Week 2
 
 #### Tuesday 9/10
-- Survey presentations 1: 
+- Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
 - In-class discussion, Turing 
 - Introduction to [BASIC](https://en.wikipedia.org/wiki/BASIC)
 - **Homework**: install [virtualii](https://www.virtualii.com) and play [Zork](disks/zork_i.dsk)
 <!--
 30  Survey presentations
-20  Reading
 20  Discussion
 10  Break    
 20  Riff: babbage and lovelace, abstract encoding WWII context, xerox parc, apple, etc. Extention of thought vs autonomous
 /
 10  Virtual ii
-40  Tutorial: BASIC! variables; if-then [CONDITIONALS]
+60  Tutorial: BASIC! variables; if-then [CONDITIONALS]
 -->
 
 #### Thursday 9/12
@@ -135,10 +141,11 @@ If you have a disability that may impact your academic performance, you may requ
 
 <!--
     
-60  Crit  
-10  Break
+45  Crit  
+15  Break
+-
 30  github and sublime
-50  Riff web and tutorial: HTML, css; 
+60  Riff web and tutorial: HTML, css; 
 
 -->
 
@@ -150,10 +157,22 @@ If you have a disability that may impact your academic performance, you may requ
 ### Week 4
 
 #### Tuesday 9/24
-- Survey presentations 2: 
+- Survey presentations 2: Jodi, Roman Verostko
 - Web Mod crit
 - In-class reading and discussion: Harold Cohen, "What's an Image?" (1979)
 - Introduction to [p5.js](https://p5js.org)
+<!--
+
+45  Crit
+15  break
+-
+20  Reading
+20  Discussion
+30  Survey presentations
+-
+40  p5
+
+-->
 
 #### Thursday 9/26
 - Begin [Sketch #4: Digital Interpretation](assignments/04_interpretation.md)
@@ -163,9 +182,22 @@ If you have a disability that may impact your academic performance, you may requ
 ### Week 5
 
 #### Tuesday 10/1
-- Survey presentations 3: 
+- Survey presentations 3: Lia, Casey Reas
 - Digital Interpretation crit
 - In-class reading and discussion: Lillian Schwartz, from _The Computer Artist's Handbook_ (1992)
+
+<!--
+
+45  Crit
+15  break
+-
+20  Reading
+20  Discussion
+30  Survey presentations
+-
+40  random, etc
+
+-->
 
 #### Thursday 10/3
 - Begin [Sketch #5: Generative Screensaver](assignments/05_screensaver.md)
@@ -175,7 +207,6 @@ If you have a disability that may impact your academic performance, you may requ
 ### Week 6
 
 #### Tuesday 10/8
-- Survey presentations 4: 
 - Generative Screensaver crit
 - Begin [Sketch #6: Drawing Tool](assignments/06_drawing_tool.md)
 
@@ -186,7 +217,7 @@ FALL BREAK—NO CLASS
 ### Week 7
 
 #### Tuesday 10/15
-- Survey presentations 5: 
+- Survey presentations 4: American Artist, Liat Berdugo
 - In-class reading and discussion: Alan Kay, "A Personal Computer for Children of All Ages" (1972)
 - Code Studio
 
@@ -196,7 +227,7 @@ FALL BREAK—NO CLASS
 ### Week 8
 
 #### Tuesday 10/22
-- Survey presentations 6: 
+- Survey presentations 5: Janet Cardiff, Ryoji Ikeda
 - Drawing Tool crit
 - In-class reading and discussion: Tara Rodgers interviews Laetitia Sonami (2004)
 
@@ -208,7 +239,7 @@ FALL BREAK—NO CLASS
 ### Week 9
 
 #### Tuesday 10/29
-- Survey presentations 7: 
+- Survey presentations 6: Blast Theory, Lauren McCarthy
 - In-class reading and discussion: Laura Kurgan, "You Are Here: Information Drift" (1994)
 
 #### Thursday 10/31
@@ -219,7 +250,7 @@ FALL BREAK—NO CLASS
 ### Week 10
 
 #### Tuesday 11/5
-- Survey presentations 8: 
+- Survey presentations 7: Raphael Lozano-Hemmer, Rick Silva
 - Touch Instrument crit
 - In-class reading and discussion: Rosa Menkman, "Beyond Resolution" (2018)
 
@@ -231,6 +262,7 @@ FALL BREAK—NO CLASS
 ### Week 11
 
 #### Tuesday 11/12
+- Survey presentations 8: Taeyoon Choi, Martin Howse
 - Magic Mirror crit
 - In-class reading and discussion: Mark Weiser, "The Computer for the 21st Century" (1991)
 - Introduction to Arduino
