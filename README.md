@@ -60,8 +60,8 @@ All students must complete their own work but are encouraged to help each other.
 Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College's 'Policies and Procedures' webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
 
 ### Accommodations
-If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation  to the Student Support Services Office in Albany Quadrangle (x7192). Staff in the SSSO will notify me of the accommodations for which you are eligible; please also make an appointment to discuss with me personally.
-
+If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation  to the Student Support Services Office in Albany Quadrangle (x7192). Staff in the SSSO will notify me of the accommodations for which you are eligible; please also make an appointment to discuss with me personally.  
+##
 
 ## Schedule
 
