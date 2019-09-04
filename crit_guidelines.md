@@ -11,7 +11,7 @@ Each person is required to make (at least) two comments on every other person's 
 - Point out an aspect of the work that you is particularly strong _and explain why_
 - Point out an aspect of the work that you think could be improved _and explain why_ *
 
-* do not just volunteer what you would have done differently or speculate on other directions the work might have taken -- constructive criticism will consider the relationship between three Cs
+    * do not just volunteer what you would have done differently or speculate on other directions the work might have taken -- constructive criticism will consider the relationship between three Cs
 
 Some additional things to keep in mind when making comments:
 - talk about the work, not the artist
