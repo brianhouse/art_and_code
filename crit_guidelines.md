@@ -10,7 +10,7 @@ Ask questions to clarify the three Cs so that you can learn from each other as w
 \
 Each person is required to make (at least) two comments on every other person's work:
 - Point out an aspect of the work that you is particularly strong _and explain why_
-- Point out an aspect of the work that you think could be improved _and explain why_ +
+- Point out an aspect of the work that you think could be improved _and explain why_
     + do not just volunteer what you would have done differently or speculate on other directions the work might have taken -- constructive criticism will consider the relationship between three Cs
 
 \
@@ -25,8 +25,7 @@ Some additional things to keep in mind when presenting:
 - have questions to invite the feedback that will be most helpful to you
 - listen and take notes
 
-
-
+\
 ### In this course
 
 Crit in Digital Media I will be done in small groups.
