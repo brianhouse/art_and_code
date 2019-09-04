@@ -26,6 +26,7 @@ Some additional things to keep in mind when presenting:
 - listen and take notes
 
 \
+
 ### In this course
 
 Crit in Digital Media I will be done in small groups.
