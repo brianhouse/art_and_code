@@ -22,7 +22,7 @@ No prior experience is required. But asking questions is!
 ## Assignments and Grading
 
 ### Sketches
-This course is built around a progression of open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be critiqued during class in small groups. 
+This course is built around a progression of open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be [critiqued](crit_guidelines.md) during class in small groups. 
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches as follows:  
 
@@ -84,7 +84,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Thursday 9/5
 - Overview of [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
-- In-class sketch and crit, [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
+- In-class sketch and [crit](crit_guidelines.md), [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
 - **Homework**: read Alan Turing, "Computing Machinery and Intelligence" (1950)
 
 <!--
@@ -94,6 +94,8 @@ If you have a disability that may impact your academic performance, you may requ
     55  Crit
     Explain crit format
 
+    18 students is 6 groups of 3
+    17 students is 5 groups of 3 one group of 2
     16 students is 4 groups of 4, in tables
 
     discuss each person for "5" minutes, 40 minutes total
