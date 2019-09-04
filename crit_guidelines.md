@@ -9,14 +9,18 @@ Ask questions to clarify the three Cs so that you can learn from each other as w
 
 Each person is required to make (at least) two comments on every other person's work:
 - Point out an aspect of the work that you is particularly strong _and explain why_
-- Point out an aspect of the work that you think could be improved _and explain why_ *
+- Point out an aspect of the work that you think could be improved _and explain why_ +
 
-    * do not just volunteer what you would have done differently or speculate on other directions the work might have taken -- constructive criticism will consider the relationship between three Cs
+    + do not just volunteer what you would have done differently or speculate on other directions the work might have taken -- constructive criticism will consider the relationship between three Cs
+
+###
 
 Some additional things to keep in mind when making comments:
 - talk about the work, not the artist
 - respect others' backgrounds, abilities, and perspectives
 - don't claim the universal
+
+###
 
 Some additional things to keep in mind when presenting:
 - don't apologize or add caveats to your work
