@@ -25,9 +25,8 @@ Some additional things to keep in mind when presenting:
 - have questions to invite the feedback that will be most helpful to you
 - listen and take notes
 
-\
 
-### In this course
+## In this course
 
 Crit in Digital Media I will be done in small groups.
 
