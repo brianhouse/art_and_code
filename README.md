@@ -92,12 +92,7 @@ If you have a disability that may impact your academic performance, you may requ
     30  Demo: LOGO
     50  Code studio
     60  Crit
-    Explain crit format
-
-    18: 6 of 3 (6) / 4 groups of 4 + one of 2 (5)
-    17: 5 of 3 + 1 of 2 (6)
-    16: 4 of 4 (4)
-        
+    Explain crit format        
 -->
 
 ### Week 2
