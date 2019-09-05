@@ -101,7 +101,8 @@ If you have a disability that may impact your academic performance, you may requ
 - Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
 - In-class discussion, Turing 
 - Introduction to [BASIC](https://en.wikipedia.org/wiki/BASIC)
-- **Homework for next class**: install [virtualii](https://www.virtualii.com) and play [Zork](disks/zork_i.dsk)
+- **Homework for next class**: download [Zork](disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e)
+
 <!--
 30  Survey presentations
 30  Discussion of Turing
