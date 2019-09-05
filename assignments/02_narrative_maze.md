@@ -41,6 +41,6 @@ For example:
 ```
 
 
-[Reference](https://www.apple.asimov.net/documentation/programming/basic/)Applesoft%20BASIC%20Quick%20Reference%20Guide.pdf
+[BASIC Language Reference](https://www.apple.asimov.net/documentation/programming/basic/Applesoft%20BASIC%20Quick%20Reference%20Guide.pdf)
 
 
