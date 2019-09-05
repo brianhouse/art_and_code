@@ -85,7 +85,7 @@ If you have a disability that may impact your academic performance, you may requ
 #### Thursday 9/5
 - Overview of [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
 - In-class sketch and [crit](crit_guidelines.md), [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
-- **Homework**: read Alan Turing, "Computing Machinery and Intelligence" (1950)
+- **Homework for next class**: read Alan Turing, "Computing Machinery and Intelligence" (1950)
 
 <!--
     10  Intros
@@ -101,7 +101,7 @@ If you have a disability that may impact your academic performance, you may requ
 - Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
 - In-class discussion, Turing 
 - Introduction to [BASIC](https://en.wikipedia.org/wiki/BASIC)
-- **Homework**: install [virtualii](https://www.virtualii.com) and play [Zork](disks/zork_i.dsk)
+- **Homework for next class**: install [virtualii](https://www.virtualii.com) and play [Zork](disks/zork_i.dsk)
 <!--
 30  Survey presentations
 30  Discussion of Turing
@@ -125,7 +125,7 @@ If you have a disability that may impact your academic performance, you may requ
 #### Tuesday 9/17
 - Narrative Maze crit
 - Introduction to HTML
-- **Homework**: read Tim Berners-Lee, "The World-Wide Web" (1994)  
+- **Homework for next class**: read Tim Berners-Lee, "The World-Wide Web" (1994)  
 
 <!--
     
@@ -198,7 +198,7 @@ If you have a disability that may impact your academic performance, you may requ
 #### Tuesday 10/8
 - Generative Screensaver crit
 - Begin [Sketch #6: Drawing Tool](assignments/06_drawing_tool.md)
-- **Homework**: watch [Douglas Englebart, "The Mother of All Demos"](https://www.youtube.com/watch?v=VScVgXM7lQQ&list=PLCGFadV4FqU2yAqCzKaxnKKXgnJBUrKTE)
+- **Homework for next class**: watch [Douglas Englebart, "The Mother of All Demos"](https://www.youtube.com/watch?v=VScVgXM7lQQ&list=PLCGFadV4FqU2yAqCzKaxnKKXgnJBUrKTE)
 
 
 #### Thursday 10/10
