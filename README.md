@@ -90,21 +90,13 @@ If you have a disability that may impact your academic performance, you may requ
 <!--
     10  Intros
     30  Demo: LOGO
-    55  Code studio
-    55  Crit
+    50  Code studio
+    60  Crit
     Explain crit format
 
-    18 students is 6 groups of 3
-    17 students is 5 groups of 3 one group of 2
-    16 students is 4 groups of 4, in tables
-
-    discuss each person for "5" minutes, 40 minutes total
-
-    - construction / concept / context
-    
-    - compliment something
-    - suggest an improvement (not a different idea) -- you have to do both!
-    - ask a question 
+    18: 6 of 3 (6) / 4 groups of 4 + one of 2 (5)
+    17: 5 of 3 + 1 of 2 (6)
+    16: 4 of 4 (4)
         
 -->
 
@@ -278,6 +270,7 @@ FALL BREAK—NO CLASS
 ### Week 12
 
 #### Tuesday 11/19
+- Survey presentations 9: Cory Arcangel, Claudia Hart
 - Code Studio
 
 #### Thursday 11/21
