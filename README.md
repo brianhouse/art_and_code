@@ -31,7 +31,7 @@ Sketches cumulatively account for 90% of your final grade. In order to receive c
 - *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
 
 ### Survey presentations
-Each student will give a 10-minute presentations on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and show one or two artworks in detail. Students should comment thoughtfully on how the work relates to themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade.
+Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Reading
 Each week we will read short primary texts in class that are important to the development of digital form. These will be provided in class.
@@ -204,6 +204,8 @@ If you have a disability that may impact your academic performance, you may requ
 #### Tuesday 10/8
 - Generative Screensaver crit
 - Begin [Sketch #6: Drawing Tool](assignments/06_drawing_tool.md)
+- **Homework**: watch [Douglas Englebart, "The Mother of All Demos"](https://www.youtube.com/watch?v=VScVgXM7lQQ&list=PLCGFadV4FqU2yAqCzKaxnKKXgnJBUrKTE)
+
 
 #### Thursday 10/10
 FALL BREAK—NO CLASS
