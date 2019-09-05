@@ -104,12 +104,11 @@ If you have a disability that may impact your academic performance, you may requ
 - **Homework**: install [virtualii](https://www.virtualii.com) and play [Zork](disks/zork_i.dsk)
 <!--
 30  Survey presentations
-20  Discussion
+30  Discussion of Turing
 10  Break    
-20  Riff: babbage and lovelace, abstract encoding WWII context, xerox parc, apple, etc. Extention of thought vs autonomous
 /
 10  Virtual ii
-60  Tutorial: BASIC! variables; if-then [CONDITIONALS]
+70  Tutorial: BASIC! variables; if-then [CONDITIONALS]
 -->
 
 #### Thursday 9/12
