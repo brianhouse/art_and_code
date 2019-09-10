@@ -108,7 +108,6 @@ If you have a disability that may impact your academic performance, you may requ
 30  Discussion of Turing
 10  Break    
 /
-10  Virtual ii
 70  Tutorial: BASIC! variables; if-then [CONDITIONALS]
 -->
 
