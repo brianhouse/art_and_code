@@ -4,6 +4,9 @@ Using an online [BASIC interpreter](https://www.calormen.com/jsbasic/), create a
 
 ### Example instructions
 
+Clear the screen:
+`HOME`  
+
 Print to the screen:  
 `PRINT "HELLO WORLD`
 
@@ -11,17 +14,17 @@ Take input from the user:
 `INPUT A$`
 
 Conditional logic:  
-`IF A = "NORTH" GOTO 20`
+`IF A = "NORTH" GOTO 20`  
 
 Comparing strings:  
-`LEFT$(A$, 2)` -- the two leftmost characters of A
-`RIGHT$($A, 5)` -- the five rightmost characters of A
-`MID$($A, 2, 1)` -- the third character of A
+`LEFT$(A$, 2)` -- the two leftmost characters of A  
+`RIGHT$($A, 5)` -- the five rightmost characters of A  
+`MID$($A, 2, 1)` -- the third character of A  
 
 Other fun statements:
-`INVERSE`
-`NORMAL`
-`FLASH`
+`INVERSE`  
+`NORMAL`  
+`FLASH`  
 
 
 One challenge working with BASIC is organizing your line numbers. You may want to reserve 100 line numbers for every state. 
