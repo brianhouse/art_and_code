@@ -14,7 +14,8 @@ Take input from the user:
 `INPUT A$`
 
 Conditional logic:  
-`IF A = "NORTH" GOTO 20`  
+`IF A$ = "NORTH" GOTO 20`  
+`IF A$ = "GO NORTH" OR A$ = "NORTH" GOTO 20`
 
 Comparing strings:  
 `LEFT$(A$, 2)` -- the two leftmost characters of A  
@@ -27,7 +28,7 @@ Other fun statements:
 `FLASH`  
 
 
-One challenge working with BASIC is organizing your line numbers. You may want to reserve 100 line numbers for every state. 
+One challenge working with BASIC is organizing your line numbers. You may want to reserve 100 line numbers for every "room". 
 
 For example:
 ```
