@@ -13,7 +13,7 @@ Print to the screen:
 Take input from the user:  
 `INPUT A$`  
 
-Include input in your output:
+Include input in your output:  
 `PRINT "HELLO " + A$`  
 
 Conditional logic:  
