@@ -1,17 +1,20 @@
 # Sketch #2: Narrative Maze
 
-Using an online [BASIC interpreter](https://www.calormen.com/jsbasic/), create an interactive story (such as Zork) where the reader/interactor moves from one "room" to another using keyboard commands. For full credit, your program must demonstrate at least 8 different "rooms"; you may also want to have objects that can be carried between rooms and which have an effect on the narrative. 
+Using an online [BASIC interpreter](https://www.calormen.com/jsbasic/), create a text-based, branching narrative where the reader/interactor moves from one "room" to another by inputting text. For full credit, your program must demonstrate at least 8 different "rooms"; you may also want to have objects that can be carried between rooms and which have an effect on the narrative. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept.
 
 ### Example instructions
 
-Clear the screen:
+Clear the screen:  
 `HOME`  
 
 Print to the screen:  
-`PRINT "HELLO WORLD`
+`PRINT "HELLO WORLD"`  
 
 Take input from the user:  
-`INPUT A$`
+`INPUT A$`  
+
+Include input in your output:
+`PRINT "HELLO " + A$`  
 
 Conditional logic:  
 `IF A$ = "NORTH" GOTO 20`  
@@ -24,12 +27,12 @@ Comparing strings:
 `RIGHT$($A, 5)` -- the five rightmost characters of A  
 `MID$($A, 2, 1)` -- the second character of A  
 
-Other fun statements:
+Other fun statements:  
 `INVERSE`  
 `NORMAL`  
 `FLASH`  
 
-Write a comment:
+Write a comment:  
 `REM THIS IS A COMMENT`
 
 
@@ -40,7 +43,8 @@ For example:
 0 HOME
 
 100 REM FIELDS 205
-100 PRINT "YOU ARE IN FIELDS 205. IT IS A DARK ROOM THAT SMELLS OF TROLLS. THERE ARE EXITS TO THE EAST AND WEST."
+100 PRINT "YOU ARE IN FIELDS 205. IT IS A DARK ROOM THAT SMELLS OF TROLLS. 
+    THERE ARE EXITS TO THE EAST AND WEST."
 110 INPUT A$
 120 IF LEFT$(A$, 1) = "W" OR RIGHT$(A$, 4) = "WEST" GOTO 200
 125 IF LEFT$(A$, 1) = "E" OR RIGHT$(A$, 4) = "EAST" GOTO 300
