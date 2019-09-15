@@ -138,7 +138,7 @@ If you have a disability that may impact your academic performance, you may requ
 -->
 
 #### Thursday 9/19
-- Begin [Sketch #3: Web](assignments/03_web.md)
+- Begin [Sketch #3: Web](assignments/03_hypertext.md)
 - Code Studio
 
 
