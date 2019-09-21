@@ -138,7 +138,7 @@ If you have a disability that may impact your academic performance, you may requ
 -->
 
 #### Thursday 9/19
-- Begin [Sketch #3: Web](assignments/03_hypertext.md)
+- Begin [Sketch #3: Hypertext](assignments/03_hypertext.md)
 - Code Studio
 
 
@@ -146,7 +146,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Tuesday 9/24
 - Survey presentations 2: Jodi, Roman Verostko
-- Web Mod crit
+- Hypertext crit
 - In-class reading and discussion: Harold Cohen, "What's an Image?" (1979)
 - Introduction to [p5.js](https://p5js.org)  
 
