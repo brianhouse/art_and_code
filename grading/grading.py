@@ -20,8 +20,8 @@ distractions: 0
 """
 
 try:
-    with open(sys.argv[1] + '.yaml') as f:
-        print(sys.argv[1].upper())
+    with open(sys.argv[1].split('.')[0] + '.yaml') as f:
+        print(sys.argv[1].upper().split('.')[0])
         student = yaml.load(f.read())
 except IndexError:
     print('[student]')
@@ -78,7 +78,7 @@ print(student['absences'], 'absences')
 print(student['distractions'], 'distractions')
 
 
-print('final_grade %.2f%%' % (raw_grade * 100))
+print('final_grade %.2f%%' % (final_grade * 100))
 print()
 
 

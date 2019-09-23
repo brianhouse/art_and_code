@@ -147,7 +147,7 @@ If you have a disability that may impact your academic performance, you may requ
 #### Tuesday 9/24
 - Survey presentations 2: Jodi, Roman Verostko
 - Hypertext crit
-- In-class reading and discussion: Harold Cohen, "What's an Image?" (1979)
+<!-- - In-class reading and discussion: Harold Cohen, "What's an Image?" (1979) -->
 - Introduction to [p5.js](https://p5js.org)  
 
 <!--
