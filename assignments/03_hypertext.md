@@ -1,6 +1,6 @@
 # Sketch #3: Hypertext
 
-Use web pages and HTML to create an online nonlinear experience. Each page, of which you should have at least 5, should link to multiple other pages you create (and may also incorporate outside links). Your work may incorporate text and/or images. You may choose to adapt your Narrative Maze from the previous assignment to the web, reinterpret an existing story or poem into hypertext, or create something entirely new.
+Use web pages and HTML to create an online nonlinear experience. Each page, of which you should have at least 5, should link to multiple other pages you create (and may also incorporate outside links). Your work may incorporate text and/or images. You may choose to adapt your Narrative Maze from the previous assignment to the web, reinterpret an existing story or poem into hypertext, or create something entirely new. Regardless, the result should be driven by an underlying artistic concept.
 
 For inspiration, view Olia Lialina's [_My Boyfriend Came Back from the War_](http://www.teleportacia.org/war) (1995), Mark Amerika's [_GRAMMATRON_](https://www.grammatron.com/gtronbeta/Abe_Golam_907.html) (1997), and Mendi Obadike's [_keeping up appearances_](http://archive.rhizome.org/artbase/2864/keepingupappearances.html) (2001).
 
