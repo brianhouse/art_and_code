@@ -2,7 +2,7 @@
 
 Using an online [BASIC interpreter](https://www.calormen.com/jsbasic/), create a text-based, branching narrative where the reader/interactor moves from one "room" to another by inputting text. Your program must demonstrate at least 5 different "rooms"; you may also want to have objects that can be carried between rooms and which have an effect on the narrative. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept.
 
-Email your finished (or unfinished) code to the professor.
+Email your finished (or unfinished) code to the professor before class.
 
 ### Example instructions
 

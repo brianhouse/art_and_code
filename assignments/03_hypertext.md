@@ -4,7 +4,7 @@ Use web pages and HTML to create an online nonlinear experience. Each page, of w
 
 For inspiration, view Olia Lialina's [_My Boyfriend Came Back from the War_](http://www.teleportacia.org/war) (1995), Mark Amerika's [_GRAMMATRON_](https://www.grammatron.com/gtronbeta/Abe_Golam_907.html) (1997), and Mendi Obadike's [_keeping up appearances_](http://archive.rhizome.org/artbase/2864/keepingupappearances.html) (2001).
 
-Your hypertext piece should be hosted on github—email a working URL to the professor.
+Your hypertext piece should be hosted on github—email a working URL to the professor before class.
 
 ### HTML reference
 
