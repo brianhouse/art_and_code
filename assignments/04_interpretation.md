@@ -47,3 +47,5 @@ function mouseClicked() {
 }
 
 ```
+
+![p5 example]("src/CO.png")
