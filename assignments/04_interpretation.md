@@ -48,4 +48,4 @@ function mouseClicked() {
 
 ```
 
-![p5 example](../src/CO.png)
+![p5 example](../img/CO.png)
