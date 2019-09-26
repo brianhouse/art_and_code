@@ -1,6 +1,6 @@
 # Sketch #4: Digital Interpretation
 
-Choose a [famous painting or other artwork from art history](https://www.google.com/search?q=famous+art) and reinterpret it in code using [p5](https://p5js.org). Abstract the original brushstrokes into geometric shapes, but retain a recognizable sense of the original composition. Pay particular attention to the use (or non-use) of color. Your interpretation should communicate something in its form that says something distinct from the original.
+Choose a [famous painting or other artwork from art history](https://www.google.com/search?q=famous+art) and reinterpret it in code using [p5](https://p5js.org). Abstract the original brushstrokes into geometric shapes, but retain a recognizable sense of the original composition. Pay particular attention to the use (or non-use) of color. In its form, your interpretation should communicate something distinct from the original.
 
 Your piece should be hosted on github—email a working URL (plus a link to the original artwork) to the professor before class.
 
@@ -53,3 +53,42 @@ function mouseClicked() {
 ```
 
 ```
+
+Shapes, curves, and translation
+```javascript
+function setup() {
+
+    createCanvas(400, 300)
+
+    strokeWeight(2)
+
+    beginShape()
+    vertex(47, 27)
+    vertex(61, 181)
+    vertex(165, 155)
+    vertex(84, 101)
+    vertex(141, 66)
+    vertex(47, 27)
+    endShape()
+
+    push()
+    translate(150, 0)
+    beginShape()
+    curveVertex(47, 27)
+    curveVertex(47, 27)
+    curveVertex(61, 181)
+    curveVertex(165, 155)
+    curveVertex(84, 101)
+    curveVertex(141, 66)
+    curveVertex(47, 27)
+    curveVertex(47, 27)
+    endShape()
+    pop()
+
+    noFill()
+    rect(0, 0, width, height)
+
+}
+```
+
+<img src="../img/B.png" width="200" />
