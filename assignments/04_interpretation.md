@@ -24,7 +24,7 @@ function setup() {
     rect(0, 200, 500, 300)
 
     fill(255, 0, 0)
-    arc(200, 150, 200, 200, 25, 335)
+    arc(200, 150, 200, 200, 25, 335) // center x, center y, radius width, radius height, start angle, stop angle
 
 
     fill(255, 200, 0)
@@ -48,4 +48,8 @@ function mouseClicked() {
 
 ```
 
-![p5 example](../img/CO.png?s=150)
+<img src="../img/CO.png" width="200" />
+
+```
+
+```
