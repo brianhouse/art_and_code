@@ -24,14 +24,14 @@ No prior experience is required. But asking questions is!
 ### Sketches
 This course is built around a progression of open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be [critiqued](crit_guidelines.md) during class in small groups. 
 
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches as follows:  
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches from 1–3 points as follows:  
 
-- *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise  
-- *satisfactory* sketches are functional and conceptually sound as expected  
-- *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
+1. *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise  
+2. *satisfactory* sketches are functional and conceptually sound as expected  
+3. *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
 
 ### Survey presentations
-Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade.
+Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade, and will also be marked on a scale of 1-3.
 
 ### Reading
 Each week we will read short primary texts in class that are important to the development of digital form. These will be provided in class.
@@ -278,6 +278,7 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 11/26
 - Introduction to projection mapping
+- Portfolio assignment
 - In-class reading and discussion: Ali Momeni and Stephanie Sherman, "A Manual for Urban Projection"
 - Begin [Final Project: Projected Worlds](assignments/10_projected_worlds.md)
 
@@ -304,3 +305,4 @@ THANKSGIVING BREAK—NO CLASS
 
 #### Tuesday 12/17 18:00–21:00
 Final work projected on campus
+Web portfolio due

@@ -48,13 +48,14 @@ print('assignment_grade %.2f%%' % (assignment_grade * 100))
 
 
 """
-    1: satisfactory presentation
-    2: excellent presentation
+    1: unsatisfactory presentation (missing work or basic context)
+    2: satisfactory presentation (basic info on artist and work shown)
+    3: excellent presentation (conceptual aspects well-outlined)
 
 """
 
 if 'presentation' in student:
-    presentation_grade = student['presentation'] / 2
+    presentation_grade = student['presentation'] / 3
     print('presentation_grade %.2f%%' % (min( (presentation_grade * 100) + 30, 100)))
 
     raw_grade = (assignment_grade * .9) + (presentation_grade * .1)
