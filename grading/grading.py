@@ -18,23 +18,26 @@ presentation: 2
 absences: 0
 distractions: 0
 """
+print()
 
 try:
     with open(sys.argv[1].split('.')[0] + '.yaml') as f:
         print(sys.argv[1].upper().split('.')[0])
+        print()
         student = yaml.load(f.read())
 except IndexError:
     print('[student]')
     print()
     print('EXAMPLE')
+    print()
     student = yaml.load(student)
 except Exception as e:
     print(e)
     exit()
 
-print()
-print(json.dumps(student, indent=4))
-print()
+# print()
+# print(json.dumps(student, indent=4))
+# print()
 
 
 """
@@ -44,7 +47,7 @@ print()
 
 """
 assignment_grade = sum(student['assignments'].values()) / (len(student['assignments']) * 3) + .15
-print('assignment_grade %.2f%%' % (assignment_grade * 100))
+print('Sketches: %.2f%%' % (assignment_grade * 100))
 
 
 """
@@ -56,14 +59,14 @@ print('assignment_grade %.2f%%' % (assignment_grade * 100))
 
 if 'presentation' in student:
     presentation_grade = student['presentation'] / 3
-    print('presentation_grade %.2f%%' % (min( (presentation_grade * 100) + 30, 100)))
+    print('Presentation: %.2f%%' % (min( (presentation_grade * 100), 100)))
 
     raw_grade = (assignment_grade * .9) + (presentation_grade * .1)
 else:
     raw_grade = assignment_grade
 
 raw_grade = min(raw_grade, 1.0)
-print('raw_grade %.2f%%' % (raw_grade * 100))
+print('Raw grade: %.2f%%' % (raw_grade * 100))
 print()
 
 """
@@ -77,9 +80,10 @@ final_grade *= 1.0 - (student['absences'] * 0.05)
 final_grade *= 1.0 - (student['distractions'] * 0.025)
 print(student['absences'], 'absences')
 print(student['distractions'], 'distractions')
+print()
 
 
-print('final_grade %.2f%%' % (final_grade * 100))
+print('Course so far: %.2f%%' % (final_grade * 100))
 print()
 
 
