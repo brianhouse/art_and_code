@@ -7,7 +7,13 @@ Your piece should be hosted on github—email a working URL to the professor bef
 ### p5 Reference
 
 A basic drawing tool might look like this:  
+<br />
+<br />
+<br />
 <img src="../img/drawing_tool.png" width="400" />
+<br />
+<br />
+<br />
 
 The `sketch.js` for this tool is as follows:
 
@@ -92,9 +98,9 @@ function colorRed() {
 }
 ```
 
-`index.html`:
+And the `index.html`:
 
-```
+```HTML
 <html>
 
 <head>
