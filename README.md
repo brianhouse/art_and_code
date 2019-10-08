@@ -8,7 +8,7 @@ Office hours by [appointment](https://docs.google.com/spreadsheets/d/178ENdP0jey
 Code studio open Monday 13:00–15:00
 
 ## Course Description
-Introduction to computer programming for artists. With creative coding, students will explore graphics and animation, sound, real-time video processing, the web, physical sensors, and augmented reality. Accompanying critical discussion will unpack historical and contemporary issues in digital media. Through practical and theoretical investigations, students will gain a foundation for working with digital form.  
+Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, real-time video processing, the web, and physical sensors. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form.
 
 No prior experience is required. But asking questions is!
 
@@ -22,7 +22,7 @@ No prior experience is required. But asking questions is!
 ## Assignments and Grading
 
 ### Sketches
-This course is built around a progression of open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be [critiqued](crit_guidelines.md) during class in small groups. 
+This course is built around open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be [critiqued](crit_guidelines.md) during class in small groups. 
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches from 1–3 points as follows:  
 
