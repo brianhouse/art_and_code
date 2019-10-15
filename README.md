@@ -5,7 +5,7 @@ Tuesday / Thursday 8:50–11:20, Fields 205
 
 Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
 Office hours by [appointment](https://docs.google.com/spreadsheets/d/178ENdP0jeyN6vFB1gyC5QnDdr0T_HiSMiUhkByFlV-0/edit?usp=sharing)  
-Code studio open Monday 13:00–15:00
+Open studio Monday 13:00–15:00
 
 ## Course Description
 Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, real-time video processing, the web, and physical sensors. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form.
@@ -53,7 +53,7 @@ There is a course fee automatically paid through student accounts when registere
 ### Laptop Use
 Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred. If you do not have access to a laptop, email me and we will make arrangements for you to borrow a machine.
 
-### Code Studio
+### Open Studio
 All students must complete their own work but are encouraged to help each other. To facilitate collective learning, Fields 205 will be open for working on ART112 sketches and other code projects at the times posted above.
 
 ### Academic Integrity
@@ -113,7 +113,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Thursday 9/12
 - Begin [Sketch #2: Narrative Maze](assignments/02_narrative_maze.md)
-- Code Studio  
+- Work time  
 <!--
     assignment
     reiterate
@@ -139,7 +139,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Thursday 9/19
 - Begin [Sketch #3: Hypertext](assignments/03_hypertext.md)
-- Code Studio
+- Work time
 
 
 ### Week 4
@@ -165,7 +165,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Thursday 9/26
 - Begin [Sketch #4: Digital Interpretation](assignments/04_interpretation.md)
-- Code Studio  
+- Work time  
 
 
 ### Week 5
@@ -173,7 +173,7 @@ If you have a disability that may impact your academic performance, you may requ
 #### Tuesday 10/1
 - Survey presentations 3: Lia, Casey Reas
 - Digital Interpretation crit
-- In-class reading and discussion: Lillian Schwartz, from _The Computer Artist's Handbook_ (1992)
+- **Homework for next class**: read Lillian Schwartz, from _The Computer Artist's Handbook_ (1992)
 
 <!--
 
@@ -190,7 +190,7 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Thursday 10/3
 - Begin [Sketch #5: Generative Screensaver](assignments/05_screensaver.md)
-- Code Studio
+- Work time
 
 
 ### Week 6
@@ -209,22 +209,22 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 10/15
 - Survey presentations 4: American Artist, Liat Berdugo
-- In-class reading and discussion: Alan Kay, "A Personal Computer for Children of All Ages" (1972)
-- Code Studio
+- **Homework for next class**: read Alan Kay, "A Personal Computer for Children of All Ages" (1972)
+- Work time
 
 #### Thursday 10/17
-- Code Studio
+- Work time
 
 ### Week 8
 
 #### Tuesday 10/22
 - Survey presentations 5: Janet Cardiff, Ryoji Ikeda
 - Drawing Tool crit
-- In-class reading and discussion: Tara Rodgers interviews Laetitia Sonami (2004)
+- **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004)
 
 #### Thursday 10/24
 - Begin [Sketch #7: Touch Instrument 1](assignments/07_touch_instrument.md) (Part 1)
-- Code Studio
+- Work time
 
 
 ### Week 9
@@ -235,7 +235,7 @@ FALL BREAK—NO CLASS
 
 #### Thursday 10/31
 - Begin [Sketch #7 cont'd: Touch Instrument 2](assignments/07_touch_instrument.md) (Part 2)
-- Code Studio
+- Work time
 
 
 ### Week 10
@@ -247,7 +247,7 @@ FALL BREAK—NO CLASS
 
 #### Thursday 11/7
 - Begin [Sketch #8: Magic Mirror](assignments/08_magic_mirror.md)
-- Code Studio
+- Work time
 
 
 ### Week 11
@@ -260,18 +260,18 @@ FALL BREAK—NO CLASS
 
 #### Thursday 11/14
 - Begin [Sketch #9: Heartbeat Amplifier](assignments/09_heartbeat_amplifier.md)
-- Code Studio
+- Work time
 
 
 ### Week 12
 
 #### Tuesday 11/19
 - Survey presentations 9: Cory Arcangel, Claudia Hart
-- Code Studio
+- Work time
 
 #### Thursday 11/21
 - Heartbeat Amplifier crit
-- Code Studio
+- Work time
 
 
 ### Week 13
@@ -289,11 +289,11 @@ THANKSGIVING BREAK—NO CLASS
 ### Week 14
 
 #### Tuesday 12/3
-- Code Studio
+- Work time
 
 
 #### Thursday 12/5
-- Code Studio
+- Work time
 
 
 ### Week 15
