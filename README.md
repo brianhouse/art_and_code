@@ -218,8 +218,8 @@ FALL BREAK—NO CLASS
 ### Week 8
 
 #### Tuesday 10/22
-- Survey presentations 5: Janet Cardiff, Ryoji Ikeda
 - Drawing Tool crit
+- Survey presentations 5: Janet Cardiff, Ryoji Ikeda
 - **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004)
 
 #### Thursday 10/24

@@ -19,6 +19,7 @@ The `sketch.js` for this tool is as follows:
 
 ```javascript
 let paint_mode = false
+let current_stroke = 1
 
 function setup() {
 
@@ -29,24 +30,21 @@ function setup() {
     // draw frame, but leave room for the buttons on the left
     rect(50, 0, width-50, height)
 
-    // set initial pen color
-    stroke(0, 0, 0, 50)
-    strokeWeight(1)
-
 }
 
 function draw() {
 
     // only execute this code if you've turn on paint_mode
     if (paint_mode == true) {
-        line(mouseX-10, mouseY-10, mouseX+10, mouseY+10)
-        line(mouseX+10, mouseY-10, mouseX-10, mouseY+10)        
+        // draw from the previous mouse position to the current mouse position
+        line(pmouseX, pmouseY, mouseX, mouseY)       
     }
 
     // make a button on the canvas 
     // use push and pop to isolate any changes from the rest of your code
     push()
     stroke(0)
+    strokeWeight(1)
 
     // make the toolbar area
     fill(200, 200, 200)
@@ -59,6 +57,17 @@ function draw() {
     // make the blue button
     fill(0, 0, 255)
     rect(10, 50, 30, 30)
+
+    // make an decrease strokeWeight button
+    fill(255, 255, 255)
+    rect(10, 90, 30, 30)
+    line(15, 105, 35, 105)
+
+    // make an increase strokeWeight button
+    fill(255, 255, 255)
+    rect(10, 130, 30, 30)
+    strokeWeight(5)        
+    line(15, 145, 35, 145)    
 
     pop()
 
@@ -84,18 +93,22 @@ function mouseClicked() {
         stroke(0, 0, 255, 50)
     }
 
+    // test if mouse clicked in strokeWeight increase box
+    if (mouseX > 10 && mouseX < 40 && mouseY > 90 && mouseY < 130) {
+        if (current_stroke > 1) {
+            current_stroke -= 1
+        }        
+        strokeWeight(current_stroke)        
+    }
+
+    // test if mouse clicked in strokeWeight decrease box
+    if (mouseX > 10 && mouseX < 40 && mouseY > 130 && mouseY < 170) {
+        current_stroke += 1        
+        strokeWeight(current_stroke)
+    }
+
+
 }    
-
-
-// call these functions from HTML 
-
-function colorBlue() {
-    stroke(0, 0, 255, 50)
-}
-
-function colorRed() {
-    stroke(255, 0, 0, 50)
-}
 ```
 
 And the `index.html`:
@@ -115,8 +128,6 @@ And the `index.html`:
     <div id="p5"></div>
     <br />
 
-    <a href="javascript:colorBlue()">BLUE</a>    
-    <a href="javascript:colorRed()">RED</a>
     <a href="javascript:save()">SAVE</a>
 
 </body>
