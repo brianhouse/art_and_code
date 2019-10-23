@@ -4,8 +4,7 @@ Tuesday / Thursday 8:50–11:20, Fields 205
 [https://github.com/brianhouse/ART112](https://github.com/brianhouse/ART112)  
 
 Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
-Office hours by [appointment](https://docs.google.com/spreadsheets/d/178ENdP0jeyN6vFB1gyC5QnDdr0T_HiSMiUhkByFlV-0/edit?usp=sharing)  
-Open studio Monday 13:00–15:00
+Office hours Mondays 13:00–15:00
 
 ## Course Description
 Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, real-time video processing, the web, and physical sensors. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form.
@@ -231,7 +230,7 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 10/29
 - Survey presentations 6: Blast Theory, Lauren McCarthy
-- In-class reading and discussion: Laura Kurgan, "You Are Here: Information Drift" (1994)
+- **Homework for next class**: read Laura Kurgan, "You Are Here: Information Drift" (1994)
 
 #### Thursday 10/31
 - Begin [Sketch #7 cont'd: Touch Instrument 2](assignments/07_touch_instrument.md) (Part 2)
@@ -243,7 +242,7 @@ FALL BREAK—NO CLASS
 #### Tuesday 11/5
 - Survey presentations 7: Raphael Lozano-Hemmer, Rick Silva
 - Touch Instrument crit
-- In-class reading and discussion: Rosa Menkman, "Beyond Resolution" (2018)
+- **Homework for next class**: read Rosa Menkman, "Beyond Resolution" (2018)
 
 #### Thursday 11/7
 - Begin [Sketch #8: Magic Mirror](assignments/08_magic_mirror.md)
@@ -255,7 +254,7 @@ FALL BREAK—NO CLASS
 #### Tuesday 11/12
 - Survey presentations 8: Taeyoon Choi, Martin Howse
 - Magic Mirror crit
-- In-class reading and discussion: Mark Weiser, "The Computer for the 21st Century" (1991)
+- **Homework for next class**: read Mark Weiser, "The Computer for the 21st Century" (1991)
 - Introduction to Arduino
 
 #### Thursday 11/14
