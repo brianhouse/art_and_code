@@ -72,14 +72,17 @@ print()
 """
     absence -5%
     distraction (late or social media use) -2.5%
+    capped at -20%
 
 """
 
-final_grade = raw_grade
-final_grade *= 1.0 - (student['absences'] * 0.05)
-final_grade *= 1.0 - (student['distractions'] * 0.025)
+absence_factor = student['absences'] * 0.05
+absence_factor += student['distractions'] * 0.025
+absence_factor = min(absence_factor, .2)
 print(student['absences'], 'absences')
 print(student['distractions'], 'distractions')
+print('Absence factor: -%.2f%%' % (absence_factor * 100))
+final_grade = raw_grade - absence_factor
 print()
 
 
