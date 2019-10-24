@@ -20,7 +20,7 @@ Adapt your touch instrument to your phone, tablet, or other mobile device. Use m
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />    
     <script src="p5.js"></script>
     <script src="p5.sound.js"></script>    
-    <script src="sketch_ref.js"></script>
+    <script src="sketch.js"></script>
     <style type="text/css">
         html, body {
             width: 100%;
