@@ -219,7 +219,7 @@ FALL BREAK—NO CLASS
 #### Tuesday 10/22
 - Drawing Tool crit
 - Survey presentations 5: Janet Cardiff, Ryoji Ikeda
-- **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004)
+<!-- - **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004) -->
 
 #### Thursday 10/24
 - Begin [Sketch #7: Touch Instrument 1](assignments/07_touch_instrument.md) (Part 1)
@@ -230,7 +230,8 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 10/29
 - Survey presentations 6: Blast Theory, Lauren McCarthy
-- **Homework for next class**: read Laura Kurgan, "You Are Here: Information Drift" (1994)
+<!-- - **Homework for next class**: read Laura Kurgan, "You Are Here: Information Drift" (1994) -->
+- **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004)
 
 #### Thursday 10/31
 - Begin [Sketch #7 cont'd: Touch Instrument 2](assignments/07_touch_instrument.md) (Part 2)

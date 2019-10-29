@@ -172,3 +172,16 @@ function mouseClicked() {
 
 }
 ```
+
+### Local webserver
+
+In order for p5 to load images and sounds, you will need to set up a local webserver.
+
+The easiest option is [Webserver for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/)
+
+Other options are discussed [here](https://github.com/processing/p5.js/wiki/Local-server).
+
+
+### Sound format converter
+
+Convert your sounds to mp3 using [https://www.media.io](https://www.media.io).
