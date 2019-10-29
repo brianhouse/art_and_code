@@ -28,6 +28,7 @@ Adapt your touch instrument to your phone, tablet, or other mobile device. Use m
             margin: 0;
             padding: 0;
             background-color: rgb(0, 0, 255);
+            touch-action: none;
         }
     </style>
 </head>
@@ -170,6 +171,16 @@ function mouseClicked() {
         }
     }
 
+}
+
+// add these to make it work for touch screens
+function touchStarted() {
+    mousePressed()   
+    mouseClicked()
+}
+
+function touchEnded() {
+    mouseReleased()   
 }
 ```
 
