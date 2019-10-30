@@ -25,9 +25,3 @@ Some additional things to keep in mind when presenting:
 - have questions to invite the feedback that will be most helpful to you
 - listen and take notes
 
-
-## In this course
-
-Crit in Digital Media I will be done in small groups.
-
-Each person in the group has 10 minutes to show their work and have it discussed. The whole group is responsible for watching the time. When you are presenting, make sure to leave time for comments.
