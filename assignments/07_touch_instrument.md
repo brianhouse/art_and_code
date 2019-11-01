@@ -198,3 +198,191 @@ Other options are discussed [here](https://github.com/processing/p5.js/wiki/Loca
 ### Sound format converter
 
 Convert your sounds to mp3 using [https://www.media.io](https://www.media.io).
+
+
+### Loading images and sound (+ reverb)
+
+```javascript
+let pio
+let bark
+let reverb
+
+function preload() {
+    pio = loadImage('test.jpg')
+    bark = loadSound('bark.mp3')
+}
+
+
+function setup() {
+
+    let canvas = createCanvas(windowWidth, windowHeight)
+    canvas.parent("p5")
+
+    reverb = new p5.Reverb()
+    bark.disconnect()
+
+}
+
+
+function draw() {
+
+    background(0, 255, 0)
+    if (mouseIsPressed) {
+        image(pio, mouseX - pio.width/2, mouseY - pio.height/2)
+    }
+
+}
+
+
+function mousePressed() {
+
+    let reverb_time = map(mouseY, 0, height, .1, 3)
+    reverb.process(bark, reverb_time, 2)
+    bark.play()
+
+}
+```
+
+
+### Oscillator + reverb example
+
+```javascript
+let osc
+let env
+let reverb
+let frequency = 50
+
+function setup() {
+
+    let canvas = createCanvas(windowWidth, windowHeight)
+    canvas.parent("p5")
+
+    osc = new p5.Oscillator()
+    osc.freq(200)
+    osc.amp(0)
+
+    env = new p5.Envelope()
+    env.setADSR(0.01, .1, 1, 0.1)
+    osc.amp(env)
+
+    reverb = new p5.Reverb()
+    reverb.disconnect()
+
+}
+
+
+function draw() {
+
+    background(0, 255, 0)
+
+}
+
+function mousePressed() {
+
+    osc.start()
+    env.triggerAttack()
+    mouseDragged()
+
+}
+
+function mouseReleased() {
+
+    env.triggerRelease()
+
+}
+
+function mouseDragged() {
+
+    frequency = map(mouseY, 0, height, 2000, 50)
+    osc.freq(frequency)
+
+}
+
+function keyPressed() {
+
+    if (keyIsDown(UP_ARROW)) {
+        print('reverb on')
+        osc.disconnect()
+        reverb.connect()
+        reverb.process(osc, 2, 3)
+    }
+
+}
+
+function keyReleased() {
+
+    print('reverb off')
+    reverb.disconnect()
+    osc.connect()
+
+}
+```
+
+### Noise + bandpass filter example
+
+```javascript
+
+let noise
+let env
+let bandpass  // declare variable for the filter 
+
+let frequency = 50 // set initial frequency value
+
+function setup() {
+
+    let canvas = createCanvas(windowWidth, windowHeight)
+    canvas.parent("p5")
+
+    noise = new p5.Noise()
+    noise.setType('white')
+    noise.amp(0)
+
+    env = new p5.Envelope()
+    env.setADSR(0.1, .1, .5, 0.1)
+    noise.amp(env)
+
+    // make a new bandpass filter
+    bandpass = new p5.BandPass()
+
+    // route the noise through the filter
+    noise.disconnect()
+    noise.connect(bandpass)
+
+}
+
+
+function draw() {
+
+    background(0, 255, 0)
+
+}
+
+function mousePressed() {
+
+    noise.start()
+    env.triggerAttack()
+
+    mouseDragged()
+
+}
+
+function mouseReleased() {
+
+    env.triggerRelease()
+
+}
+
+function mouseDragged() {
+
+    // map frequency to mouse position
+    frequency = map(mouseY, 0, height, 2000, 50)
+
+    // set the bandpass frequency and filter width
+    bandpass.set(frequency, 10)
+
+}
+
+
+// https://p5js.org/examples/sound-filter-bandpass.html
+
+```
