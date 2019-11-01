@@ -222,7 +222,7 @@ FALL BREAK—NO CLASS
 <!-- - **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004) -->
 
 #### Thursday 10/24
-- Begin [Sketch #7: Touch Instrument 1](assignments/07_touch_instrument.md)
+- Begin [Sketch #7: Touch Instrument](assignments/07_touch_instrument.md)
 - Work time
 
 
