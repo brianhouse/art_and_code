@@ -5,7 +5,7 @@ Choose a [famous painting or other artwork from art history](https://www.google.
 Your piece should be presented on a webpage next to an image of the original artwork. The page should be hosted on github—email a working URL (plus a link to the original artwork) to the professor before class.
 
 
-### p5 Reference
+### p5 reference
 
 Basic setup and drawing
 ```javascript

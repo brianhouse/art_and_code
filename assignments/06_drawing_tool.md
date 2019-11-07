@@ -4,7 +4,7 @@ Create a software drawing tool using p5. Similar to [MacPaint](https://en.wikipe
 
 Your piece should be hosted on github—email a working URL to the professor before class.
 
-### p5 Reference
+### p5 example
 
 A basic drawing tool might look like this:  
 <br />
