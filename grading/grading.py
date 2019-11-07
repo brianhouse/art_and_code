@@ -78,7 +78,7 @@ print()
 
 absence_factor = student['absences'] * 0.025
 absence_factor += student['distractions'] * 0.0125
-absence_factor = min(absence_factor, .2)
+absence_factor = min(absence_factor, .1)
 print(student['absences'], 'absences')
 print(student['distractions'], 'distractions')
 print('Absence factor: -%.2f%%' % (absence_factor * 100))
