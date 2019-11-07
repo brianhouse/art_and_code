@@ -12,7 +12,7 @@ Crits [here](https://docs.google.com/document/d/1YUja1IIkuvRTVeSMl5lbKXGiYiwhC44
 Adapt your touch instrument to your phone, tablet, or other mobile device. Use multi-touch gestures to take advantage of the greater expressivity of the touch screen. Additionally, incorporate preloaded samples into your instrument.
  -->
 
-### HTML Template
+### HTML template
 
 ```HTML
 <html>
