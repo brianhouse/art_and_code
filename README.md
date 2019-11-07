@@ -38,7 +38,7 @@ Each week we will read short primary texts in class that are important to the de
 In addition, it is recommended that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course.
 
 ### Attendance and participation
-You must attend and thoughtfully participate in every class. An unexcused absence will result in a reduction of your final grade by 5%. Excused absences must be discussed with me *prior* to the class to arrange for completing missed work. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
+You must attend and thoughtfully participate in every class. An unexcused absence will result in a reduction of your final grade by 2.5%. Excused absences must be discussed with me *prior* to the class and arrange for completing missed work. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
 
 
 ## Resources and Policies
