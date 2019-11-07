@@ -253,33 +253,32 @@ FALL BREAK—NO CLASS
 
 #### Tuesday 11/12
 - Survey presentations 8: Taeyoon Choi, Martin Howse
-- Magic Mirror crit
-- **Homework for next class**: read Mark Weiser, "The Computer for the 21st Century" (1991)
-- Introduction to Arduino
+- work time
+
 
 #### Thursday 11/14
-- Begin [Sketch #9: Heartbeat Amplifier](assignments/09_heartbeat_amplifier.md)
-- Work time
+- Magic Mirror crit
+- **Homework for next class**: read Mark Weiser, "The Computer for the 21st Century" (1991)
 
 
 ### Week 12
 
 #### Tuesday 11/19
 - Survey presentations 9: Cory Arcangel, Claudia Hart
+- Introduction to Arduino
+- Begin [Sketch #9: Heartbeat Amplifier](assignments/09_heartbeat_amplifier.md)
 - Work time
 
+
 #### Thursday 11/21
-- Heartbeat Amplifier crit
 - Work time
 
 
 ### Week 13
 
 #### Tuesday 11/26
-- Introduction to projection mapping
-- Portfolio assignment
+- Heartbeat Amplifier crit
 - In-class reading and discussion: Ali Momeni and Stephanie Sherman, "A Manual for Urban Projection"
-- Begin [Final Project: Projected Worlds](assignments/10_projected_worlds.md)
 
 #### Thursday 11/28
 THANKSGIVING BREAK—NO CLASS  
@@ -288,7 +287,9 @@ THANKSGIVING BREAK—NO CLASS
 ### Week 14
 
 #### Tuesday 12/3
-- Work time
+- Introduction to projection mapping
+- Portfolio assignment
+- Begin [Final Project: Projected Worlds](assignments/10_projected_worlds.md)
 
 
 #### Thursday 12/5
