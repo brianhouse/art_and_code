@@ -24,7 +24,7 @@ try:
     with open(sys.argv[1].split('.')[0] + '.yaml') as f:
         print(sys.argv[1].upper().split('.')[0])
         print()
-        student = yaml.load(f.read())
+        student = yaml.safe_load(f.read())
 except IndexError:
     print('[student]')
     print()
@@ -76,8 +76,8 @@ print()
 
 """
 
-absence_factor = student['absences'] * 0.05
-absence_factor += student['distractions'] * 0.025
+absence_factor = student['absences'] * 0.025
+absence_factor += student['distractions'] * 0.0125
 absence_factor = min(absence_factor, .2)
 print(student['absences'], 'absences')
 print(student['distractions'], 'distractions')
