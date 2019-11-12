@@ -93,3 +93,116 @@ function draw() {
 }
 
 ```
+
+
+### Add a cheek point
+
+```javascript
+        let anchor1X = positions[39][0]
+        let anchor1Y = positions[39][1]
+
+        let anchor2X = positions[12][0]
+        let anchor2Y = positions[12][1]
+
+        let cheekX = (anchor1X + anchor2X) / 2
+        let cheekY = (anchor1Y + anchor2Y) / 2
+        fill(255, 100, 0)
+        ellipse(cheekX, cheekY, 30, 30)
+```        
+
+
+### Darth Vader mask example with rotation
+
+```javascript
+let capture
+let tracker
+
+let darth
+
+function preload() {
+
+    darth = loadImage('darth.png')
+
+}
+
+function setup() {
+
+    createCanvas(800, 600)
+
+    // start capturing video
+    capture = createCapture(VIDEO)
+    capture.size(800, 600)
+    capture.hide()
+
+    // create the tracker
+    tracker = new clm.tracker()
+    tracker.init()
+    tracker.start(capture.elt)    
+
+}
+
+
+function draw() {    
+
+    background(0)
+    
+    // show the video feed
+    image(capture, 0, 0, capture.width, capture.height)
+
+    // get data from tracker
+    let positions = tracker.getCurrentPosition()
+
+    if (positions.length > 0) {  
+
+        // define some reference positions for the nose and on either side of the face
+        let noseX = positions[62][0]
+        let noseY = positions[62][1]
+
+        let bridgeX = positions[33][0]
+        let bridgeY = positions[33][1]
+
+        let faceLeftX = positions[1][0]
+        let faceLeftY = positions[1][1]
+
+        let faceRightX = positions[13][0]
+        let faceRightY = positions[13][1]
+
+
+        // measure the width of the face
+        let face_width = dist(faceLeftX, faceLeftY, faceRightX, faceRightY)
+        print(face_width)
+
+        let ratio = darth.height / darth.width          // the aspect ratio of the image
+        let w = face_width * 2                          // make darth's helmet a big bigger
+        let h = w * ratio                               // define the height in terms of the width
+
+  
+        // get the angle of head tilt
+        let v1 = createVector(bridgeX - noseX, bridgeY - noseY)
+        let v2 = createVector(0, -100)
+        let a = v2.angleBetween(v1)
+
+        push()        
+        translate(noseX, noseY) // rotate around the nose
+        angleMode(DEGREES)
+        rotate(a)
+        image(darth, -w/2, -h/2, w, h)    // center the scaled image   
+        pop()
+
+        // draw the points for reference
+        push()
+        fill(0, 255, 0)
+        ellipse(noseX, noseY, 10, 10)
+        ellipse(bridgeX, bridgeY, 10, 10)
+        ellipse(faceLeftX, faceLeftY, 10, 10)
+        ellipse(faceRightX, faceRightY, 10, 10)
+        line(faceLeftX, faceLeftY, faceRightX, faceRightY)
+        line(noseX, noseY, bridgeX, bridgeY)
+        pop()        
+
+
+    }
+
+}
+
+```
