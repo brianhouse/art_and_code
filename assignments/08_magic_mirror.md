@@ -6,6 +6,8 @@ Download [this template](08_magic_mirror.zip) to begin, which includes the [clmt
 
 Your mirror should in some way address the relationship between our physical and digital identities.
 
+Crits [here](https://docs.google.com/document/d/1RTdNSnuo-Aji3hhhp40rOsZyhjG0r8lnc9J81x7_Xuk/edit?usp=sharing)
+
 ### p5 template
 
 ```javascript
