@@ -1,17 +1,17 @@
 # Sketch #9: Heartbeat Amplifier
 
-1. Assemble an Arduino Nano microcontroller and pulse sensor
-    1. Plug Arduino into breadboard straddling the gap
-    1. Put clear sticker on flat side of pulse sensor
-    1. Put electrical tape on component side of pulse sensor
-    1. Connect ground, 5V, and A0 leads from pulse sensor to Arduino
+* Assemble an Arduino Nano microcontroller and pulse sensor
+    * Plug Arduino into breadboard straddling the gap
+    * Put clear sticker on flat side of pulse sensor
+    * Put electrical tape on component side of pulse sensor
+    * Connect ground, 5V, and A0 leads from pulse sensor to Arduino
 
-1. Program the Arduino
-    1. Download the [Arduino IDE](https://www.arduino.cc/en/main/software), unzip it, and copy the application to your Applications folder
-    1. Open the the Arduino IDE (On a mac, if you receive the note "Apple cannot check it for malicious software," try holding down the control-key and trying again)
-    1. Install any libraries suggested by the application
-    1. Under Tools, set the board to "Arduino Nano Every", and Registers Emulation to "None"
-    1. Write code and see data in Serial Plotter:
+* Program the Arduino
+    * Download the [Arduino IDE](https://www.arduino.cc/en/main/software), unzip it, and copy the application to your Applications folder
+    * Open the the Arduino IDE (On a mac, if you receive the note "Apple cannot check it for malicious software," try holding down the control-key and trying again)
+    * Install any libraries suggested by the application
+    * Under Tools, set the board to "Arduino Nano Every", and Registers Emulation to "None"
+    * Write code and see data in Serial Plotter:
 ```c
 int value;
 
@@ -29,11 +29,11 @@ void loop() {
 }
 ```
 
-1. Add an LED
-    1. Connect a 221.ohm resistor from D12 to a new breadboard row
-    1. Connect an LED from the resistor to the ground rail
-    1. Connect the ground rail to ground
-    1. Modify code:
+* Add an LED
+    * Connect a 220 ohm resistor from D12 to a new breadboard row
+    * Connect an LED from the resistor to the ground rail
+    * Connect the ground rail to ground
+    * Modify code:
 
 In `setup`:
 ```c
@@ -49,9 +49,9 @@ In `loop`:
   }
  ```
 
-1. Communicate with P5
-    1. Download the [p5.serialcontrol](https://github.com/p5-serial/p5.serialcontrol/releases) app (make sure Serial Plotter is closed in the Arduino IDE)
-    1. Download this [p5 template](1._heartbeat_amplifer.zip)
-    1. Modify the serial port
-    1. Customize your heartbeat input
+* Communicate with P5
+    * Download the [p5.serialcontrol](https://github.com/p5-serial/p5.serialcontrol/releases) app (make sure Serial Plotter is closed in the Arduino IDE)
+    * Download this [p5 template](09_heartbeat_amplifer.zip)
+    * Modify the serial port
+    * Customize your heartbeat input
 
