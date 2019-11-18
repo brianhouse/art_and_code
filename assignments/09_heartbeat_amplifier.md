@@ -1,10 +1,10 @@
 # Sketch #9: Heartbeat Amplifier
 
 * Assemble an Arduino Nano microcontroller and pulse sensor
-	0. Plug Arduino into breadboard straddling the gap
-	0. Put clear sticker on flat side of pulse sensor
-	0. Put electrical tape on component side of pulse sensor
-	0. Connect ground, 5V, and A0 leads from pulsesensor to Arduino
+    0. Plug Arduino into breadboard straddling the gap
+    0. Put clear sticker on flat side of pulse sensor
+    0. Put electrical tape on component side of pulse sensor
+    0. Connect ground, 5V, and A0 leads from pulsesensor to Arduino
 
 * Program the Arduino
 	0. Download the [Arduino IDE](https://www.arduino.cc/en/main/software), unzip it, and copy the application to your Applications folder
