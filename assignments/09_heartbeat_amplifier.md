@@ -51,7 +51,7 @@ In `loop`:
 
 * Communicate with P5
     * Download the [p5.serialcontrol](https://github.com/p5-serial/p5.serialcontrol/releases) app (make sure Serial Plotter is closed in the Arduino IDE)
-    * Download this [p5 template](09_heartbeat_amplifer.zip)
+    * Download this [p5 template](09_heartbeat_amplifier.zip)
     * Modify the serial port
     * Customize your heartbeat input
 
