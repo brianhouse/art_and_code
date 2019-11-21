@@ -55,3 +55,26 @@ In `loop`:
     * Modify the serial port
     * Customize your heartbeat input
 
+
+* Add a piezo and potentiometer
+
+Add to `setup`:
+```c
+  pinMode(11, OUTPUT);
+```
+
+Add to `loop`:
+```c
+  level = analogRead(1);
+  Serial.println(level);
+
+  if (value > 530) {
+    digitalWrite(12, HIGH);
+    int frequency = map(level, 0, 1024, 200, 2000);
+    tone(11, frequency);
+  } else {
+    digitalWrite(12, LOW);
+    noTone(11);
+  }
+ ```
+
