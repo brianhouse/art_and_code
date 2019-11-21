@@ -272,13 +272,14 @@ FALL BREAK—NO CLASS
 
 #### Thursday 11/21
 - Heartbeat Amplifier, continued.
+- Begin [Final Project](assignments/10_final_project.md)
 
 
 ### Week 13
 
 #### Tuesday 11/26
-- Begin [Final Project](assignments/10_final_project.md)
-- In-class reading and discussion: Ali Momeni and Stephanie Sherman, "A Manual for Urban Projection"
+- Project proposals due
+
 
 #### Thursday 11/28
 THANKSGIVING BREAK—NO CLASS  
@@ -287,20 +288,19 @@ THANKSGIVING BREAK—NO CLASS
 ### Week 14
 
 #### Tuesday 12/3
-- Portfolio assignment
+- Work time
 
 
 #### Thursday 12/5
-- Work time
+- Present works-in-progress
 
 
 ### Week 15
 
 #### Tuesday 12/10
-- Prepare final work
+- Work time
 
 ### Exam Week
 
 #### Tuesday 12/17 18:00–21:00
-Final work projected on campus
-Web portfolio due
+- Work installed, final crit
