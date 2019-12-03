@@ -6,6 +6,15 @@ Tuesday / Thursday 8:50–11:20, Fields 205
 Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
 Office hours Mondays 13:00–15:00
 
+Extended office hours for final:  
+12/3 Tuesday 11:20-13:20  
+12/4 Wednesday 14:00-17:00  
+12/5 Thursday 11:20-13:20  
+12/9 Monday 10:00-12:00  
+12/9 Monday 13:00-15:00  
+
+
+
 ## Course Description
 Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, real-time video processing, the web, and physical sensors. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form.
 
