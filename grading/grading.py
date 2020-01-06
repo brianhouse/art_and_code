@@ -41,8 +41,10 @@ except Exception as e:
 
 """
 assignment_grade = sum(student['assignments'].values()) / (len(student['assignments']) * 3) + .15
-print(f"This sketch: {list(student['assignments'].values())[-1]}")
-print('Sketches so far: %.2f%%' % (assignment_grade * 100))
+# print(f"This sketch: {list(student['assignments'].values())[-1]}")
+print(f"Final project: {list(student['assignments'].values())[-1]}")
+# print('Sketches so far: %.2f%%' % (assignment_grade * 100))
+print('Sketches: %.2f%%' % (assignment_grade * 100))
 
 
 """
@@ -80,21 +82,21 @@ final_grade = raw_grade - absence_factor
 final_grade *= 100
 
 
-if final_grade > 90:
+if final_grade >= 90:
     letter_grade = 'A'
-elif final_grade > 80:
+elif final_grade >= 80:
     letter_grade = 'B'
-elif final_grade > 70:
+elif final_grade >= 70:
     letter_grade = 'C'
-elif final_grade > 60:
+elif final_grade >= 60:
     letter_grade = 'D'
 else:
     letter_grade = 'F'
 
 
 
-print('Course so far: %.2f%% (%s)' % (final_grade, letter_grade))
-
+# print('Course so far: %.2f%% (%s)' % (final_grade, letter_grade))
+print('Final course grade: %.2f%% (%s)' % (final_grade, letter_grade))
 
 # + and - assigned at my discretion based on participation in class
 
