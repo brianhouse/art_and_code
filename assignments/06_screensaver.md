@@ -3,3 +3,9 @@
 Create a animation in p5 that continually changes but never exactly repeats. Make use of the `random()` function to achieve this. Your screensaver should convey a compelling sense of complexity that makes us want to watch it unfold.
 
 Your piece should be hosted on github—email a working URL to the professor before class.
+
+
+
+/
+this could be about simulation, or natural worlds, or something. change the name, screensaver is stupid.
+

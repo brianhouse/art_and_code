@@ -7,6 +7,3 @@ Now write step by step instructions (a "score") that when followed will result i
 Give the instructions to someone else and have them follow them to make a new drawing. 
 
 Display the two drawings together.
-
-(Keep your instructions for next week.)
-

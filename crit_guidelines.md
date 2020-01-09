@@ -2,7 +2,7 @@
 
 When commenting on someone's work, consider the following three "C"s:
 - Concept: the intent behind the work
-- Construction: how the work was made and its formal and aesthetic qualities
+- Craft: how the work was made and its formal and aesthetic qualities
 - Context: how the work relates to its precedents and to contemporary discourse
 
 Ask questions to clarify the three Cs so that you can learn from each other as well as make thoughtful comments.

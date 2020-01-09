@@ -1,22 +1,14 @@
 # ART 112: DIGITAL MEDIA I
 
-Tuesday / Thursday 8:50–11:20, Fields 205  
+Monday / Wednesday 8:50–11:20, Fields 205  
 [https://github.com/brianhouse/ART112](https://github.com/brianhouse/ART112)  
 
 Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
 Office hours Mondays 13:00–15:00
 
-Extended office hours for final:  
-12/3 Tuesday 11:20-13:20  
-12/4 Wednesday 14:00-17:00  
-12/5 Thursday 11:20-13:20  
-12/9 Monday 10:00-12:00  
-12/9 Monday 13:00-15:00  
-
-
 
 ## Course Description
-Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, real-time video processing, the web, and physical sensors. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form.
+Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, the web, and real-time video processing. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form.
 
 No prior experience is required. But asking questions is!
 
@@ -30,24 +22,28 @@ No prior experience is required. But asking questions is!
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Week #4, you will post sketches online through your [GitHub](https://github.com) account. Sketches will be [critiqued](crit_guidelines.md) during class in small groups. 
+This course is built around open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Sketch #3, you will post work online through your [GitHub](https://github.com) account. Sketches must include a title and a 3-sentence artist statment and will be [critiqued](crit_guidelines.md) during class.
 
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. I will grade the sketches from 1–3 points as follows:  
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. Sketches will be graded from 1-3 each for concept and craft:
 
 1. *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise  
-2. *satisfactory* sketches are functional and conceptually sound as expected  
+2. *satisfactory* sketches are conceptually or technically sound as expected  
 3. *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
 
+A total of 5 or 6 points is an A, 4 is a B, 3 is a C, and 2 is a D.
+
+
 ### Survey presentations
-Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which should be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade, and will also be marked on a scale of 1-3.
+Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade, and will be marked on a scale of 1-3 (unsatisfactory, satisfactory, exemplary).
 
 ### Reading
-Each week we will read short primary texts in class that are important to the development of digital form. These will be provided in class.
 
-In addition, it is recommended that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course.
+
+In addition, it is required that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course. Additional primary texts may be provided to provide background for the development of digital form.
+
 
 ### Attendance and participation
-You must attend and thoughtfully participate in every class. An unexcused absence will result in a reduction of your final grade by 2.5%. Excused absences must be discussed with me *prior* to the class and arrange for completing missed work. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
+You must attend and thoughtfully participate in every class. After the first absence, every absence will result in a reduction of your final grade by 2.5%. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
 
 
 ## Resources and Policies
@@ -75,241 +71,153 @@ If you have a disability that may impact your academic performance, you may requ
 
 ### Week 1
 
-#### Tuesday 9/3
+#### Wednesday 1/22
 - Introduction
-- In-class reading and discussion: Sol Lewitt and Yoko Ono
-<!-- 
-    Fill out surveys
-    Roster: 1 additional space but big waitlist, please drop soon if you wont take it (priority to sophomore art majors?)
-    Introduction riff: what is digital media? computer, algorithm
-    Review syllabus
-    Read Ono and Lewitt
-    Drawing exercise
-    Show and discuss exercise
-    Show sampling of digital artists
-    Reiterate roster
--->
+- In-class exercise, via Sol Lewitt and Yoko Ono: scores
 
-#### Thursday 9/5
-- Overview of [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
-- In-class sketch and [crit](crit_guidelines.md), [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
-- **Homework for next class**: read Alan Turing, "Computing Machinery and Intelligence" (1950)
-
-<!--
-    10  Intros
-    30  Demo: LOGO
-    50  Code studio
-    60  Crit
-    Explain crit format        
--->
 
 ### Week 2
 
-#### Tuesday 9/10
-- Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
-- In-class discussion, Turing 
-- Introduction to [BASIC](https://en.wikipedia.org/wiki/BASIC)
+#### Monday 1/27
+- In-class work and [crit](crit_guidelines.md), [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
 - **Homework for next class**: download [Zork](disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e)
 
-<!--
-30  Survey presentations
-30  Discussion of Turing
-10  Break    
-/
-70  Tutorial: BASIC! variables; if-then [CONDITIONALS]
--->
-
-#### Thursday 9/12
-- Begin [Sketch #2: Narrative Maze](assignments/02_narrative_maze.md)
-- Work time  
-<!--
-    assignment
-    reiterate
--->
+#### Wednesday 1/29
+- Introduction to variables and conditionals
+- Begin [Sketch #2: Nonlinear Narrative](assignments/02_nonlinear_narrative.md)
 
 
 ### Week 3
 
-#### Tuesday 9/17
-- Narrative Maze crit
-- Introduction to HTML
-- **Homework for next class**: read Tim Berners-Lee, "The World-Wide Web" (1994)  
-
-<!--
-    
-45  Crit  
-15  Break
--
-30  github and sublime
-60  Riff web and tutorial: HTML, css; 
-
--->
-
-#### Thursday 9/19
-- Begin [Sketch #3: Hypertext](assignments/03_hypertext.md)
+#### Monday 2/3
+- Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
 - Work time
+
+#### Wednesday 2/5
+- Sketch #2 crit
 
 
 ### Week 4
 
-#### Tuesday 9/24
-- Survey presentations 2: Jodi, Roman Verostko
-- Hypertext crit
-<!-- - In-class reading and discussion: Harold Cohen, "What's an Image?" (1979) -->
-- Introduction to [p5.js](https://p5js.org)  
+#### Monday 2/10
+- Introduction to HTML
+- Begin [Sketch #3: Homepage](assignments/03_homepage.md)
 
-<!--
-
-45  Crit
-15  break
--
-20  Reading
-20  Discussion
-30  Survey presentations
--
-40  p5
-
--->
-
-#### Thursday 9/26
-- Begin [Sketch #4: Digital Interpretation](assignments/04_interpretation.md)
-- Work time  
+#### Wednesday 2/12
+- Sketch #3 crit
 
 
 ### Week 5
 
-#### Tuesday 10/1
-- Survey presentations 3: Lia, Casey Reas
-- Digital Interpretation crit
-- **Homework for next class**: read Lillian Schwartz, from _The Computer Artist's Handbook_ (1992)
+#### Monday 2/17
+- Survey presentations 2: Jodi, Roman Verostko
+- Introduction to [p5.js](https://p5js.org) and coordinate systems
+- Begin [Sketch #4: Digital Interpretation](assignments/04_interpretation.md)
 
-<!--
-
-45  Crit
-15  break
--
-20  Reading
-20  Discussion
-30  Survey presentations
--
-40  random, etc
-
--->
-
-#### Thursday 10/3
-- Begin [Sketch #5: Generative Screensaver](assignments/05_screensaver.md)
+#### Wednesday 2/19
 - Work time
 
 
 ### Week 6
 
-#### Tuesday 10/8
-- Generative Screensaver crit
-- Begin [Sketch #6: Drawing Tool](assignments/06_drawing_tool.md)
-- **Homework for next class**: watch [Douglas Englebart, "The Mother of All Demos"](https://www.youtube.com/watch?v=VScVgXM7lQQ&list=PLCGFadV4FqU2yAqCzKaxnKKXgnJBUrKTE)
+#### Monday 2/24
+- Digital Interpretation crit
+- Survey presentations 3: American Artist, Liat Berdugo
 
 
-#### Thursday 10/10
-FALL BREAK—NO CLASS
+#### Wednesday 2/26
+- Introduction to events and randomness
+- Begin [Sketch #5: Drawing Tool](assignments/05_drawing_tool.md)
 
 
 ### Week 7
 
-#### Tuesday 10/15
-- Survey presentations 4: American Artist, Liat Berdugo
-- **Homework for next class**: read Alan Kay, "A Personal Computer for Children of All Ages" (1972)
+#### Monday 3/2
+- Survey presentations 4: Lia, Casey Reas
 - Work time
 
-#### Thursday 10/17
+#### Wednesday 3/4
 - Work time
+
 
 ### Week 8
 
-#### Tuesday 10/22
+#### Monday 3/9
+- Survey presentations 5: Cory Arcangel, Ryoji Ikeda
 - Drawing Tool crit
-- Survey presentations 5: Janet Cardiff, Ryoji Ikeda
-<!-- - **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004) -->
 
-#### Thursday 10/24
-- Begin [Sketch #7: Touch Instrument](assignments/07_touch_instrument.md)
-- Work time
+#### Wednesday 3/11
+- Introduction to data structures and animation
+- Begin [Sketch #6: Screensaver](assignments/06_screensaver.md)
 
 
 ### Week 9
 
-#### Tuesday 10/29
-- Survey presentations 6: Blast Theory, Lauren McCarthy
-<!-- - **Homework for next class**: read Laura Kurgan, "You Are Here: Information Drift" (1994) -->
-- **Homework for next class**: read Tara Rodgers interviews Laetitia Sonami (2004)
+#### Monday 3/16
+- Survey presentations 6: Lauren McCarthy, Claudia Hart
+- Work time
 
-#### Thursday 10/31
+
+#### Wednesday 3/18
+- Sketch #6 preliminary crit
 - Work time
 
 
 ### Week 10
 
-#### Tuesday 11/5
-- Survey presentations 7: Raphael Lozano-Hemmer, Rick Silva
-- Touch Instrument crit
-- **Homework for next class**: read Rosa Menkman, "Beyond Resolution" (2018)
+#### Monday 3/30
+- Survey presentations 7: Raphael Lozano-Hemmer, Blast Theory
+- Sketch #6 crit
 
-#### Thursday 11/7
-- Begin [Sketch #8: Magic Mirror](assignments/08_magic_mirror.md)
+#### Wednesday 4/1
+- Begin [Sketch #7: Machine gaze](assignments/07_machine_gaze.md)
 - Work time
 
 
 ### Week 11
 
-#### Tuesday 11/12
-- Survey presentations 8: Taeyoon Choi, Martin Howse
-- work time
+#### Monday 4/6
+- Survey presentations 8: Addie Wagenknecht, Trevor Paglen
+- Work time
 
-
-#### Thursday 11/14
-- Magic Mirror crit
-- **Homework for next class**: read Mark Weiser, "The Computer for the 21st Century" (1991)
+#### Wednesday 4/8
+- Workt time
 
 
 ### Week 12
 
-#### Tuesday 11/19
-- Survey presentations 9: Cory Arcangel, Claudia Hart
-- Introduction to Arduino
-- Begin [Sketch #9: Heartbeat Amplifier](assignments/09_heartbeat_amplifier.md)
-- Work time
+#### Monday 4/13
+- Sketch #7 crit
 
 
-#### Thursday 11/21
-- Heartbeat Amplifier, continued.
-- Begin [Final Project](assignments/10_final_project.md)
+#### Wednesday 4/15
+- Begin [Final Project](assignments/8_final_project.md)
 
 
 ### Week 13
 
-#### Tuesday 11/26
+#### Monday 4/20
 - Project proposals due
 
-
-#### Thursday 11/28
-THANKSGIVING BREAK—NO CLASS  
+#### Wednesday 4/22
+- Work time
 
 
 ### Week 14
 
-#### Tuesday 12/3
+#### Monday 4/27
+- Final project preliminary review
+
+
+#### Wednesday 4/29
+- Evaluations
 - Work time
 
 
-#### Thursday 12/5
-- Present works-in-progress
-
-
-### Week 15
-
-#### Tuesday 12/10
-- Work time
 
 ### Exam Week
 
-#### Tuesday 12/17 18:00–21:00
+#### Monday 5/4 18:00–21:00
 - Work installed, final crit
+
+
