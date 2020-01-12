@@ -4,7 +4,7 @@ Monday / Wednesday 8:50–11:20, Fields 205
 [https://github.com/brianhouse/ART112](https://github.com/brianhouse/ART112)  
 
 Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
-Office hours Mondays 13:00–15:00
+Office hours MTWR 11:30—13:00
 
 
 ## Course Description
@@ -18,6 +18,7 @@ No prior experience is required. But asking questions is!
 - Survey contemporary artists working formally with code and digital media
 - Build a foundation for expanding into other areas of media art practice
 - Gain proficiency programming in javascript with [p5.js](https://p5js.org)
+
 
 ## Assignments and Grading
 
@@ -58,7 +59,7 @@ There is a course fee automatically paid through student accounts when registere
 Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred. If you do not have access to a laptop, email me and we will make arrangements for you to borrow a machine.
 
 ### Open Studio
-All students must complete their own work but are encouraged to help each other. To facilitate collective learning, Fields 205 will be open for working on ART112 sketches and other code projects at the times posted above.
+All students must complete their own work but are encouraged to help each other. To facilitate collective learning, students are encouraged to work in Fields 205.
 
 ### Academic Integrity
 Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College's 'Policies and Procedures' webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
