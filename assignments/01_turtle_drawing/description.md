@@ -9,10 +9,12 @@ The turtle understands instructions like these:
 - `backwards(100)`  Move backwards 100 steps (can be abbreviated `bk`)
 - `penup()`        	Pull the pen up off the paper (can be abbreviated `pu`)
 - `pendown()`       Put the pen down on the paper (can be abbreviated `pd`)
-- ```repeat(4) {  
+- ```
+repeat(4) {  
 	fd(100)
 	rt(90)
-   }```				Repeat the instructions enclosed in brackets four times (makes a square)
+}```
+   Repeat the instructions enclosed in brackets four times (makes a square)
 
 \
 To get the hang of things, have the turtle
@@ -27,6 +29,7 @@ Email your finished (or unfinished) code to the professor along with a screensho
 
 \
 \
+
 #### Angle reference
 
 ![](degrees.gif)
