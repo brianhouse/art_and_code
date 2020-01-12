@@ -36,7 +36,7 @@ Now have the turtle draw a still life from the model in the room.
 
 Email your finished (or unfinished) code to the professor along with a screenshot of your result.  
 
-\
+
 
 #### Angle reference
 
