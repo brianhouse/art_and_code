@@ -80,12 +80,12 @@ If you have a disability that may impact your academic performance, you may requ
 ### Week 2
 
 #### Monday 1/27
-- In-class work and [crit](crit_guidelines.md), [Sketch #1: Turtle drawing](assignments/01_turtle_drawing.md)
+- In-class work and crit, [Sketch #1: Turtle drawing](assignments/01_turtle_drawing/description.md)
 - **Homework for next class**: download [Zork](disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e)
 
 #### Wednesday 1/29
 - Introduction to variables and conditionals
-- Begin [Sketch #2: Nonlinear Narrative](assignments/02_nonlinear_narrative.md)
+- Begin [Sketch #2: Nonlinear Narrative](assignments/02_nonlinear_narrative/description.md)
 
 
 ### Week 3
@@ -95,7 +95,7 @@ If you have a disability that may impact your academic performance, you may requ
 - Work time
 
 #### Wednesday 2/5
-- Sketch #2 crit
+- Sketch #2 [crit](crit_guidelines.md)
 
 
 ### Week 4
