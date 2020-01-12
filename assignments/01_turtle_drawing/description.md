@@ -14,7 +14,7 @@ The turtle understands instructions like these:
 
 Each of these instructions is known as a _function_—we can usually identify a function because it ends with a set of parentheses `()`. Often (but not always), the function takes an _argument_, such as the number of steps to move, the angle of the turn, or the name of the color.
 
-In addition, the turtle can repeat instructions if they are enclosed by braces. The following code makes a square:
+In addition, the turtle can repeat instructions if they are enclosed by braces `{}`. The following code makes a square:
 ```
 repeat(4) {  
   fd(100)
@@ -34,9 +34,8 @@ To get the hang of things, have the turtle
 \
 Now have the turtle draw a still life from the model in the room.
 
-Email your finished (or unfinished) code to the professor along with a screenshot of your result.
+Email your finished (or unfinished) code to the professor along with a screenshot of your result.  
 
-\
 \
 
 #### Angle reference
