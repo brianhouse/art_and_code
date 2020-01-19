@@ -1,10 +1,9 @@
-dev
 .DS_Store
-NEXT.md
-TODO.md
-readings
-class_plans
-student_list.txt
-grading/*.yaml
-best_work
+NOTES.md
+dev
+students/*
 assignments/old
+
+
+
+assignments/01_turtle_drawing/turtle5/

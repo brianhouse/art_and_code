@@ -3,14 +3,13 @@
 Monday / Wednesday 8:50–11:20, Fields 205  
 [https://github.com/brianhouse/ART112](https://github.com/brianhouse/ART112)  
 
-Prof. Brian House, [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
-Office hours MTWR 11:30—13:00
+Prof. Brian House (he/him), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
+Office hours MTWR 11:30–12:30
 
 
 ## Course Description
-Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, the web, and real-time video processing. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form.
+Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, interactive text, the web, and real-time video processing. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form. No prior programming experience is required.
 
-No prior experience is required. But asking questions is!
 
 #### Objectives:
 - Cultivate an ability to think abstractly in terms of algorithms
@@ -23,7 +22,7 @@ No prior experience is required. But asking questions is!
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Sketch #3, you will post work online through your [GitHub](https://github.com) account. Sketches must include a title and a 3-sentence artist statment and will be [critiqued](crit_guidelines.md) during class.
+This course is built around open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Sketch #3, you will post work online through your [GitHub](https://github.com) account. Sketches must include a title and a [3-sentence artist statement](resources/artist_statement_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. Sketches will be graded from 1-3 each for concept and craft:
 
@@ -33,27 +32,23 @@ Sketches cumulatively account for 90% of your final grade. In order to receive c
 
 A total of 5 or 6 points is an A, 4 is a B, 3 is a C, and 2 is a D.
 
-
 ### Survey presentations
 Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade, and will be marked on a scale of 1-3 (unsatisfactory, satisfactory, exemplary).
 
 ### Reading
-
-
-In addition, it is required that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course. Additional primary texts may be provided to provide background for the development of digital form.
-
+It is required that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course. Additional primary texts may be provided to provide background for the development of digital form.
 
 ### Attendance and participation
 You must attend and thoughtfully participate in every class. After the first absence, every absence will result in a reduction of your final grade by 2.5%. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
 
 
-## Resources and Policies
+## Policies
 
-### Syllabus
+### Values
+It is my intent to lead a course that serves students from diverse backgrounds and perspectives, and that our varied life experiences may be a common benefit. Content in this studio art course may at times challenge our aethestic and/or ethical values; free exchange of ideas and critique is encouraged and expected, but harassment and disrespect will not be tolerated. During class discussion and critique we aim to be mindful and generous in our interactions and to make everyone feel heard.
+
+### Dynamic Syllabus
 The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
-
-### Course Fee
-There is a course fee automatically paid through student accounts when registered for this class. The fee helps cover software licensing and sensor hardware. However, open source software will be used whenever possible.
 
 ### Laptop Use
 Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred. If you do not have access to a laptop, email me and we will make arrangements for you to borrow a machine.
@@ -61,11 +56,17 @@ Work for this course should be done on a personal laptop—recent hardware and M
 ### Open Studio
 All students must complete their own work but are encouraged to help each other. To facilitate collective learning, students are encouraged to work in Fields 205.
 
-### Academic Integrity
-Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College's 'Policies and Procedures' webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
+### Course Fee
+There is a course fee automatically paid through student accounts when registered for this class. The fee helps cover software licensing and sensor hardware. However, open source software will be used whenever possible.
 
 ### Accommodations
 If you have a disability that may impact your academic performance, you may request accommodations by submitting documentation  to the Student Support Services Office in Albany Quadrangle (x7192). Staff in the SSSO will notify me of the accommodations for which you are eligible; please also make an appointment to discuss with me personally.  
+
+### Academic Integrity
+Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College's 'Policies and Procedures' webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
+
+### Land Acknowledgement
+The Fields Center for Visual Arts stands on the ancestral homelands of the Multnomah, Kathlamet, Clackamas, Tumwater, Watalala bands of the Chinook, Tualatin Kalapuya, and other indigenous nations of the Columbia River. It is important to acknowledge the original inhabitants of this place and recognize that we are here because of the sacrifices forced upon them. As artists working in Digital Media, we must be aware of and to resist the many ways computation capitalizes upon and perpetuates colonial violence.
 ##
 
 ## Schedule
@@ -81,9 +82,10 @@ If you have a disability that may impact your academic performance, you may requ
 
 #### Monday 1/27
 - In-class work and crit, [Sketch #1: Turtle drawing](assignments/01_turtle_drawing/description.md)
-- **Homework for next class**: download [Zork](disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e)
+- **Homework for next class**: download [Zork](resources/disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e)
 
 #### Wednesday 1/29
+- Introduction to text editors and the command-line
 - Introduction to variables and conditionals
 - Begin [Sketch #2: Nonlinear Narrative](assignments/02_nonlinear_narrative/description.md)
 
