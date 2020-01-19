@@ -1,6 +1,14 @@
 # Sketch #1: Still Life for Turtle
 
-For this sketch, you will give instructions to a "[turtle](https://brianhouse.github.io/turtle5/)" who draws on the screen.
+A computer program is a set of instructions, or a "score," that is interpreted by a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us using an unambiguous formal language—aka code——that it knows how to interpret. 
+
+For this sketch, you will give instructions to a "[turtle](https://brianhouse.github.io/turtle5/)" who will draw on the screen. This time, you will draw a [still life](https://en.wikipedia.org/wiki/Still_life) from the model in the room.
+
+Requirements:
+- Email your finished (or unfinished) code to the professor along with a screenshot of your result.  
+
+
+### Code
 
 The turtle understands instructions like these:
 - `forward(100)`    Move forward 100 steps (abbr: `fd`)
@@ -22,7 +30,7 @@ repeat(4) {
 }
 ```
 
-When code is surrounded by braces `{}`, it's called a _block_ of code.
+`repeat` is a form of _loop_. And when code is surrounded by braces `{}`, it's called a _block_ of code.
 
 
 \
@@ -31,14 +39,15 @@ To get the hang of things, have the turtle
 - draw a triangle
 - draw a circle (possible?)
 
-\
-Now have the turtle draw a still life from the model in the room.
-
-Email your finished (or unfinished) code to the professor along with a screenshot of your result.  
 
 
-
-#### Angle reference
+#### Technical references
 
 ![](degrees.gif)
+
+
+### Conceptual references
+
+- [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
+- [Harold Cohen and AARON](https://www.nytimes.com/2016/05/07/arts/design/harold-cohen-a-pioneer-of-computer-generated-art-dies-at-87.html)
 
