@@ -151,7 +151,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Wednesday 3/11
 - Introduction to data structures and animation
-- Begin [Sketch #6: Screensaver](assignments/06_screensaver.md)
+- Begin [Sketch #6: Simulator](assignments/06_simulator.md)
 
 
 ### Week 9
