@@ -24,16 +24,10 @@ Introduction to computer programming for artists. With creative coding, students
 ### Sketches
 This course is built around open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Sketch #3, you will post work online through your [GitHub](https://github.com) account. Sketches must include a title and a [3-sentence artist statement](resources/artist_statement_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. Sketches will be graded from 1-3 each for concept and craft:
-
-1. *unsatisfactory* sketches fail to fulfill the basic requirements of the exercise  
-2. *satisfactory* sketches are conceptually or technically sound as expected  
-3. *exemplary* sketches show a level of refinement and/or experimentation beyond the basic requirements  
-
-A total of 5 or 6 points is an A, 4 is a B, 3 is a C, and 2 is a D.
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. Sketches will be graded on both concept and craft.
 
 ### Survey presentations
-Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade, and will be marked on a scale of 1-3 (unsatisfactory, satisfactory, exemplary).
+Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Reading
 It is required that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course. Additional primary texts may be provided to provide background for the development of digital form.
