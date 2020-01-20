@@ -5,7 +5,7 @@ A computer program is a set of instructions, or a "score," that is interpreted b
 For this sketch, you will give instructions to a "[turtle](https://brianhouse.github.io/turtle5/)" who will draw on the screen. This time, you will draw a [still life](https://en.wikipedia.org/wiki/Still_life) from the model in the room.
 
 Requirements:
-- Email your finished (or unfinished) code to the professor along with a screenshot of your result.  
+- Email your finished (or unfinished) code to the professor along with an image of your result.  
 
 
 ### Code

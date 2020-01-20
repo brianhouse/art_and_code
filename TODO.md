@@ -1,4 +1,5 @@
 ### next class
+- prepare grading
 - class plan: prep intro
 - artist statement guidelines
 

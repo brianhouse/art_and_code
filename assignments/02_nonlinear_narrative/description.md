@@ -6,7 +6,7 @@ With this sketch, you will create a text-based, nonlinear narrative where the re
 
 Requirements:
 - Your program must demonstrate at least 5 different branching points that create meaningful alternative paths
-- You must articulate your concept with a title and 3-sentence artist statement
+- You must articulate your concept with a title and [3-sentence artist statement](resources/artist_statement_guidelines.md).
 
 
 ### Technical preparation
@@ -73,7 +73,10 @@ if (what is within these parentheses is true) {
 
 Keeping tracking of `()` and `{}` is going to be a major source of headaches in this course. Learn to love it.
 
+
 ### Technical references
+
+
 
 ### Conceptual references
 - Jorge Luis Borges, [_The Garden of Forking Paths_](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths) ([full text](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt))
