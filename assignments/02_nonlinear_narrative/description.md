@@ -14,7 +14,7 @@ Requirements:
 In this assignment, we will be getting familiar with a more fundamental way of interacting with the computer than its graphical user interface: text files and the terminal.
 
 - Download and install [Atom](https://atom.io)
-- Download Install [Node](https://nodejs.org/en/download/)
+- Download install [Node](https://nodejs.org/en/download/)
 - Download and unzip the [template](template.zip)
 - Open the Terminal (`/Applications/Utilities/Terminal.app`) or Windows Command Prompt
 - Change directories to the template folder by typing `cd`, space, and then dragging the folder to the Terminal window
@@ -87,7 +87,7 @@ Lynn Hershmann Leeson, _LORNA_
 Important programming concepts: `if-then` conditionals, functions.
 
 
-Book: 
+Book:
 Shiffman: https://www.youtube.com/watch?v=1Osb_iGDdjk
 
 

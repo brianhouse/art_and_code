@@ -1,6 +1,6 @@
 # Sketch #1: Still Life for Turtle
 
-A computer program is a set of instructions, or a "score," that is interpreted by a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us using an unambiguous formal language—aka code——that it knows how to interpret. 
+A computer program is a set of instructions, or a "score," that is interpreted by a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us using an unambiguous formal language—aka code——that it knows how to interpret.
 
 For this sketch, you will give instructions to a "[turtle](https://brianhouse.github.io/turtle5/)" who will draw on the screen. This time, you will draw a [still life](https://en.wikipedia.org/wiki/Still_life) from the model in the room.
 
@@ -49,4 +49,3 @@ To get the hang of things, have the turtle
 
 - [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
 - [Harold Cohen and AARON](https://www.nytimes.com/2016/05/07/arts/design/harold-cohen-a-pioneer-of-computer-generated-art-dies-at-87.html)
-

@@ -33,4 +33,3 @@ function digitalMedia() {
 function painting() {
 	print("You are in the Painting Studio.")
 }
-
