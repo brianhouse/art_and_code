@@ -22,7 +22,7 @@ Introduction to computer programming for artists. With creative coding, students
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through the use of text, images, animation, sound, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Sketch #3, you will post work online through your [GitHub](https://github.com) account. Sketches must include a title and a [3-sentence artist statement](resources/artist_statement_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
+This course is built around open-ended code "sketches" that progress through the use of text, images, animation, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Sketch #3, you will post work online through your [GitHub](https://github.com) account. Sketches must include a title and a [3-sentence artist statement](resources/artist_statement_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. Sketches will be graded on both concept and craft.
 
