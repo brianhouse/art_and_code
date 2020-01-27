@@ -10,6 +10,12 @@ Requirements:
 - You must articulate your concept with a title and [3-sentence artist statement](resources/artist_statement_guidelines.md).
 
 
+## Conceptual references
+- Jorge Luis Borges, [_The Garden of Forking Paths_](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths) ([full text](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt))
+- Lynn Hershmann Leeson, _LORNA_
+- Raymond Queneau, [_A Hundred Thousand Billion Poems_](https://www.youtube.com/watch?v=2NhFoSFNQMQ)
+
+
 ## Technical preparation
 
 In this assignment, we will be getting familiar with a more fundamental way of interacting with the computer than its graphical user interface: text files and the terminal.
@@ -116,17 +122,3 @@ let x = 6
 Check out `example.js` in the template by opening it with your text editor (Atom). Here you'll see `if` statements as well as `function` declarations. You'll also see some functions that have already been declared elsewhere, such as `print()` (which writes text to the terminal) and `prompt()` (which collects text from the user and stores it in variables like `response` and `name`). The lines at the top of the example load these functions from other files.
 
 Copy and paste the contents of `example.js` into a new file, called `narrative.js`, and save it in the same folder. You can then begin to modify the code to make your own nonlinear narrative.
-
-
-## Technical references
-
-Shiffman: https://www.youtube.com/watch?v=1Osb_iGDdjk
-https://www.w3schools.com/jsref/jsref_if.asp
-
-https://blog.kadenze.com/creative-technology/telling-non-linear-narratives-through-code/
-
-
-## Conceptual references
-- Jorge Luis Borges, [_The Garden of Forking Paths_](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths) ([full text](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt))
-- Lynn Hershmann Leeson, _LORNA_
-- Raymond Queneau, [_A Hundred Thousand Billion Poems_](https://www.youtube.com/watch?v=2NhFoSFNQMQ)
