@@ -2,14 +2,15 @@
 
 When we watch TV or read a book, the story usually progresses in a linear way, from start to finish. But in life, the decisions we make affect the choices that are available to us. Digital Media allow for something in the middle: multiple stories can be told by providing points where the narrative branches via interaction.
 
-With this sketch, you will create a text-based, nonlinear narrative where the reader/interactor chooses their path by inputting text. You may also want to have objects that can be "carried" and which have an effect on the narrative. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept. Review the links below for inspiration.
+With this sketch, you will create a text-based, nonlinear narrative using code where the reader/interactor chooses their path by inputting text. You may also want to have objects that can be "carried" and which have an effect on the narrative. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept. Review the links below for inspiration.
 
 Requirements:
+- Before coding anything, draw a "map" of the the choices that will be available to your reader/interactor
 - Your program must demonstrate at least 5 different branching points that create meaningful alternative paths
 - You must articulate your concept with a title and [3-sentence artist statement](resources/artist_statement_guidelines.md).
 
 
-### Technical preparation
+## Technical preparation
 
 In this assignment, we will be getting familiar with a more fundamental way of interacting with the computer than its graphical user interface: text files and the terminal.
 
@@ -21,7 +22,9 @@ In this assignment, we will be getting familiar with a more fundamental way of i
 - Run the example by typing `node example.js`
 
 
-### Code
+## Code
+
+### Conditionals
 
 Perhaps the most fundamental programming structure is that of a _conditional_, commonly known as an `if` statement. We will be using [Javascript](https://en.wikipedia.org/wiki/JavaScript), and in this language, an `if` statement looks like this:
 
@@ -71,26 +74,59 @@ if (what is within these parentheses is true) {
 
 ```
 
-Keeping tracking of `()` and `{}` is going to be a major source of headaches in this course. Learn to love it.
+Keeping tracking of `()` and `{}` is going to be a major source of headaches in this course, but eventually you will internalize the structure and it will be easy to see if you've made a mistake.
 
 
-### Technical references
+### Functions
+
+Functions are another way of organizing blocks of code. On the most fundamental level, functions allow you to reuse a block of code by giving it a name. In many cases, you'll use functions that have been written for you, such as `forward()` in the turtle exercise. But you can _declare_ your own functions using the `function` keyword, like this:
+
+```js
+function myFunctionName() {
+
+	code goes here
+
+}
+```
+
+`myFunctionName` could be anything, it's up to you to give the function a descriptive name. However, notice the parentheses after the function name—that's how you know it's a function. To _call_ your function—that is, to make it do its thing—you simply write its name with the parentheses, like this:
+
+```js
+myFunctionName()
+```
+
+Sometimes, functions _return_ a result, like this:
+```js
+let result = someFunction()
+```
+We won't get into how to do this yet, but when you see something like this, you know that the _variable_ `result` is now equal to whatever came out of `someFunction()`.
+
+A what?
 
 
+### Variables
 
-### Conceptual references
-- Jorge Luis Borges, [_The Garden of Forking Paths_](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths) ([full text](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt))
-Lynn Hershmann Leeson, _LORNA_
+A variable is just an arbitrary name for some value. It's like `x` in math. For example, you might use a variable called `name` to keep track of the user's first name so that you can use it later. Like functions, variables can be called whatever you want. But instead of using the word `function`, you use the word `let`, as in, "let the variable 'x' equal the value 6":
+```js
+let x = 6
+```
+
+### Putting it all together
+
+Check out `example.js` in the template by opening it with your text editor (Atom). Here you'll see `if` statements as well as `function` declarations. You'll also see some functions that have already been declared elsewhere, such as `print()` (which writes text to the terminal) and `prompt()` (which collects text from the user and stores it in variables like `response` and `name`). The lines at the top of the example load these functions from other files.
+
+Copy and paste the contents of `example.js` into a new file, called `narrative.js`, and save it in the same folder. You can then begin to modify the code to make your own nonlinear narrative.
 
 
+## Technical references
 
-Important programming concepts: `if-then` conditionals, functions.
-
-
-Book:
 Shiffman: https://www.youtube.com/watch?v=1Osb_iGDdjk
-
-
 https://www.w3schools.com/jsref/jsref_if.asp
 
 https://blog.kadenze.com/creative-technology/telling-non-linear-narratives-through-code/
+
+
+## Conceptual references
+- Jorge Luis Borges, [_The Garden of Forking Paths_](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths) ([full text](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt))
+- Lynn Hershmann Leeson, _LORNA_
+- Raymond Queneau, [_A Hundred Thousand Billion Poems_](https://www.youtube.com/watch?v=2NhFoSFNQMQ)
