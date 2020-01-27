@@ -76,7 +76,8 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Monday 1/27
 - In-class work and crit, [Sketch #1: Turtle drawing](assignments/01_turtle_drawing/description.md)
-- **Homework for next class**: download [Zork](resources/disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e)
+- **Homework for next class**: play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
+<!-- - **Homework for next class**: download [Zork](resources/disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e) -->
 
 #### Wednesday 1/29
 - Introduction to text editors and the command-line
@@ -91,17 +92,16 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - Work time
 
 #### Wednesday 2/5
-- Sketch #2 [crit](crit_guidelines.md)
-
+- Work time
 
 ### Week 4
 
 #### Monday 2/10
-- Introduction to HTML
-- Begin [Sketch #3: Homepage](assignments/03_homepage.md)
+- Sketch #2 [crit](crit_guidelines.md)
 
 #### Wednesday 2/12
-- Sketch #3 crit
+- Introduction to HTML
+- Begin [Sketch #3: Homepage](assignments/03_homepage.md) (no crit for this one)
 
 
 ### Week 5
@@ -216,5 +216,3 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Monday 5/4 18:00–21:00
 - Work installed, final crit
-
-

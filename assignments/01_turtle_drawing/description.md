@@ -7,7 +7,7 @@ For this sketch, you will give instructions to a "[turtle](https://brianhouse.gi
 Requirements:
 - Email your finished (or unfinished) code to the professor along with an image of your result
 
-### Code
+## Code
 
 The turtle understands instructions like these:
 - `forward(100)`    Move forward 100 steps (abbr: `fd`)
@@ -38,14 +38,29 @@ To get the hang of things, have the turtle
 - draw a triangle
 - draw a circle (possible?)
 
+<!-- ```javascript
+// triangle
+rt(30)
+fd(100)
+rt(120)
+fd(100)
+rt(120)
+fd(100)
+
+// circle
+repeat(360) {
+    fd(1)
+    rt(1)
+}
+``` -->
 
 
-#### Technical references
+## Technical references
 
 ![](degrees.gif)
 
 
-### Conceptual references
+## Conceptual references
 
 - [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
 - [Harold Cohen and AARON](https://www.nytimes.com/2016/05/07/arts/design/harold-cohen-a-pioneer-of-computer-generated-art-dies-at-87.html)
