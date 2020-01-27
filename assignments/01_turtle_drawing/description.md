@@ -13,7 +13,7 @@ The turtle understands instructions like these:
 - `forward(100)`    Move forward 100 steps (abbr: `fd`)
 - `right(90)`     	Turn to the right 90º (abbr: `rt`)
 - `left(90)`     	Turn to the left 90º (abbr: `lt`)
-- `backwards(100)`  Move backwards 100 steps (abbr: `bk`)
+- `backward(100)`  Move backwards 100 steps (abbr: `bk`)
 - `penup()`        	Pull the pen up off the paper (abbr: `pu`)
 - `pendown()`       Put the pen down on the paper (abbr: `pd`)
 - `pencolor('red')` Change the color of the pen—note the quotes (abbr: `pc`)

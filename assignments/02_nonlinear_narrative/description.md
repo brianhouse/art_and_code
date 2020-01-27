@@ -2,7 +2,7 @@
 
 When we watch TV or read a book, the story usually progresses in a linear way, from start to finish. But in life, the decisions we make affect the choices that are available to us. Digital Media allow for something in the middle: multiple stories can be told by providing points where the narrative branches via interaction.
 
-With this sketch, you will create a text-based, nonlinear narrative using code where the reader/interactor chooses their path by inputting text. You may also want to have objects that can be "carried" and which have an effect on the narrative. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept. Review the links below for inspiration.
+With this sketch, you will create a text-based, nonlinear narrative using code where the reader/interactor chooses their path by inputting text. You may also want to have objects that can be "carried" and which have an effect on the narrative. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept.
 
 Requirements:
 - Before coding anything, draw a "map" of the the choices that will be available to your reader/interactor
@@ -11,9 +11,19 @@ Requirements:
 
 
 ## Conceptual references
+
+### Pre-digital
 - Jorge Luis Borges, [_The Garden of Forking Paths_](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths) ([full text](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt))
-- Lynn Hershmann Leeson, _LORNA_
 - Raymond Queneau, [_A Hundred Thousand Billion Poems_](https://www.youtube.com/watch?v=2NhFoSFNQMQ)
+- [Kinoautomat](https://monoskop.org/Kinoautomat)
+- David Bowie's [verbasizer](https://www.vice.com/en_us/article/xygxpn/the-verbasizer-was-david-bowies-1995-lyric-writing-mac-app)
+
+## Digital media
+- [_ELIZA_](https://en.wikipedia.org/wiki/ELIZA)
+- [_Zork_](https://en.wikipedia.org/wiki/Zork)
+- Black Mirror, [_Bandersnatch_](https://en.wikipedia.org/wiki/Black_Mirror:_Bandersnatch)
+- Lynn Hershmann Leeson, [_LORNA_](https://www.digitalartarchive.at/database/general/work/lorna.html)
+- Lev Manovich, _Texas_
 
 
 ## Technical preparation
