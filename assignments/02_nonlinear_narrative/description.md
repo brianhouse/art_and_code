@@ -32,9 +32,29 @@ In this assignment, we will be getting familiar with a more fundamental way of i
 
 - Download and install [Atom](https://atom.io)
 - Download install [Node](https://nodejs.org/en/download/)
+- On MacOS, open the Terminal (`/Applications/Utilities/Terminal.app`) and practice navigating:
+	- `pwd` shows the path of your current directory
+	- `ls`  lists the content of your current directory
+	- `cd`  followed by a space and a name changes to that directory
+	- `cd ..`  moves backward into the enclosing directory
+- On Windows, open the Command Prompt and practice navigating:
+	- `D:`  changes to the D drive
+	- `dir` lists the content of your current directory
+	- `cd`  followed by a space and a name changes to that directory
+	- `cd ..`  moves backward into the enclosing directory
+
+Use your text editor to make a new file called `test.js` and type in the following:
+```js
+print = console.log
+
+print('hello world!')
+```
+
+Save `test.js` on your desktop. Using the Terminal or Command Prompt, navigate to the desktop. Now type `node test.js`. Experiment with conditionals, functions, and variables as discussed below.
+
+When you're ready to start this project:
 - Download and unzip the [template](template.zip)
-- Open the Terminal (`/Applications/Utilities/Terminal.app`) or Windows Command Prompt
-- Change directories to the template folder by typing `cd`, space, and then dragging the folder to the Terminal window
+- Change directories to the template folder
 - Run the example by typing `node example.js`
 
 
