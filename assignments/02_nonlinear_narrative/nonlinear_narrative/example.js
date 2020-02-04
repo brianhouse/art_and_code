@@ -26,13 +26,13 @@ function intro() {
 
 	// Depending on the response, call another function
 	if (response.includes("passage")) {
-		digitalMediaRoom()
+		digitalMediaRoom()	// run the digitalMediaRoom function
 	} else if (response.includes("east")) {
-		digitalMediaRoom()
+		digitalMediaRoom()	// run the digitalMediaRoom function
 	} else if (response.includes("stairway")) {
-		paintingRoom()
+		paintingRoom()	// run the paintingRoom function
 	} else if (response.includes("up")) {
-		paintingRoom()
+		paintingRoom()	// run the paintingRoom function
 	} else {
 		// If the interactor types something unexpected, repeat this function
 		print("I don't understand.")
@@ -44,9 +44,15 @@ function intro() {
 
 function digitalMediaRoom() {
 	print("You are in the Digital Media Studio.")
+
+	// Add a new if statement here
+
 }
 
 
 function paintingRoom() {
 	print("You are in the Painting Studio.")
+
+	// Add a new if statement here
+
 }
