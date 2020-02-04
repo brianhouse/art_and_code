@@ -7,7 +7,9 @@ With this sketch, you will create a text-based, nonlinear narrative using code w
 Requirements:
 - Before coding anything, draw a "map" of the the choices that will be available to your reader/interactor
 - Your program must demonstrate at least 5 different branching points that create meaningful alternative paths
-- You must articulate your concept with a title and [3-sentence artist statement](resources/artist_statement_guidelines.md).
+- You must articulate your concept with a title and [3-sentence description](resources/description_guidelines.md).
+
+Email your title, concept, and code to the instructor. (You'll need to change the name of your file from `narrative.js` to `narrative.txt` in order to email it—otherwise Gmail will reject it)
 
 
 ## Conceptual references
@@ -56,7 +58,7 @@ When you're ready to start this project:
 - Download and unzip the [template](template.zip)
 - Change directories to the template folder
 - Run the example by typing `node example.js`
-
+- Copy and paste the contents of `example.js` into a new file, called `narrative.js`, and save it in the same folder. You can then begin to modify the code to make your own nonlinear narrative.
 
 ## Code
 
@@ -149,6 +151,35 @@ let x = 6
 
 ### Putting it all together
 
-Check out `example.js` in the template by opening it with your text editor (Atom). Here you'll see `if` statements as well as `function` declarations. You'll also see some functions that have already been declared elsewhere, such as `print()` (which writes text to the terminal) and `prompt()` (which collects text from the user and stores it in variables like `response` and `name`). The lines at the top of the example load these functions from other files.
+Check out `example.js` in the template by opening it with your text editor (Atom). Here you'll see `if` statements as well as `function` declarations.
 
-Copy and paste the contents of `example.js` into a new file, called `narrative.js`, and save it in the same folder. You can then begin to modify the code to make your own nonlinear narrative.
+Every "room" of your narrative will consist of a function with the following form:
+
+```js
+// have a descriptive name for your function
+function lobby() {
+
+	// Start by describing what's going on
+	print("You are in the lobby of the Art Department. A stairway leads upward, and a passage continues to the east. What do you want to do?")
+
+	// Get a response from the interactor
+	let response = prompt()
+
+	// Depending on the response, call another function
+	if (response.includes("passage")) {
+		digitalMediaRoom()	// run the digitalMediaRoom function
+	} else if (response.includes("east")) {
+		digitalMediaRoom()	// run the digitalMediaRoom function
+	} else if (response.includes("stairway")) {
+		paintingRoom()	// run the paintingRoom function
+	} else if (response.includes("up")) {
+		paintingRoom()	// run the paintingRoom function
+	} else {
+		print("I don't understand.")
+
+		// If the interactor types something unexpected, repeat this function		
+		lobby()
+	}
+
+}
+```
