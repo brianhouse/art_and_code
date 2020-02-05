@@ -1,16 +1,29 @@
-# Sketch #3: Homepage
+# Sketch #3: Personal Home Page
 
-Design a personal web page for your alter ego.
+The World Wide Web brought the internet to the mainstream. While today social media platforms like Facebook and Twitter dominate what happens online, websites were originally made by individuals who hand-coded their "personal home pages" using HTML (**H**yper**T**ext **M**arkup **L**anguage)**
 
-<!-- Use web pages and HTML to create an online nonlinear experience. Each page, of which you should have at least 5, should link to multiple other pages you create (and may also incorporate outside links). Your work may incorporate text and/or images. You may choose to adapt your Narrative Maze from the previous assignment to the web, reinterpret an existing story or poem into hypertext, or create something entirely new. Regardless, the result should be driven by an underlying artistic concept.
- -->
-For inspiration, view Olia Lialina's [_My Boyfriend Came Back from the War_](http://www.teleportacia.org/war) (1995), Mark Amerika's [_GRAMMATRON_](https://www.grammatron.com/gtronbeta/Abe_Golam_907.html) (1997), and Mendi Obadike's [_keeping up appearances_](http://archive.rhizome.org/artbase/2864/keepingupappearances.html) (2001).
+For this sketch, you will use HTML to design a personal home page for your Digital Media I artist persona. This page will serve as a portfolio for the remaining sketches that you will do in this class. For our purposes, you are not limited to a "professional" or contemporary aesthetic; in the spirit of the early web, you are encouraged to make a playful or experimental site using the basic HTML functionality.
+
+Turn in your sketch by emailing a working home page URL to the instructor by next Tuesday. We will not be critiquing this work in class.
 
 
-### HTML reference
+## Technical preparation
 
-Copy and paste this html into a file ending in `.html` and view it in a browser:
-```
+To do this you will need set up hosting using GitHub.
+- create an account on [GitHub](http://github.com/) if you don't have one already
+- create a new "repository," and call it `USERNAME.github.io` where USERNAME is the name you have used for your GitHub account; make the repository public, and be sure to check the option `Initialize this repository with a README`
+- navigate to the `Settings` menu of the repository, and find the section titled `GitHub Pages`; under `source`, choose `master branch`
+
+Your website will now be viewable in your web browser at the following URL, where USERNAME is replaced with the name of your GitHub account: http://USERNAME.github.io
+
+When you have created an `index.html` file, upload it to your repository.
+
+
+
+## HTML example
+
+Copy and paste this html into a file ending in `index.html` and view it in a web browser:
+```html
 <html>
 <head>
     <title>This text shows in the title bar</title>
@@ -47,3 +60,7 @@ Copy and paste this html into a file ending in `.html` and view it in a browser:
 </html>
 ```
 
+## Technical references
+
+
+## Conceptual references
