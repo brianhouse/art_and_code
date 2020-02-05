@@ -52,7 +52,7 @@ print = console.log
 print('hello world!')
 ```
 
-Save `test.js` on your desktop. Using the Terminal or Command Prompt, navigate to the desktop. Now type `node test.js`. Experiment with conditionals, functions, and variables as discussed below.
+Save `test.js` on your desktop. Using the Terminal or Command Prompt, navigate to the desktop. Now type `node test.js` to run your program. Experiment with conditionals, functions, and variables as discussed below.
 
 When you're ready to start this project:
 - Download and unzip the [template](template.zip)
@@ -148,6 +148,14 @@ A variable is just an arbitrary name for some value. It's like `x` in math. For 
 ```js
 let x = 6
 ```
+You might use a variable to store the name of the person using your program, like this:
+
+```js
+print("What is your name?")
+let name = prompt()
+print("Hi, " + name + "!")
+```
+
 
 ### Putting it all together
 
@@ -167,19 +175,19 @@ function lobby() {
 
 	// Depending on the response, call another function
 	if (response.includes("passage")) {
-		digitalMediaRoom()	// run the digitalMediaRoom function
+		digitalMediaRoom()	// go to digitalMediaRoom
 	} else if (response.includes("east")) {
-		digitalMediaRoom()	// run the digitalMediaRoom function
+		digitalMediaRoom()	// go to digitalMediaRoom
 	} else if (response.includes("stairway")) {
-		paintingRoom()	// run the paintingRoom function
+		paintingRoom()	// go to paintingRoom
 	} else if (response.includes("up")) {
-		paintingRoom()	// run the paintingRoom function
+		paintingRoom()	// go to paintingRoom
 	} else {
 		print("I don't understand.")
-
-		// If the interactor types something unexpected, repeat this function		
+		// If the interactor types something unexpected, repeat the code for "lobby" in order to re-ask the question
 		lobby()
 	}
 
 }
+
 ```
