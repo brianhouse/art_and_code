@@ -55,12 +55,12 @@ repeat(360) {
 ``` -->
 
 
-## Technical references
+## Technical Resources
 
 ![](degrees.gif)
 
 
-## Conceptual references
+## Conceptual References and Examples
 
 - [LOGO](https://en.wikipedia.org/wiki/Logo_(programming_language))
 - [Harold Cohen and AARON](https://www.nytimes.com/2016/05/07/arts/design/harold-cohen-a-pioneer-of-computer-generated-art-dies-at-87.html)
