@@ -7,7 +7,7 @@ With this sketch, you will create a text-based, nonlinear narrative using code w
 Requirements:
 - Before coding anything, draw a "map" of the the choices that will be available to your reader/interactor
 - Your program must demonstrate at least 5 different branching points that create meaningful alternative paths
-- You must articulate your concept with a title and [3-sentence description](resources/description_guidelines.md).
+- You must articulate your concept with a title and [3-sentence description](../../resources/description_guidelines.md).
 
 Email your title, concept, and code to the instructor. (You'll need to change the name of your file from `narrative.js` to `narrative.txt` in order to email it—otherwise Gmail will reject it)
 
