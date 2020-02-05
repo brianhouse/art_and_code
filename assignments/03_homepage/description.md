@@ -60,7 +60,21 @@ Copy and paste this html into a file ending in `index.html` and view it in a web
 </html>
 ```
 
-## Technical references
+While looking online for HTML resources, you'll often find references to CSS. In general, contemporary web pages use HTML for structure and CSS for the layout and appearance. We won't be going over CSS in class, and it is not a requirement to use it, but you can if you want.
 
 
-## Conceptual references
+## Technical Resources
+
+[HTML Beginner Tutorial](https://htmldog.com/guides/html/beginner/)
+
+## Conceptual References and Examples
+
+[Net.art](https://en.wikipedia.org/wiki/Net.art)
+
+Artist sites:
+- [Cameron's World](https://www.cameronsworld.net)
+- [Justin Hall](http://links.net/re/)
+- [Brenna Murphy](http://bmruernpnhay.com)
+- [Cory Arcangel](http://www.coryarcangel.com)
+- [olia lialina](http://art.teleportacia.org)
+- [Jodi](http://wwwwwwwww.jodi.org)
