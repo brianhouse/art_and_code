@@ -97,7 +97,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 4
 
 #### Monday 2/10
-- Sketch #2 [crit](https://docs.google.com/document/d/1oS0-kUtF8zkGrW_kGDKQiUCXfpe2XUs7X8SwDUleBK0/edit?usp=sharing) ([Crit guidelines](resources/crit_guidelines.md)
+- Sketch #2 [crit](https://docs.google.com/document/d/1oS0-kUtF8zkGrW_kGDKQiUCXfpe2XUs7X8SwDUleBK0/edit?usp=sharing) ([Crit guidelines](resources/crit_guidelines.md))
 
 #### Wednesday 2/12
 - Introduction to HTML
