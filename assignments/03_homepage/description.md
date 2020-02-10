@@ -1,6 +1,6 @@
 # Sketch #3: Personal Home Page
 
-The World Wide Web brought the internet to the mainstream. While today social media platforms like Facebook and Twitter dominate what happens online, websites were originally made by individuals who hand-coded their "personal home pages" using HTML (**H**yper**T**ext **M**arkup **L**anguage)**
+The World Wide Web brought the internet to the mainstream. While today social media platforms like Facebook and Twitter dominate what happens online, websites were originally made by individuals who hand-coded their "personal home pages" using HTML (**H**yper**T**ext **M**arkup **L** anguage)
 
 For this sketch, you will use HTML to design a personal home page for your Digital Media I artist persona. This page will serve as a portfolio for the remaining sketches that you will do in this class. For our purposes, you are not limited to a "professional" or contemporary aesthetic; in the spirit of the early web, you are encouraged to make a playful or experimental site using the basic HTML functionality.
 
@@ -11,10 +11,10 @@ Turn in your sketch by emailing a working home page URL to the instructor by nex
 
 To do this you will need set up hosting using GitHub.
 - create an account on [GitHub](http://github.com/) if you don't have one already
-- create a new "repository," and call it `USERNAME.github.io` where USERNAME is the name you have used for your GitHub account; make the repository public, and be sure to check the option `Initialize this repository with a README`
-- navigate to the `Settings` menu of the repository, and find the section titled `GitHub Pages`; under `source`, choose `master branch`
+- create a new "repository," and call it `username.github.io` where "username" is the name you have used for your GitHub account; make the repository public, and be sure to check the option `Initialize this repository with a README`
+- navigate to the `Settings` menu of the repository, and find the section titled `GitHub Pages`; under `source`, make sure the `master branch` option is selected
 
-Your website will now be viewable in your web browser at the following URL, where USERNAME is replaced with the name of your GitHub account: http://USERNAME.github.io
+Your website will now be viewable in your web browser at the following URL, where "username" is replaced with the name of your GitHub account: https://username.github.io
 
 When you have created an `index.html` file, upload it to your repository.
 
@@ -78,3 +78,4 @@ Artist sites:
 - [Cory Arcangel](http://www.coryarcangel.com)
 - [olia lialina](http://art.teleportacia.org)
 - [Jodi](http://wwwwwwwww.jodi.org)
+- [Sam Flores](https://pinkphantoms.github.io/hypertext/) (your TA)
