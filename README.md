@@ -75,7 +75,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 2
 
 #### Monday 1/27
-- In-class work and crit, [Sketch #1: Turtle drawing](assignments/01_turtle_drawing/description.md)
+- In-class work and crit, [Sketch #1: Turtle Logic](assignments/01_turtle_logic/description.md)
 - **Homework for next class**: play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
 <!-- - **Homework for next class**: download [Zork](resources/disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e) -->
 
@@ -101,7 +101,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Wednesday 2/12
 - Introduction to HTML
-- Begin [Sketch #3: Homepage](assignments/03_homepage/description.md) (no crit for this one)
+- Begin [Sketch #3: Personal Homepage](assignments/03_personal_homepage/description.md) (no crit for this one)
 
 
 ### Week 5
@@ -109,7 +109,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 #### Monday 2/17
 - Survey presentations 2: Jodi, Roman Verostko
 - Introduction to [p5.js](https://p5js.org) and coordinate systems
-- Begin [Sketch #4: Digital Interpretation](assignments/04_interpretation.md)
+- Begin [Sketch #4: Coordinate Landscape](assignments/04_coordinate_landscape.md)
 
 #### Wednesday 2/19
 - Work time
@@ -118,13 +118,13 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 6
 
 #### Monday 2/24
-- Digital Interpretation crit ([Crit guidelines](resources/crit_guidelines.md))
+- Sketch #4 crit ([Crit guidelines](resources/crit_guidelines.md))
 - Survey presentations 3: American Artist, Liat Berdugo
 
 
 #### Wednesday 2/26
 - Introduction to events and randomness
-- Begin [Sketch #5: Drawing Tool](assignments/05_drawing_tool.md)
+- Begin [Sketch #5: Expressive Interface](assignments/05_expressive_interface.md)
 
 
 ### Week 7
@@ -134,6 +134,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - Work time
 
 #### Wednesday 3/4
+- Sketch #5 preliminary crit
 - Work time
 
 
@@ -141,11 +142,11 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Monday 3/9
 - Survey presentations 5: Cory Arcangel, Ryoji Ikeda
-- Drawing Tool crit
+- Sketch #5 crit
 
 #### Wednesday 3/11
 - Introduction to data structures and animation
-- Begin [Sketch #6: Simulator](assignments/06_simulator.md)
+- Begin [Sketch #6: Simulacra](assignments/06_simulacra/description.md)
 
 
 ### Week 9
@@ -164,10 +165,10 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Monday 3/30
 - Survey presentations 7: Raphael Lozano-Hemmer, Blast Theory
-- Sketch #6 crit
+- Sketch #6 final crit
 
 #### Wednesday 4/1
-- Begin [Sketch #7: Machine gaze](assignments/07_machine_gaze.md)
+- Begin [Sketch #7: Machine gaze](assignments/07_machine_gaze/description.md)
 - Work time
 
 
@@ -178,6 +179,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - Work time
 
 #### Wednesday 4/8
+- Sketch #7 preliminary crit
 - Work time
 
 
@@ -188,13 +190,13 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 
 #### Wednesday 4/15
-- Begin [Final Project](assignments/8_final_project.md)
+- Begin [Projected Worlds](assignments/8_projected_worlds/description.md)
 
 
 ### Week 13
 
 #### Monday 4/20
-- Project proposals due
+- Work time
 
 #### Wednesday 4/22
 - Work time
@@ -203,7 +205,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 14
 
 #### Monday 4/27
-- Final project preliminary review
+- Sketch #7 preliminary crit
 
 
 #### Wednesday 4/29
@@ -215,4 +217,4 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Exam Week
 
 #### Monday 5/4 18:00–21:00
-- Work installed, final crit
+- Work installed, sketch #7 final crit

@@ -1,4 +1,4 @@
-# Sketch #1: Still Life for Turtle
+# Sketch #1: Turtle Logic
 
 A computer program is a set of instructions, or a "score," that is interpreted by a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us using an unambiguous formal language—aka code——that it knows how to interpret.
 
