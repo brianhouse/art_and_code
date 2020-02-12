@@ -4,7 +4,7 @@ The World Wide Web brought the internet to the mainstream. While today social me
 
 For this sketch, you will use HTML to design a personal home page for your Digital Media I artist persona. This page will serve as a portfolio for the remaining sketches that you will do in this class. For our purposes, you are not limited to a "professional" or contemporary aesthetic; in the spirit of the early web, you are encouraged to make a playful or experimental site using the basic HTML functionality.
 
-Turn in your sketch by emailing a working home page URL to the instructor by next Tuesday. We will not be critiquing this work in class.
+Turn in your sketch by emailing a working home page URL to the instructor by next Monday. We will not be critiquing this work in class.
 
 
 ## Technical preparation
