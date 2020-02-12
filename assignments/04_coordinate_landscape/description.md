@@ -1,6 +1,6 @@
-# Sketch #4: Digital Interpretation
+# Sketch #4: Coordinate Landscape
 
-Choose a [famous painting or other artwork from art history](https://www.google.com/search?q=famous+art) and reinterpret it in code using [p5](https://p5js.org). Abstract the original brushstrokes into geometric shapes, but retain a recognizable sense of the original composition. Pay particular attention to the use (or non-use) of color. In its form, your interpretation should communicate something distinct from the original.
+Choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+art) and reinterpret it in code using [p5](https://p5js.org). Abstract the original brushstrokes into geometric shapes, but retain a recognizable sense of the original composition. Pay particular attention to the use (or non-use) of color. In its form, your interpretation should communicate something distinct from the original.
 
 Your piece should be presented on a webpage next to an image of the original artwork. The page should be hosted on github—email a working URL (plus a link to the original artwork) to the professor before class.
 

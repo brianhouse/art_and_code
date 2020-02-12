@@ -1,4 +1,4 @@
-# Sketch #3: Personal Home Page
+# Sketch #3: Personal Homepage
 
 The World Wide Web brought the internet to the mainstream. While today social media platforms like Facebook and Twitter dominate what happens online, websites were originally made by individuals who hand-coded their "personal home pages" using HTML (**H**yper**T**ext **M**arkup **L** anguage)
 
