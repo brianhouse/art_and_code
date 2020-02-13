@@ -1,10 +1,10 @@
 # Sketch #3: Personal Homepage
 
-The World Wide Web brought the internet to the mainstream. While today social media platforms like Facebook and Twitter dominate what happens online, websites were originally made by individuals who hand-coded their "personal home pages" using HTML (**H**yper**T**ext **M**arkup **L** anguage)
+The World Wide Web brought the internet to the mainstream. While today social media platforms like Facebook and Twitter dominate what happens online, websites were originally made by individuals who hand-coded their "personal homepages" using HTML (**H**yper**T**ext **M**arkup **L** anguage)
 
 For this sketch, you will use HTML to design a personal home page for your Digital Media I artist persona. This page will serve as a portfolio for the remaining sketches that you will do in this class. For our purposes, you are not limited to a "professional" or contemporary aesthetic; in the spirit of the early web, you are encouraged to make a playful or experimental site using the basic HTML functionality.
 
-Turn in your sketch by emailing a working home page URL to the instructor by next Monday. We will not be critiquing this work in class.
+Turn in your sketch by emailing a working home page URL to the professor by next Monday. We will not be critiquing this work in class.
 
 
 ## Technical preparation
@@ -16,11 +16,11 @@ To do this you will need set up hosting using GitHub.
 
 Your website will now be viewable in your web browser at the following URL, where "username" is replaced with the name of your GitHub account: https://username.github.io
 
-When you have created an `index.html` file, upload it to your repository.
+When you have created an `index.html` file, upload and commit it to your repository.
 
 
 
-## HTML example
+## Coding Concepts
 
 Copy and paste this html into a file ending in `index.html` and view it in a web browser:
 ```html

@@ -109,7 +109,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 #### Monday 2/17
 - Survey presentations 2: Jodi, Roman Verostko
 - Introduction to [p5.js](https://p5js.org) and coordinate systems
-- Begin [Sketch #4: Coordinate Landscape](assignments/04_coordinate_landscape.md)
+- Begin [Sketch #4: Coordinate Landscape](assignments/04_coordinate_landscape/description.md)
 
 #### Wednesday 2/19
 - Work time

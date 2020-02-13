@@ -1,6 +1,6 @@
 # Sketch #2: Nonlinear Narrative
 
-When we watch TV or read a book, the story usually progresses in a linear way, from start to finish. But in life, the decisions we make affect the choices that are available to us. Digital Media allow for something in the middle: multiple stories can be told by providing points where the narrative branches via interaction.
+When we watch TV or read a book, the story usually progresses in a linear way, from start to finish. But in life, the decisions we make affect the choices that are available to us. Digital media allow for something in the middle: multiple stories can be told by providing points where the narrative branches via interaction.
 
 With this sketch, you will create a text-based, nonlinear narrative using code where the reader/interactor chooses their path by inputting text. You may also want to have objects that can be "carried" and which have an effect on the narrative. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept.
 
@@ -9,10 +9,10 @@ Requirements:
 - Your program must demonstrate at least 5 different branching points that create meaningful alternative paths
 - You must articulate your concept with a title and [3-sentence description](../../resources/description_guidelines.md).
 
-Email your title, concept, and code to the instructor. (You'll need to change the name of your file from `narrative.js` to `narrative.txt` in order to email it—otherwise Gmail will reject it)
+Email your title, concept, and code to the professor. (You'll need to change the name of your file from `narrative.js` to `narrative.txt` in order to email it—otherwise Gmail will reject it)
 
 
-## Conceptual references
+## Conceptual References and Examples
 
 ### Pre-digital
 - Jorge Luis Borges, [_The Garden of Forking Paths_](https://en.wikipedia.org/wiki/The_Garden_of_Forking_Paths) ([full text](https://archive.org/stream/TheGardenOfForkingPathsJorgeLuisBorges1941/The-Garden-of-Forking-Paths-Jorge-Luis-Borges-1941_djvu.txt))
@@ -28,7 +28,7 @@ Email your title, concept, and code to the instructor. (You'll need to change th
 - Lev Manovich, _Texas_
 
 
-## Technical preparation
+## Technical Preparation
 
 In this assignment, we will be getting familiar with a more fundamental way of interacting with the computer than its graphical user interface: text files and the terminal.
 
@@ -60,7 +60,7 @@ When you're ready to start this project:
 - Run the example by typing `node example.js`
 - Copy and paste the contents of `example.js` into a new file, called `narrative.js`, and save it in the same folder. You can then begin to modify the code to make your own nonlinear narrative.
 
-## Code
+## Coding Concepts
 
 ### Conditionals
 
