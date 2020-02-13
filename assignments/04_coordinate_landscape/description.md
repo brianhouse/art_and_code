@@ -6,7 +6,8 @@ In this sketch, you will become familiar with drawing using coordinates. To expl
 
 Requirements:
 - Your piece should be presented on a webpage next to an image of the original artwork
-- This page should be hosted on github—email a working URL to the professor before class
+- You must include your title and [3-sentence description](../../resources/description_guidelines.md) on your webpage
+- This page should be hosted on GitHub—email a working URL to the professor before class
 
 
 ## Technical Resources
@@ -46,6 +47,7 @@ Your `index.html` should contain the following HTML:
     <script src="sketch.js"></script>
   </head>
   <body>
+      <h1>Coordinate Landscape</h1>
 
       <div id="p5"></div>
 
