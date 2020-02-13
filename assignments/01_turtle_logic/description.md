@@ -7,7 +7,7 @@ For this sketch, you will give instructions to a "[turtle](https://brianhouse.gi
 Requirements:
 - Email your finished (or unfinished) code to the professor along with an image of your result
 
-## Code
+## Coding Concepts
 
 The turtle understands instructions like these:
 - `forward(100)`    Move forward 100 steps (abbr: `fd`)
