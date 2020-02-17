@@ -6,6 +6,10 @@ personal homepage:
 - make more a reflection on identity? media archeology? more context somehow?
 - link to friends in the class
 
+/
+
+the plan here is to use objects together with animation from the get-go
+meaning relative coordinates
 
 
 /
