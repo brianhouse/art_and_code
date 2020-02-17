@@ -38,17 +38,20 @@ https://www.youtube.com/watch?v=riiJTF5-N7c
 
 From now on, we will be using [p5](https://p5js.org) for our sketches. p5 sketches are also webpages—you will create a folder on your computer that contains an `index.html` file, just like you did for your homepage.
 
-Your `index.html` should contain the following HTML:
+Make a folder called `landscape` and add an `index.html` file that contains the following HTML:
 ```html
 <html>
   <head>
     <title>Coordinate Landscape</title>
+    <!-- load p5 drawing functions -->
     <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <!-- load a local js program -->
     <script src="sketch.js"></script>
   </head>
   <body>
       <h1>Coordinate Landscape</h1>
 
+      <!-- an empty container called p5 -->
       <div id="p5"></div>
 
       <!-- add other HTML in the body if you'd like -->
@@ -63,8 +66,9 @@ Notice the two `<script>` tags in the head section. These tags load in javascrip
 // put in setup whatever needs to be done to get things started
 function setup() {
 
-    // this line creates a virtual canvas and attaches it to your HTML
+    // create a static virtual canvas and attach it to your HTML
     createCanvas(640, 480).parent('p5')
+    noLoop()
 
 }
 

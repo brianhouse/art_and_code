@@ -110,8 +110,10 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - Survey presentations 2: Jodi, Roman Verostko
 - Introduction to [p5.js](https://p5js.org) and coordinate systems
 - Begin [Sketch #4: Coordinate Landscape](assignments/04_coordinate_landscape/description.md)
+- **Homework for next class**: read Chapter 3 of _Getting Started with p5.js_
 
 #### Wednesday 2/19
+- Introduction to vertexes
 - Work time
 
 
@@ -120,10 +122,13 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 #### Monday 2/24
 - Sketch #4 crit ([Crit guidelines](resources/crit_guidelines.md))
 - Survey presentations 3: American Artist, Liat Berdugo
+- Introduction to events
+- **Homework for next class**: read Chapter 5 of _Getting Started with p5.js_
 
 
 #### Wednesday 2/26
-- Introduction to events and randomness
+- Introduction to randomness and loops
+- Debugging with `print`
 - Begin [Sketch #5: Expressive Interface](assignments/05_expressive_interface.md)
 
 

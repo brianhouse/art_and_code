@@ -7,6 +7,9 @@ personal homepage:
 - link to friends in the class
 
 
+
+/
+
 Lynn Hershman Leeson and Alison Parrish are iffy examples
 
 

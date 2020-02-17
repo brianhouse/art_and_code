@@ -5,7 +5,9 @@ students/*
 assignments/old
 
 
-class_plans
+
 
 *.webloc
 shiffman
+
+week_*
