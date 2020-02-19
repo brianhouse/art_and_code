@@ -34,6 +34,11 @@ Color:
 https://www.youtube.com/watch?v=riiJTF5-N7c
 
 
+#### Colors
+
+[Google Color Picker](https://www.google.com/search?q=color+picker)
+
+
 ## Technical Preparation
 
 From now on, we will be using [p5](https://p5js.org) for our sketches. p5 sketches are also webpages—you will create a folder on your computer that contains an `index.html` file, just like you did for your homepage.
@@ -171,3 +176,26 @@ function draw() {
 ```
 
 ![](B.png)
+
+
+### HTML Template With Side-by-Side Images
+
+```html
+<html>
+  <head>
+    <title>Coordinate Landscape</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+      <h1>Not so starry night</h1>
+
+      <p>In this interpretation of Van Gogh's classic, I completely ignore everything, except the brilliance.</p>
+
+      <img src="starry.jpg" height="400" style="float: left; margin-right: 20px;"/>
+
+      <div id="p5"></div>
+
+  </body>
+</html>
+```
