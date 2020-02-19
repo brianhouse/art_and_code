@@ -52,7 +52,7 @@ print(f"Sketches to date: {(assignment_grade * 100)}")
 
 
 ## calculate grade on presentation
-if 'presentation' in student:
+if 'presentation' in student and student['presentation'] is not None:
     presentation = globals()[student['presentation'].replace('-', '_')]
     print(f"Presentation: {presentation}")
     presentation_grade = presentation / 100
@@ -66,10 +66,13 @@ else:
     distraction (late or social media use) -1.25%
     capped at -10%
 """
-absence_factor = max((student['absences'] - 1), 0) * 0.025
-absence_factor += student['distractions'] * 0.0125
+absence_factor = 0
+if 'absences' in student and student['absences'] is not None:
+    absence_factor = max((student['absences'] - 1), 0) * 0.025
+if 'distractions' in student and student['distractions'] is not None:
+    absence_factor += student['distractions'] * 0.0125
 absence_factor = min(absence_factor, .1)
-print(f"Absences and distractions: {absence_factor * 100}")
+print(f"Absences and lateness/distractions: {absence_factor * 100}")
 final_grade = raw_grade - absence_factor
 final_grade *= 100
 
