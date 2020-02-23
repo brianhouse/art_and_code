@@ -7,7 +7,7 @@ For this sketch, you will use HTML to design a personal home page for your Digit
 Turn in your sketch by emailing a working home page URL to the professor by next Monday. We will not be critiquing this work in class.
 
 
-## Technical preparation
+## Preparation
 
 To do this you will need set up hosting using GitHub.
 - create an account on [GitHub](http://github.com/) if you don't have one already
