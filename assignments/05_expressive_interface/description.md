@@ -2,12 +2,12 @@
 
 When we interact with a computer, we do so through a software interface. The files and folders of the operating system, the prompt of a text-based terminal, the links of a webpage, and the tool palette and working space of a graphics program—in all of these examples, input from the keyboard and mouse are translated into meaningful actions. Designing an interface is a creative act unto itself, and as artists, we can use code to make the tools that we need to express our ideas.
 
-For this sketch, you will create a software drawing interface using p5. To get started, think about programs like [MacPaint](https://en.wikipedia.org/wiki/MacPaint), where the "user" can choose from multiple brushes with the mouse and use them to draw on the open canvas. However, your approach should reflect your own artist concept: maybe your interface is designed to paint trees, or looks like the cockpit of a spacecraft, or is made for people who are colorblind, to name some examples. How your brushes work and how someone using your interface select them will be important artistic choices for you to make.
+For this sketch, you will create a software drawing interface using p5. To get started, think about programs like [MacPaint](https://en.wikipedia.org/wiki/MacPaint), where the "user" can choose from multiple brushes with the mouse and use them to draw on the open canvas. However, your approach should reflect your own artist concept: maybe your interface is designed to paint trees, or looks like the cockpit of a spacecraft, or is made for people who are colorblind, to name some examples. How your brushes work and how someone using your interface selects them will be important artistic choices for you to make.
 
 Requirements:
-- Your interface must include at least 5 different "brushes" / ways of interacting with it
+- Your interface must include at least 5 different "brushes" / ways of interacting
 - It should be presented on a webpage that includes your title and [3-sentence description](../../resources/description_guidelines.md)
-- Your page should also include an example image of an artwork that you have made with your interface (use )
+- Your page should also include an example image of an artwork that you have made with your interface
 - This page should be hosted on GitHub and linked to from your portfolio
 
 
@@ -46,7 +46,7 @@ If-statements with number comparisons:
 https://www.youtube.com/watch?v=1Osb_iGDdjk
 
 
-## Technical Preparation
+## Preparation
 
 Similar to last assignment, you will create a new folder called `interface` on your computer and a corresponding repository on GitHub. These will contain an `index.html` file that looks like this:
 

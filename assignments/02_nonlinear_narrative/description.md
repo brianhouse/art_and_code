@@ -28,7 +28,7 @@ Email your title, concept, and code to the professor. (You'll need to change the
 - Lev Manovich, _Texas_
 
 
-## Technical Preparation
+## Preparation
 
 In this assignment, we will be getting familiar with a more fundamental way of interacting with the computer than its graphical user interface: text files and the terminal.
 
