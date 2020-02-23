@@ -33,6 +33,8 @@ Email your title, concept, and code to the professor. (You'll need to change the
 In this assignment, we will be getting familiar with a more fundamental way of interacting with the computer than its graphical user interface: text files and the terminal.
 
 - Download and install [Atom](https://atom.io)
+	- Under Preferences > Packages, disable the package called "autocomplete-plus"
+	- For the "bracket-matcher" package, deselect "Autocomplete Brackets" and select "Highlight Matching Line Number"
 - Download install [Node](https://nodejs.org/en/download/)
 - On MacOS, open the Terminal (`/Applications/Utilities/Terminal.app`) and practice navigating:
 	- `pwd` shows the path of your current directory
@@ -59,6 +61,7 @@ When you're ready to start this project:
 - Change directories to the template folder
 - Run the example by typing `node example.js`
 - Copy and paste the contents of `example.js` into a new file, called `narrative.js`, and save it in the same folder. You can then begin to modify the code to make your own nonlinear narrative.
+
 
 ## Coding Concepts
 

@@ -1,54 +1,125 @@
-# Sketch #6: Drawing Tool
+# Sketch #5: Expressive Interface
 
-Create a software drawing tool using p5. Similar to [MacPaint](https://en.wikipedia.org/wiki/MacPaint), the "user" should be able to choose from multiple tools such as a pencil, eraser, and various brushes, and use them to draw on the open canvas. This will require using p5's [mouse functions](https://p5js.org/examples/input-mouse-functions.html) to keep track of the user's actions. Get creative with the brushstrokes—incorporate what you have learned from your screensaver.
+When we interact with a computer, we do so through a software interface. The files and folders of the operating system, the prompt of a text-based terminal, the links of a webpage, and the tool palette and working space of a graphics program—in all of these examples, input from the keyboard and mouse are translated into meaningful actions. Designing an interface is a creative act unto itself, and as artists, we can use code to make the tools that we need to express our ideas.
 
-Your piece should be hosted on github—email a working URL to the professor before class.
+For this sketch, you will create a software drawing interface using p5. To get started, think about programs like [MacPaint](https://en.wikipedia.org/wiki/MacPaint), where the "user" can choose from multiple brushes with the mouse and use them to draw on the open canvas. However, your approach should reflect your own artist concept: maybe your interface is designed to paint trees, or looks like the cockpit of a spacecraft, or is made for people who are colorblind, to name some examples. How your brushes work and how someone using your interface select them will be important artistic choices for you to make.
 
-### p5 example
+Requirements:
+- Your interface must include at least 5 different "brushes" / ways of interacting with it
+- It should be presented on a webpage that includes your title and [3-sentence description](../../resources/description_guidelines.md)
+- Your page should also include an example image of an artwork that you have made with your interface (use )
+- This page should be hosted on GitHub and linked to from your portfolio
 
-A basic drawing tool might look like this:  
-<br />
-<br />
-<br />
-<img src="../img/drawing_tool.png" width="400" />
-<br />
-<br />
-<br />
 
-The `sketch.js` for this tool is as follows:
+## Technical Resources
 
-```javascript
-let paint_mode = false
-let current_stroke = 1
+#### Textbook
 
+Please read Chapter 5: "Response" (page 59) of _Getting Started with p5.js_ for this assignment, which explains how to incorporate user input. Chapter 4: "Variables" (page 41) will also be helpful.
+
+
+#### p5js.org
+
+For this assignment, see the "Mouse" and "Keyboard" functions at https://p5js.org/reference/  
+
+Additional examples:
+- [Mouse Press](https://p5js.org/examples/input-mouse-press.html)
+- [Mouse Functions (draggable object)](https://p5js.org/examples/input-mouse-functions.html)
+- [Keyboard Input](https://p5js.org/examples/input-keyboard.html)
+
+
+#### Shiffman
+
+Draw function, variables, and the mouse:
+https://www.youtube.com/watch?v=RnS0YNuLfQQ
+
+Variables in general:
+https://www.youtube.com/watch?v=Bn_B3T_Vbxs
+
+The map function:
+https://www.youtube.com/watch?v=nicMAoW6u1g
+
+The random function:
+https://www.youtube.com/watch?v=nfmV2kuQKwA
+
+If-statements with number comparisons:
+https://www.youtube.com/watch?v=1Osb_iGDdjk
+
+
+## Technical Preparation
+
+Similar to last assignment, you will create a new folder called `interface` on your computer and a corresponding repository on GitHub. These will contain an `index.html` file that looks like this:
+
+```html
+<html>
+  <head>
+    <title>Expressive Interface</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@0.10.2/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+      <h1>A title</h1>
+      <p>A description</p>
+      <!-- <img src="example.jpg" height="400" style="float: right;"/> -->      
+      <div id="p5"></div>
+  </body>
+</html>
+```
+
+...and a `sketch.js` file that looks like this:
+
+```js
 function setup() {
 
-    // tell p5 to use the <div> tag you made in your html
-    let canvas = createCanvas(400, 300)
-    canvas.parent("p5")
-
-    // draw frame, but leave room for the buttons on the left
-    rect(50, 0, width-50, height)
+    // create a 640x480 pixel canvas and attach it to your HTML
+    createCanvas(640, 480).parent('p5')
 
 }
 
 function draw() {
 
-    // only execute this code if you've turn on paint_mode
-    if (paint_mode == true) {
-        // draw from the previous mouse position to the current mouse position
-        line(pmouseX, pmouseY, mouseX, mouseY)       
+    background(200)
+
+}
+
+function mouseClicked() {
+
+    print(int(mouseX), int(mouseY))
+
+}
+
+function keyPressed() {
+
+    print(key)
+
+}
+```
+
+
+
+## Example Code
+
+The following `draw()` and `mouseClicked()` functions work together to make a basic interface:
+
+```js
+let current_stroke = 1
+
+function draw() {
+
+    if (mouseIsPressed) {
+        // draw a line from the previous mouse position to the current mouse position
+        line(pmouseX, pmouseY, mouseX, mouseY)
     }
 
-    // make a button on the canvas 
-    // use push and pop to isolate any changes from the rest of your code
+    // changes to the stroke and fill between "push" and "pop" wont affect other draw commands
     push()
+
     stroke(0)
     strokeWeight(1)
 
     // make the toolbar area
-    fill(200, 200, 200)
-    rect(0, 0, 50, height)
+    fill(100)
+    rect(0, 0, 50, height)  // magic variable "height" is the canvas height
 
     // make the red button
     fill(255, 0, 0)
@@ -59,78 +130,71 @@ function draw() {
     rect(10, 50, 30, 30)
 
     // make an decrease strokeWeight button
-    fill(255, 255, 255)
+    fill(255)
     rect(10, 90, 30, 30)
     line(15, 105, 35, 105)
 
     // make an increase strokeWeight button
-    fill(255, 255, 255)
     rect(10, 130, 30, 30)
-    strokeWeight(5)        
-    line(15, 145, 35, 145)    
+    strokeWeight(5)
+    line(15, 145, 35, 145)
+
+    // make a clear button
+    strokeWeight(1)
+    fill(255)
+    rect(10, 210, 30, 30)
+    fill(0)
+    text("C", 20, 230)
+
+    // make a save button
+    fill(255)
+    rect(10, 250, 30, 30)
+    fill(0)
+    text("S", 20, 270)
 
     pop()
 
 }
 
-function mousePressed() {
-    paint_mode = true
-}
-
-function mouseReleased() {
-    paint_mode = false
-}
-
 function mouseClicked() {
 
-    // check to see if the mouse click was within the red button coords
+    print(int(mouseX), int(mouseY))
+
+    // check if the mouse click was within the "red" button
     if (mouseX > 10 && mouseX < 40 && mouseY > 10 && mouseY < 40) {
-        stroke(255, 0, 0, 50)
+        stroke(255, 0, 0)
     }
 
-    // check to see if the mouse click was within the blue button coords
+    // check if the mouse click was within the "blue" button
     if (mouseX > 10 && mouseX < 40 && mouseY > 50 && mouseY < 90) {
-        stroke(0, 0, 255, 50)
+        stroke(0, 0, 255)
     }
 
-    // test if mouse clicked in strokeWeight increase box
+    // check if mouse clicked in "strokeWeight increase" box
     if (mouseX > 10 && mouseX < 40 && mouseY > 90 && mouseY < 130) {
         if (current_stroke > 1) {
             current_stroke -= 1
-        }        
-        strokeWeight(current_stroke)        
-    }
-
-    // test if mouse clicked in strokeWeight decrease box
-    if (mouseX > 10 && mouseX < 40 && mouseY > 130 && mouseY < 170) {
-        current_stroke += 1        
+        }
         strokeWeight(current_stroke)
     }
 
+    // check if mouse clicked in "strokeWeight decrease" box
+    if (mouseX > 10 && mouseX < 40 && mouseY > 130 && mouseY < 160) {
+        current_stroke += 1
+        strokeWeight(current_stroke)
+    }
 
-}    
+    // check if mouse clicked in "clear" box
+    if (mouseX > 10 && mouseX < 40 && mouseY > 210 && mouseY < 240) {
+        background(200)
+    }
+
+    // check if mouse clicked in "save" box
+    if (mouseX > 10 && mouseX < 40 && mouseY > 250 && mouseY < 280) {
+        save()
+    }
+
+}
 ```
 
-And the `index.html`:
-
-```HTML
-<html>
-
-<head>
-    <title>Drawing Tool</title>
-    <script src="p5.js"></script>
-    <script src="sketch.js"></script>
-</head>
-
-<body>
-    <h2>Drawing Tool</h2>
-
-    <div id="p5"></div>
-    <br />
-
-    <a href="javascript:save()">SAVE</a>
-
-</body>
-
-</html>
-```
+![](interface_example.png)

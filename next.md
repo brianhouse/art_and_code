@@ -9,12 +9,14 @@ personal homepage:
 
 /
 
+simulacra:
+- maybe "automatic drawing"?
+
 the plan here is to use objects together with animation from the get-go
 meaning relative coordinates
 
 and not classes, but {} syntax
 so that animation class is big. if they get that, that's it, they're programmers.
-
 
 /
 
