@@ -14,7 +14,7 @@ Requirements:
 
 #### Textbook
 
-Please read Chapter 3 (page 17) of _Getting Started with p5.js_ for this assignment, which explains in detail the p5 drawing functions.
+Please read Chapter 3: "Draw" (page 17) of _Getting Started with p5.js_ for this assignment, which explains in detail the p5 drawing functions.
 
 #### p5js.org
 
@@ -71,7 +71,7 @@ Notice the two `<script>` tags in the head section. These tags load in javascrip
 // put in setup whatever needs to be done to get things started
 function setup() {
 
-    // create a static virtual canvas and attach it to your HTML
+    // create a 640x480 pixel canvas and attach it to your HTML
     createCanvas(640, 480).parent('p5')
     noLoop()
 
@@ -98,12 +98,12 @@ When you open `index.html` in your web browser, you should see a grey rectangle 
 To put your sketch online using GitHub, you will follow the [same instructions](../03_personal_homepage/description.md) as you did for your homepage. However, this time your new repository should be called "coordinate_landscape"—your URL will subsequently be http://username.github.io/coordinate_landscape
 
 
-## Coding Concepts
+## Example Code
 
 Coordinates in p5 are organized in a way that may be different than you are used to:
 ![](grid.svg)
 
-A basic drawing example
+### A basic drawing example
 ```js
 
 function draw() {
@@ -138,7 +138,7 @@ function draw() {
 ![](CO.png)
 
 
-Shapes, curves, and translation
+### Shapes, curves, and translation
 ```js
 function draw() {
 
@@ -152,21 +152,18 @@ function draw() {
     vertex(165, 155)
     vertex(84, 101)
     vertex(141, 66)
-    vertex(47, 27)
-    endShape()
+    endShape(CLOSE)
 
     push()
     translate(150, 0)
     beginShape()
-    curveVertex(47, 27)
     curveVertex(47, 27)
     curveVertex(61, 181)
     curveVertex(165, 155)
     curveVertex(84, 101)
     curveVertex(141, 66)
     curveVertex(47, 27)
-    curveVertex(47, 27)
-    endShape()
+    endShape(CLOSE)
     pop()
 
     noFill()
@@ -178,7 +175,9 @@ function draw() {
 ![](B.png)
 
 
-### HTML Template With Side-by-Side Images
+### HTML and p5 together
+
+For this assignment, you will want to modify your HTML to include an artist description and the original image. You may use this template:
 
 ```html
 <html>

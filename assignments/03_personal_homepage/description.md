@@ -20,7 +20,7 @@ When you have created an `index.html` file, upload and commit it to your reposit
 
 
 
-## Coding Concepts
+## Example Code
 
 Copy and paste this html into a file ending in `index.html` and view it in a web browser:
 ```html
