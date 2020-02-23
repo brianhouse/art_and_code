@@ -10,6 +10,8 @@ Requirements:
 - Your page should also include an example image of an artwork that you have made with your interface
 - This page should be hosted on GitHub and linked to from your portfolio
 
+Note that this assignment will have a preliminary crit—please have your work posted online prior.
+
 
 ## Technical Resources
 
@@ -26,6 +28,7 @@ Additional examples:
 - [Mouse Press](https://p5js.org/examples/input-mouse-press.html)
 - [Mouse Functions (draggable object)](https://p5js.org/examples/input-mouse-functions.html)
 - [Keyboard Input](https://p5js.org/examples/input-keyboard.html)
+- [Changing the Cursor](https://p5js.org/reference/#/p5/cursor)
 
 
 #### Shiffman
@@ -102,13 +105,17 @@ function keyPressed() {
 The following `draw()` and `mouseClicked()` functions work together to make a basic interface:
 
 ```js
-let current_stroke = 1
+
+let current_stroke = 1 // declare a variable to keep track of the strokeWeight
 
 function draw() {
 
     if (mouseIsPressed) {
+        cursor(CROSS)   // change the cursor to a cross while drawing
         // draw a line from the previous mouse position to the current mouse position
         line(pmouseX, pmouseY, mouseX, mouseY)
+    } else {
+        cursor(ARROW)   // change the cursor back to normal
     }
 
     // changes to the stroke and fill between "push" and "pop" wont affect other draw commands
