@@ -94,12 +94,6 @@ function mouseClicked() {
     print(int(mouseX), int(mouseY))
 
 }
-
-function keyPressed() {
-
-    print(key)
-
-}
 ```
 
 
@@ -113,20 +107,32 @@ The following `draw()` and `mouseClicked()` functions work together to make a ba
 
 ```js
 
-let current_stroke = 1 // declare a variable to keep track of the strokeWeight
+// declare a variable to keep track of what brush we're using
+let brush = "red_brush"
+
+// declare a variable to keep track of the strokeWeight
+let current_stroke = 1
 
 function draw() {
 
     if (mouseIsPressed) {
         cursor(CROSS)   // change the cursor to a cross while drawing
-        // draw a line from the previous mouse position to the current mouse position
-        line(pmouseX, pmouseY, mouseX, mouseY)
+
+        if (brush == "red_brush") {
+            stroke(255, 0, 0)
+            strokeWeight(current_stroke)
+            line(pmouseX, pmouseY, mouseX, mouseY) // draw a line from the previous mouse position to the current mouse position
+        }
+
+        if (brush == "blue_brush") {
+            stroke(0, 0, 255)
+            strokeWeight(current_stroke)
+            line(pmouseX, pmouseY, mouseX, mouseY)
+        }
+
     } else {
         cursor(ARROW)   // change the cursor back to normal
     }
-
-    // changes to the stroke and fill between "push" and "pop" wont affect other draw commands
-    push()
 
     stroke(0)
     strokeWeight(1)
@@ -166,8 +172,6 @@ function draw() {
     fill(0)
     text("S", 20, 270)
 
-    pop()
-
 }
 
 function mouseClicked() {
@@ -176,36 +180,38 @@ function mouseClicked() {
 
     // check if the mouse click was within the "red" button
     if (mouseX > 10 && mouseX < 40 && mouseY > 10 && mouseY < 40) {
-        stroke(255, 0, 0)
+        print("Clicked red brush")
+        brush = "red_brush"
     }
 
     // check if the mouse click was within the "blue" button
     if (mouseX > 10 && mouseX < 40 && mouseY > 50 && mouseY < 90) {
-        stroke(0, 0, 255)
-    }
-
-    // check if mouse clicked in "strokeWeight increase" box
-    if (mouseX > 10 && mouseX < 40 && mouseY > 90 && mouseY < 130) {
-        if (current_stroke > 1) {
-            current_stroke -= 1
-        }
-        strokeWeight(current_stroke)
+        print("Clicked blue brush")
+        brush = "blue_brush"
     }
 
     // check if mouse clicked in "strokeWeight decrease" box
+    if (mouseX > 10 && mouseX < 40 && mouseY > 90 && mouseY < 130) {
+        print("Clicked stroke decrease")
+        if (current_stroke > 1) {
+            current_stroke -= 1
+        }
+    }
+
+    // check if mouse clicked in "strokeWeight increase" box
     if (mouseX > 10 && mouseX < 40 && mouseY > 130 && mouseY < 160) {
+        print("Clicked stroke increase")
         current_stroke += 1
-        strokeWeight(current_stroke)
     }
 
     // check if mouse clicked in "clear" box
     if (mouseX > 10 && mouseX < 40 && mouseY > 210 && mouseY < 240) {
-        background(200)
+        background(200) // clear everything
     }
 
     // check if mouse clicked in "save" box
     if (mouseX > 10 && mouseX < 40 && mouseY > 250 && mouseY < 280) {
-        save()
+        save()  // saves an image of the canvas
     }
 
 }
@@ -216,44 +222,34 @@ function mouseClicked() {
 #### Examples of brushes using [`random()`](https://p5js.org/reference/#/p5/random)
 
 ```js
-if (mouseIsPressed) {
-    stroke(0, 0, 0, 80)
-    line(mouseX, mouseY, mouseX + random(-50, 50), mouseY + random(-50, 50))
-}
+stroke(0, 0, 0, 80)
+line(mouseX, mouseY, mouseX + random(-50, 50), mouseY + random(-50, 50))
 ```
 ![](brush_1.png)
 
 ```js
-if (mouseIsPressed) {
-    noStroke()
-    fill(random(255), random(255), 0, 100)
-    circle(mouseX + random(-20, 20), mouseY + random(-20, 20), random(2, 30))
-}
+noStroke()
+fill(random(255), random(255), 0, 100)
+circle(mouseX + random(-20, 20), mouseY + random(-20, 20), random(2, 30))
 ```
 ![](brush_2.png)
 
 ```js
-if (mouseIsPressed) {
-    line(mouseX - 20, mouseY - 20, mouseX + 20, mouseY + 20)
-}
+line(mouseX - 20, mouseY - 20, mouseX + 20, mouseY + 20)
 ```
 ![](brush_3.png)
 
 ```js
-if (mouseIsPressed) {
-    rectMode(CORNERS) // https://p5js.org/reference/#/p5/rectMode
-    rect(mouseX, mouseY, pmouseX, pmouseY)
-}
+rectMode(CORNERS) // https://p5js.org/reference/#/p5/rectMode
+rect(mouseX, mouseY, pmouseX, pmouseY)
 ```
 ![](brush_4.png)
 
 ```js
-if (mouseIsPressed) {
-    stroke(0, 0, 50, 50)
-    line(0, 0, mouseX, mouseY)
-    line(width, 0, mouseX, mouseY)
-    line(0, height, mouseX, mouseY)
-    line(width, height, mouseX, mouseY)
-}
+stroke(0, 0, 50, 50)
+line(0, 0, mouseX, mouseY)
+line(width, 0, mouseX, mouseY)
+line(0, height, mouseX, mouseY)
+line(width, height, mouseX, mouseY)
 ```
 ![](brush_5.png)
