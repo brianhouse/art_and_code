@@ -24,11 +24,15 @@ Please read Chapter 5: "Response" (page 59) of _Getting Started with p5.js_ for 
 
 For this assignment, see the "Mouse" and "Keyboard" functions at https://p5js.org/reference/  
 
-Additional examples:
+Additional input examples:
 - [Mouse Press](https://p5js.org/examples/input-mouse-press.html)
 - [Mouse Functions (draggable object)](https://p5js.org/examples/input-mouse-functions.html)
 - [Keyboard Input](https://p5js.org/examples/input-keyboard.html)
 - [Changing the Cursor](https://p5js.org/reference/#/p5/cursor)
+
+Important new functions:
+- [`random()`](https://p5js.org/reference/#/p5/random)
+- [`map()`](https://p5js.org/reference/#/p5/map)
 
 
 #### Shiffman
@@ -101,6 +105,9 @@ function keyPressed() {
 
 
 ## Example Code
+
+
+#### Interface Elements
 
 The following `draw()` and `mouseClicked()` functions work together to make a basic interface:
 
@@ -205,3 +212,48 @@ function mouseClicked() {
 ```
 
 ![](interface_example.png)
+
+#### Examples of brushes using [`random()`](https://p5js.org/reference/#/p5/random)
+
+```js
+if (mouseIsPressed) {
+    stroke(0, 0, 0, 80)
+    line(mouseX, mouseY, mouseX + random(-50, 50), mouseY + random(-50, 50))
+}
+```
+![](brush_1.png)
+
+```js
+if (mouseIsPressed) {
+    noStroke()
+    fill(random(255), random(255), 0, 100)
+    circle(mouseX + random(-20, 20), mouseY + random(-20, 20), random(2, 30))
+}
+```
+![](brush_2.png)
+
+```js
+if (mouseIsPressed) {
+    line(mouseX - 20, mouseY - 20, mouseX + 20, mouseY + 20)
+}
+```
+![](brush_3.png)
+
+```js
+if (mouseIsPressed) {
+    rectMode(CORNERS) // https://p5js.org/reference/#/p5/rectMode
+    rect(mouseX, mouseY, pmouseX, pmouseY)
+}
+```
+![](brush_4.png)
+
+```js
+if (mouseIsPressed) {
+    stroke(0, 0, 50, 50)
+    line(0, 0, mouseX, mouseY)
+    line(width, 0, mouseX, mouseY)
+    line(0, height, mouseX, mouseY)
+    line(width, height, mouseX, mouseY)
+}
+```
+![](brush_5.png)
