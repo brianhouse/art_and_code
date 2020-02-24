@@ -7,6 +7,14 @@ personal homepage:
 - make more a reflection on identity? media archeology? more context somehow?
 - link to friends in the class
 
+coordinate landscape:
+- show 3D?
+
+expressive interface:
+-
+
+
+
 /
 
 simulacra:
