@@ -1,3 +1,8 @@
+grade right away
+
+turtle:
+- make sure they save a drawing of it to include in the portfolio
+
 nonlinear_narrative:
 - use platformio-ide-terminal within atom rather than learning terminal commands
 - add an auto-lowercase to the includes? like a function: search(response, "left") or something that avoids dot-syntax
@@ -6,12 +11,17 @@ nonlinear_narrative:
 personal homepage:
 - make more a reflection on identity? media archeology? more context somehow?
 - link to friends in the class
+- needs to be crit
+- should be more explicitly a portfolio. the gifs are cool, but I think I overdid it.
+- include the turtle?
+- include nonlinear narrative somehow? (that would mean a server)
+- maybe grade it at the end of the semester?
 
 coordinate landscape:
 - show 3D?
 
 expressive interface:
--
+- don't demonstrate keyboard, they can find that if they want it
 
 
 
