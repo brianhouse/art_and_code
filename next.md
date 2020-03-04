@@ -17,12 +17,14 @@ personal homepage:
 - include nonlinear narrative somehow? (that would mean a server)
 - maybe grade it at the end of the semester?
 
+- all code can be subdirectories, dont have to do separate repositories
+
 coordinate landscape:
 - show 3D?
 
 expressive interface:
 - don't demonstrate keyboard, they can find that if they want it
-
+- use `brush = 1`, not names
 
 
 /

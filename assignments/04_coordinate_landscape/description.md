@@ -2,11 +2,11 @@
 
 For a painter, placing a mark on a canvas is a physical gesture—you simply touch the surface where you want the mark to be. With digital media, however, the concept of "space" is represented through symbolic coordinate systems. For example, a 2-dimensional canvas is typically understood with two numbers—an X-coordinate and a Y-coordinate—that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. "Color space" can also be represented with coordinates, one each for the red, green, and blue components.
 
-In this sketch, you will become familiar with drawing using coordinates. To explore the relationship of digital "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. This will require abstracting the original brushstrokes into geometric shapes while retaining a recognizable sense of the original composition. Pay particular attention to your use of color. The choices you make in your digital re-interpretation should communicate something distinct from the original painting.
+In this sketch, you will become familiar with drawing using coordinates. To explore the relationship of digital "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something new. Pay particular attention to your use of color.
 
 Requirements:
 - Your piece should be presented on a webpage next to an image of the original artwork
-- You must include your title and [3-sentence description](../../resources/description_guidelines.md) on your webpage
+- On your webpage, you must include your title, the artist and year of the original painting, and a [3-sentence description](../../resources/description_guidelines.md) that explains the choices you made in your reinterpretation
 - This page should be hosted on GitHub—email a working URL to the professor before class
 
 
