@@ -3,9 +3,9 @@
 When we interact with a computer, we do so through a software interface. The files and folders of the operating system, the prompt of a text-based terminal, the links of a webpage, and the tool palette and working space of a graphics program—in all of these examples, input from the keyboard and mouse are translated into meaningful actions. Though we take many interfaces for granted, interfaces reflect the biases of those who made them. Furthermore, designing an interface is a creative act unto itself, and one that is central to digital media artists who use code to build their own tools.
 
 For this sketch, you will create a software painting interface using p5. To get started, think about programs like [MacPaint](https://en.wikipedia.org/wiki/MacPaint), where the "user" can choose from multiple brushes with the mouse and use them to draw on the open canvas. However, your approach should reflect your own artistic theme. For example:
-    - an interface with a [street-art aesthetic](https://www.google.com/search?q=graffiti) and spray-paint brushes
-    - an interface from the "[future](https://www.google.com/search?q=future+interface)"    
-    - an interface for someone who is [color blind](https://en.wikipedia.org/wiki/Color_blindness), a [bird](https://en.wikipedia.org/wiki/Bird_vision#Light_perception), [underwater](http://thedivingblog.com/colors-underwater/) or who otherwise sees the world in ways not typically accounted for in interfaces
+- an interface with a [street-art aesthetic](https://www.google.com/search?q=graffiti) and spray-paint brushes
+- an interface from the "[future](https://www.google.com/search?q=future+interface)"    
+- an interface for someone who is [color blind](https://en.wikipedia.org/wiki/Color_blindness), a [bird](https://en.wikipedia.org/wiki/Bird_vision#Light_perception), [underwater](http://thedivingblog.com/colors-underwater/) or who otherwise sees the world in ways not typically accounted for in interfaces
 
 Requirements:
 - Your interface must include at least 5 different "brushes" / ways of interacting
