@@ -47,7 +47,7 @@ except Exception as e:
 assignments = [assignment.replace('-', '_') for assignment in student['assignments'].values()]
 assignments = [list(eval(assignment)) for assignment in assignments]
 assignment_grade = sum(sum(assignments, [])) / (len(assignments) * 2 * 100)
-print(f"This sketch: {assignments[-1][0]} concept / {assignments[-1][0]} craft")
+print(f"This sketch: {assignments[-1][0]} concept / {assignments[-1][1]} craft")
 print(f"Sketches to date: {(assignment_grade * 100)}")
 
 
@@ -72,8 +72,8 @@ if 'absences' in student and student['absences'] is not None:
 if 'distractions' in student and student['distractions'] is not None:
     absence_factor += student['distractions'] * 0.0125
 absence_factor = min(absence_factor, .1)
-print(f"Absences and lateness/distractions: {absence_factor * 100}")
+print(f"Absences and lateness/distractions: -{absence_factor * 100}")
 final_grade = raw_grade - absence_factor
 final_grade *= 100
 
-print(f"Course: {final_grade}")
+print(f"Course to date: {final_grade}")
