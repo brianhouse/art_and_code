@@ -29,7 +29,10 @@ https://www.youtube.com/watch?v=VIQoUghHSxU
 
 
 Useful new functions:
+- [`width`](https://p5js.org/reference/#/p5/width)
+- [`height`](https://p5js.org/reference/#/p5/height)
 - [`dist()`](https://p5js.org/reference/#/p5/dist)
+
 
 
 ## Preparation
@@ -85,14 +88,17 @@ Look out, here comes some new syntax. It will enable you to organize your code i
 
 At it's most basic level, an object is simply a collection of variables. Consider the following, in which we use the `square` function to draw a simple box:
 ```js
+// variables at the top of the sketch
 let x = 100
 let y = 150
 let size = 50
 // ...
+// code in the draw() function
 square(x, y, size)
 ```
 Imagine that `x`, `y`, and `size` are all variables that we're using to dynamically change the location and dimensions of this box. But what if there are _two_ boxes? Now we need something like:
 ```js
+// variables at the top of the sketch
 let box1_x = 100
 let box1_y = 150
 let box1_size = 50
@@ -100,14 +106,17 @@ let box2_x = 75
 let box2_y = 75
 let box2_size = 25
 // ...
+// code in the draw() function
 square(box1_x, box1_y, box1_size)
 square(box2_x, box2_y, box2_size)
 ```
 This starts to get messy, and 10 boxes are going to be a problem. Enter object syntax. The above code can be replaced with this:
 ```js
+// variables at the top of the sketch
 let box_1 = {x: 100, y: 150, size: 50}
 let box_2 = {x: 75, y: 75, size: 25}
 // ...
+// code in the draw() function
 square(box_1.x, box_1.y, box_1.size)
 square(box_2.x, box_2.y, box_2.size)
 ```
@@ -149,10 +158,12 @@ What arrays are really good for is for _looping_.
 For example, without arrays, if we wanted to draw all of our box objects, we'd do it like this:
 
 ```js
+// variables at the top of the sketch
 let box_1 = {x: 100, y: 150, size: 50}
 let box_2 = {x: 75, y: 75, size: 25}
 let box_3 = {x: 50, y: 20, size: 40}
 //...
+// code in the draw() function
 square(box_1.x, box_1.y, box_1.size)
 square(box_2.x, box_2.y, box_2.size)
 square(box_3.x, box_3.y, box_3.size)
@@ -160,33 +171,110 @@ square(box_4.x, box_4.y, box_4.size)
 ```
 However, using our `boxes` array and a loop, we can do it like this instead:
 ```js
+// variables at the top of the sketch
 let box_1 = {x: 100, y: 150, size: 50}
 let box_2 = {x: 75, y: 75, size: 25}
 let box_3 = {x: 50, y: 20, size: 40}
 let boxes = [box_1, box_2, box_3]
 //...
+// code in the draw() function
 for (let box of boxes) {
     square(box.x, box.y, box.size)
 }
 ```
-This is much more compact. `box` is a temporary variable that stands in for each of the elements in the `boxes` array. This code will therefore be run 4 times, each time on a different object.
+This is much more compact. `box` is a temporary variable that stands in for each of the elements in the `boxes` array in turn. The first time, `box` is `box_1`; the second time, `box` is `box_2`; and so forth for every object in the array. the This code will therefore be run 4 times, each time on a different object. 
 
-Ok, so now we've got a new use for `{}`, plus `[]`! Keep them straight, because as it turns out we can compact this code even further.
+Ok, so now we've got a new use for `{}`, plus `[]`! Watch those pairs.
 
-We don't actually need to bother to name each of these boxes. We can put the object definitions directly in the array. This code is functionally the same as the above:
+
+### Creating objects dynamically
+
+If we want precise objects, we've seen how to define objects in order to do it. But what if we want 100 different boxes, all with different parameters? Even with object syntax, this is still a pain.
+
+It turns out that `random` can help us out here.
+
+Consider the following:
+```js
+let random_box = {x: random(0, width), y: random(0, height), size: random(10, 100)}
+```
+This code creates an object with the parameters for a box in a random position and at a random size. Note that p5 doesn't let use use `random` outside of a function. But if we declare an empty array for our boxes ahead of time, we can add to it in `setup()`. Like this:
+```js
+let boxes = []  // declare an empty array
+
+function setup() {
+
+    createCanvas(windowWidth, windowHeight).parent('p5')
+
+    // create some box parameters
+    let random_box = {x: random(0, width), y: random(0, height), size: random(10, 100)}
+
+    // add them to the array
+    boxes.push(random_box)
+
+}
+
+function draw() {
+
+    // draw the random box
+    for (let box of boxes) {
+        square(box.x, box.y, box.size)
+    }
+
+}
+```
+
+In this case, the array `boxes` has only one object in it, and only one square is drawn. But with a loop, we can create as many as we need.
+
+Since our array is empty when we start out, we're going to use a different kind of loop than what we used above. Remember the `repeat` function from the turtle?
+```js
+repeat(10) {
+
+}
+```
+p5 doesn't understand `repeat`, but this is the same thing:
+```js
+for (let i=0; i<10; i++) {
+
+}
+```
+This syntax is a little awkward, but for now, just copy this and replace the 10 with however many times you want it to repeat.
+
+Now we can add 10 b boxes to our array:
 
 ```js
-let boxes = [   {x: 100, y: 150, size: 50},
-                {x: 75, y: 75, size: 25},
-                {x: 50, y: 20, size: 40},
-            ]
-// ...
-for (let box of boxes) {
-    square(box.x, box.y, box.size)
+let boxes = []  // declare an empty array
+
+function setup() {
+
+    createCanvas(windowWidth, windowHeight).parent('p5')
+
+    // do this 10 times
+    for (let i=0; i<10; i++) {
+
+        // create some box parameters
+        let random_box = {x: random(0, width), y: random(0, height), size: random(10, 100)}
+
+        // add them to the array
+        boxes.push(random_box)
+
+    }
+
+}
+
+function draw() {
+
+    // the array now has 10 elements!
+    // draw all of them
+    for (let box of boxes) {
+        square(box.x, box.y, box.size)
+    }
+
 }
 ```
 
-Why would we do all of this reduction? Well, now you could fill that array with elements that you can draw and manipulate on the screen, without typing everything out individually by hand. This is particularly helpful for animation.
+Our code remains very compact, but there are now 10 random boxes drawn to the screen.
+
+This is even more helpful when we start to work with animation.
 
 
 ## Example Code
@@ -194,7 +282,7 @@ Why would we do all of this reduction? Well, now you could fill that array with 
 Colliding balls
 ```js
 // declare our array here
-let balls
+let balls = []
 
 function setup() {
 
@@ -202,29 +290,18 @@ function setup() {
     createCanvas(windowWidth, windowHeight).parent('p5')
     // the p5 variables "width" and "height" hold the dimensions of the canvas
 
-    // we have to do this here in order to use the random function
-    balls = [   {   x: random(100, width-100),
-                    y: random(100, height-100),
-                    vx: random(5, 20),
-                    vy: random(5, 20),
-                    size: random(20, 100),
-                    color: [random(255), random(100), random(100)],
-                },
-                {   x: random(100, width-100),
-                    y: random(100, height-100),
-                    vx: random(5, 20),
-                    vy: random(5, 20),
-                    size: random(20, 100),
-                    color: [random(100), random(100), random(255)],
-                },
-                {   x: random(100, width-100),
-                    y: random(100, height-100),
-                    vx: random(5, 20),
-                    vy: random(5, 20),
-                    size: random(20, 100),
-                    color: [random(100), random(255), random(100)],
-                }
-            ]
+    // loop 10 times
+    // each time, create a random ball object
+    for (let i=0; i<10; i++) {
+        let random_ball = {     x: random(100, width-100),
+                                y: random(100, height-100),
+                                vx: random(5, 20),
+                                vy: random(5, 20),
+                                size: random(10, 100),
+                                color: [random(255), random(255), random(255)],
+                            }
+        balls.push(random_ball)
+    }
 
 }
 
