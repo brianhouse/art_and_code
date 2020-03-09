@@ -53,7 +53,7 @@ function draw() {
         // add some gravity
         ball.vy += 0.2          // gravity!
 
-        // bounce ball off walls
+        // bounce ball off walls (dampen with -.8 instead of -1)
         if (ball.x >= width - ball.size/2) {
             ball.vx *= -.8
             ball.x += ball.vx
@@ -63,7 +63,7 @@ function draw() {
             ball.x += ball.vx
         }
         if (ball.y >= height - ball.size/2) {
-            ball.vy *= -.8 // dampen the floor somewhat
+            ball.vy *= -.8
             ball.y += ball.vy
         }
         if (ball.y <= 0 + ball.size/2) {
