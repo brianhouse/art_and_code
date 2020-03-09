@@ -1,6 +1,6 @@
 # Sketch #5: Animate Objects
 
-Computers are not only capable of responding to human input. Rather, within their virtual worlds, autonomous entities can follow their own sets of logic. Physics simulations, models of biological life, and abstract animations all work by defining a set of rules and seeing how things unfold with time. This is a key way in which digital media artists use code to find aesthetic forms that would be otherwise unimaginable.
+Computers are not only capable of responding to human input. Rather, within their virtual worlds, autonomous entities can follow their own sets of logic. Physics simulations, models of biological life, and abstract animations all work by defining a set of rules and seeing how things unfold with time. This is a key way in which digital media artists use code to explore processes and find unexpected aesthetic forms.
 
 For this sketch, you will create an animation. You will draw from your knowledge of coordinates, colors, conditionals, and variables from the past two sketches. You will also use object syntax to keep track of what is happening on the canvas and define rules for how those objects change over time. Conceptually, your sketch should be inspired—however abstractly—by some process that happens in the real world. Examples include: snowflakes falling outside, crowds moving in a shopping mall or at a protest, players at a soccer match, termites building a nest, or mountains eroding into the sea.
 
@@ -245,9 +245,6 @@ function draw() {
 
         // now update vx and vy for next time
 
-        // add some gravity
-        ball.vy += 0.2          // gravity!
-
         // bounce ball off walls
         if (ball.x >= width - ball.size/2) {
             ball.vx *= -1
@@ -256,7 +253,7 @@ function draw() {
             ball.vx *= -1
         }
         if (ball.y >= height - ball.size/2) {
-            ball.vy *= -.8 // dampen the floor somewhat
+            ball.vy *= -1
         }
         if (ball.y <= 0 + ball.size/2) {
             ball.vy *= -1
@@ -294,6 +291,8 @@ function windowResized() {
     resizeCanvas(windowWidth, windowHeight)
 }
 ```
+
+For a modification of this example that includes simulated gravity, look [here](gravity.html) and see the code [here](gravity.js).
 
 
 <!-- flying toasters
