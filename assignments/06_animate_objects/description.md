@@ -292,7 +292,7 @@ function windowResized() {
 }
 ```
 
-For a modification of this example that includes simulated gravity, look [here](gravity.html) and see the code [here](gravity.js).
+For a modification of this example that includes simulated gravity, look at the code [here](gravity.js).
 
 
 <!-- flying toasters
