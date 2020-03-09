@@ -1,5 +1,5 @@
 // declare our array here
-let balls
+let balls = []
 
 function setup() {
 
@@ -7,29 +7,18 @@ function setup() {
     createCanvas(windowWidth, windowHeight).parent('p5')
     // the p5 variables "width" and "height" hold the dimensions of the canvas
 
-    // we have to do this here in order to use the random function
-    balls = [   {   x: random(100, width-100),
-                    y: random(100, height-100),
-                    vx: random(5, 20),
-                    vy: random(5, 20),
-                    size: random(20, 100),
-                    color: [random(255), random(100), random(100)],
-                },
-                {   x: random(100, width-100),
-                    y: random(100, height-100),
-                    vx: random(5, 20),
-                    vy: random(5, 20),
-                    size: random(20, 100),
-                    color: [random(100), random(100), random(255)],
-                },
-                {   x: random(100, width-100),
-                    y: random(100, height-100),
-                    vx: random(5, 20),
-                    vy: random(5, 20),
-                    size: random(20, 100),
-                    color: [random(100), random(255), random(100)],
-                }
-            ]
+    // loop 10 times
+    // each time, create a random ball object
+    for (let i=0; i<10; i++) {
+        let random_ball = {     x: random(100, width-100),
+                                y: random(100, height-100),
+                                vx: random(5, 20),
+                                vy: random(5, 20),
+                                size: random(10, 100),
+                                color: [random(255), random(255), random(255)],
+                            }
+        balls.push(random_ball)
+    }
 
 }
 
