@@ -148,7 +148,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Monday 3/9
 - Survey presentations 5: Cory Arcangel, Ryoji Ikeda
-- Sketch #5 crit
+- Sketch #5 [crit](https://docs.google.com/document/d/1yjtQO72_vZOhwrwqhp_W_6EZ71Pp1yW3GvE3FwZNXpY/edit?usp=sharing)
 - **Homework for next class**: read Chapter 8: "Motion" of _Getting Started with p5.js_
 
 #### Wednesday 3/11
