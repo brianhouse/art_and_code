@@ -152,8 +152,8 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - **Homework for next class**: read Chapter 8: "Motion" of _Getting Started with p5.js_
 
 #### Wednesday 3/11
-- Introduction to animation, arrays, and objects
-- Begin [Sketch #6: Simulacra](assignments/06_simulacra/description.md)
+- Introduction to animation, objects, and arrays
+- Begin [Sketch #6: Animate Objects](assignments/06_animate_objects/description.md)
 
 
 ### Week 9

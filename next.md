@@ -26,11 +26,10 @@ expressive interface:
 - don't demonstrate keyboard, they can find that if they want it
 - use `brush = 1`, not names
 
+- need artist examples
 
 /
 
-simulacra:
-- maybe "automatic drawing"?
 
 the plan here is to use objects together with animation from the get-go
 meaning relative coordinates
@@ -38,9 +37,12 @@ meaning relative coordinates
 and not classes, but {} syntax
 so that animation class is big. if they get that, that's it, they're programmers.
 
+should this be object oriented from the get go? ie, what about interface using objects?
+
+
 /
 
-Lynn Hershman Leeson and Alison Parrish are iffy examples
+Lynn Hershman Leeson and Alison Parrish are hard examples to make compelling presentations on
 
 
 /

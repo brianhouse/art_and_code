@@ -35,7 +35,6 @@ Additional input examples:
 
 Important new functions:
 - [`random()`](https://p5js.org/reference/#/p5/random)
-- [`map()`](https://p5js.org/reference/#/p5/map)
 
 
 #### Shiffman
@@ -45,9 +44,6 @@ https://www.youtube.com/watch?v=RnS0YNuLfQQ
 
 Variables in general:
 https://www.youtube.com/watch?v=Bn_B3T_Vbxs
-
-The map function:
-https://www.youtube.com/watch?v=nicMAoW6u1g
 
 The random function:
 https://www.youtube.com/watch?v=nfmV2kuQKwA
