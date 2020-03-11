@@ -428,8 +428,6 @@ ball.y += ball.vy * sin(ball.angle)
 ball.angle += 1
 ```
 
-#### Rotation
-
 
 
 
