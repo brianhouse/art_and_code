@@ -29,8 +29,8 @@ function draw() {
     for (let ball of bouncing_balls) {
 
         // move the objects
-        ball.x = ball.x + ball.vx
-        ball.y = ball.y + ball.vy
+        ball.x = ball.x + ball.vx + random(-4, 4)
+        ball.y = ball.y + ball.vy + random(-4, 4)
 
         // draw the objects at the new location
         noStroke()
