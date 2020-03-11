@@ -33,7 +33,7 @@ Additional input examples:
 - [Keyboard Input](https://p5js.org/examples/input-keyboard.html)
 - [Changing the Cursor](https://p5js.org/reference/#/p5/cursor)
 
-Important new functions:
+Important new p5 functions:
 - [`random()`](https://p5js.org/reference/#/p5/random)
 
 
