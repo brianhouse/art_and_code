@@ -285,9 +285,9 @@ This is even more helpful when we start to work with animation.
 
 ## Example Code
 
-Colliding balls
+### Colliding balls
 ```js
-// declare our array here
+// declare our array of objects here, but it's empty for now
 let bouncing_balls = []
 
 function setup() {
@@ -295,6 +295,9 @@ function setup() {
     // create a canvas that fills the browser window and attach it to your HTML
     createCanvas(windowWidth, windowHeight).parent('p5')
     // the p5 variables "width" and "height" hold the dimensions of the canvas
+
+
+    //// DYNAMICALLY GENERATE OBJECTS ////
 
     // loop 10 times
     // each time, create a random ball object
@@ -317,6 +320,8 @@ function draw() {
 
     for (let ball of bouncing_balls) {
 
+        //// MOVE AND DRAW OBJECTS ////
+
         // move the objects
         ball.x = ball.x + ball.vx
         ball.y = ball.y + ball.vy
@@ -326,7 +331,7 @@ function draw() {
         fill(ball.color)
         circle(ball.x, ball.y, ball.size)
 
-        // now update vx and vy for next time
+        //// CONDITIONS FOR PROPERTY CHANGES (walls, collisions, etc) ////
 
         // bounce ball off walls
         if (ball.x >= width - ball.size/2) {
@@ -376,6 +381,56 @@ function windowResized() {
 ```
 
 For a modification of this example that includes simulated gravity, look at the code [here](gravity.js).
+
+### Different types of motion
+
+We can do more things than simply move objects around linearly.
+
+#### Drunk walk
+
+Add a random amount within draw, not within the object:
+```js
+ball.x = ball.x + ball.vx + random(-15, 15)
+ball.y = ball.y + ball.vy + random(-15, 15)
+```
+
+#### Size change
+Or try varying the size of the object:
+```js
+ball.size = ball.size + ball.vsize
+
+if (ball.size >= 500) { // condition for when the ball is at maximum size
+    ball.vsize = -ball.vsize
+}
+if (ball.size <= 10) {  // condition for when the ball is at maximum size
+    ball.vsize = -ball.vsize
+}
+```
+
+For this to work, you will need to add `size` and `vsize` properties to the `ball` object. To take things further, you could even replace the `500` and `10` above with properties, such as `ball.max_size` and `ball.min_size`, and give those random parameters when you create the object as well.
+
+#### Circular motion
+
+If you add an `angle` property to the ball, you can use it to create circular motion. This is a sine wave:
+
+```js
+angleMode(DEGREES)
+ball.x += ball.vx
+ball.y += ball.vy * sin(ball.angle)
+ball.angle += 1 // update the angle
+```
+
+...and this is a full circle:
+```js
+angleMode(DEGREES)
+ball.x += ball.vx * cos(ball.angle)
+ball.y += ball.vy * sin(ball.angle)
+ball.angle += 1
+```
+
+#### Rotation
+
+
 
 
 <!-- flying toasters
