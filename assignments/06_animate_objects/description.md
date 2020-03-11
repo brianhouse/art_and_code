@@ -27,8 +27,14 @@ https://www.youtube.com/watch?v=-e5h4IGKZRY
 ...and arrays:  
 https://www.youtube.com/watch?v=VIQoUghHSxU
 
+...dynamically creating arrays objects with `for` loops
+https://www.youtube.com/watch?v=pGkSHeEZLMU
 
-Useful new functions:
+...arrays + `for` loops with iterator syntax
+https://www.youtube.com/watch?v=RXWO3mFuW-I
+
+
+Useful new p5 functions:
 - [`width`](https://p5js.org/reference/#/p5/width)
 - [`height`](https://p5js.org/reference/#/p5/height)
 - [`dist()`](https://p5js.org/reference/#/p5/dist)
@@ -182,7 +188,7 @@ for (let box of boxes) {
     square(box.x, box.y, box.size)
 }
 ```
-This is much more compact. `box` is a temporary variable that stands in for each of the elements in the `boxes` array in turn. The first time, `box` is `box_1`; the second time, `box` is `box_2`; and so forth for every object in the array. the This code will therefore be run 4 times, each time on a different object. 
+This is much more compact. `box` is a temporary variable that stands in for each of the elements in the `boxes` array in turn. The first time, `box` is `box_1`; the second time, `box` is `box_2`; and so forth for every object in the array. the This code will therefore be run 4 times, each time on a different object.
 
 Ok, so now we've got a new use for `{}`, plus `[]`! Watch those pairs.
 
