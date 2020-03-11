@@ -1,4 +1,4 @@
-# Sketch #5: Animate Objects
+# Sketch #6: Animate Objects
 
 Computers are not only capable of responding to human input. Rather, within their virtual worlds, autonomous entities can follow their own sets of logic. Physics simulations, models of biological life, and abstract animations all work by defining a set of rules and seeing how things unfold with time. This is a key way in which digital media artists use code to explore processes and find unexpected aesthetic forms.
 
@@ -288,7 +288,7 @@ This is even more helpful when we start to work with animation.
 Colliding balls
 ```js
 // declare our array here
-let balls = []
+let bouncing_balls = []
 
 function setup() {
 
@@ -306,7 +306,7 @@ function setup() {
                                 size: random(10, 100),
                                 color: [random(255), random(255), random(255)],
                             }
-        balls.push(random_ball)
+        bouncing_balls.push(random_ball)
     }
 
 }
@@ -315,11 +315,11 @@ function draw() {
 
     background(255, 255, 200)
 
-    for (let ball of balls) {
+    for (let ball of bouncing_balls) {
 
         // move the objects
-        ball.x += ball.vx
-        ball.y += ball.vy
+        ball.x = ball.x + ball.vx
+        ball.y = ball.y + ball.vy
 
         // draw the objects at the new location
         noStroke()
@@ -330,22 +330,22 @@ function draw() {
 
         // bounce ball off walls
         if (ball.x >= width - ball.size/2) {
-            ball.vx *= -1
+            ball.vx = -ball.vx      // flip the direction!
         }
         if (ball.x <= 0 + ball.size/2) {
-            ball.vx *= -1
+            ball.vx = -ball.vx
         }
         if (ball.y >= height - ball.size/2) {
-            ball.vy *= -1
+            ball.vx = -ball.vx
         }
         if (ball.y <= 0 + ball.size/2) {
-            ball.vy *= -1
+            ball.vx = -ball.vx
         }
 
-        // check if it is colliding with another balls
-        // let collisions = 0
-        for (let other_ball of balls) {
-            if (other_ball != ball) {   // don't compare with itself!
+        // check if it is colliding with another ball
+        // we do this by selecting a second ball from our array
+        for (let other_ball of bouncing_balls) {
+            if (other_ball != ball) {   // this condition stops us from testing if the ball is colliding with itself
 
                 // how close do they have to be to touch?
                 let touching = abs(ball.size/2 + other_ball.size/2)
@@ -356,10 +356,10 @@ function draw() {
                 // if theyre touching, bounce them
                 // (not real physics, but close enough for now)
                 if (distance <= touching) {
-                    ball.vx *= -1
-                    ball.vy *= -1
-                    ball.x += ball.vx
-                    ball.y += ball.vy
+                    ball.vx = -ball.vx
+                    ball.vy = -ball.vy
+                    ball.x = ball.x + ball.vx
+                    ball.y = ball.y + ball.vy
                 }
 
             }
