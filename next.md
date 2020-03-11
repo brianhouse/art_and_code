@@ -40,6 +40,8 @@ so that animation class is big. if they get that, that's it, they're programmers
 should this be object oriented from the get go? ie, what about interface using objects?
 
 
+--> emphasize blocks -- building blocks of code
+
 /
 
 Lynn Hershman Leeson and Alison Parrish are hard examples to make compelling presentations on

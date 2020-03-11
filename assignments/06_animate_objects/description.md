@@ -6,7 +6,7 @@ For this sketch, you will create an animation. You will draw from your knowledge
 
 Requirements:
 - Your piece should be presented on a webpage
-- On your webpage, you must include your title and a [3-sentence description](../../resources/description_guidelines.md) that explains your inspiration
+- _Within your sketch_ (using the [text](https://p5js.org/reference/#/p5/text) object), you must include your title and a [3-sentence description](../../resources/description_guidelines.md) that explains your inspiration
 - This page should be hosted on GitHub—email a working URL to the professor before class
 
 
