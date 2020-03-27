@@ -172,7 +172,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Monday 3/30
 - Survey presentations 7: Raphael Lozano-Hemmer, Blast Theory
-- Sketch #6 final crit
+- Sketch #6 [final crit](https://docs.google.com/document/d/1AatGC4SH0Hqy-V68yM2voqrji9ifiaZm0CnYctDm-mU/edit?usp=sharing)
 
 #### Wednesday 4/1
 - Begin [Sketch #7: Machine gaze](assignments/07_machine_gaze/description.md)
