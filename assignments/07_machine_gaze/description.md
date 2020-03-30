@@ -2,7 +2,7 @@
 
 Thanks to the ubiquity of cameras, not only do you look at a digital artwork—often the artwork is looking back at you. Webcams can be a source of input to a sketch, similar to the keyboard and mouse. But video is also a rich source of information, and it captures aspects of the world that are more than just commands to the computer. Webcams are often used to bring the human body into code, for example, which raises all sorts of questions about how a machine is made to see.
 
-For this sketch, you will make a "magic mirror" that augments or replaces a person’s digital “reflection” with additional information or graphics. Do do this, you will use a library called clmtracker which gathers data about the face and provides it to your p5 code as a special object. This object includes the coordinates of key facial features. Incorporate these coordinates into your own animations and graphics. Conceptually, your mirror should in some way address the relationship between our physical selves and how we are represented online.
+For this sketch, you will make a "magic mirror" that augments or replaces a digital “reflection” of the viewer's face with additional information or graphics. Do do this, you will use a library called clmtracker which gathers data about the face and provides it to your p5 code as an array of feature objects. Incorporate the coordinates in these objects into your own animations and graphics. Conceptually, your mirror should in some way address the relationship between our physical selves and how we are represented online.
 
 Requirements:
 - Your piece should be presented on a webpage
@@ -39,7 +39,7 @@ Make a folder called `mirror` and add an `index.html` file that contains the fol
 
 Download [`clmtrackr.js`](clmtrackr.js) and add it to your folder.
 
-Here is the javascript template:
+Finally, here is the template for `sketch.js`:
 
 ```js
 let capture
