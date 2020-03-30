@@ -106,3 +106,5 @@ function showFlippedCapture() {
     pop()
 }
 ```
+
+![](screenshot.png)
