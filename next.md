@@ -2,6 +2,7 @@ grade right away
 
 turtle:
 - make sure they save a drawing of it to include in the portfolio
+- emphasize repeat
 
 nonlinear_narrative:
 - use platformio-ide-terminal within atom rather than learning terminal commands
@@ -20,7 +21,7 @@ personal homepage:
 - all code can be subdirectories, dont have to do separate repositories
 
 coordinate landscape:
-- show 3D?
+- show 3D? no.
 
 expressive interface:
 - don't demonstrate keyboard, they can find that if they want it
@@ -28,17 +29,11 @@ expressive interface:
 
 - need artist examples
 
+animate objects
+- objects and for loops are tough all at once. wondering if 'for' should be separate and earlier somehow
+
+
 /
-
-
-the plan here is to use objects together with animation from the get-go
-meaning relative coordinates
-
-and not classes, but {} syntax
-so that animation class is big. if they get that, that's it, they're programmers.
-
-should this be object oriented from the get go? ie, what about interface using objects?
-
 
 --> emphasize blocks -- building blocks of code
 
@@ -50,3 +45,16 @@ Lynn Hershman Leeson and Alison Parrish are hard examples to make compelling pre
 /
 
 get rid of the 0 in front of the assignment numbers
+
+/
+
+need to teach how to steal more
+
+and more examples!
+
+
+//
+
+
+should you use the online IDE? in some ways it's great
+in other ways, using a text editor is so key
