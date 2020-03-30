@@ -37,7 +37,7 @@ Make a folder called `mirror` and add an `index.html` file that contains the fol
 
 ```
 
-Download [`clmtrackr.js`](clmtrack.js) and add it to your folder.
+Download [`clmtrackr.js`](clmtrackr.js) and add it to your folder.
 
 Here is the javascript template:
 
