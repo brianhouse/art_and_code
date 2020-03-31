@@ -58,3 +58,9 @@ and more examples!
 
 should you use the online IDE? in some ways it's great
 in other ways, using a text editor is so key
+
+
+/
+
+
+reading prompts. I mean, "Machine Gaze" has some obvious literature to go with it

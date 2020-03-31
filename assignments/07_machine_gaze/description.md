@@ -79,20 +79,21 @@ function draw() {
     }
 
     // 'features' is an array of objects with x, y properties
-    // loop through each of the features using i
-    for (let i=0; i<features.length; i++) {
-        // "features[i]" is the 'i'th feature in the array
-        // draw a circle at the feature, and label it with i
+    for (let feature of features) {
         stroke(255)
         fill(255)
-        circle(features[i].x, features[i].y, 4)
-        text(i, features[i].x, features[i].y)
+        circle(feature.x, feature.y, 4)
+        text(feature.label, feature.x, feature.y)
     }
 
-    // the eyes are elements 32 and 27
-    // draw them
+    // the nose is feature 62
+    let nose = features[62]
     fill(255, 0, 0)
-    circle(features[32].x, features[32].y, 20)
+    circle(nose.x, nose.y, 30)
+
+    // the eyes are elements 32 and 27
+    fill(0, 0, 255)
+    circle(features[32].x, features[32].y, 20)  // access the array directly
     circle(features[27].x, features[27].y, 20)
 
 }
@@ -108,3 +109,11 @@ function showFlippedCapture() {
 ```
 
 ![](screenshot.png)
+
+
+<!--
+conceptual references
+zach blas
+trevor paglen
+kyle mcdonald
+-->

@@ -8,12 +8,12 @@ Office hours MTW 11:30–12:30
 
 
 ## Course Description
-Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, interactive text, the web, and real-time video processing. Accompanying critical discussion will unpack primary texts from the history of digital media and consider key practitioners. Through progressive weekly projects, students will gain a foundation for working with digital form. No prior programming experience is required.
+Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, the web, and real-time video processing. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. No prior programming experience is required.
 
 
 #### Objectives:
 - Cultivate an ability to think abstractly in terms of algorithms
-- Understand the broad historical context of contemporary digital tools
+- Understand the context of contemporary digital tools
 - Survey contemporary artists working formally with code and digital media
 - Build a foundation for expanding into other areas of media art practice
 - Gain proficiency programming in javascript with [p5.js](https://p5js.org)
