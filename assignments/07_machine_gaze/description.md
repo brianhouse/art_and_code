@@ -2,7 +2,7 @@
 
 Thanks to the ubiquity of cameras, not only do you look at a digital artwork—often the artwork is looking back at you. Webcams can be a source of input to a sketch, similar to the keyboard and mouse. But video is also a rich source of information, and it captures aspects of the world that are more than just commands to the computer. Webcams are often used to bring the human body into code, for example, which raises all sorts of questions about how a machine is made to see.
 
-For this sketch, you will make a "magic mirror" that augments or replaces a digital “reflection” of the viewer's face with additional information or graphics. Do do this, you will use a library called clmtracker which gathers data about the face and provides it to your p5 code as an array of feature objects. Incorporate the coordinates in these objects into your own animations and graphics. Conceptually, your mirror should in some way address the relationship between our physical selves and how we are represented online.
+For this sketch, you will make a "magic mirror" that augments or replaces a digital “reflection” of the viewer's face with additional information or graphics. Do do this, you will use a library called _clmtracker_ which gathers data about the face and provides it to your p5 code as an array of feature objects. Incorporate the coordinates in these objects into your own animations and graphics. Conceptually, your mirror should in some way address the relationship between our physical selves and how we are represented online.
 
 Requirements:
 - Your piece should be presented on a webpage
@@ -37,7 +37,7 @@ Make a folder called `mirror` and add an `index.html` file that contains the fol
 
 ```
 
-Download [`clmtrackr.js`](clmtrackr.js) and add it to your folder.
+Download the [`clmtrackr.js`](clmtrackr.js) library and add it to your folder. This is a collection of functions written for us that will analyze the video and give us some useful objects to work with.
 
 Finally, here is the template for `sketch.js`:
 
@@ -109,6 +109,39 @@ function showFlippedCapture() {
 ```
 
 ![](screenshot.png)
+
+
+## Example Code
+
+### Using shapes to draw features
+
+```js
+// make a new array of all the points in the left eye
+let left_eye = [    features[28],
+                    features[70],
+                    features[31],
+                    features[69],
+                    features[30],
+                    features[68],
+                    features[29],
+                    features[67]
+                ]
+
+// use a loop to make a shape vertex from each of those points
+noStroke()
+fill(0, 0, 255)
+beginShape()
+for (let eye_point of left_eye) {
+    curveVertex(eye_point.x, eye_point.y)
+}
+endShape(CLOSE)
+
+// draw the pupil
+let left_pupil = features[32]
+fill(255, 0, 0)
+circle(left_pupil.x, left_pupil.y, 10)
+```
+![](eyeball.gif)
 
 
 <!--
