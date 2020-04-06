@@ -33,6 +33,9 @@ animate objects
 - objects and for loops are tough all at once. wondering if 'for' should be separate and earlier somehow
 
 
+didn't learn map!
+
+
 /
 
 --> emphasize blocks -- building blocks of code
