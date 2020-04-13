@@ -1,9 +1,17 @@
 # Final Project
 
+In this course, we have explored scores for humans and for the computer, we've made nonlinear narratives with branching conditions, worked with coordinate systems for space and color, incorporated interface elements for interaction, created objects with their own ways of moving, and brought ourselves into code through the camera. All of these are formal components to code-based digital media; along the way we've also heard about many artists who use various aspects of these forms in their own practices.
 
+For your final project, you may draw from any of these techniques (and/or experiment with other ones) to develop a sketch of your own design. This is your chance to move beyond the prescriptions of the assignments thus far, and to focus on what most interests you.
+
+As always, you are required to have a title and artist description. However, for this assignment, a draft of your artist description will be due up front (4/20). We will have a preliminary crit the following week (4/27) where you will receive feedback on what you've produced so far, and then the final work will be due for the end of the semester.
+
+For your final, in addition to this project, you will update your website to include links to all of your assignments (except Nonlinear Narrative) as a portfolio of your work in this class. This will also be a reference for you in the future to go back and remember what you've done and how you did it.
 
 
 ## Example Code
+
+Additional references and techniques will be posted here as they come up in our discussion, in addition to the class Slack.
 
 ### Setup for using external images in sketches
 

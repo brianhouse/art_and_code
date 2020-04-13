@@ -51,9 +51,10 @@ get rid of the 0 in front of the assignment numbers
 
 /
 
-need to teach how to steal more
+need to teach how to steal more. seriously, like a whole workshop in a class about how to find code examples and snippets and steal them.
 
 and more examples!
+each unit should have an artist focus in addition to a list
 
 
 //
