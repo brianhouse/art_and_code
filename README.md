@@ -203,6 +203,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 13
 
 #### Monday 4/20
+- Post (draft) artist descriptions for final projects
 - Work time
 
 #### Wednesday 4/22
@@ -212,7 +213,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 14
 
 #### Monday 4/27
-- Sketch #7 preliminary crit
+- Final project preliminary crit
 
 
 #### Wednesday 4/29
@@ -220,8 +221,10 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - Work time
 
 
-
 ### Exam Week
 
-#### Monday 5/4 18:00–21:00
-- Work installed, sketch #7 final crit
+- Final project crit
+- Web portfolios posted
+
+<!-- #### Monday 5/4 18:00–21:00 -->
+<!-- - Work installed, sketch #7 final crit -->
