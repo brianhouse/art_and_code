@@ -193,11 +193,11 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 12
 
 #### Monday 4/13
-- Sketch #7 crit
+- Sketch #7 [crit](https://docs.google.com/document/d/13LnKljuxcLK8rdYlU3PQJL-iJEijN_5B8B7k_k-CRFQ/edit)
 
 
 #### Wednesday 4/15
-- Begin [Projected Worlds](assignments/8_projected_worlds/description.md)
+- Begin [Final Project](assignments/8_final_project/description.md)
 
 
 ### Week 13
