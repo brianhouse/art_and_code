@@ -197,7 +197,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 
 #### Wednesday 4/15
-- Begin [Final Project](assignments/8_final_project/description.md)
+- Begin [Final Project](assignments/08_final_project/description.md)
 
 
 ### Week 13
