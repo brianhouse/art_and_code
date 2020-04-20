@@ -13,7 +13,7 @@ For your final, in addition to this project, you will update your website to inc
 
 Additional references and techniques will be posted here as they come up in our discussion, in addition to the class Slack.
 
-### Setup for using external images in sketches
+### Using external images and sounds in sketches
 
 Because p5 runs in the browser, and because browsers have security restrictions that prevent it from accessing your files directly, there are a few extra steps if you want to load images directly in a p5 sketch. Specifically, you must run your sketch from a local web server. A "server" is simply a computer that provides access to a folder of files via HTTP—ie, the web. GitHub is already a server, so the following only applies to running your sketch locally. Once you've uploaded it, it should work as expected.
 
@@ -77,3 +77,60 @@ function mouseClicked() {
 ```
 
 Note that sounds cannot play automatically as soon as the sketch loads—this is another security feature of browsers that prevents advertisements from taking over your web experience. As long as the mouse has been clicked at least once (or the keyboard pressed), the sound can play.
+
+
+
+### Interpolating colors
+
+These examples make use of the p5 function [`lerpColor`](https://p5js.org/reference/#/p5/lerpColor).
+
+
+```js
+function draw() {
+
+    let color_1 = color(255, 0, 0)      // red is our first color
+    let color_2 = color(0, 0, 255)      // blue is our second color
+
+    // use a for-loop and line to draw each row of pixels across the screen individually
+    // each time, change the lerp value
+    for (let y=0; y<height; y++) {
+        let lerped_color = lerpColor(color_1, color_2, y / height)
+        stroke(lerped_color)
+        line(0, y, width, y)
+    }
+
+}
+```
+
+![](lerpscreen.png)
+
+```js
+function draw() {
+
+    let color_1 = color(255, 0, 0)      // red is our first color
+    let color_2 = color(0, 0, 255)      // blue is our second color
+
+    // fade_amount has to be between 0 and 1
+    // by taking the mouseY value and dividing it by the height of the screen
+    // we get a value between 0 and 1 which represents how far up the screen the
+    // mouse is currenty positioned
+    let fade_amount = mouseY / height
+    let lerped_color = lerpColor(color_1, color_2, fade_amount)
+
+    //// or try using frameCount()
+    // let fade_amount = frameCount / 500
+    // let lerped_color = lerpColor(color_1, color_2, fade_amount)
+
+    //// or an object variable (see object declaration above)
+    // let fade_amount = changing_color.c / 500
+    // let lerped_color = lerpColor(color_1, color_2, fade_amount)
+    // changing_color.c += changing_color.vc
+    // if (changing_color.c == 0 || changing_color.c == 500) {
+    //     changing_color.vc = -changing_color.vc
+    // }
+
+    background(lerped_color)
+
+}
+```
+![](lerp.gif)
