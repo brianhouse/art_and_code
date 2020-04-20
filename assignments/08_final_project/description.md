@@ -13,6 +13,25 @@ For your final, in addition to this project, you will update your website to inc
 
 Additional references and techniques will be posted here as they come up in our discussion, in addition to the class Slack.
 
+### True fullscreen
+
+Break out of the browser, and fill the entire screen with your sketch. For browser security reasons, [this command](https://p5js.org/reference/#/p5/fullscreen) has to be run in response to a mouse click, and you'll want to adjust the canvas size dynamically.
+
+```js
+function mouseClicked() {
+
+    fullscreen(true)
+
+}
+
+function windowResized() {
+
+    resizeCanvas(windowWidth, windowHeight)
+
+}
+```
+
+
 ### Using external images and sounds in sketches
 
 Because p5 runs in the browser, and because browsers have security restrictions that prevent it from accessing your files directly, there are a few extra steps if you want to load images directly in a p5 sketch. Specifically, you must run your sketch from a local web server. A "server" is simply a computer that provides access to a folder of files via HTTP—ie, the web. GitHub is already a server, so the following only applies to running your sketch locally. Once you've uploaded it, it should work as expected.
@@ -113,7 +132,7 @@ function draw() {
     // fade_amount has to be between 0 and 1
     // by taking the mouseY value and dividing it by the height of the screen
     // we get a value between 0 and 1 which represents how far up the screen the
-    // mouse is currenty positioned
+    // mouse is currently positioned
     let fade_amount = mouseY / height
     let lerped_color = lerpColor(color_1, color_2, fade_amount)
 

@@ -107,6 +107,8 @@ COORDINATE
 TRANSCODING
 DISTRIBUTION
 PLAY
+AI learning
+GLITCH
 
 Lev's:
 numerical representation, modularity, automation, variability, and transcoding
@@ -115,3 +117,5 @@ numerical representation, modularity, automation, variability, and transcoding
 revisit Carl
 
 this is a software approach, not hardware (DM2 is "hardware")
+
+not about coding, about...
