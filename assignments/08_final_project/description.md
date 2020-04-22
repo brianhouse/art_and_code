@@ -206,3 +206,77 @@ function draw() {
 }
 ```
 ![](lerp.gif)
+
+
+### Clicking on moving objects
+
+```js
+// array for moving objects
+let balls = []
+
+function setup() {
+
+    createCanvas(windowWidth, windowHeight).parent('p5')
+
+    // make 5 random ball objects
+    for (let i=0; i<5; i++) {
+        // the x and y leav room on the edges for the ball radius
+        let random_ball = { x: 50 + random(width-100),
+                            y: 50 + random(height-100),
+                            vx: random(-5, 5),
+                            vy: random(-5, 5),
+                            c: [random(255), random(255), random(255)]
+                        }
+        balls.push(random_ball)
+    }
+
+}
+
+function draw() {
+
+    background(0)
+
+    for (let ball of balls) {
+
+        // draw objects
+        noStroke()
+        fill(ball.c)
+        circle(ball.x, ball.y, 100)
+
+        // update objects
+        ball.x += ball.vx
+        ball.y += ball.vy
+
+        // bounce off walls
+        if (ball.x <= 50 || ball.x >= (width - 50)) {
+            ball.vx = -ball.vx
+        }
+        if (ball.y <= 50 || ball.y >= (height - 50)) {
+            ball.vy = -ball.vy
+        }
+
+    }
+
+}
+
+
+function mouseClicked() {
+
+    for (let ball of balls) {
+
+        // calculate the distance from the mouse to the ball
+        let distance = dist(mouseX, mouseY, ball.x, ball.y)
+
+        // if the distance is less than the ball's radius, the click is inside
+        if (distance < 100) {
+
+            // change the color
+            ball.c = [random(255), random(255), random(255)]
+
+        }
+
+    }
+
+}
+```
+![](ball_click.gif)
