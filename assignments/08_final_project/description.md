@@ -42,6 +42,8 @@ The easiest is to install [Web Server for Chrome](https://chrome.google.com/webs
 
 When the extension is up and running, you'll point your browser at the URL showing on Chrome Web Server, which will look something like http://127.0.0.1:8887
 
+(If you have installed the extension, but you can't figure out how to launch it, [visit this link](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/).)
+
 Once that is all up and running, you'll be able to load images, sounds, and even videos into your sketches. For sound, you'll also need to have the p5.sound addon loaded. That happens in the HTML with another link to a script:
 
 ```html
@@ -97,6 +99,57 @@ function mouseClicked() {
 
 Note that sounds cannot play automatically as soon as the sketch loads—this is another security feature of browsers that prevents advertisements from taking over your web experience. As long as the mouse has been clicked at least once (or the keyboard pressed), the sound can play.
 
+
+### Using fonts in sketches
+
+You can use external fonts in your p5 sketches—any .ttf or .otf font file will work. Many fonts are available for free online (one good source is [1001freefonts.com](https://www.1001freefonts.com)). If you download a font, it may come in a zip file, and you may have to unzip it first to get at the actual font file. Once you do, follow the steps below to integrate it into your sketch.
+
+In addition, Allison Parrish has a fantastic tutorial on using text and type in p5.js: [https://creative-coding.decontextualize.com/text-and-type/](https://creative-coding.decontextualize.com/text-and-type/)
+
+```js
+
+// Step 1:
+// put a .ttf or .otf file in the same folder as sketch
+
+// Step 2:
+// declare a variable to hold your font data
+let paladinFont
+
+// Step 3:
+// load the font data using the preload and loadFont functions
+function preload() {
+
+    paladinFont = loadFont("PaladinFLF.ttf")
+
+}
+
+
+function setup() {
+
+    createCanvas(windowWidth, windowHeight).parent('p5')
+
+}
+
+function draw() {
+
+    background(0)
+
+    // Step 4:
+    // use the font functions to draw the font
+    fill(0, 255, 0)          // set color for the text
+    textFont(paladinFont)    // set the font to your variable
+    textSize(36)             // set text size
+    text("Hello World", mouseX, mouseY)  // draw the text at x,y
+
+}
+
+// Step 5:
+// Use the Web Server for Chrome extension to select your project folder, and
+// visit the corresponding URL in the browser.
+//
+// Because fonts are an external media file, just like images and sounds, your /// browser will block it from loading if you try to open index.html directly.
+```
+![](hello_font.gif)
 
 
 ### Interpolating colors
