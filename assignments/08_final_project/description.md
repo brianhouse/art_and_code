@@ -152,6 +152,46 @@ function draw() {
 ![](hello_font.gif)
 
 
+### Using video
+
+ Video works much the same way as other external files but with a few extra commands. You’ll have to use Chrome Web Server Extension to have videos work, just like with images, sounds, and fonts.
+
+```js
+let prince_vid
+
+function preload() {
+
+    prince_vid = createVideo('prince_internet.mp4')
+    prince_vid.hide()   // include this or you'll get a second video outside the canvase
+
+}
+
+
+function setup() {
+
+    createCanvas(windowWidth, windowHeight).parent('p5')
+
+}
+
+function draw() {
+
+    background(0)
+
+    image(prince_vid, 100, 100, prince_vid.width, prince_vid.height)
+
+}
+
+function mouseClicked() {
+
+    prince_vid.play()
+    prince_vid.time(15)     // skip 15 seconds in
+    // prince_vid.loop()
+    // prince_vid.stop()
+
+}
+```
+
+
 ### Interpolating colors
 
 These examples make use of the p5 function [`lerpColor`](https://p5js.org/reference/#/p5/lerpColor).
