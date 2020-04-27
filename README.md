@@ -221,10 +221,5 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - Work time
 
 
-### Exam Week
-
+#### Monday 5/4 18:00–21:00
 - Final project crit
-- Web portfolios posted
-
-<!-- #### Monday 5/4 18:00–21:00 -->
-<!-- - Work installed, sketch #7 final crit -->
