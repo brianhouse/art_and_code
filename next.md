@@ -119,3 +119,5 @@ revisit Carl
 this is a software approach, not hardware (DM2 is "hardware")
 
 not about coding, about...
+deep structures
+students dont know how to use their computers
