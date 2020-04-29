@@ -341,10 +341,10 @@ function draw() {
             ball.vx = -ball.vx
         }
         if (ball.y >= height - ball.size/2) {
-            ball.vx = -ball.vx
+            ball.vy = -ball.vy
         }
         if (ball.y <= 0 + ball.size/2) {
-            ball.vx = -ball.vx
+            ball.vy = -ball.vy
         }
 
         // check if it is colliding with another ball
