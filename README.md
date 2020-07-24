@@ -8,7 +8,7 @@ Office hours TR 11:30–12:30 on [Zoom](https://us02web.zoom.us/j/7372690628)
 
 
 ## Course Description
-Introduction to the form and aesthetics of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
+Introduction to the aesthetics and form of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
 
 
 #### Objectives:
@@ -22,7 +22,7 @@ Introduction to the form and aesthetics of digital media. By writing code, stude
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through a series of digital media forms: ALGORITHM, ENCODING, NONLINEARITY, INDETERMINACY, RECOMBINATION, INTERFACE, EMERGENCE, and GLITCH. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
+This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **encoding**, **nonlinearity**, **indeterminacy**, **recombination**, **interface**, **emergence**, and **glitch**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due. Sketches will be graded on both concept and craft.
 
@@ -79,9 +79,11 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 2
 
 #### Tuesday 9/8
+- Explanation of [artist descriptions](resources/description_guidelines.md)
 - Review, questions, and work time
 
 #### Thursday 9/10
+- Explanation of [crit guidelines](resources/crit_guidelines.md)
 - Crit Sketch #1
 
 
