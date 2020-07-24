@@ -1,39 +1,39 @@
 # ART 112: DIGITAL MEDIA I
 
-Monday / Wednesday 8:50–11:20, Fields 205  
-[https://github.com/brianhouse/ART112](https://github.com/brianhouse/ART112)  
+Tuesday / Thursday 8:50–11:20, ~~Fields 205~~ [Zoom](https://us02web.zoom.us/j/7372690628)  
+Course materials on [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz)
 
-Prof. Brian House (he/him), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
-Office hours MTW 11:30–12:30
+Prof. Brian House (he/him/his), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
+Office hours TR 11:30–12:30 on [Zoom](https://us02web.zoom.us/j/7372690628)
 
 
 ## Course Description
-Introduction to computer programming for artists. With creative coding, students will explore drawing and animation, sound, the web, and real-time video processing. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. No prior programming experience is required.
+Introduction to the form and aesthetics of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
 
 
 #### Objectives:
 - Cultivate an ability to think abstractly in terms of algorithms
-- Understand the context of contemporary digital tools
+- Understand the underlying structures of contemporary digital tools
 - Survey contemporary artists working formally with code and digital media
 - Build a foundation for expanding into other areas of media art practice
-- Gain proficiency programming in javascript with [p5.js](https://p5js.org)
+- Gain proficiency programming in the Python programming language
 
 
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through the use of text, images, animation, video, and various forms of physical interaction. We will begin each one during class time, and you will (usually) complete them as homework. Starting with Sketch #3, you will post work online through your [GitHub](https://github.com) account. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
+This course is built around open-ended code "sketches" that progress through a series of digital media forms: ALGORITHM, ENCODING, NONLINEARITY, INDETERMINACY, RECOMBINATION, INTERFACE, EMERGENCE, and GLITCH. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must post a version of the code to your GitHub account and email me the link *before* the class that it is due. However, you may continue to make changes indefinitely and improve your grade if necessary. Sketches will be graded on both concept and craft.
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due. Sketches will be graded on both concept and craft.
 
 ### Survey presentations
 Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
-### Reading
-It is required that you purchase [Getting Started with p5.js: Making Interactive Graphics in JavaScript and Processing](https://www.amazon.com/Make-Interactive-Graphics-JavaScript-Processing/dp/1457186772/) by Lauren McCarthy, Casey Reas, and Ben Fry for a general reference that will be helpful throughout the course. Additional primary texts may be provided to provide background for the development of digital form.
-
 ### Attendance and participation
 You must attend and thoughtfully participate in every class. After the first absence, every absence will result in a reduction of your final grade by 2.5%. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
+
+## COVID-19 Alterations
+This course will be entirely online for Fall 2020 to provide a consistent experience and accommodate immunocompromised members of the community.
 
 
 ## Policies
@@ -67,159 +67,135 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 ### Week 1
 
-#### Wednesday 1/22
+#### Tuesday 9/1
 - Introduction
-- In-class exercise, via Sol Lewitt and Yoko Ono: scores
+- In-class Sketch #0: Algorithm
 
+#### Thursday 9/3
+- Begin [Sketch #1: Encoding](units/1_encoding/description.md)
+- Coordinate systems
+- Introduction to [Python Mode for Processing](https://py.processing.org)
 
 ### Week 2
 
-#### Monday 1/27
-- In-class work and crit, [Sketch #1: Turtle Logic](assignments/01_turtle_logic/description.md)
-- **Homework for next class**: play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
-<!-- - **Homework for next class**: download [Zork](resources/disks/zork_i.dsk) and play it on an online [Apple IIe emulator](https://www.scullinsteel.com/apple/e) -->
+#### Tuesday 9/8
+- Review, questions, and work time
 
-#### Wednesday 1/29
-- Introduction to text editors and the command-line
-- Introduction to variables and conditionals
-- Begin [Sketch #2: Nonlinear Narrative](assignments/02_nonlinear_narrative/description.md)
+#### Thursday 9/10
+- Crit Sketch #1
 
 
 ### Week 3
 
-#### Monday 2/3
-- Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
-- Work time
+#### Tuesday 9/15
+- Begin [Sketch #2: Indeterminacy](units/2_indeterminacy/description.md)
+- Loops and randomness
 
-#### Wednesday 2/5
-- Work time
+#### Thursday 9/17
+- Review, questions, and work time
+
 
 ### Week 4
 
-#### Monday 2/10
-- Sketch #2 [crit](https://docs.google.com/document/d/1oS0-kUtF8zkGrW_kGDKQiUCXfpe2XUs7X8SwDUleBK0/edit?usp=sharing)
+#### Tuesday 9/22
+- In-progress report, questions, and work time
 
-#### Wednesday 2/12
-- Introduction to HTML
-- Begin [Sketch #3: Personal Homepage](assignments/03_personal_homepage/description.md) (no crit for this one)
+#### Thursday 9/24
+- Crit Sketch #2
+- **Extra homework for next class**: play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
 
 
 ### Week 5
 
-#### Monday 2/17
-- Survey presentations 2: Jodi, Roman Verostko
-- Introduction to [p5.js](https://p5js.org) and coordinate systems
-- Begin [Sketch #4: Coordinate Landscape](assignments/04_coordinate_landscape/description.md)
-- **Homework for next class**: read Chapter 3: "Draw" of _Getting Started with p5.js_
+#### Tuesday 9/29
+- Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
+- Variables, conditionals, and functions
 
-#### Wednesday 2/19
-- Introduction to vertexes
-- Work time
+#### Thursday 10/1
+- Review, questions, and work time
 
 
 ### Week 6
 
-#### Monday 2/24
-- Sketch #4 crit ([Crit guidelines](resources/crit_guidelines.md))
-- Survey presentations 3: American Artist, Liat Berdugo
-- Introduction to events
-- Debugging with `print`
-- **Homework for next class**: read Chapter 5: "Response" of _Getting Started with p5.js_
+#### Tuesday 10/6
+- In-progress report, questions, and work time
 
-
-#### Wednesday 2/26
-- Introduction to comparisons and randomness
-- Begin [Sketch #5: Expressive Interface](assignments/05_expressive_interface/description.md)
-- **Homework for next class**: read Chapter 4: "Variables" of _Getting Started with p5.js_
+#### Thursday 10/8
+- Crit Sketch #3
 
 
 ### Week 7
 
-#### Monday 3/2
-- Survey presentations 4: Lia, Casey Reas
-- Work time
+#### Tuesday 10/13
+- Begin [Sketch #4: Recombination](units/4_recombination/description.md)
+- Arrays
 
-#### Wednesday 3/4
-- Sketch #5 preliminary crit
-- Work time
+#### Thursday 10/15
+- Review, questions, and work time
 
 
 ### Week 8
 
-#### Monday 3/9
-- Survey presentations 5: Cory Arcangel, Ryoji Ikeda
-- Sketch #5 [crit](https://docs.google.com/document/d/1yjtQO72_vZOhwrwqhp_W_6EZ71Pp1yW3GvE3FwZNXpY/edit?usp=sharing)
-- **Homework for next class**: read Chapter 8: "Motion" of _Getting Started with p5.js_
+#### Tuesday 10/20
+- In-progress report, questions, and work time
 
-#### Wednesday 3/11
-- Introduction to animation, objects, and arrays
-- Begin [Sketch #6: Animate Objects](assignments/06_animate_objects/description.md)
+#### Thursday 10/22
+- Crit Sketch #4
 
 
 ### Week 9
 
-#### Monday 3/16
-- Survey presentations 6: Lauren McCarthy, Claudia Hart
-- Work time
+#### Tuesday 10/27
+- Begin [Sketch #5: Interface](units/5_interface/description.md)
+- Events
 
-
-#### Wednesday 3/18
-- Sketch #6 preliminary crit
-- Work time
+#### Thursday 10/29
+- Review, questions, and work time
 
 
 ### Week 10
 
-#### Monday 3/30
-- Survey presentations 7: Raphael Lozano-Hemmer, Blast Theory
-- Sketch #6 [final crit](https://docs.google.com/document/d/1AatGC4SH0Hqy-V68yM2voqrji9ifiaZm0CnYctDm-mU/edit?usp=sharing)
+#### Tuesday 11/3
+- In-progress report, questions, and work time
 
-#### Wednesday 4/1
-- Begin [Sketch #7: Machine gaze](assignments/07_machine_gaze/description.md)
-- Work time
+#### Thursday 11/5
+- Crit Sketch #5
 
 
 ### Week 11
 
-#### Monday 4/6
-- Survey presentations 8: Addie Wagenknecht, Trevor Paglen
-- Work time
+#### Tuesday 11/10
+- Begin [Sketch #6: Emergence](units/6_emergence/description.md)
+- Objects
 
-#### Wednesday 4/8
-- Sketch #7 preliminary crit
-- Work time
+#### Thursday 11/12
+- Review, questions, and work time
 
 
 ### Week 12
 
-#### Monday 4/13
-- Sketch #7 [crit](https://docs.google.com/document/d/13LnKljuxcLK8rdYlU3PQJL-iJEijN_5B8B7k_k-CRFQ/edit)
+#### Tuesday 11/17
+- In-progress report, questions, and work time
+
+#### Thursday 11/19
+- Crit Sketch #6
 
 
-#### Wednesday 4/15
-- Begin [Final Project](assignments/08_final_project/description.md)
+--Thanksgiving Break--
 
 
 ### Week 13
 
-#### Monday 4/20
-- Post (draft) artist descriptions for final projects
-- Work time
+#### Tuesday 12/1
+- Begin [Sketch #7: Glitch](units/7_glitch/description.md)
 
-#### Wednesday 4/22
-- Work time
+#### Thursday 12/3
+- Review, questions, and work time
 
 
 ### Week 14
-
-#### Monday 4/27
-- Final project preliminary crit
+- Crit Sketch #7
 
 
-#### Wednesday 4/29
-- Evaluations
-- Work time
-
-
-#### Monday 5/4 18:00–21:00
-- Final project crit
+#### Finals week
+- Final portfolio due
