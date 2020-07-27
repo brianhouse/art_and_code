@@ -8,29 +8,49 @@ In our exercise from last class, a common problem was how to tell the other pers
 
 ## Context
 
-Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however, though in a somewhat different way; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical) in painting.
+Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical) in painting—Leonardo da Vinci also used this method. In the twentieth century, grids became very prominent through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
 
-![](albertisketch.jpg)*Perspective Drawing by Alberti*
+![](albertisketch.jpg)*From Alberti's "De Pictura (On Painting)" (1435)*
 
-European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward and the development of address schemes in the [urban grid](https://en.wikipedia.org/wiki/Grid_plan). While other cultures including in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf) also used urban grids, the colonial system was imposed as [a means of establishing supremacy](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/).
+![](mies.jpg)*Grid-based architecture from Mies van der Rohe (1970s)*
 
-Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought and even its militaristic aspects, given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC). But from early on artists have co-opted those systems towards aesthetic ends. An early example is
+![](mondrian.jpg)*Piet Mondrian,* Broadway Boogie Woogie *(1942)*
+
+European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward and the development of address schemes on the [urban grid](https://en.wikipedia.org/wiki/Grid_plan). While other cultures including in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf) also used urban grids, colonial systems were imposed as [a means of establishing supremacy](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) and suppressing alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) up to the present day.
 
 
-<!--
-Nigel Thrift; qualculation
-https://placesjournal.org/article/a-city-is-not-a-computer/?cn-reloaded=1
+Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought, modernist aesthetics, and even militaristic histories given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC).
 
--->
+However, from early on, artists have co-opted those systems towards aesthetic ends. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at Bell Labs, Schwartz created paintings and films that made use of, subverted, or expanded the possibilities of graphics systems.
+
+![](schwartz.jpg)*Lillian Schwartz, still from* Enigma *(1972) [Watch the video](http://lillian.com/1972-enigma-4-min-20-sec/)*
+
+![](schwartz_2.jpg)*Lillian Schwartz,* Olympiad *(1971)*
+
+Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore below.
 
 ## Code
 
-These coordinates work a little differently than you might be used to from previous math classes. Rather than `0, 0` (aka the "origin") being in the center of the screen, it's in the top-left corner, and as the `y` value gets larger, we move further down the screen:
+Spatial coordinates work a little differently with computers than you might be used to from previous math classes. Rather than `0, 0` (aka the "origin") being in the center of the screen, it represents the top-left corner, and as the `y` value gets larger, we move further down:
 
 ![](grid.svg)
 
 
-Let's see how this works in Processing.
+Let's see how this works with Processing.
+
+First, we'll write a line of code to create the canvas. Type the following on line 1 of your program.
+
+```py
+size(640, 480)
+```
+
+`size` is a function provided by Processing that creates the canvas, which takes two **parameters**, one each for the desired width and height. Subsequently, when we run the program, a grey window should appear that is exactly 640 pixels wide and 480 pixels high (I chose these dimensions because they associated with the VGA standard that personal computers used in the 80s and 90s).
+
+![](canvas.png)
+
+
+
+
 
 
 

@@ -1,13 +1,6 @@
 # Sketch #6: Animate Objects
 
-Computers are not only capable of responding to human input. Rather, within their virtual worlds, autonomous entities can follow their own sets of logic. Physics simulations, models of biological life, and abstract animations all work by defining a set of rules and seeing how things unfold with time. This is a key way in which digital media artists use code to explore processes and find unexpected aesthetic forms.
-
-For this sketch, you will create an animation. You will draw from your knowledge of coordinates, colors, conditionals, and variables from the past two sketches. You will also use object syntax to keep track of what is happening on the canvas and define rules for how those objects change over time. Conceptually, your sketch should be inspired—however abstractly—by some process that happens in the real world. Examples include: snowflakes falling outside, crowds moving in a shopping mall or at a protest, players at a soccer match, termites building a nest, or mountains eroding into the sea.
-
-Requirements:
-- Your piece should be presented on a webpage
-- _Within your sketch_ (using the [text](https://p5js.org/reference/#/p5/text) object), you must include your title and a [3-sentence description](../../resources/description_guidelines.md) that explains your inspiration
-- This page should be hosted on GitHub—email a working URL to the professor before class
+ref Encoding
 
 
 ### Technical Resources

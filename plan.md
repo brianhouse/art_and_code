@@ -9,10 +9,12 @@
 
 ## Units
 - Concept
-- Non-digital art history
-- Digital art history
-- Code (with links)
-- examples
+- Context
+    - Non-digital art history
+    - Digital art history    
+- Code (Craft)
+    - refs
+    - examples
 - the sketch
 
 
