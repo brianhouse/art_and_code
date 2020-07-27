@@ -13,7 +13,7 @@ Of course, using coordinates to represent space is not unique to digital media. 
 <img src="albertisketch.jpg" width=400 />
 From Alberti's "De Pictura (On Painting)" (1435)
 
-<img src="mies.jpg" width=400 />
+<img align="center" src="mies.jpg" width=400 />
 Grid-based architecture from Mies van der Rohe (1970s)
 
 <img src="mondrian.jpg" width=400 />
