@@ -10,11 +10,14 @@ In our exercise from last class, a common problem was how to tell the other pers
 
 Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical) in painting—Leonardo da Vinci also used this method. In the twentieth century, grids became very prominent through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
 
-![](albertisketch.jpg)*From Alberti's "De Pictura (On Painting)" (1435)*
+![](albertisketch.jpg | width=400)  
+*From Alberti's "De Pictura (On Painting)" (1435)*
 
-![](mies.jpg)*Grid-based architecture from Mies van der Rohe (1970s)*
+![](mies.jpg | width=400)  
+*Grid-based architecture from Mies van der Rohe (1970s)*
 
-![](mondrian.jpg)*Piet Mondrian,* Broadway Boogie Woogie *(1942)*
+![](mondrian.jpg | width=400)  
+*Piet Mondrian,* Broadway Boogie Woogie *(1942)*
 
 European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward and the development of address schemes on the [urban grid](https://en.wikipedia.org/wiki/Grid_plan). While other cultures including in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf) also used urban grids, colonial systems were imposed as [a means of establishing supremacy](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) and suppressing alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) up to the present day.
 
@@ -23,9 +26,11 @@ Grids on contemporary computers, and numeric encoding in computing general, inhe
 
 However, from early on, artists have co-opted those systems towards aesthetic ends. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at Bell Labs, Schwartz created paintings and films that made use of, subverted, or expanded the possibilities of graphics systems.
 
-![](schwartz.jpg)*Lillian Schwartz, still from* Enigma *(1972) [Watch the video](http://lillian.com/1972-enigma-4-min-20-sec/)*
+![](schwartz.jpg | width=400)  
+*Lillian Schwartz, still from* Enigma *(1972) [Watch the video](http://lillian.com/1972-enigma-4-min-20-sec/)*
 
-![](schwartz_2.jpg)*Lillian Schwartz,* Olympiad *(1971)*
+![](schwartz_2.jpg | width=400)  
+*Lillian Schwartz,* Olympiad *(1971)*
 
 Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore below.
 
