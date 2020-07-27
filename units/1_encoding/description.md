@@ -8,7 +8,7 @@ In our exercise from last class, a common problem was how to tell the other pers
 
 ## Context
 
-Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical) in painting—Leonardo da Vinci also used this method. In the twentieth century, grids became very prominent through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
+Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting—Leonardo da Vinci also used this method. In the twentieth century, grids became very prominent through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
 
 <p align="center">
   <img src="albertisketch.jpg" width=400 /><br />
@@ -22,7 +22,7 @@ Of course, using coordinates to represent space is not unique to digital media. 
 
 <p align="center"> 
   <img src="mondrian.jpg" width=400 /><br />
-  Piet Mondrian, *Broadway Boogie Woogie* (1942)<br />
+  Piet Mondrian, <i>Broadway Boogie Woogie</i> (1942)<br />
 </p>
 
 European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward and the development of address schemes on the [urban grid](https://en.wikipedia.org/wiki/Grid_plan). While other cultures including in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf) also used urban grids, colonial systems were imposed as [a means of establishing supremacy](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) and suppressing alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) up to the present day.
@@ -34,13 +34,13 @@ However, from early on, artists have co-opted those systems towards aesthetic en
 
 <p align="center">
   <img src="schwartz.jpg" width=400 /><br />
-  Lillian Schwartz, still from *Enigma* (1972)<br />
+  Lillian Schwartz, still from <i>Enigma</i> (1972)<br />
   [Watch the video](http://lillian.com/1972-enigma-4-min-20-sec/)<br />
 </p>
 
 <p align="center">
   <img src="schwartz_2.jpg" width=400 /><br />
-  Lillian Schwartz, _Olympiad_ (1971)<br />
+  Lillian Schwartz, <i>Olympiad</i> (1971)<br />
 </p>
 
 Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore below.
