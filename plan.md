@@ -8,12 +8,12 @@
 
 
 ## Units
-- the concept
-- a (non-digital) artwork associated with it
-- a contemporary digital artwork associated with it
-- the programming structure + links to resources
-- the exercise
+- Concept
+- Non-digital art history
+- Digital art history
+- Code (with links)
 - examples
+- the sketch
 
 
 ## Crits
@@ -23,6 +23,9 @@ Crits happen in person via video, but also through the chat, which is super help
 - online form for questionnaire
 - exercise for each programming topic
 - fill out all units
+- download / install instructions for processing.py
+
+- mini assignments: questionnaire + download / install processing
 
 
 
@@ -36,3 +39,6 @@ https://twitter.com/the_ephemerides
 final portfolio?
 
 https://www.w3schools.com/python/default.asp
+
+
+https://newmedia.fandom.com/wiki/Numerical_Representation

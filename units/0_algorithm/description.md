@@ -22,15 +22,15 @@ Welcome to Digital Media I
 
 First, what this course is _not_: we are not going to learn Photoshop, Illustrator, Video editing, or audio workstations. Mastering software like that is a legitimate take on what Digital Media is, and I apologize if that's what anyone is looking for.
 
-...but what we are going to do in this course is to make art by programming a computer.
+...but what we are going to do in this course is to make art by learning to program a computer.
 
-In the computer science department, your learn to program by solving problems. Here, you'll learn to code by making up your own problems, or more generally, the problem is how to express yourselves by telling the computer what to do.
+In the computer science department, you learn to program by solving problems. Here, you'll learn to program by making up your own problems, or more generally, the problem is how to express yourselves by telling the computer what to do (and ultimately learning from the computer what might be interesting to express).
 
-That's what code is—an organized set of instructions given to the computer to produce a desired outcome. There's a fancy word we use for that: algorithm.
+That's what a program is—an organized set of instructions given to the computer to produce some outcome. There's also a fancy (and much older) word we also use for that (what is it?): **algorithm**.
 
-Are algorithms always on the computer? What are other examples? *[musical score, blueprints, IKEA, Legos...]*
+Are algorithms always on the computer? What are other examples besides code? *[musical score, blueprints, IKEA, Legos...]*
 
-A recipe is really a beautiful example of an algorithm, and it's a lot like code. You have a set of specialized terms, like "tablespoon" and "mince", and it involves all kinds of technological equipment.
+A recipe is really a beautiful example of an algorithm, and it's a lot like a computer program. You have a set of specialized terms, like "tablespoon" and "mince", and it involves all kinds of technological equipment.
 
 How do you come up with a recipe?
 - experimentation, trial-and-error
@@ -38,9 +38,9 @@ How do you come up with a recipe?
 - family recipes
 - remixing
 
-That's exactly how I want you to think about code. You're always borrowing code, using libraries, looking stuff up, and it's lots and lots and lots of trial and error.
+That's exactly how I want you to think about programming. You're always borrowing _code_—ie, the pieces of a program—using libraries, looking stuff up, and it's lots and lots and lots of trial and error.
 
-So where does that get us? What's possible with code? Here are some more or less random examples of artists making things with code:
+So where does that get us? What's possible with programming? Here are some more or less random examples of artists making things out of code:
 - [Chris Milk](http://milk.co/treachery)
 - [Nicole Aptekar](https://www.instagram.com/nicole.aptekar/)
 - [Mario Klingemann](https://www.flickr.com/photos/quasimondo/albums/72157677689800878)
@@ -79,13 +79,12 @@ _Follow-up questions_:
 
 ## Syllabus
 
-Today we've been exploring the idea of an **algorithm**. That's fundamental to digital media, and from here on out we'll be writing algorithms using code—specifically, Python from within a programming environment called Processing.
+From here on out, we're going to continue to write **algorithms**, but they will be for a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us to use an unambiguous formal language that it knows how to interpret. That is what a programming language is.
 
-There are several other qualities associated with digital media, and in this course we'll deal with **encoding**, **nonlinearity**, **indeterminacy**, **recombination**, **interface**, **emergence**, and **glitch**. For each one of these, I'll introduce the structure, explain how you program it in Pythin, and then you'll complete an artwork, or as we'll call it, a "sketch".
+There are many programming languages out there, but in this course we are going to use Python from within the Processing Environment. In fact, your homework for next time is to download that and get it running—there are [instructions](getting_started.md) on how to do that on Google Classroom.
 
-That's more or less it. Please look at the syllabus for policies, how the grading works, and so forth.
+In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **encoding**, **nonlinearity**, **indeterminacy**, **recombination**, **interface**, **emergence**, and **glitch**. For each one of these, I'll introduce the structure, explain how you program it in Python, and then you'll complete an artwork, or as we'll call it, a "sketch".
 
+And that is it in a nutshell. Please look at the syllabus for policies, how the grading works, and so forth, and ask me whatever questions you have about the course.
 
-What questions do you have?
-
-(collect questionnaires)
+In addition, I'd like everyone to fill out a questionnaire / collect questionnaires

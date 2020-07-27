@@ -1,6 +1,47 @@
-# Sketch #4: Coordinate Landscape
+# Sketch #2: Encoding
 
-For a painter, placing a mark on a canvas is a physical gesture—you simply touch the surface where you want the mark to be. With digital media, however, the concept of "space" is represented through symbolic coordinate systems. For example, a 2-dimensional canvas is typically understood with two numbers—an X-coordinate and a Y-coordinate—that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. "Color space" can also be represented with coordinates, one each for the red, green, and blue components.
+## Concept
+
+Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's another quality that is characteristic of digital media.
+
+In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direct_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line". Computers, however, typically represent the concept of "space" through a numeric coordinate system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This is a good example of encoding, because it quantifies something intuitive like physical space into a numeric system that the computer can process.
+
+## Context
+
+Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however, though in a somewhat different way; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical) in painting.
+
+![](albertisketch.jpg)*Perspective Drawing by Alberti*
+
+European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward and the development of address schemes in the [urban grid](https://en.wikipedia.org/wiki/Grid_plan). While other cultures including in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf) also used urban grids, the colonial system was imposed as [a means of establishing supremacy](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/).
+
+Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought and even its militaristic aspects, given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC). But from early on artists have co-opted those systems towards aesthetic ends. An early example is
+
+
+<!--
+Nigel Thrift; qualculation
+https://placesjournal.org/article/a-city-is-not-a-computer/?cn-reloaded=1
+
+-->
+
+## Code
+
+These coordinates work a little differently than you might be used to from previous math classes. Rather than `0, 0` (aka the "origin") being in the center of the screen, it's in the top-left corner, and as the `y` value gets larger, we move further down the screen:
+
+![](grid.svg)
+
+
+Let's see how this works in Processing.
+
+
+
+Similarly, though a painter comes up with shades of color by physically mixing paints, the computer usually encodes color as a three numbers for the amount of red, green, and blue components.
+
+
+
+
+
+
+###
 
 In this sketch, you will become familiar with drawing using coordinates. To explore the relationship of digital "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something new. Pay particular attention to your use of color.
 

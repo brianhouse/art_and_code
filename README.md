@@ -32,7 +32,7 @@ Each student will give a 10-minute presentation on an artist working in digital 
 ### Attendance and participation
 You must attend and thoughtfully participate in every class. After the first absence, every absence will result in a reduction of your final grade by 2.5%. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
 
-## COVID-19 Alterations
+### COVID-19 Alterations
 This course will be entirely online for Fall 2020 to provide a consistent experience and accommodate immunocompromised members of the community.
 
 
@@ -61,7 +61,8 @@ Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/under
 
 ### Land Acknowledgement
 The Fields Center for Visual Arts stands on the ancestral homelands of the Multnomah, Kathlamet, Clackamas, Tumwater, Watalala bands of the Chinook, Tualatin Kalapuya, and other indigenous nations of the Columbia River. It is important to acknowledge the original inhabitants of this place and recognize that we are here because of the sacrifices forced upon them. As artists working in Digital Media, we must be aware of and resist the many ways computation capitalizes upon and perpetuates violence toward marginalized people.
-##
+
+---
 
 ## Schedule
 
@@ -70,11 +71,13 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 #### Tuesday 9/1
 - Introduction
 - In-class Sketch #0: Algorithm
+- **Homework for next class**: [Get set up](getting_started.md) with Python Mode for Processing.
 
 #### Thursday 9/3
 - Begin [Sketch #1: Encoding](units/1_encoding/description.md)
 - Coordinate systems
-- Introduction to [Python Mode for Processing](https://py.processing.org)
+- Introduction to Python Mode for Processing
+
 
 ### Week 2
 
@@ -104,7 +107,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Thursday 9/24
 - Crit Sketch #2
-- **Extra homework for next class**: play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
+- **Homework for next class**: play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
 
 
 ### Week 5
@@ -182,9 +185,9 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 #### Thursday 11/19
 - Crit Sketch #6
 
-
---Thanksgiving Break--
-
+---
+#### Thanksgiving Break
+---
 
 ### Week 13
 
