@@ -317,9 +317,28 @@ Turn in the contents of your sketch folder to Google Classroom. In addition, upl
 
 ### Examples
 
-Here's some inspiration from last semester, with the original and reinterpreted landscapes:
+Here's some inspiration from last semester, with the original and reinterpreted landscapes side by side:
 
 <p align="center">
-  <img src="examples/aijaeh_hennessey_1.jpg" width="400" align="left" /><br />
+  Aijaeh Hennessey<br />
+  <img src="examples/aijaeh_hennessey_1.jpg" width="400" align="left" />
   <img src="examples/aijaeh_hennessey_2.png" width="400" align="left" /><br />
+</p>
+
+<p align="center">
+  Evan Yerian<br />
+  <img src="examples/evan_yerian_1.jpg" width="400" align="left" />
+  <img src="examples/evan_yerian_2.png" width="400" align="left" /><br />
+</p>
+
+<p align="center">
+  Ellie Villano<br />
+  <img src="examples/ellie_villano_1.jpg" width="400" align="left" />
+  <img src="examples/ellie_villano_2.png" width="400" align="left" /><br />
+</p>
+
+<p align="center">
+  Marvin Pusung-Zita<br />
+  <img src="examples/marvin_pusung-zita_1.png" width="400" align="left" />
+  <img src="examples/marvin_pusung-zita_2.png" width="400" align="left" /><br />
 </p>
