@@ -1,5 +1,6 @@
 ## Class session rotation
-- Introduce a new unit by following the material (print beforehand!)
+- Introduce a new unit by following the material (print beforehand!), basically I just work it out in realtime and they watch me to see what I'm doing -- then they'll look at the assignment page afterwards
+- jump in on the chat with questions
 - Student presentations followed by ad lib help and examples during work time
 - Preliminary crit (5min/student max) followed by ad lib help and examples during work time
 - Final crit (5min/student max) and we're out

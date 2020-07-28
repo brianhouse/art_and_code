@@ -1,4 +1,4 @@
-# Sketch #0: Algorithm
+# Algorithm
 
 _Make a drawing. Keep it simple and take only two minutes to do it. It can be abstract or figurative.
 

@@ -1,3 +1,6 @@
+width, height
+
+
 # Sketch #4: Coordinate Landscape
 
 For a painter, placing a mark on a canvas is a physical gesture—you simply touch the surface where you want the mark to be. With digital media, however, the concept of "space" is represented through symbolic coordinate systems. For example, a 2-dimensional canvas is typically understood with two numbers—an X-coordinate and a Y-coordinate—that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. "Color space" can also be represented with coordinates, one each for the red, green, and blue components.
