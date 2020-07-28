@@ -17,26 +17,26 @@ We're used to downloading software such as Photoshop or Ableton to our computers
 You should see something like this:
 
 <p align="center">
-  <img src="canvas_1.png" width=400 /><br />
+  <img src="canvas_1.png" width=500 /><br />
 </p>
 
 
 Processing doesn't include support for the Python programming language by default. In order to enable Python support, you'll need to install an add-on called Python Mode. You can do this by clicking on the drop-down menu on the right side of the tool bar and selecting "Add Mode..."
 
 <p align="center">
-  <img src="canvas_2.png" width=400 /><br />
+  <img src="canvas_2.png" width=500 /><br />
 </p>
 
 A window with the title "Mode Manager" will appear. Scroll down until you see "Python" and press "Install."
 
 <p align="center">
-  <img src="canvas_3.png" width=400 /><br />
+  <img src="canvas_3.png" width=500 /><br />
 </p>
 
 After you do this, quit Processing and re-open it. You should then be able to select Python under the mode menu.
 
 <p align="center">
-  <img src="canvas_4.png" width=400 /><br />
+  <img src="canvas_4.png" width=500 /><br />
   <br />
 </p>
 
@@ -51,7 +51,7 @@ print("Hello World!")
 To run your program, click the button that looks like a "play" icon (or type Command-R). You should see something like this:
 
 <p align="center">
-  <img src="canvas_5.png" width=400 /><br />
+  <img src="canvas_5.png" width=500 /><br />
 </p>
 
 ...and a small window like this:
@@ -68,5 +68,5 @@ That's it! You've created your first program.
 As you will learn, you will have to write Python code _exactly_ right for it to work. The computer has no ability to guess at what you mean. When something doesn't make sense to the computer, you'll see an error. Don't be afraid of this! In fact, it's a good thing, because it helps us figure out what's going on in the program and to correct it.
 
 <p align="center">
-  <img src="canvas_7.png" width=400 /><br />
+  <img src="canvas_7.png" width=500 /><br />
 </p>

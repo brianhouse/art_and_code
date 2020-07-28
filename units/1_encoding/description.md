@@ -278,6 +278,8 @@ Phew, that's a lot to absorb at once. Don't worry, if all of this seems complica
 In this sketch, you will become familiar with drawing using coordinates. To explore the relationship of digital "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something new. Pay particular attention to your use of color.
 
 
+
+
 Include your title, the artist and year of the original painting, and a [3-sentence description](../../resources/description_guidelines.md) that explains the choices you made in your reinterpretation
 
 folder with two images and the and the .pyde file?
