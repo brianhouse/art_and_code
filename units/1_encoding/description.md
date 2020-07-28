@@ -4,24 +4,24 @@
 
 Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's another quality that is characteristic of digital media.
 
-In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direct_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line". Computers, however, typically represent the concept of "space" through a numeric coordinate system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This is a good example of encoding, because it quantifies something intuitive like physical space into a numeric system that the computer can process.
+In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direction_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line." Computers, however, typically represent the concept of "space" through a numeric coordinate system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This is a good example of encoding, because it quantifies something intuitive like physical space into a numeric system that the computer can process.
 
 ## Context
 
 Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however, in order to divide up space into regularly sized units; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting. In the twentieth century, grids became very prominent through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
 
 <p align="center">
-  <img src="albertisketch.jpg" width=400 /><br />
+  <img src="albertisketch.jpg" width=500 /><br />
   From Alberti's "De Pictura (On Painting)" (1435)<br />
 </p>
 
 <p align="center">
-  <img src="mondrian.jpg" width=400 /><br />
+  <img src="mondrian.jpg" width=500 /><br />
   Piet Mondrian, <i>Broadway Boogie Woogie</i> (1942)<br />
 </p>
 
 <p align="center">
-  <img src="mies.jpg" width=400 /><br />
+  <img src="mies.jpg" width=500 /><br />
   Grid-based architecture from Mies van der Rohe (1970s)<br />
 </p>
 
@@ -32,13 +32,13 @@ Grids on contemporary computers, and numeric encoding in computing general, inhe
 However, from early on, artists have co-opted those systems towards aesthetic ends. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at Bell Labs, Schwartz created paintings and films that made use of, subverted, or expanded the possibilities of graphics systems.
 
 <p align="center">
-  <img src="schwartz.jpg" width=400 /><br />
+  <img src="schwartz.jpg" width=500 /><br />
   Lillian Schwartz, still from <i>Enigma</i> (1972)<br />
   <a href="http://lillian.com/1972-enigma-4-min-20-sec/">Watch the video</a><br />
 </p>
 
 <p align="center">
-  <img src="schwartz_2.jpg" width=400 /><br />
+  <img src="schwartz_2.jpg" width=500 /><br />
   Lillian Schwartz, <i>Olympiad</i> (1971)<br />
 </p>
 
@@ -51,22 +51,28 @@ Schwartz's work plays with the abstraction of representational imagery into digi
 Spatial coordinates work a little differently with computers than you might be used to from math class. Rather than `0, 0` (aka the "origin") being in the center of the screen, it represents the top-left corner, and as the `y` value gets larger, we move further down:
 
 <p align="center">
-  <img src="grid.svg" width=400 /><br />  
+  <img src="grid.svg" width=500 /><br />  
 </p>
 
 
 Let's see how this works with Python Mode for Processing. Open processing and start a new Python sketch.
 
-First, we'll write two lines of code to create the canvas. Type the following on line 1 and 2 of your program:
+First, we'll create the canvas. Type the following on line 1:
 
 ```py
 size(640, 480)              # width, height
 ```
 
+This is what it should look like in the Processing window:
+
+<p align="center">
+  <img src="canvas_0.png" width=500 /><br />
+</p>
+
 In this code, `size` is a **function** provided by Processing that creates the "canvas," which takes two **parameters**, one each for how many pixels wide and how many high we want our canvas to be. Subsequently, when we run the program, a grey window should appear that is exactly 640 by 480 pixels (I chose these dimensions for fun because they are what personal computers used in the 80s and 90s).
 
 <p align="center">
-  <img src="canvas_1.png" width=400 /><br />
+  <img src="canvas_1.png" width=500 /><br />
 </p>
 
 Though the canvas is currently blank, what is key to realize is that it is essentially a fancy piece of graph paper, with each pixel corresponding to a pair of x/y coordinates.
@@ -75,7 +81,7 @@ Also, I wrote a "comment" in this code:
 ```py
       # width, height
 ```
-In Python, anything on a line after a `#` character is ignored by the program. You can use it to keep notes on what's going on in the code.
+In Python, anything on a line after a `#` character is ignored by the program. You can use comments to keep notes on what's going on in the code itself, which can be very helpful in larger programs.
 
 
 ### Lines and shapes
@@ -88,7 +94,7 @@ line(0, 0, 640, 480)        # begin x, begin y, end x, end y
 ```
 
 <p align="center">
-  <img src="canvas_2.png" width=400 /><br />
+  <img src="canvas_2.png" width=500 /><br />
 </p>
 
 How about a circle in the center?
@@ -103,7 +109,7 @@ circle(320, 240, 50)        # center x, center y, diameter
 ```
 
 <p align="center">
-  <img src="canvas_3.png" width=400 /><br />
+  <img src="canvas_3.png" width=500 /><br />
 </p>
 
 Processing provides several shapes that all work similarly, though they are all different: each one is a function that takes a series of parameters that provide the necessary information for the computer to draw that particular shape.
@@ -121,10 +127,12 @@ quad(338, 331, 386, 320, 369, 363, 330, 376) # x and y for each of the four poin
 ```
 
 <p align="center">
-  <img src="canvas_4.png" width=400 /><br />
+  <img src="canvas_4.png" width=500 /><br />
 </p>
 
 Notice how the shapes overlap each other depending on the order in which we write them in the code.
+
+Try experimenting with different shapes and parameters. You can type in as many as you want, in any order and on any line. You can only have one function per line, but blank lines in between functions are fine.
 
 ### Line size
 
@@ -149,7 +157,7 @@ square(50, 300, 50)
 ```
 
 <p align="center">
-  <img src="canvas_7.png" width=400 /><br />
+  <img src="canvas_7.png" width=500 /><br />
 </p>
 
 
@@ -199,7 +207,7 @@ circle(380, 250, 200)
 ```
 
 <p align="center">
-  <img src="canvas_5.png" width=400 /><br />
+  <img src="canvas_5.png" width=500 /><br />
 </p>
 
 It turns out that `stroke` and `fill` can take one more parameter—this one is for opacity, with 0 corresponding to completely transparent and 255 indicating completely opaque (which the is default). Here's the same code, but notice this fourth parameter added in:
@@ -222,7 +230,7 @@ circle(380, 250, 200)
 ```
 
 <p align="center">
-  <img src="canvas_6.png" width=400 /><br />
+  <img src="canvas_6.png" width=500 /><br />
 </p>
 
 In this example, the computer automatically computes the blended colors according to the overlap and the opacity.
@@ -233,7 +241,7 @@ In this example, the computer automatically computes the blended colors accordin
 We'll learn how to draw one more thing, although this one is a little weird. To make a curve with the `bezier` function, we need to specify the start and end "anchor" points, plus two "control" points. The line doesn't actually pass through these control points, but they influence how the line curves.
 
 <p align="center">
-  <img src="bezier.png" width=400 /><br />
+  <img src="bezier.png" width=500 /><br />
 </p>
 
 Here's an example in code:
@@ -248,7 +256,7 @@ bezier(100, 100, 400, 100, 500, 200, 540, 380)
 
 And the result:
 <p align="center">
-  <img src="canvas_8.png" width=400 /><br />
+  <img src="canvas_8.png" width=500 /><br />
 </p>
 
 Notice how the curve follows the trajectory of the dashed red lines as best it can while still smoothly connecting the lines.
@@ -265,23 +273,53 @@ bezier(100, 100, 400, 100, 200, 400, 540, 380)
 ```
 
 <p align="center">
-  <img src="canvas_9.png" width=400 /><br />
+  <img src="canvas_9.png" width=500 /><br />
 </p>
 
 `bezier` is a very interesting function, but it does take some getting used to.
+
+## Saving an image
+
+Remember to periodically save your work. Don't use "Save As...", as that will only make things more confusing.
+
+<p align="center">
+  <img src="../0_algorithm/canvas_10.png" width=300 /><br />
+</p>
+
+In addition, if the last line of your sketch is the `save` function, you'll have an image file in your sketch folder.
+
+```py
+# draw some things
+size(640, 480)
+background(69, 209, 99)
+strokeWeight(5)
+noFill()
+bezier(100, 100, 400, 100, 200, 400, 540, 380)
+
+# make an image file
+save("output.png")    
+```
+
+<p align="center">
+  <img src="../0_algorithm/canvas_9.png" width=500 /><br />
+</p>
+
 
 Phew, that's a lot to absorb at once. Don't worry, if all of this seems complicated, it will get more intuitive with practice, and we will learn some shortcuts next unit. But for now...
 
 
 ## Sketch #1
 
-In this sketch, you will become familiar with drawing using coordinates. To explore the relationship of digital "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something new. Pay particular attention to your use of color.
+In this sketch, you will practice with drawing using coordinates. To explore the relationship of digitally encoded "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something new. Pay particular attention to your use of color.
+
+Turn in the contents of your sketch folder to Google Classroom. In addition, upload an image of the original painting, and a document that includes your title, the artist and year of the original painting, and a [3-sentence description](../../resources/description_guidelines.md) that explains the choices you made in your reinterpretation.
 
 
+### Examples
 
+Here's some inspiration from last semester, with the original and reinterpreted landscapes:
 
-Include your title, the artist and year of the original painting, and a [3-sentence description](../../resources/description_guidelines.md) that explains the choices you made in your reinterpretation
-
-folder with two images and the and the .pyde file?
-
----> figure out how to turn in via the other setup doc
+<p align="center">
+  <img src="examples/aijaeh_hennessey_1.jpg" width="400" align="left" /><br />
+  <img src="examples/aijaeh_hennessey_2.png" width="400" align="left" /><br />
+</p>

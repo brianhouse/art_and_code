@@ -42,10 +42,12 @@ After you do this, quit Processing and re-open it. You should then be able to se
 
 ## Hello World
 
-It is tradition to write a "Hello World" program to make sure everything is up and running correctly. To do that, type the following into your sketch (pay attention to quotation marks and the lack of spacing):
+It is tradition to write a "Hello World" program to make sure everything is up and running correctly. To do that, type the following into your sketch _exactly_ as it is written here—don't worry about what all this means, we'll cover it in future classes:
 
 ```py
 print("Hello World!")
+circle(50, 50, 25)
+save("output.png")
 ```
 
 To run your program, click the button that looks like a "play" icon (or type Command-R). You should see something like this:
@@ -60,13 +62,37 @@ To run your program, click the button that looks like a "play" icon (or type Com
   <img src="canvas_6.png" width=200 /><br />
 </p>
 
-That's it! You've created your first program.
+Congrats! You've created your first program.
 
+<br />
 
-## Error messages
+## A note about error messages
 
 As you will learn, you will have to write Python code _exactly_ right for it to work. The computer has no ability to guess at what you mean. When something doesn't make sense to the computer, you'll see an error. Don't be afraid of this! In fact, it's a good thing, because it helps us figure out what's going on in the program and to correct it.
 
 <p align="center">
   <img src="canvas_7.png" width=500 /><br />
+</p>
+
+Now that you know what to expect, you won't be surprised by the first time you see that red text.
+
+
+## How to submit your work
+
+First, make sure you save your sketch. Don't use "Save As...", as that will only make things more confusing.
+
+<p align="center">
+  <img src="canvas_10.png" width=300 /><br />
+</p>
+
+Then, to turn in your sketch, go up to the "Sketch" menu and choose the "Show Sketch Folder" option:
+
+<p align="center">
+  <img src="canvas_8.png" width=300 /><br />
+</p>
+
+Inside, you'll find several files: upload all of them to Google Classroom to complete the assignment.
+
+<p align="center">
+  <img src="canvas_9.png" width=500 /><br />
 </p>

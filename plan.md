@@ -1,11 +1,13 @@
-## Class session rotation
-- Introduce a new unit by following the material (print beforehand!), basically I just work it out in realtime and they watch me to see what I'm doing -- then they'll look at the assignment page afterwards
-- jump in on the chat with questions
-- Student presentations followed by ad lib help and examples during work time
-- Preliminary crit (5min/student max) followed by ad lib help and examples during work time
-- Final crit (5min/student max) and we're out
-/
-- Follow the syllabus for small exceptions / intros
+for submission:
+- the .pyde file
+- saved output
+- artwork description file
+- other files
+
+
+is there a participation grade?
+going to have to be participation on google classroom
+
 
 
 ## Units
@@ -18,18 +20,24 @@
     - examples
 - the sketch
 
+## Class session rotation
+- Introduce a new unit
+    - follow the material (print beforehand!)
+    - I just work it out in realtime and they watch me to see what I'm doing
+    - Students jump in on the chat with questions
+    - they'll look at the assignment page afterwards (it's scheduled to appear right after (or during?) class)
+- Student presentations followed by ad lib help and examples during work time
+- Preliminary crit (5min/student max) followed by ad lib help and examples during work time
+    - everyone presents via screen sharing, comments over chat (which I save)
+- Final crit (5min/student max) and we're out
+    - everyone presents via screen sharing, comments over chat (which I save)
+- Follow the syllabus for small exceptions / intros
 
-## Crits
-Crits happen in person via video, but also through the chat, which is super helpful format, actually.
 
 ## Todo
-- online form for questionnaire
 - exercise for each programming topic
 - fill out all units
-- download / install instructions for processing.py
-
-- mini assignments: questionnaire + download / install processing
-
+- cheat sheet for Python Mode
 
 
 
@@ -45,3 +53,10 @@ https://www.w3schools.com/python/default.asp
 
 
 https://newmedia.fandom.com/wiki/Numerical_Representation
+
+
+//
+
+ok. so, problems:
+
+- interface, emergence, and (maybe) glitch are the only assignments that are animated. so at that point, will have to figure out image sequence saving. actually, it doesn't matter for interface—can just have the result. so really, emergence is the only one, and that actually fits pedagogically. great.
