@@ -331,31 +331,31 @@ Here's some inspiration from last semester, with the original and reinterpreted 
 <br />
 
 <p>
-  Aijaeh Hennessey<br />
   <img src="examples/aijaeh_hennessey_1.jpg" width="400" align="left" />
   <img src="examples/aijaeh_hennessey_2.png" width="400" /><br />
+  Aijaeh Hennessey, <i>No Country</i> (2020)<br />  
 </p>
 
 <br /><br />
 
 <p>
-  Evan Yerian<br />
   <img src="examples/evan_yerian_1.jpg" width="400" align="left" />
   <img src="examples/evan_yerian_2.png" width="400" /><br />
+  Evan Yerian, <i>Moon and Half-Dome</i> (2020)<br />  
 </p>
 
 <br /><br />
 
 <p>
-  Ellie Villano<br />
   <img src="examples/ellie_villano_1.jpg" width="400" align="left" />
   <img src="examples/ellie_villano_2.png" width="400" /><br />
+  Ellie Villano, <i>Waves at Matsushima</i> (2020)<br />  
 </p>
 
 <br /><br />
 
 <p>
-  Marvin Pusung-Zita<br />
   <img src="examples/marvin_pusung-zita_1.png" width="400" align="left" />
   <img src="examples/marvin_pusung-zita_2.png" width="400" /><br />
+  Marvin Pusung-Zita, <i>Summer Landscape</i> (2020)<br />  
 </p>
