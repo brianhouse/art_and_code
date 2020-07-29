@@ -328,11 +328,15 @@ Turn in the contents of your sketch folder to Google Classroom. In addition, upl
 
 Here's some inspiration from last semester, with the original and reinterpreted landscapes side by side:
 
+<br />
+
 <p>
   Aijaeh Hennessey<br />
   <img src="examples/aijaeh_hennessey_1.jpg" width="400" align="left" />
   <img src="examples/aijaeh_hennessey_2.png" width="400" /><br />
 </p>
+
+<br /><br />
 
 <p>
   Evan Yerian<br />
@@ -340,11 +344,15 @@ Here's some inspiration from last semester, with the original and reinterpreted 
   <img src="examples/evan_yerian_2.png" width="400" /><br />
 </p>
 
+<br /><br />
+
 <p>
   Ellie Villano<br />
   <img src="examples/ellie_villano_1.jpg" width="400" align="left" />
   <img src="examples/ellie_villano_2.png" width="400" /><br />
 </p>
+
+<br /><br />
 
 <p>
   Marvin Pusung-Zita<br />
