@@ -8,7 +8,7 @@ In our exercise from last class, a common problem was how to tell the other pers
 
 ## Context
 
-Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however, in order to divide up space into regularly sized units; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting. In the twentieth century, grids became very prominent through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
+Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however, in order to divide up space into regularly sized units; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting. In the twentieth century, grids became very prominent tools through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
 
 <p align="center">
   <img src="albertisketch.jpg" width=500 /><br />
@@ -26,6 +26,11 @@ Of course, using coordinates to represent space is not unique to digital media. 
 </p>
 
 European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward and the development of address schemes on the [urban grid](https://en.wikipedia.org/wiki/Grid_plan). While other cultures including in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf) also used urban grids, colonial systems were imposed as [a means of establishing supremacy](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) and suppressing alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) up to the present day.
+
+<p align="center">
+  <img src="map.jpg" width=500 /><br />
+  Map of North America (1600s)<br />
+</p>
 
 Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought, modernist aesthetics, and even militaristic histories given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC).
 
