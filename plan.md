@@ -1,15 +1,3 @@
-for submission:
-- the .pyde file
-- saved output
-- artwork description file
-- other files
-
-
-is there a participation grade?
-going to have to be participation on google classroom
-
-
-
 ## Units
 - Concept
 - Context
@@ -22,9 +10,9 @@ going to have to be participation on google classroom
 
 ## Class session rotation
 - Introduce a new unit
-    - follow the material (print beforehand!)
-    - I just work it out in realtime and they watch me to see what I'm doing
-    - Students jump in on the chat with questions
+    - follow the material
+    - work out examples in realtime
+    - students jump in on the chat with questions
     - they'll look at the assignment page afterwards (it's scheduled to appear right after (or during?) class)
 - Student presentations followed by ad lib help and examples during work time
 - Preliminary crit (5min/student max) followed by ad lib help and examples during work time
@@ -35,6 +23,7 @@ going to have to be participation on google classroom
 
 
 ## Todo
+- going to have to be participation for google classroom's scheme
 - exercise for each programming topic
 - fill out all units
 - cheat sheet for Python Mode
@@ -57,6 +46,6 @@ https://newmedia.fandom.com/wiki/Numerical_Representation
 
 //
 
-ok. so, problems:
+submitting video
 
 - interface, emergence, and (maybe) glitch are the only assignments that are animated. so at that point, will have to figure out image sequence saving. actually, it doesn't matter for interface—can just have the result. so really, emergence is the only one, and that actually fits pedagogically. great.
