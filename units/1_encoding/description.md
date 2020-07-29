@@ -8,6 +8,8 @@ In our exercise from last class, a common problem was how to tell the other pers
 
 ## Context
 
+### Non-digital
+
 Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however, in order to divide up space into regularly sized units; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting. In the twentieth century, grids became very prominent tools through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
 
 <p align="center">
@@ -31,6 +33,8 @@ European use of coordinates was particularly important in cartography. Latitude 
   <img src="map.jpg" width=500 /><br />
   Map of North America (1600s)<br />
 </p>
+
+### Digital
 
 Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought, modernist aesthetics, and even militaristic histories given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC).
 

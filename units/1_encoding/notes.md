@@ -1,3 +1,5 @@
+screen share external monitor (might have to test that)
+
 
 Encoding
 
