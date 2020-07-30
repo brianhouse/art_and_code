@@ -94,7 +94,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Tuesday 9/15
 - Begin [Sketch #2: Indeterminacy](units/2_indeterminacy/description.md)
-- Loops and random
+- Random parameters, loops, and `i`
 
 #### Thursday 9/17
 - Review, questions, and work time

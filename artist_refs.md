@@ -14,6 +14,8 @@ Reas
 
 + pulp fiction
 
+ok if this has a gaming inflection, it more or less should
+
 
 /// recombination (combinatoric?)
 

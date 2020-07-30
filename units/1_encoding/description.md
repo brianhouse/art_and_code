@@ -38,17 +38,24 @@ European use of coordinates was particularly important in cartography. Latitude 
 
 Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought, modernist aesthetics, and even militaristic histories given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC).
 
-However, from early on, artists have co-opted those systems towards aesthetic ends. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at Bell Labs, Schwartz created paintings and films that made use of, subverted, or expanded the possibilities of graphics systems.
+However, from early on, artists have co-opted those systems towards aesthetic ends. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs), Schwartz created paintings and films that made use of pixels defined by screen coordinates, and she expanded and subverted the possibilities of these early graphics systems.
+
+<p align="center">
+  <img src="schwartz_2.jpg" width=500 /><br />
+  Lillian Schwartz, <i>Olympiad</i> (1971)<br />
+</p>
+
+To make her images, Lillian would sketch the images on graph paper and then encode each the color and position into coordinates. These would then be transferred to [punch cards](https://en.wikipedia.org/wiki/Punched_card) and fed into the machine, as these early computers did not support direct entry via keyboard.
+
+<p align="center">
+  <img src="punch_card.jpg" width=400 /><br />
+  Example of a punch card<br />
+</p>
 
 <p align="center">
   <img src="schwartz.jpg" width=500 /><br />
   Lillian Schwartz, still from <i>Enigma</i> (1972)<br />
   <a href="http://lillian.com/1972-enigma-4-min-20-sec/">Watch the video</a><br />
-</p>
-
-<p align="center">
-  <img src="schwartz_2.jpg" width=500 /><br />
-  Lillian Schwartz, <i>Olympiad</i> (1971)<br />
 </p>
 
 Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore below.

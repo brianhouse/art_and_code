@@ -88,3 +88,6 @@ In addition to **algorithm** are several other qualities associated with digital
 And that is it in a nutshell. Please look at the syllabus for policies, how the grading works, and so forth, and ask me whatever questions you have about the course.
 
 In addition, I'd like everyone to fill out a questionnaire / collect questionnaires
+
+
+if time, get setup.

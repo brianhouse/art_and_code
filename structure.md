@@ -61,3 +61,26 @@ for nonlinear, it's the map. but that's really complementary.
 I could make them do a "random" physical artwork, too.
 
 eventually, it feels contrived.
+
+
+
+UNITS
+
+ALGORITHM
+ENCODING
+INDETERMINACY
+NONLINEARITY
+RECOMBINATION
+INTERFACE
+EMERGENCE
+GLITCH
+/
+(SOCIAL) AUTOMATION
+CAPTURE
+INFRASTRUCTURE and THE MACHINIC MATERIALITY
+MACHINE VISION
+MIMICRY / THE REAL
+
+these latter half demand a more conceptual approach; a tactical media approach.
+
+the rest is (just) playing with culture, which is absolutely legit, but a different idea of media. right? or do all of these get transcended in some way by culture jamming, to use an old term?

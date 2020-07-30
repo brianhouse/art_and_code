@@ -70,51 +70,201 @@ Another notable artist who has used Processing goes by the name [LIA](https://en
 </p>
 
 
-## Code: `random` parameters and `for` loops
+## Code: Random parameters, loops, and `i`
 
 How do these artists create such complex effects? While there is a lot of craft involved in their code, we can start to create visual artwork that operates similarly with just a few more techniques.
 
-In the previous sketch, we created a shape using a function by defining its position with coordinates and giving numerical values for its other properties. For example, here's a circle in the center of the canvas:
+...but before we do anything else, let's take a second to talk about `print`.
+
+```py
+print(100)
+```
+
+Like the shape functions from Processing, `print` is a function that takes a parameter and does something with it. In this case, however, it doesn't draw anything to the canvas. Instead, it prints it out in Processing's console window:
+
+<p align="center">
+  <img src="canvas_0.png" width=500 /><br />
+</p>
+
+`print` ends up being a very useful function for [debugging](https://en.wikipedia.org/wiki/Debugging) our code, or at least getting a better sense of what's going on, as we will see.
+
+### Random parameters
+
+Now we're ready for `random`, which is also a function that takes a couple of parameters and produces a result. However, `random` doesn't draw anything to the canvas, either. Instead, it produces a random number within a given range.
+
+```py
+random(0, 100)  # a random number between 0 and 100
+```
+
+If you put this into a sketch, every time you run it, you'll get a different random number. But we can't see that number unless we print it out:
+
+```py
+print(random(0, 100))
+```
+
+Notice how we've put `random` _inside_ `print`. It can be tricky to keep track of all the parentheses, but this is a very useful thing to be able to do. `random` will first do its job and come up with a random number between 0 and 100, and then this number will be what `print` prints out. And every time the sketch is run, this number will be different. Try it.
+
+<p align="center">
+  <img src="canvas_1_.png" width=500 /><br />
+</p>
+
+Ok, so what can we do with this visually?
+
+Let's start with a simple shape in the center of the canvas:
 
 ```py
 size(500, 400)
 
-circle(250, 200, 100)
+circle(250, 200, 100) # x position, y position, diameter
 ```
 
-So far, we've only used static numbers for these parameters. However, Python can be more clever than that. For example, this code produces exactly the same result:
+<p align="center">
+  <img src="canvas_2.png" width=500 /><br />
+</p>
+
+So far, we've only used static numbers for parameters in functions like `circle`. But what if we put random in there instead?
 
 ```py
 size(500, 400)
 
-circle(500/2, 400/2, 100)
+circle(random(0, 500), random(0, 400), 100) # x position, y position, diameter
 ```
 
-It turns out that Python is very good at math. Here, instead of writing `250`, we write `500/2` and it calculates `250` for us. `/`, `*`, `+`, and `-` are all possibilities.
+This looks a little weird with all the parentheses and commas (be careful to keep track of them all!), but all we've done is _substitute_ the static numbers that we were using with the `random` function and its parameters:
+- `250` is replaced with `random(0, 500)`
+- `200` is replaced with `random(0, 400)`
 
-That's not terribly useful on its own. But consider this:
+(We're using these particular parameters for `random` because they match the dimensions of the canvas, but in principle, they could be anything.)
+
+The result is that every time you run this sketch, the circle will be drawn in a different location:
+
+
+<p align="center">
+  <img src="canvas_3.png" width=500 /><br />
+</p>
+
+How is that at all useful? Well, what if we repeated that random circle a bunch of times (and substituted the diameter with a random parameter too)?
 
 ```py
 size(500, 400)
 
-circle(width/2, height/2, 100)
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
+circle(random(0, 500), random(0, 400), random(10, 300))
 ```
 
-Once again, this produces the same result. But what are `width` and `height`? They are shortcuts provided by Processing that represent the width and height of the canvas that we established with `size`. They are also a type of variable.
+<p align="center">
+  <img src="canvas_4.png" width=500 /><br />
+</p>
 
-What is useful about this is that now we can _substitute_ the static values of `500` and `400` in our code with `width` and `height`, respectively. And if we _change_ the values we give to `size`, we won't have to alter our code. `width/2` will always be the horizontal center of the canvas, no matter if the width is 500 or 10000.
+This starts to get interesting. Each time you run the sketch, you'll have a different random composition.
 
-This idea of _substitution_ is critical. Because it also lets us do something extraordinary. Consider this code:
+However, it's also a bit tedious to write. What if we wanted 1000 circles? Too much typing. And this is where key programming structure can help us out: the _loop_.
+
+
+### Loops
+
+Loops in Python read like a statement in English about math:
+
+```
+For every integer called "i" in the range 0 to 10, do the following:
+```
+
+We just have to shorten it up a bit:
 
 ```py
 size(500, 400)
 
-circle(width/2, height/2, random(10, 300))
+for i in range(0, 10):
+    circle(random(0, 500), random(0, 400), random(10, 300))
 ```
 
-If you run this, it will draw a circle in the center of the canvas. But how big will it be?
+We'll come back to the meaning of `i`. For now, the key thing is that this loop repeats 10 times whatever is indented on the next line (or many lines) after the colon (indentation is another tricky thing you'll learn to keep track of).
+
+That means this code is equivalent to the earlier example, but we've written it with just a few lines. On each iteration of the loop, the program chooses new random numbers for the parameters of `circle`.
+
+
+<p align="center">
+  <img src="canvas_5.png" width=500 /><br />
+</p>
+
+One thing that's helpful to note with `random` is that if the first parameter is 0, you can omit it. And note that `random` can be applied to color, not just shapes:
+```py
+# a random color with a random amount of opacity
+fill(random(255), random(255), random(255), random(255))
+
+# a random greyscale color with a random amount of opacity
+fill(random(255), random(255))
+```
+
+Let's use this to make a somewhat more elaborate example:
+
+```py
+size(500, 400)
+
+# no outline on the shapes
+noStroke()
+
+# repeat 100 times
+for i in range(0, 100):
+
+    # choose a random color   
+    fill(random(255), random(255), random(255), random(255))  # choose random color and opacity
+
+    # make a random triangle with the bounds of the canvas
+    triangle(random(500), random(400), random(500), random(400), random(500), random(400))
+
+```
+
+<p align="center">
+  <img src="canvas_6.png" width=500 /><br />
+</p>
+
+Now we're getting somewhere. If you play with the parameters, and add different shapes and colors, the complexity and richness will increase:
+
+```py
+size(500, 400)
+
+# set the background to white
+background(255, 255, 255)
+
+# repeat everything 20 times
+for i in range(0, 20):
+
+    # make a random triangle with no outline and a random red-ish fill
+    noStroke()
+    fill(random(255), 0, 0, random(255))  # choose random color and opacity
+    triangle(random(500), random(400), random(500), random(400), random(500), random(400))
+
+    # make a circle with no fill and random greyscale outline of random weight
+    noFill()
+    stroke(random(255), random(255))
+    strokeWeight(random(1, 10))
+    circle(random(500), random(400), random(10, 50))
+```
+
+<p align="center">
+  <img src="canvas_7.png" width=500 /><br />
+</p>
+
+ As you can see, even this relatively straightforward example shares a certain aesthetic with that of artists who work with indeterminacy that we've already seen. 
+
+#### `i`
+
+
+`i` is a **variable**. We'll be talking more about variables throughout the course, but for now suffice to say that `i` represents a different number for every iteration of the loop.
+
 
 
 
 
 ## Sketch #2
+
+use regularity and irregularity together
