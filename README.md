@@ -75,8 +75,8 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Thursday 9/3
 - Begin [Sketch #1: Encoding](units/1_encoding/description.md)
-- Coordinate systems
 - Introduction to Python Mode for Processing
+- Drawing with coordinates
 
 
 ### Week 2
@@ -94,7 +94,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Tuesday 9/15
 - Begin [Sketch #2: Indeterminacy](units/2_indeterminacy/description.md)
-- Loops and randomness
+- Loops and random
 
 #### Thursday 9/17
 - Review, questions, and work time
@@ -114,7 +114,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Tuesday 9/29
 - Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
-- Variables, conditionals, and functions
+- Variables, conditionals, and custom functions
 
 #### Thursday 10/1
 - Review, questions, and work time

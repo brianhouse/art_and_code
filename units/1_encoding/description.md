@@ -1,4 +1,4 @@
-# Encoding: drawing with coordinates
+# Encoding
 
 ## Concept
 
@@ -53,7 +53,7 @@ However, from early on, artists have co-opted those systems towards aesthetic en
 
 Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore below.
 
-## Code
+## Code: drawing with coordinates
 
 ### The canvas
 

@@ -27,7 +27,7 @@ Reas
 + american artist
 + sougwen
 + Liat Berdugo
-
+https://www.liaworks.com/theprojects/pontiac-vibe-enthrallogy/
 
 /// emergence
 
@@ -44,3 +44,8 @@ Reas
 + Phillip Stearns
 + Oval
 + Nam June Paik TV magnet
+
+
+/// omissions
+
+islamic art?

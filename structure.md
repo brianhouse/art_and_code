@@ -49,3 +49,15 @@ https://newmedia.fandom.com/wiki/Numerical_Representation
 submitting video
 
 - interface, emergence, and (maybe) glitch are the only assignments that are animated. so at that point, will have to figure out image sequence saving. actually, it doesn't matter for interface—can just have the result. so really, emergence is the only one, and that actually fits pedagogically. great.
+
+
+// discussion
+
+should there be a physical assignment with everything? there was for algorithm, which counts as belonging to coordinates
+
+
+for nonlinear, it's the map. but that's really complementary.
+
+I could make them do a "random" physical artwork, too.
+
+eventually, it feels contrived.
