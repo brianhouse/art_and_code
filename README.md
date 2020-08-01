@@ -22,7 +22,7 @@ Introduction to the aesthetics and form of digital media. By writing code, stude
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **encoding**, **nonlinearity**, **indeterminacy**, **recombination**, **interface**, **emergence**, and **glitch**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
+This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **encoding**, **indeterminacy**, **nonlinearity**, **recombination**, **interactivty**, **emergence**, and **glitch**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due. Sketches will be graded on both concept and craft.
 
@@ -74,7 +74,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 - **Homework for next class**: [Get set up](getting_started.md) with Python Mode for Processing.
 
 #### Thursday 9/3
-- Begin [Sketch #1: Encoding](units/1_encoding/description.md)
+- Begin [Sketch #1: Encoding Space](units/1_encoding/description.md)
 - Introduction to Python Mode for Processing
 - Drawing with coordinates
 
@@ -94,7 +94,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Tuesday 9/15
 - Begin [Sketch #2: Indeterminacy](units/2_indeterminacy/description.md)
-- Random parameters, loops, and `i`
+- Random parameters and loops
 
 #### Thursday 9/17
 - Review, questions, and work time
@@ -114,7 +114,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Tuesday 9/29
 - Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
-- Variables, conditionals, and custom functions
+- Strings, variables, conditionals, and custom functions
 
 #### Thursday 10/1
 - Review, questions, and work time
@@ -151,8 +151,8 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 ### Week 9
 
 #### Tuesday 10/27
-- Begin [Sketch #5: Interface](units/5_interface/description.md)
-- Events
+- Begin [Sketch #5: Interactivity](units/5_interactivity/description.md)
+- Using the mouse and keyboard, variable math
 
 #### Thursday 10/29
 - Review, questions, and work time
@@ -171,7 +171,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Tuesday 11/10
 - Begin [Sketch #6: Emergence](units/6_emergence/description.md)
-- Objects
+- Objects and animation
 
 #### Thursday 11/12
 - Review, questions, and work time
@@ -193,6 +193,7 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Tuesday 12/1
 - Begin [Sketch #7: Glitch](units/7_glitch/description.md)
+- Deconstructing bytes
 
 #### Thursday 12/3
 - Review, questions, and work time

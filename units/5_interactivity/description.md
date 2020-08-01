@@ -1,3 +1,45 @@
+interface -> interactivity (oh well)
+
+...and this code is about the math, finally, using mouseX, and loops. all about the brush. not so much "interface". and events, natch, keyboard and mouse, but use them in conditionals within draw, not as separate functions. so actually not events, just the loop. fuck yeah. because at that point we will have had loops, conditions, and arrays to work with.
+
+////
+
+#### About `i`
+
+Loops are very useful when paired with `random`. But they are also very powerful tools to create regular structure.
+
+Let's go back to the syntax for creating a loop:
+```py
+for i in range(10):
+```
+
+In English, this might read like something you would hear in a math class:
+```
+For every integer called "i" in the range 0 to 10, do the following:
+```
+
+`range` is actually a function too—just like `random`, but a little more predictable. It outputs a sequence of numbers, starting at 0 and up to _but not including_ the number specified.
+
+These numbers take turns being `i`. The first time the loop is run, `i` equals 0, the next time it equals 1, and so forth. Because `i` doesn't always mean the same thing, we call it a **variable** (just like in math).
+
+Let's demonstrate this. Just like we did with `random`, let's print it out:
+
+```py
+for i in range(10):
+    print(i)
+```
+
+<p align="center">
+  <img src="canvas_10.png" width=500 /><br />
+</p>
+
+As we can see, this loop results in ten numbers, from 0 to 9, being printed into the console, one after another.
+
+Ok, so how is this helpful? It means that we can use `i` as a parameter for functions within the loop.
+
+///
+
+
 # Sketch #5: Expressive Interface
 
 When we interact with a computer, we do so through a software interface. The files and folders of the operating system, the prompt of a text-based terminal, the links of a webpage, and the tool palette and working space of a graphics program—in all of these examples, input from the keyboard and mouse are translated into meaningful actions. Though we take many interfaces for granted, interfaces reflect the biases of those who made them. Furthermore, designing an interface is a creative act unto itself, and one that is central to digital media artists who use code to build their own tools.

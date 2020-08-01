@@ -1,21 +1,34 @@
-# Encoding
+# Encoding Space
 
 ## Concept
 
-Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's another quality that is characteristic of digital media.
+Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's a quality that is characteristic of digital media.
 
-In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direction_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line." Computers, however, typically represent the concept of "space" through a numeric coordinate system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This is a good example of encoding, because it quantifies something intuitive like physical space into a numeric system that the computer can process.
+In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direction_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line." Computers, however, typically represent the concept of "space" through a numeric _coordinate_ system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This is a good example of encoding, because it quantifies something intuitive like physical space into a numeric system that the computer can process.
 
 ## Context
 
 ### Non-digital
 
-Of course, using coordinates to represent space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however, in order to divide up space into regularly sized units; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting. In the twentieth century, grids became very prominent tools through modernist [architecture]() and [design](https://www.readingdesign.org/modernist-grid).
+Of course, using coordinates to encode space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting.
 
 <p align="center">
   <img src="albertisketch.jpg" width=500 /><br />
   From Alberti's "De Pictura (On Painting)" (1435)<br />
 </p>
+
+<p align="center">
+  <img src="de_vries.gif" width=500 /><br />
+</p>
+
+European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward. In addition, colonial cities often used the [urban grid](https://en.wikipedia.org/wiki/Grid_plan), although the technique was not novel to cultures such as those in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf). These systematic approaches were utilized as [a means of subjugating](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) and of consolidating power.
+
+<p align="center">
+  <img src="map.jpg" width=500 /><br />
+  Map of North America with coordinate lines (1600s)<br />
+</p>
+
+In the twentieth century, gridded space became an important tool in modernist print [design](https://www.readingdesign.org/modernist-grid) (often associated with the [Bauhaus](https://en.wikipedia.org/wiki/Bauhaus)). And grids became an aesthetic unto themselves in modernist art and architecture, which have had a defining influence on the aesthetics associated with computers.
 
 <p align="center">
   <img src="mondrian.jpg" width=500 /><br />
@@ -27,25 +40,20 @@ Of course, using coordinates to represent space is not unique to digital media. 
   Grid-based architecture from Mies van der Rohe (1970s)<br />
 </p>
 
-European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward and the development of address schemes on the [urban grid](https://en.wikipedia.org/wiki/Grid_plan). While other cultures including in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf) also used urban grids, colonial systems were imposed as [a means of establishing supremacy](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) and suppressing alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) up to the present day.
 
-<p align="center">
-  <img src="map.jpg" width=500 /><br />
-  Map of North America (1600s)<br />
-</p>
 
 ### Digital
 
-Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought, modernist aesthetics, and even militaristic histories given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC).
+Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought and modernist aesthetics (and even militaristic histories given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC)).
 
-However, from early on, artists have co-opted those systems towards aesthetic ends. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs), Schwartz created paintings and films that made use of pixels defined by screen coordinates, and she expanded and subverted the possibilities of these early graphics systems.
+However, from early on, artists have co-opted those systems for their own expressive purposes. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs), Schwartz created paintings and films that made use of pixels defined by screen coordinates, and she expanded and subverted the possibilities of these early graphics systems.
 
 <p align="center">
   <img src="schwartz_2.jpg" width=500 /><br />
   Lillian Schwartz, <i>Olympiad</i> (1971)<br />
 </p>
 
-To make her images, Lillian would sketch the images on graph paper and then encode each the color and position into coordinates. These would then be transferred to [punch cards](https://en.wikipedia.org/wiki/Punched_card) and fed into the machine, as these early computers did not support direct entry via keyboard.
+To make her images, Lillian would sketch the images on graph paper and then encode each color and position into coordinates. These would then be transferred to [punch cards](https://en.wikipedia.org/wiki/Punched_card) and fed into the machine, as these early computers did not support direct entry via keyboard (although [contemporary interfaces were first developed](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos) around the same time in the late 1960s).
 
 <p align="center">
   <img src="punch_card.jpg" width=400 /><br />
@@ -93,7 +101,7 @@ In this code, `size` is a **function** provided by Processing that creates the "
 
 Though the canvas is currently blank, what is key to realize is that it is essentially a fancy piece of graph paper, with each pixel corresponding to a pair of x/y coordinates.
 
-Also, I wrote a "comment" in this code:
+As an aside, I also wrote a "comment" in this code:
 ```py
       # width, height
 ```
@@ -115,7 +123,7 @@ line(0, 0, 640, 480)        # begin x, begin y, end x, end y
 
 How about a circle in the center?
 
-`circle` takes three parameters: the x and y coordinates of its center, and the diameter of the circle. The center point of the canvas is half its width (`640 / 2 = 320`) and half its height (`480 / 2 = 240`):
+`circle` takes three parameters: the x and y coordinates of its center, and the diameter of the circle. The center point of the canvas is half its width (640 / 2 = 320) and half its height (480 / 2 = 240):
 
 ```py
 size(640, 480)              # width, height
@@ -226,16 +234,16 @@ circle(380, 250, 200)
   <img src="canvas_5.png" width=500 /><br />
 </p>
 
-It turns out that `stroke` and `fill` can take one more parameter—this one is for opacity, with 0 corresponding to completely transparent and 255 indicating completely opaque (which the is default). Here's the same code, but notice this fourth parameter added in:
+It turns out that `stroke` and `fill` can take one more parameter—this one is for opacity, with 0 corresponding to completely transparent and 255 indicating completely opaque (which the is default). Here's the same code, but notice this fourth parameter added in for `fill`:
 
 ```py
 size(640, 480)
 
-background(255, 255, 255)
+background(255, 255, 255)   # white
 
 noStroke()
 
-fill(255, 0, 0, 100)
+fill(255, 0, 0, 100)    # 100 out of 255 opacity
 circle(320, 150, 200)
 
 fill(0, 255, 0, 100)
@@ -250,6 +258,67 @@ circle(380, 250, 200)
 </p>
 
 In this example, the computer automatically computes the blended colors according to the overlap and the opacity.
+
+What if we don't want to work in color, just greyscale? It turns out we don't need all three parameters—using just one will get us varying degrees of grey:
+
+```py
+size(640, 480)
+
+background(255) # shorter way to make white
+
+noStroke()
+
+fill(50)
+circle(320, 150, 200)
+
+fill(150)
+circle(250, 250, 200)
+
+fill(200)
+circle(380, 250, 200)
+```
+
+<p align="center">
+  <img src="canvas_10.png" width=500 /><br />
+</p>
+
+Finally, we can also do greyscale + opacity if we use two parameters:
+
+```py
+size(640, 480)
+
+background(255) # shorter way to make white
+
+noStroke()
+
+fill(50, 200)           # 200 out of 255 opacity
+circle(320, 150, 200)
+
+fill(150, 200)
+circle(250, 250, 200)
+
+fill(200, 200)
+circle(380, 250, 200)
+```
+
+<p align="center">
+  <img src="canvas_11.png" width=500 /><br />
+</p>
+
+
+To summarize:  
+
+1 parameter, greyscale:  
+`fill(100)`  
+
+2 parameters, greyscale + opacity:  
+`fill(100, 50)`           
+
+3 parameters, color:  
+`fill(100, 200, 0)`       
+
+4 parameters, color + opacity:  
+`fill(100, 200, 0, 50)`   
 
 
 ### Curves
@@ -326,7 +395,7 @@ Phew, that's a lot to absorb at once. Don't worry, if all of this seems complica
 
 ## Sketch #1
 
-In this sketch, you will practice with drawing using coordinates. To explore the relationship of digitally encoded "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something new. Pay particular attention to your use of color.
+In this sketch, you will practice with drawing using coordinates. To explore the relationship of digitally encoded "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something of its _digital_-ness. Pay particular attention to your use of color.
 
 Turn in the contents of your sketch folder to Google Classroom. In addition, upload an image of the original painting, and a document that includes your title, the artist and year of the original painting, and a [3-sentence description](../../resources/description_guidelines.md) that explains the choices you made in your reinterpretation.
 
