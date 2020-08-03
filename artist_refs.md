@@ -12,6 +12,7 @@ Reas
 + zork / IF
 + lynn hershman leeson
 
++ Olia Lialina
 + pulp fiction
 
 ok if this has a gaming inflection, it more or less should

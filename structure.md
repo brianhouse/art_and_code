@@ -23,35 +23,37 @@
 
 
 ## Todo
-- going to have to be participation for google classroom's scheme
-- exercise for each programming topic
+- what's up with presentations?
+- in-class exercise for each programming topic
 - fill out all units
 - cheat sheet for Python Mode
 
+### first day
+- a big monitor for me
+- set up Google Doc for sharing instructions (the person who draws it puts
+ their name on it). everyone shows the drawings by holding them up to the screen
 
 
-/////
+
+### groups
+- to divide them, divide number of people by group size, have them count
+
+
+
+#### submitting video
+
+Interface, emergence, and (maybe) glitch are the only assignments that are animated. so at that point, will have to figure out image sequence saving. actually, it doesn't matter for interface—can just have the result. so really, emergence is the only one, and that actually fits pedagogically. great.
+
+
+#### content
 
 https://twitter.com/the_ephemerides
 
 - Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
 
-final portfolio?
-
-https://www.w3schools.com/python/default.asp
 
 
-https://newmedia.fandom.com/wiki/Numerical_Representation
-
-
-//
-
-submitting video
-
-- interface, emergence, and (maybe) glitch are the only assignments that are animated. so at that point, will have to figure out image sequence saving. actually, it doesn't matter for interface—can just have the result. so really, emergence is the only one, and that actually fits pedagogically. great.
-
-
-// discussion
+#### discussion
 
 should there be a physical assignment with everything? there was for algorithm, which counts as belonging to coordinates
 

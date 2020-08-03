@@ -218,8 +218,8 @@ noStroke()
 # repeat 100 times
 for i in range(100):
 
-    # choose a random color   
-    fill(random(255), random(255), random(255), random(255))  # choose random color and opacity
+    # choose random color and opacity
+    fill(random(255), random(255), random(255), random(255))  
 
     # make a random triangle with the bounds of the canvas
     triangle(random(500), random(400), random(500), random(400), random(500), random(400))
@@ -257,7 +257,7 @@ for i in range(20):
   <img src="canvas_7.png" width=500 /><br />
 </p>
 
-As you can see, even this relatively straightforward example shares a certain aesthetic with that of artists who work with indeterminacy that we've already seen.
+As you can see, even this relatively straightforward example shares a certain aesthetic with that of artists we've seen who work with indeterminacy.
 
 Remember that you don't always have to use the entire width and height of the canvas with random. In fact, experimenting with these ranges is how you can add structure to your sketch.
 
@@ -330,13 +330,13 @@ for i in range(100):
   <img src="canvas_14.png" width=500 /><br />
 </p>
 
-Now all the ellipses are up front. This technique is a simple way to add a sense of composition to our image.
+Now all the ellipses are all up front. This technique is a simple way to create a sense of composition.
 
 Random parameters and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy. Let's see what you can create.
 
 
 ## Sketch #2
 
-In this sketch, you will explore indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two). Use shapes together with loops and the `random` function, and pay special attention to layering. Not all parameters should be random, and by being intentional about the ranges of numbers you choose to use with `random`, create a sense of structure or composition in your image.
+In this sketch, you will explore indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two). Use shapes together with loops (use more than one) and the `random` function. Pay special attention to layering. Not all parameters should be random, and by being intentional about the ranges of numbers you choose, create a sense of structure or composition in your image.
 
-Turn in the contents of your sketch folder to Google Classroom (first remember to save it and include `save("output.png")` as the last line of your sketch to make sure an image file is present). In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.
+Turn in the contents of your sketch folder to Google Classroom (first remember to save it, include `save("output.png")` as the last line of your sketch to make sure an image file is present, and run it a few times until you get a version you like). In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.

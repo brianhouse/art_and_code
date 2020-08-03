@@ -1,0 +1,63 @@
+## A randomized selection of digital media artists
+- Brenna Murphy
+- Laurie Spiegel
+- Aram Bartholl
+- Rick Silva
+- Julian Oliver
+- Jonas Lund
+- Gilberto Esparza
+- Fernanda Viégas & Martin Wattenberg
+- Carolee Schneemann
+- Martin Howse
+- Blast Theory
+- Ranjit Bhatnagar
+- R. Luke DuBois
+- James Paterson
+- Rafael Lozano-Hemmer
+- Carlos Garcia
+- James Bridle
+- Alison Parrish
+- Marisa Olson
+- Petra Cortright
+- F.A.T. Lab
+- Afroditi Psarra
+- Daito Manabe
+- Nathalie Meibach
+- Addie Wagenknecht
+- Olia Lialina
+- John Maeda
+- Rosa Menkman
+- Ben Rubin
+- Mendi & Keith Obadike
+- Michael Mandiberg
+- Everest Pipkin
+- LoVid
+- Claudia Hart
+- Cory Arcangel
+- Carsten Nicolai
+- Nadav Assor
+- Wesley Goatley
+- Lillian Schwartz
+- Mario Kingemann
+- Roman Verostko
+- Elisa Giardina-Papa
+- Golan Levin
+- Lauren McCarthy
+- Jonathan Harris
+- Morehshin Allahyari
+- Casey Reas
+- Amor Muñoz
+- Angela Washko
+- Jonah Brucker-Cohen
+- Kyle McDonald
+- Reuben Margolin
+- LIA
+- Ryoji Ikeda
+- Lynn Hershman Leeson
+- Giorgia Lupi
+- Nicole Aptekar
+- Liat Berdugo
+- Marius Watz
+- Christian Marclay
+- Daphne Oram
+- Timo Toots

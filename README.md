@@ -24,13 +24,11 @@ Introduction to the aesthetics and form of digital media. By writing code, stude
 ### Sketches
 This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **encoding**, **indeterminacy**, **nonlinearity**, **recombination**, **interactivty**, **emergence**, and **glitch**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due. Sketches will be graded on both concept and craft.
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due—no late work is accepted, as it will be graded during the crit. Sketches will be evaluated on both concept and craft.
 
 ### Survey presentations
-Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [choose artists to present from an approved list](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit?usp=sharing) on a first-come, first-served basis. These presentations make up 10% of your final grade.
+Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
-### Attendance and participation
-You must attend and thoughtfully participate in every class. After the first absence, every absence will result in a reduction of your final grade by 2.5%. Being late twice will be treated as the equivalent of one absence. **Use of social media in class twice will also be treated as the equivalent of one absence.**
 
 ### COVID-19 Alterations
 This course will be entirely online for Fall 2020 to provide a consistent experience and accommodate immunocompromised members of the community.
@@ -45,7 +43,7 @@ It is my intent to lead a course that serves students from diverse backgrounds a
 The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
 
 ### Laptop Use
-Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred. If you do not have access to a laptop, email me and we will make arrangements for you to borrow a machine.
+Work for this course should be done on a personal laptop—recent hardware and MacOS is preferred (Windows and Linux are also fine; Chromebooks will not work). If you do not have access to a laptop, email me and we will make arrangements for you to borrow a machine.
 
 ### Open Studio
 All students must complete their own work but are encouraged to help each other. To facilitate collective learning, students are encouraged to work in Fields 205.
