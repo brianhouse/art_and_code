@@ -69,11 +69,10 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 #### Tuesday 9/1
 - Introduction
 - In-class Sketch #0: Algorithm
-- **Homework for next class**: [Get set up](getting_started.md) with Python Mode for Processing.
+- **Homework for next class**: [Get set up](getting_started.md) with Python Mode for Processing
 
 #### Thursday 9/3
 - Begin [Sketch #1: Encoding Space](units/1_encoding/description.md)
-- Introduction to Python Mode for Processing
 - Drawing with coordinates
 
 

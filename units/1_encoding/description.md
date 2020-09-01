@@ -1,5 +1,7 @@
 # Encoding Space
 
+<!-- everybody signed up for a presentation? -->
+
 ## Concept
 
 Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's a quality that is characteristic of digital media.

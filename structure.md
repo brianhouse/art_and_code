@@ -28,15 +28,6 @@
 - fill out all units
 - cheat sheet for Python Mode
 
-### first day
-- a big monitor for me
-- set up Google Doc for sharing instructions (the person who draws it puts
- their name on it). everyone shows the drawings by holding them up to the screen
-
-
-
-### groups
-- to divide them, divide number of people by group size, have them count
 
 
 
