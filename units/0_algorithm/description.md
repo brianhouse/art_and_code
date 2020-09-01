@@ -1,4 +1,4 @@
-# Algorithm
+<!-- # Algorithm
 
 _Make a drawing. Keep it simple and take only two minutes to do it. It can be abstract or figurative.
 
@@ -6,12 +6,12 @@ Now write step by step instructions (a "score") that when followed will result i
 
 Give the instructions to someone else and have them follow them to make a new drawing.
 
-Display the two drawings together._
+Display the two drawings together._ -->
 
 
 ## Hello
 
-**Take 2min and make a drawing, keep it simple, it can be figurative or abstract**
+**Take 2min and make a drawing, keep it simple, it can be figurative or abstract, and then set it aside. Put your virtual hand up when you're done.**
 
 Let's go around and see who's here: name/pronouns + year + major
 
@@ -63,18 +63,27 @@ So let's give it a shot.
 
 ## Exercise
 
-- Take out the drawing you made
+<!-- - Take the drawing you made
 - Get an index card
 - On the card I want you to write, in words, a series of instructions that, when followed by someone else, will result in the drawing
 ...
 - Now we're going to swap
-- When you're done, put the original, the code, and the re-interpretation together
+- When you're done, put the original, the code, and the re-interpretation together -->
 
-Crit _discuss the differences without revealing identities_
-
-_Follow-up questions_:
+- This will be a little weird to do remotely, but I'm putting a google doc in the chat now. https://docs.google.com/document/d/1sqK5JAdaA9RTPOGJqOtdsOQDT45IsDcHXvrvSTgLecg/edit?usp=sharing
+- I'd like everyone to find some space on it somewhere, and to write, in words, a series of instructions that, when followed by someone else, will result in the drawing.
+- don't put your name on it; I know Google Docs will log it anyway
+...
+- So now, we're going to swap.
+- Use whatever set of instructions is below the ones you wrote. If yours is last, use the first one. Does that make sense?
+- Follow the instructions to draw the drawing
+...
+_student shows the reinterpretation_
 - How did it feel to follow the instructions?
 - How much was left up to interpretation?
+_author shows the original_
+- Would you approach things differently now?
+
 
 
 ## Syllabus
@@ -83,11 +92,16 @@ From here on out, we're going to continue to write **algorithms**, but they will
 
 There are many programming languages out there, but in this course we are going to use Python from within the Processing Environment. In fact, your homework for next time is to download that and get it running—there are [instructions](getting_started.md) on how to do that on Google Classroom.
 
-In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **encoding**, **nonlinearity**, **indeterminacy**, **recombination**, **interface**, **emergence**, and **glitch**. For each one of these, I'll introduce the structure, explain how you program it in Python, and then you'll complete an artwork, or as we'll call it, a "sketch".
+In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **encoding**, **nonlinearity**, **indeterminacy**, **recombination**, **interface**, **emergence**, and **glitch**. For each one of these, I'll introduce the structure, show some of the context within art history, explain how you program it in Python, and then you'll complete an artwork (or as we'll call it, a "sketch").
 
-And that is it in a nutshell. Please look at the syllabus for policies, how the grading works, and so forth, and ask me whatever questions you have about the course.
+And that is it in a nutshell. The only additional component is that once over the course of the semester, each one of you will give a short presentation about a digital media artist. The idea there is that we get a sense of some of the breadth of practices that are out there. We'll have a couple of those each week, and it may or may not line up with what we're working on that week, but that's ok. You can sign up for presentations on Google Classroom, it's first come first served, so check that out.
 
-In addition, I'd like everyone to fill out a questionnaire / collect questionnaires
+In fact, everything is up on Google Classroom, and we'll be leaning on that heavily to administer the course, so please take some time to be familiar with that. From here on out, I'll do all my communication through the Stream (do people get emails when I post?)
 
+Please look at the syllabus in particular for policies, how the grading works, and so forth.
 
-if time, get setup.
+What questions do you have for me now?
+
+I'd like everyone to fill out a questionnaire if they haven't already.
+
+Your homework for Thursday is on Classroom, which is to get set up with Python Mode for Processing. If you have problems getting that going, please email me or comment on the assignment.

@@ -28,7 +28,7 @@ European use of coordinates was particularly important in cartography. Latitude 
   Map of North America with coordinate lines (1600s)<br />
 </p>
 
-In the twentieth century, gridded space became an important tool in modernist print [design](https://www.readingdesign.org/modernist-grid) (often associated with the [Bauhaus](https://en.wikipedia.org/wiki/Bauhaus)). And grids became an aesthetic unto themselves in modernist art and architecture, which have had a defining influence on the aesthetics associated with computers.
+In the twentieth century, gridded space became an important tool in modernist print [design](https://www.readingdesign.org/modernist-grid) and [architecture](https://nplusonemag.com/issue-34/reviews/vernacular-modernism/) (often associated with the [Bauhaus](https://en.wikipedia.org/wiki/Bauhaus)). And grids became an aesthetic unto themselves in modernist art and architecture, which have had a defining influence on the aesthetics associated with computers.
 
 <p align="center">
   <img src="mondrian.jpg" width=500 /><br />

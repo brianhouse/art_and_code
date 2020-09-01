@@ -2,9 +2,9 @@
 
 We're used to downloading software such as Photoshop or Ableton to our computers and using it creatively. These applications are programs that have been written in programming languages. Writing code yourself to make your own programs is arguably a more interesting way to interact with a computer, but to do so we have to choose some tools:
 
-**[Python](https://en.wikipedia.org/wiki/Python_(programming_language))** is a programming language. Other languages include C, Java, Go, Swift, PHP, Javascript ... the list goes on and on. Python is notable for its relatively simple syntax and its wide applicability. Though it was invented in 1991, today it's used for cutting edge artificial intelligence research, computational biology, data visualization, and backend server systems at companies like Google, not to mention many digital media artists. You can compare a programming language to the syntax and basic vocabulary of a "natural language" like English, except that you're addressing the computer instead of a person.
+**[Python](https://en.wikipedia.org/wiki/Python_(programming_language))** is a programming language. Other languages include C, Java, Go, Swift, PHP, Javascript ... the list goes on and on. Python is notable for its relatively simple syntax and its wide applicability. Though it was invented in 1991, today it's used for cutting edge artificial intelligence research, computational biology, data visualization, and backend server systems at companies like Google, not to mention by many digital media artists. You can compare a programming language to the syntax and basic vocabulary of a "natural language" like English, with the difference that you're addressing the computer instead of a person.
 
-**[Processing](https://processing.org/overview/)** is a software application that we'll use to write programs in Python (yes, it turns out you need software to write software) which was created to make programming more accessible for artists. In addition, it provides Python with a _library_ of additional functions for graphics. You can think of this like a set of new words that the computer understands that don't automatically come with Python. Processing was originally created to work with the Java programming language, not Python, so we'll be using a special mode. Confusingly, Processing itself is often called a programming language, but when people say this they are referring to the original Java version. In general, programs written with Processing are called "sketches."
+**[Processing](https://processing.org/overview/)** is a software application that we'll use to write programs in Python (yes, it turns out you need software to write software), which was created to make programming more accessible for artists. Processing was originally created to work with the Java programming language, not Python, so we'll be using a special mode. Confusingly, Processing itself is often called a programming language, but when people say this they are really referring to the Java mode. In general, programs written with Processing are called "sketches."
 
 ## Setup
 
@@ -79,7 +79,7 @@ Now that you know what to expect, you won't be surprised by the first time you s
 
 ## How to submit your work
 
-First, make sure you save your sketch. Don't use "Save As...", as that will only make things more confusing.
+First, make sure you save your sketch. Use "Save", not "Save As...", which would only make things more confusing.
 
 <p align="center">
   <img src="canvas_10.png" width=300 /><br />

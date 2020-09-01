@@ -8,7 +8,7 @@ Office hours TR 11:30–12:30 on [Zoom](https://us02web.zoom.us/j/7372690628)
 
 
 ## Course Description
-Introduction to the aesthetics and form of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
+Introduction to the form and aesthetics of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
 
 
 #### Objectives:
@@ -58,7 +58,7 @@ If you have a disability that may impact your academic performance, you may requ
 Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College's 'Policies and Procedures' webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
 
 ### Land Acknowledgement
-The Fields Center for Visual Arts stands on the ancestral homelands of the Multnomah, Kathlamet, Clackamas, Tumwater, Watalala bands of the Chinook, Tualatin Kalapuya, and other indigenous nations of the Columbia River. It is important to acknowledge the original inhabitants of this place and recognize that we are here because of the sacrifices forced upon them. As artists working in Digital Media, we must be aware of and resist the many ways computation capitalizes upon and perpetuates violence toward marginalized people.
+The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Clackamas, Tumwater, Watalala bands of the Chinook, the Tualatin Kalapuya, and other indigenous nations of the Columbia River, and we are here because of the sacrifices forced upon them. Furthermore, we are at an institution named after white colonizers in a city with a racist history. As artists working in Digital Media, we must be aware of and resist the many ways computation capitalizes upon and perpetuates violence toward marginalized people.
 
 ---
 
@@ -96,12 +96,14 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Thursday 9/17
 - Review, questions, and work time
+- Artist presentations 1
 
 
 ### Week 4
 
 #### Tuesday 9/22
 - In-progress report, questions, and work time
+- Artist presentations 2
 
 #### Thursday 9/24
 - Crit Sketch #2
@@ -116,12 +118,14 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Thursday 10/1
 - Review, questions, and work time
+- Artist presentations 3
 
 
 ### Week 6
 
 #### Tuesday 10/6
 - In-progress report, questions, and work time
+- Artist presentations 4
 
 #### Thursday 10/8
 - Crit Sketch #3
@@ -135,12 +139,14 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Thursday 10/15
 - Review, questions, and work time
+- Artist presentations 5
 
 
 ### Week 8
 
 #### Tuesday 10/20
 - In-progress report, questions, and work time
+- Artist presentations 6
 
 #### Thursday 10/22
 - Crit Sketch #4
@@ -154,12 +160,14 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 #### Thursday 10/29
 - Review, questions, and work time
+- Artist presentations 7
 
 
 ### Week 10
 
 #### Tuesday 11/3
 - In-progress report, questions, and work time
+- Artist presentations 8
 
 #### Thursday 11/5
 - Crit Sketch #5
@@ -198,8 +206,5 @@ The Fields Center for Visual Arts stands on the ancestral homelands of the Multn
 
 
 ### Week 14
+- Course evaluations
 - Crit Sketch #7
-
-
-#### Finals week
-- Final portfolio due

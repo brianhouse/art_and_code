@@ -19,6 +19,7 @@
 - Alison Parrish
 - Marisa Olson
 - Petra Cortright
+- Memo Atken
 - F.A.T. Lab
 - Afroditi Psarra
 - Daito Manabe
