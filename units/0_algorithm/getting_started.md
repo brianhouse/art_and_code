@@ -17,26 +17,26 @@ We're used to downloading software such as Photoshop or Ableton to our computers
 You should see something like this:
 
 <p align="center">
-  <img src="canvas_1.png" width=500 /><br />
+  <img src="code/canvas_1.png" width=500 /><br />
 </p>
 
 
 Processing doesn't include support for the Python programming language by default. In order to enable Python support, you'll need to install an add-on called Python Mode. You can do this by clicking on the drop-down menu on the right side of the tool bar and selecting "Add Mode..."
 
 <p align="center">
-  <img src="canvas_2.png" width=500 /><br />
+  <img src="code/canvas_2.png" width=500 /><br />
 </p>
 
 A window with the title "Mode Manager" will appear. Scroll down until you see "Python" and press "Install."
 
 <p align="center">
-  <img src="canvas_3.png" width=500 /><br />
+  <img src="code/canvas_3.png" width=500 /><br />
 </p>
 
 After you do this, quit Processing and re-open it. You should then be able to select Python under the mode menu.
 
 <p align="center">
-  <img src="canvas_4.png" width=500 /><br />
+  <img src="code/canvas_4.png" width=500 /><br />
   <br />
 </p>
 
@@ -53,13 +53,13 @@ save("output.png")
 To run your program, click the button that looks like a "play" icon (or type Command-R). You should see something like this:
 
 <p align="center">
-  <img src="canvas_5.png" width=500 /><br />
+  <img src="code/canvas_5.png" width=500 /><br />
 </p>
 
 ...and a small window like this:
 
 <p align="center">
-  <img src="canvas_6.png" width=200 /><br />
+  <img src="code/canvas_6.png" width=100 /><br />
 </p>
 
 Congrats! You've created your first program.
@@ -71,7 +71,7 @@ Congrats! You've created your first program.
 As you will learn, you will have to write Python code _exactly_ right for it to work. The computer has no ability to guess at what you mean. When something doesn't make sense to the computer, you'll see an error. Don't be afraid of this! In fact, it's a good thing, because it helps us figure out what's going on in the program and to correct it.
 
 <p align="center">
-  <img src="canvas_7.png" width=500 /><br />
+  <img src="code/canvas_7.png" width=500 /><br />
 </p>
 
 Now that you know what to expect, you won't be surprised by the first time you see that red text.
@@ -82,17 +82,17 @@ Now that you know what to expect, you won't be surprised by the first time you s
 First, make sure you save your sketch. Use "Save", not "Save As...", which would only make things more confusing.
 
 <p align="center">
-  <img src="canvas_10.png" width=300 /><br />
+  <img src="code/canvas_10.png" width=300 /><br />
 </p>
 
 Then, to turn in your sketch, go up to the "Sketch" menu and choose the "Show Sketch Folder" option:
 
 <p align="center">
-  <img src="canvas_8.png" width=300 /><br />
+  <img src="code/canvas_8.png" width=300 /><br />
 </p>
 
 Inside, you'll find several files: upload all of them to Google Classroom to complete the assignment.
 
 <p align="center">
-  <img src="canvas_9.png" width=500 /><br />
+  <img src="code/canvas_9.png" width=500 /><br />
 </p>
