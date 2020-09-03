@@ -53,6 +53,7 @@
 - Carsten Nicolai
 - Nadav Assor
 - Wesley Goatley
+- Tahir Hemphill
 - Lillian Schwartz
 - Marina Zurkow
 - Ali Momeni
@@ -60,6 +61,7 @@
 - Roman Verostko
 - Janet Cardiff
 - Elisa Giardina-Papa
+- Salome Asega
 - Jamie Allen
 - Memo Akten
 - Eduardo Kac
@@ -68,6 +70,7 @@
 - Tega Brain
 - Lauren McCarthy
 - Jonathan Harris
+- Complex Movements
 - Morehshin Allahyari
 - Casey Reas
 - Amor Muñoz
@@ -76,12 +79,14 @@
 - Jonah Brucker-Cohen
 - Kyle McDonald
 - Blast Theory
+- Ekene Ijeoma
 - Reuben Margolin
 - LIA
 - Ryoji Ikeda
 - Taeyoon Choi
 - Andrea Polli
 - Lynn Hershman Leeson
+- Hyphen Labs
 - Giorgia Lupi
 - Nicole Aptekar
 - Natalie Jeremijenko
