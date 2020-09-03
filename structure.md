@@ -23,7 +23,6 @@
 
 
 ## Todo
-- what's up with presentations?
 - in-class exercise for each programming topic
 - fill out all units
 - cheat sheet for Python Mode
