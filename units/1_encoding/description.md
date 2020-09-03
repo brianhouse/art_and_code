@@ -15,30 +15,30 @@ In our exercise from last class, a common problem was how to tell the other pers
 Of course, using coordinates to encode space is not unique to digital media. In the Western world, coordinate systems are associated with René Descartes and the Enlightenment (aka the "[Cartesian Grid](https://en.wikipedia.org/wiki/Cartesian_coordinate_system)"), when they were first used to visualize algebraic equations. Artists had been using grids before that, however; notably, Leon Battista Alberti wrote a treatise in 1435 that included the use of grid systems to establish [linear perspective](https://en.wikipedia.org/wiki/Perspective_(graphical)) in painting.
 
 <p align="center">
-  <img src="albertisketch.jpg" width=500 /><br />
+  <img src="images/albertisketch.jpg" width=500 /><br />
   From Alberti's "De Pictura (On Painting)" (1435)<br />
 </p>
 
 <p align="center">
-  <img src="de_vries.gif" width=500 /><br />
+  <img src="images/de_vries.gif" width=500 /><br />
 </p>
 
 European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward. In addition, colonial cities often used the [urban grid](https://en.wikipedia.org/wiki/Grid_plan), although the technique was not novel to cultures such as those in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf). These systematic approaches were utilized as [a means of subjugating](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) and of consolidating power.
 
 <p align="center">
-  <img src="map.jpg" width=500 /><br />
+  <img src="images/map.jpg" width=500 /><br />
   Map of North America with coordinate lines (1600s)<br />
 </p>
 
 In the twentieth century, gridded space became an important tool in modernist print [design](https://www.readingdesign.org/modernist-grid) and [architecture](https://nplusonemag.com/issue-34/reviews/vernacular-modernism/) (often associated with the [Bauhaus](https://en.wikipedia.org/wiki/Bauhaus)). And grids became an aesthetic unto themselves in modernist art and architecture, which have had a defining influence on the aesthetics associated with computers.
 
 <p align="center">
-  <img src="mondrian.jpg" width=500 /><br />
+  <img src="images/mondrian.jpg" width=500 /><br />
   Piet Mondrian, <i>Broadway Boogie Woogie</i> (1942)<br />
 </p>
 
 <p align="center">
-  <img src="mies.jpg" width=500 /><br />
+  <img src="images/mies.jpg" width=500 /><br />
   Grid-based architecture from Mies van der Rohe (1970s)<br />
 </p>
 
@@ -51,19 +51,19 @@ Grids on contemporary computers, and numeric encoding in computing general, inhe
 However, from early on, artists have co-opted those systems for their own expressive purposes. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs), Schwartz created paintings and films that made use of pixels defined by screen coordinates, and she expanded and subverted the possibilities of these early graphics systems.
 
 <p align="center">
-  <img src="schwartz_2.jpg" width=500 /><br />
+  <img src="images/schwartz_2.jpg" width=500 /><br />
   Lillian Schwartz, <i>Olympiad</i> (1971)<br />
 </p>
 
 To make her images, Lillian would sketch the images on graph paper and then encode each color and position into coordinates. These would then be transferred to [punch cards](https://en.wikipedia.org/wiki/Punched_card) and fed into the machine, as these early computers did not support direct entry via keyboard (although [contemporary interfaces were first developed](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos) around the same time in the late 1960s).
 
 <p align="center">
-  <img src="punch_card.jpg" width=400 /><br />
+  <img src="images/punch_card.jpg" width=400 /><br />
   Example of a punch card<br />
 </p>
 
 <p align="center">
-  <img src="schwartz.jpg" width=500 /><br />
+  <img src="images/schwartz.jpg" width=500 /><br />
   Lillian Schwartz, still from <i>Enigma</i> (1972)<br />
   <a href="http://lillian.com/1972-enigma-4-min-20-sec/">Watch the video</a><br />
 </p>
@@ -77,7 +77,7 @@ Schwartz's work plays with the abstraction of representational imagery into digi
 Spatial coordinates work a little differently with computers than you might be used to from math class. Rather than `0, 0` (aka the "origin") being in the center of the screen, it represents the top-left corner, and as the `y` value gets larger, we move further down:
 
 <p align="center">
-  <img src="grid.svg" width=500 /><br />  
+  <img src="images/grid.svg" width=500 /><br />  
 </p>
 
 
@@ -92,13 +92,13 @@ size(640, 480)              # width, height
 This is what it should look like in the Processing window:
 
 <p align="center">
-  <img src="canvas_0.png" width=500 /><br />
+  <img src="canvas/canvas_0.png" width=500 /><br />
 </p>
 
 In this code, `size` is a **function** provided by Processing that creates the "canvas," which takes two **parameters**, one each for how many pixels wide and how many high we want our canvas to be. Subsequently, when we run the program, a grey window should appear that is exactly 640 by 480 pixels (I chose these dimensions for fun because they are what personal computers used in the 80s and 90s).
 
 <p align="center">
-  <img src="canvas_1.png" width=500 /><br />
+  <img src="canvas/canvas_1.png" width=500 /><br />
 </p>
 
 Though the canvas is currently blank, what is key to realize is that it is essentially a fancy piece of graph paper, with each pixel corresponding to a pair of x/y coordinates.
@@ -120,7 +120,7 @@ line(0, 0, 640, 480)        # begin x, begin y, end x, end y
 ```
 
 <p align="center">
-  <img src="canvas_2.png" width=500 /><br />
+  <img src="canvas/canvas_2.png" width=500 /><br />
 </p>
 
 How about a circle in the center?
@@ -135,7 +135,7 @@ circle(320, 240, 50)        # center x, center y, diameter
 ```
 
 <p align="center">
-  <img src="canvas_3.png" width=500 /><br />
+  <img src="canvas/canvas_3.png" width=500 /><br />
 </p>
 
 Processing provides several shapes that all work similarly, though they are all different: each one is a function that takes a series of parameters that provide the necessary information for the computer to draw that particular shape.
@@ -153,7 +153,7 @@ quad(338, 331, 386, 320, 369, 363, 330, 376) # x and y for each of the four poin
 ```
 
 <p align="center">
-  <img src="canvas_4.png" width=500 /><br />
+  <img src="canvas/canvas_4.png" width=500 /><br />
 </p>
 
 Notice how the shapes overlap each other depending on the order in which we write them in the code.
@@ -183,7 +183,7 @@ square(50, 300, 50)
 ```
 
 <p align="center">
-  <img src="canvas_7.png" width=500 /><br />
+  <img src="canvas/canvas_7.png" width=500 /><br />
 </p>
 
 
@@ -195,13 +195,13 @@ You will have noticed that the lines are black and the fill of the shapes is whi
 Color, just like spatial coordinates, are represented in computers using numbers. Though a painter comes up with shades of color by physically mixing paints, the computer usually encodes color as a three numbers for the amount of red, green, and blue components.
 
 <p align="center">
-  <img src="RGB.jpg" width=400 /><br />
+  <img src="canvas/RGB.jpg" width=400 /><br />
 </p>
 
 It may seem awkward, but the amount for each of these values is specified in the range 0-255 (the reason is that 256 values are the most that can be specified with [one byte](https://256stuff.com/256.html) of information—we will return to this later in the semester). Suffice to say that the easy way to deal with this is to use [Google's Color Picker](https://www.google.com/search?q=color+picker).
 
 <p align="center">
-  <img src="color_picker.png" width=400 /><br />
+  <img src="canvas/color_picker.png" width=400 /><br />
 </p>
 
 To change the line color, we use the `stroke` function, and to change the fill color, we use the `fill`. Each of these take three parameters for the red, green, and blue amounts. For example:
@@ -233,7 +233,7 @@ circle(380, 250, 200)
 ```
 
 <p align="center">
-  <img src="canvas_5.png" width=500 /><br />
+  <img src="canvas/canvas_5.png" width=500 /><br />
 </p>
 
 It turns out that `stroke` and `fill` can take one more parameter—this one is for opacity, with 0 corresponding to completely transparent and 255 indicating completely opaque (which the is default). Here's the same code, but notice this fourth parameter added in for `fill`:
@@ -256,7 +256,7 @@ circle(380, 250, 200)
 ```
 
 <p align="center">
-  <img src="canvas_6.png" width=500 /><br />
+  <img src="canvas/canvas_6.png" width=500 /><br />
 </p>
 
 In this example, the computer automatically computes the blended colors according to the overlap and the opacity.
@@ -281,7 +281,7 @@ circle(380, 250, 200)
 ```
 
 <p align="center">
-  <img src="canvas_10.png" width=500 /><br />
+  <img src="canvas/canvas_10.png" width=500 /><br />
 </p>
 
 Finally, we can also do greyscale + opacity if we use two parameters:
@@ -304,7 +304,7 @@ circle(380, 250, 200)
 ```
 
 <p align="center">
-  <img src="canvas_11.png" width=500 /><br />
+  <img src="canvas/canvas_11.png" width=500 /><br />
 </p>
 
 
@@ -328,7 +328,7 @@ To summarize:
 We'll learn how to draw one more thing, although this one is a little weird. To make a curve with the `bezier` function, we need to specify the start and end "anchor" points, plus two "control" points. The line doesn't actually pass through these control points, but they influence how the line curves.
 
 <p align="center">
-  <img src="bezier.png" width=500 /><br />
+  <img src="canvas/bezier.png" width=500 /><br />
 </p>
 
 Here's an example in code:
@@ -343,7 +343,7 @@ bezier(100, 100, 400, 100, 500, 200, 540, 380)
 
 And the result:
 <p align="center">
-  <img src="canvas_8.png" width=500 /><br />
+  <img src="canvas/canvas_8.png" width=500 /><br />
 </p>
 
 Notice how the curve follows the trajectory of the dashed red lines as best it can while still smoothly connecting the lines.
@@ -360,7 +360,7 @@ bezier(100, 100, 400, 100, 200, 400, 540, 380)
 ```
 
 <p align="center">
-  <img src="canvas_9.png" width=500 /><br />
+  <img src="canvas/canvas_9.png" width=500 /><br />
 </p>
 
 `bezier` is a very interesting function, but it does take some getting used to.
