@@ -13,24 +13,26 @@ However, algorithms have been developed to simulate "random"—e.g. unpredictabl
 
 ### Non-digital
 
+<!-- when do we have random numbers? -->
+
 Algorithms for working with indeterminacy have been an important part of artmaking even without electronic computers. The [Dada](https://en.wikipedia.org/wiki/Dada) movement, for example, developed the "chance collage" technique, in which artists dropped scraps of paper onto a larger sheet and pasted them wherever they landed. This method of embracing chance was a reaction against the ideologies of power and control that had led to the outbreak of WWI in Europe in the late 1910s.
 
 <p align="center">
-  <img src="arp.jpg" width=500 /><br />
+  <img src="context/1_arp.jpg" width=500 /><br />
   Jean Arp, <i>According to the Laws of Chance</i> (1933)<br />
 </p>
 
 In the United States, the term "indeterminacy" is often associated with the composer and conceptual artist [John Cage](https://en.wikipedia.org/wiki/John_Cage) (1912–1992). His piece _Music of Changes_ (1951) arranged notes and rests on a score according to an elaborate system of chance that involved throwing sticks on the ground and interpreting how they landed. He appropriated this technique from the _I Ching_, an ancient Chinese text (1000–750 BCE) which intended it as a means of [divination](https://en.wikipedia.org/wiki/Divination). This is similar to using tarot cards, rolling dice, or flipping a coin, all of which are manifestations of chance in culture that have been used by artists to generate indeterminacy.
 
 <p align="center">
-  <img src="cage.gif" width=500 /><br />
+  <img src="context/2_cage.gif" width=500 /><br />
   John Cage, from <i>Music of Changes</i> (1951) [<a href="https://www.youtube.com/watch?v=B_8-B2rNw7s">listen here</a>]<br />
 </p>
 
 Of course, incorporating nonhuman agency is another way of relinquishing a degree of control over a finished result. Daniel Ranalli did this in a simple way with snails:
 
 <p align="center">
-  <img src="ranalli.jpg" width=500 /><br />
+  <img src="context/3_ranalli.jpg" width=500 /><br />
   Daniel Ranalli, <i>Double Line</i> (2007)<br />
 </p>
 
@@ -44,28 +46,28 @@ A more clever way that we use today is a "pseudo-random number generator," an al
 Digital media artists have seized upon the opportunity to experiment. One example is [Harold Cohen](https://en.wikipedia.org/wiki/Harold_Cohen_(artist)) (1928–2016), who starting in the 1960s began developing an algorithm to make unique representational drawings using rules together with random parameters. He and others have made the specious claim that his program, which he called AARON, is an example of artificial intelligence—it is not, but it nonetheless demonstrates how powerful the random function can be.
 
 <p align="center">
-  <img src="aaron.jpg" width=500 /><br />
+  <img src="context/4_aaron.jpg" width=500 /><br />
   Harold Cohen, painting by <i>AARON</i> (1995)<br />
 </p>
 
 A contemporary of Cohen's, Roman Verostko (1929–), approached indeterminacy with a very different aesthetic, even though his work similarly uses random parameters within repeating patterns in order to craft abstract forms. The results reflect Verostko's mystic interest (and his time as a Benedictine monk). (Verostko also initiated the "[algorist](https://en.wikipedia.org/wiki/Algorithmic_art#Algorists)" movement of artists who work with computers.)
 
 <p align="center">
-  <img src="verostko.jpg" width=500 /><br />
+  <img src="context/5_verostko.jpg" width=500 /><br />
   Roman Verostko, <i>FlyingCloud II</i> (1999)
 </p>
 
 [Casey Reas](https://en.wikipedia.org/wiki/Casey_Reas) (1972–), together with Ben Fry, is the creator of Processing. The application and library generalize many of the techniques used by earlier algorithmic artists, including `random`—repetition with random variation features prominently in Reas' own work.
 
 <p align="center">
-  <img src="reas.jpg" width=500 /><br />
+  <img src="context/6_reas.jpg" width=500 /><br />
   Casey Reas, <i>Process 18 (Software 2)</i> (2010)
 </p>
 
 Another notable artist who has used Processing goes by the name [LIA](https://en.wikipedia.org/wiki/Lia_(artist)). Her work often takes the form of animation, with infinitely evolving visuals that she performs live or which are displayed on a monitor within a frame.
 
 <p align="center">
-  <img src="lia.png" width=500 /><br />
+  <img src="context/7_lia.png" width=500 /><br />
   LIA, <i>Untitled 20160817</i> (2016)
 </p>
 
@@ -83,7 +85,7 @@ print(100)
 Like the shape functions from Processing, `print` is a function that takes a parameter and does something with it. In this case, however, it doesn't draw anything to the canvas. Instead, it prints it out in Processing's console window:
 
 <p align="center">
-  <img src="canvas_0.png" width=500 /><br />
+  <img src="code/canvas_0.png" width=500 /><br />
 </p>
 
 `print` ends up being a very useful function for [debugging](https://en.wikipedia.org/wiki/Debugging) our code, or at least getting a better sense of what's going on, as we will see.
@@ -105,13 +107,13 @@ print(random(0, 100))
 Notice how we've put `random` _inside_ `print`. It can be tricky to keep track of all the parentheses, but this is a very useful thing to be able to do. `random` will first do its job and come up with a random number between 0 and 100, and then this number will be what `print` prints out. And every time the sketch is run, this number will be different:
 
 <p align="center">
-  <img src="canvas_1_.png" width=500 /><br />
+  <img src="code/canvas_1_.png" width=500 /><br />
 </p>
 
  Try seeing what happens if you change `0` and `100` to other values, for example `-20` and `20`:
 
  <p align="center">
-   <img src="canvas_11.png" width=500 /><br />
+   <img src="code/canvas_11.png" width=500 /><br />
  </p>
 
 As an aside, one shortcut that will make our lives a bit easier is that if the first parameter for `random` is `0`, we can omit it. In other words `random(0, 42)` can be shortened to `random(42)`, which is more convenient to write.
@@ -127,7 +129,7 @@ circle(250, 200, 100) # x position, y position, diameter
 ```
 
 <p align="center">
-  <img src="canvas_2.png" width=500 /><br />
+  <img src="code/canvas_2.png" width=500 /><br />
 </p>
 
 So far, we've only used static numbers for parameters in functions like `circle`. But what if we put random numbers there in there instead?
@@ -148,7 +150,7 @@ The result is that every time you run this sketch, the circle will be drawn in a
 
 
 <p align="center">
-  <img src="canvas_3.png" width=500 /><br />
+  <img src="code/canvas_3.png" width=500 /><br />
 </p>
 
 How is that at all useful? Well, what if we repeated that random circle a bunch of times (and also substituted the diameter with a random parameter between 10 and 300)?
@@ -169,7 +171,7 @@ circle(random(500), random(400), random(10, 300))
 ```
 
 <p align="center">
-  <img src="canvas_4.png" width=500 /><br />
+  <img src="code/canvas_4.png" width=500 /><br />
 </p>
 
 This starts to get interesting. Each time you run the sketch, you'll have a different random composition.
@@ -195,7 +197,7 @@ On each iteration of the loop, the program chooses new random numbers for the pa
 Here's another output from that sketch, just to prove it works:
 
 <p align="center">
-  <img src="canvas_5.png" width=500 /><br />
+  <img src="code/canvas_5.png" width=500 /><br />
 </p>
 
 It turns out that `random` can be applied to color, not just shapes. Remember than every component of a color goes from 0-255, which means we can make random numbers like this:
@@ -227,7 +229,7 @@ for i in range(100):
 ```
 
 <p align="center">
-  <img src="canvas_6.png" width=500 /><br />
+  <img src="code/canvas_6.png" width=500 /><br />
 </p>
 
 Now we're getting somewhere. If you play with the parameters, and add in more of the drawing tools we've learned previously, you can get an increasingly more interesting result:
@@ -254,7 +256,7 @@ for i in range(20):
 ```
 
 <p align="center">
-  <img src="canvas_7.png" width=500 /><br />
+  <img src="code/canvas_7.png" width=500 /><br />
 </p>
 
 As you can see, even this relatively straightforward example shares a certain aesthetic with that of artists we've seen who work with indeterminacy.
@@ -281,7 +283,7 @@ for i in range(100):
 ```
 
 <p align="center">
-  <img src="canvas_12.png" width=500 /><br />
+  <img src="code/canvas_12.png" width=500 /><br />
 </p>
 
 We could also cluster the circles within a smaller overall area in the center. Here, the rectangles once again take up the whole canvas, but the ellipses have more constrained parameters:
@@ -303,7 +305,7 @@ for i in range(100):
 ```
 
 <p align="center">
-  <img src="canvas_13.png" width=500 /><br />
+  <img src="code/canvas_13.png" width=500 /><br />
 </p>
 
 One final thing. Notice how the rectangles and ellipses are interleaved. This is because for every iteration of our loop, the computer draws one rectangle and then one ellipse. What if we wanted all the rectangles drawn first?
@@ -327,7 +329,7 @@ for i in range(100):
 ```
 
 <p align="center">
-  <img src="canvas_14.png" width=500 /><br />
+  <img src="code/canvas_14.png" width=500 /><br />
 </p>
 
 Now all the ellipses are all up front. This technique is a simple way to create a sense of composition.
