@@ -1,4 +1,4 @@
-## A randomized selection of new media artists
+## A randomized selection of media artists
 - Brenna Murphy
 - Laurie Spiegel
 - Jonas Lund
