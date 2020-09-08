@@ -101,7 +101,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 4
 
 #### Tuesday 9/22
-- In-progress report, questions, and work time
+- Sharing in-progress work, questions, and work time
 - Artist presentations 2
 
 #### Thursday 9/24
@@ -123,7 +123,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 6
 
 #### Tuesday 10/6
-- In-progress report, questions, and work time
+- Sharing in-progress work, questions, and work time
 - Artist presentations 4
 
 #### Thursday 10/8
@@ -144,7 +144,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 8
 
 #### Tuesday 10/20
-- In-progress report, questions, and work time
+- Sharing in-progress work, questions, and work time
 - Artist presentations 6
 
 #### Thursday 10/22
@@ -165,7 +165,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 10
 
 #### Tuesday 11/3
-- In-progress report, questions, and work time
+- Sharing in-progress work, questions, and work time
 - Artist presentations 8
 
 #### Thursday 11/5
@@ -185,7 +185,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 12
 
 #### Tuesday 11/17
-- In-progress report, questions, and work time
+- Sharing in-progress work, questions, and work time
 
 #### Thursday 11/19
 - Crit Sketch #6

@@ -1,6 +1,19 @@
 # Encoding Space
 
-<!-- everybody signed up for a presentation? -->
+<!--
+everybody signed up for a presentation?
+intro:
+    - all down to beziers
+    - face exercise
+2nd:
+    - artist descriptions
+    - cheat sheet
+    - beziers + math in params (maybe)
+    - saving images
+3rd:
+    - crit
+
+-->
 
 ## Concept
 
@@ -332,6 +345,23 @@ To summarize:
 <!-- add to face -->
 
 ### Curves
+
+<!--
+size(600, 600)
+
+# draw the curve
+noFill()
+bezier(0, 300,
+       200, 300,
+       400, 300,
+       600, 300)
+
+# draw the control points
+stroke(255, 0, 0)
+strokeWeight(10)
+point(200, 300)
+point(400, 300)
+-->
 
 We'll learn how to draw one more thing, although this one is a little weird. To make a curve with the `bezier` function, we need to specify the start and end "anchor" points, plus two "control" points. The line doesn't actually pass through these control points, but they influence how the line curves.
 
