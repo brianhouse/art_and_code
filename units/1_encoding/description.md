@@ -378,7 +378,7 @@ bezier(100, 100, 400, 100, 200, 400, 540, 380)
 Remember to periodically save your work. Don't use "Save As...", as that will only make things more confusing.
 
 <p align="center">
-  <img src="../0_algorithm/canvas_10.png" width=300 /><br />
+  <img src="../0_algorithm/code/canvas_10.png" width=300 /><br />
 </p>
 
 In addition, if the last line of your sketch is the `save` function, you'll have an image file in your sketch folder.
@@ -396,7 +396,7 @@ save("output.png")
 ```
 
 <p align="center">
-  <img src="../0_algorithm/canvas_9.png" width=500 /><br />
+  <img src="../0_algorithm/code/canvas_9.png" width=500 /><br />
 </p>
 
 
