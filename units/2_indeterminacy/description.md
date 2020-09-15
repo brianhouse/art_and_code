@@ -13,7 +13,10 @@ However, algorithms have been developed to simulate "random"—e.g. unpredictabl
 
 ### Non-digital
 
-<!-- when do we have random numbers? -->
+<!--
+how else do we generate randomness other than with a computer?
+- dice / coins / shuffling gambling in general
+-->
 
 Algorithms for working with indeterminacy have been an important part of artmaking even without electronic computers. The [Dada](https://en.wikipedia.org/wiki/Dada) movement, for example, developed the "chance collage" technique, in which artists dropped scraps of paper onto a larger sheet and pasted them wherever they landed. This method of embracing chance was a reaction against the ideologies of power and control that had led to the outbreak of WWI in Europe in the late 1910s.
 
@@ -25,7 +28,7 @@ Algorithms for working with indeterminacy have been an important part of artmaki
 In the United States, the term "indeterminacy" is often associated with the composer and conceptual artist [John Cage](https://en.wikipedia.org/wiki/John_Cage) (1912–1992). His piece _Music of Changes_ (1951) arranged notes and rests on a score according to an elaborate system of chance that involved throwing sticks on the ground and interpreting how they landed. He appropriated this technique from the _I Ching_, an ancient Chinese text (1000–750 BCE) which intended it as a means of [divination](https://en.wikipedia.org/wiki/Divination). This is similar to using tarot cards, rolling dice, or flipping a coin, all of which are manifestations of chance in culture that have been used by artists to generate indeterminacy.
 
 <p align="center">
-  <img src="context/2_cage.gif" width=500 /><br />
+  <img src="context/2_cage.png" height=500 /><br />
   John Cage, from <i>Music of Changes</i> (1951) [<a href="https://www.youtube.com/watch?v=B_8-B2rNw7s">listen here</a>]<br />
 </p>
 
@@ -118,6 +121,9 @@ Notice how we've put `random` _inside_ `print`. It can be tricky to keep track o
 
 As an aside, one shortcut that will make our lives a bit easier is that if the first parameter for `random` is `0`, we can omit it. In other words `random(0, 42)` can be shortened to `random(42)`, which is more convenient to write.
 
+<!-- pause and have them experiment, questions -->
+
+
 Ok, so what can we do with this visually?
 
 Let's start with a simple shape in the center of the canvas:
@@ -152,6 +158,8 @@ The result is that every time you run this sketch, the circle will be drawn in a
 <p align="center">
   <img src="code/canvas_3.png" width=500 /><br />
 </p>
+
+<!-- questions -->
 
 How is that at all useful? Well, what if we repeated that random circle a bunch of times (and also substituted the diameter with a random parameter between 10 and 300)?
 

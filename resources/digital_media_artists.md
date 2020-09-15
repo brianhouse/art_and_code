@@ -100,4 +100,7 @@
 - Chris Woebken
 - Josh Begley
 - Timo Toots
-- Revita Cohen and Tuur Van Balen
+- Revital Cohen and Tuur Van Balen
+- Tyler Hobbs
+- Sofia Crespo
+- Dmitri Cherniak

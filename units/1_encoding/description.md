@@ -12,6 +12,10 @@ intro:
     - saving images
 3rd:
     - crit
+        - what is critique, or as we call it, crit? who has participated before?
+        - more than anything it's a chance to get constructive feedback from your peers
+        - the idea of working in a studio together is that we can all see what each other are doing, and benefit from that
+        - Crit Guidelines: constructive criticism
 
 -->
 
