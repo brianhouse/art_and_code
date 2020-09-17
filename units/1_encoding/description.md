@@ -21,7 +21,7 @@ intro:
 
 ## Concept
 
-Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's a quality that is characteristic of digital media.
+Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's a quality that is characteristic of all digital media.
 
 In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direction_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line." Computers, however, typically represent the concept of "space" through a numeric _coordinate_ system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This is a good example of encoding, because it quantifies something intuitive like physical space into a numeric system that the computer can process.
 

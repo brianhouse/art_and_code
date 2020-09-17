@@ -1,5 +1,13 @@
 # Indeterminacy
 
+<!--
+intro:
+    - all
+    - exercise?
+2nd:
+    - artist presentations
+-->
+
 ## Concept
 
 The physical world is very complex—so much so that it is never fully predictable. From the shape of a leaf to the gait of an animal to the words you use to express a thought, variation is intrinsic to reality. This is intuitive to artmaking in physical mediums. When a paintbrush flows against a canvas, the individual hairs move in a way that creates texture; when musicians play a score, the air responds dynamically to create rich timbres.
@@ -46,28 +54,28 @@ When it comes to computers, one way of generating random numbers is to measure s
 
 A more clever way that we use today is a "pseudo-random number generator," an algorithm that takes a "seed" (like the current time) and [elaborates upon it](https://en.wikipedia.org/wiki/Mersenne_Twister). The resulting numbers are not strictly indeterminate as it is _possible_ to predict them, but for most purposes they are plenty random. Many programming languages (including Python) include a function, usually called `random`, that lets us use these numbers.
 
-Digital media artists have seized upon the opportunity to experiment. One example is [Harold Cohen](https://en.wikipedia.org/wiki/Harold_Cohen_(artist)) (1928–2016), who starting in the 1960s began developing an algorithm to make unique representational drawings using rules together with random parameters. He and others have made the specious claim that his program, which he called AARON, is an example of artificial intelligence—it is not, but it nonetheless demonstrates how powerful the random function can be.
+Digital media artists have seized upon the opportunity to experiment. One example is [Harold Cohen](https://en.wikipedia.org/wiki/Harold_Cohen_(artist)) (1928–2016), who starting in the 1960s began developing an algorithm to make unique representational drawings using rules together with random parameters. His code chooses the overall composition of the images as well as approximates the indeterminate aspects of lines made with a pen. He and others have made the specious claim that his program, which he called AARON, is an example of artificial intelligence—it is not, but it nonetheless demonstrates how powerful the random function can be.
 
 <p align="center">
   <img src="context/4_aaron.jpg" width=500 /><br />
   Harold Cohen, painting by <i>AARON</i> (1995)<br />
 </p>
 
-A contemporary of Cohen's, Roman Verostko (1929–), approached indeterminacy with a very different aesthetic, even though his work similarly uses random parameters within repeating patterns in order to craft abstract forms. The results reflect Verostko's mystic interest (and his time as a Benedictine monk). (Verostko also initiated the "[algorist](https://en.wikipedia.org/wiki/Algorithmic_art#Algorists)" movement of artists who work with computers.)
+A contemporary of Cohen's, Roman Verostko (1929–), approached indeterminacy with a very different aesthetic, even though his work similarly uses random parameters within repeating patterns. Rather than approximate images made by hand, Verostko uses code to craft beautiful abstract forms that show an Eastern aesthetics and reflect his his mystic interests (he also spent time as a Benedictine monk). Verostko is also known for initiating the "[algorist](https://en.wikipedia.org/wiki/Algorithmic_art#Algorists)" movement of artists who work with computers.
 
 <p align="center">
   <img src="context/5_verostko.jpg" width=500 /><br />
   Roman Verostko, <i>FlyingCloud II</i> (1999)
 </p>
 
-[Casey Reas](https://en.wikipedia.org/wiki/Casey_Reas) (1972–), together with Ben Fry, is the creator of Processing. The application and library generalize many of the techniques used by earlier algorithmic artists, including `random`—repetition with random variation features prominently in Reas' own work.
+[Casey Reas](https://en.wikipedia.org/wiki/Casey_Reas) (1972–), together with Ben Fry, is the creator of Processing. They realized that using a common platform to generalize many of the techniques used by earlier algorithmic artists would be better than artists always having to start from scratch, and that sharing code would create a community of artists working with code. The use of `random` to produce repetition with variation features prominently in Reas' own work.
 
 <p align="center">
   <img src="context/6_reas.jpg" width=500 /><br />
   Casey Reas, <i>Process 18 (Software 2)</i> (2010)
 </p>
 
-Another notable artist who has used Processing goes by the name [LIA](https://en.wikipedia.org/wiki/Lia_(artist)). Her work often takes the form of animation, with infinitely evolving visuals that she performs live or which are displayed on a monitor within a frame.
+Another notable artist who uses Processing goes by the name [LIA](https://en.wikipedia.org/wiki/Lia_(artist)). Her work often takes the form of animation, with infinitely evolving visuals that she performs live or which are displayed on a monitor within a frame.
 
 <p align="center">
   <img src="context/7_lia.png" width=500 /><br />

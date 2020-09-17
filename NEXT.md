@@ -1,9 +1,12 @@
 
-Should I enforce one-on-one feedback?
-
 Do small group screen sharing for intermediate feedback
 
+## Change numbering
 
-## Encoding/landscape
+0 is the getting started and an online intro
+1 is algorithm
 
-could be too easy/tedious. introduce math in parameters?
+
+## Indeterminacy
+
+too easy? could use some additional structural element; previously asked students to observe and approximate some phenomenon in nature. put that back, maybe.
