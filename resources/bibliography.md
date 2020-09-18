@@ -1,0 +1,2 @@
+Espen Aarseth
+Lev Manovich

@@ -27,7 +27,7 @@ This course is built around open-ended code "sketches" that progress through a s
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due—no late work is accepted, as it will be graded during the crit. Sketches will be evaluated on both concept and craft.
 
 ### Survey presentations
-Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
+Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 
 ### COVID-19 Alterations
@@ -37,7 +37,7 @@ This course will be entirely online for Fall 2020 to provide a consistent experi
 ## Policies
 
 ### Values
-It is my intent to lead a course that serves students from diverse backgrounds and perspectives, and that our varied life experiences may be a common benefit. Content in this studio art course may at times challenge our aethestic and/or ethical values; free exchange of ideas and critique is encouraged and expected, but harassment and disrespect will not be tolerated. During class discussion and critique we aim to be mindful and generous in our interactions and to make everyone feel heard.
+It is my intent to lead a course that serves students from diverse backgrounds and perspectives, and that our varied life experiences may be a common benefit. Content in this studio art course may at times challenge our aesthetic and/or ethical values; free exchange of ideas and critique is encouraged and expected, but harassment and disrespect will not be tolerated. During class discussion and critique we aim to be mindful and generous in our interactions and to make everyone feel heard.
 
 ### Dynamic Syllabus
 The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
