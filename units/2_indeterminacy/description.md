@@ -1,11 +1,12 @@
 # Indeterminacy
 
 <!--
-intro:
-    - all
-    - exercise?
-2nd:
-    - artist presentations
+class 3:
+- in groups,
+- get feedback on your concept and aesthetics
+- share your code and show how you've done things
+- help each other
+- think of how you'll change what you're doing in response to feedback
 -->
 
 ## Concept

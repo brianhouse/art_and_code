@@ -15,9 +15,13 @@
     - students jump in on the chat with questions
     - they'll look at the assignment page afterwards (it's scheduled to appear right after (or during?) class)
 - Student presentations followed by ad lib help and examples during work time
-- Preliminary crit (5min/student max) followed by ad lib help and examples during work time
+- Student presentations followed by preliminary small-group crit (5min/student max) followed by ad lib help and examples during work time
     - everyone presents via screen sharing in small groups
-    - _think of how you'll change what you're doing in response to feedback_
+    - get feedback on your concept and aesthetics
+    - share your code and show how you've done things
+    - help each other
+    - think of how you'll change what you're doing in response to feedback
+
 - Final crit (5min/student max) and we're out
     - everyone presents via screen sharing, comments over chat (which I save)
 - Follow the syllabus for small exceptions / intros
