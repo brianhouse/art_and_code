@@ -1,5 +1,10 @@
 # Nonlinearity
 
+<!--
+1:
+- have them work on response to a question
+-->
+
 ## Concept
 
 Traditional media such as film, audio recordings, or books typically proceed in a fixed sequence. Though we can do things like rewind a tape, or use page numbers to jump to a particular section of a novel, ultimately the possibilities are limited because the content is static. When creating artwork in these media, we typically compose a linear narrative (or narratives) that will be followed again and again in the same order.
@@ -73,6 +78,149 @@ More recently, Netflix created a special episode of the dystopian series Black M
 ## Code: branching logic
 
 Though we've repeated small blocks of code with loops, so far the code we've written has more or less proceeded linearly down the page. While this is sufficient for producing static images, programs that incorporate time and interactivity need to be structured in a way that can respond dynamically. We're going to take a break from graphics to explore nonlinearity first using text.
+
+### Text input and variables
+
+If you haven't already, [get started with the terminal](getting_started.md) before continuing here.
+
+We're already familiar with `print()`:
+
+```py
+print("Hello world!")
+print("What is your name?")
+```
+<p align="center">
+  <img src="code/1_print_.png" width=600 />
+</p>
+
+...but to be able to answer the question, we need to use the `raw_input()` function:
+```py
+print("Hello world!")
+print("What is your name?")
+name = raw_input()
+```
+
+`raw_input` captures whatever the person at the keyboard types, which is a **string** of text just like `"Hello world!"`. However, we don't know exactly what text it is, because the person could have typed anything.
+
+That's where **variables** come in. In the code above, the variable `name` is a placeholder for whatever string comes out of `raw_input()` (the name "name" is arbitrary—we can call it whatever we want, as long as it's not a word that is already in use as the name of a function or by another variable).
+
+In this code, `=` sets `name` to the result of `raw_input()`. We can subsequently use `name` elsewhere in our code. For example, using `+` and a few more strings, we can assemble a response:
+
+```py
+print("Hello world!")
+print("What is your name?")
+name = raw_input()
+print("Hi, " + name + "!")
+```
+
+Here, the strings `"Hi, "` and `"!"` are concatenated on either side of whatever string is represented by `name`.
+
+<p align="center">
+  <img src="code/2_ask.png" width=600 />
+</p>
+
+The program doesn't end right away anymore—there is a prompt waiting for an answer:
+
+<p align="center">
+  <img src="code/3_answer.png" width=600 />
+</p>
+
+There's a lot going on in that simple example: we've asked for user input, used a variable to store the response, and concatenated several strings together to produce a dynamic output. But that's not all we can do.
+
+### Conditionals
+
+What's most exciting, perhaps, is that variables open up the possibility of our programs doing different things depending on the input. For example:
+
+```py
+print("Is the air quality good today?")
+answer = raw_input()
+
+if answer == "yes":
+    print("That's a relief!")
+else:
+    print("Oh no!")
+```
+
+Here, the `if` keyword sets up a test. If `answer == "yes"` is in fact true, then the program prints out `"That's a relief!"`, which is indented on the next line. But if that's not what was typed, the program skips to what is indented after `else` instead and prints out `"Oh no!"`.
+
+One thing that's important to note: to _assign_ a variable, we used the `=` symbol, but to _test_ if a variable matched another string, we used the `==` symbol. There's a subtle difference between those two, but it's very easy to mix up.
+
+<p align="center">
+  <img src="code/4_if.png" width=600 />
+</p>
+
+This is a very simple example. What if there are more than two answers to a question?
+
+```py
+print("How are you today?")
+feeling = raw_input()
+
+if feeling == "good":
+    print("Great to hear it.")
+elif feeling == "bad":
+    print("I'm sorry to hear that.")
+elif feeling == "ok":
+    print("We do what we can.")
+else:
+    print("I don't know how you feel.")
+```
+
+We have to be careful about our indentation here. But you can see that now there `elif` keywords, which is a short way of writing "else if". It means that after the first `if` test, the program goes down the line through all the `elif`s and sees if any of them are true. If they are, the program executes the appropriate indented code. If not, it will end up at `else` and execute that code instead (you can think of `else` as a default answer). `if`, `elif`, and `else` all work together to structure the flow of the program.
+
+<p align="center">
+  <img src="code/5_elif.png" width=600 />
+</p>
+
+## Tests on strings
+
+This is starting to feel more dynamic. But the tests remain somewhat rigid, and we can end up with issues like this:
+
+<p align="center">
+  <img src="code/6_in_.png" width=600 />
+</p>
+
+Both of these tests should have produced different answers. In the first example, the word we were looking for, "good", was couched in a longer phrase. We can fix that by using the `in` keyword instead of the `==` operator:
+
+```py
+print("How are you today?")
+feeling = raw_input()
+feeling = feeling.lower()   # convert input text to lowercase
+
+if "good" in feeling:
+    print("Great to hear it.")
+elif "bad" in feeling:
+    print("I'm sorry to hear that.")
+elif "ok" in feeling:
+    print("We do what we can.")
+else:
+    print("I don't know how you feel.")
+```
+
+This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added a line that is a trick to convert things to lowercase and prevent the mixup in the second example.
+
+<p align="center">
+  <img src="code/7_in_2.png" width=600 />
+</p>
+
+One final trick. There might be multiple inputs that should elicit the same response, ie, "good", "great", "excellent" shouldn't all require a unique `elif`. The `or` keyword helps us with this:
+
+```py
+print("How are you today?")
+feeling = raw_input()
+feeling = feeling.lower()   # convert input text to lowercase
+
+if "good" in feeling or "great" in feeling or "excellent" in feeling:
+    print("Great to hear it.")
+elif "bad" in feeling or "rough" in feeling:
+    print("I'm sorry to hear that.")
+elif "ok" in feeling or "fine" in feeling:
+    print("We do what we can.")
+else:
+    print("I don't know how you feel.")
+```
+
+This can get a little wordy, but it allows for more flexibility within the flow.
+
 
 ### Functions
 

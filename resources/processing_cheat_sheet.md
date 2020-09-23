@@ -33,6 +33,7 @@
 ## Structure
 
 ### Loops
+- `def functionname():` declare a function with the following indendented lines
 - `for i in range(n):` repeat the following indented lines _n_ times
 - `random(low, high)` returns a number greater than or equal to _low_ and less than _high_
 - `random(high)` returns a number greater than or equal to 0 less than _high_
@@ -41,6 +42,11 @@
 ## Utilities
 - `save("filename.png")`
 - `print("text")`
+
+## Glossary
+- **string**
+- **function**
+
 
 
 ## Full Documentation
