@@ -50,7 +50,7 @@ _Adventure_ subsequently became a touchstone of nerd and hacker culture, and tog
 
 Contemporary artists also began taking advantage of the possibilities for nonlinearity offered by digital media. Lynn Hershman Leeson's [_LORNA_](https://zkm.de/en/media/video/lynn-hershman-leeson-lorna-1979) (1979) is a prominent example. Visitors to the gallery encounter a woman on a TV screen, and using the remote control, they navigate through her psychology to one of several possible results.
 
-<p align="center
+<p align="center">
   <img src="context/5_lorna.jpg" width=500 /><br />
   Lynn Hershman Leeson, <i>LORNA</i> (1979)<br />
 </p>
@@ -69,7 +69,52 @@ More recently, Netflix created a special episode of the dystopian series Black M
   A decision point in <i>Bandersnatch</i> (2018)<br />
 </p>
 
-## Code
+
+## Code: branching logic
+
+Though we've repeated small blocks of code with loops, so far the code we've written has more or less proceeded linearly down the page. While this is sufficient for producing static images, programs that incorporate time and interactivity need to be structured in a way that can respond dynamically. We're going to take a break from graphics to explore nonlinearity first using text.
+
+### Functions
+
+The most fundamental way of organizing code is by grouping it into reusable blocks called **functions**. We've already been using functions, of course, such as `rect()` and `random()`, but these have been supplied by Processing.
+
+To make our own functions in Python is similar to creating a loop, except we use the `def` keyword followed by a unique name. Anything that is subsequently indented is included in the function. For example:
+
+```py
+    def intro():
+        print("Hello World!")
+        print("Anybody out there?")
+```
+
+The name of this new function is `intro`, but that is an arbitrary choice—you can call a function whatever you want, as long as that name is not already being used by something else in the program or by Python itself.
+
+If you write this code in a Processing sketch and run it, nothing will happen. In order to run the code in the intro function, we have to "call," or execute, the function. We do that just by writing the name followed by parentheses on a line by itself:
+
+```py
+intro()
+```
+
+Now we get a result when we run the sketch:
+
+<p align="center">
+  <img src="code/1_function_call.png" width=600 />
+</p>
+
+
+Once you define a function, you can reuse it over and over. You can also think of a function as a section of the program that you can return to as needed. Once the function is complete, the program continues with the line after the function call.
+
+<!--
+demo graphically.
+-->
+
+
+### If-then conditionals
+
+The most
+
+
+
+## Sketch #3
 
 - first say a theme
 - make an analog map

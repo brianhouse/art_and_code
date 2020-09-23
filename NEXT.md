@@ -23,6 +23,9 @@ actually, maybe it's all about _range_ in the loop. start at x, go to y, skip by
 ...but this is good at creating regular structures (without other math), not structuring random. or?
 
 
+--> add past examples
+
+
 ## Recombination
 
 train flip board

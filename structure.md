@@ -21,7 +21,6 @@
     - share your code and show how you've done things
     - help each other
     - think of how you'll change what you're doing in response to feedback
-
 - Final crit (5min/student max) and we're out
     - everyone presents via screen sharing, comments over chat (which I save)
 - Follow the syllabus for small exceptions / intros
@@ -64,13 +63,13 @@ eventually, it feels contrived.
 UNITS
 
 ALGORITHM
-ENCODING (SPACE)
-INDETERMINACY (AND REPETITION)
-NONLINEARITY
-RECOMBINATION
-INTERACTIVITY
-EMERGENCE
-GLITCH
+ENCODING (SPACE)                    -- coordinates + drawing
+INDETERMINACY (AND REPETITION)      -- loops + random (range + i)?
+NONLINEARITY                        -- functions, ifs, variables?
+RECOMBINATION                       -- arrays
+INTERACTIVITY (INTERFACE)           -- events
+EMERGENCE                           -- objects
+GLITCH                              -- images / other
 /
 (SOCIAL) AUTOMATION
 CAPTURE

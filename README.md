@@ -8,7 +8,7 @@ Office hours TR 11:30–12:30 on [Zoom](https://us02web.zoom.us/j/7372690628)
 
 
 ## Course Description
-Introduction to the form and aesthetics of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
+Introduction to the form and aesthetics of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression in both visual and textual mediums. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
 
 
 #### Objectives:

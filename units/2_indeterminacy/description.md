@@ -84,7 +84,7 @@ Another notable artist who uses Processing goes by the name [LIA](https://en.wik
 </p>
 
 
-## Code: Random parameters and loops
+## Code: repetition and variation
 
 How do these artists create such complex effects? While there is a lot of craft involved in their code, we can start to create visual artwork that operates similarly with what we already know plus just a few more techniques.
 
@@ -119,13 +119,13 @@ print(random(0, 100))
 Notice how we've put `random` _inside_ `print`. It can be tricky to keep track of all the parentheses, but this is a very useful thing to be able to do. `random` will first do its job and come up with a random number between 0 and 100, and then this number will be what `print` prints out. And every time the sketch is run, this number will be different:
 
 <p align="center">
-  <img src="code/canvas_1_.png" width=500 /><br />
+  <img src="code/canvas_1_.png" width=700 /><br />
 </p>
 
  Try seeing what happens if you change `0` and `100` to other values, for example `-20` and `20`:
 
  <p align="center">
-   <img src="code/canvas_11.png" width=500 /><br />
+   <img src="code/canvas_11.png" width=700 /><br />
  </p>
 
 As an aside, one shortcut that will make our lives a bit easier is that if the first parameter for `random` is `0`, we can omit it. In other words `random(0, 42)` can be shortened to `random(42)`, which is more convenient to write.

@@ -113,7 +113,7 @@ size(640, 480)              # width, height
 This is what it should look like in the Processing window:
 
 <p align="center">
-  <img src="code/canvas_0.png" width=500 /><br />
+  <img src="code/canvas_0.png" width=600 /><br />
 </p>
 
 In this code, `size` is a **function** provided by Processing that creates the "canvas," which takes two **parameters**, one each for how many pixels wide and how many high we want our canvas to be. Subsequently, when we run the program, a grey window should appear that is exactly 640 by 480 pixels (I chose these dimensions for fun because they are what personal computers used in the 80s and 90s).
