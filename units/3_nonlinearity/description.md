@@ -53,7 +53,7 @@ The result was [_Colossal Cave Adventure_](https://en.wikipedia.org/wiki/Colossa
 
 _Adventure_ subsequently became a touchstone of nerd and hacker culture, and together with its immediate successors such as [_Zork_](https://en.wikipedia.org/wiki/Zork) (play [here](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)), were highly influential on the development of later computer games, online role-playing, and today's virtual spaces.
 
-Contemporary artists also began taking advantage of the possibilities for nonlinearity offered by digital media. Lynn Hershman Leeson's [_LORNA_](https://zkm.de/en/media/video/lynn-hershman-leeson-lorna-1979) (1979) is a prominent example. Visitors to the gallery encounter a woman on a TV screen, and using the remote control, they navigate through her psychology to one of several possible results.
+Contemporary artists also began taking advantage of the possibilities for nonlinearity offered by digital media. Lynn Hershman Leeson's [_LORNA_](https://zkm.de/en/media/video/lynn-hershman-leeson-lorna-1979) (1979) is a preeminent example. Visitors to the gallery encounter a woman on a TV screen, and using the remote control, they navigate through her psychology to one of several possible results.
 
 <p align="center">
   <img src="context/5_lorna.jpg" width=500 /><br />
@@ -79,11 +79,11 @@ More recently, Netflix created a special episode of the dystopian series Black M
 
 Though we've repeated small blocks of code with loops, so far the code we've written has more or less proceeded linearly down the page. While this is sufficient for producing static images, programs that incorporate time and interactivity need to be structured in a way that can respond dynamically. We're going to take a break from graphics to explore nonlinearity first using text.
 
-### Text input and variables
-
 If you haven't already, [get started with the terminal](getting_started.md) before continuing here.
 
-We're already familiar with `print()`:
+### Text input and variables
+
+To begin, let's consider text. From debugging our graphics programs, we're already familiar with `print()`, which we can use with the terminal as well:
 
 ```py
 print("Hello world!")
@@ -179,7 +179,7 @@ This is starting to feel more dynamic. But the tests remain somewhat rigid, and 
   <img src="code/6_in_.png" width=600 />
 </p>
 
-Both of these tests should have produced different answers. In the first example, the word we were looking for, "good", was couched in a longer phrase. We can fix that by using the `in` keyword instead of the `==` operator:
+Both of these tests should have produced different answers. But in the first example, a word we were looking for, "good", was couched in a longer phrase, and so it didn't match exactly. We can fix that by using the `in` keyword instead of the `==` operator:
 
 ```py
 print("How are you today?")
@@ -196,7 +196,7 @@ else:
     print("I don't know how you feel.")
 ```
 
-This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added a line that is a trick to convert things to lowercase and prevent the mixup in the second example.
+This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added a line that is a trick to convert the input to lowercase and prevent the second mixup with cases.
 
 <p align="center">
   <img src="code/7_in_2.png" width=600 />
@@ -219,58 +219,129 @@ else:
     print("I don't know how you feel.")
 ```
 
-This can get a little wordy, but it allows for more flexibility within the flow.
+This code can get a little wordy, but it allows for more flexibility within the flow. Using `if` conditionals like this, we can craft fairly complex responses to simple inputs. But we still lack one crucial tool for nonlinearity.
 
+<!--
+exercise
+-->
 
 ### Functions
 
-The most fundamental way of organizing code is by grouping it into reusable blocks called **functions**. We've already been using functions, of course, such as `rect()` and `random()`, but these have been supplied by Processing.
+In programming, the most fundamental way of organizing code is by grouping it into reusable blocks called **functions**. We've already been using functions, of course, such as `rect()`, `random()`, and `print()`, but these have been written for us.
 
-To make our own functions in Python is similar to creating a loop, except we use the `def` keyword followed by a unique name. Anything that is subsequently indented is included in the function. For example:
+Making our own functions in Python is similar to how we indent code under a `for` loop or an `if` conditional, except in this case we use the keyword `def`, followed by a unique name. Anything that is subsequently indented is included in the function. For example:
 
 ```py
-    def intro():
-        print("Hello World!")
-        print("Anybody out there?")
+def air_test():
+    print("How is the air quality today?")
+    quality = raw_input()    
+    print("You said the air quality is " + quality)
 ```
 
-The name of this new function is `intro`, but that is an arbitrary choice—you can call a function whatever you want, as long as that name is not already being used by something else in the program or by Python itself.
+The name of this new function is "air_test," but that is an arbitrary choice—just like with variables, you can call a function whatever you want, as long as that name is not already being used by something else in the program.
 
-If you write this code in a Processing sketch and run it, nothing will happen. In order to run the code in the intro function, we have to "call," or execute, the function. We do that just by writing the name followed by parentheses on a line by itself:
+If you write this code in a sketch and run it, nothing will happen. In order to run the code in `air_test()`, we have to "call," or execute, the function. We do that just by writing the name followed by parentheses on a line by itself:
 
 ```py
-intro()
+# declare the function
+def air_test():
+    print("How is the air quality today?")
+    quality = raw_input()    
+    print("You said the air quality is " + quality)
+
+# call the function
+air_test()
 ```
 
 Now we get a result when we run the sketch:
 
 <p align="center">
-  <img src="code/1_function_call.png" width=600 />
+  <img src="code/8_function.png" width=600 />
 </p>
 
 
-Once you define a function, you can reuse it over and over. You can also think of a function as a section of the program that you can return to as needed. Once the function is complete, the program continues with the line after the function call.
+Once you define a function, you can reuse it over and over, like with `circle` in your drawings. You can also think of a function as a section of the program that you can return to as needed. Once the function is complete, the program continues with the line after the function call.
+
+
+### Putting it all together
+
+Variables, conditionals, and functions. Together, we can use them to create nonlinearity in our programs.
+
+Before we continue to write code, consider this abstract diagram of a house, where connections (ie, doors) between rooms are represented by lines:
+
+<p align="center">
+  <img src="code/9_house.png" width=400 />
+</p>
+
+A person moving through this house will have different options depending on what room they're in. If they are in the bedroom, the only option is to enter the hallway. But from there, they can go to the living room, the bathroom, or back to the bedroom. To get to the kitchen, they would have to pass through the living room first.
+
+This is a metaphor for how programs are structured with functions and conditionals (in computer science, this is what is known as a [finite state machine](https://en.wikipedia.org/wiki/Finite-state_machine)). Taken more literally, it's also more or less how Will Crowther built _Adventure_.
+
+Each of these rooms can be represented with a function. For example:
+
+```py
+def living_room():
+    print("You're in the living room. Doors lead to the hallway and to the kitchen.")
+    print("Where do you want to go next?")
+    response = raw_input("> ")  # this parameter creates a prompt
+```
+
+Since the living room is connected to kitchen and the hallway, we'll want to provide those options. And if we get a response that doesn't include anything about a kitchen or hallway, we'll want to provide a default response using `else`:
+
+```py
+def living_room():
+    print("You're in the living room. Doors lead to the hallway and to the kitchen.")
+    print("Where do you want to go next?")
+    response = raw_input("> ")
+    if "kitchen" in response:
+        kitchen()   # call the kitchen function
+    elif "hallway" in response:
+        hallway()   # call the hallway function
+    else:
+        print("You can't go there.")
+        living_room() # call the living room function again
+```
+
+`kitchen()` and `hallway()` are functions that we haven't written yet. But they will be new parts of the program that represent those rooms. `living_room()` is the function we're already in—when we call it again, we loop back to the top of this function.
+
+Here's the hallway:
+
+
+```py
+def hallway():
+    print("You're in the hallway. Doors lead to the living room, bathroom, and bedroom.")
+    print("Where do you want to go next?")
+    response = raw_input("> ")
+    if "living room" in response:
+        living_room()
+    elif "bathroom" in response:
+        bathroom()
+    elif "bedroom" in response:
+        bedroom()
+    else:
+        print("You can't go there.")
+        hallway()
+```
+
+With a function for each room of the house and appropriate conditionals, we can navigate through the house by typing:
+
+<p align="center">
+  <img src="code/10_house_terminal_.png" width=600 />
+</p>
+
+This could go on forever, and the exact order isn't determined until the reader inputs text. That makes it a basic example of a nonlinear narrative (though the content of the text could use some elaboration).
+
+Using functions to represent physical spaces lets us picture how the parts of the program are interrelated. But alhough _Adventure_ and _Zork_ did it this way, it is not the only option.
 
 <!--
-demo graphically.
+
+create a map
+
 -->
-
-
-### If-then conditionals
-
-The most
-
 
 
 ## Sketch #3
 
-- first say a theme
-- make an analog map
+With this sketch, you will create a text-based, nonlinear narrative using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept. Your program must demonstrate at least 5 different branching points that create meaningful alternative paths.
 
-Go around and give three words of a topic for a text-based nonlinear narrative that you are thinking of making.
-
-When you design this, I want you to make a map. On paper. That might be a map that literally represents geography, or it might be a map of the possibilities in a conversation.
-
-
-_do this using the overhead_
-_label squares in a map with a function name() and use lines to connect them with responses_
+Draw a "map" of the the choices that will be available to your reader (by hand, using Google Draw, or any other medium) and turn this in along with your final Python code to Google Classroom. In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.

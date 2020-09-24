@@ -1,7 +1,5 @@
 # Python Mode for Processing Cheat Sheet
 
-## Drawing
-
 ### Canvas
 - `size(width, height)` set canvas size in pixels
 - `background(color)` set window background color
@@ -30,22 +28,17 @@
 - `fill(100, 200, 0, 50)` 4 parameters is color + opacity
 
 
-## Structure
-
-### Loops
+### Structure
 - `def functionname():` declare a function with the following indendented lines
 - `for i in range(n):` repeat the following indented lines _n_ times
-- `random(low, high)` returns a number greater than or equal to _low_ and less than _high_
-- `random(high)` returns a number greater than or equal to 0 less than _high_
+- `if`
 
 
-## Utilities
+### Utilities
+- `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
+- `random(high)` generates a number greater than or equal to 0 less than _high_
 - `save("filename.png")`
 - `print("text")`
-
-## Glossary
-- **string**
-- **function**
 
 
 

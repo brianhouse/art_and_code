@@ -33,6 +33,11 @@ train flip board
 
 ##
 
+Maybe there is an "elaboration" section for each of these. So for nonlinearity, it's using variables to carry objects. 
+
+
+##
+
 
 interactivity -> interface, because nonlinearity is also interactive, pues
 
