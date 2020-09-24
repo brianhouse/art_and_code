@@ -29,10 +29,14 @@
 
 
 ### Structure
-- `def functionname():` declare a function with the following indendented lines
 - `for i in range(n):` repeat the following indented lines _n_ times
+- `def functionname():` declare a function with the following indendented lines
 - `if`
 
+### Strings
+- `in`
+- `string.lower()`
+- `string.upper()`
 
 ### Utilities
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_

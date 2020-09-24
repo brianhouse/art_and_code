@@ -2,6 +2,7 @@
 
 <!--
 1:
+- examples of nonlinearity? movies, books
 - have them work on response to a question
 -->
 
@@ -16,7 +17,7 @@ Digital media, however, do not need to be linear. Because computers can respond 
 
 ### Non-digital
 
-There are some ways analog media can have nonlinear structures without using computers. A classic example of this is the [_Choose Your Own Adventure_](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) series of young adult novels. Popular throughout the 1980s and 1990s, the books are written in the second person so that the reader identifies with the protagonist of the story. Every few pages, these books offer a choice between a few different actions, each of which requires skipping to a different page to continue reading. _Choose Your Own Adventure_ books had up to 44 different endings and prefigured some of the adventure games released on personal computers that were beginning to proliferate around the same time.
+There are some ways analog media can have nonlinear structures without using computers. A classic example of this is the [_Choose Your Own Adventure_](https://en.wikipedia.org/wiki/Choose_Your_Own_Adventure) series of young adult novels. Popular throughout the 1980s and 1990s, the books are written in the [second person](https://en.wikipedia.org/wiki/Narration#Second-person) so that the reader identifies with the protagonist of the story. Every few pages, these books offer a choice between a few different actions, each of which requires skipping to a different page to continue reading. _Choose Your Own Adventure_ books had up to 44 different endings and prefigured some of the adventure games released on personal computers that were beginning to proliferate around the same time.
 
 <p align="center">
   <img src="context/1_choose-your-own-adventure.jpg" width=800 /><br />
@@ -51,7 +52,7 @@ The result was [_Colossal Cave Adventure_](https://en.wikipedia.org/wiki/Colossa
   Will Crowther, <i>Colossal Cave Adventure</i> (1975)<br />
 </p>
 
-_Adventure_ subsequently became a touchstone of nerd and hacker culture, and together with its immediate successors such as [_Zork_](https://en.wikipedia.org/wiki/Zork) (play [here](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)), were highly influential on the development of later computer games, online role-playing, and today's virtual spaces.
+_Adventure_ subsequently became a touchstone of nerd and hacker culture, and together with its immediate successors such as [_Zork_](https://en.wikipedia.org/wiki/Zork) (play [here](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play), original 1977 sourcecode [here](https://github.com/MITDDC/zork), cheats [here](http://www.eristic.net/games/infocom/zork1.html)), were highly influential on the development of later computer games, online role-playing, and today's virtual spaces.
 
 Contemporary artists also began taking advantage of the possibilities for nonlinearity offered by digital media. Lynn Hershman Leeson's [_LORNA_](https://zkm.de/en/media/video/lynn-hershman-leeson-lorna-1979) (1979) is a preeminent example. Visitors to the gallery encounter a woman on a TV screen, and using the remote control, they navigate through her psychology to one of several possible results.
 
@@ -219,10 +220,10 @@ else:
     print("I don't know how you feel.")
 ```
 
-This code can get a little wordy, but it allows for more flexibility within the flow. Using `if` conditionals like this, we can craft fairly complex responses to simple inputs. But we still lack one crucial tool for nonlinearity.
+This code can get a little wordy, but it allows for more flexibility within the program's flow. Using `if` conditionals like this, we can craft fairly complex responses to simple inputs. But we still lack one crucial tool for nonlinearity.
 
 <!--
-exercise
+exercise with question and answer
 -->
 
 ### Functions
@@ -267,7 +268,7 @@ Once you define a function, you can reuse it over and over, like with `circle` i
 
 Variables, conditionals, and functions. Together, we can use them to create nonlinearity in our programs.
 
-Before we continue to write code, consider this abstract diagram of a house, where connections (ie, doors) between rooms are represented by lines:
+But before we continue to write code, consider this abstract diagram of a house, where connections (ie, doors) between rooms are represented by lines:
 
 <p align="center">
   <img src="code/9_house.png" width=400 />
@@ -283,7 +284,7 @@ Each of these rooms can be represented with a function. For example:
 def living_room():
     print("You're in the living room. Doors lead to the hallway and to the kitchen.")
     print("Where do you want to go next?")
-    response = raw_input("> ")  # this parameter creates a prompt
+    response = raw_input("> ")  # adding a parameter creates a prompt
 ```
 
 Since the living room is connected to kitchen and the hallway, we'll want to provide those options. And if we get a response that doesn't include anything about a kitchen or hallway, we'll want to provide a default response using `else`:
@@ -329,9 +330,19 @@ With a function for each room of the house and appropriate conditionals, we can 
   <img src="code/10_house_terminal_.png" width=600 />
 </p>
 
-This could go on forever, and the exact order isn't determined until the reader inputs text. That makes it a basic example of a nonlinear narrative (though the content of the text could use some elaboration).
+This could go on forever, and the exact order isn't determined until the reader inputs text. That makes it a basic example of a nonlinear narrative. Though the content of the text could use some elaboration, notice how the flexibility of the input creates a sense of narrative, and even unintended humor.
 
-Using functions to represent physical spaces lets us picture how the parts of the program are interrelated. But alhough _Adventure_ and _Zork_ did it this way, it is not the only option.
+Remember, to start the narrative, you'll need to call a function on a line by itself to kick things off:
+```py
+living_room()
+```
+...and if you want the narrative to end somewhere, whether magnificent victory, horrible defeat, or something more subtle, you can just include a function that doesn't call any other functions:
+```py
+def the_end():
+    print("That's all, folks")
+```
+
+Using functions to represent physical spaces lets us picture how the parts of the program are interrelated. But although _Adventure_ and _Zork_ did it this way, it is not the only option. The "rooms" (or "states") could correspond to topics of conversation, or a character's moods, or a medical diagnosis, or a events in a soccer match.
 
 <!--
 
@@ -342,6 +353,6 @@ create a map
 
 ## Sketch #3
 
-With this sketch, you will create a text-based, nonlinear narrative using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept. Your program must demonstrate at least 5 different branching points that create meaningful alternative paths.
+With this sketch, you will create a text-based, nonlinear narrative in the second person using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept. Your program must demonstrate at least 5 different branching points that create meaningful alternative paths.
 
 Draw a "map" of the the choices that will be available to your reader (by hand, using Google Draw, or any other medium) and turn this in along with your final Python code to Google Classroom. In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.

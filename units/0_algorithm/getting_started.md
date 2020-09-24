@@ -10,7 +10,7 @@ We're used to downloading software such as Photoshop or Ableton to our computers
 
 [Download Processing](https://processing.org/download/) for whichever operating system you are using
 
-- On Windows, you'll have a .zip file. Double-click it, and drag the folder inside to a location on your hard disk. It could be Program Files or simply the desktop, but the important thing is for the processing folder to be pulled out of that .zip file. Then double-click processing.exe to start.
+- On Windows, you'll have a .zip file. Double-click it, and drag the folder inside to a location on your hard disk. It could be in Program Files or simply the desktop, but the important thing is for the Processing folder to be pulled out of that .zip file. Then double-click processing.exe to start.
 
 - The Mac OS X version is also a .zip file. Double-click it and drag the Processing icon to the Applications folder. Then double-click the Processing icon to start.
 
