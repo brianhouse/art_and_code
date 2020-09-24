@@ -344,6 +344,19 @@ def the_end():
 
 Using functions to represent physical spaces lets us picture how the parts of the program are interrelated. But although _Adventure_ and _Zork_ did it this way, it is not the only option. The "rooms" (or "states") could correspond to topics of conversation, or a character's moods, or a medical diagnosis, or a events in a soccer match.
 
+<p style="float:left;">
+  <img src="code/11_dinner.png" width=300 />
+</p>
+
+<p style="float:left;">
+  <img src="code/11_government.png" width=300 />
+</p>
+
+<p style="">
+  <img src="code/11_relationship.png" width=300 />
+</p>
+
+
 <!--
 
 create a map
