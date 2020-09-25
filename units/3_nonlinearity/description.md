@@ -4,6 +4,8 @@
 1:
 - examples of nonlinearity? movies, books
 - have them work on response to a question
+
+this is harder than the last assignment, so you'll need to start working on it earlier
 -->
 
 ## Concept
@@ -130,7 +132,7 @@ There's a lot going on in that simple example: we've asked for user input, used 
 
 ### Conditionals
 
-What's most exciting, perhaps, is that variables open up the possibility of our programs doing different things depending on the input. For example:
+What's most exciting about variables is that they open up the possibility of our programs doing different things depending on the input. For example:
 
 ```py
 print("Is the air quality good today?")
@@ -184,8 +186,7 @@ Both of these tests should have produced different answers. But in the first exa
 
 ```py
 print("How are you today?")
-feeling = raw_input()
-feeling = feeling.lower()   # convert input text to lowercase
+feeling = raw_input().lower()   # convert input text to lowercase
 
 if "good" in feeling:
     print("Great to hear it.")
@@ -197,18 +198,17 @@ else:
     print("I don't know how you feel.")
 ```
 
-This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added a line that is a trick to convert the input to lowercase and prevent the second mixup with cases.
+This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added `.lower()` to the end of `raw_input()`, which is a trick that converts the input to lowercase and prevent the second mixup with cases.
 
 <p align="center">
   <img src="code/7_in_2.png" width=600 />
 </p>
 
-One final trick. There might be multiple inputs that should elicit the same response, ie, "good", "great", "excellent" shouldn't all require a unique `elif`. The `or` keyword helps us with this:
+Of course, there might be multiple inputs that should elicit the same response, ie, "good", "great", "excellent" shouldn't all require a unique `elif`. The `or` keyword helps us with this:
 
 ```py
 print("How are you today?")
-feeling = raw_input()
-feeling = feeling.lower()   # convert input text to lowercase
+feeling = raw_input().lower()
 
 if "good" in feeling or "great" in feeling or "excellent" in feeling:
     print("Great to hear it.")
@@ -219,8 +219,22 @@ elif "ok" in feeling or "fine" in feeling:
 else:
     print("I don't know how you feel.")
 ```
+Similarly, maybe we want to be sure that two different words are present in the response. We can accomplish that with the `and` keyword:
+```py
+print("Do you want soup or salad?")
+choice = raw_input().lower()
 
-This code can get a little wordy, but it allows for more flexibility within the program's flow. Using `if` conditionals like this, we can craft fairly complex responses to simple inputs. But we still lack one crucial tool for nonlinearity.
+if "soup" in choice and "salad" in choice:
+    print("That's right--why pick?!")
+elif "soup" in choice:
+    print("The bisque is delicious.")
+elif "salad" in choice:
+    print("Ranch or vinaigrette with that?")
+else:
+    print("That's not what we're serving.")
+```
+
+This code can get a little wordy, but it allows for more flexibility within the program's flow (you can even use parentheses to create complex conditions). Using `if` conditionals like this, we can craft fairly elaborate responses to open ended input. But we still lack one crucial tool for nonlinearity.
 
 <!--
 exercise with question and answer
@@ -284,7 +298,7 @@ Each of these rooms can be represented with a function. For example:
 def living_room():
     print("You're in the living room. Doors lead to the hallway and to the kitchen.")
     print("Where do you want to go next?")
-    response = raw_input("> ")  # adding a parameter creates a prompt
+    response = raw_input("> ").lower()  # adding a parameter creates a prompt
 ```
 
 Since the living room is connected to kitchen and the hallway, we'll want to provide those options. And if we get a response that doesn't include anything about a kitchen or hallway, we'll want to provide a default response using `else`:
@@ -293,17 +307,17 @@ Since the living room is connected to kitchen and the hallway, we'll want to pro
 def living_room():
     print("You're in the living room. Doors lead to the hallway and to the kitchen.")
     print("Where do you want to go next?")
-    response = raw_input("> ")
+    response = raw_input("> ").lower()
     if "kitchen" in response:
         kitchen()   # call the kitchen function
     elif "hallway" in response:
         hallway()   # call the hallway function
     else:
         print("You can't go there.")
-        living_room() # call the living room function again
+        living_room() # repeat the living room function
 ```
 
-`kitchen()` and `hallway()` are functions that we haven't written yet. But they will be new parts of the program that represent those rooms. `living_room()` is the function we're already in—when we call it again, we loop back to the top of this function.
+`kitchen()` and `hallway()` are functions that we haven't written yet. But they will be new parts of the program that represent those rooms. `living_room()` is the function we're already in—when we call it again, we repeat the function over from the beginning.
 
 Here's the hallway:
 
@@ -312,7 +326,7 @@ Here's the hallway:
 def hallway():
     print("You're in the hallway. Doors lead to the living room, bathroom, and bedroom.")
     print("Where do you want to go next?")
-    response = raw_input("> ")
+    response = raw_input("> ").lower()
     if "living room" in response:
         living_room()
     elif "bathroom" in response:
@@ -330,7 +344,7 @@ With a function for each room of the house and appropriate conditionals, we can 
   <img src="code/10_house_terminal_.png" width=600 />
 </p>
 
-This could go on forever, and the exact order isn't determined until the reader inputs text. That makes it a basic example of a nonlinear narrative. Though the content of the text could use some elaboration, notice how the flexibility of the input creates a sense of narrative, and even unintended humor.
+This could go on forever, and the exact order isn't determined until the reader inputs text. That makes it a basic example of a nonlinear narrative. Though the content of the text could use some elaboration, notice how the flexibility of the input creates a sense of narrative, and even unintended humor in the responses.
 
 Remember, to start the narrative, you'll need to call a function on a line by itself to kick things off:
 ```py
@@ -341,6 +355,8 @@ living_room()
 def the_end():
     print("That's all, folks")
 ```
+
+It may be too late already, but an important thing everyone needs to learn: **type Control-C to exit your program if you get stuck**. You'll need it.
 
 Using functions to represent physical spaces lets us picture how the parts of the program are interrelated. But although _Adventure_ and _Zork_ did it this way, it is not the only option. The "rooms" (or "states") could correspond to topics of conversation, or a character's moods, or a medical diagnosis, or a events in a soccer match.
 
@@ -363,9 +379,92 @@ create a map
 
 -->
 
+### Advanced: keeping track of things with variables
+
+In the code above, variables are only used to temporarily hold a value returned by `raw_input`. However, we can also use **global variables** that span multiple functions in order to keep track of user actions. This is particularly useful when combined with `True` and `False`, a special kind of value in Python that isn't a number or a string.
+
+To demonstrate, consider a nonlinear narrative in which the reader needs a key to unlock a special door. When the program begins, the reader doesn't yet have the key. So at the top of the program, before any functions, we'll create a variable `has_key` and set it to `False`:
+
+```py
+has_key = False
+```
+
+Subsequently, if any of our functions are going to use this global variable, we need to explicitly say so with the `global` keyword:
+
+```py
+has_key = False
+
+def office():
+    global has_key  # this function can now use the global variable 'key'
+```
+
+We can now add something to the text of this room, depending on whether or not the reader already has the key:
+
+```py
+has_key = False
+
+def office():
+    global has_key  # this function can now use the global variable 'has_key'
+    print("You're in an office. A door leads to the hall.")    
+    if has_key == False:
+        print("There is a key here.")
+```
+
+Notice this `if` statement doesn't need an `elif` or even an `else`—it just checks it see if the reader has picked up the key yet. If they haven't, it must be still sitting on the table, so we print out `"There is a key here."`.
+
+Now, we can add the interaction:
+
+```py
+has_key = False
+
+def office():
+    global has_key  # this function can now use the global variable 'has_key'
+    print("You're in an office. A door leads to the hall.")    
+    if has_key == False:
+        print("There is a key here.")        
+    print("What do you want to do?")
+    response = raw_input("> ").lower()
+    if "hall" in response:
+        hall()
+    elif "key" in response:
+        print("You take the key.")
+        has_key = True                  # set has_key to True
+        office()
+    else:
+        print("You can't do that.")
+        office()
+```
+
+If in response to the question `"What do you want to do?"` the reader types something like `"take key"`, the program will set `has_key` to `True`, and then repeat the function, this time leaving out the extra text. The outcome might look something like this:
+
+<p>
+  <img src="code/12_key.png" width=600 />
+</p>
+
+In a subsequent room/function, we can then test if the reader has the key in order to modify the possible responses.
+
+```py
+has_key = False
+
+def basement():
+    global has_key  # this function can now use the global variable 'has_key'
+    print("You're in the basement. There is a mysterious door here.")
+    print("What do you want to do?")
+    response = raw_input("> ").lower()
+    if "door" in response and has_key == True:
+        mystery_door()
+    else:
+        print("You can't do that.")
+        basement()
+```
+
+For the mystery door to open, `"door"` has to be in the response, _and_ `has_key` has to be set to true. Otherwise, the option isn't available.
+
+Using `True` / `False` and global variables in this way creates hidden possibilities within the logical structure of the functions / rooms, which is particularly useful for adding puzzles or other game-like aspects to the narrative.
+
 
 ## Sketch #3
 
-With this sketch, you will create a text-based, nonlinear narrative in the second person using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the content should reflect your own artistic concept. Your program must demonstrate at least 5 different branching points that create meaningful alternative paths.
+With this sketch, you will create a nonlinear narrative in the second person using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the theme and written content should reflect your own artistic concept. Your program must demonstrate at least 5 different branching points that create meaningful alternative paths.
 
 Draw a "map" of the the choices that will be available to your reader (by hand, using Google Draw, or any other medium) and turn this in along with your final Python code to Google Classroom. In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.

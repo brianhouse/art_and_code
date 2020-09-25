@@ -33,6 +33,8 @@ so keep it as indeterminacy. it's a better word. but expand on loops. ignore ran
 
 ## Nonlinearity
 
+will have to modify to indicate that we've already seen variables (or at least i) earlier
+
 
 ## Recombination
 
