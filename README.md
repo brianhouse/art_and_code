@@ -112,27 +112,35 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 5
 
 #### Tuesday 9/29
-- Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
-- Strings, variables, conditionals, and custom functions
+<!-- - Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
+- Strings, variables, conditionals, and custom functions -->
+- Cancelled
 
 #### Thursday 10/1
-- Review, questions, and work time
-- Artist presentations 3
+<!-- - Review, questions, and work time
+- Artist presentations 3 -->
+- Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
+- Strings, variables, conditionals, and custom functions
 
 
 ### Week 6
 
 #### Tuesday 10/6
-- Sharing in-progress work, questions, and work time
-- Artist presentations 4
+<!-- - Sharing in-progress work, questions, and work time
+- Artist presentations 4 -->
+- Review, questions, and work time
+- Artist presentations 3
 
 #### Thursday 10/8
-- Crit Sketch #3
+<!-- - Crit Sketch #3 -->
+- Sharing in-progress work, questions, and work time
+- Artist presentations 4
 
 
 ### Week 7
 
 #### Tuesday 10/13
+- Crit Sketch #4
 - Begin [Sketch #4: Recombination](units/4_recombination/description.md)
 - Arrays
 

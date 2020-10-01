@@ -1,11 +1,25 @@
 # Nonlinearity
 
 <!--
+- apologies for cancelling class on Tuesday (my wife had a baby on Monday, so it's been an awesome but logistically challenging week)
+- you'll have an extra weekend to work on this assignment
+
 1:
-- examples of nonlinearity? movies, books
+- when I say linear, what does that mean? -> cassette
+- examples of nonlinearity?
+    - choose your own adventure stories (page numbers)
+    - nonlinear storytelling in films (pulp fiction) -> kinoautomat
+- digital media are inherently structured nonlinearly (audio editing, jump back and forth)
+- zork is one example (responses to playing it)
+- everyone review the notes in the assignment
+/
+
 - have them work on response to a question
 
-this is harder than the last assignment, so you'll need to start working on it earlier
+/
+note that this is harder than the last assignment, so you'll need to start working on it earlier
+
+review the notes in the assignment!
 -->
 
 ## Concept
