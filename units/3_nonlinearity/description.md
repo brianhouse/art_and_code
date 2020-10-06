@@ -3,6 +3,7 @@
 <!--
 - apologies for cancelling class on Tuesday (my wife had a baby on Monday, so it's been an awesome but logistically challenging week)
 - you'll have an extra weekend to work on this assignment
+- going to move artist presentations (Julian + Noa, Alex + Sadie)
 
 1:
 - when I say linear, what does that mean? -> cassette
@@ -13,11 +14,14 @@
 - zork is one example (responses to playing it)
 - everyone review the notes in the assignment
 /
-
+- Terminal?
+- show strings
 - have them work on response to a question
 
 /
 note that this is harder than the last assignment, so you'll need to start working on it earlier
+
+next time we'll review maps
 
 review the notes in the assignment!
 -->
@@ -408,11 +412,34 @@ Subsequently, if any of our functions are going to use this global variable, we 
 ```py
 has_key = False
 
-def office():
+def basement():
     global has_key  # this function can now use the global variable 'key'
 ```
 
-We can now add something to the text of this room, depending on whether or not the reader already has the key:
+We can now add a condition to the possibilities for this room, depending on whether or not the reader already has the key:
+
+```py
+has_key = False
+
+def basement():
+    global has_key  # this function can now use the global variable 'has_key'
+    print("You're in the basement. There is a mysterious door here.")
+    print("What do you want to do?")
+    response = raw_input("> ").lower()
+    if "door" in response and has_key == True:
+        mystery_door()
+    else:
+        print("You can't do that.")
+        basement()
+```
+
+For the mystery door to open, `"door"` has to be in the response, _and_ `has_key` has to be set to `True`. Otherwise, the option isn't available.
+
+Using `True` / `False` and global variables in this way creates hidden possibilities within the logical structure of the functions / rooms, which is particularly useful for adding puzzles or other game-like aspects to the narrative.
+
+But how does the reader get the key?
+
+Let's add something to the text of a different room (assuming a longer program where these rooms are connected by others), that depends on whether or not the reader already has the key in possession:
 
 ```py
 has_key = False
@@ -440,7 +467,7 @@ def office():
     response = raw_input("> ").lower()
     if "hall" in response:
         hall()
-    elif "key" in response:
+    elif "key" in response and has_key == False:
         print("You take the key.")
         has_key = True                  # set has_key to True
         office()
@@ -449,36 +476,19 @@ def office():
         office()
 ```
 
-If in response to the question `"What do you want to do?"` the reader types something like `"take key"`, the program will set `has_key` to `True`, and then repeat the function, this time leaving out the extra text. The outcome might look something like this:
+If in response to the question `"What do you want to do?"` the reader types something like `"take key"` and `has_key` is not already set to `True`, then the program will set `has_key` to `True`. It will subsequently repeat the function, this time leaving out the extra text. The outcome might look something like this:
 
 <p>
   <img src="code/12_key.png" width=600 />
 </p>
 
-In a subsequent room/function, we can then test if the reader has the key in order to modify the possible responses.
+When (and if) the reader proceeds to the basement, they will then be able to open the door.
 
-```py
-has_key = False
-
-def basement():
-    global has_key  # this function can now use the global variable 'has_key'
-    print("You're in the basement. There is a mysterious door here.")
-    print("What do you want to do?")
-    response = raw_input("> ").lower()
-    if "door" in response and has_key == True:
-        mystery_door()
-    else:
-        print("You can't do that.")
-        basement()
-```
-
-For the mystery door to open, `"door"` has to be in the response, _and_ `has_key` has to be set to true. Otherwise, the option isn't available.
-
-Using `True` / `False` and global variables in this way creates hidden possibilities within the logical structure of the functions / rooms, which is particularly useful for adding puzzles or other game-like aspects to the narrative.
+Note that the construction of this narrative is as much about the craft of _writing_ as it is about programming. A concept like a key exists somewhere between the variable that keeps track of whether the user has picked it up (`has_key`), the conditional logic of what it makes possible, and the narration of a world that is consistent and intuitive, one in which keys can be taken to unlock doors and in which they don't spontaneously appear or persist (unless, of course, we want them to magically do so).
 
 
 ## Sketch #3
 
-With this sketch, you will create a nonlinear narrative in the second person using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the theme and written content should reflect your own artistic concept. Your program must demonstrate at least 5 different branching points that create meaningful alternative paths.
+With this sketch, you will create a nonlinear narrative in the second person using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the theme and written content should reflect your own artistic concept. Your program must demonstrate at least 8 different branching points that create meaningful alternative paths.
 
 Draw a "map" of the the choices that will be available to your reader (by hand, using Google Draw, or any other medium) and turn this in along with your final Python code to Google Classroom. In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.
