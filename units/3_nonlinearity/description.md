@@ -397,7 +397,7 @@ create a map
 
 -->
 
-### Advanced: keeping track of things with variables
+### Advanced: keeping track of things with global variables
 
 In the code above, variables are only used to temporarily hold a value returned by `raw_input`. However, we can also use **global variables** that span multiple functions in order to keep track of user actions. This is particularly useful when combined with `True` and `False`, a special kind of value in Python that isn't a number or a string.
 

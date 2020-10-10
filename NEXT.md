@@ -52,6 +52,17 @@ Maybe there is an "elaboration" section for each of these. So for nonlinearity, 
 interactivity -> interface, because nonlinearity is also interactive, pues
 
 
+##
+
+have them read the intro/tutorial prior to class
+
+then class discuss the artistic examples, review the code, and do exercises
+
+separate the assignment from the tutorial
+
+##
+
+
 ## omissions
 
 islamic art?
