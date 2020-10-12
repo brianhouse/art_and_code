@@ -40,6 +40,7 @@ will have to modify to indicate that we've already seen variables (or at least i
 
 train flip board
 
+add Listening Post to examples 
 
 ##
 
@@ -61,6 +62,8 @@ then class discuss the artistic examples, review the code, and do exercises
 separate the assignment from the tutorial
 
 ##
+
+functions that return things
 
 
 ## omissions
