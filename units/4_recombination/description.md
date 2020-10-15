@@ -438,7 +438,8 @@ line_1 = []                         # create an empty list for line 1
 remaining_syllables = 5              # use a variable to keep track of the syllables we have left
 for i in range(len(good_words)):    # loop through the good words
     syllables = count_syllables(good_words[i])    # count the syllables of a word
-    if syllables <= remaining_syllables:    # check if the syllables are less than or equal to the ones we need
+    # this returns None if it doesn't recognize the word
+    if syllables is not None and syllables <= remaining_syllables:    # check if the syllables are less than or equal to the ones we need
         line_1.append(good_words[i])        # if so, append the word to line 1
         remaining_syllables = remaining_syllables - syllables   # subtract the syllables of this word from those remaining
     if remaining_syllables == 0:    # if we have all our syllables...
