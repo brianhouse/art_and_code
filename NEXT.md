@@ -35,12 +35,15 @@ so keep it as indeterminacy. it's a better word. but expand on loops. ignore ran
 
 will have to modify to indicate that we've already seen variables (or at least i) earlier
 
+"map" through some people off. it's really a diagram of all the interaction.
+
+explicitly outlaw yes/no questions
 
 ## Recombination
 
 train flip board
 
-add Listening Post to examples 
+add Listening Post to examples
 
 ##
 
@@ -64,6 +67,9 @@ separate the assignment from the tutorial
 ##
 
 functions that return things
+
+
+have the cheat sheet link to sections in the tutorials
 
 
 ## omissions
