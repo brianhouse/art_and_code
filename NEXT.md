@@ -1,11 +1,13 @@
 
 Do small group screen sharing for intermediate feedback
 
-## Change numbering
+## Organization
 
 0 is the getting started and an online intro
 1 is algorithm
 
+
+## Units
 
 ## Indeterminacy
 
@@ -31,47 +33,62 @@ so keep it as indeterminacy. it's a better word. but expand on loops. ignore ran
 --> add past examples
 
 
-## Nonlinearity
+### Nonlinearity
 
 will have to modify to indicate that we've already seen variables (or at least i) earlier
 
-"map" through some people off. it's really a diagram of all the interaction.
+"map" threw some people off. it's really a diagram of all the interaction.
 
 explicitly outlaw yes/no questions
 
-## Recombination
+
+### Recombination
 
 train flip board
 
 add Listening Post to examples
 
-##
+add Cento form!
+
+closed captions and .srt example
+
+https://github.com/NaNoGenMo/2017
+
+splitlines() is redundant with split(), so keep the latter to be consistent
+
+karaoke example
+
+--> have in class poetry reading
+
+etheree poem   as example
+
+textwrap() import function
+
+### Interface
+
+
+
+
+## General
 
 Maybe there is an "elaboration" section for each of these. So for nonlinearity, it's using variables to carry objects.
 
-
-##
-
-
-interactivity -> interface, because nonlinearity is also interactive, pues
-
-
-##
-
 have them read the intro/tutorial prior to class
-
 then class discuss the artistic examples, review the code, and do exercises
 
 separate the assignment from the tutorial
 
-##
-
 functions that return things
-
 
 have the cheat sheet link to sections in the tutorials
 
+new grading structure based on Allisons? can extrapolate beyond the examples be part of it?
 
-## omissions
+I want it to click in terms of programming, but have to be ok if it doesn't for everyone. but the problem-solving aspect should be a part of it, that's what's missing for them, the mentality of making it work.
 
-islamic art?
+why are they so bad at file management. it's google's fault.
+
+
+## Omissions
+
+islamic art

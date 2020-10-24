@@ -8,7 +8,7 @@ Office hours TR 11:30–12:30 on [Zoom](https://us02web.zoom.us/j/7372690628)
 
 
 ## Course Description
-Introduction to the form and aesthetics of digital media. By writing code, students will explore nonlinearity, indeterminacy, glitch, emergence, and other qualities of computing that can used for artistic expression in both visual and textual mediums. Accompanying critical discussion will consider key practitioners in digital media. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
+Introduction to the aesthetics and form of digital media. By writing code to generate graphics and text, students will explore the qualities intrinsic to artistic expression with computers such as nonlinearity, indeterminacy, glitch, and emergence. Accompanying critical discussion will consider key practitioners in the field. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
 
 
 #### Objectives:
@@ -162,7 +162,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 9
 
 #### Tuesday 10/27
-- Begin [Sketch #5: Interactivity](units/5_interactivity/description.md)
+- Begin [Sketch #5: Interface](units/5_interface/description.md)
 - Using the mouse and keyboard, variable math
 
 #### Thursday 10/29

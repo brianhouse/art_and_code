@@ -76,7 +76,7 @@ However, from early on, artists have co-opted those systems for their own expres
   Lillian Schwartz, <i>Olympiad</i> (1971)<br />
 </p>
 
-To make her images, Lillian would sketch the images on graph paper and then encode each color and position into coordinates. These would then be transferred to [punch cards](https://en.wikipedia.org/wiki/Punched_card) and fed into the machine, as these early computers did not support direct entry via keyboard (although [contemporary interfaces were first developed](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos) around the same time in the late 1960s).
+To make her images, Lillian would sketch the images on graph paper and then [encode each color and position into coordinates](http://lillian.com/discoveries_post/). These would then be transferred to [punch cards](https://en.wikipedia.org/wiki/Punched_card) and fed into the machine, as these early computers did not support direct entry via keyboard.
 
 <p align="center">
   <img src="context/7_punch_card.jpg" width=400 /><br />

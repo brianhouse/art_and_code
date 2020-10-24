@@ -56,6 +56,16 @@
 - `choice(list)` select a random item from a list (requires `from random import choice`
 - `shuffle(list)` shuffle a list in place
 
+### Event handlers
+
+### Comparison operators
+- `==` equal to
+- `>` greater than
+- `<` lesser than
+- `>=` greater than or equal to
+- `<=` lesser than or equal to
+- `!=` not equal to
+
 ### Utilities
 - `open("filename").read()` read the contents of a file into a string
 - `save("filename.png")` save an image of the canvas
