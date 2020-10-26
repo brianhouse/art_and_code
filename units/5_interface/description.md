@@ -390,11 +390,11 @@ def keyTyped():
   <img src="code/canvas_9.png" width=400 /><br />
 </p>
 
-### Advanced brushes
+### Making brushes
 
 Structurally, this setup offers a lot of possibilities—by tracking the mouse, detecting button presses, adding keyboard commands, and using the mouse, all sorts of expressive interfaces might be constructed. But it is the visual aesthetics of the buttons and brushes that will make it interesting.
 
-So far, our brushes are a color and a shape:
+Within `draw()` and an `if` statement, our brushes thus far have consisted of a color and a shape:
 ```py
 fill(255, 255, 0)
 square(mouseX, mouseY, 50)
@@ -417,7 +417,7 @@ line(mouseX, mouseY, mouseX + random(-30, 30), mouseY + random(-30, 30))
   <img src="code/canvas_10.png" width=400 /><br />
 </p>
 
-Here we have a line that is drawn from the position of the mouse to a random point within 30 pixels in either direction. While we still have general control over the gesture of the brush, the computer gives us a more textured result.
+We have a line that is drawn from the position of the mouse to a random point within 30 pixels in either direction. While we still have general control over the gesture of the brush, the computer gives us a more textured result.
 
 A similar example might use color and transparency:
 
@@ -431,12 +431,85 @@ circle(mouseX + random(-20, 20), mouseY + random(-20, 20), random(2, 30))
   <img src="code/canvas_11.png" width=400 /><br />
 </p>
 
+A more advanced possibility is to use a global variable. In the complete example below, there is a clever use of `if` statements such that `anchor_x` and `anchor_y` are set to the coordinates where the mouse is first pressed—subsequently moving the mouse draws lines back to that point.
 
----> brush 4 and 5, and then something really advanced (like what? small pixels? maybe just a pixel brush)
+```py
+anchor_x = -1    # initialize global variables to -1
+anchor_y = -1
 
-### eraser + background
+def setup():
+    size(400, 300)
+    background(255)
+
+def draw():
+    global anchor_x
+    global anchor_y
+    if mousePressed == True:    
+        if anchor_x < 0 and anchor_y < 0:  # initial press
+            anchor_x = mouseX
+            anchor_y = mouseY          
+        else:   # the mouse is being dragged
+            stroke(0, 0, 0, 50)
+            line(mouseX, mouseY, anchor_x, anchor_y)
+    else:
+        # if the mouse isn't pressed, re-initialize variables
+        anchor_x = -1
+        anchor_y = -1
+```
+
+<p align="center">
+  <img src="code/canvas_13.png" width=400 /><br />
+</p>
+
+To create a pixelated effect, we might take `mouseX` and `mouseY` and round them to the nearest number evenly divisible by 10. An easy way to do this is to just divide the number by 10, which in Python will produce an integer, and multiply it by 10 again:
+
+```py
+def setup():
+    size(400, 300)
+    background(0)   # black background
+
+def draw():
+    if mousePressed == True:    
+        stroke(0)   # black square border
+        fill(random(200), random(200), 255) # random bluish color
+        x = (mouseX / 10) * 10  # round to nearest 10
+        y = (mouseY / 10) * 10 # round to nearest 10
+        square(x, y, 10)
+```
 
 
-### Save button
+<p align="center">
+  <img src="code/canvas_14.png" width=400 /><br />
+</p>
 
-### Assignment
+There are endless possibilities for brushes you might make when you combine interface logic with drawing techniques.
+
+Note that in these examples, a white or black background is set within `setup()`, but of course it could be any color. Pro tip: to make an eraser, make a brush with a fill set  to the same color.
+
+### Saving the canvas
+
+One last detail that you'll need: the ability to save. Fortunately, Processing makes this easy with the `save()` function. Just put this inside an event, whether it is a save button that is clicked or a particular letter that is typed:
+
+```py
+def setup():
+    size(400, 300)
+
+def draw():
+    if mousePressed == True:
+        fill(255, 255, 0)
+        triangle(mouseX, mouseY, mouseX - 10, mouseY + 15, mouseX + 10, mouseY + 15)
+
+def keyTyped():
+    if key == "s":
+        save("output.png")
+        print("Saved output.png")
+```
+
+As before, the resulting image file will be within the sketch folder.
+
+
+## Sketch #5
+
+For this sketch, you will create a software painting interface using code. To get started, think about programs like [MacPaint](https://en.wikipedia.org/wiki/MacPaint), where the "user" can choose from multiple brushes with the mouse and use them to draw on the open canvas. However, your approach should reflect an artistic purpose for your own use or for someone else. For example, imagine the difference between interfaces for artists with a [street-art aesthetic](https://www.google.com/search?q=graffiti&tbm=isch) using spray-paint brushes, or a [futurist](https://www.google.com/search?q=future+interface&tbm=isch) interface, or maybe one for someone who is [color blind](https://en.wikipedia.org/wiki/Color_blindness), or a [bird](https://en.wikipedia.org/wiki/Bird_vision#Light_perception), or [underwater](http://thedivingblog.com/colors-underwater/).
+
+Along with your code and [3-sentence description](../../resources/description_guidelines.md), you should supply an image that you have created to demonstrate the capabilities of your interface. Your interface must include at least four different "brushes" or ways of interacting. A rough version should be complete for the class prior to the crit in order to get feedback from your peers.
