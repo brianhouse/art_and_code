@@ -1,3 +1,5 @@
+# Interface
+
 ## Concept
 
 The symbolic logic of the digital is often thought to be immaterial. However, it is bound up with physical mechanics on two levels. The first, naturally, comprises the computers and other electronic devices themselves that perform abstract computations with very real electricity. The second is the level of interface. That is, in order for digital logic to apply to the material world, and for us to perceive it, there must be ways through which we can interact with computers. Monitors, keyboards, mice, touchscreens, cameras, microphones, speakers ... none of these are digital technologies per se, but they are all means of translation between our physical sensory capabilities and what happens inside of the machine. And _how_ that translation works is a critical and creative act of design.
@@ -26,34 +28,51 @@ That said, there is one event that may be considered to have outsized influence 
   Bill English, prototype of a computer mouse made from Englebart's sketches (1968)<br />
 </p>
 
-+ Liat Berdugo
-https://www.liaworks.com/theprojects/pontiac-vibe-enthrallogy/
+In years since, computer interfaces for artistic expression have been myriad and diverse, from commercial software to idiosyncratic systems.
+
+One influential example, which makes use of a projector and camera, comes from Golan Levin and Zach Liebermann. Their _Manual Input Workstation_ (2004, [video here](https://www.youtube.com/watch?v=3paLKLZbRY4)) uses shadows to create shapes from the negative space between fingers:
+
+<p align="center">
+  <img src="context/4_levin.jpg" width=300 /><br />
+  Golan Levin and Zach Liebermann, <i>Manual Input Workstation</i> (2004)<br />
+</p>
+
+LIA, an artist who we looked at for her use of indeterminacy, also makes her own interactive software tools. Her [_Enthrallogy_](https://vimeo.com/63511992) (2000), makes a version of those tools public. Though it riffs on the common interface paradigms of programs like MacPaint, LIA's work is far more distinctive:
+
+<p align="center">
+  <img src="context/8_LIA.png" width=300 /><br />
+  LIA & Miguel Carvalhais, <i>Pontiac: Vibe Enthrallogy</i> (2000)<br />
+</p>
 
 
-+ american artist
 
+Musicians and composers regularly make custom visual interfaces to express their ideas about music. Meara O'Reilly is interested in the perception of non-standard rhythms; her [_Rhythm Necklace_](http://rhythmnecklace.com) (2014) is a complex yet ultimately intuitive system for visually connecting circular shapes to produce syncopation and polyrhythms that would otherwise be difficult to notate.
 
+<p align="center">
+  <img src="context/5_rhythm_necklace.jpg" width=500 /><br />
+  Meara O'Reilly and Sam Tarakajian, screenshots of <i>Rhythm Necklace</i> (2014) on iOS<br />
+</p>
 
-### Non-digital
+Many traditionally trained artists are interested not only in how their skills can translate to digital interfaces, but how automated systems might collaborate with them. A compelling example of this kind of work is that of the artist [Sougwen Chung](https://sougwen.com), who paints with a brush on canvas alongside a robotic arm. Though this involves more hardware than a screen and mouse, prototypes of such a system are developed in software like Processing.
 
+<p align="center">
+  <img src="context/6_sougwen.jpg" width=500 /><br />
+  Sougwen Chung, <i>Drawing with Doug</i> (ongoing)<br />
+</p>
 
-### Digital
+Other artists reflect on the implications of that fact that computer interfaces mediate so much of our lives. Liat Berdugo's [_Unpatentable Multitouch Aerobics_](https://www.liatberdugo.com/work/unpatentable) (2015), for example, comments on Apple's claim that it owns the gestures—like swiping and pinching—that are made on it's iPads and iPhones. Berdugo instead performs these gestures as aerobic exercises, which are legally unpatentable.
 
+<p align="center">
+  <img src="context/7_berdugo.png" width=500 /><br />
+  Liat Berdugo, <i>Unpatentable Multitouch Aerobics</i> (2015)<br />
+</p>
 
+Additionally, in their series [_Black Gooey Universe_](https://americanartist.us/works/black-gooey-universe) (2018), the artist American Artist considers how the default white background of much software interface design betrays a cultural bias that is often hostile to Black aesthetics. Notably, they include a comment/critique on Engelbart's _Mother of All Demos_.
 
-Spiegel
-"I automate whatever can be automated to be freer to focus on those aspects of music that can't be automated. The challenge is to figure out which is which."[3]
-Music Mouse
-
-
-+ sougwen
-
-+ Casey and processing
-+ AARON
-
-scatter?
-
-
+<p align="center">
+  <img src="context/9_american_artist.jpg" width=500 /><br />
+  American Artist, <i>Mother of All Demos</i> (2018)<br />
+</p>
 
 ## Code: responding to events
 
