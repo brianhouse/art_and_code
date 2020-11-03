@@ -7,6 +7,19 @@ Do small group screen sharing for intermediate feedback
 1 is algorithm
 
 
+just have indeterminacy and repetition as two distinct units, with one assignment
+
+introduce each on subsequent days
+
+
+have a different rubric
+have a rubric for the presentations also
+
+dont have assignment text in Classroom, so they have to go to the actual site
+
+no late work is accepted
+
+
 ## Units
 
 ## Indeterminacy
@@ -50,6 +63,8 @@ add Listening Post to examples
 
 add Cento form!
 
+John Cayley!
+
 closed captions and .srt example
 
 https://github.com/NaNoGenMo/2017
@@ -64,9 +79,22 @@ etheree poem   as example
 
 textwrap() import function
 
+
 ### Interface
 
+a perceptual explanation of framerate etc seems useful -- animation, human perception
 
+how the hell are they going to try each other's interfaces?
+
+
+### Emergence
+
+
+
+
+###
+
+missing map
 
 
 ## General

@@ -32,9 +32,9 @@
 - `for i in range(n):` repeat the following indented lines _n_ times, with `i` equal to _n_ each time
 - `def functionname():` declare a function with the following indented lines
 - `if` `elif` `else` create a conditional statement
+- `and` `or` combine conditions in an `if` statement
 
 ### Strings
-- `in`
 - `string.lower()` return a lowercase version of the string
 - `string.upper()` return an uppercase version of the string
 - `string.replace("search", "replace")` return a version of the string with the substring "search" replaced with "replace"
@@ -43,12 +43,15 @@
 - `string.splitlines()` split a string on any newline character
 - `" ".join(list)` join a list with a space (or other character) between each list item
 - `len(string)` get the number of characters in a string
+- `in` test whether a string is within another string or a list
+
 
 ### Lists
 - `[]` create an empty list
 - `list.append(item)` append an item to a list
 - `list[index]` return the item at _index_ from the list
 - `len(list)` get the length of the list
+- `in` test whether an item is within the list
 
 ### Random
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
@@ -57,6 +60,20 @@
 - `shuffle(list)` shuffle a list in place
 
 ### Event handlers
+- `setup()` called once when the sketch is first run
+- `draw()` called repeatedly 30 times per second
+- `mouseClicked()` called with the mouse is pressed and released in the same location
+- `keyTyped()` called when a key is typed
+
+### Magic variables
+- `mouseX` the current x-coordinate of the cursor
+- `mousey` the current y-coordinate of the cursor
+- `pmouseX` the previous x-coordinate of the cursor
+- `pmouseY` the previous y-coordinate of the cursor
+- `mousePressed` whether the mouse button is pressed or not (`True`/`False`)
+- `key` the most recently typed key
+- `width` the width of the canvas
+- `height` the height of the canvas
 
 ### Comparison operators
 - `==` equal to
@@ -67,6 +84,7 @@
 - `!=` not equal to
 
 ### Utilities
+- `global` declare a global variable
 - `open("filename").read()` read the contents of a file into a string
 - `save("filename.png")` save an image of the canvas
 - `print("text")` print a string to the console

@@ -312,6 +312,7 @@ def setup():
 
 def draw():
 
+    global brush
     ## first draw shapes in response to mouse movement:
     if mousePressed == True:
 
@@ -341,7 +342,6 @@ def draw():
 
 
 def mouseClicked():
-
     global brush    # indicate that we're using the global variable
 
     if mouseX > 10 and mouseX < 40 and mouseY > 10 and mouseY < 40:
@@ -376,7 +376,7 @@ def setup():
 
 
 def draw():
-
+    global brush
     ## first draw a circle in response to mouse movement
     if mousePressed == True:
 

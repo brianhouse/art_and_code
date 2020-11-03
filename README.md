@@ -22,7 +22,7 @@ Introduction to the aesthetics and form of digital media. By writing code to gen
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **encoding**, **indeterminacy**, **nonlinearity**, **recombination**, **interactivty**, **emergence**, and **glitch**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
+This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **encoding**, **indeterminacy**, **nonlinearity**, **recombination**, **interface**, **emergence**, and **glitch**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
 
 Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due—no late work is accepted, as it will be graded during the crit. Sketches will be evaluated on both concept and craft.
 
@@ -187,6 +187,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 - Objects and animation
 
 #### Thursday 11/12
+- Make-up presentations
 - Review, questions, and work time
 
 
