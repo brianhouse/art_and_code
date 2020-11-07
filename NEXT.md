@@ -19,6 +19,10 @@ dont have assignment text in Classroom, so they have to go to the actual site
 
 no late work is accepted
 
+/
+
+didnt really get functions that return things
+didnt get dictionaries
 
 ## Units
 
@@ -86,10 +90,19 @@ a perceptual explanation of framerate etc seems useful -- animation, human perce
 
 how the hell are they going to try each other's interfaces?
 
+a text example, a la maeda, and add text functions to cheat sheet
+
+lerpColor
+
+use mouseReleased
+rather than mouseClicked
+
+all their buttons were terrible, so we need a better example of button interfaces (maybe Audrey's instrument from the first addition)
 
 ### Emergence
 
-
+exercise:
+wrap and bounce
 
 
 ###
@@ -115,6 +128,23 @@ new grading structure based on Allisons? can extrapolate beyond the examples be 
 I want it to click in terms of programming, but have to be ok if it doesn't for everyone. but the problem-solving aspect should be a part of it, that's what's missing for them, the mentality of making it work.
 
 why are they so bad at file management. it's google's fault.
+
+
+table crits where I give actual individual feedback, just not in front of the room
+
+/
+
+for loops (REPETITION) is actually really important. most generative examples fit in that zone.
+
+so to make room, the early assignments can be cut down. dont need a week and a half for encoding. crit and intro could happen on the same day. so 4 weeks for encoding and indeterminacy could be:
+
+M-M encoding
+M-M indeterminacy
+M-M repetition
+
+so then we have an extra week later for ANIMATION or something, prior to EMERGENCE
+
+
 
 
 ## Omissions
