@@ -183,7 +183,8 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 11
 
 #### Tuesday 11/10
-- Begin [Sketch #6: Emergence](units/6_emergence/description.md)
+- Begin Sketch #6: Animation
+<!-- [Sketch #6: Emergence](units/6_emergence/description.md) -->
 - Objects and animation
 
 #### Thursday 11/12
@@ -206,7 +207,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 13
 
 #### Tuesday 12/1
-- Begin [Sketch #7: Glitch](units/7_glitch/description.md)
+- Begin [Sketch #7: Emergence](units/7_emergence/description.md)
 - Deconstructing bytes
 
 #### Thursday 12/3

@@ -55,9 +55,37 @@ def draw():
 
 Each time `draw()` is called, `position_x` is incremented by 1, which puts the circle in a different position the next call.
 
-(Note that `position_x += 1` is the same thing as `position_x = position_x + 1`—this shorthand syntax will make things easier to write down the line.)
+(Note that `position_x += 1` is the same thing as `position_x = position_x + 1`—this shorthand syntax will make things easier to write down the line. `*=` and `/=` work the same with multiplication and division.)
 
-We can prepare to make things a lot more interesting if we increment `position_x` (and let's add `position_y` as well) by a variable rather than a static number. This is in essence _velocity_, so we'll call those variables `velocity_x` and `velocity_y`. We'll keep `velocity_x` at 1, and initialize `velocity_y` at 1.5.
+What happens when the ball gets to the edge of the canvas? Well, it keeps on going, forever.
+
+We can change that with a conditional. Using an `if` statement to check if the circle has passed beyond the canvas, we can then reset `position_x` to just beyond the other side.
+
+```py
+position_x = 200
+
+def setup():
+    size(400, 300)
+
+def draw():
+    global position_x
+
+    # clear the screen each frame
+    background(200)
+
+    circle(position_x, 150, 50)
+    position_x += 1
+
+    if position_x > width + 25:
+        position_x = -25
+```
+<p align="center">
+  <img src="code/canvas_11.gif" width=400 /><br />
+</p>    
+
+So far so good. But what about making it _bounce_? For that, it's not just a matter of changing the position of the circle, but the _velocity_.
+
+Currently, the velocity in our example is simply `1`. But we can prepare to make things a lot more interesting if we use a variable rather than a static number. While we're at it, let's make things work in both dimensions. We'll call these new variables `velocity_x` and `velocity_y` (and we'll also add `position_y`). We'll keep `velocity_x` at 1, and initialize `velocity_y` at 1.5, just because, and see how it flies off the bottom of the screen.
 
 
 ```py
@@ -80,7 +108,7 @@ def draw():
   <img src="code/canvas_3.gif" width=400 /><br />
 </p>
 
-Now that we have `velocity_x` and `velocity_y`, we can do something interesting, like make the ball bounce off the edge:
+Now that we have `velocity_x` and `velocity_y`, we're ready to bounce:
 
 ```py
 position_x = 200
@@ -99,21 +127,26 @@ def draw():
     position_y += velocity_y
 
     # check if position_x is within the circle's radius of a vertical wall
-    # if so, flip the direction of the velocity
-    if position_x > width - 25 or position_x < 0 + 25:
-        velocity_x *= -1    #  *= works like +=
+    if position_x > width - 25:
+        position_x = width - 25 # set it back to
+        velocity_x *= -1        # flip the direction
+    elif position_x < 25:
+        position_x = 25
+        velocity_x *= -1
 
     # same for y
-    if position_y > height - 25 or position_y < 0 + 25:
+    if position_y > height - 25:
+        position_y = height - 25
         velocity_y *= -1
+    elif position_y < 25:
+        position_y = 25
+        velocity_y *= -1     
 ```
 <p align="center">
   <img src="code/canvas_4.gif" width=400 /><br />
 </p>
 
-In example above, the two conditional statements check to see if `position_x` or `position_y` have strayed outside their bounds. If so, the appropriate velocity variable is flipped from positive to negative or negative to positive, which changes the direction of the circle, or as now might be more appropriate to call it, the "ball."
-
-(To make the ball "wrap" instead of bounce would mean altering `position_x` or `position_y` directly instead of `velocity_x` or `velocity_y`, reseting the ball to the other side of the screen.)
+In example above, the conditional statements check to see if `position_x` or `position_y` have strayed outside their bounds. If so, position is snapped back to those bounds, and the appropriate velocity variable is flipped from positive to negative or negative to positive. This changes the direction of the circle, or as now might be more appropriate to call it, the "ball."
 
 All that we're doing here is drawing a circle at different coordinates each frame, which we're keeping track of as the interaction between a set of variables. But what we see feels like an object obeying (roughly!) the laws of physics.
 
@@ -121,7 +154,7 @@ All that we're doing here is drawing a circle at different coordinates each fram
 
 One thing that you'll notice with this code is that it's a little bit of a pain to keep track of x and y variables separately. After awhile it gets confusing, and if we start adding other aspects that depend on x and y coordinates, the variables add up.
 
-However, because making things move is such a common thing to do in processing, there is a special kind of **object** designed to help us out. What's an object in code? We'll get to that in a minute. For now, know that any pair of x and y variables in Processing can be replaced by a `PVector`. Not only will it make our code cleaner, it will enable us to do some more interesting things.
+However, because making things move is such a common thing to do in Processing, there is something special to help us out. Any pair of x and y variables in Processing can be replaced by a `PVector`, which is an object that includes both x and y components. Not only will it make our code cleaner, it will enable us to do some more interesting things.
 
 Here's the previous example rewritten with `PVector`—the result is the same.
 
@@ -143,29 +176,37 @@ def draw():
     position += velocity        # adds both x and y components
 
     # update velocity to bounce off the walls
-    if position.x > width - 25 or position.x < 0 + 25:
+    if position.x > width - 25:
+        position.x = width -25
         velocity.x *= -1
-    if position.y > height - 25 or position.y < 0 + 25:
+    elif position.x < 25:
+        position.x = 25
+        velocity.x *= -1        
+    if position.y > height - 25:
+        position.y = height - 25
+        velocity.y *= -1
+    elif position.y < 25:
+        position.y = 25
         velocity.y *= -1
 
 ```
 
-This code is slightly simpler and more intuitive to read. Note that to access the individual x and y properties of a `PVector`, we write the name of the variable with a dot, followed by `x` or `y`. We do this when we need to access the individual values, such as for our "walls." On the other hand, when we update the `position` with `velocity` we can just do so all at once, ie, `position += velocity`.
+This code is slightly simpler and more intuitive to read, but is essentially the same thing. Note that to access the individual x and y properties of a `PVector`, we write the name of the variable with a dot, followed by `x` or `y`. We do this when we need to access the individual values, such as for our "walls." On the other hand, when we update the `position` with `velocity` we can just do so all at once, ie, `position += velocity`.
 
-Vectors are actually quite powerful. Say we wanted this ball to not only move on its own and bounce off the walls, but to follow the mouse. We can represent the mouse position (the ball's desired position) as a vector like this:
+Vectors let us phrase complex calculations rather simply. Say we wanted this ball to not only move on its own and bounce off the walls, but to also chase the mouse. We can represent the mouse position as a vector like this:
 ```py
-desired_position = PVector(mouseX, mouseY)
+mouse_position = PVector(mouseX, mouseY)
 ```
-The difference between the current position and the desired position, which is the direction we want the ball to turn, is then:
+The difference between `mouse_position` and the ball's `position` is the direction we want the ball to go. This is simply:
 ```py
-turn = desired_position - position
+direction = mouse_position - position
 ```
-How fast do we want it to turn? In this example, we initialized velocity with 1 and 1.2 for the horizontal and vertical aspects, respectively, so a turn velocity of around 2 is probably reasonable (as opposed to something like 100). The overall strength of a vector (ie, the x and y components taken together) is called the magnitude. To set it, we use `setMag()`:
+How fast do we want it to go in this direction? The overall strength of a vector (ie, the x and y components taken together) is called the magnitude. So let's make a `chase_velocity` vector from `direction` with a `setMag()` of 2:
 ```py
-turn.setMag(2)
+chase_velocity = direction.setMag(2)
 ```
 
-That's it—a little math with vectors, and the ball will chase the mouse (in addition to bounce off the walls) if we set `velocity` to our new `turn`:
+That's it—a little math with vectors, and the ball will flee the mouse (in addition to bounce off the walls) if we set `velocity` to our new `repel_velocity`:
 
 ```py
 position = PVector(200, 150)
@@ -182,16 +223,24 @@ def draw():
     circle(position.x, position.y, 50)
     position += velocity
 
-    # update velocity to follow the mouse
-    desired_position = PVector(mouseX, mouseY)
-    turn = desired_position - position
-    turn.setMag(4)
-    velocity = turn_direction   
+    # update velocity to cahse the mouse
+    mouse_position = PVector(mouseX, mouseY)
+    direction = mouse_position - position
+    chase_velocity = direction.setMag(2)
+    velocity = chase_velocity   
 
     # update velocity to bounce off the walls
-    if position.x > width - 25 or position.x < 0 + 25:
+    if position.x > width - 25:
+        position.x = width -25
         velocity.x *= -1
-    if position.y > height - 25 or position.y < 0 + 25:
+    elif position.x < 25:
+        position.x = 25
+        velocity.x *= -1        
+    if position.y > height - 25:
+        position.y = height - 25
+        velocity.y *= -1
+    elif position.y < 25:
+        position.y = 25
         velocity.y *= -1
 
 ```
@@ -199,7 +248,7 @@ def draw():
   <img src="code/canvas_5.gif" width=400 /><br />
 </p>
 
-We can do a little better than this, however. Objects in the physical world have inertia, that is, they don't stop on a dime as in our example. To add something that approximates that reality, instead of assigning `velocity` to `turn` outright, let's just give it a percentage of `turn` added to the direction it was going before. This yields a much nicer effect:
+We can do a little better than this, however. Objects in the physical world have inertia, that is, they don't stop on a dime as in our example. To add something that approximates that reality, instead of assigning `velocity` to `chase_velocity` outright, let's just give it a percentage of `chase_velocity` added to the direction it was going before. This yields a much nicer effect:
 
 ```py
 position = PVector(200, 150)
@@ -218,39 +267,38 @@ def draw():
     # update position
     position += velocity
 
-    # update velocity to follow the mouse
-    desired_position = PVector(mouseX, mouseY)
-    turn = desired_position - position
-    turn.setMag(4)
-    # 1% turn and 99% previous velocity
-    velocity = (turn * 0.01) + (velocity * .99)
+    # update velocity to cahse the mouse
+    mouse_position = PVector(mouseX, mouseY)
+    direction = mouse_position - position
+    chase_velocity = direction.setMag(2)
+    # 1% chase_velocity and 99% previous velocity
+    velocity = (chase_velocity * 0.01) + (velocity * .99)
 
     # update velocity to bounce off the walls
-    if position.x > width - 25 or position.x < 0 + 25:
+    if position.x > width - 25:
+        position.x = width -25
         velocity.x *= -1
-    if position.y > height - 25 or position.y < 0 + 25:
+    elif position.x < 25:
+        position.x = 25
+        velocity.x *= -1        
+    if position.y > height - 25:
+        position.y = height - 25
+        velocity.y *= -1
+    elif position.y < 25:
+        position.y = 25
         velocity.y *= -1
 
 ```
-By changing the magnitude of `turn` and the percentages with which we update `velocity`, we can change the character of the motion of the ball.
+By changing the magnitude of `chase_velocity` and the percentages with which we update `velocity`, we can change the character of the motion of the ball.
 
 
 <p align="center">
   <img src="code/canvas_6.gif" width=400 /><br />
 </p>
 
-Seems like a lot of work to just make a ball move. However, there is already a lot of expressive potential in this.
-
-Consider the following example, which could be used in a drawing interface from last unit. Most of the code is the same as above, except instead of clearing our tracks every frame with `background()`, we're letting things accumulate in order to make a brush when `mousePressed` is down. We've gotten rid of the walls. And we're adjusting the weight of the brush according to the velocity, the parameters of which we've tweaked. Those small aesthetic details give us an interesting tool, where the faint red line is the mouse movement and the computer generates an "accompaniment":
-
-
-<p align="center">
-  <img src="code/canvas_7.gif" width=400 /><br />
-</p>
-
 ### Objects
 
-Returning to our ball example, we may think a single bouncing ball is cool, but what we really want to do, of course, is to have lots of bouncing balls.
+We may think a single bouncing ball is cool, but what we really want to do, of course, is to have lots of bouncing balls.
 
 From what we know so far, we might approach that by making a lot of variables by hand, one for each ball. Something like:
 
@@ -308,7 +356,7 @@ class Ball():
 
 The big difference here is the use of this magic keyword `self`, which binds these variables to the Ball class and makes unique versions of them for each ball object we create.
 
-Likewise, `draw()` here is equivalent to our typical `draw()`, but it's just for this object. We put in all the code that applies to a particular ball and attach the variables to `self`. We'll make the ball just 30 pixels in diameter this time:
+Likewise, `draw()` here is equivalent to our typical `draw()`, but it's just for this object. We put in all the code that applies to a particular ball and attach `self` in front of all the variables. We'll make the ball just 30 pixels in diameter this time:
 ```py
 class Ball():
 
@@ -321,10 +369,18 @@ class Ball():
         circle(self.position.x, self.position.y, 30)
         # update its position and velocity
         self.position += self.velocity
-        if self.position.x > width - 15 or self.position.x < 0 + 15:
+        if self.position.x > width - 15:
+            self.position.x = width - 15
             self.velocity.x *= -1
-        if self.position.y > height - 15 or self.position.y < 0 + 15:
-            self.velocity.y *= -1    
+        elif self.position.x < 15:
+            self.position.x = 15
+            self.velocity.x *= -1        
+        if self.position.y > height - 15:
+            self.position.y = height - 15
+            self.velocity.y *= -1
+        elif self.position.y < 15:
+            self.position.y = 15
+            self.velocity.y *= -1
 ```
 
 How does this fit with the rest of a Processing sketch? Well, the whole point here is that we're going to create a lot of bouncing balls. So before anything else, we're going to create a list to hold them:
@@ -392,16 +448,24 @@ class Ball():
         circle(self.position.x, self.position.y, 30)
         # update its position and velocity
         self.position += self.velocity
-        if self.position.x > width - 15 or self.position.x < 0 + 15:
+        if self.position.x > width - 15:
+            self.position.x = width - 15
             self.velocity.x *= -1
-        if self.position.y > height - 15 or self.position.y < 0 + 15:
-            self.velocity.y *= -1    
+        elif self.position.x < 15:
+            self.position.x = 15
+            self.velocity.x *= -1        
+        if self.position.y > height - 15:
+            self.position.y = height - 15
+            self.velocity.y *= -1
+        elif self.position.y < 15:
+            self.position.y = 15
+            self.velocity.y *= -1
 ```            
 <p align="center">
   <img src="code/canvas_8.gif" width=400 /><br />
 </p>
 
-Now, in a relatively concise bit of code, we've created a whole group of balls doing their own things on the canvas. A little tweaking to how the shapes are drawn, but keeping the logic the same, can yield some aesthetic results:
+Now, in a relatively concise bit of code, we've created a whole group of balls doing their own things on the canvas. A little tweaking to how the shapes are drawn, but keeping the logic the same, can yield some aesthetically pleasing results:
 <p align="center">
   <img src="code/canvas_9.gif" width=400 /><br />
 </p>
@@ -410,14 +474,106 @@ Now, in a relatively concise bit of code, we've created a whole group of balls d
   <img src="code/canvas_10.gif" width=400 /><br />
 </p>
 
+(Tip: both of these examples use a very transparent `rect()`, drawn every frame to create the fading effect.)
 
 ### Emergence
 
 Motion, vectors, and objects. This has been a lot to absorb so far. But we're finally ready to look at a really fascinating thing that happens when all of these come together. And that is emergent behavior.
 
-To consider the example with the bouncing balls, the thing that we've left out is having the balls interact with one another, just like we had one ball interact with the mouse. Think about the possibilities: the balls might collide and bounce off one another, try to steer and avoid each other, follow each other, move in the same direction, or any number of other possibilities.
+To consider the example with the bouncing balls, the thing that we've left out is having the balls interact with one another, just like we had one ball interact with the mouse. Think about the possibilities: the balls might collide and bounce off one another, be attracted to each other, be repelled from each other, or just move in the same direction.
 
-When multiple objects follow the same set of rules ... emergence
+When multiple objects follow the same set of simple rules, complex effects can result. Even without the use of `random()`, we can get unpredictable and beautiful results.
+
+The first thing we'll want to do when considering the interaction between the different objects is to calculate their distance from one another. `PVectors` make this easy, with their `.dist()` method.
+
+Putting the following in `Ball.draw()` will create a list with the distances between this ball and every other ball:
+```py
+distances = []
+for i in range(len(balls)):
+    ball = balls[i]
+    distances.append(self.position.dist(ball.position))
+```
+
+Now that we've done these distance calculations, we can use them to determine the appropriate interaction.
+
+To begin with, balls are colliding if they are within their diameter of one another. So, also in `Ball.draw()`:
+
+```py
+for i in range(len(balls)):
+    ball = balls[i]
+    if ball != self and distances[i] <= 30:
+        ??
+```
+"Collision" is in essence abrupt repulsion (with no inertia!). From our previous example with the mouse and just one ball, we already have the formula for chasing. Repulsion is very similar, it's just a matter of subtracting the other ball's position from the current ball's position instead of the other way around. Kind of -- this is an approximation that doesn't take into account the shape of the objects, but it's good enough for now. To make it slightly more realistic, we'll also swap the magnitude of the velocity for that of the other balls:
+
+```py
+for i in range(len(balls)):
+    ball = balls[i]
+    if ball != self and distances[i] <= 30:
+        direction = self.position - ball.position
+        repulsion = direction.setMag(ball.velocity.mag())
+        self.velocity = repulsion
+```
+
+Even better—what if the balls tried to avoid each other to begin with? We can keep the collision code for distances under 30, but let's add something else for if it's under, say, 50:
+
+```py
+for i in range(len(balls)):
+    ball = balls[i]
+
+    # collide
+    if ball != self and distances[i] <= 30:
+        direction = self.position - ball.position
+        repulsion = direction.setMag(ball.velocity.mag())
+        self.velocity = repulsion
+
+    # repel
+    elif ball != self and distances[i] <= 50:
+        direction = self.position - ball.position
+        repulsion = direction.setMag(4)
+        self.velocity = (repulsion * 0.01) + (self.velocity * .99)    
+```
+
+<p align="center">
+  <img src="code/canvas_13.gif" width=400 /><br />
+</p>
+
+Good times. The balls still collide if they have to, but they'll try to avoid it. What about attraction? Same thing, but again just flipping the order of the objects in the direction vector. Let's add this one as well, but for distances over 50 and less than 100. And it will have to be at a lesser magnitude than avoidance:
+
+```py
+for i in range(len(balls)):
+    ball = balls[i]
+
+    # collide
+    if ball != self and distances[i] <= 30:
+        direction = self.position - ball.position
+        repulsion = direction.setMag(ball.velocity.mag())
+        self.velocity = repulsion
+
+    # repel
+    elif ball != self and distances[i] <= 50:
+        direction = self.position - ball.position
+        repulsion = direction.setMag(4)
+        self.velocity = (repulsion * 0.01) + (self.velocity * .99)
+
+    # attract
+    elif ball != self and distances[i] > 50 and distances[i] < 100 :
+        direction = ball.position - self.position
+        attraction = direction.setMag(1)
+        self.velocity = (attraction * 0.01) + (self.velocity * .99)             
+```
+
+<p align="center">
+  <img src="code/canvas_14.gif" width=400 /><br />
+</p>
+
+Now we're getting into weird territory where groups are forming and moving around on their own -- without any input or randomness beyond the initial layout of balls.
+
+One more interesting relationship is to have the balls follow the general direction of other nearby balls. This quality, often called alignment, is associated with so-called "flocking" algorithms.
+
+
+
+
 
 parameters
 
