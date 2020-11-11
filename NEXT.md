@@ -99,6 +99,34 @@ rather than mouseClicked
 
 all their buttons were terrible, so we need a better example of button interfaces (maybe Audrey's instrument from the first addition)
 
+### Animation
+
+Need to build this out.
+
+history could include early abstract animation stuff
+
+things moving based on changing parameters is one thing
+
+but also cumulative drawing is another, and that's something I didnt really explore (could now?)
+
+basic non-object oriented animation. that's the thing. maybe the ball isn't even the best demo, and that should be saved for emergence. like, forget the conditions stuff now. just explore cumulative drawing
+
+using frameCount and % is actually very effective, as opposed to variables.
+
+
+what is this one? something with time, no?
+
+I don't like that animation begins with a physics simulation
+
+
+on some level, I wonder if classes should come before animation, so that all this variable stuff doesn't suck so bad
+
+like, why would you do this.
+
+(could have them make a character, and then use it?)
+
+
+
 ### Emergence
 
 exercise:
@@ -108,6 +136,8 @@ wrap and bounce
 ###
 
 missing map
+
+apparently globals can be declared inside setup. that makes a big difference for clarity.
 
 
 ## General
@@ -144,7 +174,16 @@ M-M repetition
 
 so then we have an extra week later for ANIMATION or something, prior to EMERGENCE
 
+--->
+animation is perhaps not interesting at all, particularly since the results will necessarily be so basic.
 
+likewise, I wonder if Classes really are essential to teach at this point.
+
+what if emergence is first? and it's not emergence as I understood it, but something like L-systems?
+
+and then glitch
+
+and then interface is the culmination
 
 
 ## Omissions

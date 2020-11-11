@@ -12,7 +12,9 @@
 
 ## Code
 
-The introduction of the previous unit, **interface**, brought us the possibility of animation. While brushes are a form of animation, they're not one that simulates autonomous elements moving on their own, which is what we're going to explore now. In addition to providing a means of creating animated effects, this also introduces the possibility of creating dynamic systems that don't need direct human input to create rich and surprising images.
+The introduction of the previous unit, **interface**, brought us the possibility of animation with the introduction of the `draw()` function. While brushes are a form of animation, our emphasis was on using the mouse coordinates and cumulatively layering. But by clearing the canvas each frame, we can create motion graphics
+
+ they're not one that simulates autonomous elements moving on their own, which is what we're going to explore now. In addition to providing a means of creating animated effects, this also introduces the possibility of creating dynamic systems that don't need direct human input to create rich and surprising images.
 
 
 ### Motion
