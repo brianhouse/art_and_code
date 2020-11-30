@@ -83,6 +83,19 @@ etheree poem   as example
 
 textwrap() import function
 
+/
+
+having the template was a pain in the ass for file management. not worth it. no one used rhyme.
+
+is there a library already that can be used?
+
+is there not an English dictionary with syllable number in existence? that's not nltk?
+https://pypi.org/project/Vocabulary/
+
+if not, do it without. maybe more on analysis, look more closely at Listening Post.
+
+https://www.nytimes.com/2020/11/24/science/artificial-intelligence-ai-gpt3.html?referringSource=articleShare
+
 
 ### Interface
 
@@ -131,6 +144,19 @@ like, why would you do this.
 
 exercise:
 wrap and bounce
+
+
+##### NEW PLAN
+
+... recombination -> emergence -> glitch -> interface
+skip OOP. emergence is get() pixel based. culminates in interface, which focuses on mouse interaction rather than buttons.
+
+
+for repetition and indeterminacy, have tight constraints, ie
+
+"use 4 for loops"
+
+and a thematic prompt -- (maybe get from that learning to draw book from agnes)
 
 
 ###
