@@ -59,8 +59,8 @@ Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/under
 
 ### Land Acknowledgement
 The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Clackamas, Tumwater, Watalala bands of the Chinook, the Tualatin Kalapuya, and other indigenous nations of the Columbia River, and we are here because of the sacrifices forced upon them. Furthermore, we are at an institution named after white colonizers in a city with a racist history. As artists working in Digital Media, we must be aware of and resist the many ways computation capitalizes upon and perpetuates violence toward marginalized people.
-
----
+&nbsp;  
+&nbsp;  
 
 ## Schedule
 
@@ -199,10 +199,6 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 
 #### Thursday 11/19
 - Crit Sketch #6
-
----
-#### Thanksgiving Break
----
 
 ### Week 13
 

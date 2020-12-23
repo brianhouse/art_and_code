@@ -14,6 +14,7 @@
 - Ranjit Bhatnagar
 - R. Luke DuBois
 - Kelly Dobson
+- Nandita Kumar
 - Karolina Sobecka
 - Paulo Criolo
 - Mimi Onuoha
