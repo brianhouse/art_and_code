@@ -1,14 +1,14 @@
 # ART 112: DIGITAL MEDIA I
 
-Tuesday / Thursday 8:50–11:20, ~~Fields 205~~ [Zoom](https://us02web.zoom.us/j/7372690628)  
-Course materials on [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz)
+Monday / Wednesday 8:50–11:20 and 12:40–3:10, Fields 205
+Course materials on [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3)
 
 Prof. Brian House (he/him/his), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
-Office hours TR 11:30–12:30 on [Zoom](https://us02web.zoom.us/j/7372690628)
+Office hours MW 11:20–12:00 and 3:15–4:00
 
 
 ## Course Description
-Introduction to the aesthetics and form of digital media. By writing code to generate graphics and text, students will explore the qualities intrinsic to artistic expression with computers such as nonlinearity, indeterminacy, glitch, and emergence. Accompanying critical discussion will consider key practitioners in the field. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
+Introduction to the form and aesthetics of digital media. By writing code to generate graphics and text, students will explore the qualities intrinsic to artistic expression with computers such as nonlinearity, indeterminacy, and emergence. Accompanying critical discussion will consider key practitioners in the field. Through progressive weekly projects, students will gain a foundation for working with code in art. Designed for students with little to no programming experience.
 
 
 #### Objectives:
@@ -22,16 +22,14 @@ Introduction to the aesthetics and form of digital media. By writing code to gen
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **encoding**, **indeterminacy**, **nonlinearity**, **recombination**, **interface**, **emergence**, and **glitch**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of variables and loops. We will begin each one during class time, and you will (usually) complete them as homework. All work will be submit online through [Google Classroom](https://classroom.google.com/u/0/c/MTE4NTU1MDI3MTIz) in the form specified by the assignment. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
+This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **transformation**, **emergence**, **interactivity**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due—no late work is accepted, as it will be graded during the crit. Sketches will be evaluated on both concept and craft.
+All work will be submit online through [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3) in the form specified by the assignment; all files must include your name in the filename. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
+
+Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due—no late work is accepted, as it will be graded during the crit. Sketches will be evaluated on both craft and concept.
 
 ### Survey presentations
 Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
-
-
-### COVID-19 Alterations
-This course will be entirely online for Fall 2020 to provide a consistent experience and accommodate immunocompromised members of the community.
 
 
 ## Policies
@@ -57,7 +55,7 @@ If you have a disability that may impact your academic performance, you may requ
 ### Academic Integrity
 Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/undergraduate/policiesprocedures/academicintegrity/) available on the College's 'Policies and Procedures' webpage. The work submitted in Digital Media courses must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
 
-### Land Acknowledgement
+### Settler Responsibility
 The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Clackamas, Tumwater, Watalala bands of the Chinook, the Tualatin Kalapuya, and other indigenous nations of the Columbia River, and we are here because of the sacrifices forced upon them. Furthermore, we are at an institution named after white colonizers in a city with a racist history. As artists working in Digital Media, we must be aware of and resist the many ways computation capitalizes upon and perpetuates violence toward marginalized people.
 &nbsp;  
 &nbsp;  
@@ -66,156 +64,156 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 
 ### Week 1
 
-#### Tuesday 9/1
+#### Monday 8/30
 - Introduction
 - In-class Sketch #0: Algorithm
 - **Homework for next class**: [Get set up](getting_started.md) with Python Mode for Processing
 
-#### Thursday 9/3
-- Begin [Sketch #1: Encoding Space](units/1_encoding/description.md)
-- Drawing with coordinates
+#### Wednesday 9/1
+- Intro, [Coordinates](units/1_coordinates/lecture.md)
+- Begin [Sketch #1](units/1_coordinates/assignment.md)
 
 
 ### Week 2
 
-#### Tuesday 9/8
+#### Monday 9/6
+Labor day, no class
+
+#### Wednesday 9/8
 - Explanation of [artist descriptions](resources/description_guidelines.md)
 - Review, questions, and work time
-
-#### Thursday 9/10
-- Explanation of [crit guidelines](resources/crit_guidelines.md)
-- Crit Sketch #1
 
 
 ### Week 3
 
-#### Tuesday 9/15
-- Begin [Sketch #2: Indeterminacy](units/2_indeterminacy/description.md)
-- Random parameters and loops
+#### Monday 9/13
+- Explanation of [crit guidelines](resources/crit_guidelines.md)
+- Crit Sketch #1
+- Intro, [Repetition](units/2_repetition/lecture.md)
 
-#### Thursday 9/17
-- Review, questions, and work time
+
+#### Wednesday 9/15
 - Artist presentations 1
+- Begin [Sketch #2](units/2_repetition/assignment.md)
+- Questions and work time
 
 
 ### Week 4
 
-#### Tuesday 9/22
-- Sharing in-progress work, questions, and work time
-- Artist presentations 2
-
-#### Thursday 9/24
+#### Monday 9/20
 - Crit Sketch #2
-- **Homework for next class**: play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
+- Intro, [Indeterminacy](units/3_indeterminacy/lecture.md)
+
+#### Wednesday 9/22
+- Begin [Sketch #3](units/3_indeterminacy/assignment.md)
+- Questions and work time
 
 
 ### Week 5
 
-#### Tuesday 9/29
-<!-- - Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
-- Strings, variables, conditionals, and custom functions -->
-- Cancelled
+#### Monday 9/27
+- Crit Sketch #3
+- Play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
 
-#### Thursday 10/1
-<!-- - Review, questions, and work time
-- Artist presentations 3 -->
-- Begin [Sketch #3: Nonlinearity](units/3_nonlinearity/description.md)
-- Strings, variables, conditionals, and custom functions
+#### Wednesday 9/29
+- Intro, [Nonlinearity](units/4_nonlinearity/lecture.md)
+- Begin [Sketch #4](units/4_nonlinearity/assignment.md)
 
 
 ### Week 6
 
-#### Tuesday 10/6
-<!-- - Sharing in-progress work, questions, and work time
-- Artist presentations 4 -->
-- Sharing in-progress work, questions, and work time
-- Artist presentations 3
+#### Monday 10/4
+- Review, questions, and work time
 
-#### Thursday 10/8
-<!-- - Crit Sketch #3 -->
+#### Wednesday 10/6
 - Sharing in-progress work, questions, and work time
-- Artist presentations 4
 
 
 ### Week 7
 
-#### Tuesday 10/13
+#### Monday 10/11
 - Crit Sketch #4
-- Begin [Sketch #4: Recombination](units/4_recombination/description.md)
-- Arrays
+- Intro, [Recombination](units/5_recombination/lecture.md)
 
-#### Thursday 10/15
-- Review, questions, and work time
-- Artist presentations 5
+#### Wednesday 10/13
+- Begin [Sketch #5](units/5_recombination/assignment.md)
+- Questions and work time
 
 
 ### Week 8
 
-#### Tuesday 10/20
-- Sharing in-progress work, questions, and work time
-- Artist presentations 6
+#### Monday 10/18
+- Review, questions, and work time
 
-#### Thursday 10/22
-- Crit Sketch #4
+#### Wednesday 10/20
+- Sharing in-progress work, questions, and work time
 
 
 ### Week 9
 
-#### Tuesday 10/27
-- Begin [Sketch #5: Interface](units/5_interface/description.md)
-- Using the mouse and keyboard, variable math
+#### Monday 10/25
+- Crit Sketch #5
+- Intro, [Transformation](units/6_transformation/lecture.md)
 
-#### Thursday 10/29
-- Review, questions, and work time
-- Artist presentations 7
+#### Wednesday 10/27
+- Begin [Sketch #6](units/6_transformation/assignment.md)
+- Questions and work time
 
 
 ### Week 10
 
-#### Tuesday 11/3
+#### Monday 11/1
 - Sharing in-progress work, questions, and work time
 - Artist presentations 8
 
-#### Thursday 11/5
-- Crit Sketch #5
+#### Wednesday 11/3
+- Crit Sketch #6
+- Intro, [Emergence](units/7_emergence/lecture.md)
 
 
 ### Week 11
 
-#### Tuesday 11/10
-- Begin [Sketch #6: Animation](https://github.com/brianhouse/ART112/blob/master/units/6_animation/description.md)
-<!-- [Sketch #6: Emergence](units/6_emergence/description.md) -->
-- Objects and animation
+#### Monday 11/8
+- Begin [Sketch #7](units/7_emergence/assignment.md)
+- Questions and work time
 
-#### Thursday 11/12
-- Make-up presentations
+#### Wednesday 11/10
 - Review, questions, and work time
 
 
 ### Week 12
 
-#### Tuesday 11/17
+#### Monday 11/15
 - Sharing in-progress work, questions, and work time
 
-#### Thursday 11/19
-- Crit Sketch #6
+#### Wednesday 11/17
+- Crit Sketch #7
+- Intro, [Interface](units/8_interface/lecture.md)
 
 ### Week 13
 
-#### Tuesday 12/1
-- Begin [Sketch #7: Glitch](units/7_glitch/description.md)
-- Deconstructing bytes
+#### Monday 11/22
+- Begin [Sketch #8](units/8_interface/assignment.md)
+- Questions and work time
 
-#### Thursday 12/3
+#### Wednesday 11/24
 - Review, questions, and work time
 
 
 ### Week 14
 
-#### Tuesday 12/8
-- Course evaluations
-- Crit Sketch #7
-- Start final print
+#### Monday 11/29
+- Sharing in-progress work, questions, and work time
+
+#### Wednesday 12/1
+- Crit Sketch #8
+- TBD
+
+### Week 15
+
+#### Monday 12/6
+- TBD
+
 
 ### Finals Week
-- Final prints due
+- Final presentations

@@ -3,26 +3,8 @@ Do small group screen sharing for intermediate feedback
 
 ## Organization
 
-0 is the getting started and an online intro
-1 is algorithm
+- have a rubric for the presentations also
 
-
-just have indeterminacy and repetition as two distinct units, with one assignment
-
-introduce each on subsequent days
-
-
-have a different rubric
-have a rubric for the presentations also
-
-dont have assignment text in Classroom, so they have to go to the actual site
-
-no late work is accepted
-
-/
-
-didnt really get functions that return things
-didnt get dictionaries
 
 ## Units
 
@@ -112,51 +94,19 @@ rather than mouseClicked
 
 all their buttons were terrible, so we need a better example of button interfaces (maybe Audrey's instrument from the first addition)
 
-### Animation
+[
+focus on the brushes as much as possible.
 
-Need to build this out.
+the internal variable is confusing. switch it to a number. mode = 4
+]
 
-history could include early abstract animation stuff
-
-things moving based on changing parameters is one thing
-
-but also cumulative drawing is another, and that's something I didnt really explore (could now?)
-
-basic non-object oriented animation. that's the thing. maybe the ball isn't even the best demo, and that should be saved for emergence. like, forget the conditions stuff now. just explore cumulative drawing
-
-using frameCount and % is actually very effective, as opposed to variables.
-
-
-what is this one? something with time, no?
-
-I don't like that animation begins with a physics simulation
-
-
-on some level, I wonder if classes should come before animation, so that all this variable stuff doesn't suck so bad
-
-like, why would you do this.
-
-(could have them make a character, and then use it?)
-
-
+focuses on mouse interaction rather than buttons. duet.
 
 ### Emergence
 
 exercise:
 wrap and bounce
-
-
-##### NEW PLAN
-
-... recombination -> emergence -> glitch -> interface
-skip OOP. emergence is get() pixel based. culminates in interface, which focuses on mouse interaction rather than buttons.
-
-
-for repetition and indeterminacy, have tight constraints, ie
-
-"use 4 for loops"
-
-and a thematic prompt -- (maybe get from that learning to draw book from agnes)
+emergence is get() pixel based
 
 
 ###
@@ -170,53 +120,24 @@ apparently globals can be declared inside setup. that makes a big difference for
 
 Maybe there is an "elaboration" section for each of these. So for nonlinearity, it's using variables to carry objects.
 
-have them read the intro/tutorial prior to class
-then class discuss the artistic examples, review the code, and do exercises
-
 separate the assignment from the tutorial
 
 functions that return things
 
 have the cheat sheet link to sections in the tutorials
 
-new grading structure based on Allisons? can extrapolate beyond the examples be part of it?
-
 I want it to click in terms of programming, but have to be ok if it doesn't for everyone. but the problem-solving aspect should be a part of it, that's what's missing for them, the mentality of making it work.
-
-why are they so bad at file management. it's google's fault.
-
 
 table crits where I give actual individual feedback, just not in front of the room
 
-/
-
-for loops (REPETITION) is actually really important. most generative examples fit in that zone.
-
-so to make room, the early assignments can be cut down. dont need a week and a half for encoding. crit and intro could happen on the same day. so 4 weeks for encoding and indeterminacy could be:
-
-M-M encoding
-M-M indeterminacy
-M-M repetition
-
-so then we have an extra week later for ANIMATION or something, prior to EMERGENCE
-
---->
-animation is perhaps not interesting at all, particularly since the results will necessarily be so basic.
-
-likewise, I wonder if Classes really are essential to teach at this point.
-
-what if emergence is first? and it's not emergence as I understood it, but something like L-systems?
-
-and then glitch
-
-and then interface is the culmination
-
-
-## Omissions
-
-islamic art
+for each assignment, there is a problem-solving aspect.
 
 
 ## future
 
 https://p5.readthedocs.io/en/latest/index.html
+
+
+## visitors
+
+Afroditi
