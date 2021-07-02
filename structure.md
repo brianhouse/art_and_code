@@ -1,4 +1,4 @@
-## Units
+## Content structure
 - Concept
 - Context
     - Non-digital art history
@@ -6,6 +6,7 @@
 - Code (Craft)
     - refs
     - examples
+    - + initial in-class exercise
     - + advanced bonus
 - Assignment
 
@@ -32,7 +33,7 @@
     - Improvised additional examples
 
 * 4: Crits
-    - 5min/student max and we're out
+    - 5min/student
         - Assignments come in over Google Drive—images must be labeled with your name, a separate google doc with your artist description
         - I do it up front, the student reads their description, get feedback (at least two comments from everyone, and I'm going to coach that. ie: ok, what do people think is particularly strong? what do people think could be improved?)
         - Exceptions
@@ -41,44 +42,11 @@
             - Interface is table crit, playing
 
 
-Crits won't take the whole class time. So after crits, the lecture for the next section begins, which gets taken up the next class.
+Crits won't take the whole class time. So after crits, the lecture for the next section begins, which gets taken up the next class as necessary.
 
 
 
-## Todo
-- need some way to have text-based slides
-    https://ashwinschronicles.github.io/beamer-slides-using-markdown-and-pandoc
-    https://gitlab.com/da_doomer/markdown-slides
-    the issue is presentation notes
-    https://pandoc.org/MANUAL.html#speaker-notes
-    so I generate a ppt and open in keynote? a little roundabout, but works
-    advantage being the notes also stay as markdown and can be reviewed online
-- in-class exercise for each programming topic
-- fill out all units
-- cheat sheet for Python Mode
-- separate assignment from the lecture
-
-
-#### submitting video
-
-Interface, emergence, and (maybe) glitch are the only assignments that are animated. so at that point, will have to figure out image sequence saving. actually, it doesn't matter for interface—can just have the result. so really, emergence is the only one, and that actually fits pedagogically. great.
-
-
-#### content
-
-https://twitter.com/the_ephemerides
-
-- Survey presentations 1: Lynn Hershman Leeson, Alison Parrish
-
-
-
-#### discussion
-
-wait, so all of this can be done without events. in non-interactive mode. is that awesome? or no?
-
-
-
-#### UNITS
+## UNITS
 28 classes + exam
 ALGORITHM                      1
 COORDINATES                    3     -- coordinates + built-in drawing functions

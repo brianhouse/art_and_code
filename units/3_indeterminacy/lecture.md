@@ -1,25 +1,10 @@
 # Indeterminacy
 
-<!--
-class 3:
-- in groups,
-- get feedback on your concept and aesthetics
-- share your code and show how you've done things
-- help each other
-- think of how you'll change what you're doing in response to feedback
--->
-## Sketch #2
-
-In this sketch, you will explore indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two). Use shapes together with loops (use more than one) and the `random` function. Pay special attention to layering. Not all parameters should be random, and by being intentional about the ranges of numbers you choose, create a sense of structure or composition in your image.
-
-Turn in the contents of your sketch folder to Google Classroom (first remember to save it, include `save("output.png")` as the last line of your sketch to make sure an image file is present, and run it a few times until you get a version you like). In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.
-
-
 ## Concept
 
 The physical world is very complex—so much so that it is never fully predictable. From the shape of a leaf to the gait of an animal to the words you use to express a thought, variation is intrinsic to reality. This is intuitive to artmaking in physical mediums. When a paintbrush flows against a canvas, the individual hairs move in a way that creates texture; when musicians play a score, the air responds dynamically to create rich timbres.
 
-Digital media, however, encode everything in numbers. As we saw in the last unit, this can entail defining everything very precisely, rather than intuitively relying on the indeterminate properties of the medium. But to manually reproduce the degree of variation we see in nature would be tedious, if not impossible.
+Digital media, however, encode everything in numbers. As we saw previously with coordinates, this can entail defining everything very precisely, rather than intuitively relying on the indeterminate properties of the medium. But to manually reproduce the degree of variation we see in nature would be tedious, if not impossible.
 
 However, algorithms have been developed to simulate "random"—e.g. unpredictable—numbers. Such indeterminacy can be used to create variation on forms that simulates the dynamics of the physical world, or at least expands the possibilities of what can be automatically generated in digital imagery.
 
@@ -28,10 +13,7 @@ However, algorithms have been developed to simulate "random"—e.g. unpredictabl
 
 ### Non-digital
 
-<!--
-how else do we generate randomness other than with a computer?
-- dice / coins / shuffling gambling in general
--->
+How do we generate randomness without a computer? Consider dice, flipping coins, shuffling cards...
 
 Algorithms for working with indeterminacy have been an important part of artmaking even without electronic computers. The [Dada](https://en.wikipedia.org/wiki/Dada) movement, for example, developed the "chance collage" technique, in which artists dropped scraps of paper onto a larger sheet and pasted them wherever they landed. This method of embracing chance was a reaction against the ideologies of power and control that had led to the outbreak of WWI in Europe in the late 1910s.
 
@@ -57,7 +39,7 @@ Of course, incorporating nonhuman agency is another way of relinquishing a degre
 
 ### Digital
 
-When it comes to computers, one way of generating random numbers is to measure some chaotic physical phenomena, like cosmic background radiation, and incorporating those numbers into a program. This can be done directly with sensors or via copying them from a published reference like [_A Million Random Digits_](https://www.youtube.com/watch?v=bvLD54GnOTk) which was created by the RAND corporation for this purpose in 1955.
+When it comes to computers, one way of generating random numbers is to measure some chaotic physical phenomena, like cosmic background radiation, and incorporating those numbers into a program. This can be done directly with sensors or via copying a previously generated series of numbers from a published reference like [_A Million Random Digits_](https://www.youtube.com/watch?v=bvLD54GnOTk), which was created by the RAND corporation for this purpose in 1955.
 
 A more clever way that we use today is a "pseudo-random number generator," an algorithm that takes a "seed" (like the current time) and [elaborates upon it](https://en.wikipedia.org/wiki/Mersenne_Twister). The resulting numbers are not strictly indeterminate as it is _possible_ to predict them, but for most purposes they are plenty random. Many programming languages (including Python) include a function, usually called `random`, that lets us use these numbers.
 

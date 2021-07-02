@@ -91,7 +91,7 @@ Then, to turn in your sketch, go up to the "Sketch" menu and choose the "Show Sk
   <img src="code/canvas_8.png" width=300 /><br />
 </p>
 
-Inside, you'll find several files: upload all of them to Google Classroom to complete the assignment.
+Inside, you'll find several files: upload all of them to Google Classroom to complete the assignment (for future assignments, you will also create a Google Doc with a title and description for your sketch, but you don't have to do that now).
 
 <p align="center">
   <img src="code/canvas_9.png" width=500 /><br />

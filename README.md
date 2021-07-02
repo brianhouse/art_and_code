@@ -24,9 +24,7 @@ Introduction to the form and aesthetics of digital media. By writing code to gen
 ### Sketches
 This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **transformation**, **emergence**, **interactivity**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
-All work will be submit online through [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3) in the form specified by the assignment; all files must include your name in the filename. Sketches must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class.
-
-Sketches cumulatively account for 90% of your final grade. In order to receive credit for your sketch, you must upload it *before* the class when it is due—no late work is accepted, as it will be graded during the crit. Sketches will be evaluated on both craft and concept.
+Sketches cumulatively account for 90% of your final grade. They must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3) *prior* to the crit—no late work is accepted. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
 
 ### Survey presentations
 Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
@@ -68,8 +66,11 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 - Introduction
 - In-class Sketch #0: Algorithm
 - **Homework for next class**: [Get set up](getting_started.md) with Python Mode for Processing
+- Going forward, use the [Python for Processing Cheat Sheet](resources/processing_cheat_sheet.md) for reference
 
 #### Wednesday 9/1
+<!-- confirm everyone is signed up for a presentation -->
+- Address setup issues
 - Intro, [Coordinates](units/1_coordinates/lecture.md)
 - Begin [Sketch #1](units/1_coordinates/assignment.md)
 
@@ -105,6 +106,7 @@ Labor day, no class
 - Intro, [Indeterminacy](units/3_indeterminacy/lecture.md)
 
 #### Wednesday 9/22
+- Artist presentations 2
 - Begin [Sketch #3](units/3_indeterminacy/assignment.md)
 - Questions and work time
 
@@ -123,6 +125,7 @@ Labor day, no class
 ### Week 6
 
 #### Monday 10/4
+- Artist presentations 3
 - Review, questions, and work time
 
 #### Wednesday 10/6
@@ -136,6 +139,7 @@ Labor day, no class
 - Intro, [Recombination](units/5_recombination/lecture.md)
 
 #### Wednesday 10/13
+- Artist presentations 4
 - Begin [Sketch #5](units/5_recombination/assignment.md)
 - Questions and work time
 
@@ -143,6 +147,7 @@ Labor day, no class
 ### Week 8
 
 #### Monday 10/18
+- Artist presentations 5
 - Review, questions, and work time
 
 #### Wednesday 10/20
@@ -156,6 +161,7 @@ Labor day, no class
 - Intro, [Transformation](units/6_transformation/lecture.md)
 
 #### Wednesday 10/27
+- Artist presentations 6
 - Begin [Sketch #6](units/6_transformation/assignment.md)
 - Questions and work time
 
@@ -164,7 +170,7 @@ Labor day, no class
 
 #### Monday 11/1
 - Sharing in-progress work, questions, and work time
-- Artist presentations 8
+- Artist presentations 7
 
 #### Wednesday 11/3
 - Crit Sketch #6
@@ -178,12 +184,14 @@ Labor day, no class
 - Questions and work time
 
 #### Wednesday 11/10
+- Artist presentations 8
 - Review, questions, and work time
 
 
 ### Week 12
 
 #### Monday 11/15
+- Artist presentations 9
 - Sharing in-progress work, questions, and work time
 
 #### Wednesday 11/17

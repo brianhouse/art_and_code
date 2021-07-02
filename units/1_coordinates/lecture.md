@@ -1,29 +1,10 @@
-# Encoding Space
-
-<!--
-everybody signed up for a presentation?
-intro:
-    - all down to beziers
-    - face exercise
-2nd:
-    - artist descriptions
-    - cheat sheet
-    - beziers + math in params (maybe)
-    - saving images
-3rd:
-    - crit
-        - what is critique, or as we call it, crit? who has participated before?
-        - more than anything it's a chance to get constructive feedback from your peers
-        - the idea of working in a studio together is that we can all see what each other are doing, and benefit from that
-        - Crit Guidelines: constructive criticism
-
--->
+# Coordinates
 
 ## Concept
 
-Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. How this is done is called **encoding**, and it's a quality that is characteristic of all digital media.
+Fundamentally, computers represent the world in numeric form. Whether text, an image, music, seismological observations, or the fingerprint you use to unlock your phone, it's all numbers to the machine. As a result, dealing with numbers on some level is a quality that is characteristic of all digital media.
 
-In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direction_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line." Computers, however, typically represent the concept of "space" through a numeric _coordinate_ system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This is a good example of encoding, because it quantifies something intuitive like physical space into a numeric system that the computer can process.
+In our exercise from last class, a common problem was how to tell the other person _where_ and _in what direction_ on the paper to draw. Some of you may have used words like "the center" as a means of orientation, or even referenced a unit of measurement, like "about two inches from the previous line." Computers, however, typically represent the concept of "space" through a numeric **coordinate** system; a 2-dimensional canvas has a row (x) value and a column (y) value that correspond to _pixels_ (**pi** cture-**el** ements) on the screen. This encoding scheme quantifies something intuitive like physical space into a numeric system that the computer can process.
 
 ## Context
 
@@ -434,48 +415,4 @@ save("output.png")
 </p>
 
 
-Phew, that's a lot to absorb at once. Don't worry, if all of this seems complicated, it will get more intuitive with practice, and we will learn some shortcuts next unit. But for now...
-
-
-## Sketch #1
-
-In this sketch, you will practice with drawing using coordinates. To explore the relationship of digitally encoded "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something of its _digital_-ness. Pay particular attention to your use of color.
-
-Turn in the contents of your sketch folder to Google Classroom. In addition, upload an image of the original painting, and a document that includes your title, the artist and year of the original painting, and a [3-sentence description](../../resources/description_guidelines.md) that explains the choices you made in your reinterpretation.
-
-
-### Examples
-
-Here's some inspiration from last semester, with the original and reinterpreted landscapes side by side:
-
-<br />
-
-<p>
-  <img src="examples/aijaeh_hennessey_1.jpg" width="400" align="left" />
-  <img src="examples/aijaeh_hennessey_2.png" width="400" /><br />
-  Aijaeh Hennessey, <i>No Country</i> (2020)<br />  
-</p>
-
-<br /><br />
-
-<p>
-  <img src="examples/evan_yerian_1.jpg" width="400" align="left" />
-  <img src="examples/evan_yerian_2.png" width="400" /><br />
-  Evan Yerian, <i>Moon and Half-Dome</i> (2020)<br />  
-</p>
-
-<br /><br />
-
-<p>
-  <img src="examples/ellie_villano_1.jpg" width="400" align="left" />
-  <img src="examples/ellie_villano_2.png" width="400" /><br />
-  Ellie Villano, <i>Waves at Matsushima</i> (2020)<br />  
-</p>
-
-<br /><br />
-
-<p>
-  <img src="examples/marvin_pusung-zita_1.png" width="400" align="left" />
-  <img src="examples/marvin_pusung-zita_2.png" width="400" /><br />
-  Marvin Pusung-Zita, <i>Summer Landscape</i> (2020)<br />  
-</p>
+Phew, that's a lot to absorb at once. Don't worry, if all of this seems complicated, it will get more intuitive with practice, and we will learn some shortcuts next unit.

@@ -56,6 +56,7 @@
 ### Random
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
 - `random(high)` generates a number greater than or equal to 0 less than _high_
+- `randomGaussian()` generates a number from a series with a mean of 0 and a standard deviation of 1
 - `choice(list)` select a random item from a list (requires `from random import choice`
 - `shuffle(list)` shuffle a list in place
 
