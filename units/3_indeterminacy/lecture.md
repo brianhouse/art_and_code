@@ -72,7 +72,7 @@ Another notable artist who uses Processing goes by the name [LIA](https://en.wik
 </p>
 
 
-## Code: repetition and variation
+## Code
 
 How do these artists create such complex effects? While there is a lot of craft involved in their code, we can start to create visual artwork that operates similarly with what we already know plus just a few more techniques.
 
