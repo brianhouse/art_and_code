@@ -50,7 +50,7 @@ In the twentieth century, gridded space became an important tool in modernist pr
 
 Grids on contemporary computers, and numeric encoding in computing general, inherit the rationalizing impulse of Enlightenment thought and modernist aesthetics (and even militaristic histories given the post-WWII [origin of the electronic computer in weapons research](https://en.wikipedia.org/wiki/ENIAC)).
 
-However, from early on, artists have co-opted those systems for their own expressive purposes. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt computers as her primary medium. As an artist-in-residence at [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs), Schwartz created paintings and films that made use of pixels defined by screen coordinates, and she expanded and subverted the possibilities of these early graphics systems.
+However, from early on, artists have co-opted those systems for their own expressive purposes. An early example is [Lillian Schwartz](https://en.wikipedia.org/wiki/Lillian_Schwartz), one of the first artists to adopt screen-based graphics as her primary medium. As an artist-in-residence at [Bell Labs](https://en.wikipedia.org/wiki/Bell_Labs), Schwartz created paintings and films that made use of pixels defined by screen coordinates, and she expanded and subverted the possibilities of these early graphics systems.
 
 <p align="center">
   <img src="context/6_schwartz_2.jpg" width=500 /><br />
