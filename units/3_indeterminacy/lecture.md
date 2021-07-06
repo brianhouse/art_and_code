@@ -74,25 +74,7 @@ Another notable artist who uses Processing goes by the name [LIA](https://en.wik
 
 ## Code
 
-How do these artists create such complex effects? While there is a lot of craft involved in their code, we can start to create visual artwork that operates similarly with what we already know plus just a few more techniques.
-
-...but before we do anything else, let's take a second to talk about `print`.
-
-```py
-print(100)
-```
-
-Like the shape functions from Processing, `print` is a function that takes a parameter and does something with it. In this case, however, it doesn't draw anything to the canvas. Instead, it prints it out in Processing's console window:
-
-<p align="center">
-  <img src="code/canvas_0.png" width=500 /><br />
-</p>
-
-`print` ends up being a very useful function for [debugging](https://en.wikipedia.org/wiki/Debugging) our code, or at least getting a better sense of what's going on, as we will see.
-
-### Random parameters
-
-Now we're ready for `random`, which is also a function that takes a couple of parameters and produces a result. However, `random` doesn't draw anything to the canvas, either. Instead, it produces a random number within a given range.
+A critical function for making images like these is `random()`. `random()` doesn't draw anything to the canvas itself. Instead, it produces a random number within a given range.
 
 ```py
 random(0, 100)  # a random number between 0 and 100
@@ -104,7 +86,7 @@ If you put this into a sketch, every time you run it, you'll get a different ran
 print(random(0, 100))
 ```
 
-Notice how we've put `random` _inside_ `print`. It can be tricky to keep track of all the parentheses, but this is a very useful thing to be able to do. `random` will first do its job and come up with a random number between 0 and 100, and then this number will be what `print` prints out. And every time the sketch is run, this number will be different:
+Notice how we've put `random()` _inside_ `print()`. It can be tricky to keep track of all the parentheses, but this is a very useful thing to be able to do. `random()` will first do its job and come up with a random number between 0 and 100, and then this number will be what `print()` prints out. And every time the sketch is run, this number will be different:
 
 <p align="center">
   <img src="code/canvas_1_.png" width=700 /><br />
@@ -135,7 +117,7 @@ circle(250, 200, 100) # x position, y position, diameter
   <img src="code/canvas_2.png" width=500 /><br />
 </p>
 
-So far, we've only used static numbers for parameters in functions like `circle`. But what if we put random numbers there in there instead?
+What if we used random numbers for the parameters in `circle()` instead?
 
 If we want coordinates that fit within the canvas, we want them to be between 0 and its width or height. Since we're using 0, we can omit that parameter. Therefore, `random(500)` and `random(400)` produce numbers between 0 and the width and height of the canvas, respectively.
 
@@ -158,52 +140,20 @@ The result is that every time you run this sketch, the circle will be drawn in a
 
 <!-- questions -->
 
-How is that at all useful? Well, what if we repeated that random circle a bunch of times (and also substituted the diameter with a random parameter between 10 and 300)?
+How is that at all useful? Well, what if we repeated that random circle a bunch of times using a `for` loop (and also substituted the diameter with a random parameter between 10 and 300)?
 
 ```py
 size(500, 400)
 
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-circle(random(500), random(400), random(10, 300))
-```
-
-<p align="center">
-  <img src="code/canvas_4.png" width=500 /><br />
-</p>
-
-This starts to get interesting. Each time you run the sketch, you'll have a different random composition.
-
-However, it's also a bit tedious to write. What if we wanted 1000 circles? Too much typing, or at least copy-pasting. And this is where key programming structure can help us out: the _loop_.
-
-
-### Loops
-
-The following code is equivalent to the previous example:
-
-```py
-size(500, 400)
-
-for i in range(10): # a loop that repeats 10 times!
+for i in range(10):
     circle(random(500), random(400), random(10, 300))
 ```
-
-In another class, we'll discuss the exact meaning of the `for` syntax here. For now, the key thing is that this loop repeats **whatever is indented** on the next line (or many lines) after the colon.
-
-On each iteration of the loop, the program chooses new random numbers for the parameters of `circle`. This loop repeats 10 times, but we can change that number to whatever we want.
-
-Here's another output from that sketch, just to prove it works:
 
 <p align="center">
   <img src="code/canvas_5.png" width=500 /><br />
 </p>
+
+Suddenly, this has become very expressive with just a little code.
 
 It turns out that `random` can be applied to color, not just shapes. Remember than every component of a color goes from 0-255, which means we can make random numbers like this:
 ```py

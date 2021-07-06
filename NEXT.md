@@ -97,8 +97,6 @@ apparently globals can be declared inside setup. that makes a big difference for
 
 Maybe there is an "elaboration" section for each of these. So for nonlinearity, it's using variables to carry objects.
 
-separate the assignment from the tutorial
-
 functions that return things
 
 have the cheat sheet link to sections in the tutorials

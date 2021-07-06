@@ -1,6 +1,6 @@
 ## Sketch #3: Indeterminacy
 
-In this sketch, you will explore indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two). Use shapes together with loops (use more than one) and the `random` function. Pay special attention to layering. Not all parameters should be random, and by being intentional about the ranges of numbers you choose, create a sense of structure or composition in your image.
+In this sketch, you will explore indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two). Use shapes together with loops and the `random` function. Pay special attention to layering. Not all parameters should be random, and by being intentional about the ranges of numbers you choose, create a sense of structure or composition in your image.
 
 One approach that you might take is to look for inspiration in complex textures from nature—can you use loops+random to make an abstract interpretation of, for example, a pond with ripples and vegetation? Clouds and a rainstorm? A forest? Fire? A swarm of insects?
 
