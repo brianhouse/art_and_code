@@ -118,6 +118,7 @@ Labor day, no class
 - Play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
 
 #### Wednesday 9/29
+- [Getting started with the terminal](units/4_nonlinearity/getting_started.md)
 - Intro, [Nonlinearity](units/4_nonlinearity/lecture.md)
 - Begin [Sketch #4](units/4_nonlinearity/assignment.md)
 

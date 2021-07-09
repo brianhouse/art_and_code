@@ -263,7 +263,7 @@ for i in range(100):
   <img src="code/canvas_13.png" width=500 /><br />
 </p>
 
-One final thing. Notice how the rectangles and ellipses are interleaved. This is because for every iteration of our loop, the computer draws one rectangle and then one ellipse. What if we wanted all the rectangles drawn first?
+Notice how the rectangles and ellipses are interleaved. This is because for every iteration of our loop, the computer draws one rectangle and then one ellipse. What if we wanted all the rectangles drawn first?
 
 To do that, we use two separate loops (and we're very careful with indentation):
 
@@ -289,4 +289,23 @@ for i in range(100):
 
 Now all the ellipses are all up front. This technique is a simple way to create a sense of composition.
 
-Random parameters and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy. Let's see what you can create.
+In all of these examples, we've been ignoring `i`. But we can certainly combine `random()` with the techniques we used to organize shapes via loops. This is one way to create tension between regularity and variability, such as in the work of Vera Molnár.
+
+```py
+size(640, 480)
+background(255)
+
+for j in range(12):
+    for i in range(16):
+        for k in range(5):
+            ellipse((i * 40) + 20, (j * 40) + 20, random(5, 35), random(5, 35))
+```
+
+
+<p align="center">
+  <img src="code/canvas_15.png" width=500 /><br />
+</p>
+
+
+
+Random parameters and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy.

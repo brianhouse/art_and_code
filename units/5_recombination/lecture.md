@@ -4,7 +4,7 @@
 
 Digital media are always composed of discrete elements—from 1s and 0s on the most fundamental level of digital representation, to the characters of text or the samples of audio, to the files and folders that comprise an operating system. Though these elements are always of a finite number, it is the way that they can be combined and recombined that results in (practically) limitless possibilities.
 
-Of course, this property is also intrinsic to non-electronic systems—most notably, perhaps, the alphabet, through which the expressive potential of entire cultures is produced through the reordering of letters (just 26 in the case of English). But digital media excel at enumerating through all of the possibilities and finding ones that we might never have otherwise come up with. Like with nonlinear narrative, this property of recombination tasks the artist-programmer with designing a system for generating all potential versions, rather than only one particular version, and letting the computer plumb its limits.
+Of course, this property is also intrinsic to non-electronic systems—most notably, perhaps, the alphabet, through which the expressive potential of entire cultures is produced through the reordering of letters (just 26 in the case of English). But digital media excel at enumerating through all of the possibilities and finding ones that we might never have come up with otherwise. Like with nonlinear narrative, this property of recombination tasks the artist-programmer with designing a system for generating potential versions, rather than only one particular version, and letting the computer plumb its limits.
 
 ## Context
 
@@ -24,7 +24,7 @@ This "cut-up" technique was popularized in the mid-20th century by the well-know
   William S. Burroughs, pieces of <i>The Word Hoard</i> (1954–1958)
 </p>
 
-Subsequently, Burroughs' influence on the counter-culture led to the cut-up technique being used by artists from punk writer [Kathy Acker](https://en.wikipedia.org/wiki/Kathy_Acker) (_Blood and Guts in High School_ (1978)) to Thom Yorke of Radiohead, who pulled lyrics out of a hat for the album [_Kid A_](https://en.wikipedia.org/wiki/Kid_A) (2000). Experimental turntablist DJ Spooky, That Subliminal Kid takes his name from a Burroughs character and has [theorized the parallels](https://theinfluencers.org/en/dj-spooky) between the cut-up technique and DJ culture.
+Subsequently, Burroughs' influence on the counter-culture led to the cut-up technique being used by artists from punk writer [Kathy Acker](https://en.wikipedia.org/wiki/Kathy_Acker) (_Blood and Guts in High School_, 1978) to Thom Yorke of Radiohead, who pulled lyrics out of a hat for the album [_Kid A_](https://en.wikipedia.org/wiki/Kid_A) (2000). Experimental turntablist DJ Spooky, That Subliminal Kid takes his name from a Burroughs character and has [theorized the parallels](https://theinfluencers.org/en/dj-spooky) between the cut-up technique and DJ culture.
 
 <p align="center">
   <img src="context/3_dj_spooky.jpg" width=400 /><br />
@@ -54,11 +54,11 @@ One example comes from pop musician and cultural icon [David Bowie](https://en.w
   Bowie using the Verbasizer.
 </p>
 
-Taking things a step further, the digital media artist [Allison Parrish](https://www.decontextualize.com) is known for her work creating algorithmic literature. Her book _Our Arrival_ (2015) for instance, draws source material from [Project Gutenberg](https://www.gutenberg.org), a collection of novels in the public domain. Parrish selects and recombines sentences from this source according to a set of criteria that make it a meditation on the natural world.
+Taking things a step further, the digital media artist [Allison Parrish](https://www.decontextualize.com) is known for her work creating algorithmic literature. Her book _Our Arrival_ (2015), for instance, draws source material from [Project Gutenberg](https://www.gutenberg.org), a collection of novels in the public domain. Parrish selects and recombines sentences from this source according to a set of criteria that make it a meditation on the natural world.
 
-Taking things online, Darius Kazemi applies some of the same techniques toward the construction of [Twitter bots](https://en.wikipedia.org/wiki/Twitter_bot). Whereas bots are often a hazard of disinformation online, Kazemi's bots are alternately clever, poignant, or sarcastic, such as [Roof Slapping Bot](https://twitter.com/RoofSlappingBot) or [Which One Bot](https://twitter.com/WhichOneBot) which combine phrases found from various online sources.
+Working with how language works online, Darius Kazemi applies some of the same techniques toward the construction of [Twitter bots](https://en.wikipedia.org/wiki/Twitter_bot). Whereas bots are often a hazard of disinformation online, Kazemi's bots are alternately clever, poignant, or sarcastic, such as [Roof Slapping Bot](https://twitter.com/RoofSlappingBot) or [Which One Bot](https://twitter.com/WhichOneBot) which combine phrases found from various online sources.
 
-One final piece uses some basic text analysis to produce a kind of data visualization: Luke DuBois' [_Hindsight is Always 20/20_](https://learninglab.si.edu/collections/hindsight-is-always-20-20/p7A3AxJofG9Uy4mT) takes the State of the Union addresses from each US President and arranges them on a traditional eye chart according to the most commonly used words:
+Another approach uses some basic text analysis to produce a data visualization: Luke DuBois' [_Hindsight is Always 20/20_](https://learninglab.si.edu/collections/hindsight-is-always-20-20/p7A3AxJofG9Uy4mT) takes the State of the Union addresses from each US President and arranges them on a traditional eye chart according to the most commonly used words:
 
 <p align="center">
   <img src="context/6_dubois_lincoln.jpg" width=400 /><br />
@@ -70,9 +70,21 @@ One final piece uses some basic text analysis to produce a kind of data visualiz
   <i>Hindsight is Always 20/20</i>: George W. Bush
 </p>
 
-## Code: language machines
+_Listening Post_ (2002–2006), by Ben Rubin and Mark Hansen, is room-scale installation that visualizes and sonifies text that is being posted to the internet, whether in chatrooms or social media. By analyzing the nature of the sentences, re-grouping them, and speaking them aloud with a text-to-speech system, it is a poignant reflection on the nature of online interaction.
 
-We've already learned how to use variables to store single strings. To do more complicated manipulation of text, however, we'll need additional structures that can store more than one thing at a time. In Python, these are called *lists* (in other programming languages, they are frequently called arrays). Lists can be generated within a program, but they can also be a means of storing data loaded from external sources. Together with strings, conditional logic, and for loops, lists open up new possibilities
+<p align="center">
+  <img src="context/7_listening_post.jpg" width=600 /><br />
+  Ben Rubin and Mark Hansen, <i>Listening Post</i> (2002–2006)<br />
+  <a href="https://www.youtube.com/watch?v=Rzfnndd9fCk">Video here</a>
+</p>
+
+Finally, John Cayley is a pioneer of using digital algorithms to produce innovative forms writing, having made work on floppy disk in the early 90s. His more recent work shifts the focus from writing to _reading_ in an algorithmic way: [_The Readers_](http://thereadersproject.org) (2009) includes a series of algorithmic "readers" that make their way through text in ways other than linear, changing things as they go.
+
+
+
+## Code
+
+We've already learned how to use variables to store single strings. To do more complicated manipulation of text, however, we'll need additional structures that can store more than one thing at a time. In Python, these are called *lists* (in other programming languages, they are frequently called arrays). Lists can be generated within a program, but they can also be a means of storing data loaded from external sources. Together with strings, conditional logic, and `for` loops, lists open up new possibilities
 
 For this code, please begin by downloading [this template](recombination_sketch.zip) (click the "download" button after following this link), which includes additional functions and libraries. Although we will continue to work with text, we will be working in the Processing app, not in the terminal.
 
@@ -83,208 +95,335 @@ For this code, please begin by downloading [this template](recombination_sketch.
 Consider the following string:
 
 ```py
-sentence = "I find this piece to be a great example of art."
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
 ```
 
-We also know that variables that are strings have certain built-in capabilities; for example, we know that `sentence.lower()` will make all of the characters in the string lowercase. Functions like this that are attached to objects—ie, they come after a dot—are called **methods**.
+We also know that variables that are strings have certain built-in capabilities; for example, we know that `sentence.lower()` will make all of the characters in the string lowercase. Remember, functions like this that are attached to an object like a string—ie, they come after a dot—are called **methods** (similar to `.lower()` there is also `.upper()`, `.capitalize()`, and `.title()`, which capitalizes the first letter of _every_ word).
 
-Another example of a string method is `.split()`:
+Another extremely useful string method is `.replace()`. We can use this method to swap out any sequence of characters in our string for any others. For example:
 
 ```py
-sentence = "I find this piece to be a great example of art."
-words = sentence.split()
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace("shaped", "discombobulated")
+print(sentence)
+```
+```
+Societies have always been discombobulated more by the nature of the media by which we communicate than by the content of the communication.
+```
+
+`.replace()` is also useful to clean things up. Going forward, we're going to work with individual words, so we're going to get rid of the period at the end of this sentence, as well as the capital letter at the beginning:
+```py
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")    # replace the period with nothing!
+sentence = sentence.lower()
+print(sentence)
+```
+```
+societies have always been discombobulated more by the nature of the media by which we communicate than by the content of the communication
+```
+
+Ok. So another very interesting example of a string method is `.split()`:
+
+```py
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")    # replace the period with nothing!
+sentence = sentence.lower()
+words = sentence.split(" ")
 print(words)
 ```
 ...which will produce this in the console:
 ```py
-['I', 'find', 'this', 'piece', 'to', 'be', 'a', 'great', 'example', 'of', 'art.']
+['societies', 'have', 'always', 'been', 'shaped', 'more', 'by', 'the', 'nature', 'of', 'the', 'media', 'by', 'which', 'we', 'communicate', 'than', 'by', 'the', 'content', 'of', 'the', 'communication']
 ```
 
-As you can see, `split()` has divided the string at every space. This results in a new structure, delineated by `[` and `]` which is a **list**.
+`.split()` takes a string as a parameter, and in this case we've given it a space: " ". As you can see, the result is that the original string is divided every space, ie, into words. This results in a new structure, delineated by `[` and `]` which is a **list**.
 
-A list is a very powerful kind of variable—it's actually more of a meta-variable, because it holds a sequence of other things. These might be numbers, booleans (aka `True`/`False`), strings, or other objects. This list, `words`, currently has 11 items in it, all of them different strings.
+A list is a very powerful kind of variable—it's actually more of a meta-variable, because it holds a sequence of other things. These might be numbers, booleans (aka `True`/`False`), strings, or other objects. This list, called `words`, currently has 23 items in it, all of them individual strings.
 
-We can access items in lists using square brackets and an index number after the list variable name. For example, `words[0]` is the string "I", `words[1]` is the string "find", `words[2]` is the string "this", and so forth.
-
-(Why do lists start with index 0 instead of 1? They just do, and ultimately it is easier this way, although it takes some getting used to.)
-
-Using brackets and index numbers, we can change the value of one of the items in the list:
-
+How do we know there are 23? Well, we can find out like this:
 ```py
-sentence = "I find this piece to be a great example of art."
-words = sentence.split()
-words[7] = "questionable"
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+
+num_words = len(words)
+print(num_words)
+```
+```
+23
+```
+`len()` is a function that gives us the length of a list. In this case, that's the number of words in the sentence, so we put it in a new variable that we've named `num_words` and printed to the console.
+
+Now that the sentence has been divided into words in a list, we can use some additional functions and methods. For example, if we wanted to sort our list of words, we could do this:
+```py
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+
+words.sort()
 print(words)
 ```
+```
+['always', 'been', 'by', 'by', 'by', 'communicate', 'communication.', 'content', 'have', 'media', 'more', 'nature', 'of', 'of', 'shaped', 'societies', 'than', 'the', 'the', 'the', 'the', 'we', 'which']
+```
+
+We can also sort words by length instead of alphabetically, by supplying a (somewhat strange) parameter to sort:
 ```py
-['I', 'find', 'this', 'piece', 'to', 'be', 'a', 'questionable', 'example', 'of', 'art.']
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+
+words.sort(key=len)
+print(words)
 ```
-There's another string method, `join()`, which puts the sentence back together. Awkwardly, however, `join()` is a method of the separator character, and it takes the list as a parameter:
+```
+['by', 'of', 'by', 'we', 'by', 'of', 'the', 'the', 'the', 'the', 'have', 'been', 'more', 'than', 'media', 'which', 'always', 'shaped', 'nature', 'content', 'societies', 'communicate', 'communication']
+```
+There are some repeated words in here; we can get only the _unique_ words with the `set()` function; however, because `set()` also prevents us from modifying the list going forward, we need to convert it back to a normal list again with a function called `list()` :
 ```py
-sentence = "I find this piece to be a great example of art."
-words = sentence.split()
-words[7] = "questionable"
-sentence = " ".join(words)  # use a space to join words
-print(sentence)
-```
-```py
-I find this piece to be a questionable example of art.
-```
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
 
-Using `split()`, indexes, and `join()`, we've now taken apart a sentence, swapped out a word, and put it back together again.
-
-### Word replacement with loaded lists
-
-Lists can be used for many different things—including loading data from files. For example, included in the template folder for this assignment is a file that contains a list of _isms_. That's right—the names of conceptual art movements and so forth. We can load it like this:
-
-```py
-isms = open("isms.txt").read().splitlines()
-```
-This sequence of methods reads "isms.txt" into memory and splits all of the lines into separate items of a list (try printing it to the console to see).
-
-To randomly select an ism, we'll need a new function—`choice()`. This doesn't come enabled by default, so we have to include a special line at the beginning of our program:
-
-```py
-from random import choice   # enables the choice function
-
-isms = open("isms.txt").read().splitlines()
-
-an_ism = choice(isms)
-print(an_ism)
+words = list(set(words))    # this has to come first, because it will screw up the order
+words.sort(key=len)
+print(words)
 ```
 ```
-neo-impressionism
+['we', 'by', 'of', 'the', 'been', 'more', 'than', 'have', 'which', 'media', 'always', 'nature', 'shaped', 'content', 'societies', 'communicate', 'communication']
 ```
 
-Returning to our previous example, we can now start to make things more interesting:
+We can also reverse the order of the words, using `.reverse()`:
 
 ```py
-from random import choice
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
 
-isms = open("isms.txt").read().splitlines()
-
-sentence = "I find this piece to be a great example of art."
-words = sentence.split()
-words[10] = choice(isms) + "."
-sentence = " ".join(words)  # use a space to join words
-print(sentence)
+words = list(set(words))    # this has to come first, because it will screw up the order
+words.sort(key=len)
+words.reverse()
+print(words)
 ```
+```
+
+['communication', 'communicate', 'societies', 'content', 'shaped', 'nature', 'always', 'media', 'which', 'have', 'than', 'more', 'been', 'the', 'of', 'by', 'we']
+```
+At this point, we've ended up with a list of words from the original sentence sorted from longest to shortest.
+
+What if we just want to know the single longest word? Well, it's the first item in the list. Remember, however, that computers like to start counting with 0. So it's actually the 0th item. To get it, we use a new syntax, which is a pair of brackets with the index of the item we want, ie, `words[0]`.
 ```py
-I find this piece to be a great example of dadaism.
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+words = list(set(words))
+words.sort(key=len)
+words.reverse()
+print(words[0])
 ```
+```
+communication
+```
+`words[1]`, `words[2]`, `words[3]` and so forth with get the subsequent words in the list. `words[-1]` will get the last word in the list; `words[-2]` will get the second the last word ... etc.
 
-With another word list loaded from a text file, adjectives, we can take things further:
+Note that using indexes like this will not only work on lists, it will work on strings, but with strings you'll just get the _character_ at that position, not the word.
+
+Remember `random()`? Well, that function has some variants specifically to work on lists. They're called `shuffle()` and `choice()`. These functions aren't activated by default, so at the very beginning of our sketch, we need to provide an `import` statement. We won't get into `import` too much yet, but it's a way to load additional functionality into your sketch. Here's `shuffle()`:
 ```py
-from random import choice
+from random import shuffle, choice
 
-adjectives = open("adjectives.txt").read().splitlines()
-isms = open("isms.txt").read().splitlines()
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
 
-sentence = "I find this piece to be a great example of art."
-words = sentence.split()
-words[7] = choice(adjectives)
-words[10] = choice(isms) + "."
-sentence = " ".join(words)  # use a space to join words
-print(sentence)
+shuffle(words)
+print(words)
 ```
-```py
-I find this piece to be a cluttered example of neue slowenische kunst.
 ```
-
-Might as well fill out the review:
+['always', 'by', 'shaped', 'the', 'communication', 'societies', 'of', 'been', 'by', 'have', 'the', 'we', 'of', 'the', 'the', 'communicate', 'which', 'media', 'nature', 'more', 'by', 'content', 'than']
+```
+Every time you run this sketch, the order of the words will be different. `choice()` picks a random word out of the bunch, a different one every time:
 
 ```py
-from random import choice
+from random import shuffle, choice
 
-adjectives = open("adjectives.txt").read().splitlines()
-adverbs = open("adverbs.txt").read().splitlines()
-nouns = open("nouns.txt").read().splitlines()
-isms = open("isms.txt").read().splitlines()
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
 
-# make multi-line strings with triple-quotes
-sentence = """
-            I find this piece to be a great example of art.
-            The lines are straight and the colors seem dull.
-            It is, frankly, a normal painting.
-            """
-words = sentence.split()
-words[7] = choice(adjectives)
-words[10] = choice(isms) + "." # add a period
-words[14] = choice(adjectives)
-words[18] = choice(adverbs)
-words[19] = choice(nouns) + "."
-words[24] = choice(adjectives)
-words[25] = choice(nouns) + "."
-sentence = " ".join(words)  # use a space to join words
-print(sentence)
+some_word = choice(words)
+print(some_word)
 ```
 ```
-I find this piece to be a grubby example of cubo-futurism.
-The lines are sweaty and the colors shakily stay.
-It is, frankly, a secondary hippopotamus.   
-```
-Ok, well, it's not perfect. But using a little rudimentary grammar, some word lists, and substituting for a template, we get a pretty interesting critique. Or rather, as many critiques as we could ever want (consider how you might use a `for` loop to accomplish this).
-
-BTW, the word lists included in the template are:
-
-```
-adjectives.txt
-adverbs.txt
-animals.txt
-body_parts.txt
-celebrities.txt
-cities.txt
-isms.txt
-jobs.txt
-moods.txt
-nouns.txt
-objects.txt
-prepositions.txt
-stop_words.txt
-verbs_infinitive.txt
-verbs_past.txt
-verbs_present.txt
+have
 ```
 
-These files are in the "data" folder inside the sketch folder, and you can look at their contents and format by opening them directly. To add your own, you can either just put a file into the data folder, or use the "Add File" option in Processing:
+So what if I wanted to take five random words from the list, and put them in a new list? This is where loops can be helpful:
+```py
+from random import shuffle, choice
 
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+
+chosen_ones = []    # this is an empty list
+for i in range(5):
+    random_word = choice(words)
+    chosen_ones.append(random_word)     # .append() adds an item to a list
+
+print(chosen_ones)
+```
+```
+['shaped', 'the', 'always', 'communication', 'of']
+```
+
+In this example, we've first created an empty list with the statement `chosen_ones = []`. We then used the list method `.append()` to add to the list, and we did it five times inside of a loop.
+
+Another very useful way to use loops would be to do something to every individual word in our list. We can use `len()` to figure out exactly how many loops that would be, ie, what to put in `range()`. And we can use `i` and brackets to get the word from the list to work with. For example, to print out every word individually, we could do this:
+
+```py
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+
+for i in range(len(words)):         # loop once for every word in the list
+    word = words[i]                 # get the ith word in the list
+    print(word)
+```
+```
+societies
+have
+always
+been
+shaped
+more
+by
+the
+nature
+of
+the
+media
+by
+which
+we
+communicate
+than
+by
+the
+content
+of
+the
+communication
+```
+
+So what could we do with this? Well, maybe we want to separate all the words into two new lists, one for words that include the letter 'a', and one for words that do not:
+```py
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+
+a_words = []
+no_a_words = []
+for i in range(len(words)):
+    word = words[i]
+    if 'a' in word:
+        a_words.append(word)
+    else:
+        no_a_words.append(word)
+
+print(a_words)
+```
+```
+['have', 'always', 'shaped', 'nature', 'media', 'communicate', 'than', 'communication']
+```
+
+These new tools will let us manipulate and analyze strings of words in all sorts of ways.
+
+Of course, we might want to take our list of words and put them back together again into a cohesive string. We do this with the `.join()` method. Somewhat strangely, however, `join()` is a method of the separator character, and it takes the list as a parameter. So to join things back together with a space, we do it like this:
+
+```py
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+words.reverse()
+backwards_sentence = " ".join(words)
+print(backwards_sentence)
+```
+```
+communication the of content the by than communicate we which by media the of nature the by more shaped been always have societies
+```
+To make this flow right, now that it's a string again, let's capitalize the first letter and add a period to the end:
+
+```py
+sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+sentence = sentence.replace(".", "")
+sentence = sentence.lower()
+words = sentence.split(" ")
+
+words.reverse()
+backwards_sentence = " ".join(words)
+backwards_sentence = backwards_sentence.capitalize()
+backwards_sentence = backwards_sentence + "."               # concatenate a period on the end!
+print(backwards_sentence)
+```
+```
+Communication the of content the by than communicate we which by media the of nature the by more shaped been always have societies.
+```
+Note that we also added a period to the end of the sentence simply by using the "+" operator to join two strings. This is going to come in handy.
+
+### Working with external text
+
+So far, we've just been playing with a sentence that we've written into the code. But the real interesting stuff here is when we can use text from another source. Anything might work: a newspaper article, messages from social media, or even a whole book.
+
+The key thing is that the text has to be in "Plain Text" format—no Word files here. But most word processor programs, Word and Google Docs included, have the capacity to save files as plain text. So you could copy the contents of an entire webpage, for example, paste it into Google Docs, and download it as a `.txt` file.
+
+In addition, there are online repositories that already have archives of text files, perhaps most notably the [Gutenberg Project](https://www.gutenberg.org). We can download a book in plain text format, such as [_History of the Expedition under the Command of Captains Lewis and Clark, Vol. I._](https://www.gutenberg.org/ebooks/16565). If you click on "Plain Text UTF-8", the text will open in the browser. If you're using Google Chrome, you can just save the file. In Safari, make sure you give it a title that ends in ".txt" (like "LC.txt") and choose "Page Source" instead of "Web Archive".
+
+To copy any text file into your sketch and make it accessible to your code, use Processing's "Add File..." menu option:
 
 <p align="center">
   <img src="code/1_add_file.png" width=200 />
 </p>
 
-You can subsequently load the file in the same way using the name of the file as a string parameter to Python's `open` command (eg, "adverbs.txt"). Note that only plain text files will work (no Word files), and the words have to be one per line to convert directly to a list.
-
-
-### Cut-ups with loaded text
-
-Loading data from external files is powerful, but we aren't limited to just using curated lists of words. In fact, we might load whole preexisting texts. For example, we can download a book in "Plain Text" format from the [Gutenberg Project](https://www.gutenberg.org), such as [_History of the Expedition under the Command of Captains Lewis and Clark, Vol. I._](https://www.gutenberg.org/ebooks/16565). I've saved this text file from the browser on my desktop, changed the filename to "lc_expedition.txt", and added it to my sketch with "Add File...".
+Then you can load it in using the `open()` function, together with the `.read()` method:
 
 ```py
-source = open("lc_expedition.txt").read()    # not using .splitlines() this time
+source = open("LC.txt").read()
 ```
 
-The variable `source` now contains the complete text—an enormous string (we leave off `.splitlines()` because this would turn it into a list of words, which we don't want (yet)).
+The variable `source` now contains the complete text—an enormous string!
 
-To make our lives simpler down the road, before we do anything else, we're going to clean the text up a bit. We'll use a trick to do this, which is to `.split()` the string on all whitespace characters (spaces, line breaks, tabs, etc), and then immediately put it back together again with `.join()`. This will have the effect of collapsing everything into sentences without additional formatting.
+To make our lives simpler down the road, before we do anything else, we're going to clean the text up a bit. There likely are all kinds of line breaks, indentations, double-spaces, and other formatting in this string that will interfere with anything we want to do with it later. So we're going to use a trick. Previously, we used `.split()` with a space as a parameter, eg, `sentence.split(" ")`. If you leave out the parameter, `.split()` will separate your string on every kind of whitespace character (spaces, line breaks, tabs, etc). Doing this and then immediately putting it back together again with `.join()` will have the effect of collapsing everything into sentences while removing additional formatting.
 
 ```py
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
 source = " ".join(source.split()) # clean up whitespace
 ```
 
-Now that we've cleaned the text, we're ready to reproduce the cut-up technique. To start off, instead of splitting it into individual words, let's start with individual sentences:
+Now that we've cleaned the text, we're ready to work with it. Let's use `.split()` again. But this time, instead of giving it a space as a parameter or leaving it blank, we're going to give it a period followed by a space, which will divide the text into sentences.
 
 ```py
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
 source = " ".join(source.split())
-sentences = source.split(". ")    # use a parameter with split
+sentences = source.split(". ")
 ```
 
-We gave `.split()` a parameter, ". ", to tell it to break not on any whitespace, but on periods followed by spaces. As a result, `sentences` is now a list of sentences. How many? `len()` will tell us:
+How many sentences do we have? `len()` will tell us:
 
 ```py
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
 source = " ".join(source.split())
 sentences = source.split(".")
 num_sentences = len(sentences)
@@ -299,7 +438,7 @@ That's a lot of sentences. Let's grab a random one with `choice()`:
 ```py
 from random import choice           # import choice function
 
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
 source = " ".join(source.split())
 sentences = source.split(".")
 
@@ -311,16 +450,12 @@ print(random_sentence)
  we are much pleased in finding him by no means as ill as we had expected
 ```
 
-To create a cut-up, we want to take several random sentences and piece them together to form a new text. To do that, we're going to start with an empty list (we'll call it `cut_up`), which in Python you make like this:
-```py
-cut_up = []
-```
-To add items to a list, we use the `.append()` method. Combined with a `for` loop, we can use it to pull 5 random sentences from the expedition:
+If we wanted to reproduce the cut-up technqiue, we could take several random sentences and piece them together to form a new text. To do that, we're going to start with an empty list (we'll call it `cut_up`). To add items to a list, we use the `.append()` method. Combined with a `for` loop, we can use it to pull 5 random sentences from the expedition:
 
 ```py
 from random import choice
 
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
 source = " ".join(source.split())
 sentences = source.split(". ")
 
@@ -333,7 +468,7 @@ output = output + "."   # add a final period
 print(output)
 ```
 
-On each iteration of the loop, the program chooses a random item from the `sentences` list and appends it to the `cut_up` list. Using `join()`, this time with a period in addition to a space, we paste the sentences back together. `output` is now the new string:
+This is very similar to what we did earlier, but now it's on the level of sentences. On each iteration of the loop, the program chooses a random item from the `sentences` list and appends it to the `cut_up` list. Using `join()`, this time with a period in addition to a space, we paste the sentences back together. `output` is now the new string:
 
 ```
 The morning was fine, and three men were despatched ahead to hunt, while the rest were detained until nine o'clock, in order to retake some horses which had strayed away during the night. The road was still difficult, and several of the horses fell and injured themselves very much, so that we were unable to advance more than ten miles to a small stream, on which we encamped. Sunday, December 2. If therefore you intend to keep your promise, send one of the young men immediately to order the people to remain at the village till we arrive. The country, generally, consists of low, rich, timbered ground on the north, and high barren lands on the south: on both sides great numbers of buffaloe are feeding.
@@ -342,16 +477,30 @@ The morning was fine, and three men were despatched ahead to hunt, while the res
 While the result is not exactly linearly coherent, we do indeed get a sense of the tenor of the text. To add a little twist, let's substitute some words using the `.replace()` method. This method takes two parameters: the string to search for, and the string to replace it with.
 
 ```py
+from random import choice
+
+source = open("LC.txt").read()
+source = " ".join(source.split())
+sentences = source.split(". ")
+
+cut_up = []
+for i in range(5):
+    cut_up.append(choice(sentences))
+
+output = ". ".join(cut_up)    
+output = output + "."   # add a final period
 output = output.replace("men", "spacemen")
 output = output.replace("encampment", "space station")
 output = output.replace("miles", "light-years")
 output = output.replace("feet", "rocket boosters")
 output = output.replace("party", "crew")
-output = output.replace("skins", "spacesuits")
+output = output.replace("skins", "extra-terrestrials")
 output = output.replace("hail", "solar flare")
+output = output.replace("breeze", "solar wind")
+print(output)
 ```
 ```
-The morning is clear and cold, the mercury at sunrise 22° below 0. The spacemen complain much of the bruises received yesterday from the solar flare. During his absence the crew had been occupied in dressing spacesuits, and being able to rest themselves were nearly freed from their lameness and swollen rocket boosters. They leave their space station, and proceed on their journey. We had a breeze from the southeast, and made thirteen light-years.
+The morning is clear and cold, the mercury at sunrise 22° below 0. The spacemen complain much of the bruises received yesterday from the solar flare. During his absence the crew had been occupied in dressing extra-terrestrials, and being able to rest themselves were nearly freed from their lameness and swollen rocket boosters. They leave their space station, and proceed on their journey. We had a breeze from the southeast, and made thirteen light-years.
 ```
 
 Perhaps a contrived example, but clever word substitution can reframe the context of a text (imagine what you could do with a newspaper article, for example).
@@ -384,7 +533,7 @@ source = source.lower()
 source = remove_punctuation(source)
 words = source.split()
 
-stop_words = open("stop_words.txt").read().splitlines() # split into a list
+stop_words = open("stop_words.txt").read().split() # split into a list
 ```
 
 Next, we'll create a blank list, `good_words`, which we do with an empty pair of brackets. We'll use a `for` loop and iterate through each of the words from the source, check to see if it's a stop word, and if it's not, add it to our `good_words` list:
@@ -397,7 +546,7 @@ source = source.lower()
 source = remove_punctuation(source)
 words = source.split()
 
-stop_words = open("stop_words.txt").read().splitlines() # split into a list
+stop_words = open("stop_words.txt").read().split() # split into a list
 good_words = []
 for i in range(len(words)): # run the loop as many times as there are words
     if words[i] not in stop_words:  
@@ -427,7 +576,7 @@ source = remove_punctuation(source)
 words = source.split()
 
 # filter out stop_words
-stop_words = open("stop_words.txt").read().splitlines()
+stop_words = open("stop_words.txt").read().split()
 good_words = []
 for i in range(len(words)):
     if words[i] not in stop_words:  
@@ -480,10 +629,10 @@ Since we're talking about poetry, we need to include some rhymes.
 ```py
 from random import choice
 
-jobs = open("jobs.txt").read().splitlines()
-cities = open("cities.txt").read().splitlines()
-verbs_past = open("verbs_past.txt").read().splitlines()
-nouns = open("nouns.txt").read().splitlines()
+jobs = open("jobs.txt").read().split()
+cities = open("cities.txt").read().split()
+verbs_past = open("verbs_past.txt").read().split()
+nouns = open("nouns.txt").read().split()
 
 job = choice(jobs)
 city = choice(cities)
@@ -501,10 +650,10 @@ For the second line of the poem, the last word has to rhyme with the city. We ca
 from random import choice
 from word_helper import rhymes  # import rhymes function
 
-jobs = open("jobs.txt").read().splitlines()
-cities = open("cities.txt").read().splitlines()
-verbs_past = open("verbs_past.txt").read().splitlines()
-nouns = open("nouns.txt").read().splitlines()
+jobs = open("jobs.txt").read().split()
+cities = open("cities.txt").read().split()
+verbs_past = open("verbs_past.txt").read().split()
+nouns = open("nouns.txt").read().split()
 
 job = choice(jobs)
 city = choice(cities)
@@ -522,10 +671,3 @@ Who irritated with a hilarious gmail
 ```
 
 This doesn't always work and isn't often very good, but you get the idea.
-
-
-## Sketch #4
-
-This sketch will consist of a language machine that outputs variations of some sort of structured text via recombination. The exact form that it takes is up to you. You might take a form of poetry, such as a sonnet or free verse, and create variations by using random words from the provided lists or ones you curate. You could also remix a famous art manifesto or political statement, rewrite a newspaper article with substituted words, auto-generate rap lyrics, or produce alternative closed captions for a film. Challenge yourself to produce a novel algorithm that doesn't replicate the examples.
-
-Along with your code and [3-sentence description](../../resources/description_guidelines.md), you should supply three versions of your text output (that result from identical code!) so we can see the nature of the variation that your program produces. Resist the urge to edit the output to smooth over rough edges; looking back, those often become the most interesting features.

@@ -9,30 +9,12 @@ Do small group screen sharing for intermediate feedback
 ## Units
 
 
-### Nonlinearity
-
-will have to modify to indicate that we've already seen variables (or at least i) earlier
-
-"map" threw some people off. it's really a diagram of all the interaction.
-
-explicitly outlaw yes/no questions
-
-
 ### Recombination
 
-train flip board
-
-add Listening Post to examples
-
-add Cento form!
-
-John Cayley!
 
 closed captions and .srt example
 
 https://github.com/NaNoGenMo/2017
-
-splitlines() is redundant with split(), so keep the latter to be consistent
 
 karaoke example
 
@@ -54,6 +36,23 @@ https://pypi.org/project/Vocabulary/
 if not, do it without. maybe more on analysis, look more closely at Listening Post.
 
 https://www.nytimes.com/2020/11/24/science/artificial-intelligence-ai-gpt3.html?referringSource=articleShare
+
+/////
+
+- add Cento form to non-digital intro
+- keep the beginning, but just make it a lesson on indexes, and use shuffle
+- fix word replacement to just use concatenation
+- then we have:
+    - concatenative with word lists
+    - cut-ups with a corpus
+    - syllables
+
+what's the assignment? do anything?
+or pick a form of poetry and a source text and make it work (that would require rhyme)
+
+the rhyme is too shitty. too obscure.
+
+also, wonder if I should go back to terminal for this.
 
 
 ### Interface

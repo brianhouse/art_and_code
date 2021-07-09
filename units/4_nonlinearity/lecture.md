@@ -1,31 +1,5 @@
 # Nonlinearity
 
-<!--
-- apologies for cancelling class on Tuesday (my wife had a baby on Monday, so it's been an awesome but logistically challenging week)
-- you'll have an extra weekend to work on this assignment
-- going to move artist presentations (Julian + Noa, Alex + Sadie)
-
-1:
-- when I say linear, what does that mean? -> cassette
-- examples of nonlinearity?
-    - choose your own adventure stories (page numbers)
-    - nonlinear storytelling in films (pulp fiction) -> kinoautomat
-- digital media are inherently structured nonlinearly (audio editing, jump back and forth)
-- zork is one example (responses to playing it)
-- everyone review the notes in the assignment
-/
-- Terminal?
-- show strings
-- have them work on response to a question
-
-/
-note that this is harder than the last assignment, so you'll need to start working on it earlier
-
-next time we'll review maps
-
-review the notes in the assignment!
--->
-
 ## Concept
 
 Traditional media such as film, audio recordings, or books typically proceed in a fixed sequence. Though we can do things like rewind a tape, or use page numbers to jump to a particular section of a novel, ultimately the possibilities are limited because the content is static. When creating artwork in these media, we typically compose a linear narrative (or narratives) that will be followed again and again in the same order.
@@ -96,7 +70,7 @@ More recently, Netflix created a special episode of the dystopian series Black M
 </p>
 
 
-## Code: branching logic
+## Code
 
 Though we've repeated small blocks of code with loops, so far the code we've written has more or less proceeded linearly down the page. While this is sufficient for producing static images, programs that incorporate time and interactivity need to be structured in a way that can respond dynamically. We're going to take a break from graphics to explore nonlinearity first using text.
 
@@ -216,7 +190,7 @@ else:
     print("I don't know how you feel.")
 ```
 
-This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added `.lower()` to the end of `raw_input()`, which is a trick that converts the input to lowercase and prevent the second mixup with cases.
+This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added `.lower()` to the end of `raw_input()`, which converts the input to lowercase and prevent the second mixup with cases. This is a new kind of function, because it comes after a period rather than wraps around its input. These are called **methods**, and we'll see them a lot when using (and modifying) strings.
 
 <p align="center">
   <img src="code/7_in_2.png" width=600 />
@@ -485,10 +459,3 @@ If in response to the question `"What do you want to do?"` the reader types some
 When (and if) the reader proceeds to the basement, they will then be able to open the door.
 
 Note that the construction of this narrative is as much about the craft of _writing_ as it is about programming. A concept like a key exists somewhere between the variable that keeps track of whether the user has picked it up (`has_key`), the conditional logic of what it makes possible, and the narration of a world that is consistent and intuitive, one in which keys can be taken to unlock doors and in which they don't spontaneously appear or persist (unless, of course, we want them to magically do so).
-
-
-## Sketch #3
-
-With this sketch, you will create a nonlinear narrative in the second person using code where the reader chooses their path by inputting text. While your work may be structurally similar to _Zork_, the theme and written content should reflect your own artistic concept. Your program must demonstrate at least 8 different branching points that create meaningful alternative paths.
-
-Draw a "map" of the the choices that will be available to your reader (by hand, using Google Draw, or any other medium) and turn this in along with your final Python code to Google Classroom. In addition, upload a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.
