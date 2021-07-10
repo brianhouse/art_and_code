@@ -84,12 +84,10 @@ Finally, John Cayley is a pioneer of using digital algorithms to produce innovat
 
 ## Code
 
-We've already learned how to use variables to store single strings. To do more complicated manipulation of text, however, we'll need additional structures that can store more than one thing at a time. In Python, these are called *lists* (in other programming languages, they are frequently called arrays). Lists can be generated within a program, but they can also be a means of storing data loaded from external sources. Together with strings, conditional logic, and `for` loops, lists open up new possibilities
-
-For this code, please begin by downloading [this template](recombination_sketch.zip) (click the "download" button after following this link), which includes additional functions and libraries. Although we will continue to work with text, we will be working in the Processing app, not in the terminal.
+We've already learned how to use variables to store single strings. To do more complicated manipulation of text, however, we'll need additional structures that can store more than one thing at a time. In Python, these are called *lists* (in other programming languages, they are frequently called arrays). Lists can be generated within a program, but they can also be a means of storing data loaded from external sources. Together with strings, conditional logic, and `for` loops, lists open up new possibilities. Although we will continue to work with text, we will be working in the Processing app, not in the terminal (although the terminal will still work, if you prefer).
 
 
-### Strings and lists
+### More with strings
 
 
 Consider the following string:
@@ -121,6 +119,8 @@ print(sentence)
 ```
 societies have always been discombobulated more by the nature of the media by which we communicate than by the content of the communication
 ```
+
+### Lists
 
 Ok. So another very interesting example of a string method is `.split()`:
 
@@ -348,7 +348,11 @@ print(a_words)
 ['have', 'always', 'shaped', 'nature', 'media', 'communicate', 'than', 'communication']
 ```
 
-These new tools will let us manipulate and analyze strings of words in all sorts of ways.
+Other variations might include all the words that _begin_ with the letter "a" (`if word[0] == "a"`), or short words (`if len(word) < 4`), or words ending in "s" (`if word[-1] == "s"`).
+
+In other words, you can create multiple lists of words of different types in order to use them for some other purpose later.
+
+### Recombining lists
 
 Of course, we might want to take our list of words and put them back together again into a cohesive string. We do this with the `.join()` method. Somewhat strangely, however, `join()` is a method of the separator character, and it takes the list as a parameter. So to join things back together with a space, we do it like this:
 
@@ -412,6 +416,8 @@ source = open("LC.txt").read()
 source = " ".join(source.split()) # clean up whitespace
 ```
 
+### Cut-ups
+
 Now that we've cleaned the text, we're ready to work with it. Let's use `.split()` again. But this time, instead of giving it a space as a parameter or leaving it blank, we're going to give it a period followed by a space, which will divide the text into sentences.
 
 ```py
@@ -463,8 +469,8 @@ cut_up = []
 for i in range(5):
     cut_up.append(choice(sentences))
 
-output = ". ".join(cut_up)    
-output = output + "."   # add a final period
+output = ". ".join(cut_up)  # join using a period and space, same as we used to split  
+output = output + "."       # add a final period
 print(output)
 ```
 
@@ -505,169 +511,226 @@ The morning is clear and cold, the mercury at sunrise 22° below 0. The spacemen
 
 Perhaps a contrived example, but clever word substitution can reframe the context of a text (imagine what you could do with a newspaper article, for example).
 
-
-### Collecting words and counting syllables
-
-A source text can also be used to provide a vocabulary for new works. Rather than using the cut-up technique on the level of sentences, we can clean and divide the text on the level of words.
-
-This time, after we load our text, we first convert everything to lowercase and remove all punctuation (we'll have to import a special function for that). Then we split it into words:
+<!-- Also, keep in mind you could pull out full sentences with particular characteristics, just like we learned to do with words. For example, here's all of the questions:
 
 ```py
-from word_helper import remove_punctuation # import the remove_punctuation
+from random import choice
 
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
+source = " ".join(source.split())
+sentences = source.split(". ")
+
+questions = []
+for i in range(5):
+    cut_up.append(choice(sentences))
+
+print(output)
+```
+
+Whoops. Sentence tokenization is non-trivial when taking into account things like question marks.
+ -->
+
+### Using text as a vocabulary
+
+The cut-up technique works with external text on the level of sentences, but of course everything we learned about manipulating words still applies. One way to think of it is that a source text can also be used to provide a _vocabulary_ for new works.
+
+This time, after we load our text, we'll use a loop to remove all the punctuation before we convert everything to lowercase. We'll then split it into words on all whitespace characters (by leaving the argument to `.split()` blank:
+
+```py
+source = open("LC.txt").read()
+punctuation_marks = [".", ",", "?", "!", ";", ":", "(", ")"]
+for i in range(len(punctuation_marks)):
+    source = source.replace(punctuation_marks[i], "")
 source = source.lower()
-source = remove_punctuation(source)
 words = source.split()
 ```
 
-This is a potentially very interesting collection of words. However, a lot of these words will be very commonly used words in English. For the sake of poetry, it would be nice to keep just the most interesting ones, the ones that make the character of the source what it is.
+Depending on the source text, you might want to do even more cleaning up: removing particular words, for example, or additional punctuation. You'll have to see what comes out in the output and figure out how to best eliminate what you don't want to work with.
 
-Those common words are called "stop words," and we can filter them out. First, we'll need to load a word list, which we have:
+What we have here is a potentially very interesting collection of words. Right away, we could create some free verse poetry:
 
 ```py
-from word_helper import remove_punctuation # import the remove_punctuation
+from random import choice
 
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
+punctuation_marks = [".", ",", "?", "!", ";", ":", "(", ")"]
+for i in range(len(punctuation_marks)):
+    source = source.replace(punctuation_marks[i], "")
 source = source.lower()
-source = remove_punctuation(source)
 words = source.split()
 
-stop_words = open("stop_words.txt").read().split() # split into a list
+for j in range(5):      # our poem will have 5 lines
+
+    selections = []
+    for i in range(5):  # each line has 5 words
+        word = choice(words)
+        selections.append(word)
+    line = " ".join(selections)
+    print(line)
+```
+```
+its hunting three his miles
+drudgery tobacco of would and
+some from by the on
+dry willow it a three
+back that eight but is
+```
+
+Pretty abstract, but this random collection of words does some sense of the source material. And, of course, each time we run the script, we'll get a new combination.
+
+However, it would be better if there weren't so many common words like "by", or "on", or "it" in there—not that these aren't useful words, but in the interest of poetry, we may do better without them.
+
+Those common words are called "stop words." To filter them out, we'll need a list of them, which you can download here:
+- [list_stop_words.txt](list_stop_words.txt)
+
+Once you've downloaded this file, add it to your sketch just like you do for your source text. Because this files is guaranteed to be "clean", we don't have to worry about processing it in any way, and we can condense the code to load it into one line, like this:
+
+```py
+stop_words = open("list_stop_words.txt").read().split()
 ```
 
 Next, we'll create a blank list, `good_words`, which we do with an empty pair of brackets. We'll use a `for` loop and iterate through each of the words from the source, check to see if it's a stop word, and if it's not, add it to our `good_words` list:
 
 ```py
-from word_helper import remove_punctuation # import the remove_punctuation function
-
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
+punctuation_marks = [".", ",", "?", "!", ";", ":", "(", ")"]
+for i in range(len(punctuation_marks)):
+    source = source.replace(punctuation_marks[i], "")
 source = source.lower()
-source = remove_punctuation(source)
 words = source.split()
 
-stop_words = open("stop_words.txt").read().split() # split into a list
+stop_words = open("list_stop_words.txt").read().split()
 good_words = []
 for i in range(len(words)): # run the loop as many times as there are words
     if words[i] not in stop_words:  
         good_words.append(words[i])
 ```
 
-Note how we used this `for` loop. We run it `len(words)` times—once for each word. The temporary variable `i` tells us what number of the loop we're on, and we can use that as an index to the `words` list. `words[i]` thus becomes a different word for each loop—we check if it is in the stop_words list, and append it to `good_words` if it's not.
+As a refresher, note how we used this `for` loop. We run it `len(words)` times—once for each word. The temporary variable `i` tells us what number of the loop we're on, and we can use that as an index to the `words` list. `words[i]` thus becomes a different word for each loop—we check if it is in the stop_words list, and append it to `good_words` if it's not. The list `good_words` now contains all the best words used in the text.
 
-The list `words` now contains all the best words used in the text. Since these words previously combined to form a very long narrative, what if we used them for something entirely different?
-
-[Haiku](https://en.wikipedia.org/wiki/Haiku) is a traditional form of poetry from Japan. Each poem consists of just three lines, of 5, 7, and 5 syllables, respectively.
-
-To make haikus from the vocabulary of the Lewis and Clark expedition, we're going to need to import another function, `count_syllables`. We're also going to use another variation on random, which is `shuffle`.
-
-The general idea here is that first we'll shuffle our `good_words` list into a random order. Then, for line one of the haiku, we'll pull out the first combination of words that adds up to 5 syllables. Look at the code annotations for how this works.
-
+So let's add this algorithm to our free-verse poetry generator:
 ```py
-# import functions
-from word_helper import remove_punctuation
-from word_helper import count_syllables # import the count_syllables function
-from random import shuffle
+from random import choice
 
-# load source words
-source = open("lc_expedition.txt").read()
+source = open("LC.txt").read()
+punctuation_marks = [".", ",", "?", "!", ";", ":", "(", ")"]
+for i in range(len(punctuation_marks)):
+    source = source.replace(punctuation_marks[i], "")
 source = source.lower()
-source = remove_punctuation(source)
 words = source.split()
 
-# filter out stop_words
-stop_words = open("stop_words.txt").read().split()
+stop_words = open("list_stop_words.txt").read().split()
 good_words = []
-for i in range(len(words)):
+for i in range(len(words)): # run the loop as many times as there are words
     if words[i] not in stop_words:  
         good_words.append(words[i])
 
-# shuffle the good words into a random order
-shuffle(good_words)
+for j in range(5):      # our poem will have 5 lines
 
-line_1 = []                         # create an empty list for line 1
-remaining_syllables = 5              # use a variable to keep track of the syllables we have left
-for i in range(len(good_words)):    # loop through the good words
-    syllables = count_syllables(good_words[i])    # count the syllables of a word
-    # this returns None if it doesn't recognize the word
-    if syllables is not None and syllables <= remaining_syllables:    # check if the syllables are less than or equal to the ones we need
-        line_1.append(good_words[i])        # if so, append the word to line 1
-        remaining_syllables = remaining_syllables - syllables   # subtract the syllables of this word from those remaining
-    if remaining_syllables == 0:    # if we have all our syllables...
-        break                       # break out of the loop.
-print(" ".join(line_1))             # finally, join the list together and print it
+    selections = []
+    for i in range(5):  # each line has 5 words
+        word = choice(good_words)   # good_words instead of words
+        selections.append(word)
+    line = " ".join(selections)
+    print(line)
 ```
 ```
-little hills ears glass
+cemented great forks mississippi believe
+without anything bilious wind boiled
+goose gray sentinel therefore two
+however rain westward platte extensive
+high extreme missouris woodland feet
 ```
-This example is somewhat complex, as it uses `if` and `for` together with lists, and keeps track of its progress with variables. This code just completes the first line of the poem, but for lines two and three, we can just shuffle `good_words` again and repeat a similar block of code to make a `line_2` list, starting with 7 remaining syllables. Likewise for final line.
+Much nicer!
 
-Some results:
-```
-destroys mountains bend
-deer proceeded party chief
-mountains soon pointed
-```
-```
-recede round hand strayed
-miles vast whose bear winter yards
-cottonwood viewed rain
-```
-```
-covered river earth
-red remain side whole returned
-timber till purple
-```
+Of course, what would be even more useful is to have the part of speech of each of these words: noun, verb, etc. Then we could combine them in more structured ways.
 
-Despite coming from a machine, we can read some poignancy in the lines that expresses something of the Romantic ideals and colonial reality that was the expedition.
+To pull that off, we're going to need more words lists, containing dictionaries of the different types. I've put some together for you, which you can download here:
+- [list_adjectives.txt](list_adjectives.txt)
+- [list_interjections.txt](list_interjections.txt)
+- [list_nouns.txt](list_nouns.txt)
+- [list_prepositions.txt](list_prepositions.txt)
+- [list_pronouns.txt](list_pronouns.txt)
+- [list_verbs.txt](list_verbs.txt)
 
-
-### Bonus: rhymes
-
-Since we're talking about poetry, we need to include some rhymes.
+By comparing the words of our source text with the words in these lists, we can separate them into parts of speech.
 
 ```py
 from random import choice
 
-jobs = open("jobs.txt").read().split()
-cities = open("cities.txt").read().split()
-verbs_past = open("verbs_past.txt").read().split()
-nouns = open("nouns.txt").read().split()
+noun_list = open("list_nouns.txt").read().split()
+verb_list = open("list_verbs.txt").read().split()
+adjective_list = open("list_adjectives.txt").read().split()
+preposition_list = open("list_prepositions.txt").read().split()
+print("Loaded lists")
 
-job = choice(jobs)
-city = choice(cities)
+source = open("LC.txt").read()
+punctuation_marks = [".", ",", "?", "!", ";", ":", "(", ")"]
+for i in range(len(punctuation_marks)):
+    source = source.replace(punctuation_marks[i], "")
+source = source.lower()
+words = source.split()
+words = list(set(words)) # making them unique, but not bothering with a separate variable
+words = words[:1000]
+print("Loaded source text")
 
-line_1 = "There once was a " + job + " from " + city
-print(line_1)
+stop_words = open("list_stop_words.txt").read().split()
+good_words = []
+for i in range(len(words)): # run the loop as many times as there are words
+    if words[i] not in stop_words:  
+        good_words.append(words[i])
+print("Filtered good words")
+
+nouns = []
+verbs = []
+adjectives = []
+prepositions = []
+for i in range(len(good_words)):
+    print(i)
+    word = good_words[i]
+    if word in noun_list:
+        nouns.append(word)
+    if word in verb_list:
+        verbs.append(word)
+    if word in adjective_list:
+        adjectives.append(word)
+    if word in preposition_list:
+        prepositions.append(word)
 ```
-```
-There once was a credit checker from Hartford
-```
 
-For the second line of the poem, the last word has to rhyme with the city. We can use the `rhymes` function, which returns a list, to find possible rhymes, and choose randomly from those.
+Notice that we're using `in` here to determine membership in a list, not a string—`in` works with either.
 
+### Slow code? Take a portion of the text
+
+Also note that this is not a particularly efficient algorithm, so if your text is really long (like "LC.txt" is), it's going to take awhile. That's why I included some `print()` statements in the code—so I know what is going on. If it's too much, use a shorter text, or perhaps just a portion of your text. One approach might be to figure out your algorithm with a short text, and then when its working, apply it to something longer.
+
+We won't go into this syntax in depth, but a way that you can take just the first 1,000 words is like this:
 ```py
-from random import choice
-from word_helper import rhymes  # import rhymes function
+words = words[:1000]
+```
+That's what I've done above in order to make things a bit more manageable. Using only unique words will cut down on the size, but of course, depending on your algorithm, you will lose something of the character of a text if a certain word is used very often.
 
-jobs = open("jobs.txt").read().split()
-cities = open("cities.txt").read().split()
-verbs_past = open("verbs_past.txt").read().split()
-nouns = open("nouns.txt").read().split()
+### Recombination via part-of-speech
 
-job = choice(jobs)
-city = choice(cities)
-
-line_1 = "There once was a " + job + " from " + city
-print(line_1)
-
-rhyming_word = choice(rhymes(city))
-line_2 = "Who " + choice(verbs_past) + " with a " + choice(adjectives) + " " + rhyming_word
-print(line_2)
+In any case, remember how you can concatenate strings together using the `+` operator? This comes in handy here:
+```py
+for i in range(10):        
+    sentence = "The " + choice(adjectives) + " " + choice(nouns) + " " + choice(verbs) + " " + choice(adjectives) + " " + choice(nouns) + "."
+    print(sentence)    
 ```
 ```
-There once was a executive secretary from Scottsdale
-Who irritated with a hilarious gmail
+The teal strata snowing good furniture.
+The justly seasons presented quietly length.
+The official rats leaf something clamber.
+The chalk mantle obliging city pursuit.
+The international volumes drink tenderest quest.
+The inner tails copying preservative port.
+The unacceptable turn invites warmly moccasins.
+The yesterday fort benefit plain clearing.
+The indecent lover considering unacceptable queues.
+The nine horseback believing partial faculties.
 ```
 
-This doesn't always work and isn't often very good, but you get the idea.
+This is more or less "mad libs" using words from the source text. By providing a basic sentence structure, in this case "The [adjective] [noun] [verb] [adjective] [noun].", we've let the computer fill in the rest. Not all the results are good ones, but they get closer to a more concrete meaning.
+
+How could you get it closer? Maybe filtering for verbs that end in "ed" or removing adjectives ending in "ly" could get things making more sense. Whether or not that serves your artistic purposes is up to you.
