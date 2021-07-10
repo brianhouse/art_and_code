@@ -9,52 +9,6 @@ Do small group screen sharing for intermediate feedback
 ## Units
 
 
-### Recombination
-
-
-closed captions and .srt example
-
-https://github.com/NaNoGenMo/2017
-
-karaoke example
-
---> have in class poetry reading
-
-etheree poem   as example
-
-textwrap() import function
-
-/
-
-having the template was a pain in the ass for file management. not worth it. no one used rhyme.
-
-is there a library already that can be used?
-
-is there not an English dictionary with syllable number in existence? that's not nltk?
-https://pypi.org/project/Vocabulary/
-
-if not, do it without. maybe more on analysis, look more closely at Listening Post.
-
-https://www.nytimes.com/2020/11/24/science/artificial-intelligence-ai-gpt3.html?referringSource=articleShare
-
-/////
-
-- add Cento form to non-digital intro
-- keep the beginning, but just make it a lesson on indexes, and use shuffle
-- fix word replacement to just use concatenation
-- then we have:
-    - concatenative with word lists
-    - cut-ups with a corpus
-    - syllables
-
-what's the assignment? do anything?
-or pick a form of poetry and a source text and make it work (that would require rhyme)
-
-the rhyme is too shitty. too obscure.
-
-also, wonder if I should go back to terminal for this.
-
-
 ### Interface
 
 a perceptual explanation of framerate etc seems useful -- animation, human perception

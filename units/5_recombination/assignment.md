@@ -1,39 +1,5 @@
-## Sketch #4: Recombination
+## Sketch #5: Recombination
 
-This sketch will consist of a language machine that outputs variations of some sort of structured text via recombination. The exact form that it takes is up to you. You might take a form of poetry, such as a sonnet or free verse, and create variations by using random words from the provided lists or ones you curate. You could also remix a famous art manifesto or political statement, rewrite a newspaper article with substituted words, auto-generate rap lyrics, or produce alternative closed captions for a film. Challenge yourself to produce a novel algorithm that doesn't replicate the examples.
+Choose one or more source texts—newspaper articles, poems, books, lyrics, emails, manifestos, etc—and write a program that recombines its contents to create a new text. The way in which the text is transformed should have an artistic purpose, whether that is to critically comment on the content of your source, explore some formal property of its language, or elicit a particular mood in your audience.
 
-
-Along with your code and [3-sentence description](../../resources/description_guidelines.md), you should supply three versions of your text output (that result from identical code!) so we can see the nature of the variation that your program produces. Resist the urge to edit the output to smooth over rough edges; looking back, those often become the most interesting features.
-
-
-
-Take a source text and modify it in some interesting way.
-
-
-
-- extract parts of speech into separate lists
-- replace occurrences of some word with another (list or string?)
-
-newspaper article, closed caption, book
-
-/
-- could simply be cut-ups
-- could be analysis based (we have length, starts with, includes, etc)
-- mad-libs. either word list, or requires
-- poetry. would require rhyming.
-
-
-Find a text in the world and alter it
-and transform it into another form
-
-- could simply be cut-ups
-- could be analysis based (we have length, starts with, includes, etc)
-- remove all the dialog
-
-could use closed captioning
-
-
-etheree poem
-cento
-free verse
-blank verse (needs meter)
+Along with your code and [3-sentence description](../../resources/description_guidelines.md), you should supply an example of your program's output. Resist the urge to edit the output to smooth over rough edges; looking back, those often become the most interesting features.
