@@ -60,6 +60,9 @@ table crits where I give actual individual feedback, just not in front of the ro
 
 for each assignment, there is a problem-solving aspect.
 
+#####
+
+was using "parameters" instead of "arguments", but abandoned that, so could redit for consistency
 
 ## future
 

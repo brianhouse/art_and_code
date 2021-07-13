@@ -1,0 +1,434 @@
+# Glitch
+
+In this course, we've been working with images and text by defining algorithms to produce them. But way back with our first unit, we learned how computers use numbers to represent everything. This includes digital images, which, whether created by us or downloaded from the internet, are composed of individual pixels with their own color value.
+
+This provides us with another approach to work with images. Rather than build them up with shapes like lines and circles, we can start with pixel values. By creatively misusing these data, we can expressively transform the image to our own artistic ends. This includes effects that might be classified as intentional "glitches"—corruption in data that might have been undesirable but which leads to aesthetically interesting results.
+
+
+## Context
+
+The idea of interesting mistakes is really endemic to the art-making process—no artist works without experimentation, and not all results are planned. When it comes to making machines make the mistakes for us, an early and iconic example might be Nam June Paik (1932–2006), a Korean American who anticipated the development of the internet and media art as a genre. His _TV Magnet_ and many experiments like it interfered with the normal functioning of a TV, which worked with cathode ray tubes at that time. A large magnet disrupted the scanning process of the ray, producing an abstract image instead of the original signal:
+
+<p align="center">
+  <img src="context/1_paik.jpg" width=400 /><br />
+  Nam June Paik, <i>TV Magnet</i> (1965)
+</p>
+
+This work is meant to be subversive, as it undermines the authoritative power of the television broadcast, but the method it uses, making something "dysfunctional," has its own sense of beauty. The word "glitch" came into popular usage around the same time as Paik's experiments, thanks to the (very famous at the time) astronaut John Glenn, who mentioned the use of the term among NASA engineers.
+
+By the late 1970s, video games were becoming available as some of the first widely available digital media, along with the possibility of glitching them. _Digital TV Dinner_ (1978) by Raul Zaritsky, Jamie Fenton, and Dick Ainsworth, misused the cartridges for Bally Astrocade console game, creating errors that would render as patterns on the TV screen (and a glitchy soundtrack).
+
+<p align="center">
+  <img src="context/2_tv_dinner.png" width=400 /><br />
+  Raul Zaritsky, Jamie Fenton, and Dick Ainsworth, <i>Digital TV Dinner</i> (1979)<br />
+  <a href="https://www.youtube.com/watch?v=Ad9zdlaRvdM">Video here</a>
+</p>
+
+Rosa Menkman (1983–) is an artist and curator primarily working in digital video that has extensively explored "glitch art" as a genre unto itself. She comments that:
+>    On the one hand, there are the tactical and critical artists who use the technique to criticize popular culture, and on the other hand the technique now is very much alive and part of this same culture.
+    —Rosa Menkmen, _The Glitch Moment(um)_
+
+<p align="center">
+  <img src="context/5_menkman.png" width=400 /><br />
+  Rosa Menkman, examples of digital glitch techniques from <i>The Glitch Moment(um)</i> (2011)
+</p>
+
+While earlier forms of glitch were limited to hardware errors, code and data mean glitches can happen on an information level and can therefore be created intentionally with image editing programs, or even with code.
+
+Mathieu St-Pierre provides one example, _Melting Ice Cream_ (2012), a series of images that takes still video frames (of ice cream) and manipulates them to develop a whole other idea of melting:
+
+<p align="center">
+  <img src="context/6_st-pierre.jpg" width=400 /><br />
+  Mathieu St-Pierre, from <i>Melting Ice Cream</i> (2012)
+</p>
+
+Some others:
+
+<p align="center">
+  <img src="context/7_scott.jpg" width=400 /><br />
+  Jarid Scott (2017)
+</p>
+
+<p align="center">
+  <img src="context/8_collet.jpg" width=400 /><br />
+  Thomas Collett (2018)
+</p>
+
+<p align="center">
+  <img src="context/9_lofgren.png" width=400 /><br />
+  Tobias Lofgren (2018)
+</p>
+
+## Code
+
+### Loading an image
+
+There are many ways to use preexisting software programs to glitch images, but working with code will allow us to get a better sense of how pixel data actually works.
+
+To start with, we'll need an image. Make one, steal one, do whatever you have to do. I've selected an image of a puffin that I've downloaded from Google Images (control-click on an image, choose "Open Image in New Tab", and then save the image).
+
+<p align="center">
+  <img src="code/canvas_1.png" width=400 /><br />
+  puffin.png<br />
+</p>
+
+To start our sketch, we'll set the size of our canvas:
+
+```py
+size(400, 400)
+```
+
+For the purposes of this sketch, we want our image to be the same size as our canvas. Or rather, we'll resize an image to be the size that we want our canvas to be.
+
+I've used an [online image resizer](https://www.adobe.com/photoshop/online/resize-image.html) to make my puffin 400 x 400 pixels (you'll probably want a larger canvas). Save your image as a .png file if possible. Using Photoshop or some other image editing software also works.
+
+Processing makes loading an image into the sketch very straightforward. To begin, add your image file to the sketch using the Sketch -> Add File option.
+
+<p align="center">
+  <img src="code/canvas_2_.png" width=400 /><br />
+</p>
+
+Now, we use the `loadImage()` function to load the image data into a new variable (`puffin`). To display the image, we use the `image()` function, which takes the image data variable as a parameter along with an x and y coordinate at which to draw it.
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")    # load the image into a variable
+image(puffin, 0, 0)                 # draw the image to the canvas
+```
+
+Running this program should simply show the image:
+
+<p align="center">
+  <img src="code/canvas_3.png" width=400 /><br />
+</p>
+
+Once we know our image is being loaded correctly, we're not going to display it directly with `image()` again. Instead, we're going to use the individual pixel data.
+
+### Working with pixel data
+
+The `image.get()` function gets the pixel data from a particular coordinate. For example:
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")    # load the image into a variable
+pixel = puffin.get(0, 0)
+print(pixel)
+```
+```
+-2954759
+```
+This number is the raw number that actually contains the R, G, B values for the pixel at 0, 0. We can access the individual components like this:
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+pixel = puffin.get(0, 0)
+r = red(pixel)
+g = green(pixel)
+b = blue(pixel)
+print(r, g, b)
+```
+```
+(210.0, 233.0, 249.0)
+```
+
+A lot can be done with this data. For our purposes, let's begin by reconstructing the image using `for` loops:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+for x in range(400):
+    for y in range(400):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)        
+        stroke(r, g, b)
+        point(x, y)
+```
+<p align="center">
+  <img src="code/canvas_4.png" width=400 /><br />
+</p>
+
+Once again, we have the same image of a puffin. But this time, we have used a nested `for` loop to loop through all of the pixels in the image (using `x` and `y` instead of `i` to make the purpose clear). For each of the those pixels, we retrieve the data already draw to the canvas, extract the color data, and draw it to the canvas using `point()`.
+
+Now we can start to play around. For example, we could mess with the colors, putting r, g, and b in all the wrong places:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+for x in range(400):
+    for y in range(400):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)        
+        stroke(b, r, g)
+        point(x, y)
+```
+
+<p align="center">
+  <img src="code/canvas_6.png" width=400 /><br />
+</p>
+
+Or invert the image by subtracting the values from 255:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+for x in range(400):
+    for y in range(400):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)        
+        stroke(255 - r, 255 - g, 255 - b)
+        point(x, y)
+```
+
+<p align="center">
+  <img src="code/canvas_7.png" width=400 /><br />
+</p>
+
+We can also play around with shifting the position of pixels. For example, we could subtract x from the width of the canvas, resulting in a flipped image:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+for x in range(400):
+    for y in range(400):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)        
+        stroke(r, g, b)
+        point(400 - x, y)
+```
+<p align="center">
+  <img src="code/canvas_5.png" width=400 /><br />
+</p>
+
+
+
+
+### Advanced `range()` and shapes
+
+Let's revisit `range()`. Thus far, we've usually given `range()` just one parameter. But it can also work with _two_ parameters for the starting and stopping values (with one parameter, the computer just assumes that the starting value is 0). For example, the following will print all the values from 0 up to (but not including) 100:
+
+```py
+for i in range(0, 100):
+    print(i)
+```
+```
+0
+1
+2
+.
+.
+.
+97
+98
+99
+```
+
+In fact, `range()` also takes a _third_ parameter, skip, which defines how much is increased each time. For example, the following will do the same thing as above, but increment by 10:
+
+```py
+for i in range(0, 100, 10):
+    print(i)
+```
+```
+0
+10
+20
+.
+.
+.
+70
+80
+90
+```
+
+How is this helpful with our image manipulations? Because maybe we don't want to draw _every_ pixel using point:
+
+```py
+size(400, 400)
+background(255)  # adding a white background
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 3):      # every third pixel horizontally
+    for y in range(0, 400, 3): # every third pixel vertically
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+        stroke(r, g, b)
+        point(x, y)
+```
+<p align="center">
+  <img src="code/canvas_8.png" width=400 /><br />
+</p>
+
+This comes in particularly handy if we want to make some bigger shapes. For example, let's draw with squares that are 5 pixels wide, and use the skip parameter in `range()` to make space for them:
+
+This comes in handy if we want to use some bigger shapes. For example, instead of using `set()` to change a pixel, let's draw with squares that are 5 pixels wide, and use the skip parameter in `range()` to make space for them:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 5):      # every fifth pixel horizontally
+    for y in range(0, 400, 5): # every fifth pixel vertically
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+        fill(r, g, b)   # using fill instead of stroke
+        square(x, y, 5)
+```
+
+<p align="center">
+  <img src="code/canvas_9.png" width=400 /><br />
+</p>
+
+Pushing this technique further, let's use circles instead of squares, spread them out further, and randomize their size:
+
+```py
+size(400, 400)
+background(255)
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 10):      # every 10th pixel horizontally
+    for y in range(0, 400, 10): # every 10th pixel vertically
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+        fill(r, g, b)
+        noStroke()
+        circle(x, y, random(3, 10)) # using a random size
+```            
+
+
+<p align="center">
+  <img src="code/canvas_11.png" width=400 /><br />
+</p>
+
+For a more impressionistic variation, let's make them closer again, increase the size, and add some transparency:
+
+```py
+size(400, 400)
+background(255)
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 5):      # every fifth pixel horizontally
+    for y in range(0, 400, 5): # every fifth pixel vertically
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+        fill(r, g, b, 50)   # adding transparency to color
+        noStroke()
+        circle(x, y, random(3, 20)) # using a random size
+```
+
+<p align="center">
+  <img src="code/canvas_10.png" width=400 /><br />
+</p>
+
+Or, let's make line segments move off in random directions:
+
+```py
+size(400, 400)
+background(255)
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 5):
+    for y in range(0, 400, 5):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+        stroke(g, b, r) # swap colors
+        line(x, y, x + random(-50, 50), y + random(-50, 50))
+```
+<p align="center">
+  <img src="code/canvas_12.png" width=400 /><br />
+</p>            
+
+This can start to get very experimental. Here, we're using the red value to control the stroke weight, which makes little intuitive sense, but has an interesting result:
+
+```py
+size(400, 400)
+background(255)
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 5):
+    for y in range(0, 400, 5):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+        stroke(r, g, b)
+        strokeWeight(r / 5)
+        line(x, y, x + random(-5, 5), y + random(-5, 5))              
+```
+
+<p align="center">
+  <img src="code/canvas_13.png" width=400 /><br />
+</p>   
+
+
+### Conditionals and gradients
+
+So far, we've been applying the same effect evenly across the image. However, we can also use conditions to make decisions as we go.
+
+For example, using modulo, we can change the code every 25 pixels:
+
+```py
+size(400, 400)
+background(255)
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 1):
+    for y in range(0, 400, 1):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+        # noStroke()
+        stroke(r, g, b)            
+        if x % 50 < 25: # if the remainder when divided by 50 is less than 25...
+            point(x, height-y)
+        else:
+            point(x, y)            
+```
+<p align="center">
+  <img src="code/canvas_14.png" width=400 /><br />
+</p>   
+
+To have a more gradual effect, we could calculate how far along we are from one end of the screen to the another, and use that value to change a parameter. Here's an example of that using `lerpColor()`:
+
+```py
+size(400, 400)
+background(255)
+puffin = loadImage("puffin.png")
+
+for x in range(0, 400, 1):
+    for y in range(0, 400, 1):
+        pixel = puffin.get(x, y)
+        r = red(pixel)
+        g = green(pixel)
+        b = blue(pixel)
+
+        position = x / 400.0   # horizontal progression from 0-1
+
+        original_color = color(r, g, b)
+        crazy_color = color(g, b, 255 - r)
+        lerped_color = lerpColor(original_color, crazy_color, position)
+
+        stroke(lerped_color)            
+        point(x, y)
+```
+
+<p align="center">
+  <img src="code/canvas_15.png" width=400 /><br />
+</p>  
