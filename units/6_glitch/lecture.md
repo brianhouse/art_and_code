@@ -135,8 +135,8 @@ A lot can be done with this data. For our purposes, let's begin by reconstructin
 ```py
 size(400, 400)
 puffin = loadImage("puffin.png")
-for x in range(400):
-    for y in range(400):
+for y in range(400):
+    for x in range(400):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -155,8 +155,8 @@ Now we can start to play around. For example, we could mess with the colors, put
 ```py
 size(400, 400)
 puffin = loadImage("puffin.png")
-for x in range(400):
-    for y in range(400):
+for y in range(400):
+    for x in range(400):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -174,8 +174,8 @@ Or invert the image by subtracting the values from 255:
 ```py
 size(400, 400)
 puffin = loadImage("puffin.png")
-for x in range(400):
-    for y in range(400):
+for y in range(400):
+    for x in range(400):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -193,8 +193,8 @@ We can also play around with shifting the position of pixels. For example, we co
 ```py
 size(400, 400)
 puffin = loadImage("puffin.png")
-for x in range(400):
-    for y in range(400):
+for y in range(400):
+    for x in range(400):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -254,8 +254,8 @@ size(400, 400)
 background(255)  # adding a white background
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 3):      # every third pixel horizontally
-    for y in range(0, 400, 3): # every third pixel vertically
+for y in range(0, 400, 3):      # every third pixel vertically
+    for x in range(0, 400, 3): # every third pixel horizontally
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -275,8 +275,8 @@ This comes in handy if we want to use some bigger shapes. For example, instead o
 size(400, 400)
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 5):      # every fifth pixel horizontally
-    for y in range(0, 400, 5): # every fifth pixel vertically
+for y in range(0, 400, 5):      # every fifth pixel vertically
+    for x in range(0, 400, 5): # every fifth pixel horizontally
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -296,8 +296,8 @@ size(400, 400)
 background(255)
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 10):      # every 10th pixel horizontally
-    for y in range(0, 400, 10): # every 10th pixel vertically
+for y in range(0, 400, 10):      # every 10th pixel vertically
+    for x in range(0, 400, 10): # every 10th pixel horizontally
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -319,8 +319,8 @@ size(400, 400)
 background(255)
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 5):      # every fifth pixel horizontally
-    for y in range(0, 400, 5): # every fifth pixel vertically
+for y in range(0, 400, 5):      # every fifth pixel vertically
+    for x in range(0, 400, 5): # every fifth pixel horizontally
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -341,8 +341,8 @@ size(400, 400)
 background(255)
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 5):
-    for y in range(0, 400, 5):
+for y in range(0, 400, 5):
+    for x in range(0, 400, 5):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -361,8 +361,8 @@ size(400, 400)
 background(255)
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 5):
-    for y in range(0, 400, 5):
+for y in range(0, 400, 5):
+    for x in range(0, 400, 5):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -377,7 +377,7 @@ for x in range(0, 400, 5):
 </p>   
 
 
-### Conditionals and gradients
+<!-- ### Conditionals and gradients
 
 So far, we've been applying the same effect evenly across the image. However, we can also use conditions to make decisions as we go.
 
@@ -388,8 +388,8 @@ size(400, 400)
 background(255)
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 1):
-    for y in range(0, 400, 1):
+for y in range(0, 400, 1):
+    for x in range(0, 400, 1):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -412,8 +412,8 @@ size(400, 400)
 background(255)
 puffin = loadImage("puffin.png")
 
-for x in range(0, 400, 1):
-    for y in range(0, 400, 1):
+for y in range(0, 400, 1):
+    for x in range(0, 400, 1):
         pixel = puffin.get(x, y)
         r = red(pixel)
         g = green(pixel)
@@ -431,4 +431,145 @@ for x in range(0, 400, 1):
 
 <p align="center">
   <img src="code/canvas_15.png" width=400 /><br />
-</p>  
+</p>   -->
+
+### Separating channels and shifting pixels
+
+These effects all produce interesting results. To get closer to a "glitchy" aesthetic, however, we need to reproduce common mistakes of the machine. This includes two common and related artifacts: misregistration, where the R, G, B channels do not line up properly, and pixel-shifting, where pixels are shifted from their positions.
+
+To start with, we're going to grab two pixels instead of just one. The second pixel is going to be offset by a set amount. Then, when we set our stroke value, we're going to mix and match color values from each pixel:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+offset = 50
+for y in range(400):
+    for x in range(400):
+
+        pixel_1 = puffin.get(x, y)
+        r_1 = red(pixel_1)
+        g_1 = green(pixel_1)
+        b_1 = blue(pixel_1)
+
+        pixel_2 = puffin.get(x + offset, y)
+        r_2 = red(pixel_2)
+        g_2 = green(pixel_2)
+        b_2 = blue(pixel_2)
+
+        stroke(r_1, g_2, b_2)   
+        point(x, y)
+```
+<p align="center">
+  <img src="code/canvas_17.png" width=400 /><br />
+</p>
+Here we have the color misregistration, which gives a sense of the image being pulled apart. If we wanted to separate all three color channels, we could pull another pixel from a different offset.
+
+However, another thing we could try is to vary the offset. For example, let's choose a new random offset for each row:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+offset = 0
+for y in range(400):
+    offset = random(100)
+    offset = int(offset)  # do this to avoid an error
+    for x in range(400):
+        pixel_1 = puffin.get(x, y)
+        r_1 = red(pixel_1)
+        g_1 = green(pixel_1)
+        b_1 = blue(pixel_1)
+
+        pixel_2 = puffin.get(x + offset, y)
+        r_2 = red(pixel_2)
+        g_2 = green(pixel_2)
+        b_2 = blue(pixel_2)
+
+        stroke(r_1, g_2, b_2)   
+        point(x, y)
+```
+<p align="center">
+  <img src="code/canvas_18.png" width=400 /><br />
+</p>
+
+This looks a bit extreme. But what if instead of shifting things for every row, we only did it occasionally?
+
+One way to set up this kind of probability is to "roll the dice" with a conditional statement: get a random number up to 100, and if it's less than the probability you want something to happen, do that thing. ie, this will produce a 10% chance of something happening:
+
+```py
+if random(100) < 10:
+    do the thing
+```
+
+Let's use this technique to control the selection of a new offset:
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+offset = 0
+for y in range(400):
+    if random(100) < 10:
+        offset = random(50)   # set to a lower value to tone down the effect
+        offset = int(offset)  # do this to avoid an error
+    for x in range(400):
+        pixel_1 = puffin.get(x, y)
+        r_1 = red(pixel_1)
+        g_1 = green(pixel_1)
+        b_1 = blue(pixel_1)
+
+        pixel_2 = puffin.get(x + offset, y)
+        r_2 = red(pixel_2)
+        g_2 = green(pixel_2)
+        b_2 = blue(pixel_2)
+
+        stroke(r_1, g_2, b_2)   
+        point(x, y)
+```
+
+<p align="center">
+  <img src="code/canvas_19.png" width=400 /><br />
+</p>
+
+Notice that we used a conditional statement. Since x and y are always incrementing in our loops, using these with `if` statements is a very useful tool when we want changes to apply to just a portion of the canvas:
+
+```py
+size(400, 400)
+puffin = loadImage("puffin.png")
+offset = 0
+for y in range(400):
+    if random(100) < 10:
+        offset = random(50)   # set to a lower value to tone down the effect
+        offset = int(offset)  # do this to avoid an error
+    for x in range(400):
+        pixel_1 = puffin.get(x, y)
+        r_1 = red(pixel_1)
+        g_1 = green(pixel_1)
+        b_1 = blue(pixel_1)
+
+        # apply "fuzz" to the right half of the image
+        if x < 200:
+            fuzz = 0
+        else:
+            fuzz = random(50)
+            fuzz = int(fuzz)
+
+        pixel_2 = puffin.get(x + offset, y + fuzz)
+        r_2 = red(pixel_2)
+        g_2 = green(pixel_2)
+        b_2 = blue(pixel_2)
+
+        # different color combination for the top and bottom of the image
+        if y > 250:
+            stroke(r_1, g_2, b_1)
+        else:
+            stroke(r_1, g_2, b_2)   
+
+        point(x, y)
+```
+
+<p align="center">
+  <img src="code/canvas_20.png" width=400 /><br />
+</p>
+Now we're really getting some glitch going. Imagine using different offsets for different channels, adding vertical offset, combining multiple images, using transparency, etc...
+
+### Repeated applications
+
+One parting thought. What if you generated an output image from this code, and then put it back through your sketch as the input image?
