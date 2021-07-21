@@ -10,7 +10,7 @@
 
 ### Digital
 + artificial life
-+ Game of life
++ Game of life / CAs
 + Boids
 + Robert Hodgin
 + Sims
@@ -141,7 +141,7 @@ Ok, so what if we want the circle to go in a different direction? There's many w
 Remember that in Processing we work with angles in terms of radians:
 
 <p align="center">
-  <img src="code/unit_circle.jpg" width=400 border=0 /><br />
+  <img src="code/unit_circle.png" width=400 border=0 /><br />
 </p>
 
 Processing provides a special variable (or rather, a constant) called `PI` that holds the value of pi for us and is always available. So to give our circle a heading to the northwest, we could do:
