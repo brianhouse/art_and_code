@@ -7,6 +7,7 @@
 - online questionnaire
 - rubric for presentations
 - switch out examples
+- is globals handled in nonlinear narrative?
 
 - need "map"
 /

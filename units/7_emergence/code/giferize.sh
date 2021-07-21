@@ -1,7 +1,7 @@
 #!/bin/bash
 
-ffmpeg -f image2 -framerate 30 -i %d.png output.gif
-rm *.jpg
+ffmpeg -f image2 -framerate 30 -i $1/screen-%04d.jpg output.gif
+rm $1/*.jpg
 
 # output=$(basename $1 .mov)
 # output="${output}.gif"

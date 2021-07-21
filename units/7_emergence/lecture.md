@@ -1,9 +1,15 @@
-## Coming soon
+# Emergence
 
+## Context
 
-/// emergence
+### Non-digital
 
 + schilling
++ chaos theory
+
+
+### Digital
++ artificial life
 + Game of life
 + Boids
 + Robert Hodgin
@@ -12,578 +18,752 @@
 
 ## Code
 
-The introduction of the previous unit, **interface**, brought us the possibility of animation with the introduction of the `draw()` function. While brushes are a form of animation, our emphasis was on using the mouse coordinates and cumulatively layering. But by clearing the canvas each frame, we can create motion graphics
+### `setup()`, `draw()`, and global variables
 
- they're not one that simulates autonomous elements moving on their own, which is what we're going to explore now. In addition to providing a means of creating animated effects, this also introduces the possibility of creating dynamic systems that don't need direct human input to create rich and surprising images.
+So far, we've used Python functions written by others, whether to make graphics in Processing or via `import` commands to manipulate text or use variations on the random module. We've also written our own functions to make rooms in nonlinear narratives and recursive drawings. Now, we're going to use functions in yet another, slightly different way.
 
+When we write functions that have certain specific names, Processing will know to call those functions for us under certain circumstances. These are called **event handlers**.
 
-### Motion
-
-To begin, let's revisit the familiar starting point of a circle on a canvas.
-
-```py
-def setup():
-    size(400, 300)
-
-def draw():
-    circle(200, 150, 50)
-```
+`setup()` is the most boring of these. This function is called once when the sketch is first run:
 
 <p align="center">
-  <img src="code/canvas_1.png" width=400 /><br />
+  <img src="code/canvas_1__.png" width=600 /><br />
 </p>
 
-Previously, we made the circle move by substituting `200` and `150` with `mouseX` and `mouseY`, which made the circle follow the mouse. However, the introduction of some global variables can also produce motion.
+Notice how this function runs even though we didn't call it explicitly (which we had to do for our functions in the nonlinearity sketch, for instance).
+
+Once we start using handlers, _all_ of our code has to be contained in functions. So `setup()` doesn't do much for us other than give us a place to put the kind of code we've been working with so far—that is, code that is intended to be run just once. For example, from now on, we'll put `size()` inside of setup.
+
+The interesting stuff starts with `draw()`. Processing calls `draw()` over and over again, once every 1/30th of a second. The implications of this are profound, because it allows us to do animation (the reason that it is 1/30th of a second is that this is the standard frame rate for digital video).
+
+To start with, let's draw a circle:
 
 ```py
-position_x = 200
+def setup(): # runs just once
+    size(400, 400)
 
-def setup():
-    size(400, 300)
-
-def draw():
-    global position_x
-
-    # clear the screen each frame
-    background(200)
-
-    circle(position_x, 150, 50)
-    position_x += 1
+def draw(): # runs over and over again
+    circle(200, 200, 30)    
 ```
 
 <p align="center">
-  <img src="code/canvas_2.gif" width=400 /><br />
+  <img src="code/canvas_2.png" width=400 /><br />
 </p>
 
-Each time `draw()` is called, `position_x` is incremented by 1, which puts the circle in a different position the next call.
+So far, `setup()` is called right when the sketch is run, and it initializes the canvas. Then, `draw()` is called and it in turn calls `circle()`. In fact, the code inside `draw()` is running 30 times every second, drawing circle upon circle upon circle. However, we can't see this, because it's always drawing the circle at the same position.
 
-(Note that `position_x += 1` is the same thing as `position_x = position_x + 1`—this shorthand syntax will make things easier to write down the line. `*=` and `/=` work the same with multiplication and division.)
-
-What happens when the ball gets to the edge of the canvas? Well, it keeps on going, forever.
-
-We can change that with a conditional. Using an `if` statement to check if the circle has passed beyond the canvas, we can then reset `position_x` to just beyond the other side.
+To change the position of the circle, we're going to need some variables.
 
 ```py
-position_x = 200
+def setup(): # runs just once
+    size(400, 400)
 
-def setup():
-    size(400, 300)
-
-def draw():
-    global position_x
-
-    # clear the screen each frame
-    background(200)
-
-    circle(position_x, 150, 50)
-    position_x += 1
-
-    if position_x > width + 25:
-        position_x = -25
+def draw(): # runs over and over again
+    x = 200
+    y = 200  
+    circle(x, y, 30)
 ```
 <p align="center">
-  <img src="code/canvas_11.gif" width=400 /><br />
-</p>    
-
-So far so good. But what about making it _bounce_? For that, it's not just a matter of changing the position of the circle, but the _velocity_.
-
-Currently, the velocity in our example is simply `1`. But we can prepare to make things a lot more interesting if we use a variable rather than a static number. While we're at it, let's make things work in both dimensions. We'll call these new variables `velocity_x` and `velocity_y` (and we'll also add `position_y`). We'll keep `velocity_x` at 1, and initialize `velocity_y` at 1.5, just because, and see how it flies off the bottom of the screen.
-
-
-```py
-position_x = 200
-position_y = 150
-velocity_x = 1
-velocity_y = 1.5
-
-def setup():
-    size(400, 300)
-
-def draw():
-    global position_x, position_y, velocity_x, velocity_y         # multiple variables can be listed after global
-    background(200)
-    circle(position_x, position_y, 50)
-    position_x += velocity_x    # add 1 to position_x each frame
-    position_y += velocity_y    # add 1.5 to position_y each frame
-```
-<p align="center">
-  <img src="code/canvas_3.gif" width=400 /><br />
+  <img src="code/canvas_2.png" width=400 /><br />
 </p>
 
-Now that we have `velocity_x` and `velocity_y`, we're ready to bounce:
+No change yet. But what we're going to do now is use `setup()` to set the initial values of `x` and `y`, and then update them in `draw()`. One catch when we do this: we need to let Processing know that the `x` in `setup()` is the same `x` as the `x` in `draw()`. Likewise with `y`. To do this, we use the `global` keyword:
 
 ```py
-position_x = 200
-position_y = 150
-velocity_x = 1
-velocity_y = 1.5
+def setup(): # runs just once
+    global x, y # these variables are shared between functions     
+    size(400, 400)
+    x = 200 # initial value for x
+    y = 200 # initial value for y
 
-def setup():
-    size(400, 300)
-
-def draw():
-    global position_x, position_y, velocity_x, velocity_y         # multiple variables can be listed after global
-    background(200)
-    circle(position_x, position_y, 50)
-    position_x += velocity_x
-    position_y += velocity_y
-
-    # check if position_x is within the circle's radius of a vertical wall
-    if position_x > width - 25:
-        position_x = width - 25 # set it back to
-        velocity_x *= -1        # flip the direction
-    elif position_x < 25:
-        position_x = 25
-        velocity_x *= -1
-
-    # same for y
-    if position_y > height - 25:
-        position_y = height - 25
-        velocity_y *= -1
-    elif position_y < 25:
-        position_y = 25
-        velocity_y *= -1     
+def draw(): # runs over and over again
+    global x, y # these variables are shared between functions
+    circle(x, y, 30)
 ```
 <p align="center">
-  <img src="code/canvas_4.gif" width=400 /><br />
+  <img src="code/canvas_2.png" width=400 /><br />
 </p>
 
-In example above, the conditional statements check to see if `position_x` or `position_y` have strayed outside their bounds. If so, position is snapped back to those bounds, and the appropriate velocity variable is flipped from positive to negative or negative to positive. This changes the direction of the circle, or as now might be more appropriate to call it, the "ball."
-
-All that we're doing here is drawing a circle at different coordinates each frame, which we're keeping track of as the interaction between a set of variables. But what we see feels like an object obeying (roughly!) the laws of physics.
-
-### Vectors
-
-One thing that you'll notice with this code is that it's a little bit of a pain to keep track of x and y variables separately. After awhile it gets confusing, and if we start adding other aspects that depend on x and y coordinates, the variables add up.
-
-However, because making things move is such a common thing to do in Processing, there is something special to help us out. Any pair of x and y variables in Processing can be replaced by a `PVector`, which is an object that includes both x and y components. Not only will it make our code cleaner, it will enable us to do some more interesting things.
-
-Here's the previous example rewritten with `PVector`—the result is the same.
-
+Still no change, but now we're setting `x` and `y` in `setup()` and making use of them in `draw()`. So now we're ready to make something happen:
 ```py
-position = PVector(200, 150)    # declare with x and y parameters
-velocity = PVector(1, 1.5)
+def setup(): # runs just once
+    global x, y # these variables are shared between functions     
+    size(400, 400)
+    x = 200 # initial value for x
+    y = 200 # initial value for y
 
-def setup():
-    size(400, 300)
-
-def draw():
-    global position, velocity
-
-    # draw things
-    background(200)
-    circle(position.x, position.y, 50)  # access x and y components with a dot
-
-    # update position
-    position += velocity        # adds both x and y components
-
-    # update velocity to bounce off the walls
-    if position.x > width - 25:
-        position.x = width -25
-        velocity.x *= -1
-    elif position.x < 25:
-        position.x = 25
-        velocity.x *= -1        
-    if position.y > height - 25:
-        position.y = height - 25
-        velocity.y *= -1
-    elif position.y < 25:
-        position.y = 25
-        velocity.y *= -1
-
-```
-
-This code is slightly simpler and more intuitive to read, but is essentially the same thing. Note that to access the individual x and y properties of a `PVector`, we write the name of the variable with a dot, followed by `x` or `y`. We do this when we need to access the individual values, such as for our "walls." On the other hand, when we update the `position` with `velocity` we can just do so all at once, ie, `position += velocity`.
-
-Vectors let us phrase complex calculations rather simply. Say we wanted this ball to not only move on its own and bounce off the walls, but to also chase the mouse. We can represent the mouse position as a vector like this:
-```py
-mouse_position = PVector(mouseX, mouseY)
-```
-The difference between `mouse_position` and the ball's `position` is the direction we want the ball to go. This is simply:
-```py
-direction = mouse_position - position
-```
-How fast do we want it to go in this direction? The overall strength of a vector (ie, the x and y components taken together) is called the magnitude. So let's make a `chase_velocity` vector from `direction` with a `setMag()` of 2:
-```py
-chase_velocity = direction.setMag(2)
-```
-
-That's it—a little math with vectors, and the ball will flee the mouse (in addition to bounce off the walls) if we set `velocity` to our new `repel_velocity`:
-
-```py
-position = PVector(200, 150)
-velocity = PVector(1, 1.5)
-
-def setup():
-    size(400, 300)
-
-def draw():
-    global position, velocity
-
-    # draw things
-    background(200)
-    circle(position.x, position.y, 50)
-    position += velocity
-
-    # update velocity to cahse the mouse
-    mouse_position = PVector(mouseX, mouseY)
-    direction = mouse_position - position
-    chase_velocity = direction.setMag(2)
-    velocity = chase_velocity   
-
-    # update velocity to bounce off the walls
-    if position.x > width - 25:
-        position.x = width -25
-        velocity.x *= -1
-    elif position.x < 25:
-        position.x = 25
-        velocity.x *= -1        
-    if position.y > height - 25:
-        position.y = height - 25
-        velocity.y *= -1
-    elif position.y < 25:
-        position.y = 25
-        velocity.y *= -1
-
+def draw(): # runs over and over again
+    global x, y # these variables are shared between functions
+    circle(x, y, 30)
+    x = x + 1   # update the value of x each frame
+    y = y - 1.2 # update the value of y each frame
 ```
 <p align="center">
-  <img src="code/canvas_5.gif" width=400 /><br />
+  <img src="code/canvas_3_.gif" width=400 /><br />
 </p>
 
-We can do a little better than this, however. Objects in the physical world have inertia, that is, they don't stop on a dime as in our example. To add something that approximates that reality, instead of assigning `velocity` to `chase_velocity` outright, let's just give it a percentage of `chase_velocity` added to the direction it was going before. This yields a much nicer effect:
+The circle moves! Or rather, the circle is being redrawn at a new location every frame. The trail of circles looks pretty cool, but to make this really feel like animation, we have to clear our canvas every frame, using `background()`:
 
 ```py
-position = PVector(200, 150)
-velocity = PVector(1, 1.5)
+def setup(): # runs just once
+    global x, y   
+    size(400, 400)
+    frameRate(30)
+    x = 200
+    y = 200
 
-def setup():
-    size(400, 300)
-
-def draw():
-    global position, velocity
-
-    # draw things
-    background(200)
-    circle(position.x, position.y, 50)
-
-    # update position
-    position += velocity
-
-    # update velocity to cahse the mouse
-    mouse_position = PVector(mouseX, mouseY)
-    direction = mouse_position - position
-    chase_velocity = direction.setMag(2)
-    # 1% chase_velocity and 99% previous velocity
-    velocity = (chase_velocity * 0.01) + (velocity * .99)
-
-    # update velocity to bounce off the walls
-    if position.x > width - 25:
-        position.x = width -25
-        velocity.x *= -1
-    elif position.x < 25:
-        position.x = 25
-        velocity.x *= -1        
-    if position.y > height - 25:
-        position.y = height - 25
-        velocity.y *= -1
-    elif position.y < 25:
-        position.y = 25
-        velocity.y *= -1
-
+def draw(): # runs over and over again
+    global x, y
+    background(255) # clear the background every frame
+    circle(x, y, 30)
+    x = x + 1
+    y = y - 1.2
 ```
-By changing the magnitude of `chase_velocity` and the percentages with which we update `velocity`, we can change the character of the motion of the ball.
-
 
 <p align="center">
-  <img src="code/canvas_6.gif" width=400 /><br />
+  <img src="code/canvas_4_.gif" width=400 border=1 /><br />
 </p>
 
-### Objects
+This way, 30 frames a second, the canvas gets wiped clean, and then we draw the circle again.
 
-We may think a single bouncing ball is cool, but what we really want to do, of course, is to have lots of bouncing balls.
-
-From what we know so far, we might approach that by making a lot of variables by hand, one for each ball. Something like:
+The magic is in how we update `x` and `y`—in this case, just taking their previous values and adding `1` and subtracting `1.2`, respectively. There is a slightly more compact syntax for this:
 
 ```py
-ball_1_position = PVector(200, 150)
-ball_1_velocity = PVector(1, 1.5)
-ball_2_position = PVector(210, 75)
-ball_2_velocity = PVector(1.2, 1.75)
-ball_3_position = PVector(120, 90)
-ball_3_velocity = PVector(1.5, 1.5)
-ball_4_position = PVector(400, 300)
-ball_4_velocity = PVector(1, -1)
-...
+x += 1
+y -= 1.2
+```
+These operators—increment and decrement—accomplish the exact same thing as before, but without repeating the variable name. This is helpful if those variable names start to get a little complex, as they will in a moment.
+
+### Heading
+
+Ok, so what if we want the circle to go in a different direction? There's many ways to do this, but we're going to create a new variable, `heading` to indicate the direction in which we want the circle to move.
+
+Remember that in Processing we work with angles in terms of radians:
+
+<p align="center">
+  <img src="code/unit_circle.jpg" width=400 border=0 /><br />
+</p>
+
+Processing provides a special variable (or rather, a constant) called `PI` that holds the value of pi for us and is always available. So to give our circle a heading to the northwest, we could do:
+```py
+heading = 3 * PI / 4
+```
+
+Or better yet, to give our circle a random heading, we'll do
+```py
+heading = random(2 * PI)
+```
+
+Great, but how do we use `heading` to update `x` and `y` in the appropriate amounts? Well, we're going to need (just a little) trig. The equations we want are:
+```py
+x += cos(heading)
+y += sin(heading)
+```
+This will get us a new `x` and `y` based on the current heading. Putting this together, our code looks like this:
+```py
+def setup(): # runs just once
+    global x, y, heading   # added heading to global variables   
+    size(400, 400)
+    x = 200
+    y = 200
+    heading = random(2 * PI) # initial value for heading
+
+def draw(): # runs over and over again
+    global x, y, heading # added heading to global variables
+    background(255)
+    circle(x, y, 30)
+    x += cos(heading)
+    y += sin(heading)
+```
+Each time we run our sketch, the circle is going to head off in different direction, thanks to the `random()` up in `setup()`. If we wanted the circle to also have a random speed, we could add another variable, `speed`:
+
+```py
+def setup(): # runs just once
+    global x, y, heading   
+    size(400, 400)
+    x = 200
+    y = 200
+    heading = random(2 * PI)
+    speed = random(.2, 2)      # random speed between .2 and 2 pixels per frame
+
+def draw(): # runs over and over again
+    global x, y, heading
+    background(255)
+    circle(x, y, 30)
+    x += cos(heading) * speed  # multiplying each new coordinate value by speed will make it happen
+    y += sin(heading) * speed
+```
+
+So now we have a circle with `x`, `y`, `heading`, and `speed` attributes, and we use those variables to move it across the canvas.
+
+But what if we wanted _two_ circles?
+
+Well, intuitively, we might just add another set of variables, something like `x2`, `y2`, `heading2`, and `speed2`. That would work, but what about 20 circles? 100? Making so many variables is going to be too onerous. Thankfully, there are some additional programming tools that can help us out.
+
+### Dictionaries
+
+We've previously spent time working with lists. But there is another data structure that is very similar, except instead of numeric indexes (0, 1, 2, 3, etc) it uses arbitrary labels. For example:
+
+```py
+person = {'name': "Brian", 'occupation': "professor", 'age': 25}
+```
+
+We use `{` and `}` to declare dictionaries. Each element is separated by a comma, just like with lists, but now each element is a key, value pair, eg `'key': "value"`. (While both keys and values can be strings, as a convention, I tend to use single-quotes for keys and double quotes for values. This is not necessary, however, I feel that it looks nicer and it helps me keep things straight.)
+
+To access the values, we use the key. So in this example, `person['name']` is equal to `"brian"`.
+
+With dictionaries, we can put all our variables together. Consider this refactoring of our example:
+
+```py
+def setup():
+    global agent   
+    size(400, 400)
+    frameRate(30)
+    agent = {'x': random(400), 'y': random(400), 'heading': random(2 * PI), 'speed': random(.2, 2)}
 
 def draw():
-...
-    circle(ball_1_position.x, ball_1_position.y, 50)
-    circle(ball_2_position.x, ball_2_position.y, 50)
-    circle(ball_3_position.x, ball_3_position.y, 50)
-    circle(ball_4_position.x, ball_4_position.y, 50)
-
-    ball_1_position += ball_1_velocity
-    ball_2_position += ball_2_velocity
-    ball_3_position += ball_3_velocity
-    ball_4_position += ball_4_velocity
-
-...
+    global agent
+    background(255)
+    circle(agent['x'], agent['y'], 30)
+    agent['x'] += cos(agent['heading']) * agent['speed']
+    agent['y'] += sin(agent['heading']) * agent['speed']
 ```
+This is the same thing, but with dictionary syntax. (We've named our circle `agent` to have something more generic and to avoid a conflict with the `circle()` function, and also randomized the initial location.) It uses fewer variables, although the syntax is a little more complex.
 
-This would not be wrong, but eventually this kind of approach is going to get really tedious. What we really want is to define an object, like a ball, all at once, with all of its appropriate variables and functions. And this is where one of the most complicated and beautiful structures of programming comes in.
-
-In programming, we create "classes" of objects. In other words, if I create a class "ball", then I can use it to create as many ball objects as I want. In Python, we do this with the keyword `class`. An outline of a `Ball` class might look like this:
+But how does this help us create more than one agent? Well, the real power is when we combine dictionaries with lists and loops:
 
 ```py
-class Ball():
-
-    def __init__(self):
-        ...
-
-    def draw(self):
-        ...
+agents = []
+for i in range(10):
+    agent = {'x': random(400), 'y': random(400), 'heading': random(2 * PI), 'speed': random(.2, 2)}
+    agents.append(agent)
 ```
-Here, within the class are three functions associated with that class. The first is called, bizarrely, `__init__()`, which for all intents and purposely is the same thing as `setup()`, _but just for this particular object._ We're going to use `__init__()` to declare our variables (and this time, we'll assign them random parameters):
+This code snippet first creates an empty list, `agents`, and then proceeds to fill it by creating an `agent`, appending it to the list, and repeating 10 times.
 
+On the other end, we can use another loop:
 ```py
-class Ball():
-
-    def __init__(self):
-        self.position = PVector(random(width), random(height))
-        self.velocity = PVector(random(-2, 2), random(-2, 2))
-
-    def draw(self):
-        ...
+for i in range(len(agents)):
+    agent = agents[i]
+    circle(agent['x'], agent['y'], 30)
+    agent['x'] += cos(agent['heading']) * agent['speed']
+    agent['y'] += sin(agent['heading']) * agent['speed']        
 ```
-
-The big difference here is the use of this magic keyword `self`, which binds these variables to the Ball class and makes unique versions of them for each ball object we create.
-
-Likewise, `draw()` here is equivalent to our typical `draw()`, but it's just for this object. We put in all the code that applies to a particular ball and attach `self` in front of all the variables. We'll make the ball just 30 pixels in diameter this time:
+The code to draw and to move our agent is now applied to all 10 agents in the list. If we don't need to use `i`, there's actually another `for` loop format that simplifies this for us a bit:
 ```py
-class Ball():
-
-    def __init__(self):
-        self.position = PVector(random(width), random(height))
-        self.velocity = PVector(random(-2, 2), random(-2, 2))
-
-    def draw(self):
-        # draw the ball
-        circle(self.position.x, self.position.y, 30)
-        # update its position and velocity
-        self.position += self.velocity
-        if self.position.x > width - 15:
-            self.position.x = width - 15
-            self.velocity.x *= -1
-        elif self.position.x < 15:
-            self.position.x = 15
-            self.velocity.x *= -1        
-        if self.position.y > height - 15:
-            self.position.y = height - 15
-            self.velocity.y *= -1
-        elif self.position.y < 15:
-            self.position.y = 15
-            self.velocity.y *= -1
+for agent in agents:
+    circle(agent['x'], agent['y'], 30)
+    agent['x'] += cos(agent['heading']) * agent['speed']
+    agent['y'] += sin(agent['heading']) * agent['speed']        
 ```
 
-How does this fit with the rest of a Processing sketch? Well, the whole point here is that we're going to create a lot of bouncing balls. So before anything else, we're going to create a list to hold them:
-
+Putting these snippets together, we get:
 ```py
-balls = []
-```
-
-Now, in `setup()`, after we create the canvas we'll create 10 new balls and add them to the list:
-
-```py
-balls = []
-
 def setup():
-    size(400, 300)
-
+    global agents       # agents instead of agent
+    size(400, 400)
+    agents = []
     for i in range(10):
-        new_ball = Ball()
-        balls.append(new_ball)
+        agent = {'x': random(400), 'y': random(400), 'heading': random(2 * PI), 'speed': random(.2, 2)}
+        agents.append(agent)
+
+def draw():
+    global agents       # agents instead of agent
+    background(255)
+    for agent in agents:
+        circle(agent['x'], agent['y'], 30)
+        agent['x'] += cos(agent['heading']) * agent['speed']
+        agent['y'] += sin(agent['heading']) * agent['speed']  
 ```
 
-Note that calling the name of the class, `Ball()`, creates an object of that class. `new_ball` becomes an instance of the class, and we append that to the `balls` list. And then we repeat that 10 times.
+<p align="center">
+  <img src="code/canvas_5_.gif" width=400 border=1 /><br />
+</p>
 
-Now, we have `draw()`:
+At this point, we've already made some huge leaps. By using Processing's `draw()` function, we've created animated objects. And by looping through lists of dictionaries we are able to efficiently keep track of all those individual objects without repeating code.
+
+### Simulating behaviors
+
+Already, our "agents" have a little bit of personality as they float around the canvas. But to push things further, we can start to model some more advanced behavior.
+
+#### Avoidance
+
+For example, we should stop the agents from running into each other and have them avoid (or collid with) one another instead. How? Well, every agent is going to have to pay attention to every other agent, and if necessary adjust its heading. That means the first thing we're going to need is another loop inside our loop:
 
 ```py
 def draw():
-    background(200)
+    global agents
+    background(255)
 
-    for i in range(len(balls)):
-        ball = balls[i]
-        ball.draw()
+    for agent in agents:
+        circle(agent['x'], agent['y'], 30)
+        agent['x'] += cos(agent['heading']) * agent['speed']
+        agent['y'] += sin(agent['heading']) * agent['speed']  
 
+        for other in agents:
+            # 'agent' should avoid 'other' here
 ```
 
-Here, we're using another loop to access each of the balls and call its individual `draw()` function.
-
-All together, the code looks like this:
+Within this loop, `other` is just a second agent, since we're already using the name `agent` in our outer loop. First let's check to make sure `agent` and `other` are not the same agent! We don't want to accidentally try to avoid ourselves.
 ```py
-balls = []
+        ...
+        for other in agents:
+            if other != agent:
+                # 'agent' should avoid 'other' here
+```
+We also don't want our agent to avoid all the other agents if they aren't too close to us—it's about colliding, not about heading for the hills at the sight of one another.
 
+So we'll need to get the distance between `agent` and `other`. Turns out Processing has a function for us, `dist()`, which does just that. To use it, we just need to plug in the x- and y-coordinates for the two agents we're comparing:
+```py
+        ...
+        for other in agents:
+            if other != agent:
+                distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+                if distance < 30:
+                    # 'agent' should avoid 'other' here
+```
+We've set our threshold at 30, the size of our circle, which will result in a collision. A higher number would have the agents avoid each other before they actually touch, so this is something we can play with.
+
+In the rest of this loop, we need to adjust the heading of `agent` to steer away from `other`. This gets a little gnarly, and uses the concept of vectors from geometry and trigonometry. But it's ok, I already looked it up for us, so you just have to plug it in (but be careful of your indents!).
+
+To start off, we're going to need to know the velocity of our agent. Basically, that's the speed broken down into the x and y components, like this:
+```py
+        ...
+        for other in agents:
+            if other != agent:
+                distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+                if distance < 30:
+                    velocity_x = cos(agent['heading']) * agent['speed']
+                    velocity_y = sin(agent['heading']) * agent['speed']
+```   
+This should look familiar, as it's the same thing with which we update the position of the agent.
+
+Next, we need to get the x and y components of the direction we need the agent to steer. This is just the difference between each component of the position of each agent, divided by the distance:
+```py
+        ...
+        for other in agents:
+            if other != agent:
+                distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+                if distance < 30:
+                    velocity_x = cos(agent['heading']) * agent['speed']
+                    velocity_y = sin(agent['heading']) * agent['speed']
+                    steer_x = (agent['x'] - other['x']) / distance
+                    steer_y = (agent['y'] - other['y']) / distance
+```   
+Adding the steering to the current velocity gives us a new velocity:
+```py
+        ...
+        for other in agents:
+            if other != agent:
+                distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+                if distance < 30:
+                    velocity_x = cos(agent['heading']) * agent['speed']
+                    velocity_y = sin(agent['heading']) * agent['speed']
+                    steer_x = (agent['x'] - other['x']) / distance
+                    steer_y = (agent['y'] - other['y']) / distance
+                    new_velocity_x = velocity_x + steer_x
+                    new_velocity_y = velocity_y + steer_y
+```   
+And _finally_ we need to convert that velocity back into an updated heading, using `atan2()` (trig!). Here's the whole sketch:
+```py
 def setup():
-    size(400, 300)
-
+    global agents
+    size(400, 400)
+    agents = []
     for i in range(10):
-        balls.append(Ball())
+        agent = {'x': random(400), 'y': random(400), 'heading': random(2 * PI), 'speed': random(.2, 2)}
+        agents.append(agent)
+
+def draw():
+    global agents
+    background(255)
+
+    for agent in agents:
+        circle(agent['x'], agent['y'], 30)
+        agent['x'] += cos(agent['heading']) * agent['speed']
+        agent['y'] += sin(agent['heading']) * agent['speed']  
+
+        for other in agents:
+            if other != agent:
+                distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+                if distance < 30:
+                    velocity_x = cos(agent['heading']) * agent['speed']
+                    velocity_y = sin(agent['heading']) * agent['speed']
+                    steer_x = (agent['x'] - other['x']) / distance
+                    steer_y = (agent['y'] - other['y']) / distance
+                    new_velocity_x = velocity_x + steer_x
+                    new_velocity_y = velocity_y + steer_y
+                    agent['heading'] = atan2(new_velocity_y, new_velocity_x)                        
+```
+Phew! That's some math. How'd we do?
+
+<p align="center">
+  <img src="code/canvas_6_.gif" width=400 border=1 /><br />
+</p>
+
+#### Walls
+
+Ok, so it seems obvious that the next step needs to be to make some walls so that these agents don't go flying away.
+
+We already have this code for avoiding agents, so let's reuse that for the walls. In this case, by reuse I don't mean copy-paste. Let's make a function to keep things neat.
+
+It should look something like this:
+
+```py
+def avoid(agent, other, threshold, strength):
+    if other == agent:
+        return 0
+    distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+    if distance < threshold:
+        velocity_x = cos(agent['heading']) * agent['speed']
+        velocity_y = sin(agent['heading']) * agent['speed']
+        steer_x = ((agent['x'] - other['x']) / distance) * strength
+        steer_y = ((agent['y'] - other['y']) / distance) * strength
+        new_velocity_x = velocity_x + steer_x
+        new_velocity_y = velocity_y + steer_y
+        agent['heading'] = atan2(new_velocity_y, new_velocity_x)
+    return distance
+```
+Here, `avoid()` takes four arguments. The agent doing the avoiding, the other agent that its trying to avoid, the distance threshold that determines whether it applies or not, and the "strength". Strength is an additional parameter with which I've multiplied `steer_x` and `steer_y` which will help us down the line set the relative intensity when avoiding multiple types of things (like agents _and_ walls).
+
+Notice that we're **returning** the distance between `agent` and `other`. Return statements mean that the function will not only do what it does (in this case updating `agent['heading']`, it will come up with a value that we can use later, just like `cos()` or `dist()`. We'll see how this works in a moment.
+
+So the full sketch becomes:
+```py
+def setup():
+    global agents
+    size(400, 400)
+    agents = []
+    for i in range(10):
+        agent = {'x': random(300) + 50, 'y': random(300) + 50, 'heading': random(2 * PI), 'speed': random(.2, 2)}
+        agents.append(agent)
 
 
 def draw():
-    background(200)
+    global agents
+    background(255)
 
-    for i in range(len(balls)):
-        ball = balls[i]
-        ball.draw()
+    for agent in agents:
+        circle(agent['x'], agent['y'], 30)
+        agent['x'] += cos(agent['heading']) * agent['speed']
+        agent['y'] += sin(agent['heading']) * agent['speed']  
+
+        for other in agents:
+            avoid(agent, other, 30, .5)    # calling the avoid function
 
 
-class Ball():
-
-    def __init__(self):
-        self.position = PVector(random(width), random(height))
-        self.velocity = PVector(random(-2, 2), random(-2, 2))
-
-    def draw(self):
-        # draw the ball
-        circle(self.position.x, self.position.y, 30)
-        # update its position and velocity
-        self.position += self.velocity
-        if self.position.x > width - 15:
-            self.position.x = width - 15
-            self.velocity.x *= -1
-        elif self.position.x < 15:
-            self.position.x = 15
-            self.velocity.x *= -1        
-        if self.position.y > height - 15:
-            self.position.y = height - 15
-            self.velocity.y *= -1
-        elif self.position.y < 15:
-            self.position.y = 15
-            self.velocity.y *= -1
-```            
-<p align="center">
-  <img src="code/canvas_8.gif" width=400 /><br />
-</p>
-
-Now, in a relatively concise bit of code, we've created a whole group of balls doing their own things on the canvas. A little tweaking to how the shapes are drawn, but keeping the logic the same, can yield some aesthetically pleasing results:
-<p align="center">
-  <img src="code/canvas_9.gif" width=400 /><br />
-</p>
-
-<p align="center">
-  <img src="code/canvas_10.gif" width=400 /><br />
-</p>
-
-(Tip: both of these examples use a very transparent `rect()`, drawn every frame to create the fading effect.)
-
-### Emergence
-
-Motion, vectors, and objects. This has been a lot to absorb so far. But we're finally ready to look at a really fascinating thing that happens when all of these come together. And that is emergent behavior.
-
-To consider the example with the bouncing balls, the thing that we've left out is having the balls interact with one another, just like we had one ball interact with the mouse. Think about the possibilities: the balls might collide and bounce off one another, be attracted to each other, be repelled from each other, or just move in the same direction.
-
-When multiple objects follow the same set of simple rules, complex effects can result. Even without the use of `random()`, we can get unpredictable and beautiful results.
-
-The first thing we'll want to do when considering the interaction between the different objects is to calculate their distance from one another. `PVectors` make this easy, with their `.dist()` method.
-
-Putting the following in `Ball.draw()` will create a list with the distances between this ball and every other ball:
-```py
-distances = []
-for i in range(len(balls)):
-    ball = balls[i]
-    distances.append(self.position.dist(ball.position))
-```
-
-Now that we've done these distance calculations, we can use them to determine the appropriate interaction.
-
-To begin with, balls are colliding if they are within their diameter of one another. So, also in `Ball.draw()`:
+def avoid(agent, other, threshold, strength):
+    if other == agent:
+        return 0
+    distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+    if distance < threshold:
+        velocity_x = cos(agent['heading']) * agent['speed']
+        velocity_y = sin(agent['heading']) * agent['speed']
+        steer_x = ((agent['x'] - other['x']) / distance) * strength
+        steer_y = ((agent['y'] - other['y']) / distance) * strength        new_velocity_x = velocity_x + steer_x
+        new_velocity_y = velocity_y + steer_y
+        agent['heading'] = atan2(new_velocity_y, new_velocity_x)
+    return distance
+```    
+Ok, so how do we apply this to walls? Well, avoiding walls is the same thing as avoiding another agent that's always positioned along a particular x or y axis and aligned with you along the other axis. So, calculated in each frame, these are the walls:
 
 ```py
-for i in range(len(balls)):
-    ball = balls[i]
-    if ball != self and distances[i] <= 30:
-        ??
+walls = [   {'x': 0, 'y': agent['y']},      # left wall
+            {'x': 400, 'y': agent['y']},    # right wall
+            {'x': agent['x'], 'y': 0},      # top wall
+            {'x': agent['x'], 'y': 400}     # bottom wall
+            ]
 ```
-"Collision" is in essence abrupt repulsion (with no inertia!). From our previous example with the mouse and just one ball, we already have the formula for chasing. Repulsion is very similar, it's just a matter of subtracting the other ball's position from the current ball's position instead of the other way around. Kind of -- this is an approximation that doesn't take into account the shape of the objects, but it's good enough for now. To make it slightly more realistic, we'll also swap the magnitude of the velocity for that of the other balls:
+(Here, the list of walls consists of four dictionary items—we're just declaring it explicitly rather than using a `for` loop)
+
+We can put this in its own function, `avoid_walls()` which calls `avoid()` with special parameters. This is not unlike what we did with recursive functions calling themselves.
 
 ```py
-for i in range(len(balls)):
-    ball = balls[i]
-    if ball != self and distances[i] <= 30:
-        direction = self.position - ball.position
-        repulsion = direction.setMag(ball.velocity.mag())
-        self.velocity = repulsion
+def avoid_walls(agent, threshold, strength):
+    walls = [{'x': 0, 'y': agent['y']}, {'x': 400, 'y': agent['y']}, {'x': agent['x'], 'y': 0}, {'x': agent['x'], 'y': 400}]
+    for wall in walls:
+        avoid(agent, wall, threshold, strength)   
 ```
 
-Even better—what if the balls tried to avoid each other to begin with? We can keep the collision code for distances under 30, but let's add something else for if it's under, say, 50:
+All together, our code looks like this:
 
 ```py
-for i in range(len(balls)):
-    ball = balls[i]
+def setup():
+    global agents
+    size(400, 400)
+    agents = []
+    for i in range(10):
+        agent = {'x': random(400), 'y': random(400), 'heading': random(2 * PI), 'speed': random(.2, 2)}
+        agents.append(agent)
 
-    # collide
-    if ball != self and distances[i] <= 30:
-        direction = self.position - ball.position
-        repulsion = direction.setMag(ball.velocity.mag())
-        self.velocity = repulsion
+def draw():
+    global agents
+    background(255)
 
-    # repel
-    elif ball != self and distances[i] <= 50:
-        direction = self.position - ball.position
-        repulsion = direction.setMag(4)
-        self.velocity = (repulsion * 0.01) + (self.velocity * .99)    
+    for agent in agents:
+        circle(agent['x'], agent['y'], 30)
+        agent['x'] += cos(agent['heading']) * agent['speed']
+        agent['y'] += sin(agent['heading']) * agent['speed']  
+
+        for other in agents:
+            avoid(agent, other, 30, .5)
+
+        avoid_walls(agent, 15, .5)     
+
+
+def avoid(agent, other, threshold, strength):
+    if other == agent:
+        return 0
+    distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+    if distance < threshold:
+        velocity_x = cos(agent['heading']) * agent['speed']
+        velocity_y = sin(agent['heading']) * agent['speed']
+        steer_x = ((agent['x'] - other['x']) / distance) * strength
+        steer_y = ((agent['y'] - other['y']) / distance) * strength        
+        new_velocity_x = velocity_x + steer_x
+        new_velocity_y = velocity_y + steer_y
+        agent['heading'] = atan2(new_velocity_y, new_velocity_x)
+    return distance
+
+
+def avoid_walls(agent, threshold, strength):
+    walls = [{'x': 0, 'y': agent['y']}, {'x': 400, 'y': agent['y']}, {'x': agent['x'], 'y': 0}, {'x': agent['x'], 'y': 400}]
+    for wall in walls:
+        avoid(agent, wall, threshold, strength)       
+```
+<p align="center">
+  <img src="code/canvas_7_.gif" width=400 border=1 /><br />
+</p>
+
+Notice that `avoid()` and `avoid_walls()` are not indented at all. We doing lots of nesting with our `for` loops, so it can get tricky to keep track of.
+
+#### Seeking
+
+Avoidance (or in this case, collision) is great, and we're starting to get some complex dynamics emerge, but our agents are still lacking personality. What's their motivation?
+
+To provide that, we're going to need seeking, not just avoiding. It turns out, however, that it's pretty much the same thing, with just a few signs reversed. Here's our seek function:
+
+```py
+def seek(agent, other, threshold, strength):
+    if other == agent:
+        return 0
+    distance = dist(agent['x'], agent['y'], other['x'], other['y'])
+    if distance < threshold:
+        velocity_x = cos(agent['heading']) * agent['speed']
+        velocity_y = sin(agent['heading']) * agent['speed']
+        steer_x = ((other['x'] - agent['x']) / distance) * strength      # this line reversed
+        steer_y = ((other['y'] - agent['y']) / distance) * strength      # this line reversed
+        new_velocity_x = velocity_x + steer_x
+        new_velocity_y = velocity_y + steer_y
+        agent['heading'] = atan2(new_velocity_y, new_velocity_x)
+    return distance
+```
+
+Put this function below the others, and don't indent it (since this code is getting a little long, I'll no longer put the entire sketch with every example, but just show individual functions or parts of functions with ellipses ... but everything else still needs to be there).
+
+Now that we have the function, let's reimagine the sketch. Let's say instead of generic "agents" we have bees, and they are going after flowers.
+
+Here's our new `setup()` function:
+```py
+def setup():
+    global bees, flowers    # bees and flowers in global
+    size(400, 400)
+
+    bees = []
+    for i in range(10):
+        bee = {'x': random(400), 'y': random(400), 'heading': random(2 * PI), 'speed': 1}
+        bees.append(bee)
+
+    flowers = []
+    for i in range(3):
+        flower = {'x': random(400), 'y': random(400)}   # flowers don't need heading or speed
+        flowers.append(flower)
+```
+So we have two lists now, one for bees and one for flowers. The flowers aren't going to move, so we don't need to have heading and speed for those.
+
+Our new `draw()` function could be something like this:
+```py
+def draw():
+    global bees, flowers
+    background(255)
+
+    # for all the flowers...
+    for flower in flowers:
+        # draw the flower
+        fill(255, 200, 200)
+        square(flower['x'] - 5, flower['y'] - 5, 10)
+
+    # for all the bees...
+    for bee in bees:
+
+        # draw the bee
+        fill(255, 255, 0)
+        circle(bee['x'], bee['y'], 10)
+
+        # move the bee
+        bee['x'] += cos(bee['heading']) * bee['speed']
+        bee['y'] += sin(bee['heading']) * bee['speed']  
+
+        # avoid other bees
+        for other in bees:
+            avoid(bee, other, 20, .5)
+
+        # avoid walls
+        avoid_walls(bee, 10, .5)    
+
+        # seek the flowers
+        for flower in flowers:
+            seek(bee, flower, 100, .3)
+```
+
+For all the bees, first we draw the bee, then move the bee, then calculate the new heading for the next frame. It doesn't really matter what order we do these things in, as long as it's consistent.
+
+The addition of `seek()` is rather profound. By giving each bee competing behaviors, suddenly our agents seem biological, or at least more biology-like.
+
+<p align="center">
+  <img src="code/canvas_8_.gif" width=400 border=1 /><br />
+</p>
+
+#### `millis()` and changes in the environment
+
+Processing calls `draw()` over and over, which implicitly gives us a sense of time as the frames progress. But it also provides us with a function, `millis()`, which lets us measure time explicitly. This comes in especially handy when we want to modify something about our sketch after a given duration; for example, changes in the "environment" of our bees to which they must respond.
+
+In nature, flowers bloom for a limited amount of time, and different flowers bloom at different times. To simulate this, let's make our "flowers" change location every so often. Concretely, what we'll need to do is after every 5 seconds, let's remove a flower and add a new one at a random location.
+
+`millis()` gives us the number of milliseconds that have elapsed since the sketch started running. To measure time with it inside the `draw()` function, we need a variable to keep track of the start of the duration we want to measure, and we'll subtract it from `millis()` until we reach the desired interval. ie:
+
+```py
+if millis() - start_time >= 5000:   # 5000 milliseconds is 5 seconds
+    # do something
+    start_time = millis()           # reset start_time
+```
+The last line above resets the `start_time` variable so that we'll have to wait another 5 seconds before this code block is run again.
+
+However, what we're missing here is that we need to initialize `start_time`. We'll do this in `setup()` and add it to our globals:
+
+```py
+def setup():
+    global bees, flowers, start_time
+    start_time = 0
+...
+```
+Then, in `draw()`, we'll also add it to our globals. Then, every 5 seconds, we'll remove the first flower from the list and append a new one.
+
+```py
+def draw():
+    global bees, flowers, start_time
+    background(255)
+
+    if millis() - start_time >= 5000:
+        flowers.remove(flowers[0])
+        flower = {'x': random(400), 'y': random(400)}
+        flowers.append(flower)
+        start_time = millis()
 ```
 
 <p align="center">
-  <img src="code/canvas_13.gif" width=400 /><br />
+  <img src="code/canvas_9_.gif" width=400 border=1 /><br />
 </p>
 
-Good times. The balls still collide if they have to, but they'll try to avoid it. What about attraction? Same thing, but again just flipping the order of the objects in the direction vector. Let's add this one as well, but for distances over 50 and less than 100. And it will have to be at a lesser magnitude than avoidance:
+With the periodically shifting flowers, the system never settles into stasis, so things stay interesting as the bees constantly adapt to their changing environment.
+
+#### Modifying agents
+
+To mix things up further, let's add a different kind of agent. Say, sharks, because this is our world so why not. We'll also explore one additional technique, which is to make additional use of that distance measurement.
+
+In `setup()`, let's make a couple sharks (remember to add `sharks` to globals as well):
 
 ```py
-for i in range(len(balls)):
-    ball = balls[i]
+...
+    sharks = []
+    for i in range(3):
+        shark = {'x': random(400), 'y': random(400), 'heading': random(2 * PI), 'speed': 2, 'size': 10}
+        sharks.append(shark)
+...        
+```
+In addition to the same attributes as we have with our bees, we're including size as well.
 
-    # collide
-    if ball != self and distances[i] <= 30:
-        direction = self.position - ball.position
-        repulsion = direction.setMag(ball.velocity.mag())
-        self.velocity = repulsion
+Now, in `draw()`, we're going to create another `for` loop (make sure it's _not_ indented under either of the other loops for flowers or bees). In this loop, we replicate most of the behavior of the bees, other than the seeking of flowers:
 
-    # repel
-    elif ball != self and distances[i] <= 50:
-        direction = self.position - ball.position
-        repulsion = direction.setMag(4)
-        self.velocity = (repulsion * 0.01) + (self.velocity * .99)
+```py
+...
+    # for all the sharks            
+    for shark in sharks:
 
-    # attract
-    elif ball != self and distances[i] > 50 and distances[i] < 100 :
-        direction = ball.position - self.position
-        attraction = direction.setMag(1)
-        self.velocity = (attraction * 0.01) + (self.velocity * .99)             
+        # draw the shark
+        fill(255, 0, 255)
+        circle(shark['x'], shark['y'], shark['size'])  # use the size attribute
+
+        # move the shark
+        shark['x'] += cos(shark['heading']) * shark['speed']
+        shark['y'] += sin(shark['heading']) * shark['speed']  
+
+        # avoid other sharks
+        for other in sharks:
+            avoid(shark, other, 20, .5)
+
+        # avoid walls
+        avoid_walls(shark, 10, .5)     
+...        
+```
+
+So far so good:
+<p align="center">
+  <img src="code/canvas_10_.gif" width=400 border=1 /><br />
+</p>
+
+Notice that the sharks are moving twice as fast as the bees, which is how we defined them in `setup()`, and that they go right through the bees and nobody seems to mind. Let's change that—let's make the bees run from the sharks. Inside the bee loop, add:
+
+```py
+# avoid the sharks
+...
+        for shark in sharks:
+            avoid(bee, shark, 100, .7)
+...            
 ```
 
 <p align="center">
-  <img src="code/canvas_14.gif" width=400 /><br />
+  <img src="code/canvas_11_.gif" width=400 border=1 /><br />
 </p>
 
-Now we're getting into weird territory where groups are forming and moving around on their own -- without any input or randomness beyond the initial layout of balls.
+The bees are now clearly motivated to steer clear of the sharks. At this point, you may notice the sharks moving beyond the borders of the sketch, or the bees getting chased off the edge. To compensate for that, you can increase the "strength" argument to the `avoid_walls()` function to 1.
 
-One more interesting relationship is to have the balls follow the general direction of other nearby balls. This quality, often called alignment, is associated with so-called "flocking" algorithms.
+So now, in the shark loop, let's have the sharks pursue the bees:
+```py
+...
+        # seek bees
+        for bee in bees:
+            seek(shark, bee, 100, .5)        
+...
+```
+<p align="center">
+  <img src="code/canvas_12_.gif" width=400 border=1 /><br />
+</p>
+
+Yikes! The chase is on.
+
+One final, macabre step. Remember that in `avoid()` and `seek()` we added a return value, which is the distance to the other agent? We can use this to modify this seeking behavior. Instead of just seeking the bees, let's detect if the sharks actually catch up with them. And if they do, let's remove the bee from the sketch and increase the size of the shark (gulp):
+
+```py
+...
+        # seek bees
+        for bee in bees:
+            distance = seek(shark, bee, 100, .5)
+            if distance < 5:
+                shark['size'] += 3
+                bees.remove(bee)
+...
+```
+<p align="center">
+  <img src="code/canvas_13_.gif" width=400 border=1 /><br />
+</p>
 
 
+#### Simulation
 
+Seeking and avoiding; adding, removing, re-positioning, and modifying agents. From these relatively simple building blocks, we can design micro-worlds with their own emergent behaviors. Note that the only time we use `random()` is to set the initial attributes of agents when they are created, yet their exact paths are entirely unpredictable. This makes our simulations examples of chaotic systems with a high sensitivity to initial conditions.
 
+As humans, we are experts at making sense of complexity through narrative. Materially, what we have here are lots and lots of calculations updating the positions of circles. But it is almost impossible for us not to personify these circles as characters with particular drives. This is how video games work, of course, as well as animation in general.
 
-parameters
+When we personify, we impose all sorts of biases and expectations. This is what makes building a simulation an artistic exercise. In this example, I've reproduced a predator/prey dynamic that we might recognize from nature but which also might be a mischaracterization of what actually happens in the natural world. Simulations like this are necessarily reductions, and the parameters we choose will effect how people receive the result.
 
-subtle tweaking
-
-here's code
-
-remember, can have different kinds of objects
-
-
-Congrats! You've gotten to the end of what we'll learn, and indeed, all of the fundamental structures in code. Everything else programmers do are essentially shortcuts and elaborations.
+Part of the limits to simulation comes from the computational cost. What if we had 100 bees here? 1000? The code wouldn't change much at all. But if you try it, you'll notice your computer start to grind. This is really where supercomputers and cloud computation and quantum computing comes in—the capacity to do complex simulation. But there is always a limit.
