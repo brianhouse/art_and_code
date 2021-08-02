@@ -1,6 +1,6 @@
 # ART 112: DIGITAL MEDIA I
 
-Monday / Wednesday 8:50–11:20 and 12:40–3:10, Fields 205
+Monday / Wednesday 8:50–11:20 (Section 1) and 12:40–3:10 (Section 2), Fields 205
 Course materials on [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3)
 
 Prof. Brian House (he/him/his), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
@@ -22,7 +22,7 @@ Introduction to the form and aesthetics of digital media. By writing code to gen
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **emergence**, **interactivity**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
+This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **recursion**, **emergence**, **interactivity**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
 Sketches cumulatively account for 90% of your final grade. They must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3) *prior* to the crit—no late work is accepted. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
 
@@ -175,13 +175,13 @@ Labor day, no class
 
 #### Wednesday 11/3
 - Crit Sketch #6
-- Intro, [Emergence](units/7_emergence/lecture.md)
+- Intro, [Recursion](units/7_recursion/lecture.md)
 
 
 ### Week 11
 
 #### Monday 11/8
-- Begin [Sketch #7](units/7_emergence/assignment.md)
+- Begin [Sketch #7](units/7_recursion/assignment.md)
 - Questions and work time
 
 #### Wednesday 11/10
@@ -192,37 +192,40 @@ Labor day, no class
 ### Week 12
 
 #### Monday 11/15
-- Artist presentations 9
-- Sharing in-progress work, questions, and work time
+- Crit Sketch #7
+- Intro, [Emergence](units/8_emergence/lecture.md)
 
 #### Wednesday 11/17
-- Crit Sketch #7
-- Intro, [Interface](units/8_interface/lecture.md)
+- Artist presentations 9
+- Begin [Sketch #8](units/8_emergence/assignment.md)
+- Questions and work time
 
 ### Week 13
 
 #### Monday 11/22
-- Begin [Sketch #8](units/8_interface/assignment.md)
-- Questions and work time
+- Sharing in-progress work, questions, and work time
 
 #### Wednesday 11/24
-- Review, questions, and work time
+- Crit Sketch #8
+- Intro, [Interactivity](units/9_interactivity/lecture.md)
 
 
 ### Week 14
 
 #### Monday 11/29
-- Sharing in-progress work, questions, and work time
+- Begin [Sketch #9](units/9_interactivity/assignment.md)
+- Questions and work time
 
 #### Wednesday 12/1
-- Crit Sketch #8
-- TBD
+- Questions and work time
 
 ### Week 15
 
 #### Monday 12/6
-- TBD
+- Sharing in-progress work, questions, and work time
 
 
 ### Finals Week
-- Final presentations
+- Crit Sketch #9
+Section 1: 12/13 1:00–4:00pm
+Section 2: 12/11 1:00–4:00pm

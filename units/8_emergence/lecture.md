@@ -767,3 +767,18 @@ As humans, we are experts at making sense of complexity through narrative. Mater
 When we personify, we impose all sorts of biases and expectations. This is what makes building a simulation an artistic exercise. In this example, I've reproduced a predator/prey dynamic that we might recognize from nature but which also might be a mischaracterization of what actually happens in the natural world. Simulations like this are necessarily reductions, and the parameters we choose will effect how people receive the result.
 
 Part of the limits to simulation comes from the computational cost. What if we had 100 bees here? 1000? The code wouldn't change much at all. But if you try it, you'll notice your computer start to grind. This is really where supercomputers and cloud computation and quantum computing comes in—the capacity to do complex simulation. But there is always a limit.
+
+
+
+<!-- def draw_shark(x, y, size):
+    fill(255, 0, 255)
+    circle(x, y, 3)
+    triangle(x, y, x - size, y - size, x - size, y + size)
+
+
+def draw_rotated_shark(x, y, size, rotation):
+    push()
+    translate(x, y)
+    rotate(rotation)
+    draw_shark(0, 0, size)
+    pop() -->
