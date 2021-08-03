@@ -2,7 +2,7 @@
 
 In this course, we've been working with images and text by defining algorithms to produce them. But way back with our first unit, we learned how computers use numbers to represent everything. This includes digital images, which, whether created by us or downloaded from the internet, are composed of individual pixels with their own color value.
 
-This provides us with another approach to work with images. Rather than build them up with shapes like lines and circles, we can start with pixel values. By creatively misusing these data, we can expressively transform the image to our own artistic ends. This includes effects that might be classified as intentional "glitches"—corruption in data that might have been undesirable but which leads to aesthetically interesting results.
+This provides us with another approach to work with images. Rather than build them up with shapes like lines and circles, we can start with pixel values. By creatively misusing these data, we can expressively transform the image to our own artistic ends. This includes effects that might be classified as intentional "glitches"—corruption in data that might appear to be mistakes but which are nonetheless aesthetically interesting.
 
 
 ## Context

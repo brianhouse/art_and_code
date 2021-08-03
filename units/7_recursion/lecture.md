@@ -1,63 +1,50 @@
 # Recursion
 
-In this course, we've been working with images and text by defining algorithms to produce them. But way back with our first unit, we learned how computers use numbers to represent everything. This includes digital images, which, whether created by us or downloaded from the internet, are composed of individual pixels with their own color value.
+Of all the concepts associated with computers, recursion may be the most philosphically vexing. It is, in short, an algorithm that includes itself as a step within its own instructions. Like a hall of mirrors or a dream within a dream, this creates nested repetitions that can produce very interesting results from very little code.
 
-This provides us with another approach to work with images. Rather than build them up with shapes like lines and circles, we can start with pixel values. By creatively misusing these data, we can expressively transform the image to our own artistic ends. This includes effects that might be classified as intentional "glitches"—corruption in data that might have been undesirable but which leads to aesthetically interesting results.
+Perfect recursion is inherently mathematical and abstract, but as it turns out, it is one way to approximate some of the self-similar structures of natural form. The branches of a tree, for example, are themeslves "little trees," just as a rock has a similar shape as a boulder and as a mountain. Fractals, mathematical shapes with finite area and potentially infinite perimeter, are one example of recursion that describes ubiquitous shapes in the physical world.
 
 
 ## Context
 
-The idea of interesting mistakes is really endemic to the art-making process—no artist works without experimentation, and not all results are planned. When it comes to making machines make the mistakes for us, an early and iconic example might be Nam June Paik (1932–2006), a Korean American who anticipated the development of the internet and media art as a genre. His _TV Magnet_ and many experiments like it interfered with the normal functioning of a TV, which worked with cathode ray tubes at that time. A large magnet disrupted the scanning process of the ray, producing an abstract image instead of the original signal:
+### Non-Digital
+
+The foundation for recursion in visual representation shows up in Western history first as _mise en abyme_ (a term coined by critic André Gide in the early 20th century), in which a painting includes a separate representation of the scene it depicts. This began in earnest with the depiction of mirrors in celebrated canonical works like Velázquez's *Las Meninas* (1656) and the *Arnolfini Portrait* (1434) by Jan van Eyck.
 
 <p align="center">
-  <img src="context/1_paik.jpg" width=400 /><br />
-  Nam June Paik, <i>TV Magnet</i> (1965)
+  <img src="context/1_las_meninas.jpg" width=400 /><br />
+  Diego Velázquez, <i>Las Meninas</i> (1656)
 </p>
 
-This work is meant to be subversive, as it undermines the authoritative power of the television broadcast, but the method it uses, making something "dysfunctional," has its own sense of beauty. The word "glitch" came into popular usage around the same time as Paik's experiments, thanks to the (very famous at the time) astronaut John Glenn, who mentioned the use of the term among NASA engineers.
-
-By the late 1970s, video games were becoming available as some of the first widely available digital media, along with the possibility of glitching them. _Digital TV Dinner_ (1978) by Raul Zaritsky, Jamie Fenton, and Dick Ainsworth, misused the cartridges for Bally Astrocade console game, creating errors that would render as patterns on the TV screen (and a glitchy soundtrack).
+Taking things a step further and suggesting an infinite regress of images is the Droste effect. It's named after the Droste brand of cacao and its tin from 1904, which featured an image of a nurse carrying a tin of Droste cacao, which depicted an image of a nurse carrying a tin of Droste cacao, which depicted an image of nurse carrying a tin of Droste cacao ... you get the idea.
 
 <p align="center">
-  <img src="context/2_tv_dinner.png" width=400 /><br />
-  Raul Zaritsky, Jamie Fenton, and Dick Ainsworth, <i>Digital TV Dinner</i> (1979)<br />
-  <a href="https://www.youtube.com/watch?v=Ad9zdlaRvdM">Video here</a>
+  <img src="context/2_droste_effect.jpg" width=400 /><br />
+  Jan Musset, Droste cacao label (1904)
 </p>
 
-Rosa Menkman (1983–) is an artist and curator primarily working in digital video that has extensively explored "glitch art" as a genre unto itself. She comments that:
->    On the one hand, there are the tactical and critical artists who use the technique to criticize popular culture, and on the other hand the technique now is very much alive and part of this same culture.
-    —Rosa Menkmen, _The Glitch Moment(um)_
+The idea has subsequently been explored by contemporary artists, perhaps most popularly by the Dutch printmaker MC Escher (1898–1972). His *Circle Limit* series, for example, reproduced repeated interlocking figures in diminishing size as they extended to the edge of image.
 
 <p align="center">
-  <img src="context/5_menkman.png" width=400 /><br />
-  Rosa Menkman, examples of digital glitch techniques from <i>The Glitch Moment(um)</i> (2011)
+  <img src="context/3_escher_circle_limit.jpg" width=400 /><br />
+  MC Escher, <i>Circle Limit III</i> (1959)
 </p>
 
-While earlier forms of glitch were limited to hardware errors, code and data mean glitches can happen on an information level and can therefore be created intentionally with image editing programs, or even with code.
 
-Mathieu St-Pierre provides one example, _Melting Ice Cream_ (2012), a series of images that takes still video frames (of ice cream) and manipulates them to develop a whole other idea of melting:
+### Digital
 
-<p align="center">
-  <img src="context/6_st-pierre.jpg" width=400 /><br />
-  Mathieu St-Pierre, from <i>Melting Ice Cream</i> (2012)
-</p>
+Computer graphics radically opened up the possibility of exploring recursive forms. In particular, fractals
 
-Some others:
+fractals
 
-<p align="center">
-  <img src="context/7_scott.jpg" width=400 /><br />
-  Jarid Scott (2017)
-</p>
 
-<p align="center">
-  <img src="context/8_collet.jpg" width=400 /><br />
-  Thomas Collett (2018)
-</p>
+something contemporary
 
-<p align="center">
-  <img src="context/9_lofgren.png" width=400 /><br />
-  Tobias Lofgren (2018)
-</p>
+procedural generation
+
+No Man's Sky
+
+
 
 ## Code
 
