@@ -2,7 +2,7 @@
 
 Of all the concepts associated with computers, recursion may be the most philosphically vexing. It is, in short, an algorithm that includes itself as a step within its own instructions. Like a hall of mirrors or a dream within a dream, this creates nested repetitions that can produce very interesting results from very little code.
 
-Perfect recursion is inherently mathematical and abstract, but as it turns out, it is one way to approximate some of the self-similar structures of natural form. The branches of a tree, for example, are themeslves "little trees," just as a rock has a similar shape as a boulder and as a mountain. Fractals, mathematical shapes with finite area and potentially infinite perimeter, are one example of recursion that describes ubiquitous shapes in the physical world.
+Perfect recursion is inherently mathematical and abstract, but as it turns out, it is one way to approximate some of the self-similar structures of natural form. The branches of a tree, for example, are themselves "little trees," just as a rock has a similar shape as a boulder and as a mountain—it's as if they were made by the same set of instructions nested within themselves.
 
 
 ## Context
@@ -30,533 +30,483 @@ The idea has subsequently been explored by contemporary artists, perhaps most po
   MC Escher, <i>Circle Limit III</i> (1959)
 </p>
 
+Another form of recursion is fractals. Fractals are structures that have a finite area but an infinite amount of detail (or, put mathematicaly, fractals are continuous functions that are non-differentiable). This of course is how the real world works—the more you zoom in to something, the more detail emerges.
+
+As a principle of visual design, fractals have been used most extensively in African architecture. Employing algorithmic procedures, designers have created highly intricate structures:
+
+<p align="center">
+  <img src="context/4_cameroon.jpg" width=400 /><br />
+  The palace of the chief in Logone-Birni, Cameroon
+</p>
+
 
 ### Digital
 
-Computer graphics radically opened up the possibility of exploring recursive forms. In particular, fractals
+Computer graphics radically opened up the possibility of exploring recursive forms. In particular, fractal mathematics could be now be rendered visually. In the late 1970s and early 1980s, the mathematician Benoit Mandelbrot formalized fractal geometry using a computer (and coined the term "fractal"). His incredible looking "Mandlebrot set" imagery subsequently entered the popular imagination as a representation of math's formal beauty:
 
-fractals
+<p align="center">
+  <img src="context/5_mandelbrot.jpg" width=400 /><br />
+  Partial view of the Mandelbrot set (<a href="https://en.wikipedia.org/wiki/Mandelbrot_set#/media/File:Mandel_zoom_08_satellite_antenna.jpg">source</a>)
+</p>
+
+More generally, recursion has become a tool in computer graphics to implicitly create complexity rather than explicitly defining every detail. Within game design, this is known as "procedural generation," and is used in particular to create landscapes. One recent title, *No Man's Sky* (2016), boasts 18 quintillion planets that can be epxlored, all of which are generated algorithmically according to a few initial variables.  
 
 
-something contemporary
+<p align="center">
+  <img src="context/6_no_mans_sky.jpg" width=400 /><br />
+  Algorithmically generated scene from <i>No Man's Sky</i> (2016), Hello Games.
+</p>
 
-procedural generation
-
-No Man's Sky
-
+In some respects, recursion is similar to what we explored with indeterminacy. However, the added structure produces more recognizable shapes and textures that are satisfying on multiple scales.
 
 
 ## Code
 
-### Loading an image
+### Functions and arguments
 
-There are many ways to use preexisting software programs to glitch images, but working with code will allow us to get a better sense of how pixel data actually works.
-
-To start with, we'll need an image. Make one, steal one, do whatever you have to do. I've selected an image of a puffin that I've downloaded from Google Images (control-click on an image, choose "Open Image in New Tab", and then save the image).
-
-<p align="center">
-  <img src="code/canvas_1.png" width=400 /><br />
-  puffin.png<br />
-</p>
-
-To start our sketch, we'll set the size of our canvas:
+First, let's review creating our own functions. We use the keyword `def`, followed by a unique name. Anything that is subsequently indented is included in the function. In other words:
 
 ```py
-size(400, 400)
+def my_function():
+    # stuff happens
 ```
 
-For the purposes of this sketch, we want our image to be the same size as our canvas. Or rather, we'll resize an image to be the size that we want our canvas to be.
+So far, this has come in handy for organizing our code (such as with nonlinearity). However, we know from using pre-built functions that Processing and Python provide us that functions can take *arguments*, ie, parameters that change what the function does. From the dimensions of a rectangle to the name of a file to load, functions with arguments open up the possibility of abstracting code to work on varied input.
 
-I've used an [online image resizer](https://www.adobe.com/photoshop/online/resize-image.html) to make my puffin 400 x 400 pixels (you'll probably want a larger canvas). Save your image as a .png file if possible. Using Photoshop or some other image editing software also works.
-
-Processing makes loading an image into the sketch very straightforward. To begin, add your image file to the sketch using the Sketch -> Add File option.
-
-<p align="center">
-  <img src="code/canvas_2_.png" width=400 /><br />
-</p>
-
-Now, we use the `loadImage()` function to load the image data into a new variable (`puffin`). To display the image, we use the `image()` function, which takes the image data variable as a parameter along with an x and y coordinate at which to draw it.
+Essentially, arguments are just another form of variable. When you declare the function, you list a series of variables names within the parentheses. You can then use these variables within the body of the function. When calling the function, whatever numbers, strings, lists, or variables you put in the parentheses will subsequently provide the values for these variables:
 
 ```py
-size(400, 400)
-puffin = loadImage("puffin.png")    # load the image into a variable
-image(puffin, 0, 0)                 # draw the image to the canvas
+def add_numbers(number_1, number_2):
+    result = number_1 + number_2
+    print(result)
+
+add_numbers(4, 3)
+add_numbers(2, 10)
+add_numbers(13, 6)
 ```
+```
+7
+12
+19
+```
+Here, we're calling `add_numbers` multiple times with different arguments, so each time it prints out a different result.
 
-Running this program should simply show the image:
+### A function that calls itself
 
-<p align="center">
-  <img src="code/canvas_3.png" width=400 /><br />
-</p>
-
-Once we know our image is being loaded correctly, we're not going to display it directly with `image()` again. Instead, we're going to use the individual pixel data.
-
-### Working with pixel data
-
-The `image.get()` function gets the pixel data from a particular coordinate. For example:
+Consider the following sketch:
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")    # load the image into a variable
-pixel = puffin.get(0, 0)
-print(pixel)
-```
-```
--2954759
-```
-This number is the raw number that actually contains the R, G, B values for the pixel at 0, 0. We can access the individual components like this:
-```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-pixel = puffin.get(0, 0)
-r = red(pixel)
-g = green(pixel)
-b = blue(pixel)
-print(r, g, b)
-```
-```
-(210.0, 233.0, 249.0)
-```
+background(255)
+noStroke()
+fill(0, 10)
 
-A lot can be done with this data. For our purposes, let's begin by reconstructing the image using `for` loops:
+def draw_circle(x, y, size):
+    circle(x, y, size)
 
-```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-for y in range(400):
-    for x in range(400):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)        
-        stroke(r, g, b)
-        point(x, y)
+draw_circle(200, 200, 400)
 ```
 <p align="center">
-  <img src="code/canvas_4.png" width=400 /><br />
+  <img src="code/canvas_1.png" width=400 />
 </p>
 
-Once again, we have the same image of a puffin. But this time, we have used a nested `for` loop to loop through all of the pixels in the image (using `x` and `y` instead of `i` to make the purpose clear). For each of the those pixels, we retrieve the data already draw to the canvas, extract the color data, and draw it to the canvas using `point()`.
+This is a little bit silly, because all we've done is wrap `circle()` in another function called `draw_circle()` that takes the exact same arguments and produces the exact same result. `200` and `200` are provided as arguments for `x` and `y`, respectively, and we're also passing `size`.
 
-Now we can start to play around. For example, we could mess with the colors, putting r, g, and b in all the wrong places:
+However, this arrangement provides us with an opportunity. What if we were to call `draw_circle()` _within_ `draw_circle()`?
 
 ```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-for y in range(400):
-    for x in range(400):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)        
-        stroke(b, r, g)
-        point(x, y)
+def draw_circle(x, y, size):
+    circle(x, y, size)
+    draw_circle(x, y, size) # recursively call draw_circle()
+
+draw_circle(200, 200, 400)
 ```
 
 <p align="center">
-  <img src="code/canvas_6.png" width=400 /><br />
+  <img src="code/canvas_2.png" width=400 />
 </p>
 
-Or invert the image by subtracting the values from 255:
+Ok, so that doesn't work. As powerful as computers are, they don't deal well with infinity, and here we've created an infinite feedback mechanism. However, we can add another argument, which we'll call `depth`, to keep track of how many levels of inception we've gone to. We'll use a conditional to stop recursing if we get too far.
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
-for y in range(400):
-    for x in range(400):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)        
-        stroke(255 - r, 255 - g, 255 - b)
-        point(x, y)
+
+def draw_circle(x, y, size, depth):
+    if depth < 5:
+        circle(x, y, size)
+        draw_circle(x, y, size, depth + 1)
+
+draw_circle(200, 200, 400, 0)
 ```
 
+Here, we increase `depth` by one every time we call `draw_circle()` inside itself, but only until `depth` is equal to five. So this code will draw 5 circles on top of one another (which still looks exactly the same), and we don't get an error.
+
 <p align="center">
-  <img src="code/canvas_7.png" width=400 /><br />
+  <img src="code/canvas_1.png" width=400 />
 </p>
 
-We can also play around with shifting the position of pixels. For example, we could subtract x from the width of the canvas, resulting in a flipped image:
-
+Ok, now the fun part. First, let's decrease the size of the circle each time:
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
-for y in range(400):
-    for x in range(400):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)        
-        stroke(r, g, b)
-        point(400 - x, y)
+
+def draw_circle(x, y, size, depth):
+    if depth < 5:
+        circle(x, y, size)
+        draw_circle(x, y, size / 2, depth + 1)
+
+draw_circle(200, 200, 400, 0)
 ```
 <p align="center">
-  <img src="code/canvas_5.png" width=400 /><br />
+  <img src="code/canvas_3.png" width=400 />
 </p>
 
-
-
-
-### Advanced `range()` and shapes
-
-Let's revisit `range()`. Thus far, we've usually given `range()` just one parameter. But it can also work with _two_ parameters for the starting and stopping values (with one parameter, the computer just assumes that the starting value is 0). For example, the following will print all the values from 0 up to (but not including) 100:
-
-```py
-for i in range(0, 100):
-    print(i)
-```
-```
-0
-1
-2
-.
-.
-.
-97
-98
-99
-```
-
-In fact, `range()` also takes a _third_ parameter, skip, which defines how much is increased each time. For example, the following will do the same thing as above, but increment by 10:
-
-```py
-for i in range(0, 100, 10):
-    print(i)
-```
-```
-0
-10
-20
-.
-.
-.
-70
-80
-90
-```
-
-How is this helpful with our image manipulations? Because maybe we don't want to draw _every_ pixel using point:
-
-```py
-size(400, 400)
-background(255)  # adding a white background
-puffin = loadImage("puffin.png")
-
-for y in range(0, 400, 3):      # every third pixel vertically
-    for x in range(0, 400, 3): # every third pixel horizontally
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-        stroke(r, g, b)
-        point(x, y)
-```
-<p align="center">
-  <img src="code/canvas_8.png" width=400 /><br />
-</p>
-
-This comes in particularly handy if we want to make some bigger shapes. For example, let's draw with squares that are 5 pixels wide, and use the skip parameter in `range()` to make space for them:
-
-This comes in handy if we want to use some bigger shapes. For example, instead of using `set()` to change a pixel, let's draw with squares that are 5 pixels wide, and use the skip parameter in `range()` to make space for them:
-
-```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-
-for y in range(0, 400, 5):      # every fifth pixel vertically
-    for x in range(0, 400, 5): # every fifth pixel horizontally
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-        fill(r, g, b)   # using fill instead of stroke
-        square(x, y, 5)
-```
-
-<p align="center">
-  <img src="code/canvas_9.png" width=400 /><br />
-</p>
-
-Pushing this technique further, let's use circles instead of squares, spread them out further, and randomize their size:
+Just like we're doing with `depth`, we change the value of `size` each time it's passed. We might also do that with `x` and `y` (and let's change some of the stroke settings while we're at it):
 
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
+noStroke()
+fill(0, 10)
 
-for y in range(0, 400, 10):      # every 10th pixel vertically
-    for x in range(0, 400, 10): # every 10th pixel horizontally
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-        fill(r, g, b)
+def draw_circle(x, y, size, depth):
+    if depth < 5:
+        circle(x, y, size)
+        draw_circle(x, y - (size / 4), size / 2, depth + 1)
+
+draw_circle(200, 200, 400, 0)
+```
+<p align="center">
+  <img src="code/canvas_4.png" width=400 />
+</p>
+
+Layering transparency gives a sense of the increasing depth. And by decreasing the `y` coordinate by a quarter of `size` each time, the circles stay along the edge.
+
+Now, let's call `draw_circle()` _multiple_ times within itself:
+```py
+size(400, 400)
+background(255)
+noStroke()
+fill(0, 10)
+
+def draw_circle(x, y, size, depth):
+    if depth < 5:
+        circle(x, y, size)
+        draw_circle(x, y - (size / 4), size / 2, depth + 1)
+        draw_circle(x, y + (size / 4), size / 2, depth + 1)
+        draw_circle(x - (size / 4), y, size / 2, depth + 1)
+        draw_circle(x + (size / 4), y, size / 2, depth + 1)
+
+draw_circle(200, 200, 400, 0)
+```
+<p align="center">
+  <img src="code/canvas_5.png" width=400 />
+</p>
+Notice that this algorithm branches four times—within each circle, there are four smaller ones. Reduce the depth to 2 to see this more clearly:
+
+```py
+size(400, 400)
+background(255)
+noStroke()
+fill(0, 10)
+
+def draw_circle(x, y, size, depth):
+    if depth < 2:
+        circle(x, y, size)
+        draw_circle(x, y - (size / 4), size / 2, depth + 1)
+        draw_circle(x, y + (size / 4), size / 2, depth + 1)
+        draw_circle(x - (size / 4), y, size / 2, depth + 1)
+        draw_circle(x + (size / 4), y, size / 2, depth + 1)
+
+draw_circle(200, 200, 400, 0)
+```
+
+<p align="center">
+  <img src="code/canvas_6.png" width=400 />
+</p>
+
+This is a fractal, though not an infinite one. And regardless, we've produced a surprisingly intricate shape from a minimal amount of code.
+
+### Base cases
+
+Let's make another one, somewhat similar, but with rectangles. But this time, our algorithm won't be to divide each rectangle evenly, but into four quadrants of random size. We'll do this by randomly choosing a point within the rectangle, `rand_x`, `rand_y`:
+
+<p align="center">
+  <img src="code/canvas_8_div.jpg" width=400 />
+</p>
+
+We'll then use that point to define the next four rectangles. Here, we've called the function `frame()`:
+
+```py
+size(400, 400)
+background(255)
+strokeWeight(5)
+
+def frame(x1, y1, x2, y2, depth):
+    if depth < 3:
+        rect(x1, y1, x2, y2)
+        rand_x = int(random(x1, x2))
+        rand_y = int(random(y1, y2))
+        frame(x1, y1, rand_x, rand_y, depth + 1) # recurse on upper left rectangle
+        frame(rand_x, y1, x2, rand_y, depth + 1) # recurse on upper right rectangle
+        frame(x1, rand_y, rand_x, y2, depth + 1) # recurse on lower left rectangle
+        frame(rand_x, rand_y, x2, y2, depth + 1) # recurse on lower right rectangle
+
+frame(0, 0, 400, 400, 0)
+```
+<p align="center">
+  <img src="code/canvas_10.png" width=400 />
+</p>
+
+To make this appear like a Mondrian, let's fill some percentage of resulting rectangles with a color. This is the final step, after we're done recursing. So we'll put it within the `else` of our conditional. It turns out that we don't have to draw anything at all until this final step, so we can put the `rect()` function here too:
+
+```py
+size(400, 400)
+background(255)
+strokeWeight(5)
+
+def frame(x1, y1, x2, y2, depth):
+    if depth < 3:
+        rand_x = int(random(x1, x2))
+        rand_y = int(random(y1, y2))
+        frame(x1, y1, rand_x, rand_y, depth + 1) # recurse on upper left rectangle
+        frame(rand_x, y1, x2, rand_y, depth + 1) # recurse on upper right rectangle
+        frame(x1, rand_y, rand_x, y2, depth + 1) # recurse on lower left rectangle
+        frame(rand_x, rand_y, x2, y2, depth + 1) # recurse on lower right rectangle
+    else:
+        if random(100) < 30:
+            fill(random(255), random(255), random(255))
+        else:
+            fill(255)
+        rect(x1, y1, x2-x1, y2-y1)        
+
+frame(0, 0, 400, 400, 0)
+```
+<p align="center">
+  <img src="code/canvas_11_.png" width=400 />
+</p>
+
+This final step in the conditional is called a "base case" which stops the recursion and defines the final result.
+
+### Trees
+
+Trees have a paradigmatic recursive shape—starting with a single trunk, each limb branches into two or more smaller limbs, over and over, culminating in a leaf.
+
+<p align="center">
+  <img src="code/canvas_12_tree.jpg" width=400 /><br />
+  (stolen from Daniel Shiffman)
+</p>
+
+To program this, let's begin with a function that draws a line based on a starting point (`x1`, `y1`), an `angle`, and a `length`. Using a little bit of trig, we can calculate the endpoint of the line (`x2` and `y2`) with the angle.
+
+```py
+size(400, 400)
+background(255)
+
+def limb(x1, y1, angle, length):
+    x2 = x1 + cos(radians(angle)) * length
+    y2 = y1 + sin(radians(angle)) * length
+    line(x1, y1, x2, y2)
+
+limb(200, 400, 270, 100)
+```
+
+Let's unpack that formula a bit. In Processing, we work with angles in terms of radians, ie, multiples of π, with 0° pointing to the right and the angles increasing clockwise:
+
+<p align="center">
+  <img src="code/unit_circle.png" width=400 />
+</p>
+
+In this case, working with degrees is going to be more intuitive. Processing has a function where we can convert degrees to radians:
+```py
+radians(270)  # convert 270° to 3π/2
+```
+
+To get an endpoint from start point, an angle, and a length, we use `cos` and `sin` for the `x` and `y` values, respectively (converting from degrees to radians right there in the arguments):
+```py
+x2 = x1 + cos(radians(angle)) * length
+y2 = y1 + sin(radians(angle)) * length
+```
+
+This is how our limb function draws a line given initial parameters, in this case the coordinates 200,400 (the center of the bottom) and the angle pointing straight up.
+
+<p align="center">
+  <img src="code/canvas_13.png" width=400 />
+</p>
+
+The next thing we have to do is to make two limbs branch off, ie, two recursive calls to the function inside itself. We'll also add a `depth` argument to control the number of levels:
+
+```py
+size(400, 400)
+background(255)
+
+def limb(x1, y1, angle, length, depth):
+    if depth < 2:
+        x2 = x1 + cos(radians(angle)) * length
+        y2 = y1 + sin(radians(angle)) * length
+        line(x1, y1, x2, y2)
+        limb(x2, y2, angle + 45, length * .66, depth + 1)
+        limb(x2, y2, angle - 45, length * .66, depth + 1)
+
+limb(200, 400, 270, 100, 0) # start at depth=0
+```
+
+<p align="center">
+  <img src="code/canvas_14.png" width=400 />
+</p>
+
+Notice that we are giving the endpoint of our line as the starting point of the next two lines (`x2`,`y2`). One side of the branch increases the angle by 45 degrees, while the other decreases it. We also reduce the length by a third. And, of course, we increase the depth.
+
+Allowing further recursions (`if depth < 10`), we get this:
+
+<p align="center">
+  <img src="code/canvas_15.png" width=400 />
+</p>
+
+While it has its own beauty, this form is of course far more regular than a real tree. There's several things we might try to get it more organic looking. For example, what if the angles were randomized?
+
+```py
+size(400, 400)
+background(255)
+
+def limb(x1, y1, angle, length, depth):
+    if depth < 10:
+        x2 = x1 + cos(radians(angle)) * length
+        y2 = y1 + sin(radians(angle)) * length
+        line(x1, y1, x2, y2)
+        limb(x2, y2, angle + random(10, 45), length * .66, depth + 1)
+        limb(x2, y2, angle - random(10, 45), length * .66, depth + 1)
+
+limb(200, 400, 270, 100, 0)
+```
+
+<p align="center">
+  <img src="code/canvas_16.png" width=400 />
+</p>
+
+To make it more tree-like, maybe we should add a girth argument (using it to define `strokeWeight()` and reducing it by half each level):
+
+```py
+size(400, 400)
+background(255)
+
+def limb(x1, y1, angle, length, girth, depth):
+    if depth < 10:
+        x2 = x1 + cos(radians(angle)) * length
+        y2 = y1 + sin(radians(angle)) * length
+        strokeWeight(girth)
+        line(x1, y1, x2, y2)
+        limb(x2, y2, angle + random(10, 45), length * .66, girth * .5, depth + 1)
+        limb(x2, y2, angle - random(10, 45), length * .66, girth * .5, depth + 1)
+
+limb(200, 400, 270, 100, 20, 0)
+```
+
+<p align="center">
+  <img src="code/canvas_17.png" width=400 />
+</p>
+
+Real tree limbs don't always branch exactly in two, and sometimes they continue straight. Employing a `for` loop with a random number of iterations, we can add variation to the branching:
+
+```py
+size(400, 400)
+background(255)
+
+def limb(x1, y1, angle, length, girth, depth):
+    if depth < 10:
+        x2 = x1 + cos(radians(angle)) * length
+        y2 = y1 + sin(radians(angle)) * length
+        strokeWeight(girth)
+        line(x1, y1, x2, y2)
+        limb(x2, y2, angle, length * .66, girth * .5, depth + 1)  # this one continues straight
+        for i in range(int(random(1, 4))):
+            limb(x2, y2, angle + random(-60, 60), length * .66, girth * .5, depth + 1)
+
+limb(200, 400, 270, 100, 20, 0)
+```
+
+<p align="center">
+  <img src="code/canvas_18.png" width=400 />
+</p>
+
+Finally, let's add a base case for the leaves (and play with the colors a bit):
+
+```py
+size(400, 400)
+background(255)
+
+def limb(x1, y1, angle, length, girth, depth):
+    if depth < 10:
+        x2 = x1 + cos(radians(angle)) * length
+        y2 = y1 + sin(radians(angle)) * length
+        stroke(92, 55, 0)
+        strokeWeight(girth)
+        line(x1, y1, x2, y2)
+        limb(x2, y2, angle, length * .66, girth * .5, depth + 1)  # this one continues straight
+        for i in range(int(random(1, 4))):
+            limb(x2, y2, angle + random(-60, 60), length * .66, girth * .5, depth + 1)
+    else:
         noStroke()
-        circle(x, y, random(3, 10)) # using a random size
-```            
+        fill(0, 200, 0, 25)
+        circle(x1, y1, 5)
 
+limb(200, 400, 270, 100, 20, 0)
+```
 
 <p align="center">
-  <img src="code/canvas_11.png" width=400 /><br />
+  <img src="code/canvas_19.png" width=400 />
 </p>
 
-For a more impressionistic variation, let's make them closer again, increase the size, and add some transparency:
+Not bad for less than 20 lines of code! This process of refining the algorithm shows how you can steer recursion to create the kind of form you want. It's exactly the kind of thing used in software like _No Man's Sky_ to build an endless number of landscapes.
+
+### More conditionals
+
+Here's another example:
 
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
 
-for y in range(0, 400, 5):      # every fifth pixel vertically
-    for x in range(0, 400, 5): # every fifth pixel horizontally
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-        fill(r, g, b, 50)   # adding transparency to color
-        noStroke()
-        circle(x, y, random(3, 20)) # using a random size
+def seed(x, y, angle, tightness, size):
+    if size > 3:
+
+        # draw a circle
+        fill(0, 255)      
+        circle(x, y, size)
+
+        # calculate the position of the next circle
+        # the angle increases by the "tightness" amount each time
+        new_x = x + cos(radians(angle)) * size
+        new_y = y + sin(radians(angle)) * size
+        seed(new_x, new_y, angle + tightness, tightness, size - .5)
+
+        # 10% of the time        
+        if random(100) < 10:
+
+            # create a branch with a different tightness parameter                           
+            tightness = -tightness + random(-10, 10)        
+            angle = angle + tightness
+            new_x = x + cos(radians(angle)) * size
+            new_y = y + sin(radians(angle)) * size
+            seed(new_x, new_y, angle, tightness, size - .5)   
+
+seed(200, 200, 0, 15, 20)
 ```
 
+A simple output:
 <p align="center">
-  <img src="code/canvas_10.png" width=400 /><br />
+  <img src="code/canvas_20.png" width=400 />
 </p>
 
-Or, let's make line segments move off in random directions:
-
-```py
-size(400, 400)
-background(255)
-puffin = loadImage("puffin.png")
-
-for y in range(0, 400, 5):
-    for x in range(0, 400, 5):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-        stroke(g, b, r) # swap colors
-        line(x, y, x + random(-50, 50), y + random(-50, 50))
-```
+...and another that is more complex:
 <p align="center">
-  <img src="code/canvas_12.png" width=400 /><br />
-</p>            
-
-This can start to get very experimental. Here, we're using the red value to control the stroke weight, which makes little intuitive sense, but has an interesting result:
-
-```py
-size(400, 400)
-background(255)
-puffin = loadImage("puffin.png")
-
-for y in range(0, 400, 5):
-    for x in range(0, 400, 5):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-        stroke(r, g, b)
-        strokeWeight(r / 5)
-        line(x, y, x + random(-5, 5), y + random(-5, 5))              
-```
-
-<p align="center">
-  <img src="code/canvas_13.png" width=400 /><br />
-</p>   
-
-
-<!-- ### Conditionals and gradients
-
-So far, we've been applying the same effect evenly across the image. However, we can also use conditions to make decisions as we go.
-
-For example, using modulo, we can change the code every 25 pixels:
-
-```py
-size(400, 400)
-background(255)
-puffin = loadImage("puffin.png")
-
-for y in range(0, 400, 1):
-    for x in range(0, 400, 1):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-        # noStroke()
-        stroke(r, g, b)            
-        if x % 50 < 25: # if the remainder when divided by 50 is less than 25...
-            point(x, height-y)
-        else:
-            point(x, y)            
-```
-<p align="center">
-  <img src="code/canvas_14.png" width=400 /><br />
-</p>   
-
-To have a more gradual effect, we could calculate how far along we are from one end of the screen to the another, and use that value to change a parameter. Here's an example of that using `lerpColor()`:
-
-```py
-size(400, 400)
-background(255)
-puffin = loadImage("puffin.png")
-
-for y in range(0, 400, 1):
-    for x in range(0, 400, 1):
-        pixel = puffin.get(x, y)
-        r = red(pixel)
-        g = green(pixel)
-        b = blue(pixel)
-
-        position = x / 400.0   # horizontal progression from 0-1
-
-        original_color = color(r, g, b)
-        crazy_color = color(g, b, 255 - r)
-        lerped_color = lerpColor(original_color, crazy_color, position)
-
-        stroke(lerped_color)            
-        point(x, y)
-```
-
-<p align="center">
-  <img src="code/canvas_15.png" width=400 /><br />
-</p>   -->
-
-### Separating channels and shifting pixels
-
-These effects all produce interesting results. To get closer to a "glitchy" aesthetic, however, we need to reproduce common mistakes of the machine. This includes two common and related artifacts: misregistration, where the R, G, B channels do not line up properly, and pixel-shifting, where pixels are shifted from their positions.
-
-To start with, we're going to grab two pixels instead of just one. The second pixel is going to be offset by a set amount. Then, when we set our stroke value, we're going to mix and match color values from each pixel:
-
-```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-offset = 50
-for y in range(400):
-    for x in range(400):
-
-        pixel_1 = puffin.get(x, y)
-        r_1 = red(pixel_1)
-        g_1 = green(pixel_1)
-        b_1 = blue(pixel_1)
-
-        pixel_2 = puffin.get(x + offset, y)
-        r_2 = red(pixel_2)
-        g_2 = green(pixel_2)
-        b_2 = blue(pixel_2)
-
-        stroke(r_1, g_2, b_2)   
-        point(x, y)
-```
-<p align="center">
-  <img src="code/canvas_17.png" width=400 /><br />
-</p>
-Here we have the color misregistration, which gives a sense of the image being pulled apart. If we wanted to separate all three color channels, we could pull another pixel from a different offset.
-
-However, another thing we could try is to vary the offset. For example, let's choose a new random offset for each row:
-
-```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-offset = 0
-for y in range(400):
-    offset = random(100)
-    offset = int(offset)  # do this to avoid an error
-    for x in range(400):
-        pixel_1 = puffin.get(x, y)
-        r_1 = red(pixel_1)
-        g_1 = green(pixel_1)
-        b_1 = blue(pixel_1)
-
-        pixel_2 = puffin.get(x + offset, y)
-        r_2 = red(pixel_2)
-        g_2 = green(pixel_2)
-        b_2 = blue(pixel_2)
-
-        stroke(r_1, g_2, b_2)   
-        point(x, y)
-```
-<p align="center">
-  <img src="code/canvas_18.png" width=400 /><br />
+  <img src="code/canvas_21.png" width=400 />
 </p>
 
-This looks a bit extreme. But what if instead of shifting things for every row, we only did it occasionally?
+Key things to note in this example include the use of random to produce a recursive branch that happens 10% of the time. Adjusting this parameter can help tune how complex the output forms are.
 
-One way to set up this kind of probability is to "roll the dice" with a conditional statement: get a random number up to 100, and if it's less than the probability you want something to happen, do that thing. ie, this will produce a 10% chance of something happening:
+In addition, notice that there is no `depth` argument—the recursion is limited by `size`, so it is inherently tied to the size of the circles, taking as many levels as it needs to get there.
 
-```py
-if random(100) < 10:
-    do the thing
-```
+### Designing with recursion
 
-Let's use this technique to control the selection of a new offset:
-```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-offset = 0
-for y in range(400):
-    if random(100) < 10:
-        offset = random(50)   # set to a lower value to tone down the effect
-        offset = int(offset)  # do this to avoid an error
-    for x in range(400):
-        pixel_1 = puffin.get(x, y)
-        r_1 = red(pixel_1)
-        g_1 = green(pixel_1)
-        b_1 = blue(pixel_1)
+When coming up with a recursive form, start simple. Pick a basic shape and imagine how it might progress. Once your function is calling itself, play with the parameters to get the effect you want. Try with various colors and transparencies—sometimes intended effects emerge, which is great.
 
-        pixel_2 = puffin.get(x + offset, y)
-        r_2 = red(pixel_2)
-        g_2 = green(pixel_2)
-        b_2 = blue(pixel_2)
-
-        stroke(r_1, g_2, b_2)   
-        point(x, y)
-```
-
-<p align="center">
-  <img src="code/canvas_19.png" width=400 /><br />
-</p>
-
-Notice that we used a conditional statement. Since x and y are always incrementing in our loops, using these with `if` statements is a very useful tool when we want changes to apply to just a portion of the canvas:
-
-```py
-size(400, 400)
-puffin = loadImage("puffin.png")
-offset = 0
-for y in range(400):
-    if random(100) < 10:
-        offset = random(50)   # set to a lower value to tone down the effect
-        offset = int(offset)  # do this to avoid an error
-    for x in range(400):
-        pixel_1 = puffin.get(x, y)
-        r_1 = red(pixel_1)
-        g_1 = green(pixel_1)
-        b_1 = blue(pixel_1)
-
-        # apply "fuzz" to the right half of the image
-        if x < 200:
-            fuzz = 0
-        else:
-            fuzz = random(50)
-            fuzz = int(fuzz)
-
-        pixel_2 = puffin.get(x + offset, y + fuzz)
-        r_2 = red(pixel_2)
-        g_2 = green(pixel_2)
-        b_2 = blue(pixel_2)
-
-        # different color combination for the top and bottom of the image
-        if y > 250:
-            stroke(r_1, g_2, b_1)
-        else:
-            stroke(r_1, g_2, b_2)   
-
-        point(x, y)
-```
-
-<p align="center">
-  <img src="code/canvas_20.png" width=400 /><br />
-</p>
-Now we're really getting some glitch going. Imagine using different offsets for different channels, adding vertical offset, combining multiple images, using transparency, etc...
-
-### Repeated applications
-
-One parting thought. What if you generated an output image from this code, and then put it back through your sketch as the input image?
+You can, of course, have more than one recursive algorithm in a sketch. Can you create a whole ecosystem of varying beings?
