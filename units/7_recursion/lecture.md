@@ -1,6 +1,8 @@
 # Recursion
 
-Of all the concepts associated with computers, recursion may be the most philosphically vexing. It is, in short, an algorithm that includes itself as a step within its own instructions. Like a hall of mirrors or a dream within a dream, this creates nested repetitions that can produce very interesting results from very little code.
+## Concept
+
+Of all the concepts associated with computers, recursion may be the most philosophically vexing. It is, in short, an algorithm that includes itself as a step within its own instructions. Like a hall of mirrors or a dream within a dream, this creates nested repetitions that can produce very interesting results from very little code.
 
 Perfect recursion is inherently mathematical and abstract, but as it turns out, it is one way to approximate some of the self-similar structures of natural form. The branches of a tree, for example, are themselves "little trees," just as a rock has a similar shape as a boulder and as a mountain—it's as if they were made by the same set of instructions nested within themselves.
 
