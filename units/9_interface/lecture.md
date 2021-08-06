@@ -74,7 +74,10 @@ Additionally, in their series [_Black Gooey Universe_](https://americanartist.us
   American Artist, <i>Mother of All Demos</i> (2018)<br />
 </p>
 
-## Code: responding to events
+## Code
+
+---> alter this to just introducing mouseX, mouseY, pmouseX, pmouseY, mousePressed
+
 
 So far, we've used Python functions written by others, whether to make graphics in Processing or via `import` commands to manipulate text or use variations on the random module. We've also written our own functions to make rooms in nonlinear narratives. Now, we're going to use functions in yet another, slightly different way.
 
@@ -525,10 +528,3 @@ def keyTyped():
 ```
 
 As before, the resulting image file will be within the sketch folder.
-
-
-## Sketch #5
-
-For this sketch, you will create a software painting interface using code. To get started, think about programs like [MacPaint](https://en.wikipedia.org/wiki/MacPaint), where the "user" can choose from multiple brushes with the mouse and use them to draw on the open canvas. However, your approach should reflect an artistic purpose for your own use or for someone else. For example, imagine the difference between interfaces for artists with a [street-art aesthetic](https://www.google.com/search?q=graffiti&tbm=isch) using spray-paint brushes, or a [futurist](https://www.google.com/search?q=future+interface&tbm=isch) interface, or maybe one for someone who is [color blind](https://en.wikipedia.org/wiki/Color_blindness), or a [bird](https://en.wikipedia.org/wiki/Bird_vision#Light_perception), or [underwater](http://thedivingblog.com/colors-underwater/).
-
-Along with your code and [3-sentence description](../../resources/description_guidelines.md), you should supply an image that you have created to demonstrate the capabilities of your interface. Your interface must include at least four different "brushes" or ways of interacting. A rough version should be complete for the class prior to the crit in order to get feedback from your peers.

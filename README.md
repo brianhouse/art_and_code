@@ -22,7 +22,7 @@ Introduction to the form and aesthetics of digital media. By writing code to gen
 ## Assignments and Grading
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **recursion**, **emergence**, **interactivity**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
+This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **recursion**, **emergence**, **interface**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
 Sketches cumulatively account for 90% of your final grade. They must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3) *prior* to the crit—no late work is accepted. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
 
@@ -207,13 +207,13 @@ Labor day, no class
 
 #### Wednesday 11/24
 - Crit Sketch #8
-- Intro, [Interactivity](units/9_interactivity/lecture.md)
+- Intro, [Interface](units/9_interface/lecture.md)
 
 
 ### Week 14
 
 #### Monday 11/29
-- Begin [Sketch #9](units/9_interactivity/assignment.md)
+- Begin [Sketch #9](units/9_interface/assignment.md)
 - Questions and work time
 
 #### Wednesday 12/1

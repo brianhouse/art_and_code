@@ -19,6 +19,7 @@
 - Paulo Criolo
 - Mimi Onuoha
 - Stephanie Dinkins
+- Francis Tseng
 - Xin Liu
 - James Paterson
 - Rafael Lozano-Hemmer
