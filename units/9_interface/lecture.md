@@ -76,36 +76,15 @@ Additionally, in their series [_Black Gooey Universe_](https://americanartist.us
 
 ## Code
 
----> alter this to just introducing mouseX, mouseY, pmouseX, pmouseY, mousePressed
+### Mouse variables and additional events
 
-
-So far, we've used Python functions written by others, whether to make graphics in Processing or via `import` commands to manipulate text or use variations on the random module. We've also written our own functions to make rooms in nonlinear narratives. Now, we're going to use functions in yet another, slightly different way.
-
-Returning to the canvas, when we write functions that have certain specific names, Processing will know to call those functions for us under certain circumstances. These are called **event handlers**, and include `setup()`, `draw()`, `mouseClicked()`, and `keyTyped()`.
-
-In addition, Processing supplies a few **magic variables** that keep track of changing conditions. These include `mouseX`, `mouseY`, `mousePressed`, `key`, and `keyPressed`. We don't need to assign any values to these variables, as Processing will constantly update them in the background.
+We're already familiar with the event handlers `setup()` and `draw()`. Now we'll add `mouseClicked()`, and `keyTyped()`. In addition, Processing supplies a few **magic variables** that keep track of changing conditions. These include `mouseX`, `mouseY`, `mousePressed`, `key`, and `keyPressed`. We don't need to assign any values to these variables, as Processing will constantly update them in the background.
 
 Combining event handlers and magic variables allows us to build interfaces in our sketches that can respond to the mouse and keyboard.
 
-
-### setup()
-
-`setup()` is the most boring of these. This function is called once when the sketch is first run:
-
-<p align="center">
-  <img src="code/canvas_1.png" width=500 /><br />
-</p>
-
-Notice how this function runs even though we didn't call it explicitly (which we had to do for our functions in the Nonlinear Narrative sketch, for instance). `setup()` doesn't do much for us compared to when we wrote code outside of a function, but using it allows us to keep things straight with the other event handlers.
-
-Note that from now on, we'll put `size()` inside of setup. `background()` might be another common thing to include.
-
-
 ### draw(), mouseX, and mouseY
 
-The most interesting of the event handlers is `draw()`. Processing calls `draw()` over and over again, once every 1/30th of a second. The implications of this are profound, because it allows us to do animation (the reason that it is 1/30th of a second is that this is the standard frame rate for digital video).
-
-To demonstrate, let's first draw a circle inside `draw()`:
+Let's draw a circle inside `draw()`:
 
 <p align="center">
   <img src="code/canvas_2.png" width=500 /><br />
@@ -115,7 +94,7 @@ To demonstrate, let's first draw a circle inside `draw()`:
   <img src="code/canvas_3.png" width=400 /><br />
 </p>
 
-So far, `setup()` is called right when the sketch is run, and it initializes the canvas; then, `draw()` is called and it in turn calls `circle()`. In fact, the code inside `draw()` is running 30 times every second, drawing circle upon circle upon circle. We can't see this, because it's always drawing the circle at 200, 150.
+We know that even though we can't see it, `draw()` is running 30 times every second, drawing circle upon circle upon circle at 200, 150.
 
 However, what if we drew the circle at `mouseX`, `mouseY` instead? These two variables track the mouse, so they are always set to the coordinates of whatever pixel the cursor is currently hovering above. If the mouse is moving, every time `draw()` is called, those coordinates will be different, and the circle will be drawn at a different location.
 
@@ -131,7 +110,7 @@ def draw():
   <img src="code/canvas_4.png" width=400 /><br />
 </p>
 
-Suddenly, this feels much more like a canvas, in the sense that it is interactive.
+Suddenly, this feels much more like a canvas, in the sense that it is interactive. Notice that unlike with our emergence sketch, we're not clearing the background every frame—that's what makes it possible for us to work with the trace.
 
 This code draws a circle whenever the mouse is over the canvas, but if we want to add greater control, we could make it draw only when the mouse button is pressed. This is where the variable `mousePressed` comes in—it is either `True` or `False`, and so we can combine it with a conditional to get the desired effect:
 
