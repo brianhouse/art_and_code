@@ -1,9 +1,12 @@
 # Python Mode for Processing Cheat Sheet
 
+Arguments to functions can be numbers or variables, and the variables can be named anything—the order is what matters. Below, the arguments are named descriptively in order to explain how the function works.
+
 ### Canvas
 - `size(width, height)` set canvas size in pixels
 - `background(color)` set window background color
-- `pixelDensity(2)` make all lines smoother on nicer displays
+- `pixelDensity(2)` make all lines smoother on some displays
+
 
 ### Shapes
 - `point(x, y)`
@@ -16,10 +19,12 @@
 - `quad(x1, y1, x2, y2, x3, y3, x4, y4)`
 - `bezier(x_start, y_start, x_anchor1, y_anchor1, x_anchor2, y_anchor2, x_stop, y_stop)`
 
+
 ### Stroke + Color
 - `stroke(color)`
 - `fill(color)`
 - `strokeWeight(pixels)`
+
 
 ### Color Values
 - `fill(100)` 1 parameter is greyscale
@@ -30,9 +35,10 @@
 
 ### Structure
 - `for i in range(n):` repeat the following indented lines _n_ times, with `i` equal to _n_ each time
-- `def functionname():` declare a function with the following indented lines
+- `def function_name():` declare a function with the following indented lines
 - `if` `elif` `else` create a conditional statement
 - `and` `or` combine conditions in an `if` statement
+
 
 ### Strings
 - `string.lower()` return a lowercase version of the string
@@ -47,24 +53,37 @@
 
 
 ### Lists
-- `[]` create an empty list
+- `my_list = []` create an empty list
+- `my_list = [item1, item2, item3]` create a list with items
 - `list.append(item)` append an item to a list
+- `list.remove(item)` remove an item from a list
 - `list[index]` return the item at _index_ from the list
 - `len(list)` get the length of the list
 - `in` test whether an item is within the list
+- `words = list(set(words))` convert a list with repeats into a list with only unique items
+
+
+### Dictionaries
+- `my_dictionary = {}` create an empty dictionary
+- `my_dictionary = {'name': "Brian", 'hobby': "skiing"}` create a dictionary with items
+- `my_dictionary['name']` access a dictionary item
+- `my_dictionary['skill'] = "programming"` add an item to a dictionary
+
 
 ### Random
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
 - `random(high)` generates a number greater than or equal to 0 less than _high_
 - `randomGaussian()` generates a number from a series with a mean of 0 and a standard deviation of 1
-- `choice(list)` select a random item from a list (requires `from random import choice`
+- `choice(list)` select a random item from a list (requires `from random import choice`)
 - `shuffle(list)` shuffle a list in place
+
 
 ### Event handlers
 - `setup()` called once when the sketch is first run
 - `draw()` called repeatedly 30 times per second
 - `mouseClicked()` called with the mouse is pressed and released in the same location
 - `keyTyped()` called when a key is typed
+
 
 ### Magic variables
 - `mouseX` the current x-coordinate of the cursor
@@ -76,6 +95,7 @@
 - `width` the width of the canvas
 - `height` the height of the canvas
 
+
 ### Comparison operators
 - `==` equal to
 - `>` greater than
@@ -84,14 +104,22 @@
 - `<=` lesser than or equal to
 - `!=` not equal to
 
+
+### Images
+- `image = loadImage("image.png")` load data from an image file into a variable
+- `pixel = image.get(x, y)` get color data for a single pixel
+- `r = red(pixel)` get the red value of a pixel
+- `g = green(pixel)` get the blue value of a pixel
+`- b = blue(pixel)` get the green value of a pixel
+
+
 ### Utilities
 - `global` declare a global variable
 - `open("filename").read()` read the contents of a file into a string
 - `save("filename.png")` save an image of the canvas
 - `print("text")` print a string to the console
+- `string = raw_input()` get a string from the command prompt and put it into a variable (only works in terminal)
 
-
-### Text
 
 ## Full Documentation
 https://py.processing.org/reference/
