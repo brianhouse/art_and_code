@@ -7,20 +7,12 @@ Craft: technical
 4 Demonstrates basic command of programming techniques
 3 Assignment attempted
 
-Craft: aethetics 
+Craft: aethetics
 5 Exemplary artwork
-4 Satisfying visual result
+4 Satisfying visual (or textual) result
 3 Assignment attempted
 
 Concept
 5 Artistically original
 4 Fulfills the conceptual exercise
 3 Assignment attempted
-
-
-
-
-
-
-
-
