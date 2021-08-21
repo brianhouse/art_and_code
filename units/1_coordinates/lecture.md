@@ -20,7 +20,7 @@ Of course, using coordinates to represent space is not unique to digital media. 
 </p>
 
 <p align="center">
-  <img src="context/2_de_vries.gif" width=500 /><br />
+  <img src="context/2_de_vries.jpg" width=500 /><br />
 </p>
 
 European use of coordinates was particularly important in cartography. Latitude and longitude encode the surface of the Earth into calculable numbers, which accompanied colonization of Africa and the Americas from the 15th century onward. In addition, colonial cities often used the [urban grid](https://en.wikipedia.org/wiki/Grid_plan), although the technique was not novel to cultures such as those in [Sengal](https://www.tandfonline.com/doi/abs/10.1080/02665433.2018.1453860?scroll=top&needAccess=true&journalCode=rppe20) and [Mexico](http://www.public.asu.edu/~mesmith9/1-CompleteSet/MES-08-AzCityPlan-Encyclopedia.pdf). These systematic approaches were utilized as [a means of subjugating](http://projectivecities.aaschool.ac.uk/portfolio/the-citys-essentiality-to-the-spanish-colonial-project/) alternative [indigenous modes](https://press.uchicago.edu/books/HOC/HOC_V2_B3/HOC_VOLUME2_Book3_chapter6.pdf) of [organizing space](https://openresearch-repository.anu.edu.au/handle/1885/114874) and of consolidating power.
