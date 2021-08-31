@@ -8,7 +8,7 @@ We're used to downloading software such as Photoshop or Ableton to our computers
 
 ## Setup
 
-[Download Processing](https://processing.org/download/) for whichever operating system you are using
+Download **Stable Release version 3.5.4 (January 17, 2020)** from the [Processing website]](https://processing.org/download/) for whichever operating system you are using. (The latest version does not yet have full support for Python.)
 
 - On Windows, you'll have a .zip file. Double-click it, and drag the folder inside to a location on your hard disk. It could be in Program Files or simply the desktop, but the important thing is for the Processing folder to be pulled out of that .zip file. Then double-click processing.exe to start.
 

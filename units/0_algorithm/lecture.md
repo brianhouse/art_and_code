@@ -17,7 +17,7 @@ In the computer science department, you learn to program by solving problems hav
 
 That's what a program is—an organized set of instructions given to the computer to produce some outcome. There's also a fancy (and much older) word we also use for that (what is it?): **algorithm**.
 
-Are algorithms always on the computer? What are other examples besides code? *[musical score, blueprints, IKEA, Legos...]*
+Are algorithms always on the computer? What are other examples besides code? *[musical score, blueprints, IKEA, Puzzle (emph process), DNA, Legos...]*
 
 A recipe is really a beautiful example of an algorithm, and it's a lot like a computer program. You have a set of specialized terms, like "tablespoon" and "mince", and it involves all kinds of technological equipment.
 
@@ -30,22 +30,25 @@ How do you come up with a recipe?
 That's exactly how I want you to think about programming. You're always borrowing _code_—ie, the pieces of a program—using libraries, looking stuff up, and it's lots and lots and lots of trial and error.
 
 So where does that get us? What's possible with programming? Here are some more or less random examples of artists making things out of code:
-- [Chris Milk](http://milk.co/treachery)
+- [Chris Milk](context/1_chris_milk_treachery_of_sanctuary.mp4)
 - [Nicole Aptekar](https://www.instagram.com/nicole.aptekar/)
+- [Brenna Murphy](context/3_murphy_lattice_domains.pdf)
 - [Mario Klingemann](https://www.flickr.com/photos/quasimondo/albums/72157677689800878)
-- [Brenna Murphy](https://upforgallery.com/central-lattice-tool-array)
-- [Onyx Ashanti](https://www.youtube.com/watch?v=JataQs4R5Bc&feature=youtu.be&t=1031)
+- [Sougwen Chung](context/5_sougwen_chung_drawing_operations.mp4)
+- [Onyx Ashanti](context/6_onyx_ashanti.mp4)
 
 What do you think about these examples?
 
 How about this one?
 - [Sol Lewitt](https://www.google.com/search?q=sol+lewitt&client=safari&rls=en&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiXnMOGrbPkAhWFlp4KHc0RA9gQ_AUIESgB&biw=1280&bih=677)
 
+Conceptual art—the idea is what is the important aspect; or maybe the tension between idea and execution.
+
 These are pieces by Sol Lewitt, who is a major figure in the so-called Western canon. But here's the thing. Sol didn't actually paint these. He just provided the [instructions](lewitt.pdf).
 
-Lewitt was doing this in the 60s. What else was happening in the 60s? Well, computers, which had been invented in the modern sense in the 40s, were diffusion of computation into the cultural consciousness.
+Lewitt was doing this in the 60s. What else was happening in the 60s? Well, computers, which had been invented in the modern sense in the 40s in the context of war-making, were diffusion of computation into the cultural consciousness. Today it's hard to separate out what a computer has touched because they are so integrated into everyday life. But at that point, you had these systems first emerging. And that's what artists do—they respond to the cultural conditions around them, interpret them, critique them, provide alternatives, and end up influencing the development. And visual artists have in fact had an enormous influence on computation.
 
-This idea that we can make things happen in the world by defining them in a formal way and letting the results play out.
+So yeah, this idea that we can make things happen in the world by defining them in a formal way and letting the results play out.
 
 So let's give it a shot.
 
@@ -71,7 +74,7 @@ From here on out, we're going to continue to write **algorithms**, but they will
 
 There are many programming languages out there, but in this course we are going to use Python from within the Processing Environment. In fact, your homework for next time is to download that and get it running—there are [instructions](getting_started.md) on how to do that on Google Classroom.
 
-In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **coordinates**, **repetition**, **indeterminacy**,  **nonlinearity**, **recombination**, **transformation**, **emergence**, and **interactivity**. For each one of these, I'll introduce the structure, show some of the context within art history, explain how you program it in Python, and then you'll complete an artwork (or as we'll call it, a "sketch").
+In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **coordinates**, **repetition**, **indeterminacy**,  **nonlinearity**, **recombination**, **glitch **, **emergence**, and **interface**. For each one of these, I'll introduce the structure, show some of the context within art history, explain how you program it in Python, and then you'll complete an artwork (or as we'll call it, a "sketch").
 
 And that is it in a nutshell. The only additional component is that once over the course of the semester, each one of you will give a short presentation about a digital media artist. The idea there is that we get a sense of some of the breadth of practices that are out there. We'll have a couple of those each week, and it may or may not line up with what we're working on that week, but that's ok. You can sign up for presentations on Google Classroom, it's first come first served, so check that out.
 
