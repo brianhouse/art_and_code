@@ -95,6 +95,7 @@ Labor day, no class
 
 #### Wednesday 9/15
 - Artist presentations 1
+- Explanation of [rubric](resources/rubric.md)
 - Begin [Sketch #2](units/2_repetition/assignment.md)
 - Questions and work time
 

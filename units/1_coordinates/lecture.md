@@ -415,7 +415,9 @@ point(500, 10)
 
 As you can see, the anchors effectively constrain the curve—the more points, the tighter and more complex the curve can be.
 
-But why are the start and end points doubled, with two `curveVertex()`s with the same coordinates? This makes it easier to think about when we're just getting started. But the very first and very last `curveVertex()` define the initial slope of the curve—it's like a virtual anchor point to get things going. For now, however, doubling works fine. 
+But why are the start and end points doubled, with two `curveVertex()`s with the same coordinates? This makes it easier to think about when we're just getting started. But the very first and very last `curveVertex()` define the initial slope of the curve—it's like a virtual anchor point to get things going. For now, however, doubling works fine.
+
+Processing will fill the shape by default, but you can always use `noFill()` or `noStroke()` to adjust the appearance as necessary.
 
 
 ## Saving an image

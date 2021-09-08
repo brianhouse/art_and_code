@@ -18,6 +18,10 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 - `rect(x, y, width, height)` (drawn from upper-left corner)
 - `quad(x1, y1, x2, y2, x3, y3, x4, y4)`
 - `bezier(x_start, y_start, x_anchor1, y_anchor1, x_anchor2, y_anchor2, x_stop, y_stop)`
+- ```beginShape()``` start a curve shape
+- ```curveVertex(x, y)``` add an anchor point
+- ```endShape()``` end the shape
+
 
 
 ### Stroke + Color
