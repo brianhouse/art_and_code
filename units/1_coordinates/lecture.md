@@ -30,18 +30,24 @@ European use of coordinates was particularly important in cartography. Latitude 
   Map of North America with coordinate lines (1600s)<br />
 </p>
 
-In the twentieth century, gridded space became an important tool in modernist print [design](https://www.readingdesign.org/modernist-grid) and [architecture](https://nplusonemag.com/issue-34/reviews/vernacular-modernism/) (often associated with the [Bauhaus](https://en.wikipedia.org/wiki/Bauhaus)). And grids became an aesthetic unto themselves in modernist art and architecture, which have had a defining influence on the aesthetics associated with computers.
+These colonial endeavors are inseparable from what it is that we mean when we say, "modern"—it's a sense of rationalized space. Modernism in art, however, is associated with the 20th century.
 
-<p align="center">
-  <img src="context/4_mondrian.jpg" width=500 /><br />
-  Piet Mondrian, <i>Broadway Boogie Woogie</i> (1942)<br />
-</p>
+Gridded space became an important tool in modernist print [design](https://www.readingdesign.org/modernist-grid) and [architecture](https://nplusonemag.com/issue-34/reviews/vernacular-modernism/) (often associated with the [Bauhaus](https://en.wikipedia.org/wiki/Bauhaus)). And grids became an aesthetic unto themselves in modernist art and architecture, which have had a defining influence on the aesthetics associated with computers.
 
 <p align="center">
   <img src="context/5_mies.jpg" width=500 /><br />
   Grid-based architecture from Mies van der Rohe (1970s)<br />
 </p>
 
+<p align="center">
+  <img src="context/5_marcin.jpg" width=500 /><br />
+  Ben Marcin, <i>Untitled (Twenty Office Buildings)</i> (2010–14)<br /><br />
+</p>
+
+<p align="center">
+  <img src="context/4_mondrian.jpg" width=500 /><br />
+  Piet Mondrian, <i>Broadway Boogie Woogie</i> (1942)<br />
+</p>
 
 
 ### Digital
@@ -67,7 +73,7 @@ To make her images, Lillian would sketch the images on graph paper and then [enc
 <p align="center">
   <img src="context/8_schwartz.jpg" width=500 /><br />
   Lillian Schwartz, still from <i>Enigma</i> (1972)<br />
-  <a href="http://lillian.com/1972-enigma-4-min-20-sec/">Watch the video</a><br />
+  <a href="http://lillian.com/1972-enigma-4-min-20-sec/">Watch the video</a> (trigger warning for people sensitive to flashing lights)<br />
 </p>
 
 Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore below.
@@ -97,7 +103,7 @@ This is what it should look like in the Processing window:
   <img src="code/canvas_0.png" width=600 /><br />
 </p>
 
-In this code, `size` is a **function** provided by Processing that creates the "canvas," which takes two **parameters**, one each for how many pixels wide and how many high we want our canvas to be. Subsequently, when we run the program, a grey window should appear that is exactly 640 by 480 pixels (I chose these dimensions for fun because they are what personal computers used in the 80s and 90s).
+In this code, `size` is a **function** provided by Processing that creates the "canvas," which takes two **arguments**, one each for how many pixels wide and how many high we want our canvas to be. Subsequently, when we run the program, a grey window should appear that is exactly 640 by 480 pixels (I chose these dimensions for fun because they are what personal computers used in the 80s and 90s).
 
 <p align="center">
   <img src="code/canvas_1.png" width=500 /><br />
@@ -331,62 +337,86 @@ To summarize:
 
 ### Curves
 
-<!--
-size(600, 600)
+We'll learn how to draw one more thing, although this one is slightly more complicated because it involves multiple lines of code. There are many ways to draw curves in Processing, but the most flexible is by defining a shape.
 
-# draw the curve
-noFill()
-bezier(0, 300,
-       200, 300,
-       400, 300,
-       600, 300)
+To start a shape, we use the function `beginShape()`; to end it, we use `endShape()`:
 
-# draw the control points
-stroke(255, 0, 0)
+```py
+size(600, 400)
+beginShape()
+
+endShape()
+```
+
+By itself, these lines don't do anything. But in between them, we'll add series of anchor points, and  Processing will connect them together in a curve.
+
+To make those points, we use `curveVertex()`, which just takes x and y coordinates as arguments.
+
+```py
+size(600, 400)
+beginShape()
+curveVertex(10, 390) # start point
+curveVertex(10, 390) # repeat
+
+# intermediate anchor points
+curveVertex(200, 200)
+curveVertex(280, 280)
+curveVertex(400, 100)
+curveVertex(450, 300)
+curveVertex(500, 10)
+
+curveVertex(590, 390) # end point
+curveVertex(590, 390) # repeat
+endShape()
+```
+<p align="center">
+  <img src="code/canvas_13.png" width=500 /><br />
+</p>
+
+It can be a little hard to understand the relationship between the curve and the `curveVertex`s. To visualize it, let's add some code to draw points at each of the anchors so we can see what's going on:
+
+```py
+size(600, 400)
+
+beginShape() # enclose the shape
+curveVertex(10, 390) # start point
+curveVertex(10, 390) # repeat
+
+# anchor points
+curveVertex(200, 200)
+curveVertex(280, 280)
+curveVertex(400, 100)
+curveVertex(450, 300)
+curveVertex(500, 10)
+
+curveVertex(590, 390) # end point
+curveVertex(590, 390) # repeat
+endShape() # enclose the shape
+
 strokeWeight(10)
-point(200, 300)
-point(400, 300)
--->
 
-We'll learn how to draw one more thing, although this one is a little weird. To make a curve with the `bezier` function, we need to specify the start and end "anchor" points, plus two "control" points. The line doesn't actually pass through these control points, but they influence how the line curves.
+# draw dots on start and end
+stroke(0, 0, 255)
+point(10, 390)
+point(590, 390)
 
-<p align="center">
-  <img src="code/bezier.png" width=500 /><br />
-</p>
-
-Here's an example in code:
-```py
-size(640, 480)
-background(69, 209, 99)
-
-strokeWeight(5)
-noFill()
-bezier(100, 100, 400, 100, 500, 200, 540, 380)
-```
-
-And the result:
-<p align="center">
-  <img src="code/canvas_8.png" width=500 /><br />
-</p>
-
-Notice how the curve follows the trajectory of the dashed red lines as best it can while still smoothly connecting the lines.
-
-If we keep everything the same except for one of the control points, we get a very different result. Here we've swapped out `500, 200` with `200, 400`:
-
-```py
-size(640, 480)
-background(69, 209, 99)
-
-strokeWeight(5)
-noFill()
-bezier(100, 100, 400, 100, 200, 400, 540, 380)
+# draw dots on intermediate anchor points
+stroke(255, 0, 0)
+point(200, 200)
+point(280, 280)
+point(400, 100)
+point(450, 300)
+point(500, 10)
 ```
 
 <p align="center">
-  <img src="code/canvas_9.png" width=500 /><br />
+  <img src="code/canvas_12.png" width=500 /><br />
 </p>
 
-`bezier` is a very interesting function, but it does take some getting used to.
+As you can see, the anchors effectively constrain the curve—the more points, the tighter and more complex the curve can be.
+
+But why are the start and end points doubled, with two `curveVertex()`s with the same coordinates? This makes it easier to think about when we're just getting started. But the very first and very last `curveVertex()` define the initial slope of the curve—it's like a virtual anchor point to get things going. For now, however, doubling works fine. 
+
 
 ## Saving an image
 

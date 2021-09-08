@@ -8,6 +8,11 @@ Do small group screen sharing for intermediate feedback
 
 ## Units
 
+### coordinates
+- bezier is impossible. need to show beginShape and curveVertex and have a mini-assignment on it
+- definitely have beginShape endShape
+
+
 
 ### Interface
 

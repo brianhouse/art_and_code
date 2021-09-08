@@ -91,3 +91,6 @@ I'd like everyone to fill out a questionnaire online they haven't already.
 One important thing is that you will need to bring a laptop to this class. If that is a problem for anyone, please indicate that on the questionnaire.
 
 You have homework for next class, which is up on Classroom, which is to get set up with Python Mode for Processing. If you have problems getting that going, please email me or comment on the assignment.
+
+
+#### consider using this time to have them get set up right there if they have their computers

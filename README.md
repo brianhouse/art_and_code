@@ -1,7 +1,7 @@
 # ART 112: DIGITAL MEDIA I
 
-Monday / Wednesday 8:50–11:20 (Section 1) and 12:40–3:10 (Section 2), Fields 205
-Course materials on [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3)
+Monday / Wednesday 8:50–11:20 (Section 1) and 12:40–3:10 (Section 2), Fields 205  
+Course materials on [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3)  
 
 Prof. Brian House (he/him/his), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
 Office hours MW 11:20–12:00 and 3:15–4:00
