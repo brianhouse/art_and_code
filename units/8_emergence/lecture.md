@@ -510,7 +510,7 @@ def avoid(agent, other, threshold, strength):
         agent['heading'] = atan2(new_velocity_y, new_velocity_x)
     return distance
 ```
-Here, `avoid()` takes four arguments. The agent doing the avoiding, the other agent that its trying to avoid, the distance threshold that determines whether it applies or not, and the "strength". Strength is an additional parameter with which I've multiplied `steer_x` and `steer_y` which will help us down the line set the relative intensity when avoiding multiple types of things (like agents _and_ walls).
+Here, `avoid()` takes four arguments. The agent doing the avoiding, the other agent that its trying to avoid, the distance threshold that determines whether it applies or not, and the "strength". Strength is an additional argument with which I've multiplied `steer_x` and `steer_y` which will help us down the line set the relative intensity when avoiding multiple types of things (like agents _and_ walls).
 
 Notice that we're **returning** the distance between `agent` and `other`. Return statements mean that the function will not only do what it does (in this case updating `agent['heading']`, it will come up with a value that we can use later, just like `cos()` or `dist()`. We'll see how this works in a moment.
 
@@ -562,7 +562,7 @@ walls = [   {'x': 0, 'y': agent['y']},      # left wall
 ```
 (Here, the list of walls consists of four dictionary items—we're just declaring it explicitly rather than using a `for` loop)
 
-We can put this in its own function, `avoid_walls()` which calls `avoid()` with special parameters. This is not unlike what we did with recursive functions calling themselves.
+We can put this in its own function, `avoid_walls()` which calls `avoid()` with special arguments. This is not unlike what we did with recursive functions calling themselves.
 
 ```py
 def avoid_walls(agent, threshold, strength):

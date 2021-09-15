@@ -90,7 +90,7 @@ Processing makes loading an image into the sketch very straightforward. To begin
   <img src="code/canvas_2_.png" width=400 /><br />
 </p>
 
-Now, we use the `loadImage()` function to load the image data into a new variable (`puffin`). To display the image, we use the `image()` function, which takes the image data variable as a parameter along with an x and y coordinate at which to draw it.
+Now, we use the `loadImage()` function to load the image data into a new variable (`puffin`). To display the image, we use the `image()` function, which takes the image data variable as an argument along with an x and y coordinate at which to draw it.
 
 ```py
 size(400, 400)
@@ -213,7 +213,7 @@ for y in range(400):
 
 ### Advanced `range()` and shapes
 
-Let's revisit `range()`. Thus far, we've usually given `range()` just one parameter. But it can also work with _two_ parameters for the starting and stopping values (with one parameter, the computer just assumes that the starting value is 0). For example, the following will print all the values from 0 up to (but not including) 100:
+Let's revisit `range()`. Thus far, we've usually given `range()` just one argument. But it can also work with _two_ arguments for the starting and stopping values (with one argument, the computer just assumes that the starting value is 0). For example, the following will print all the values from 0 up to (but not including) 100:
 
 ```py
 for i in range(0, 100):
@@ -231,7 +231,7 @@ for i in range(0, 100):
 99
 ```
 
-In fact, `range()` also takes a _third_ parameter, skip, which defines how much is increased each time. For example, the following will do the same thing as above, but increment by 10:
+In fact, `range()` also takes a _third_ argument, skip, which defines how much is increased each time. For example, the following will do the same thing as above, but increment by 10:
 
 ```py
 for i in range(0, 100, 10):
@@ -269,9 +269,9 @@ for y in range(0, 400, 3):      # every third pixel vertically
   <img src="code/canvas_8.png" width=400 /><br />
 </p>
 
-This comes in particularly handy if we want to make some bigger shapes. For example, let's draw with squares that are 5 pixels wide, and use the skip parameter in `range()` to make space for them:
+This comes in particularly handy if we want to make some bigger shapes. For example, let's draw with squares that are 5 pixels wide, and use the skip argument in `range()` to make space for them:
 
-This comes in handy if we want to use some bigger shapes. For example, instead of using `set()` to change a pixel, let's draw with squares that are 5 pixels wide, and use the skip parameter in `range()` to make space for them:
+This comes in handy if we want to use some bigger shapes. For example, instead of using `set()` to change a pixel, let's draw with squares that are 5 pixels wide, and use the skip argument in `range()` to make space for them:
 
 ```py
 size(400, 400)
@@ -407,7 +407,7 @@ for y in range(0, 400, 1):
   <img src="code/canvas_14.png" width=400 /><br />
 </p>   
 
-To have a more gradual effect, we could calculate how far along we are from one end of the screen to the another, and use that value to change a parameter. Here's an example of that using `lerpColor()`:
+To have a more gradual effect, we could calculate how far along we are from one end of the screen to the another, and use that value to change an argument. Here's an example of that using `lerpColor()`:
 
 ```py
 size(400, 400)

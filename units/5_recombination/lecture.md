@@ -136,7 +136,7 @@ print(words)
 ['societies', 'have', 'always', 'been', 'shaped', 'more', 'by', 'the', 'nature', 'of', 'the', 'media', 'by', 'which', 'we', 'communicate', 'than', 'by', 'the', 'content', 'of', 'the', 'communication']
 ```
 
-`.split()` takes a string as a parameter, and in this case we've given it a space: " ". As you can see, the result is that the original string is divided every space, ie, into words. This results in a new structure, delineated by `[` and `]` which is a **list**.
+`.split()` takes a string as an argument, and in this case we've given it a space: " ". As you can see, the result is that the original string is divided every space, ie, into words. This results in a new structure, delineated by `[` and `]` which is a **list**.
 
 A list is a very powerful kind of variable—it's actually more of a meta-variable, because it holds a sequence of other things. These might be numbers, booleans (aka `True`/`False`), strings, or other objects. This list, called `words`, currently has 23 items in it, all of them individual strings.
 
@@ -169,7 +169,7 @@ print(words)
 ['always', 'been', 'by', 'by', 'by', 'communicate', 'communication.', 'content', 'have', 'media', 'more', 'nature', 'of', 'of', 'shaped', 'societies', 'than', 'the', 'the', 'the', 'the', 'we', 'which']
 ```
 
-We can also sort words by length instead of alphabetically, by supplying a (somewhat strange) parameter to sort:
+We can also sort words by length instead of alphabetically, by supplying a (somewhat strange) argument to sort:
 ```py
 sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
 sentence = sentence.replace(".", "")
@@ -354,7 +354,7 @@ In other words, you can create multiple lists of words of different types in ord
 
 ### Recombining lists
 
-Of course, we might want to take our list of words and put them back together again into a cohesive string. We do this with the `.join()` method. Somewhat strangely, however, `join()` is a method of the separator character, and it takes the list as a parameter. So to join things back together with a space, we do it like this:
+Of course, we might want to take our list of words and put them back together again into a cohesive string. We do this with the `.join()` method. Somewhat strangely, however, `join()` is a method of the separator character, and it takes the list as an argument. So to join things back together with a space, we do it like this:
 
 ```py
 sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
@@ -409,7 +409,7 @@ source = open("LC.txt").read()
 
 The variable `source` now contains the complete text—an enormous string!
 
-To make our lives simpler down the road, before we do anything else, we're going to clean the text up a bit. There likely are all kinds of line breaks, indentations, double-spaces, and other formatting in this string that will interfere with anything we want to do with it later. So we're going to use a trick. Previously, we used `.split()` with a space as a parameter, eg, `sentence.split(" ")`. If you leave out the parameter, `.split()` will separate your string on every kind of whitespace character (spaces, line breaks, tabs, etc). Doing this and then immediately putting it back together again with `.join()` will have the effect of collapsing everything into sentences while removing additional formatting.
+To make our lives simpler down the road, before we do anything else, we're going to clean the text up a bit. There likely are all kinds of line breaks, indentations, double-spaces, and other formatting in this string that will interfere with anything we want to do with it later. So we're going to use a trick. Previously, we used `.split()` with a space as an argument, eg, `sentence.split(" ")`. If you leave out the argument, `.split()` will separate your string on every kind of whitespace character (spaces, line breaks, tabs, etc). Doing this and then immediately putting it back together again with `.join()` will have the effect of collapsing everything into sentences while removing additional formatting.
 
 ```py
 source = open("LC.txt").read()
@@ -418,7 +418,7 @@ source = " ".join(source.split()) # clean up whitespace
 
 ### Cut-ups
 
-Now that we've cleaned the text, we're ready to work with it. Let's use `.split()` again. But this time, instead of giving it a space as a parameter or leaving it blank, we're going to give it a period followed by a space, which will divide the text into sentences.
+Now that we've cleaned the text, we're ready to work with it. Let's use `.split()` again. But this time, instead of giving it a space as an argument or leaving it blank, we're going to give it a period followed by a space, which will divide the text into sentences.
 
 ```py
 source = open("LC.txt").read()
@@ -480,7 +480,7 @@ This is very similar to what we did earlier, but now it's on the level of senten
 The morning was fine, and three men were despatched ahead to hunt, while the rest were detained until nine o'clock, in order to retake some horses which had strayed away during the night. The road was still difficult, and several of the horses fell and injured themselves very much, so that we were unable to advance more than ten miles to a small stream, on which we encamped. Sunday, December 2. If therefore you intend to keep your promise, send one of the young men immediately to order the people to remain at the village till we arrive. The country, generally, consists of low, rich, timbered ground on the north, and high barren lands on the south: on both sides great numbers of buffaloe are feeding.
 ```
 
-While the result is not exactly linearly coherent, we do indeed get a sense of the tenor of the text. To add a little twist, let's substitute some words using the `.replace()` method. This method takes two parameters: the string to search for, and the string to replace it with.
+While the result is not exactly linearly coherent, we do indeed get a sense of the tenor of the text. To add a little twist, let's substitute some words using the `.replace()` method. This method takes two arguments: the string to search for, and the string to replace it with.
 
 ```py
 from random import choice

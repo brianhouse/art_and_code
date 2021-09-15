@@ -120,7 +120,7 @@ In Python, anything on a line after a `#` character is ignored by the program. Y
 
 ### Lines and shapes
 
-Processing provides us with many more functions, including `line`. Let's draw one from the upper-left corner of the screen to the lower-right. `line` takes four parameters, one each for the x/y coordinates of the starting point, and one each for the x/y coordinates of the stopping point. So to make the line stretch diagonally across the entire canvas, we'll want to draw it from `0, 0` to  `640, 480`:
+Processing provides us with many more functions, including `line`. Let's draw one from the upper-left corner of the screen to the lower-right. `line` takes four arguments, one each for the x/y coordinates of the starting point, and one each for the x/y coordinates of the stopping point. So to make the line stretch diagonally across the entire canvas, we'll want to draw it from `0, 0` to  `640, 480`:
 
 ```py
 size(640, 480)              # width, height
@@ -133,7 +133,7 @@ line(0, 0, 640, 480)        # begin x, begin y, end x, end y
 
 How about a circle in the center?
 
-`circle` takes three parameters: the x and y coordinates of its center, and the diameter of the circle. The center point of the canvas is half its width (640 / 2 = 320) and half its height (480 / 2 = 240):
+`circle` takes three arguments: the x and y coordinates of its center, and the diameter of the circle. The center point of the canvas is half its width (640 / 2 = 320) and half its height (480 / 2 = 240):
 
 ```py
 size(640, 480)              # width, height
@@ -146,7 +146,7 @@ circle(320, 240, 50)        # center x, center y, diameter
   <img src="code/canvas_3.png" width=500 /><br />
 </p>
 
-Processing provides several shapes that all work similarly, though they are all different: each one is a function that takes a series of parameters that provide the necessary information for the computer to draw that particular shape.
+Processing provides several shapes that all work similarly, though they are all different: each one is a function that takes a series of arguments that provide the necessary information for the computer to draw that particular shape.
 
 ```py
 size(640, 480)              # width, height
@@ -166,13 +166,13 @@ quad(338, 331, 386, 320, 369, 363, 330, 376) # x and y for each of the four poin
 
 Notice how the shapes overlap each other depending on the order in which we write them in the code.
 
-Try experimenting with different shapes and parameters. You can type in as many as you want, in any order and on any line. You can only have one function per line, but blank lines in between functions are fine.
+Try experimenting with different shapes and arguments. You can type in as many as you want, in any order and on any line. You can only have one function per line, but blank lines in between functions are fine.
 
 <!-- draw a face -->
 
 ### Line size
 
-So far, everything has a black outline that is one pixel thick. We can change that using the `strokeWeight` function, which takes as a parameter the number of pixels wide that we want our lines to be. It's like picking up a new pen—once we change the `strokeWeight`, it will stay that way until we change it again. (We can also use `noStroke` if we don't want any stroke at all.)
+So far, everything has a black outline that is one pixel thick. We can change that using the `strokeWeight` function, which takes as an argument the number of pixels wide that we want our lines to be. It's like picking up a new pen—once we change the `strokeWeight`, it will stay that way until we change it again. (We can also use `noStroke` if we don't want any stroke at all.)
 
 Here's a new program to demonstrate:
 ```py
@@ -214,7 +214,7 @@ It may seem awkward, but the amount for each of these values is specified in the
   <img src="code/color_picker.png" width=400 /><br />
 </p>
 
-To change the line color, we use the `stroke` function, and to change the fill color, we use the `fill`. Each of these take three parameters for the red, green, and blue amounts. For example:
+To change the line color, we use the `stroke` function, and to change the fill color, we use the `fill`. Each of these take three arguments for the red, green, and blue amounts. For example:
 
 ```py
 stroke(0, 0, 0)             # the lines remain black
@@ -246,7 +246,7 @@ circle(380, 250, 200)
   <img src="code/canvas_5.png" width=500 /><br />
 </p>
 
-It turns out that `stroke` and `fill` can take one more parameter—this one is for opacity, with 0 corresponding to completely transparent and 255 indicating completely opaque (which the is default). Here's the same code, but notice this fourth parameter added in for `fill`:
+It turns out that `stroke` and `fill` can take one more argument—this one is for opacity, with 0 corresponding to completely transparent and 255 indicating completely opaque (which the is default). Here's the same code, but notice this fourth argument added in for `fill`:
 
 ```py
 size(640, 480)
@@ -271,7 +271,7 @@ circle(380, 250, 200)
 
 In this example, the computer automatically computes the blended colors according to the overlap and the opacity.
 
-What if we don't want to work in color, just greyscale? It turns out we don't need all three parameters—using just one will get us varying degrees of grey:
+What if we don't want to work in color, just greyscale? It turns out we don't need all three arguments—using just one will get us varying degrees of grey:
 
 ```py
 size(640, 480)
@@ -294,7 +294,7 @@ circle(380, 250, 200)
   <img src="code/canvas_10.png" width=500 /><br />
 </p>
 
-Finally, we can also do greyscale + opacity if we use two parameters:
+Finally, we can also do greyscale + opacity if we use two arguments:
 
 ```py
 size(640, 480)
@@ -320,16 +320,16 @@ circle(380, 250, 200)
 
 To summarize:  
 
-1 parameter, greyscale:  
+1 argument, greyscale:  
 `fill(100)`  
 
-2 parameters, greyscale + opacity:  
+2 arguments, greyscale + opacity:  
 `fill(100, 50)`           
 
-3 parameters, color:  
+3 arguments, color:  
 `fill(100, 200, 0)`       
 
-4 parameters, color + opacity:  
+4 arguments, color + opacity:  
 `fill(100, 200, 0, 50)`   
 
 

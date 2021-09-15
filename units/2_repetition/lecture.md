@@ -93,7 +93,7 @@ Before we get to repeating things, let's take a second to talk about `print`, be
 print(100)
 ```
 
-Like the shape functions from Processing, `print` is a function that takes a parameter and does something with it. In this case, however, it doesn't draw anything to the canvas. Instead, it prints it out in Processing's console window:
+Like the shape functions from Processing, `print` is a function that takes an argument and does something with it. In this case, however, it doesn't draw anything to the canvas. Instead, it prints it out in Processing's console window:
 
 <p align="center">
   <img src="code/canvas_0.png" width=500 /><br />
@@ -180,7 +180,7 @@ for i in range(10):
     line(i * 40, 0, i * 40, 300)    
 ```
 
-You'll notice that this requires a bit of math. Until now, we've only supplied our drawing functions like `line()` with static numbers. But it turns out that Python can do math on the fly, so we can use short equations as parameters instead.
+You'll notice that this requires a bit of math. Until now, we've only supplied our drawing functions like `line()` with static numbers. But it turns out that Python can do math on the fly, so we can use short equations as arguments instead.
 
 In this case, we give line a value of `i * 40` as the x-coordinate for both the start and the end of the line. We know that we are going to run this loop 10 times, and that `i` is going to begin as 0 and increase incrementally up until 9. `*` is the symbol for multiplication, so when we multiply those numbers by 40, we're going to get 0, 40, 80, 120, 160, 200, 240, 280, 320, 360 ... that means the lines will be in different places.
 
@@ -242,7 +242,7 @@ for i in range(10):
 
 Notice how on this last example, the equation got a little more complicated: `(i * 20) + 180` uses parentheses to add 180 to the result after multiplying `i * 20`. There's a lot of expressive power in nesting operations like this.
 
-Note that `i` can be used for other parameters besides coordinates:
+Note that `i` can be used for other arguments besides coordinates:
 ```py
 size(360, 300)
 background(255)
@@ -332,7 +332,7 @@ line(5, 15, 15, 5)
   <img src="code/canvas_16.png" width=400 /><br />
 </p>
 
-We're going to put these two lines inside of a nested `for` loop, and add either `(i * 15)` or `(j * 15)` to all the parameters. This will make the shape repeat and fill the canvas.
+We're going to put these two lines inside of a nested `for` loop, and add either `(i * 15)` or `(j * 15)` to all the arguments. This will make the shape repeat and fill the canvas.
 
 ```py
 size(400, 300)

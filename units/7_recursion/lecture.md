@@ -73,7 +73,7 @@ def my_function():
     # stuff happens
 ```
 
-So far, this has come in handy for organizing our code (such as with nonlinearity). However, we know from using pre-built functions that Processing and Python provide us that functions can take *arguments*, ie, parameters that change what the function does. From the dimensions of a rectangle to the name of a file to load, functions with arguments open up the possibility of abstracting code to work on varied input.
+So far, this has come in handy for organizing our code (such as with nonlinearity). However, we know from using pre-built functions that Processing and Python provide us that functions can take *arguments*, ie, arguments that change what the function does. From the dimensions of a rectangle to the name of a file to load, functions with arguments open up the possibility of abstracting code to work on varied input.
 
 Essentially, arguments are just another form of variable. When you declare the function, you list a series of variables names within the parentheses. You can then use these variables within the body of the function. When calling the function, whatever numbers, strings, lists, or variables you put in the parentheses will subsequently provide the values for these variables:
 
@@ -328,7 +328,7 @@ x2 = x1 + cos(radians(angle)) * length
 y2 = y1 + sin(radians(angle)) * length
 ```
 
-This is how our limb function draws a line given initial parameters, in this case the coordinates 200,400 (the center of the bottom) and the angle pointing straight up.
+This is how our limb function draws a line given initial arguments, in this case the coordinates 200,400 (the center of the bottom) and the angle pointing straight up.
 
 <p align="center">
   <img src="code/canvas_13.png" width=400 />
@@ -483,7 +483,7 @@ def seed(x, y, angle, tightness, size):
         # 10% of the time        
         if random(100) < 10:
 
-            # create a branch with a different tightness parameter                           
+            # create a branch with a different tightness argument                           
             tightness = -tightness + random(-10, 10)        
             angle = angle + tightness
             new_x = x + cos(radians(angle)) * size
@@ -503,12 +503,12 @@ A simple output:
   <img src="code/canvas_21.png" width=400 />
 </p>
 
-Key things to note in this example include the use of random to produce a recursive branch that happens 10% of the time. Adjusting this parameter can help tune how complex the output forms are.
+Key things to note in this example include the use of random to produce a recursive branch that happens 10% of the time. Adjusting this argument can help tune how complex the output forms are.
 
 In addition, notice that there is no `depth` argument—the recursion is limited by `size`, so it is inherently tied to the size of the circles, taking as many levels as it needs to get there.
 
 ### Designing with recursion
 
-When coming up with a recursive form, start simple. Pick a basic shape and imagine how it might progress. Once your function is calling itself, play with the parameters to get the effect you want. Try with various colors and transparencies—sometimes intended effects emerge, which is great.
+When coming up with a recursive form, start simple. Pick a basic shape and imagine how it might progress. Once your function is calling itself, play with the arguments to get the effect you want. Try with various colors and transparencies—sometimes intended effects emerge, which is great.
 
 You can, of course, have more than one recursive algorithm in a sketch. Can you create a whole ecosystem of varying beings?

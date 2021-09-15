@@ -31,10 +31,10 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 
 
 ### Color Values
-- `fill(100)` 1 parameter is greyscale
-- `fill(100, 50)` 2 parameters is greyscale + opacity
-- `fill(100, 200, 0)` 3 parameters is color
-- `fill(100, 200, 0, 50)` 4 parameters is color + opacity
+- `fill(100)` 1 argument is greyscale
+- `fill(100, 50)` 2 arguments is greyscale + opacity
+- `fill(100, 200, 0)` 3 arguments is color
+- `fill(100, 200, 0, 50)` 4 arguments is color + opacity
 
 
 ### Structure

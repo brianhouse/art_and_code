@@ -290,7 +290,7 @@ Each of these rooms can be represented with a function. For example:
 def living_room():
     print("You're in the living room. Doors lead to the hallway and to the kitchen.")
     print("Where do you want to go next?")
-    response = raw_input("> ").lower()  # adding a parameter creates a prompt
+    response = raw_input("> ").lower()  # adding an argument creates a prompt
 ```
 
 Since the living room is connected to kitchen and the hallway, we'll want to provide those options. And if we get a response that doesn't include anything about a kitchen or hallway, we'll want to provide a default response using `else`:

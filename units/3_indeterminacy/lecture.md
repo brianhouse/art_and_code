@@ -43,14 +43,14 @@ When it comes to computers, one way of generating random numbers is to measure s
 
 A more clever way that we use today is a "pseudo-random number generator," an algorithm that takes a "seed" (like the current time) and [elaborates upon it](https://en.wikipedia.org/wiki/Mersenne_Twister). The resulting numbers are not strictly indeterminate as it is _possible_ to predict them, but for most purposes they are plenty random. Many programming languages (including Python) include a function, usually called `random`, that lets us use these numbers.
 
-Digital media artists have seized upon the opportunity to experiment. One example is [Harold Cohen](https://en.wikipedia.org/wiki/Harold_Cohen_(artist)) (1928–2016), who starting in the 1960s began developing an algorithm to make unique representational drawings using rules together with random parameters. His code chooses the overall composition of the images as well as approximates the indeterminate aspects of lines made with a pen. He and others have made the specious claim that his program, which he called AARON, is an example of artificial intelligence—it is not, but it nonetheless demonstrates how powerful the random function can be.
+Digital media artists have seized upon the opportunity to experiment. One example is [Harold Cohen](https://en.wikipedia.org/wiki/Harold_Cohen_(artist)) (1928–2016), who starting in the 1960s began developing an algorithm to make unique representational drawings using rules together with random arguments. His code chooses the overall composition of the images as well as approximates the indeterminate aspects of lines made with a pen. He and others have made the specious claim that his program, which he called AARON, is an example of artificial intelligence—it is not, but it nonetheless demonstrates how powerful the random function can be.
 
 <p align="center">
   <img src="context/4_aaron.jpg" width=500 /><br />
   Harold Cohen, painting by <i>AARON</i> (1995)<br />
 </p>
 
-A contemporary of Cohen's, Roman Verostko (1929–), approached indeterminacy with a very different aesthetic, even though his work similarly uses random parameters within repeating patterns. Rather than approximate images made by hand, Verostko uses code to craft beautiful abstract forms that show an Eastern aesthetics and reflect his his mystic interests (he also spent time as a Benedictine monk). Verostko is also known for initiating the "[algorist](https://en.wikipedia.org/wiki/Algorithmic_art#Algorists)" movement of artists who work with computers.
+A contemporary of Cohen's, Roman Verostko (1929–), approached indeterminacy with a very different aesthetic, even though his work similarly uses random arguments within repeating patterns. Rather than approximate images made by hand, Verostko uses code to craft beautiful abstract forms that show an Eastern aesthetics and reflect his his mystic interests (he also spent time as a Benedictine monk). Verostko is also known for initiating the "[algorist](https://en.wikipedia.org/wiki/Algorithmic_art#Algorists)" movement of artists who work with computers.
 
 <p align="center">
   <img src="context/5_verostko.jpg" width=500 /><br />
@@ -98,7 +98,7 @@ Notice how we've put `random()` _inside_ `print()`. It can be tricky to keep tra
    <img src="code/canvas_11.png" width=700 /><br />
  </p>
 
-As an aside, one shortcut that will make our lives a bit easier is that if the first parameter for `random` is `0`, we can omit it. In other words `random(0, 42)` can be shortened to `random(42)`, which is more convenient to write.
+As an aside, one shortcut that will make our lives a bit easier is that if the first argument for `random` is `0`, we can omit it. In other words `random(0, 42)` can be shortened to `random(42)`, which is more convenient to write.
 
 <!-- pause and have them experiment, questions -->
 
@@ -117,9 +117,9 @@ circle(250, 200, 100) # x position, y position, diameter
   <img src="code/canvas_2.png" width=500 /><br />
 </p>
 
-What if we used random numbers for the parameters in `circle()` instead?
+What if we used random numbers for the arguments in `circle()` instead?
 
-If we want coordinates that fit within the canvas, we want them to be between 0 and its width or height. Since we're using 0, we can omit that parameter. Therefore, `random(500)` and `random(400)` produce numbers between 0 and the width and height of the canvas, respectively.
+If we want coordinates that fit within the canvas, we want them to be between 0 and its width or height. Since we're using 0, we can omit that argument. Therefore, `random(500)` and `random(400)` produce numbers between 0 and the width and height of the canvas, respectively.
 
 ```py
 size(500, 400)
@@ -127,7 +127,7 @@ size(500, 400)
 circle(random(500), random(400), 100) # x position, y position, diameter
 ```
 
-This looks a little weird with all the parentheses and commas (be careful to keep track of them all!), but all we've done is _substitute_ the static numbers that we were using with the `random` function and its parameters:
+This looks a little weird with all the parentheses and commas (be careful to keep track of them all!), but all we've done is _substitute_ the static numbers that we were using with the `random` function and its arguments:
 - `250` is replaced with `random(500)` which chooses a number between 0 and 500
 - `200` is replaced with `random(400)` which chooses a number between 0 and 400
 
@@ -140,7 +140,7 @@ The result is that every time you run this sketch, the circle will be drawn in a
 
 <!-- questions -->
 
-How is that at all useful? Well, what if we repeated that random circle a bunch of times using a `for` loop (and also substituted the diameter with a random parameter between 10 and 300)?
+How is that at all useful? Well, what if we repeated that random circle a bunch of times using a `for` loop (and also substituted the diameter with a random argument between 10 and 300)?
 
 ```py
 size(500, 400)
@@ -187,7 +187,7 @@ for i in range(100):
   <img src="code/canvas_6.png" width=500 /><br />
 </p>
 
-Now we're getting somewhere. If you play with the parameters, and add in more of the drawing tools we've learned previously, you can get an increasingly more interesting result:
+Now we're getting somewhere. If you play with the arguments, and add in more of the drawing tools we've learned previously, you can get an increasingly more interesting result:
 
 ```py
 size(500, 400)
@@ -241,7 +241,7 @@ for i in range(100):
   <img src="code/canvas_12.png" width=500 /><br />
 </p>
 
-We could also cluster the circles within a smaller overall area in the center. Here, the rectangles once again take up the whole canvas, but the ellipses have more constrained parameters:
+We could also cluster the circles within a smaller overall area in the center. Here, the rectangles once again take up the whole canvas, but the ellipses have more constrained arguments:
 
 ```py
 size(640, 480)
@@ -308,4 +308,4 @@ for j in range(12):
 
 
 
-Random parameters and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy.
+Random arguments and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy.
