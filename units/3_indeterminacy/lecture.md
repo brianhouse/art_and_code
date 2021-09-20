@@ -2,7 +2,7 @@
 
 ## Concept
 
-The physical world is very complex—so much so that it is never fully predictable. From the shape of a leaf to the gait of an animal to the words you use to express a thought, variation is intrinsic to reality. This is intuitive to artmaking in physical mediums. When a paintbrush flows against a canvas, the individual hairs move in a way that creates texture; when musicians play a score, the air responds dynamically to create rich timbres.
+The physical world is very complex—so much so that it is never fully predictable. From the shape of a leaf to the gait of an animal to the words you use to express a thought, variation is intrinsic to reality. This is intuitive to art-making in physical mediums. When a paintbrush flows against a canvas, the individual hairs move in a way that creates texture; when musicians play a score, the air responds dynamically to create rich timbres.
 
 Digital media, however, encode everything in numbers. As we saw previously with coordinates, this can entail defining everything very precisely, rather than intuitively relying on the indeterminate properties of the medium. But to manually reproduce the degree of variation we see in nature would be tedious, if not impossible.
 
@@ -41,7 +41,7 @@ Of course, incorporating nonhuman agency is another way of relinquishing a degre
 
 When it comes to computers, one way of generating random numbers is to measure some chaotic physical phenomena, like cosmic background radiation, and incorporating those numbers into a program. This can be done directly with sensors or via copying a previously generated series of numbers from a published reference like [_A Million Random Digits_](https://www.youtube.com/watch?v=bvLD54GnOTk), which was created by the RAND corporation for this purpose in 1955.
 
-A more clever way that we use today is a "pseudo-random number generator," an algorithm that takes a "seed" (like the current time) and [elaborates upon it](https://en.wikipedia.org/wiki/Mersenne_Twister). The resulting numbers are not strictly indeterminate as it is _possible_ to predict them, but for most purposes they are plenty random. Many programming languages (including Python) include a function, usually called `random`, that lets us use these numbers.
+A more practical way that we use today is a "pseudo-random number generator," an algorithm that takes a "seed" (like the current time) and [elaborates upon it](https://en.wikipedia.org/wiki/Mersenne_Twister) in a complex way. The resulting numbers are in fact a repeating finite sequence and therefore not strictly indeterminate, but for most purposes they are plenty random. Many programming languages (including Python) include a function, usually called `random`, that lets us use these numbers.
 
 Digital media artists have seized upon the opportunity to experiment. One example is [Harold Cohen](https://en.wikipedia.org/wiki/Harold_Cohen_(artist)) (1928–2016), who starting in the 1960s began developing an algorithm to make unique representational drawings using rules together with random arguments. His code chooses the overall composition of the images as well as approximates the indeterminate aspects of lines made with a pen. He and others have made the specious claim that his program, which he called AARON, is an example of artificial intelligence—it is not, but it nonetheless demonstrates how powerful the random function can be.
 
@@ -70,6 +70,8 @@ Another notable artist who uses Processing goes by the name [LIA](https://en.wik
   <img src="context/7_lia.png" width=500 /><br />
   LIA, <i>Untitled 20160817</i> (2016)
 </p>
+
+The work of contemporary artists like Reas and LIA is often called "generative art." This reflects the fact that when a code-based artwork heavily relies upon indetermine processes, each time the program is run, it will produce a difference output. Therefore, the code "generates" an infinite number of similar pieces, which shifts the emphasis away from the output and toward the code itself as the actual artwork.
 
 
 ## Code
@@ -272,12 +274,12 @@ size(640, 480)
 background(255)
 noStroke()
 
-# blue rectangles    
+# red rectangles    
 for i in range(100):
     fill(255, 0, 0, 128)
     rect(random(640), random(480), random(10, 100), random(10, 100))
 
-# red ellipses
+# blue ellipses
 for i in range(100):
     fill(0, 0, 255, 128)
     ellipse(random(220, 420), random(140, 340), random(10, 100), random(10, 100))
@@ -291,12 +293,42 @@ Now all the ellipses are all up front. This technique is a simple way to create 
 
 In all of these examples, we've been ignoring `i`. But we can certainly combine `random()` with the techniques we used to organize shapes via loops. This is one way to create tension between regularity and variability, such as in the work of Vera Molnár.
 
+First consider a regular grid:
 ```py
 size(640, 480)
 background(255)
 
-for j in range(12):
-    for i in range(16):
+for i in range(16):
+    for j in range(12):
+        square((i * 40) + 5, (j * 40 ) + 5, 30)
+```        
+<p align="center">
+  <img src="code/canvas_16.png" width=500 /><br />
+</p>
+
+To give this a sense of variation, let's change the offset by a small random amount:
+```py
+size(640, 480)
+background(255)
+
+for i in range(16):
+    for j in range(12):
+        square((i * 40) + random(2, 8), (j * 40 ) + random(2, 8), 30)
+```   
+<p align="center">
+  <img src="code/canvas_17.png" width=500 /><br />
+</p>
+
+Here we still understand the canvas as a grid, but the tension in the variation creates a more satisfying aesthetic result.
+
+Instead of positioning, we might randomly vary the construction of a series of small multiples, using a third nested loop. Individually, these figures might not be all that interesting, but together they create a world of curiosities:
+
+```py
+size(640, 480)
+background(255)
+
+for i in range(16):
+    for j in range(12):
         for k in range(5):
             ellipse((i * 40) + 20, (j * 40) + 20, random(5, 35), random(5, 35))
 ```
@@ -308,4 +340,4 @@ for j in range(12):
 
 
 
-Random arguments and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy.
+In sum, random arguments and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy, work that can surprise us and add visual depth to our compositions.
