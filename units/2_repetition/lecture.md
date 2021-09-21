@@ -30,7 +30,7 @@ Weaving and looms are particularly important to the history of digital media. In
   Jacquard Loom<br />
 </p>
 
-The Jacquard Loom was emblematic of the [Industrial Revolution](https://en.wikipedia.org/wiki/Industrial_Revolution), a period spanning the turn of the 19th century that saw the mechanization of manufacturing processes and the reorganization of social relations to support capitalist enterprises. Industrialization began a process through which mass-production would transform all aspect of everyday life around the globe. By the 20th century, fine artists were incorporating and commenting upon such mechanisms in their work, such as the previously mentioned Bauhaus movement (see Annie Albers, above).
+The Jacquard Loom was emblematic of the [Industrial Revolution](https://en.wikipedia.org/wiki/Industrial_Revolution), a period spanning the turn of the 19th century that saw the mechanization of manufacturing processes and the reorganization of social relations to support capitalist enterprises. Industrialization began a process through which mass-production would transform all aspect of everyday life around the globe. By the 20th century, fine artists were incorporating and commenting upon such mechanisms in their work, such as the previously mentioned Bauhaus movement (see Annie Albers, above). 
 
 One particularly prominent figure in contemporary art in this regard is Andy Warhol (1928–1987). Identifying repetition as a central trope of modern society that had been largely ignored by the fine art world, Warhol and embraced mass-production techniques. Together with other artists associated with "[pop art](https://en.wikipedia.org/wiki/Pop_art)," he brought popular media, celebrity, and advertising into the art world vernacular.
 

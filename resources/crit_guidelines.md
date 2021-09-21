@@ -1,27 +1,7 @@
 # Guidelines for Critique
 
-When commenting on someone's work, consider the following three "C"s:
-- Concept: the intent behind the work
-- Craft: how the work was made and its formal and aesthetic qualities
-- Context: how the work relates to its precedents and to contemporary discourse
+Crit is an opportunity to get collective feedback on your work from your peers and for our class community to develop a shared vocabulary for talking about digital media art. While it can be a vulnerable experience to present your work in front of everyone, this is ultimately a more valuable method of evaluating art—which always exists in dialogue with others—than simply having your work graded by the instructor.
 
-Ask questions to clarify the three Cs so that you can learn from each other as well as make thoughtful comments.
+When presenting, state your title and read your description. You can give details about your process if they are important, but you don't have to say too much. You may also guide the feedback by asking a question of the group. However, resist the urge to give caveats about what you would or would not have done if you had had more time, if the computer hadn't crashed, if you were better at math, etc etc.
 
-\
-Each person is required to make (at least) two comments on every other person's work:
-- Point out an aspect of the work that you is particularly strong _and explain why_
-- Point out an aspect of the work that you think could be improved _and explain why_
-    + do not just volunteer what you would have done differently or speculate on other directions the work might have taken -- constructive criticism will consider the relationship between three Cs
-
-\
-Some additional things to keep in mind when making comments:
-- talk about the work, not the artist
-- respect others' backgrounds, abilities, and perspectives
-- don't claim the universal
-
-\
-Some additional things to keep in mind when presenting:
-- don't apologize or add caveats to your work
-- have questions to invite the feedback that will be most helpful to you
-- listen and take notes
-
+When commenting on others' work, avoid statements that include "I like." For this 100-level course, we will primarily be talking about the formal qualities of the work. Therefore, rather than giving value judgments about what is "good" or "bad" in a work, it is a good practice to simply describe what you see. What is the first thing you notice about the work? How do its parts relate to one another? What is surprising about it? Or even, what effect does the work have on you? These are helpful comments for the artist to learn what is coming across in what they have done, which may or may not match with their intentions.
