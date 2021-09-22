@@ -16,12 +16,23 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 - `triangle(x1, y1, x2, y2, x3, y3)`
 - `square(x, y, width)` (drawn from upper-left corner)
 - `rect(x, y, width, height)` (drawn from upper-left corner)
-- `quad(x1, y1, x2, y2, x3, y3, x4, y4)`
-- `bezier(x_start, y_start, x_anchor1, y_anchor1, x_anchor2, y_anchor2, x_stop, y_stop)`
-- ```beginShape()``` start a curve shape
-- ```curveVertex(x, y)``` add an anchor point
-- ```endShape()``` end the shape
-
+- ```py
+beginShape(): # start a polygon
+    vertex(x, y) # add an anchor point
+    vertex(x, y) # add another anchor point
+    vertex(x, y) # etc
+endShape()
+```
+- ```py
+beginShape(): # start a curved shape
+    curveVertex(x, y) # add an anchor point
+    curveVertex(x, y) # add another anchor point
+    curveVertex(x, y) # etc
+endShape()
+# The first and last curveVertex are not shown,
+# they just determine the initial angle.
+# Double the first and last vertexes to avoid thinking about this.
+```
 
 
 ### Stroke + Color
@@ -38,31 +49,56 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 
 
 ### Structure
-- `for i in range(n):` repeat the following indented lines _n_ times, with `i` equal to _n_ each time
-- `def function_name():` declare a function with the following indented lines
-- `if` `elif` `else` create a conditional statement
-- `and` `or` combine conditions in an `if` statement
+- ```py
+    for i in range(n):
+        # do stuff n times
+        # i is 0 to n-1
+```
+- ```py
+    # declare a function
+    def my_function():
+        # do stuff
+
+    # call the function        
+    my_function()
+```
+- ```
+    if some condition:
+        # do stuff
+    elif some other condition:
+        # do other stuff
+    else:
+        # do default stuff
+```
+- ```py
+    if some condition and some other condition:
+        # do stuff
+
+    if some condition or some other condition:
+        # do stuff        
+```
 
 
 ### Strings
-- `string.lower()` return a lowercase version of the string
-- `string.upper()` return an uppercase version of the string
-- `string.replace("search", "replace")` return a version of the string with the substring "search" replaced with "replace"
-- `string.split()` split a string on any whitespace and create a list
-- `string.split(string)` split a string on any arbitrary substring and create a list
-- `string.splitlines()` split a string on any newline character
-- `" ".join(list)` join a list with a space (or other character) between each list item
-- `len(string)` get the number of characters in a string
-- `in` test whether a string is within another string or a list
+- `my_string.lower()` return a lowercase version of the string
+- `my_string.upper()` return an uppercase version of the string
+- `my_string.replace("search", "replace")` return a version of the string with the substring "search" replaced with "replace"
+- `my_string.split()` split a string on any whitespace and create a list
+- `my_string.split(my_string)` split a string on any arbitrary substring and create a list
+- `my_string.splitlines()` split a string on any newline character
+- `" ".join(my_list)` join a list with a space (or other character) between each list item
+- `len(my_string)` get the number of characters in a string
+- `"phrase" in my_string` test whether a string is within another string
+- `"phrase" in my_list` test whether a string is within a list
 
 
 ### Lists
 - `my_list = []` create an empty list
 - `my_list = [item1, item2, item3]` create a list with items
-- `list.append(item)` append an item to a list
-- `list.remove(item)` remove an item from a list
-- `list[index]` return the item at _index_ from the list
-- `len(list)` get the length of the list
+- `my_list.append(item)` append an item to a list
+- `my_list.remove(item)` remove an item from a list
+- `my_list[index]` return the item at _index_ from the list
+- `len(my_list)` get the length of the list
 - `in` test whether an item is within the list
 - `words = list(set(words))` convert a list with repeats into a list with only unique items
 
@@ -78,8 +114,9 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
 - `random(high)` generates a number greater than or equal to 0 less than _high_
 - `randomGaussian()` generates a number from a series with a mean of 0 and a standard deviation of 1
-- `choice(list)` select a random item from a list (requires `from random import choice`)
-- `shuffle(list)` shuffle a list in place
+- `choice(my_list)` select a random item from a list (requires `from random import choice`)
+- `shuffle(my_list)` shuffle a list in place
+(requires `from random import shuffle`)
 
 
 ### Event handlers
@@ -114,7 +151,7 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 - `pixel = image.get(x, y)` get color data for a single pixel
 - `r = red(pixel)` get the red value of a pixel
 - `g = green(pixel)` get the blue value of a pixel
-`- b = blue(pixel)` get the green value of a pixel
+- `b = blue(pixel)` get the green value of a pixel
 
 
 ### Utilities
