@@ -113,7 +113,13 @@ endShape()
 ### Random
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
 - `random(high)` generates a number greater than or equal to 0 less than _high_
-- `randomGaussian()` generates a number from a series with a mean of 0 and a standard deviation of 1
+- ```py
+# flip a coin (simple random conditional)
+if random(1) > .5:
+    do something
+else:
+    do something else
+```
 - `choice(my_list)` select a random item from a list (requires `from random import choice`)
 - `shuffle(my_list)` shuffle a list in place
 (requires `from random import shuffle`)
