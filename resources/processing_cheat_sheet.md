@@ -16,14 +16,16 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 - `triangle(x1, y1, x2, y2, x3, y3)`
 - `square(x, y, width)` (drawn from upper-left corner)
 - `rect(x, y, width, height)` (drawn from upper-left corner)
-- ```py
+- polygons
+```py
 beginShape() # start a polygon
 vertex(x1, y1) # add an anchor point
 vertex(x2, y2) # add another anchor point
 vertex(x3, y3) # etc
 endShape()
 ```
-- ```py
+- curved shapes
+```py
 beginShape() # start a curved shape
 curveVertex(x1, y1) # add an anchor point
 curveVertex(x2, y2) # add another anchor point
@@ -49,12 +51,14 @@ endShape()
 
 
 ### Structure
-- ```py
+- loops
+```py
     for i in range(n):
         # do stuff n times
         # i is 0 to n-1
 ```
-- ```py
+- functions
+```py
     # declare a function
     def my_function():
         # do stuff
@@ -62,7 +66,8 @@ endShape()
     # call the function        
     my_function()
 ```
-- ```
+- conditionals
+```
     if some condition:
         # do stuff
     elif some other condition:
@@ -70,7 +75,8 @@ endShape()
     else:
         # do default stuff
 ```
-- ```py
+- complex conditions
+```py
     if some condition and some other condition:
         # do stuff
 
@@ -113,8 +119,8 @@ endShape()
 ### Random
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
 - `random(high)` generates a number greater than or equal to 0 less than _high_
-- ```py
-# flip a coin (simple random conditional)
+- flip a coin
+```py
 if random(1) > .5:
     do something
 else:
