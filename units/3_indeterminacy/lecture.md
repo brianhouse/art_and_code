@@ -366,3 +366,11 @@ This is called a random conditional, and it takes the form of an `if` statement.
 We'll cover conditionals in detail in our next unit, but previewing it here will give us some flexibility to produce more radically different versions of the output each time we run the code.
 
 Why would we want that? This is a strategy often used in generative art: if the same code is being used to produce multiple versions of an artwork in a series, random conditionals can contribute to those versions being more radically unique.
+
+<p align="center">
+  <img src="code/canvas_18.png" width=250 /><br />
+</p>
+
+<p align="center">
+  <img src="code/canvas_19.png" width=250 /><br />
+</p>
