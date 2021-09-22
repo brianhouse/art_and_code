@@ -104,6 +104,7 @@ As an aside, one shortcut that will make our lives a bit easier is that if the f
 
 <!-- pause and have them experiment, questions -->
 
+### Random arguments
 
 Ok, so what can we do with this visually?
 
@@ -291,6 +292,8 @@ for i in range(100):
 
 Now all the ellipses are all up front. This technique is a simple way to create a sense of composition.
 
+### Random with nested loops
+
 In all of these examples, we've been ignoring `i`. But we can certainly combine `random()` with the techniques we used to organize shapes via loops. This is one way to create tension between regularity and variability, such as in the work of Vera Molnár.
 
 First consider a regular grid:
@@ -338,6 +341,28 @@ for i in range(16):
   <img src="code/canvas_15.png" width=500 /><br />
 </p>
 
+Random arguments and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy, work that can surprise us and add visual depth to our compositions.
 
 
-In sum, random arguments and loops together radically transform how we can think about making images—rather than just encoding space, the computer can do some work for us by incorporating indeterminacy, work that can surprise us and add visual depth to our compositions.
+### Flipping a coin
+
+By specifying the ranges of random parameters, we can do a lot to control the texture and composition of the work. But what if we want to simply do one thing OR another? To make something blue OR red, for example, or a circle OR a square, or some other more radical branch in the code?
+
+Consider the following construction:
+
+```py
+size(640, 480)
+
+if random(1) > .5:      # flip the coin
+    fill(255, 0, 0)     # this happens 50% of the time
+else:
+    fill(0, 0, 255)     # this happens 50% of the time
+
+square(320, 240, 100)
+```
+
+This is called a random conditional, and it takes the form of an `if` statement. Notice how there are two blocks of code—one with a red fill and one with a blue fill—and only _one_ of them will actually run. Which one runs depends on whether `random()` returns a value that is above or below .5. We can read this like an English sentence: "if a random number between 0 and 1 is above .5, make it red, else make it blue."
+
+We'll cover conditionals in detail in our next unit, but previewing it here will give us some flexibility to produce more radically different versions of the output each time we run the code.
+
+Why would we want that? This is a strategy often used in generative art: if the same code is being used to produce multiple versions of an artwork in a series, random conditionals can contribute to those versions being more radically unique.
