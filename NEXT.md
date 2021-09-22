@@ -3,17 +3,17 @@ Do small group screen sharing for intermediate feedback
 
 ## Organization
 
-- have a rubric for the presentations also
-
-
 ## Units
 
 ### coordinates
 - bezier is impossible. need to show beginShape and curveVertex and have a mini-assignment on it
 - definitely have beginShape endShape, also with regular shapes. the writing a letter thing was good
 
-## repetition
+## indeterminacy
+- might want to put the nature prompt back in?
 
+## glitch
+- include an example that does something based on the value of a pixel
 
 ### general
 

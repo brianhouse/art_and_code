@@ -17,17 +17,17 @@ Arguments to functions can be numbers or variables, and the variables can be nam
 - `square(x, y, width)` (drawn from upper-left corner)
 - `rect(x, y, width, height)` (drawn from upper-left corner)
 - ```py
-beginShape(): # start a polygon
-    vertex(x, y) # add an anchor point
-    vertex(x, y) # add another anchor point
-    vertex(x, y) # etc
+beginShape() # start a polygon
+vertex(x1, y1) # add an anchor point
+vertex(x2, y2) # add another anchor point
+vertex(x3, y3) # etc
 endShape()
 ```
 - ```py
-beginShape(): # start a curved shape
-    curveVertex(x, y) # add an anchor point
-    curveVertex(x, y) # add another anchor point
-    curveVertex(x, y) # etc
+beginShape() # start a curved shape
+curveVertex(x1, y1) # add an anchor point
+curveVertex(x2, y2) # add another anchor point
+curveVertex(x3, y3) # etc
 endShape()
 # The first and last curveVertex are not shown,
 # they just determine the initial angle.
