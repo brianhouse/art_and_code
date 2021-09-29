@@ -15,6 +15,11 @@ Do small group screen sharing for intermediate feedback
 - show how to draw a "soft line" with a loop of very random points over a very narrow band
 - conceptual is really that randomness should play a role in the concept in some way
 
+## nonlinearity
+- make them make a toy example with three rooms and be strict about that so they don't immediately go off the deep end
+
+
+
 ## glitch
 
 ### general
