@@ -22,6 +22,7 @@
 - Francis Tseng
 - Xin Liu
 - James Paterson
+- Ryan Kuo
 - Rafael Lozano-Hemmer
 - Kate Hartman
 - Carlos Garcia
@@ -59,7 +60,7 @@
 - Lillian Schwartz
 - Marina Zurkow
 - Ali Momeni
-- Mario Kingemann
+- Mario Klingemann
 - Roman Verostko
 - Janet Cardiff
 - Elisa Giardina-Papa
