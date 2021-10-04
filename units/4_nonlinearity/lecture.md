@@ -371,11 +371,11 @@ create a map
 
 -->
 
-### Advanced: keeping track of things with global variables
+### Keeping track of things with global variables
 
-In the code above, variables are only used to temporarily hold a value returned by `raw_input`. However, we can also use **global variables** that span multiple functions in order to keep track of user actions. This is particularly useful when combined with `True` and `False`, a special kind of value in Python that isn't a number or a string.
+In the code above, variables are only used to temporarily hold a value returned by `raw_input`. However, we can also use **global variables** that span multiple functions in order to keep track of user actions. This is particularly useful when combined with `True` and `False`, a special kind of value in Python called a "boolean."
 
-To demonstrate, consider a nonlinear narrative in which the reader needs a key to unlock a special door. When the program begins, the reader doesn't yet have the key. So at the top of the program, before any functions, we'll create a variable `has_key` and set it to `False`:
+To demonstrate, consider a nonlinear narrative in which the reader needs a key to unlock a special door. When the program begins, the reader doesn't yet have the key. So at the top of the program, before any functions, we'll create a variable `has_key` and set it to `False` (note that the first letter of `True` and `False` are always capitalized, and we write them without quotation marks):
 
 ```py
 has_key = False
@@ -461,7 +461,7 @@ When (and if) the reader proceeds to the basement, they will then be able to ope
 Note that the construction of this narrative is as much about the craft of _writing_ as it is about programming. A concept like a key exists somewhere between the variable that keeps track of whether the user has picked it up (`has_key`), the conditional logic of what it makes possible, and the narration of a world that is consistent and intuitive, one in which keys can be taken to unlock doors and in which they don't spontaneously appear or persist (unless, of course, we want them to magically do so).
 
 
-### A more complete example
+### A complete example with booelean global variables
 
 ```py
 # assign starting values for global variables
@@ -568,4 +568,242 @@ def kitchen():
 
 
 intro()
+```
+
+### Using global variables to measure progress
+
+Another use of global variables is to keep track of the reader's progress in some way. For example, how many "moves" they have made so far, how many moves they have left, how many points they have earned, or how much "health" is remaining.
+
+In these cases, we want to use a number, not a boolean. Say that we only want to give the reader 5 moves to find some water to drink—if they don't, they'll pass out from thirst no matter what location they're in.
+
+To do this, we'll first declare a variable `moves` that is set to `5`:
+
+```py
+moves = 5
+
+```
+
+Now, in each of our functions we'll declare this variable as a global and decrement it. In Python, to increment a number, we use `+=`, and to decrement we use `-=`. Additionally, we'll also do a conditional test: if the number of moves drops below zero, we'll transport the reader to a special state:
+
+```py
+moves = 5
+
+def dune():
+    global moves
+    moves -= 1
+    if moves < 0:
+        pass_out()
+    print("You're on a dune. No drinkable water here.")
+    response = raw_input("> ").lower()
+    if "north" in response:
+        beach()
+    elif "west" in response:
+        swamp()
+    else:
+        print("Nothing this way but more dunes.")
+        dune()
+
+def beach():
+    global moves
+    moves -= 1
+    if moves < 0:
+        pass_out()    
+    print("You're at a beach. No drinkable water here.")
+    response = raw_input("> ").lower()
+    if "south" in response:
+        dune()
+    else:
+        print("The beach goes on and on.")
+        beach()    
+
+def swamp():
+    global moves
+    moves -= 1
+    if moves < 0:
+        pass_out()    
+    print("You're in a swamp. No drinkable water here.")
+    response = raw_input("> ").lower()
+    if "east" in response:
+        dune()
+    elif "south" in response:
+        spring()
+    else:
+        print("Will this swamp never end?")
+        swamp()    
+
+def spring():
+    print("You found a spring! Drink up.")
+    exit()
+
+def pass_out():
+    print("You have passed out from thirst!")
+    exit()
+
+dune()
+
+```
+
+This example would need to be fleshed out with some narrative flourishes and better navigation, but it shows how we're keeping track of the number of moves the reader has left and intervening in the narrative if they drop below zero. A similar approach could be used for other mechanics: is the character getting harmful radiation from a laboratory? experiencing increasing lonliness? competing with an AI for points? or maybe the day is turning to night? or history is running backwards?
+
+One further detail: if we want to tell the reader how many moves, or points, or whatever they have left, we can do so like this:
+
+```py
+print("You have " + str(moves) + " moves left.")
+```
+
+Note the use of the function `str()`. This converts a number into a string. The need for this may feel counterintuitive, but Python wants to be sure that you're concatenating strings together as opposed to adding numbers together, and `str()` will tell it.
+
+However, we could also use an `if` statement to be more narrative about it. This is a more advanced option, but could have an interesting result. For example:
+
+```py
+if moves == 4:
+    print("You're starting to get thirsty.")
+elif moves == 3:
+    print("Your tongue feels like sandpaper, you need water.")
+elif moves == 2:
+    print("You're starting to get dizzy.")
+elif moves == 1:
+    print("You're crawling on the ground now.")
+elif moves == 0:
+    print("You desperately crawl forward.")
+else:
+    pass_out()
+```
+
+To get this to work, we would have to put this inside every function, for example:
+
+```py
+def beach():
+    global moves
+    moves -= 1
+    print("You're at a beach. No drinkable water here.")    
+    if moves == 4:
+        print("You're starting to get thirsty.")
+    elif moves == 3:
+        print("Your tongue feels like sandpaper, you need water.")
+    elif moves == 2:
+        print("You're starting to get dizzy.")
+    elif moves == 1:
+        print("You're crawling on the ground now.")
+    elif moves == 0:
+        print("You desperately crawl forward.")
+    else:
+        pass_out()    
+    response = raw_input("> ").lower()
+    if "south" in response:
+        dune()
+    else:
+        print("The beach goes on and on.")
+        beach()   
+```
+
+However, doing so would really produce a lot of repetition in our code and make things unweildy. A better option would be to encapsulate these options in another, special function:
+
+
+```py
+def thirst_level():
+    global moves
+    if moves == 4:
+        print("You're starting to get thirsty.")
+    elif moves == 3:
+        print("Your tongue feels like sandpaper, you need water.")
+    elif moves == 2:
+        print("You're starting to get dizzy.")
+    elif moves == 1:
+        print("You're crawling on the ground now.")
+    elif moves == 0:
+        print("You desperately crawl forward.")
+    else:
+        pass_out()
+```
+
+We can now check the thirst level just by calling the function. This is a slightly different use of functions than the others we've been making, as it's not a "room" per se. But it is a means of organizing our code.
+
+Here's how that plays out:
+
+```py
+moves = 5
+
+def thirst_level():
+    global moves
+    if moves == 4:
+        print("You're starting to get thirsty.")
+    elif moves == 3:
+        print("Your tongue feels like sandpaper, you need water.")
+    elif moves == 2:
+        print("You're starting to get dizzy.")
+    elif moves == 1:
+        print("You're crawling on the ground now.")
+    elif moves == 0:
+        print("You desperately crawl forward.")
+    else:
+        pass_out()
+
+def dune():
+    global moves
+    moves -= 1
+    print("You're on a dune. No drinkable water here.")
+    thirst_level()
+    response = raw_input("> ").lower()
+    if "north" in response:
+        beach()
+    elif "west" in response:
+        swamp()
+    else:
+        print("Nothing this way but more dunes.")
+        dune()
+
+def beach():
+    global moves
+    moves -= 1
+    print("You're at a beach. No drinkable water here.")
+    thirst_level()
+    response = raw_input("> ").lower()
+    if "south" in response:
+        dune()
+    else:
+        print("The beach goes on and on.")
+        beach()    
+
+def swamp():
+    global moves
+    moves -= 1
+    print("You're in a swamp. No drinkable water here.")
+    thirst_level()
+    response = raw_input("> ").lower()
+    if "east" in response:
+        dune()
+    elif "south" in response:
+        spring()
+    else:
+        print("Will this swamp never end?")
+        swamp()    
+
+def spring():
+    print("You found a spring! Drink up.")
+    exit()
+
+def pass_out():
+    print("You have passed out from thirst!")
+    exit()
+
+dune()
+```
+
+```
+You're on a dune. No drinkable water here.
+You're starting to get thirsty.
+> go west
+You're in a swamp. No drinkable water here.
+Your tongue feels like sandpaper, you need water.
+> go west
+Will this swamp never end?
+You're in a swamp. No drinkable water here.
+You're starting to get dizzy.
+> go north
+Will this swamp never end?
+You're in a swamp. No drinkable water here.
+You're crawling on the ground now.
+> go south
+You found a spring! Drink up.
 ```

@@ -157,6 +157,9 @@ else:
 - `<=` lesser than or equal to
 - `!=` not equal to
 
+### Numeric operators
+- `+=` increment
+- `-=` decrement
 
 ### Images
 - `image = loadImage("image.png")` load data from an image file into a variable
