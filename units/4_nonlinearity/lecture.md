@@ -785,7 +785,7 @@ def spring():
 
 def pass_out():
     print("You have passed out from thirst!")
-    exit()
+    exit()  # don't forget this! otherwise, the narrative will continue
 
 dune()
 ```

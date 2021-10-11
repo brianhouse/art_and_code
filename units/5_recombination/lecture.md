@@ -13,10 +13,27 @@ Of course, this property is also intrinsic to non-electronic systems—most nota
 Practices by avant-garde artists and poets have prefigured some of the combinatory powers of computers, particularly when it comes to manipulating language. Just like with indeterminacy in visual art, the Dadaists applied their scissors and chance-based operations to words:
 
 <p align="center">
-  <img src="context/1_tzara.png" width=400 /><br />
+  <img src="context/1_tzara.jpg" width=400 /><br />
   Tristan Tzara, "To Make a Dadist Poem" (1920)
 </p>
 
+```
+How to Make a Dadaist Poem
+(method of Tristan Tzara)
+To make a Dadaist poem:
+
+Take a newspaper.
+Take a pair of scissors.
+Choose an article as long as you are planning to make your poem.
+Cut out the article.
+Then cut out each of the words that make up this article and put them in a bag.
+Shake it gently.
+Then take out the scraps one after the other in the order in which they left the bag.
+Copy conscientiously.
+The poem will be like you.
+And here are you a writer, infinitely original and endowed with a sensibility that is charming though beyond the understanding of the vulgar.
+--Tristan Tzara
+```
 This "cut-up" technique was popularized in the mid-20th century by the well-known beat poet and provocateur [William S. Burroughs](https://en.wikipedia.org/wiki/William_S._Burroughs) (1914–1997), together with his friend, artist Brion Gysin (1916–1986). Burroughs' novel _The Soft Machine_ (1961), for example, was entirely constructed of a different text, _The Word Hoard_, that Burroughs had written in the years prior. Burroughs sliced up the earlier text and rearranged it to create the new novel, suggesting that the process helped reveal the "true meaning" of the original.
 
 <p align="center">
@@ -80,6 +97,7 @@ _Listening Post_ (2002–2006), by Ben Rubin and Mark Hansen, is room-scale inst
 
 Finally, John Cayley is a pioneer of using digital algorithms to produce innovative forms writing, having made work on floppy disk in the early 90s. His more recent work shifts the focus from writing to _reading_ in an algorithmic way: [_The Readers_](http://thereadersproject.org) (2009) includes a series of algorithmic "readers" that make their way through text in ways other than linear, changing things as they go.
 
+Ok one more: [Computer Generated Olive Garden Commercial](https://twitter.com/keatonpatti/status/1006961202998726665?lang=en)
 
 
 ## Code

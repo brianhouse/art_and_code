@@ -3,7 +3,7 @@
 Monday / Wednesday 8:50–11:20 (Section 1) and 12:40–3:10 (Section 2), Fields 205  
 Course materials on [Google Classroom](https://classroom.google.com/u/1/c/MzY4ODI1MDcyNzA3)  
 
-Prof. Brian House (he/him/his), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
+Prof. Brian House (he/him), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
 Office hours MW 11:20–12:00 and 3:15–4:00
 
 
@@ -227,6 +227,6 @@ Labor day, no class
 
 
 ### Finals Week
-- Crit Sketch #9
-Section 1: 12/13 1:00–4:00pm
-Section 2: 12/11 1:00–4:00pm
+- Crit Sketch #9  
+Section 1: 12/13 1:00–4:00pm  
+Section 2: 12/11 1:00–4:00pm  

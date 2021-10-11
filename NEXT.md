@@ -8,6 +8,7 @@ Do small group screen sharing for intermediate feedback
 ### coordinates
 - bezier is impossible. need to show beginShape and curveVertex and have a mini-assignment on it
 - definitely have beginShape endShape, also with regular shapes. the writing a letter thing was good
+- had too much time, but that was because of labor time and canceled class
 
 ## indeterminacy
 - not sure about the three versions thing. in some ways it worked, in some ways not, would have to emphasize that more. texture is a bit better
@@ -17,6 +18,12 @@ Do small group screen sharing for intermediate feedback
 
 ## nonlinearity
 - make them make a toy example with three rooms and be strict about that so they don't immediately go off the deep end
+- spend more time on concept
+- maybe outlaw "house" and fantasy adventure as themes, to break from Zork
+- make them put title and description in the code itself
+
+## recombination
+- weren't able to do poetry reading because of my absence
 
 
 
@@ -24,9 +31,13 @@ Do small group screen sharing for intermediate feedback
 
 ### general
 
-- emphasize title and description—have them read it, and make sure it's good
+- emphasize title and description—have them read it (and say nothing else?), and make sure it's good (synonymous with concept?)
 
 - add the new examples, natch!
+
+- artist presentations -> survey presentations
+
+- lectures are stumbling vs the notes. slides would be better.
 
 /
 

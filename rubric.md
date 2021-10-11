@@ -1,5 +1,6 @@
 Adherence
 5 Fulfills all requirements
+4 Missing some criteria
 3 Assignment attempted
 
 Craft: technical
