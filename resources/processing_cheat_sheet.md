@@ -96,8 +96,9 @@ endShape()
 - `my_list = my_string.splitlines()` split a string on any newline character
 - `my_string = " ".join(my_list)` join a list with a space (or other character) between each list item
 - `num_characters = len(my_string)` get the number of characters in a string
-- `"phrase" in my_string` test whether a string is within another string
-- `"phrase" in my_list` test whether a string is within a list
+- `if "phrase" in my_string:` test whether a string is within another string
+- `if "phrase" in my_list:` test whether a string is within a list
+- `words = list(set(words))` convert a list with repeats into a list with only unique items
 
 
 ### Lists
@@ -106,9 +107,8 @@ endShape()
 - `my_list.append(item)` append an item to a list
 - `my_list.remove(item)` remove an item from a list
 - `my_list[index]` return the item at _index_ from the list
-- `len(my_list)` get the length of the list
-- `in` test whether an item is within the list
-- `words = list(set(words))` convert a list with repeats into a list with only unique items
+- `n = len(my_list)` get the length of the list
+- `if my_variable in my_list` test whether a variable matches an item in the list
 
 
 ### Dictionaries
