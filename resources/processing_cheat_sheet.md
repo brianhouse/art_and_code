@@ -86,14 +86,16 @@ endShape()
 
 
 ### Strings
-- `my_string.lower()` return a lowercase version of the string
-- `my_string.upper()` return an uppercase version of the string
-- `my_string.replace("search", "replace")` return a version of the string with the substring "search" replaced with "replace"
-- `my_string.split()` split a string on any whitespace and create a list
-- `my_string.split(my_string)` split a string on any arbitrary substring and create a list
-- `my_string.splitlines()` split a string on any newline character
-- `" ".join(my_list)` join a list with a space (or other character) between each list item
-- `len(my_string)` get the number of characters in a string
+- `my_string = my_string.lower()` return a lowercase version of the string
+- `my_string = my_string.upper()` return an uppercase version of the string
+- `my_string = my_string.capitalize()` return a string with the first letter capitalized
+- `my_string = my_string.title()` return a string with the first letter of each word capitalized
+- `my_string = my_string.replace("search", "replace")` return a version of the string with the substring "search" replaced with "replace"
+- `my_list = my_string.split()` split a string on any whitespace and create a list
+- `my_list = my_string.split(my_string)` split a string on any arbitrary substring and create a list
+- `my_list = my_string.splitlines()` split a string on any newline character
+- `my_string = " ".join(my_list)` join a list with a space (or other character) between each list item
+- `num_characters = len(my_string)` get the number of characters in a string
 - `"phrase" in my_string` test whether a string is within another string
 - `"phrase" in my_list` test whether a string is within a list
 
@@ -126,8 +128,8 @@ if random(1) > .5:
 else:
     do something else
 ```
-- `choice(my_list)` select a random item from a list (requires `from random import choice`)
-- `shuffle(my_list)` shuffle a list in place
+- `item = choice(my_list)` select a random item from a list (requires `from random import choice`)
+- `shuffle(my_list)` shuffle a list in place (requires `from random import shuffle`)
 (requires `from random import shuffle`)
 
 
