@@ -23,6 +23,10 @@ Do small group screen sharing for intermediate feedback
 - make them put title and description in the code itself
 
 ## recombination
+- it's a bit much. I think I may need to have prewritten code for setting things up. even like "filter_stop_words(words)" or "get_verbs(words)" so it's all functions and not methods
+- then teach a set of fundamental operations that involve lists: sort, replace, combine, loops, etc. That part is good.
+- examples are weak
+/
 - weren't able to do poetry reading because of my absence
 
 
