@@ -35,12 +35,22 @@ Do small group screen sharing for intermediate feedback
 - basically, get a lot more out of this assignment
 
 ## recombination
-- it's a bit much. I think I may need to have prewritten code for setting things up. even like "filter_stop_words(words)" or "get_verbs(words)" so it's all functions and not methods
-- then teach a set of fundamental operations that involve lists: sort, replace, combine, loops, etc. That part is good.
-- examples are weak
-- possibly eliminate this
+- a set of fundamental operations that involve lists: sort, replace, combine, loops, etc. That part is good.
+- how to steal texts
+- redo the lecture, should show how lists work and the library functions, then it's a recipe book of strategies
+- need more examples
+- make zine
+- need to separate verb lists for tense
 /
-- make zine or poetry reading?
+sources:
+books
+wikipedia articles
+transcribed audio
+legal texts / laws / contracts
+movies: scripts, closed-captioning
+lyrics
+newspaper articles
+social media feeds
 
 
 

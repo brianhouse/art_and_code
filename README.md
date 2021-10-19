@@ -159,62 +159,61 @@ Labor day, no class
 ### Week 9
 
 #### Monday 10/25
-- Crit Sketch #5
-- Intro, [Glitch](units/6_glitch/lecture.md)
+- Sharing in-progress work, questions, and work time
 
 #### Wednesday 10/27
 - Artist presentations 6
-- Begin [Sketch #6](units/6_glitch/assignment.md)
-- Questions and work time
+- Crit Sketch #5
 
 
 ### Week 10
 
 #### Monday 11/1
-- Sharing in-progress work, questions, and work time
 - Artist presentations 7
+- Intro, [Glitch](units/6_glitch/lecture.md)
+- Begin [Sketch #6](units/6_glitch/assignment.md)
+
 
 #### Wednesday 11/3
-- Crit Sketch #6
-- Intro, [Recursion](units/7_recursion/lecture.md)
+- Questions and work time
 
 
 ### Week 11
 
 #### Monday 11/8
-- Begin [Sketch #7](units/7_recursion/assignment.md)
-- Questions and work time
+- Crit Sketch #6
+- Intro, [Emergence](units/7_emergence/lecture.md)
 
 #### Wednesday 11/10
 - Artist presentations 8
-- Review, questions, and work time
+- Begin [Sketch #7](units/7_emergence/assignment.md)
 
 
 ### Week 12
 
 #### Monday 11/15
-- Crit Sketch #7
-- Intro, [Emergence](units/8_emergence/lecture.md)
+- Sharing in-progress work, questions, and work time
+
 
 #### Wednesday 11/17
 - Artist presentations 9
-- Begin [Sketch #8](units/8_emergence/assignment.md)
 - Questions and work time
 
 ### Week 13
 
 #### Monday 11/22
-- Sharing in-progress work, questions, and work time
+- Crit Sketch #7
+- Intro, [Interface](units/8_interface/lecture.md)
+
 
 #### Wednesday 11/24
-- Crit Sketch #8
-- Intro, [Interface](units/9_interface/lecture.md)
+- Begin [Sketch #8](units/8_interface/assignment.md)
+- Questions and work time
 
 
 ### Week 14
 
 #### Monday 11/29
-- Begin [Sketch #9](units/9_interface/assignment.md)
 - Questions and work time
 
 #### Wednesday 12/1
@@ -227,6 +226,6 @@ Labor day, no class
 
 
 ### Finals Week
-- Crit Sketch #9  
+- Crit Sketch #8
 Section 1: 12/13 1:00–4:00pm  
 Section 2: 12/11 1:00–4:00pm  

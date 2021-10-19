@@ -9,6 +9,5 @@
 - Nonlinearity ([lecture](units/4_nonlinearity/lecture.md) / [assignment](units/4_nonlinearity/assignment.md))
 - Recombination ([lecture](units/5_recombination/lecture.md) / [assignment](units/5_recombination/assignment.md))
 - Glitch ([lecture](units/6_glitch/lecture.md) / [assignment](units/6_glitch/assignment.md))
-- Recursion ([lecture](units/7_recursion/lecture.md) / [assignment](units/7_recursion/assignment.md))
-- Emergence ([lecture](units/8_emergence/lecture.md) / [assignment](units/8_emergence/assignment.md))
-- Interface ([lecture](units/9_interface/lecture.md) / [assignment](units/9_interface/assignment.md))
+- Emergence ([lecture](units/7_emergence/lecture.md) / [assignment](units/7_emergence/assignment.md))
+- Interface ([lecture](units/8_interface/lecture.md) / [assignment](units/8_interface/assignment.md))
