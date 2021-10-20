@@ -6,6 +6,27 @@ Add the following files to your sketch:
 - [helpers.py](helpers.py)
 
 
+#### Function to eliminate (some) weird symbols:
+```py
+source = load_text("my_article.txt")
+
+def fix_quotes(text):
+    text = text.replace('“', '"')
+    text = text.replace('”', '"')
+    text = text.replace("’", "'")
+    text = text.replace("‘", "'")
+    text = text.replace("–", "-")
+    text = text.replace("—", " -- ")
+    text = text.replace("…", "...")
+    text = text.replace("  ", " ")
+    text = text.replace("  ", " ")
+    return text
+
+source = fix_quotes(source)
+```    
+
+
+
 #### Word lists
 - [list_stop_words.txt](list_stop_words.txt)  
 - [list_adjectives.txt](list_adjectives.txt)
@@ -17,30 +38,32 @@ Add the following files to your sketch:
 
 
 ### Examples
-
+Madlibs:
 ```py
-from random import choice
-from helpers import load_text, get_sentences, get_words, get_good_words, get_unique, get_verbs, get_adjectives, get_nouns
+from word_tools import *
 
+text = load_text("LC.txt")  # load whole book as a string
+words = get_words(text)     # divide the string into words
+nouns = get_nouns(words)    # separate out the nouns
+verbs = get_verbs(words)    # separate out the verbs
+print("The digital media class " + choice(verbs) + " the " + choice(nouns) + ".")   # recombine
+```
+
+Interleaving two texts:
+```py
+from helpers import *
+
+# load two different texts
 lclark = load_text("LC.txt")
 starbucks = load_text("starbucks.txt")
-```
 
-```py
-# verbs from one, nouns from another
-lclark_words = get_words(lclark)
-starbucks_words = get_words(starbucks)
-verbs = get_verbs(starbucks_words)
-nouns = get_nouns(lclark_words)
-print("The digital media class " + choice(verbs) + " the " + choice(nouns) + ".")
-```
-
-```py
-# interleaved sentences
-lclark_sentences = get_sentences(lclark)
+# split both strings into lists of sentences
+lclark_sentences = get_sentences(lclark)        
 starbucks_sentences = get_sentences(starbucks)
+
+# alternate picking random sentences from both lists
 paragraph = []
-for i in range(2):
+for i in range(5):
     sentence = choice(lclark_sentences)
     paragraph.append(sentence)
     sentence = choice(starbucks_sentences)

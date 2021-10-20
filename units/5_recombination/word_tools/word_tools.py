@@ -35,13 +35,15 @@ def fix_quotes(text):
     text = text.replace("’", "'")
     text = text.replace("‘", "'")
     text = text.replace("–", "-")
-    text = text.replace("—", "--")
+    text = text.replace("—", " -- ")
     text = text.replace("…", "...")
+    text = text.replace("  ", " ")
+    text = text.replace("  ", " ")
     return text
 
 def remove_punctuation(text):
     assert(type(text) is str)
-    for mark in (".", ",", "?", "!", ";", ":", "(", ")", '"', "<", ">", "/", "[", "]", "|", "\\", "{", "}", "+", "*", "—"):
+    for mark in (".", ",", "?", "!", ";", ":", "(", ")", '"', "<", ">", "/", "[", "]", "|", "\\", "{", "}", "+", "*"):
         text = text.replace(mark, "")
     return text
 
@@ -97,3 +99,48 @@ def replace(text, find, rep):
 def remove(text, find):
     assert(type(text) is str)
     return text.replace(find, "")
+
+
+"""
+"string_from_txt"
+"lines_from_txt"
+"lines_from_srt"
+
+split_words
+split_sentences
+
+filter_distinctives
+filter_nouns
+filter_unique
+
+combine_list ?
+
+change assertion error to:
+"Expecting list, got string"
+"Expecting string, got list"
+
+separate verb types
+filter_verbs(type="past") ?
+chop possessives
+
+should strip punctuation from ends of words, not remove it entirely
+
+/
+
+adding lists of words together
+
+have the results of the examples on the page
+
+sort is actually not that interesting. by len is more interesting.
+
+lessons (focus on list operations):
+- using brackets
+- using brackets on string (check first letter is capital maybe)
+- making your own filter
+- finding clues in sentences <-- how to do this
+
+
+
+
+
+"""
