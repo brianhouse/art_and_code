@@ -71,3 +71,42 @@ for i in range(5):
 result = ". ".join(paragraph)
 print(result)
 ```
+
+Filtering for sentences that include the word "buffaloe":
+```py
+from helpers import *
+
+LC_text = load_text("LC.txt")
+
+sentences = get_sentences(LC_text)
+buffaloe_sentences = []
+for i in range(len(sentences)):
+    sentence = sentences[i]
+    if "buffaloe" in sentence:
+        buffaloe_sentences.append(sentence)
+
+if len(buffaloe_sentences):                
+    print(choice(buffaloe_sentences))        
+else:
+    print("No sentences found!")
+```
+
+Filtering for words that include a price:
+```py
+
+from helpers import *
+
+nyt_text = load_text("tech.txt")   
+
+words = get_words(nyt_text)
+money_words = []
+for i in range(len(words)):
+    word = words[i]
+    if "$" in word:
+        money_words.append(word)
+
+if len(money_words):        
+    print(choice(money_words))
+else:
+    print("No prices found")  
+```
