@@ -28,19 +28,14 @@ Do small group screen sharing for intermediate feedback
     maybe add additional "lecture": "On world-building", etc
     also aesthetics of the text
 - map -> flowchart
-- have a whole section on formatting
+- have a whole section on text formatting
 - have two rounds of playtesting
 - have them present a concept in advance and have it critiqued
 - the results were really too mechanical
-- basically, get a lot more out of this assignment
+- basically, get a lot more out of this assignment in terms of content and _design_--the code worked
+- (also include "random" in there, which requires a different kind of import statement)
 
 ## recombination
-- a set of fundamental operations that involve lists: sort, replace, combine, loops, etc. That part is good.
-- how to steal texts
-- redo the lecture, should show how lists work and the library functions, then it's a recipe book of strategies
-- need more examples
-- make zine
-- need to separate verb lists for tense
 /
 sources:
 books
@@ -51,6 +46,8 @@ movies: scripts, closed-captioning
 lyrics
 newspaper articles
 social media feeds
+
+have them do it first with scissors and paper?
 
 
 
@@ -68,10 +65,15 @@ social media feeds
 
 - lectures are stumbling vs the notes. slides would be better.
 
+- this should increasingly be about the _quality_ not the code. maybe this is a matter of adding a "design considerations" section after code or in each assignment
+
 /
 
 - still missing map(), seems significant
 
+//
+
+Separate "Context", "Code", and "Concept" documents for each one? Concept being the design considerations to take into account when coming up with a concept and matching it to form?
 
 ### idea
 

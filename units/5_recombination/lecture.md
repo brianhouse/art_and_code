@@ -104,74 +104,127 @@ Ok one more: [Computer Generated Olive Garden Commercial](https://twitter.com/ke
 
 We've already learned how to use variables to store single strings. To do more complicated manipulation of text, however, we'll need additional structures that can store more than one thing at a time. In Python, these are called *lists* (in other programming languages, they are frequently called arrays). Lists can be generated within a program, but they can also be a means of storing data loaded from external sources. Together with strings, conditional logic, and `for` loops, lists open up new possibilities. Although we will continue to work with text, we will be working in the Processing app, not in the terminal (although the terminal will still work, if you prefer).
 
+If you haven't already, [get started with word_tools](getting_started.md) before continuing here.
 
-### More with strings
+### Functions that return things
 
+Before we get to lists, however, we need to look more closely at functions. So far, most of the functions we've used have produced some kind of output—`circle()` draws a circle on the canvas, for example, and `print()` prints text to the console. Even our custom functions, like `living_room()`, have had an immediate effect on the state of the program by moving the reader into a new state.
 
-Consider the following string:
+However, some functions don't produce an output right away. Instead, they generate some result that you can then use later in your program. One example of this that we've already seen is `random()`—we used it as a substitute for static values in our code, and it did the work of coming up with an unexpected number (eg, `circle(random(400), random(400), random(20, 100))`).
 
-```py
-sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
-```
-
-We also know that variables that are strings have certain built-in capabilities; for example, we know that `sentence.lower()` will make all of the characters in the string lowercase. Remember, functions like this that are attached to an object like a string—ie, they come after a dot—are called **methods** (similar to `.lower()` there is also `.upper()`, `.capitalize()`, and `.title()`, which capitalizes the first letter of _every_ word).
-
-Another extremely useful string method is `.replace()`. We can use this method to swap out any sequence of characters in our string for any others. For example:
+When functions like `random()` are called, they **return** a result. Although we used `random()` directly as an argument to some other function, like `circle()`, we could have done this:
 
 ```py
-sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
-sentence = sentence.replace("shaped", "discombobulated")
-print(sentence)
-```
-```
-Societies have always been discombobulated more by the nature of the media by which we communicate than by the content of the communication.
+my_random_number = random(100)
 ```
 
-`.replace()` is also useful to clean things up. Going forward, we're going to work with individual words, so we're going to get rid of the period at the end of this sentence, as well as the capital letter at the beginning:
+In this case, we've invented a variable, `my_random_number`, and assigned it to whatever a call to `random()` comes up with, or rather, whatever it **returns**.
+
+Another example of this, of course, is `raw_input()`:
 ```py
-sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
-sentence = sentence.replace(".", "")    # replace the period with nothing!
-sentence = sentence.lower()
-print(sentence)
-```
-```
-societies have always been discombobulated more by the nature of the media by which we communicate than by the content of the communication
+response = raw_input()
 ```
 
-### Lists
+Here, the function does the work of asking the user for input, and the result is stored in variable that we've named `response`.
 
-Ok. So another very interesting example of a string method is `.split()`:
+The functions from `word_tools` that we'll use to work with text are similar. Whenever we use them, we'll be taking the results and storing them in some new or preexisting variable.
+
+
+
+### Strings to lists
+
+
+Consider the following string, which we'll store in a variable called `a_sentence`:
 
 ```py
-sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
-sentence = sentence.replace(".", "")    # replace the period with nothing!
-sentence = sentence.lower()
-words = sentence.split(" ")
-print(words)
+a_sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
 ```
-...which will produce this in the console:
+
+While this is a very interesting sentence to read, there's more that we can do with it than just print it out.
+
+To start with, let's split it into words:
+
 ```py
+from word_tools import *
+
+a_sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+
+some_words = split_into_words(a_sentence)
+```
+
+Here, the function `split_into_words()` takes a string as an argument, in this case our variable `a_sentence`. It then chops up and polishes the sentence into individual words—ie shorter strings—and returns them as a list. The variable `some_words` now contains that list.
+
+What is a list?
+```py
+from word_tools import *
+
+a_sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+
+some_words = split_into_words(a_sentence)
+print(some_words)
+```
+```
 ['societies', 'have', 'always', 'been', 'shaped', 'more', 'by', 'the', 'nature', 'of', 'the', 'media', 'by', 'which', 'we', 'communicate', 'than', 'by', 'the', 'content', 'of', 'the', 'communication']
 ```
 
-`.split()` takes a string as an argument, and in this case we've given it a space: " ". As you can see, the result is that the original string is divided every space, ie, into words. This results in a new structure, delineated by `[` and `]` which is a **list**.
+As you can see in the output, the result is a structure delineated by `[` and `]` that includes a sequence of short strings, ie, words.
 
-A list is a very powerful kind of variable—it's actually more of a meta-variable, because it holds a sequence of other things. These might be numbers, booleans (aka `True`/`False`), strings, or other objects. This list, called `words`, currently has 23 items in it, all of them individual strings.
+A list is a very powerful kind of variable—it's actually more of a meta-variable, because it holds other things. These might be numbers, booleans (aka `True`/`False`), strings, or other objects. This list, called `some_words`, currently has 23 items in it, all of them individual strings.
 
 How do we know there are 23? Well, we can find out like this:
 ```py
-sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
-sentence = sentence.replace(".", "")
-sentence = sentence.lower()
-words = sentence.split(" ")
+from word_tools import *
 
-num_words = len(words)
+a_sentence = "Societies have always been shaped more by the nature of the media by which we communicate than by the content of the communication."
+
+some_words = split_into_words(a_sentence)
+num_words = len(some_words)
 print(num_words)
 ```
 ```
 23
 ```
-`len()` is a function that gives us the length of a list. In this case, that's the number of words in the sentence, so we put it in a new variable that we've named `num_words` and printed to the console.
+`len()` is a function that returns the length of a list. In this case, that's the number of words in the sentence, so we put it in a new variable that we've named `num_words` and printed to the console.
+
+
+...
+
+unique
+sort
+shuffle
+choice
+[brackets]
+count_syllables
+
+
+then move on to external text
+
+cut-ups with sentences
+joining
+
+words again:
+filters:
+starts with
+ends with
+nouns etc
+good_words
+
+madlibs with joining
+
+
+then custom filters, with bracket syntax, ie "lists and loops"
+
+
+analyzing sentences
+
+whole sentences
+get_string_before
+get_string_after
+replace_in_string
+
+
+...
+
 
 Now that the sentence has been divided into words in a list, we can use some additional functions and methods. For example, if we wanted to sort our list of words, we could do this:
 ```py
@@ -752,3 +805,91 @@ The nine horseback believing partial faculties.
 This is more or less "mad libs" using words from the source text. By providing a basic sentence structure, in this case "The [adjective] [noun] [verb] [adjective] [noun].", we've let the computer fill in the rest. Not all the results are good ones, but they get closer to a more concrete meaning.
 
 How could you get it closer? Maybe filtering for verbs that end in "ed" or removing adjectives ending in "ly" could get things making more sense. Whether or not that serves your artistic purposes is up to you.
+
+
+
+////
+
+
+books
+wikipedia articles
+transcribed audio
+legal texts / laws / contracts
+movies: scripts, closed-captioning
+lyrics
+newspaper articles
+social media feeds
+
+
+
+
+
+change the formatting
+replace words
+rearrange the sentences
+
+make new sentences:
+- rearrange the words
+- pull out parts of speech
+
+combine two texts:
+- interleave lines
+- use different parts of speech from each text
+- find common words between two texts
+
+poetry:
+- free verse poem
+- acrostic
+-
+
+analysis:
+- sort by length of words
+- most commonly used words
+
+////
+
+
+chop it up into sentences
+chop it up into words
+pull out parts of speech
+sort by alphabetical
+sort by length
+sort by use
+replace all occurrences of one specific word
+
+put things back together randomly
+construct madlibs
+
+structure:
+- free verse poem
+- by line length
+-
+
+combine two texts
+- by line
+- by part of speech
+- filter one text by another
+
+/
+
+change the formatting
+replace words
+rearrange the sentences
+
+make new sentences:
+- rearrange the words
+- pull out parts of speech
+
+combine two texts:
+- interleave lines
+- use different parts of speech from each text
+- find common words between two texts
+
+poetry:
+- free verse poem
+- acrostic
+-
+
+analysis:
+- sort by length of words
+- most commonly used words

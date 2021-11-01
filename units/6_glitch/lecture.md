@@ -16,7 +16,14 @@ The idea of interesting mistakes is really endemic to the art-making process—n
   Nam June Paik, <i>TV Magnet</i> (1965)
 </p>
 
-This work is meant to be subversive, as it undermines the authoritative power of the television broadcast, but the method it uses, making something "dysfunctional," has its own sense of beauty. The word "glitch" came into popular usage around the same time as Paik's experiments, thanks to the (very famous at the time) astronaut John Glenn, who mentioned the use of the term among NASA engineers.
+This work is meant to be subversive, as it undermines the authoritative power of the television broadcast, but the method it uses, making something "dysfunctional," has its own sense of beauty. The word "glitch" came into popular usage around the same time as Paik's experiments, thanks to the (very famous at the time) astronaut John Glenn, who mentioned the use of the term among NASA engineers (likely of Yiddish origin).
+
+The advent of communications technology that could transfer visual documents offered the opportunity for glitches to interfere with the transmission. Using a teleprinter, William Larson produced some early examples of what we might recognize as a "glitch aesthetic" today by interleaving photography, text, and audio data.
+
+<p align="center">
+  <img src="context/3_larson.jpg" width=400 /><br />
+  William Larson, from <i>Fireflies</i> (1975)
+</p>
 
 By the late 1970s, video games were becoming available as some of the first widely available digital media, along with the possibility of glitching them. _Digital TV Dinner_ (1978) by Raul Zaritsky, Jamie Fenton, and Dick Ainsworth, misused the cartridges for Bally Astrocade console game, creating errors that would render as patterns on the TV screen (and a glitchy soundtrack).
 

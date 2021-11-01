@@ -190,7 +190,7 @@ else:
     print("I don't know how you feel.")
 ```
 
-This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added `.lower()` to the end of `raw_input()`, which converts the input to lowercase and prevent the second mixup with cases. This is a new kind of function, because it comes after a period rather than wraps around its input. These are called **methods**, and we'll see them a lot when using (and modifying) strings.
+This reworked example tests if the word "good" is contained somewhere in the variable `feeling` (and likewise for the other options), so it is a little more flexible when it comes to extraneous words. We've also added `.lower()` to the end of `raw_input()`, which converts the input to lowercase and prevent the second mixup with cases. This is a new kind of function, because it comes after a period rather than wraps around its input. These are called **methods**, and while we won't cover them extensively, it's good to know that they exist.
 
 <p align="center">
   <img src="code/7_in_2.png" width=600 />
@@ -241,7 +241,7 @@ Making our own functions in Python is similar to how we indent code under a `for
 ```py
 def air_test():
     print("How is the air quality today?")
-    quality = raw_input()    
+    quality = raw_input().lower()
     print("You said the air quality is " + quality)
 ```
 
@@ -253,7 +253,7 @@ If you write this code in a sketch and run it, nothing will happen. In order to 
 # declare the function
 def air_test():
     print("How is the air quality today?")
-    quality = raw_input()    
+    quality = raw_input().lower()
     print("You said the air quality is " + quality)
 
 # call the function
@@ -290,7 +290,7 @@ Each of these rooms can be represented with a function. For example:
 def living_room():
     print("You're in the living room. Doors lead to the hallway and to the kitchen.")
     print("Where do you want to go next?")
-    response = raw_input("> ").lower()  # adding an argument creates a prompt
+    response = raw_input("> ").lower()  # adding an argument to raw_input creates a prompt
 ```
 
 Since the living room is connected to kitchen and the hallway, we'll want to provide those options. And if we get a response that doesn't include anything about a kitchen or hallway, we'll want to provide a default response using `else`:

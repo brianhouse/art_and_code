@@ -9,27 +9,133 @@ _pronouns = open("list_pronouns.txt").read().split()
 _prepositions = open("list_prepositions.txt").read().split()
 _interjections = open("list_interjections.txt").read().split()
 
-def load_text(filename):
+def load_string_from_txt(filename):
     return fix_quotes(" ".join(open(filename).read().split()))
 
-def load_lines(filename):
+def load_lines_from_txt(filename):
     return [fix_quotes(line.strip()) for line in open(filename).readlines()]
 
-def load_srt(filename):
+def load_lines_from_srt(filename):
     lines = load_lines(filename)
     return combine([line for line in lines if len(line) and line[0] not in "0123456789"])
 
-def get_sentences(text):
+def split_into_sentences(text, max_sentences=1000):
     assert(type(text) is str)
-    text = text.replace("Mr.", "Mr")
-    text = text.replace("Mrs.", "Mrs")
-    text = text.replace("Ms.", "Ms")
+    text = text.replace("Mr.", "Mr@@@@")
+    text = text.replace("Mrs.", "Mrs@@@@")
+    text = text.replace("Ms.", "Ms@@@@")
+    text = text.replace("...", "@@@@@@@@@@@@")
     for delim in (". ", "! ", "? ", '." ', '?" ', '!" '):
-        text = text.replace(delim, delim + "^^^")
-    return text.split(" ^^^")
+        text = text.replace(delim, delim + "^^^^")
+    sentences = text.split(" ^^^^")[:max_sentences]
+    return [sentence.replace("@@@@", ".") for sentence in sentences]
+
+def split_into_words(text, max_words=5000):
+    if type(text) is not str:
+        raise Exception("Expecting string")
+    words = text.lower().split()
+    words = words[:max_words]
+    marks = ".", ",", "?", "!", ";", ":", "(", ")", '"', "<", ">", "/", "[", "]", "|", "\\", "{", "}", "+", "*", "-", "&"
+    for w, word in enumerate(words):
+        while len(word) and word[0] in marks:
+            word = word[1:]
+        while len(word) and word[-1] in marks:
+            word = word[:-1]
+        words[w] = word
+    words = [word for word in words if len(words)]
+    return words
+
+def filter_distinctive(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word not in _stop_words]
+
+def filter_nouns(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in _nouns]
+
+def filter_verbs(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in _verbs]
+
+def filter_adjectives(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in _adjectives]
+
+def filter_pronouns(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in _pronouns]
+
+def filter_prepositions(words):
+    assert(type(words) is list)
+    return [word for word in words if word in _prepositions]
+
+def filter_interjections(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in _interjections]
+
+def filter_starts_with(words, s):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word[:len(s)] == s]
+
+def filter_ends_with(words, s):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word[-len(s):] == s]
+
+def filter_unique(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return list(set(words))
+
+def combine_list(words, delimiter=None):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    if delimiter is None:
+        delimiter = " "
+    return delimiter.join(words)
+
+def sort_list_alpha(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    l = words[:]
+    l.sort()
+    return l
+
+def sort_list_length(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    l = words[:]
+    l.sort(key=len)
+    return l
+
+def get_string_after(text, search):
+    index = text.find(search)
+    return text[index + len(search):] if index > -1 else text
+
+def get_string_before(text, search):
+    index = text.find(search)
+    return text[:index] if index > -1 else text
+
+def replace_in_string(text, find, rep):
+    if type(text) is not str:
+        raise Exception("Expecting string")
+    return text.replace(find, rep)
+
+def remove_from_string(text, find):
+    if type(text) is not str:
+        raise Exception("Expecting string")
+    return text.replace(find, "")
 
 def fix_quotes(text):
-    assert(type(text) is str)
+    if type(text) is not str:
+        raise Exception("Expecting string")
     text = text.replace('“', '"')
     text = text.replace('”', '"')
     text = text.replace("’", "'")
@@ -41,106 +147,35 @@ def fix_quotes(text):
     text = text.replace("  ", " ")
     return text
 
-def remove_punctuation(text):
-    assert(type(text) is str)
-    for mark in (".", ",", "?", "!", ";", ":", "(", ")", '"', "<", ">", "/", "[", "]", "|", "\\", "{", "}", "+", "*"):
-        text = text.replace(mark, "")
-    return text
+def count_syllables(word):
+    word = word.lower()
+    count = 0
+    vowels = "aeiouy"
+    if word[0] in vowels:
+        count += 1
+    for index in range(1, len(word)):
+        if word[index] in vowels and word[index - 1] not in vowels:
+            count += 1
+    if word[-1] == "e" and (len(word) < 2 or word[-2] != "e"):
+        count -= 1
+    if count == 0:
+        count += 1
+    return count
 
-def get_words(text, max_words=5000):
-    assert(type(text) is str)
-    text = remove_punctuation(text)
-    words = text.lower().split()
-    words = words[:max_words]
-    return words
+def write_string_to_file(text, filename):
+    if type(text) is not str:
+        raise Exception("Expecting string")
+    output = createWriter(filename)
+    output.print(text)
+    output.flush()
+    output.close()
 
-def get_good_words(text, max_words=5000):
-    words = get_words(text)
-    return [word for word in words if word not in _stop_words]
 
-def get_nouns(words):
-    assert(type(words) is list)
-    return [word for word in words if word in _nouns]
-
-def get_verbs(words):
-    assert(type(words) is list)
-    return [word for word in words if word in _verbs]
-
-def get_adjectives(words):
-    assert(type(words) is list)
-    return [word for word in words if word in _adjectives]
-
-def get_pronouns(words):
-    assert(type(words) is list)
-    return [word for word in words if word in _pronouns]
-
-def get_prepositions(words):
-    assert(type(words) is list)
-    return [word for word in words if word in _prepositions]
-
-def get_interjections(words):
-    assert(type(words) is list)
-    return [word for word in words if word in _interjections]
-
-def get_unique(words):
-    assert(type(words) is list)
-    return list(set(words))
-
-def combine(words, delimiter=None):
-    assert(type(words) is list)
-    if delimiter is None:
-        delimiter = " "
-    return delimiter.join(words)
-
-def replace(text, find, rep):
-    assert(type(text) is str)
-    return text.replace(find, rep)
-
-def remove(text, find):
-    assert(type(text) is str)
-    return text.replace(find, "")
 
 
 """
-"string_from_txt"
-"lines_from_txt"
-"lines_from_srt"
-
-split_words
-split_sentences
-
-filter_distinctives
-filter_nouns
-filter_unique
-
-combine_list ?
-
-change assertion error to:
-"Expecting list, got string"
-"Expecting string, got list"
-
 separate verb types
 filter_verbs(type="past") ?
-chop possessives
-
-should strip punctuation from ends of words, not remove it entirely
-
-/
-
-adding lists of words together
-
-have the results of the examples on the page
-
-sort is actually not that interesting. by len is more interesting.
-
-lessons (focus on list operations):
-- using brackets
-- using brackets on string (check first letter is capital maybe)
-- making your own filter
-- finding clues in sentences <-- how to do this
-
-
-
-
+chop possessives on nouns? etc
 
 """
