@@ -159,7 +159,7 @@ Labor day, no class
 ### Week 9
 
 #### Monday 10/25
-- Sharing in-progress work, questions, and work time
+- NO CLASS
 
 #### Wednesday 10/27
 - Artist presentations 6
