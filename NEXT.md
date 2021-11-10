@@ -27,13 +27,14 @@ Do small group screen sharing for intermediate feedback
     immersion: meaningful choices
     maybe add additional "lecture": "On world-building", etc
     also aesthetics of the text
-- map -> flowchart
+- map -> flowchart or diagram, otherwise they make a literal map
 - have a whole section on text formatting
 - have two rounds of playtesting
 - have them present a concept in advance and have it critiqued
 - the results were really too mechanical
 - basically, get a lot more out of this assignment in terms of content and _design_--the code worked
 - (also include "random" in there, which requires a different kind of import statement)
+- this is such an absolute beast to grade (especially with two sections)
 
 ## recombination
 /
@@ -49,9 +50,10 @@ social media feeds
 
 have them do it first with scissors and paper?
 
-
-
 ## glitch
+Emphasize the error in transmission between source and result
+use `source` as a variable in the code
+
 
 ### general
 
