@@ -5,44 +5,11 @@ Create a virtual micro-world that demonstrates emergent behavior. Building from 
 Submit your code along with a [3-sentence description](../../resources/description_guidelines.md).
 
 
-Avoid function:
-```py
-def avoid(agent, other, threshold, strength):
-    if other == agent:
-        return 0
-    distance = dist(agent['x'], agent['y'], other['x'], other['y'])
-    if distance < threshold:
-        velocity_x = cos(agent['heading']) * agent['speed']
-        velocity_y = sin(agent['heading']) * agent['speed']
-        steer_x = ((agent['x'] - other['x']) / distance) * strength
-        steer_y = ((agent['y'] - other['y']) / distance) * strength
-        new_velocity_x = velocity_x + steer_x
-        new_velocity_y = velocity_y + steer_y
-        agent['heading'] = atan2(new_velocity_y, new_velocity_x)
-    return distance
-```
+### Helper code
 
-Wall function:
-```py
-def avoid_walls(agent, threshold, strength):
-    walls = [{'x': 0, 'y': agent['y']}, {'x': 400, 'y': agent['y']}, {'x': agent['x'], 'y': 0}, {'x': agent['x'], 'y': 400}]
-    for wall in walls:
-        avoid(agent, wall, threshold, strength)   
-```
+Download [sim_helpers.py]("sim_helpers.py") and add it to your sketch. Add this as your first line:
 
-Seek function:
 ```py
-def seek(agent, other, threshold, strength):
-    if other == agent:
-        return 0
-    distance = dist(agent['x'], agent['y'], other['x'], other['y'])
-    if distance < threshold:
-        velocity_x = cos(agent['heading']) * agent['speed']
-        velocity_y = sin(agent['heading']) * agent['speed']
-        steer_x = ((other['x'] - agent['x']) / distance) * strength      # this line reversed
-        steer_y = ((other['y'] - agent['y']) / distance) * strength      # this line reversed
-        new_velocity_x = velocity_x + steer_x
-        new_velocity_y = velocity_y + steer_y
-        agent['heading'] = atan2(new_velocity_y, new_velocity_x)
-    return distance
+from sim_helpers import *
 ```
+You will then be able to use `avoid()`, `avoid_walls()`, and `seek()`.
