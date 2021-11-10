@@ -7,7 +7,7 @@ Submit your code along with a [3-sentence description](../../resources/descripti
 
 ### Helper code
 
-Download [sim_helpers.py]("sim_helpers.py") and add it to your sketch. Add this as your first line:
+Download [sim_helpers.py](sim_helpers.py) and add it to your sketch. Add this as your first line:
 
 ```py
 from sim_helpers import *
