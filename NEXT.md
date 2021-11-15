@@ -55,7 +55,16 @@ Emphasize the error in transmission between source and result
 use `source` as a variable in the code
 
 
+## emergence
+I'm wondering if we should just use objects instead of dictionaries.
+If I'm cutting all the math down, it's structural anyway.
+no-- it's too weird.
+
+
+
 ### general
+
+obviously too much
 
 - emphasize title and description—have them read it (and say nothing else?), and make sure it's good (synonymous with concept?)
 
@@ -68,6 +77,9 @@ use `source` as a variable in the code
 - lectures are stumbling vs the notes. slides would be better.
 
 - this should increasingly be about the _quality_ not the code. maybe this is a matter of adding a "design considerations" section after code or in each assignment
+
+- it's really all about form matching content. that's what I care about.
+
 
 /
 

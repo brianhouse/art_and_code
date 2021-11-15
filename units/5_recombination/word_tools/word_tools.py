@@ -178,4 +178,6 @@ separate verb types
 filter_verbs(type="past") ?
 chop possessives on nouns? etc
 
+split into phrases? need for them to be able to mix it up
+
 """
