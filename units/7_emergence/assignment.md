@@ -52,7 +52,7 @@ def setup():
 
 
 def draw():
-    global bees, flowers
+    global bees, flowers, sharks
     background(255)
 
     for flower in flowers:            

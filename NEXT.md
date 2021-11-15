@@ -59,6 +59,7 @@ use `source` as a variable in the code
 I'm wondering if we should just use objects instead of dictionaries.
 If I'm cutting all the math down, it's structural anyway.
 no-- it's too weird.
+- heading is not great. vectors are better, even if we don't use "Vector". ie, vx and vy make more sense because the avoid the trig. that's how I did it before. I dont know why Vector threw me off.
 
 
 
@@ -88,6 +89,10 @@ obviously too much
 //
 
 Separate "Context", "Code", and "Concept" documents for each one? Concept being the design considerations to take into account when coming up with a concept and matching it to form?
+
+
+next edition, go deeper on NN and simulation
+
 
 ### idea
 
