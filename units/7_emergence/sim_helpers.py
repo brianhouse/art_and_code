@@ -17,7 +17,7 @@ def avoid(agent, other, threshold, strength):
     return distance
 
 def avoid_walls(agent, threshold, strength):
-    contain(agent, 0, 0, width, height, width*2)
+    contain(agent, threshold, threshold, width-threshold*2, height-threshold*2, width*2)
 
 def contain(agent, left=None, top=None, w=None, h=None, thickness=2000):
     velocity_x = cos(agent['heading']) * agent['speed']
@@ -30,7 +30,6 @@ def contain(agent, left=None, top=None, w=None, h=None, thickness=2000):
         agent['heading'] = atan2(abs(velocity_y), velocity_x)
     if h is not None and -thickness < (top + h) - agent['y'] < 0:
         agent['heading'] = atan2(-abs(velocity_y), velocity_x)
-
 
 def seek(agent, other, threshold, strength):
     if other == agent:
@@ -46,6 +45,13 @@ def seek(agent, other, threshold, strength):
         agent['heading'] = atan2(new_velocity_y, new_velocity_x)
     return distance
 
+def avoid_wall(agent, wall, threshold, strength):
+    if wall['direction'][0].lower() == "h":
+        if wall['x'] < agent['x'] < wall['x'] + wall['length']:
+            avoid(agent, {'x': agent['x'], 'y': wall['y']}, threshold, strength)
+    else:
+        if wall['y'] < agent['y'] < wall['y'] + wall['length']:
+            avoid(agent, {'x': wall['x'], 'y': agent['y']}, threshold, strength)
 
 def position(agent, draw_f):
     pushMatrix()

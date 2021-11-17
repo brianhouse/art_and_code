@@ -15,7 +15,7 @@ from sim_helpers import *
 You will then be able to use `avoid()`, `avoid_walls()`, and `seek()`.
 
 
-### Example
+### Interaction example
 
 ```py
 from sim_helpers import *
@@ -103,3 +103,138 @@ def draw():
         avoid_walls(shark, 10, 5)
 
 ```
+
+### Timer and random condition example
+```py
+from sim_helpers import *
+from random import choice
+
+def setup():
+    global bees, flowers, season_timer, season   # add to globals
+    size(400, 400)
+
+    # set up timer variables
+    season_timer = 0
+    season = "spring"
+
+    bees = []
+    for i in range(10):
+        bee = {'x': random(400),
+               'y': random(400),
+               'heading': random(2 * PI),
+               'speed': 2
+               }
+        bees.append(bee)
+
+    flowers = []
+    for i in range(0):
+        flower = {'x': random(400),
+                  'y': random(400),
+                  'color': color(255, 0, 0),
+                  }
+        flowers.append(flower)
+
+
+def draw():
+    global bees, flowers, season_timer, season  # add to globals
+    background(255)
+
+    # change the season        
+    if millis() - season_timer > 3000:    # 3 second interval        
+        if season == "spring":
+            season = "summer"                            
+        elif season == "summer":
+            season = "fall"
+        elif season == "fall":                
+            season = "winter"
+        elif season == "winter":
+            season = "spring"
+        season_timer = millis()            # reset season_timer
+
+    if season == "spring":
+        # randomly add a new flower with a 5% chance each frame        
+        if random(100) < 5:                     
+            flower = {'x': random(400),
+                    'y': random(400),
+                    'color': color(random(100, 255), random(100, 255), random(100, 255))
+                    }
+            flowers.append(flower)
+
+    if season == "fall":
+        # randomly wither a flower with a 50% chance each frame
+        if random(100) < 50:  
+            flower = choice(flowers)
+            flower['color'] = color(255, 200, 0)                        
+
+    if season == "winter":
+        # randomly remove a flower with a 50% chance each frame
+        if random(100) < 50 and len(flowers) > 0:
+            flower = choice(flowers)
+            flowers.remove(flower)
+
+
+    for flower in flowers:            
+        fill(flower['color'])
+        square(flower['x'] - 5, flower['y'] - 5, 10)
+
+    for bee in bees:
+        fill(255, 255, 0)
+        circle(bee['x'], bee['y'], 10)
+        bee['x'] += cos(bee['heading']) * bee['speed']
+        bee['y'] += sin(bee['heading']) * bee['speed']
+        for other_bee in bees:
+            avoid(bee, other_bee, 10, .5)
+        for flower in flowers:
+            seek(bee, flower, 50, .3)
+        avoid_walls(bee, 10, 5)
+
+```
+
+### Wall example (may need to re-download sim_helpers.py)
+```py
+from sim_helpers import *
+
+def setup():
+    global agents, walls
+    size(200, 200)
+    agents = []
+    for i in range(3):
+        agent = {'x': random(200),
+                 'y': random(200),
+                 'heading': random(2*PI),
+                 'speed': 3
+                 }
+        agents.append(agent)
+
+    walls = []
+    walls.append({'x': 100, 'y': 30, 'length': 140, 'direction': 'vertical'})
+    walls.append({'x': 30, 'y': 100, 'length': 140, 'direction': 'horizontal'})
+
+
+def draw():
+    global agents, walls
+    background(255)
+
+    # draw some walls
+    line(100, 30, 100, 170)
+    line(30, 100, 170, width/2)
+
+
+    for agent in agents:
+        strokeWeight(1)
+        circle(agent['x'], agent['y'], 20)
+
+        agent['x'] += cos(agent['heading']) * agent['speed']
+        agent['y'] += sin(agent['heading']) * agent['speed']
+
+        # avoid the other agents (or bounce off of them)
+        for other_agent in agents:
+            avoid(agent, other_agent, 20, 1)
+
+        # avoid the custom walls
+        for wall in walls:                
+            avoid_wall(agent, wall, 12, 5)
+
+        # avoid the default walls around the edge of the canvas
+        avoid_walls(agent, 10, 10)
+```        

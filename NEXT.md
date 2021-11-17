@@ -59,7 +59,43 @@ use `source` as a variable in the code
 I'm wondering if we should just use objects instead of dictionaries.
 If I'm cutting all the math down, it's structural anyway.
 no-- it's too weird.
-- heading is not great. vectors are better, even if we don't use "Vector". ie, vx and vy make more sense because the avoid the trig. that's how I did it before. I dont know why Vector threw me off.
+maybe?
+```py
+class Bat():
+    def __init__(self, **properties):
+        for key, value in properties.items():
+            setattr(self, key, value)
+```            
+this could work, and would be nice, but it's a lot of hidden code.
+
+- heading is not great. vectors are better, even if we don't use "Vector". ie, vx and vy make more sense because the avoid the trig. that's how I did it before. I dont know why Vector threw me off. then there's less hidden code.
+
+- ok, actually this is not so bad. forget vectors. maybe pull distance out to be a separate function; that bit is confusing
+- "strength" is the proportion of the new force to what's there
+
+I guess the question is, if the functions are obscured anyway, why not use objects? then can still put the logic in the loop, I keep the logic in object.
+```py
+agent = Agent(x=5, y=10, heading=2*PI, draw=draw_bat)
+...
+agent.move()
+for other_agent in agents:
+    agent.avoid(other_agent)
+```
+I dont love that we lose the transparency of how animation works. can still do the initial demo. but we do get the joy of the dot.
+
+bouncing off walls can be built in.
+but then is it `draw_bat(agent)` ?
+`agent.draw = draw_bat`
+or put it in the constructor
+(they could also override default functions that way)
+
+but we still need
+```py
+agent.avoid(wall)
+```
+there, I did it. but it needs to be programmed all in vectors.
+
+lifespan is a good use of timers
 
 
 
