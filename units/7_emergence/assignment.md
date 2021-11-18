@@ -190,6 +190,127 @@ def draw():
 
 ```
 
+### Animation example
+```py
+from sim_helpers import *
+
+def setup():
+    global bees, flowers, sharks
+    size(400, 400)
+
+    bees = []
+    for i in range(10):
+        bee = {'x': random(400),
+               'y': random(400),
+               'heading': random(2 * PI),
+               'speed': 1
+               }
+        bees.append(bee)
+
+    flowers = []
+    for i in range(3):
+        flower = {'x': random(400),
+                  'y': random(400)
+                  }
+        flowers.append(flower)
+
+    sharks = []
+    for i in range(3):
+        shark = {'x': random(400),
+                 'y': random(400),
+                 'heading': random(2*PI),
+                 'speed': 2,
+                 'size': 20
+                 }
+        sharks.append(shark)
+
+
+def draw():
+    global bees, flowers, sharks
+    background(255)
+
+
+    for flower in flowers:            
+        fill(255, 200, 200)
+        square(flower['x'] - 5, flower['y'] - 5, 10)
+
+
+    for shark in sharks:
+
+        # position takes an agent dictionary and a function that draws that object
+        position(shark, draw_shark)
+
+        shark['x'] += cos(shark['heading']) * shark['speed']
+        shark['y'] += sin(shark['heading']) * shark['speed']
+
+        for other_shark in sharks:
+            avoid(shark, other_shark, 20, .5)
+
+        for bee in bees:
+            distance = seek(shark, bee, 100, .5)
+            if distance < 5:
+                bees.remove(bee)
+
+        avoid_walls(shark, 10, 5)
+
+
+    for bee in bees:
+
+        # position takes an agent dictionary and a function that draws that object
+        position(bee, draw_bee)
+
+        bee['x'] += cos(bee['heading']) * bee['speed']
+        bee['y'] += sin(bee['heading']) * bee['speed']
+
+        for other_bee in bees:
+            avoid(bee, other_bee, 20, .5)
+
+        for flower in flowers:
+            seek(bee, flower, 50, .3)
+
+        for shark in sharks:
+            avoid(bee, shark, 100, .7)
+
+        avoid_walls(bee, 10, 5)        
+
+
+
+def draw_shark(shark):
+
+    step = step_cycle(2, 20) # two steps with a 20 frame delay
+
+    stroke(0)
+    fill(100, 100, 255)
+    triangle(10, 0, -shark['size'], 10, -shark['size'], -10)
+
+    if step == 0:
+        fill(255)
+        ellipse(-5, 0, 10, 10)    
+        triangle(-10, 0, -2, -4, -2, 4)
+
+    elif step == 1:
+        fill(255)
+        ellipse(-5, 0, 5, 10)    
+
+
+
+def draw_bee(bee):
+
+    step = step_cycle(2, 2) # two steps with a 2 frame delay
+
+    stroke(0)
+    fill(255, 255, 0)
+    ellipse(0, 0, 20, 8)
+    fill(0)
+    circle(0, 0, 8)
+    fill(255)
+
+    if step == 0:        
+        circle(2, -5, 8)
+        circle(2, 5, 8)
+```
+
+
 ### Wall example (may need to re-download sim_helpers.py)
 ```py
 from sim_helpers import *

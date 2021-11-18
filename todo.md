@@ -1,11 +1,5 @@
 ## Todo
 
-examples for assignment page (and later lecture):
-- one time trigger
-- season timer (with dice rolling)
-- age timer
-- spawn (maybe not)
-
 for next class:
 - show the weird draw thing
     - first draw it pointy

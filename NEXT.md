@@ -96,6 +96,42 @@ agent.avoid(wall)
 there, I did it. but it needs to be programmed all in vectors.
 
 lifespan is a good use of timers
+/
+raise expecting Agent got list
+
+seek avoid bounce
+
+Agent
+Wall
+
+fix recombination to use word in words syntax
+
+could have a list of vectors, and then combine them right before moving
+
+obvi use vectors in the implementation
+
+
+
+it's all just ifs, loops, variables, and lists
+
+class Bat(Agent):
+
+def draw(self):
+
+def update(self):
+
+
+is this better? with self? or is just doing it all in the loop better?
+
+i think in the loop is actually going to be better
+
+but it does mean separated draw_bat
+
+
+
+at what point am i just teaching mindcraft?
+
+i guess the difference is code itself 
 
 
 
