@@ -206,7 +206,8 @@ Labor day, no class
 
 #### Wednesday 11/24
 - Sharing in-progress work, questions, and work time
-
+- Sketch #7 due end of day
+- **Homework**: Final project proposal
 
 
 #### Thanksgiving Break
@@ -215,7 +216,8 @@ Labor day, no class
 ### Week 14
 
 #### Monday 11/29
-- Questions and work time
+- Crit sketch #7
+- Present final project proposals
 
 #### Wednesday 12/1
 - Questions and work time
@@ -225,8 +227,11 @@ Labor day, no class
 #### Monday 12/6
 - Sharing in-progress work, questions, and work time
 
+#### Monday 12/8
+- Questions, and work time
+
 
 ### Finals Week
-- Crit Sketch #8
+- Crit Sketch #8  
 Section 1: 12/13 1:00–4:00pm  
 Section 2: 12/11 1:00–4:00pm  
