@@ -131,8 +131,11 @@ but it does mean separated draw_bat
 
 at what point am i just teaching mindcraft?
 
-i guess the difference is code itself 
+i guess the difference is code itself
 
+
+
+the key thing that is not understood is lists. Recombination didn't do that.
 
 
 ### general
@@ -201,6 +204,11 @@ simulation
 
 interface
 
+
+
+definitely zero on on those concept descriptions, maybe make it explicit that it's graded separately
+
+flip the classroom: have them all review lecture notes as homework and come up with additional examples (will have to split code and context discussions)
 
 
 #####

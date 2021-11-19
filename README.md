@@ -202,13 +202,14 @@ Labor day, no class
 ### Week 13
 
 #### Monday 11/22
-- Crit Sketch #7
-- Intro, [Interface](units/8_interface/lecture.md)
-
+- Sharing in-progress work, questions, and work time
 
 #### Wednesday 11/24
-- Begin [Sketch #8](units/8_interface/assignment.md)
-- Questions and work time
+- Sharing in-progress work, questions, and work time
+
+
+
+#### Thanksgiving Break
 
 
 ### Week 14
