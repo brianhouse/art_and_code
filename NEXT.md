@@ -138,6 +138,9 @@ i guess the difference is code itself
 the key thing that is not understood is lists. Recombination didn't do that.
 
 
+more for content on complex systems is here: https://natureofcode.com/book/chapter-6-autonomous-agents/
+
+
 ### general
 
 obviously too much

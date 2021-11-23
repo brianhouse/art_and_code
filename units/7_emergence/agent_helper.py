@@ -1,0 +1,331 @@
+"""
+Based on https://natureofcode.com/book/chapter-6-autonomous-agents/
+https://flatredball.com/documentation/tutorials/math/circle-collision/
+https://forum.processing.org/beta/num_1276644884.html
+"""
+
+import types, time
+from random import choice
+
+FRICTION = 0.005
+MAX_FORCE = 0.1
+BOUNCE = 0.75
+GRAVITY = 0 #0.02
+
+
+class Agent(object):
+    
+    
+    def __init__(self, **properties):
+        self.position = PVector(width/2, height/2)
+        self.velocity = PVector(0, 0)
+        self.acceleration = PVector(0, 0)
+        self.size = 10
+        self.speed = 1
+        self._collisions = []
+        self._heading = 0.0
+        for key, value in properties.items():
+            if hasattr(self, key) and key not in ['x', 'y', 'size', 'speed', 'draw']:
+                raise Exception("Cannot override property " + key)
+            if callable(value):
+                if key == "draw":
+                    key = "_draw" 
+                value = types.MethodType(value, self)
+            setattr(self, key, value) 
+           
+             
+    @property
+    def x(self):
+        return self.position.x    
+        
+        
+    @x.setter
+    def x(self, value):
+        self.position.x = value
+
+
+    @property
+    def y(self):
+        return self.position.y            
+                  
+                              
+    @y.setter
+    def y(self, value):
+        self.position.y = value    
+        
+        
+    @property
+    def heading(self):
+        if self.velocity.mag() > 0.01:
+            self._heading = self.velocity.heading()
+        return self._heading
+            
+        
+    def move(self):        
+        friction = self.velocity.get() * -1
+        friction.setMag(FRICTION)  
+        self.acceleration.add(friction) 
+        if GRAVITY: 
+            self.acceleration += PVector(0, GRAVITY)    
+        self.velocity.add(self.acceleration)
+        self.position.add(self.velocity)
+        self.check_edges()
+        self.acceleration.mult(0)
+        self._collisions = []        
+
+        
+    def can_collide(self, entities):
+        if type(entities) != list:
+            entities = [entities]
+        for entity in entities:
+            if entity is None:
+                continue            
+            if type(entity) != Agent and type(entity) != Wall:
+                raise Exception("Expecting Agent or Wall, got " + str(type(entity)))
+            if type(entity) == Agent:
+                self._check_agent_collision(entity)
+            else:
+                self._check_wall_collision(entity)
+            
+
+    def _check_agent_collision(self, agent):
+        if agent is self:
+            return        
+        distance = self.distance(agent)
+        overlap = (self.size*.5 + agent.size*.5) - distance
+        if overlap > 0:
+            if self not in agent._collisions:
+                self._collisions.append(agent) 
+                mass_ratio =  agent.size / float(self.size)
+                tangent = PVector(agent.position.y - self.position.y, -(agent.position.x - self.position.x))  
+                tangent.normalize()               
+                 
+                relative_velocity = (agent.velocity * mass_ratio) - self.velocity 
+                tangent_velocity = tangent * relative_velocity.dot(tangent)
+                self_collision = tangent_velocity - relative_velocity                      
+                
+                relative_velocity = agent.velocity - (self.velocity * (1.0/mass_ratio)) 
+                tangent_velocity = tangent * relative_velocity.dot(tangent)
+                agent_collision = tangent_velocity - relative_velocity                                                                      
+
+                self.velocity -= self_collision
+                agent.velocity += agent_collision                
+
+                v = self.position - agent.position                
+                v.setMag(overlap*.5)
+                self.position += v                
+                
+                v = agent.position - self.position
+                v.setMag(overlap*.5)
+                agent.position += v
+                        
+
+    def _check_wall_collision(self, wall):
+        p, distance = wall.intersection(self)
+        overlap = (self.size*.5 + wall.thickness*.5) - distance            
+        if overlap > 0:
+            tangent = PVector(p.y - self.position.y, -(p.x - self.position.x))  
+            tangent.normalize()        
+            relative_velocity = -2.0 * self.velocity * BOUNCE
+            tangent_velocity = tangent * relative_velocity.dot(tangent)
+            self_collision = tangent_velocity - relative_velocity                      
+            self.velocity -= self_collision
+            v = self.position - p                
+            v.setMag(overlap)
+            self.position += v     
+
+ 
+    def seek(self, agents, threshold, strength):
+        strength = max(min(strength, 1.0), 0.0)                
+        if type(agents) != list:
+            agents = [agents]   
+        sum = PVector(0, 0)
+        count = 0
+        for agent in agents:        
+            if agent is None or agent is self or self.distance(agent) > threshold:
+                continue
+            diff = agent.position - self.position
+            diff.normalize()
+            sum.add(diff)
+            count += 1            
+        if count > 0:
+            sum.div(count)            
+            sum.setMag(self.speed)            
+            steer = sum - self.velocity
+            steer.limit(MAX_FORCE)
+            steer.mult(strength)
+            self.acceleration.add(steer)
+    
+    
+    def avoid(self, agents, threshold, strength):
+        strength = max(min(strength, 1.0), 0.0)                
+        if type(agents) != list:
+            agents = [agents]   
+        sum = PVector(0, 0)
+        count = 0
+        for agent in agents:        
+            if agent is None or agent is self or self.distance(agent) > threshold:
+                continue
+            diff = self.position - agent.position
+            diff.normalize()
+            sum.add(diff)
+            count += 1            
+        if count > 0:
+            sum.div(count)            
+            sum.setMag(self.speed)            
+            steer = sum - self.velocity
+            steer.limit(MAX_FORCE)
+            steer.mult(strength)
+            self.acceleration.add(steer)
+            
+                
+    def align(self):
+        pass                  
+                
+                                                                            
+    def touching(self, agent):
+        return self.distance(agent) < self.size*.5 + agent.size*.5
+        
+        
+    def distance(self, agent):
+        if type(agent) != Agent:
+            raise Exception("Expecting Agent, got " + str(type(agent)))
+        return self.position.dist(agent.position)  
+            
+            
+    def closest(self, agents):
+        if type(agents) != list or (len(agents) and type(agents[0]) != Agent):
+            raise Exception("Expecting list of agents")
+        if not len(agents):
+            return None
+        return min(agents, key=lambda agent: self.distance(agent))
+                
+            
+    def check_edges(self):
+        if self.position.x < self.size*.5:
+            self.position.x = self.size*.5
+            self.velocity.x = abs(self.velocity.x) * BOUNCE
+            self.velocity.y *= BOUNCE
+        if self.position.x > width - self.size*.5:
+            self.position.x = width - self.size*.5
+            self.velocity.x = -abs(self.velocity.x) * BOUNCE
+            self.velocity.y *= BOUNCE
+        if self.position.y < self.size*.5:
+            self.position.y = self.size*.5
+            self.velocity.y = abs(self.velocity.x) * BOUNCE
+            self.velocity.x *= BOUNCE
+        if self.position.y > height - self.size*.5:
+            self.position.y = height - self.size*.5            
+            self.velocity.y = -abs(self.velocity.x) * BOUNCE 
+            self.velocity.x *= BOUNCE                  
+                                 
+
+    def bump(self, deg, strength):
+        x = cos(radians(deg)) * strength
+        y = sin(radians(deg)) * strength
+        bump = PVector(x, y)
+        self.acceleration.add(bump)
+  
+  
+    def draw(self):
+        if self._draw is None:
+            return
+        pushMatrix()
+        translate(self.x, self.y)
+        rotate(self.heading)
+        translate(-self.x, -self.y)
+        self._draw()
+        popMatrix()
+                  
+        
+class Wall(object):
+   
+     
+    def __init__(self, x1=0, y1=0, x2=0, y2=0, thickness=1):
+        self.start = PVector(x1, y1)
+        self.end = PVector(x2, y2)
+        self.thickness = thickness
+        self.update()
+        
+        
+    @property
+    def x1(self):
+        return self.start.x    
+        
+        
+    @x1.setter
+    def x1(self, value):
+        self.start.x = value
+        self.update()
+
+
+    @property
+    def y1(self):
+        return self.start.y            
+                  
+                              
+    @y1.setter
+    def y1(self, value):
+        self.start.y = value  
+        self.update() 
+        
+                
+    @property
+    def x2(self):
+        return self.end.x    
+        
+        
+    @x2.setter
+    def x2(self, value):
+        self.end.x = value
+        self.update()
+
+
+    @property
+    def y2(self):
+        return self.end.y            
+                  
+                              
+    @y2.setter
+    def y2(self, value):
+        self.end.y = value 
+        self.update()         
+        
+                                 
+    def update(self):
+        self.delta_x = self.x2 - self.x1
+        self.delta_y = self.y2 - self.y1 
+        self.length = sqrt(self.delta_x * self.delta_x + self.delta_y * self.delta_y) 
+        self.cosine = self.delta_x / float(self.length)
+        self.sine = self.delta_y / float(self.length)
+        
+        
+    def intersection(self, agent):                
+        p = PVector(0, 0)
+        slope = (-self.x1 + agent.x) * self.cosine + (-self.y1 + agent.y) * self.sine
+        if slope <= 0:
+            p.x = self.x1 
+            p.y = self.y1
+        elif slope >= self.length:
+            p.x = self.x2
+            p.y = self.y2 
+        else:
+            p.x = self.x1 + slope * self.cosine 
+            p.y = self.y1 + slope * self.sine 
+        delta_x2 = agent.x - p.x 
+        delta_y2 = agent.y - p.y
+        return p, sqrt(delta_x2 * delta_x2 + delta_y2 * delta_y2)
+        
+        
+"""
+and then align
+
+then avoid walls
+
+do add property in separate method to control adding params after the fact as well
+add it to wall
+            
+need to report who was collided with
+
+ideally, if a wall is between two agents, seek and avoid dont apply                        
+"""        
