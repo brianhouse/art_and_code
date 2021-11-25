@@ -409,7 +409,3 @@ class Wall(object):
             Wall.walls.remove(self)
             
             
-"""
-
-visibility does not quite seem to be working            
-"""            
