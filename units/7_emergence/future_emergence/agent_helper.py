@@ -2,6 +2,7 @@
 Based on https://natureofcode.com/book/chapter-6-autonomous-agents/
 https://flatredball.com/documentation/tutorials/math/circle-collision/
 https://forum.processing.org/beta/num_1276644884.html
+http://jeffreythompson.org/collision-detection/line-line.php
 """
 
 import types, time
@@ -151,15 +152,15 @@ class Agent(object):
         sum = PVector(0, 0)
         count = 0
         for agent in agents:        
-            if agent is None or agent is self or self.distance(agent) > threshold:
+            if agent is None or agent is self or self.distance(agent) > threshold or not self.is_visible(agent):
                 continue
             diff = agent.position - self.position
             diff.normalize()
             sum.add(diff)
             count += 1            
         if count > 0:
-            sum.div(count)            
-            sum.setMag(self.speed)            
+            sum.div(count)
+            sum.setMag(self.speed)
             steer = sum - self.velocity
             steer.limit(MAX_FORCE)
             steer.mult(strength)
@@ -177,7 +178,7 @@ class Agent(object):
         sum = PVector(0, 0)
         count = 0
         for agent in agents:
-            if agent is None or agent is self or self.distance(agent) > threshold:
+            if agent is None or agent is self or self.distance(agent) > threshold or not self.is_visible(agent):
                 continue
             diff = self.position - agent.position
             diff.normalize()
@@ -223,7 +224,7 @@ class Agent(object):
         sum = PVector(0, 0)
         count = 0
         for agent in agents:        
-            if agent is None or agent is self or self.distance(agent) > threshold:
+            if agent is None or agent is self or self.distance(agent) > threshold or not self.is_visible(agent):
                 continue
             sum.add(agent.velocity)
             count += 1            
@@ -252,7 +253,24 @@ class Agent(object):
             return None
         return min(agents, key=lambda agent: self.distance(agent))                        
          
-                                 
+
+    def is_visible(self, agent):
+        if type(agent) != Agent:
+            raise Exception("Expecting Agent, got " + str(type(agent)))
+        x1, y1 = self.position.x, self.position.y
+        x2, y2 = agent.position.x, agent.position.y
+        for wall in Wall.walls:
+            x3, y3 = wall.x1, wall.y1
+            x4, y4 = wall.x2, wall.y2
+            try:
+                uA = ((x4-x3)*(y1-y3) - (y4-y3)*(x1-x3)) / ((y4-y3)*(x2-x1) - (x4-x3)*(y2-y1))
+                uB = ((x2-x1)*(y1-y3) - (y2-y1)*(x1-x3)) / ((y4-y3)*(x2-x1) - (x4-x3)*(y2-y1))                        
+                if uA >= 0 and uA <= 1 and uB >= 0 and uB <= 1:
+                    return False
+            except ZeroDivisionError:
+                pass
+        return True                    
+                                                                               
     def check_edges(self):
         if self.position.x < self.size*.5:
             self.position.x = self.size*.5
@@ -293,6 +311,7 @@ class Agent(object):
 class Wall(object):
     
     edges = None
+    walls = []
     
          
     def __init__(self, x1=0, y1=0, x2=0, y2=0, thickness=1):
@@ -300,6 +319,7 @@ class Wall(object):
         self.end = PVector(x2, y2)
         self.thickness = thickness
         self.update()
+        Wall.walls.append(self)        
         if not Wall.edges:
             Wall.edges = True
             Wall.edges = [Wall(0, 0, width, 0),
@@ -383,10 +403,13 @@ class Wall(object):
         delta_y2 = agent.y - p.y
         return p, sqrt(delta_x2 * delta_x2 + delta_y2 * delta_y2)
         
-                
- 
-    
-"""
+             
+    def destroy(self):
+        if self in Wall.walls:
+            Wall.walls.remove(self)
             
-ideally, if a wall is between two agents, seek and avoid dont apply                        
-"""        
+            
+"""
+
+visibility does not quite seem to be working            
+"""            

@@ -17,7 +17,7 @@ def setup():
         bat.bump(random(360), random(3))
         
     sharks = []
-    for i in range(0):
+    for i in range(1):
         shark = Agent(x=random(width), 
                     y=random(height), 
                     draw=draw_shark,
@@ -33,7 +33,7 @@ def setup():
         flowers.append(flower)
     
     walls = []
-    for i in range(2):        
+    for i in range(4):        
         wall = Wall(random(width), random(height), random(width), random(height), thickness=random(1, 20))
         walls.append(wall)
         
@@ -41,7 +41,7 @@ def setup():
 def draw():
     global bats, sharks, flowers, corners, walls
     background(255)
-    
+            
     for flower in flowers:
         strokeWeight(1)
         fill(255, 255, 0)
@@ -61,9 +61,9 @@ def draw():
         bat.seek(bats, 300, .3)
         bat.align(bats, 200, .3)
         bat.seek(flowers, 500, .4)
-        bat.avoid(sharks, 200, .9)  
-        bat.avoid(walls, 50, 1) 
-        bat.avoid_edges(50, 1)
+        bat.avoid(sharks, 200, .75)  
+        bat.avoid(walls, 40, 1) 
+        bat.avoid_edges(40, 1)
             
     for shark in sharks:        
         shark.draw()
@@ -80,6 +80,7 @@ def draw():
 def draw_bat(bat):
     strokeWeight(1)
     fill(255)
+    stroke(0)
     line(bat.x, bat.y, bat.x + 5, bat.y + 10)
     line(bat.x, bat.y, bat.x - 5, bat.y + 10)
     circle(bat.x, bat.y, bat.size)
@@ -87,6 +88,7 @@ def draw_bat(bat):
 
 def draw_shark(shark):
     strokeWeight(3)
+    stroke(0)
     line(shark.x, shark.y, shark.x + 10, shark.y + 20)
     line(shark.x, shark.y, shark.x - 10, shark.y + 20)
     circle(shark.x, shark.y, shark.size)
