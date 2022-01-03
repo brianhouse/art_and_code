@@ -111,6 +111,8 @@ could have a list of vectors, and then combine them right before moving
 obvi use vectors in the implementation
 
 
+frameCount instead of millis, makes exact timing easier
+
 
 it's all just ifs, loops, variables, and lists
 
@@ -139,6 +141,18 @@ the key thing that is not understood is lists. Recombination didn't do that.
 
 
 more for content on complex systems is here: https://natureofcode.com/book/chapter-6-autonomous-agents/
+
+global function to turn on gravity
+
+examples are a pin ball machine and the current shark thing
+
+code reference with all the possibilities
+
+agent.can_collide(other_agent)
+agent.can_collide(list_of_agents)
+agent.can_collide(a_wall)
+agent.can_collide(list_of_walls)
+
 
 
 ### general
@@ -170,6 +184,11 @@ Separate "Context", "Code", and "Concept" documents for each one? Concept being 
 
 
 next edition, go deeper on NN and simulation
+
+//
+
+need a mechanism for taking attendance
+need part of the rubric to turning it in on time
 
 
 ### idea
@@ -212,6 +231,9 @@ interface
 definitely zero on on those concept descriptions, maybe make it explicit that it's graded separately
 
 flip the classroom: have them all review lecture notes as homework and come up with additional examples (will have to split code and context discussions)
+
+the desk crit thing is a great structure, do that.
+
 
 
 #####

@@ -12,6 +12,7 @@ Information for making screen recordings:
 
 
 
+
 ### Helper code
 
 Download [sim_helpers.py](sim_helpers.py) and add it to your sketch. Add this as your first line:
