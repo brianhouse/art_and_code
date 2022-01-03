@@ -1,6 +1,3 @@
-
-Do small group screen sharing for intermediate feedback
-
 ## Organization
 
 ## Units
