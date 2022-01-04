@@ -102,3 +102,10 @@ Contemporary artists and independent game designers have taken a more reflective
   <img src="context/10_cheng_emissaries.jpg" width=400 /><br />
   Ian Cheng, <i>Emissaries</i> (2015–2017) <a href="https://www.moma.org/calendar/exhibitions/3656">video</a>
 </p>
+
+### Response
+
+Describe an example of a emergence in art or in the world. Provide a link if possible.
+
+
+##### Ready to code? Preview the introduction we'll do in class [here](code.md).

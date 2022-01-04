@@ -67,3 +67,11 @@ Some others:
   <img src="context/9_lofgren.png" width=400 /><br />
   Tobias Lofgren (2018)
 </p>
+
+
+### Response
+
+Describe an example of glitch in art or in the world. Provide a link if possible.
+
+
+##### Ready to code? Preview the introduction we'll do in class [here](code.md).

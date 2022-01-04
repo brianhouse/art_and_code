@@ -98,3 +98,9 @@ _Listening Post_ (2002–2006), by Ben Rubin and Mark Hansen, is room-scale inst
 Finally, John Cayley is a pioneer of using digital algorithms to produce innovative forms writing, having made work on floppy disk in the early 90s. His more recent work shifts the focus from writing to _reading_ in an algorithmic way: [_The Readers_](http://thereadersproject.org) (2009) includes a series of algorithmic "readers" that make their way through text in ways other than linear, changing things as they go.
 
 Ok one more: [Computer Generated Olive Garden Commercial](https://twitter.com/keatonpatti/status/1006961202998726665?lang=en)
+
+### Response
+
+If you have 10 different words, how many different sentences can you make?
+
+##### Ready to code? Preview the introduction we'll do in class [here](code.md).
