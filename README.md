@@ -25,10 +25,13 @@ Introduction to the form and aesthetics of digital media. By writing code to gen
 ### Sketches
 This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **emergence**, and **interface**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
-Sketches cumulatively account for 90% of your final grade. They must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4) *prior* to the crit—no late work is accepted, and you must attend the crit for your work to be graded. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
+Sketches cumulatively account for 80% of your final grade. They must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4) *prior* to the crit—no late work is accepted, and you must attend the crit for your work to be graded. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
 
 ### Survey presentations
 Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
+
+### Unit introductions
+At the beginning of each unit, there is a (very short) introduction to read; responses to this reading on classroom constitute 10% of your final grade.
 
 
 ## Policies
@@ -63,10 +66,9 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 
 ### Week 1
 
-#### Wednesday 1/19
+#### Wednesday 1/19 — ONLINE
 - Introduction
 - In-class Sketch #0: Algorithm
-- Going forward, use the [Python for Processing Cheat Sheet](resources/processing_cheat_sheet.md) for reference
 - **For next class**:
     - [Get set up](units/0_algorithm/getting_started.md) with Python Mode for Processing
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0)
@@ -78,6 +80,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
 - [Intro to coding with coordinates](units/1_coordinates/code.md)
+- Going forward, use the [Python for Processing Cheat Sheet](resources/processing_cheat_sheet.md) for reference
 - Begin [Sketch #1](units/1_coordinates/assignment.md)
 - **For next class**:
     - Read about [coordinates](units/1_coordinates/context.md) and post a response
