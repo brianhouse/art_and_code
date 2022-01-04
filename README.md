@@ -79,7 +79,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 #### Monday 1/24 — ONLINE
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
-- [Intro to coding with coordinates](units/1_coordinates/code.md)
+- [Coding with coordinates](units/1_coordinates/code.md)
 - Going forward, use the [Python for Processing Cheat Sheet](resources/processing_cheat_sheet.md) for reference
 - Begin [Sketch #1](units/1_coordinates/assignment.md)
 - **For next class**:
@@ -96,7 +96,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 #### Monday 1/31
 - Explanation of [crit guidelines](resources/crit_guidelines.md)
 - Crit Sketch #1
-- [Intro to coding with repetition](units/2_repetition/code.md)
+- [Coding with repetition](units/2_repetition/code.md)
 - **For next class**:
     - Read about [repetition](units/2_repetition/context.md) and post a response
 
@@ -112,7 +112,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 
 #### Monday 2/7
 - Crit Sketch #2
-- [Introduction to coding indeterminacy](units/3_indeterminacy/code.md)
+- [Coding indeterminacy](units/3_indeterminacy/code.md)
 - **For next class**:
     - Read about [indeterminacy](units/3_indeterminacy/context.md) and post a response
 
@@ -128,14 +128,14 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 #### Monday 2/14
 - Crit Sketch #3
 - [Getting started with the terminal](units/4_nonlinearity/getting_started.md)
-- [Introduction to coding nonlinearity](units/4_nonlinearity/code.md) (text input)
+- [Coding nonlinearity](units/4_nonlinearity/code.md) (text input)
 - **For next class**:
     - Play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
     - Read about [nonlinearity](units/4_nonlinearity/context.md) and post a response
 
 #### Wednesday 2/16
 - Discussion of nonlinearity
-- [Introduction to coding nonlinearity](units/4_nonlinearity/code.md) continued (functions)
+- [Coding nonlinearity](units/4_nonlinearity/code.md) continued (functions)
 - Begin [Sketch #4](units/4_nonlinearity/assignment.md)
 
 
@@ -157,7 +157,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 
 #### Wednesday 3/2
 - Crit Sketch #4
-- [Intro to coding with recombination](units/5_recombination/code.md)
+- [Coding with recombination](units/5_recombination/code.md)
 - **For next class**:
     - Read about [recombination](units/5_recombination/context.md) and post a response
 
@@ -189,7 +189,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 10
 
 #### Monday 3/28
-- [Intro to coding glitch](units/6_glitch/code.md)
+- [Coding glitch](units/6_glitch/code.md)
 - **For next class**:
     - Read about [glitch](units/6_glitch/context.md) and post a response
 
@@ -203,7 +203,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 
 #### Monday 4/4
 - Crit Sketch #6
-- [Intro to coding emergence](units/7_emergence/code.md)
+- [Coding emergence](units/7_emergence/code.md)
 - **For next class**:
     - Read about [emergence](units/7_emergence/context.md) and post a response
 
@@ -227,7 +227,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 
 #### Monday 4/18
 - Crit Sketch #7
-- [Intro to coding interfaces](units/8_interface/code.md)
+- [Coding interfaces](units/8_interface/code.md)
 - **For next class**:
     - Read about [interface](units/8_interface/context.md) and post a response
 

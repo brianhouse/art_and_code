@@ -1,11 +1,10 @@
 # Python Mode for Processing Cheat Sheet
 
-Arguments to functions can be numbers or variables, and the variables can be named anything—the order is what matters. Below, the arguments are named descriptively in order to explain how the function works.
+Arguments to functions can be numbers or variables. Below, the arguments are named descriptively in order to explain how the function works, but remember that variables can be named anything—the order is what matters.
 
 ### Canvas
 - `size(width, height)` set canvas size in pixels
 - `background(color)` set window background color
-- `pixelDensity(2)` make all lines smoother on some displays
 
 
 ### Shapes
@@ -27,9 +26,11 @@ endShape()
 - curved shapes
 ```py
 beginShape() # start a curved shape
+curveVertex(x1, y1)
 curveVertex(x1, y1) # add an anchor point
 curveVertex(x2, y2) # add another anchor point
 curveVertex(x3, y3) # etc
+curveVertex(x3, y3)
 endShape()
 # The first and last curveVertex are not shown,
 # they just determine the initial angle.
@@ -50,42 +51,56 @@ endShape()
 - `fill(100, 200, 0, 50)` 4 arguments is color + opacity
 
 
+### Comparison operators
+- `==` equal to
+- `>` greater than
+- `<` lesser than
+- `>=` greater than or equal to
+- `<=` lesser than or equal to
+- `!=` not equal to
+
+
+### Numeric operators
+- `+=` increment
+- `-=` decrement
+
+
 ### Structure
 - loops
 ```py
     for i in range(n):
-        # do stuff n times
         # i is 0 to n-1
+        do stuff n times
 ```
 - functions
 ```py
     # declare a function
     def my_function():
-        # do stuff
+        do stuff
 
     # call the function        
     my_function()
 ```
 - conditionals
-```
+```py
     if some condition:
-        # do stuff
+        do stuff
     elif some other condition:
-        # do other stuff
+        do other stuff
     else:
-        # do default stuff
+        do default stuff
 ```
 - complex conditions
 ```py
     if some condition and some other condition:
-        # do stuff
+        do stuff
 
     if some condition or some other condition:
-        # do stuff        
+        do stuff        
 ```
 
 
-### Strings
+<!-- ### Strings
 - `my_string = my_string.lower()` return a lowercase version of the string
 - `my_string = my_string.upper()` return an uppercase version of the string
 - `my_string = my_string.capitalize()` return a string with the first letter capitalized
@@ -98,7 +113,7 @@ endShape()
 - `num_characters = len(my_string)` get the number of characters in a string
 - `if "phrase" in my_string:` test whether a string is within another string
 - `if "phrase" in my_list:` test whether a string is within a list
-- `words = list(set(words))` convert a list with repeats into a list with only unique items
+- `words = list(set(words))` convert a list with repeats into a list with only unique items -->
 
 
 ### Lists
@@ -111,26 +126,19 @@ endShape()
 - `if my_variable in my_list` test whether a variable matches an item in the list
 
 
-### Dictionaries
-- `my_dictionary = {}` create an empty dictionary
-- `my_dictionary = {'name': "Brian", 'hobby': "skiing"}` create a dictionary with items
-- `my_dictionary['name']` access a dictionary item
-- `my_dictionary['skill'] = "programming"` add an item to a dictionary
-
-
 ### Random
 - `random(low, high)` generates a number greater than or equal to _low_ and less than _high_
 - `random(high)` generates a number greater than or equal to 0 less than _high_
 - flip a coin
 ```py
-if random(1) > .5:
-    do something
+if random(100) < 50:
+    50% chance of doing this
 else:
-    do something else
+    50% chance of doing this
 ```
 - `item = choice(my_list)` select a random item from a list (requires `from random import choice`)
-- `shuffle(my_list)` shuffle a list in place (requires `from random import shuffle`)
-(requires `from random import shuffle`)
+- `shuffle(my_list)` shuffle a list in place (requires `from random import shuffle` at the top of the sketch)
+
 
 
 ### Event handlers
@@ -150,18 +158,6 @@ else:
 - `width` the width of the canvas
 - `height` the height of the canvas
 
-
-### Comparison operators
-- `==` equal to
-- `>` greater than
-- `<` lesser than
-- `>=` greater than or equal to
-- `<=` lesser than or equal to
-- `!=` not equal to
-
-### Numeric operators
-- `+=` increment
-- `-=` decrement
 
 ### Images
 - `image = loadImage("image.png")` load data from an image file into a variable

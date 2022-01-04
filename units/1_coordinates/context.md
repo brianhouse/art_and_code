@@ -76,4 +76,10 @@ To make her images, Lillian would sketch the images on graph paper and then [enc
   <a href="http://lillian.com/1972-enigma-4-min-20-sec/">Watch the video</a> (trigger warning for people sensitive to flashing lights)<br />
 </p>
 
-Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore below.
+Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore.
+
+
+### Response
+
+
+Ready to code? Preview the introduction we'll do in class [here](code.md).
