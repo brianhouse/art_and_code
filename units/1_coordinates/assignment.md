@@ -41,3 +41,11 @@ Here's some inspiration from past semesters, with the original and reinterpreted
   <img src="examples/elsa_hanson_2.png" width="400" /><br />
   Elsa Hanson, <i>Blurred Gloucester Harbor</i> (2020)<br />
 </p>
+
+<br /><br />
+
+<p>
+  <img src="examples/owen_wolff_monk_by_the_sea_orig.jpg" width="400" align="left" />
+  <img src="examples/owen_wolff_monk_by_the_sea.png" width="400" /><br />
+  Owen Wolff, <i>Monk by the Sea</i> (2021)<br />
+</p>

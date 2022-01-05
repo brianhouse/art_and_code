@@ -1,0 +1,15 @@
+INPUT_FILENAME=$1
+OUTPUT_FILENAME=${INPUT_FILENAME%.*}.gif
+CROP_LEFT=0
+CROP_TOP=0
+CROP_RIGHT=0
+CROP_BOTTOM=0
+OUTPUT_WIDTH=400
+OUTPUT_FPS=15
+MAX_COLORS=32
+#
+ffmpeg -i $INPUT_FILENAME \
+-vf "fps=$OUTPUT_FPS,crop=iw-($CROP_LEFT+$CROP_RIGHT):ih-($CROP_TOP+$CROP_BOTTOM):$CROP_LEFT:$CROP_TOP,scale=$OUTPUT_WIDTH:-1:flags=lanczos,split[s0][s1];[s0]palettegen=max_colors=$MAX_COLORS[p];[s1][p]paletteuse=dither=bayer" \
+-loop 0 $OUTPUT_FILENAME
+
+# ffplay -i $INPUT_FILENAME  -vf "crop=iw-($CROP_LEFT+$CROP_RIGHT):ih-($CROP_TOP+$CROP_BOTTOM):$CROP_LEFT:$CROP_TOP"

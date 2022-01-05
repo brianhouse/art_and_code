@@ -7,25 +7,21 @@ Submit your code along with a [3-sentence description](../../resources/descripti
 ### Examples
 
 <p>
-  <img src="examples/jake_warmflash_1.png" width="400" align="left" />
-  <img src="examples/jake_warmflash_2.png" width="400" /><br />
-  Jake Warmflash, <i>Hair Dye</i> (2020)<br />
+  <img src="examples/eleanor_trombla.png" width="400" /><br />
+  Eleanor Trombla (2021)<br />
 </p>
 
-
-<br /><br />
-
-
 <p>
-  <img src="examples/elsa_hanson_1.png" width="400" align="left" />
-  <img src="examples/elsa_hanson_2.png" width="400" /><br />
-  Elsa Hanson, <i>What's Cyber?</i> (2020)<br />
+  <img src="examples/marcelo_bond_rewound.png" width="400" /><br />
+  Marcelo Bond, <i>Rewound</i> (2021)<br />
 </p>
 
-
-<br /><br />
+<p>
+  <img src="examples/renz_johnson_up_the_street.png" width="400" /><br />
+  Renz Johnson, <i>Up the Street</i> (2021)<br />
+</p>
 
 <p>
-  <img src="examples/alex_perez.png" width="400" /><br />
-  Alex Perez, <i>Thermal Beauty</i> (2020)<br />
+  <img src="examples/tal_jones_breath.png" width="400" /><br />
+  Tal Jones, <i>Breath</i> (2021)<br />
 </p>

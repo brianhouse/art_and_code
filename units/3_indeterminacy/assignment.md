@@ -6,23 +6,24 @@ In the spirit of generative art, turn in three versions of your piece produced b
 
 Turn in your .pyde file as well as your three versions. In addition, include a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that explains how you'd like us to approach the result.
 
-<!--
 ### Examples
 
-One approach that you might take is to look for inspiration in complex textures from nature—can you use loops+random to make an abstract interpretation of, for example, a pond with ripples and vegetation? Clouds and a rainstorm? A forest? Fire? A swarm of insects?
-
-
 <p>
-  <img src="examples/stefan_baird_ocean.png" width="400" />
-  <br />Stephan Baird, <i>Ocean</i> (2020)
+  <img src="examples/alex_skiles_stars.png" width="400" /><br />
+  Alex Skiles, <i>Stars</i> (2021)<br />
 </p>
 
 <p>
-  <img src="examples/kendal_jones_primary_cola.png" width="400" />
-  <br />Kendal Jones, <i>Primary Cola</i> (2020)
+  <img src="examples/carly_leandro_flowers.png" width="400" /><br />
+  Carly Leandro, <i>Flowers</i> (2021)<br />
 </p>
 
 <p>
-  <img src="examples/ericka_eyton_supernova.png" width="400" />
-  <br />Ericka Eyton, <i>Supernova</i> (2020)
-</p> -->
+  <img src="examples/carson_reader_line_art.png" width="400" /><br />
+  Carson Reader, <i>Line Art</i> (2021)<br />
+</p>
+
+<p>
+  <img src="examples/isha_elboctorcy_miya.png" width="400" /><br />
+  Isha Elboctorcy, <i>Miya</i> (2021)<br />
+</p>
