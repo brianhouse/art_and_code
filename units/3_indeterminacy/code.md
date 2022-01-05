@@ -214,13 +214,44 @@ for i in range(100):
   <img src="code/canvas_14.png" width=500 /><br />
 </p>
 
-Now all the ellipses are all up front. This technique is a simple way to create a sense of composition.
+Now all the ellipses are all up front. This technique is a simple way to create a sense of composition with otherwise randomly distributed shapes.
 
-### Random with nested loops
+
+### Random with `i` and nested loops
 
 In all of these examples, we've been ignoring `i`. But we can certainly combine `random()` with the techniques we used to organize shapes via loops. This is one way to create tension between regularity and variability, such as in the work of Vera Molnár.
 
-First consider a regular grid:
+For example, consider this code, which uses `i` to create a row of circles across the canvas. They're only one pixel apart, but they have a diameter of 5, so the result appears as just a line:
+```py
+size(640, 480)
+background(255)
+noStroke()
+fill(0, 100)
+
+for i in range(640):
+    circle(i, 240, 5)
+```
+<p align="center">
+  <img src="code/canvas_20.png" width=500 /><br />
+</p>
+
+Now let's randomly vary the parameters a bit:
+```py
+size(640, 480)
+background(255)
+noStroke()
+fill(0, 100)
+
+for i in range(640):
+    circle(i, 240 + random(-5, 5), random(5))
+```
+<p align="center">
+  <img src="code/canvas_21.png" width=500 /><br />
+</p>
+
+We still have a "line", but now it's a more expressive one, with a sense of texture.
+
+This also, of course, works in two dimensions. First consider a regular grid:
 ```py
 size(640, 480)
 background(255)
@@ -277,7 +308,7 @@ Consider the following construction:
 ```py
 size(640, 480)
 
-if random(1) > .5:      # flip the coin
+if random(100) < 50:      # flip the coin
     fill(255, 0, 0)     # this happens 50% of the time
 else:
     fill(0, 0, 255)     # this happens 50% of the time
@@ -285,7 +316,7 @@ else:
 square(320, 240, 100)
 ```
 
-This is called a random conditional, and it takes the form of an `if` statement. Notice how there are two blocks of code—one with a red fill and one with a blue fill—and only _one_ of them will actually run. Which one runs depends on whether `random()` returns a value that is above or below .5. We can read this like an English sentence: "if a random number between 0 and 1 is above .5, make it red, else make it blue."
+This is called a random conditional, and it takes the form of an `if` statement. Notice how there are two blocks of code—one with a red fill and one with a blue fill—and only _one_ of them will actually run. Which one runs depends on whether `random()` returns a value that is above or below 50. We can read this like an English sentence: "if a random number between 0 and 100 is below 50, make it red, else make it blue."
 
 We'll cover conditionals in detail in our next unit, but previewing it here will give us some flexibility to produce more radically different versions of the output each time we run the code.
 

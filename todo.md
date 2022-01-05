@@ -1,10 +1,7 @@
 ## Todo
 
-there's some examples on the assignment pages that should go in code.md
-- examples all
-
 
 ### Content
-- go through Next mods
-- recombination lectures and examples
-- emergence lectures and examples
+- nonlinearity expansion?
+- recombination with new library
+- emergence with new library

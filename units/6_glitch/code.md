@@ -27,11 +27,11 @@ Processing makes loading an image into the sketch very straightforward. To begin
   <img src="code/canvas_2_.png" width=400 /><br />
 </p>
 
-Now, we use the `loadImage()` function to load the image data into a new variable (`puffin`). To display the image, we use the `image()` function, which takes the image data variable as an argument along with an x and y coordinate at which to draw it.
+Now, we use the `loadImage()` function to load the image data into a new variable (`source`). To display the image, we use the `image()` function, which takes the image data variable as an argument along with an x and y coordinate at which to draw it.
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")    # load the image into a variable
+source = loadImage("puffin.png")    # load the image into a variable
 image(puffin, 0, 0)                 # draw the image to the canvas
 ```
 
@@ -48,8 +48,8 @@ Once we know our image is being loaded correctly, we're not going to display it 
 The `image.get()` function gets the pixel data from a particular coordinate. For example:
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")    # load the image into a variable
-pixel = puffin.get(0, 0)
+source = loadImage("puffin.png")    # load the image into a variable
+pixel = source.get(0, 0)
 print(pixel)
 ```
 ```
@@ -58,8 +58,8 @@ print(pixel)
 This number is the raw number that actually contains the R, G, B values for the pixel at 0, 0. We can access the individual components like this:
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
-pixel = puffin.get(0, 0)
+source = loadImage("puffin.png")
+pixel = source.get(0, 0)
 r = red(pixel)
 g = green(pixel)
 b = blue(pixel)
@@ -73,10 +73,10 @@ A lot can be done with this data. For our purposes, let's begin by reconstructin
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 for y in range(400):
     for x in range(400):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)        
@@ -93,10 +93,10 @@ Now we can start to play around. For example, we could mess with the colors, put
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 for y in range(400):
     for x in range(400):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)        
@@ -112,10 +112,10 @@ Or invert the image by subtracting the values from 255:
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 for y in range(400):
     for x in range(400):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)        
@@ -131,10 +131,10 @@ We can also play around with shifting the position of pixels. For example, we co
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 for y in range(400):
     for x in range(400):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)        
@@ -191,11 +191,11 @@ How is this helpful with our image manipulations? Because maybe we don't want to
 ```py
 size(400, 400)
 background(255)  # adding a white background
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 3):      # every third pixel vertically
     for x in range(0, 400, 3): # every third pixel horizontally
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -212,11 +212,11 @@ This comes in handy if we want to use some bigger shapes. For example, instead o
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 5):      # every fifth pixel vertically
     for x in range(0, 400, 5): # every fifth pixel horizontally
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -233,11 +233,11 @@ Pushing this technique further, let's use circles instead of squares, spread the
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 10):      # every 10th pixel vertically
     for x in range(0, 400, 10): # every 10th pixel horizontally
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -256,11 +256,11 @@ For a more impressionistic variation, let's make them closer again, increase the
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 5):      # every fifth pixel vertically
     for x in range(0, 400, 5): # every fifth pixel horizontally
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -278,11 +278,11 @@ Or, let's make line segments move off in random directions:
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 5):
     for x in range(0, 400, 5):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -298,11 +298,11 @@ This can start to get very experimental. Here, we're using the red value to cont
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 5):
     for x in range(0, 400, 5):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -325,11 +325,11 @@ For example, using modulo, we can change the code every 25 pixels:
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 1):
     for x in range(0, 400, 1):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -349,11 +349,11 @@ To have a more gradual effect, we could calculate how far along we are from one 
 ```py
 size(400, 400)
 background(255)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 
 for y in range(0, 400, 1):
     for x in range(0, 400, 1):
-        pixel = puffin.get(x, y)
+        pixel = source.get(x, y)
         r = red(pixel)
         g = green(pixel)
         b = blue(pixel)
@@ -380,17 +380,17 @@ To start with, we're going to grab two pixels instead of just one. The second pi
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 offset = 50
 for y in range(400):
     for x in range(400):
 
-        pixel_1 = puffin.get(x, y)
+        pixel_1 = source.get(x, y)
         r_1 = red(pixel_1)
         g_1 = green(pixel_1)
         b_1 = blue(pixel_1)
 
-        pixel_2 = puffin.get(x + offset, y)
+        pixel_2 = source.get(x + offset, y)
         r_2 = red(pixel_2)
         g_2 = green(pixel_2)
         b_2 = blue(pixel_2)
@@ -407,18 +407,18 @@ However, another thing we could try is to vary the offset. For example, let's ch
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 offset = 0
 for y in range(400):
     offset = random(100)
     offset = int(offset)  # do this to avoid an error
     for x in range(400):
-        pixel_1 = puffin.get(x, y)
+        pixel_1 = source.get(x, y)
         r_1 = red(pixel_1)
         g_1 = green(pixel_1)
         b_1 = blue(pixel_1)
 
-        pixel_2 = puffin.get(x + offset, y)
+        pixel_2 = source.get(x + offset, y)
         r_2 = red(pixel_2)
         g_2 = green(pixel_2)
         b_2 = blue(pixel_2)
@@ -442,19 +442,19 @@ if random(100) < 10:
 Let's use this technique to control the selection of a new offset:
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 offset = 0
 for y in range(400):
     if random(100) < 10:
         offset = random(50)   # set to a lower value to tone down the effect
         offset = int(offset)  # do this to avoid an error
     for x in range(400):
-        pixel_1 = puffin.get(x, y)
+        pixel_1 = source.get(x, y)
         r_1 = red(pixel_1)
         g_1 = green(pixel_1)
         b_1 = blue(pixel_1)
 
-        pixel_2 = puffin.get(x + offset, y)
+        pixel_2 = source.get(x + offset, y)
         r_2 = red(pixel_2)
         g_2 = green(pixel_2)
         b_2 = blue(pixel_2)
@@ -471,14 +471,14 @@ Notice that we used a conditional statement. Since x and y are always incrementi
 
 ```py
 size(400, 400)
-puffin = loadImage("puffin.png")
+source = loadImage("puffin.png")
 offset = 0
 for y in range(400):
     if random(100) < 10:
         offset = random(50)   # set to a lower value to tone down the effect
         offset = int(offset)  # do this to avoid an error
     for x in range(400):
-        pixel_1 = puffin.get(x, y)
+        pixel_1 = source.get(x, y)
         r_1 = red(pixel_1)
         g_1 = green(pixel_1)
         b_1 = blue(pixel_1)
@@ -490,7 +490,7 @@ for y in range(400):
             fuzz = random(50)
             fuzz = int(fuzz)
 
-        pixel_2 = puffin.get(x + offset, y + fuzz)
+        pixel_2 = source.get(x + offset, y + fuzz)
         r_2 = red(pixel_2)
         g_2 = green(pixel_2)
         b_2 = blue(pixel_2)

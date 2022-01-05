@@ -1,6 +1,6 @@
 # Artwork Description Guidelines
 
-An artist's description is a short text that accompanies your work and gives the viewer an idea of how it should be should approached. Giving some background information, adding context, revealing your artistic intent, or giving special instructions might all be meaningful purposes this can serve. For this class, the description should be short—something like two or three sentences.
+An artwork description is a short text that accompanies your work and gives the viewer an idea of how it should be should approached. Giving some background information, adding context, revealing your artistic intent, or giving special instructions might all be meaningful purposes this can serve. For this class, the description should be short—something like two or three sentences.
 
 Remember that your artwork should also have a title, which is another way to position how your piece will be understood.
 

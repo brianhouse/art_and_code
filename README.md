@@ -101,7 +101,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
     - Read about [repetition](units/2_repetition/context.md) and post a response
 
 #### Wednesday 2/2
-- Artist presentations 1
+- Survey presentations 1
 - Discussion of repetition
 - Explanation of [rubric](resources/rubric.md)
 - Begin [Sketch #2](units/2_repetition/assignment.md)
@@ -117,7 +117,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
     - Read about [indeterminacy](units/3_indeterminacy/context.md) and post a response
 
 #### Wednesday 2/9
-- Artist presentations 2
+- Survey presentations 2
 - Discussion of indeterminacy
 - Begin [Sketch #3](units/3_indeterminacy/assignment.md)
 - Questions and work time
@@ -142,7 +142,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 6
 
 #### Monday 2/21
-- Artist presentations 3
+- Survey presentations 3
 - Questions and work time
 
 #### Wednesday 2/23
@@ -152,7 +152,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 7
 
 #### Monday 2/28
-- Artist presentations 4
+- Survey presentations 4
 - Play test
 
 #### Wednesday 3/2
@@ -170,7 +170,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 - Questions and work time
 
 #### Wednesday 3/9
-- Artist presentations 5
+- Survey presentations 5
 - Review, questions, and work time
 
 
@@ -180,7 +180,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 - Desk crits and work time
 
 #### Wednesday 3/16
-- Artist presentations 6
+- Survey presentations 6
 - Crit Sketch #5
 
 
@@ -194,7 +194,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
     - Read about [glitch](units/6_glitch/context.md) and post a response
 
 #### Wednesday 3/30
-- Artist presentations 7
+- Survey presentations 7
 - Discussion of glitch
 - Begin [Sketch #6](units/6_glitch/assignment.md)
 
@@ -208,7 +208,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
     - Read about [emergence](units/7_emergence/context.md) and post a response
 
 #### Wednesday 4/6
-- Artist presentations 8
+- Survey presentations 8
 - Discussion of emergence
 - Begin [Sketch #7](units/7_emergence/assignment.md)
 - Questions and work time
@@ -216,7 +216,7 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### Week 12
 
 #### Monday 4/11
-- Artist presentations 9
+- Survey presentations 9
 - Review, questions, and work time
 
 #### Wednesday 4/13

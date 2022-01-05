@@ -255,9 +255,9 @@ To summarize:
 
 <!-- add to face -->
 
-### Curves
+### Complex shapes and curves
 
-We'll learn how to draw one more thing, although this one is slightly more complicated because it involves multiple lines of code. There are many ways to draw curves in Processing, but the most flexible is by defining a shape.
+While circles, squares, and the like are great, we can also draw arbitrary shapes. This is slightly more complicated because it involves multiple lines of code.
 
 To start a shape, we use the function `beginShape()`; to end it, we use `endShape()`:
 
@@ -268,9 +268,33 @@ beginShape()
 endShape()
 ```
 
-By itself, these lines don't do anything. But in between them, we'll add series of anchor points, and  Processing will connect them together in a curve.
+By itself, these lines don't do anything. But in between them, we'll add series of anchor points, and  Processing will connect them together into a shape.
 
-To make those points, we use `curveVertex()`, which just takes x and y coordinates as arguments.
+```py
+size(600, 400)
+beginShape()
+vertex(174, 114)
+vertex(246, 140)
+vertex(305, 58)
+vertex(345, 167)
+vertex(467, 109)
+vertex(355, 220)
+vertex(439, 350)
+vertex(279, 226)
+vertex(105, 240)
+vertex(223, 157)
+vertex(174, 114)  
+endShape()
+```
+<p align="center">
+  <img src="code/canvas_14.png" width=500 /><br />
+</p>
+
+
+
+Although there are many ways to draw curves in Processing, the most flexible way works very similarly.
+
+To make curved lines instead of straight ones, we use `curveVertex()`, which also just takes x and y coordinates as arguments.
 
 ```py
 size(600, 400)
@@ -293,7 +317,7 @@ endShape()
   <img src="code/canvas_13.png" width=500 /><br />
 </p>
 
-It can be a little hard to understand the relationship between the curve and the `curveVertex`s. To visualize it, let's add some code to draw points at each of the anchors so we can see what's going on:
+It can be a little hard to understand the relationship between the curve and the `curveVertex`s. To visualize it, let's add some code to draw points (using a function we haven't used yet, `point()`) at each of the anchors so we can see what's going on:
 
 ```py
 size(600, 400)
