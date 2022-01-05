@@ -11,7 +11,7 @@ Information for making screen recordings:
 ### Examples
 
 <p>
-  <img src="examples/julie_goldberg_moth_soirée.gif" width="400" /><br />
+  <img src="examples/julie_goldberg_moth_soiree.gif" width="400" /><br />
   Julie Goldberg, <i>Moth Soirée</i> (2021)<br />
 </p>
 
