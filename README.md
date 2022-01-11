@@ -2,7 +2,7 @@
 
 Monday / Wednesday 8:50–11:20, Fields 205  
 Course materials on [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4)  
-Online meetings (first two weeks only): https://zoom.us/my/digitalmediastudio  
+Online meetings (first two classes only): https://zoom.us/my/digitalmediastudio  
 
 Prof. Brian House (he/him), [brianhouse@lclark.edu](mailto:brianhouse@lclark.edu)  
 Office hours W 3:15–4:45
@@ -59,6 +59,16 @@ Please refer to the policy on [Academic Integrity](https://docs.lclark.edu/under
 
 ### Settler Responsibility
 The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Clackamas, Tumwater, Watalala bands of the Chinook, the Tualatin Kalapuya, and other indigenous nations of the Columbia River, and we are here because of the sacrifices forced upon them. Furthermore, we are at an institution named after white colonizers in a city with a racist history. As artists working in Digital Media, we must be aware of and resist the many ways computation capitalizes upon and perpetuates violence toward marginalized people.
+
+### COVID Health and Safety Expectations
+
+The College’s health and safety guidelines are applied in all settings across campus and comply with county guidelines. We each share responsibility to keep our community healthy by adhering to the following expectations:
+
+Wear a face covering when inside, even when physical distancing can be maintained, and outside when physical distancing cannot be maintained.
+Stay at home if you have any of the following COVID symptoms, including cough, fever or chills, shortness of breath, difficulty breathing, muscle pain, headache, sore throat, new loss of taste or smell, diarrhea, nausea, vomiting, nasal congestion, or runny nose.
+The Art Department reserves the right to ask you to leave the studios if you exhibit symptoms. If you are present in the studios without a mask, we will remind you to put on a mask immediately or leave class. If necessary, masks may be removed for a short duration for drinking, but please minimize these temporary removals and do not consume food during class time.
+
+If you are experiencing COVID symptoms DO NOT come to campus. Information on COVID symptoms can be found on the LC Health and Safety Expectations webpage and on the CDC webpage.    
 &nbsp;  
 &nbsp;  
 
