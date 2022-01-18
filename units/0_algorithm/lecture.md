@@ -1,5 +1,7 @@
 ## Hello
 
+<!-- COVID: we'll need two sheets of paper and a pen -->
+
 **Take 2min and make a drawing, keep it simple, it can be figurative or abstract, and then set it aside.**
 
 Let's go around and see who's here: name/pronouns + year + major
@@ -30,6 +32,7 @@ How do you come up with a recipe?
 That's exactly how I want you to think about programming. You're always borrowing _code_—ie, the pieces of a program—using libraries, looking stuff up, and it's lots and lots and lots of trial and error.
 
 So where does that get us? What's possible with programming? Here are some more or less random examples of artists making things out of code:
+- [Casey Reas](context/0_casey_reas_1.jpg) / [2](context/0_casey_reas_2.jpg)
 - [Chris Milk](context/1_chris_milk_treachery_of_sanctuary.mp4)
 - [Nicole Aptekar](https://www.instagram.com/nicole.aptekar/)
 - [Brenna Murphy](context/3_murphy_lattice_domains.pdf)
@@ -57,6 +60,7 @@ So let's give it a shot.
 
 - Take the drawing you made
 - Get an index card
+https://docs.google.com/document/d/1r4HNGt2tZdnZpsdK-AeO5vEqsfm7R7EF1bJJ5eJtGpQ/edit?usp=sharing
 - On the card I want you to write, in words, a series of instructions that, when followed by someone else, will result in the drawing
 ...
 - Now we're going to swap
