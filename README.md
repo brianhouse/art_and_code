@@ -76,7 +76,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 ### Week 1
 
-#### Wednesday 1/19 — ONLINE
+#### Wednesday 1/19 — ZOOM
 - Introduction
 - In-class Sketch #0: Algorithm
 - **For next class**:
@@ -86,7 +86,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 ### Week 2
 
-#### Monday 1/24 — ONLINE
+#### Monday 1/24 — ZOOM
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
 - [Coding with coordinates](units/1_coordinates/code.md)
@@ -95,7 +95,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 - **For next class**:
     - Read about [coordinates](units/1_coordinates/context.md) and post a response
 
-#### Wednesday 1/26 — FIELDS 205
+#### Wednesday 1/26 — ZOOM
 - Discussion of coordinates
 - Explanation of [artist descriptions](resources/description_guidelines.md)
 - Review, questions, and work time
@@ -103,14 +103,14 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 ### Week 3
 
-#### Monday 1/31
+#### Monday 1/31 — ZOOM
 - Explanation of [crit guidelines](resources/crit_guidelines.md)
 - Crit Sketch #1
 - [Coding with repetition](units/2_repetition/code.md)
 - **For next class**:
     - Read about [repetition](units/2_repetition/context.md) and post a response
 
-#### Wednesday 2/2
+#### Wednesday 2/2 — ZOOM
 - Survey presentations 1
 - Discussion of repetition
 - Explanation of [rubric](resources/rubric.md)
@@ -120,7 +120,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 ### Week 4
 
-#### Monday 2/7
+#### Monday 2/7 — Fields 205
 - Crit Sketch #2
 - [Coding indeterminacy](units/3_indeterminacy/code.md)
 - **For next class**:

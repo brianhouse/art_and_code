@@ -49,6 +49,8 @@ Gridded space became an important tool in modernist print [design](https://www.r
   Piet Mondrian, <i>Broadway Boogie Woogie</i> (1942)<br />
 </p>
 
+<!-- art criticism: krauss_grids.pdf -->
+
 
 ### Digital
 
