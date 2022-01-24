@@ -5,7 +5,7 @@
 Spatial coordinates work a little differently with computers than you might be used to from math class. Rather than `0, 0` (aka the "origin") being in the center of the screen, it represents the top-left corner, and as the `y` value gets larger, we move further down:
 
 <p align="center">
-  <img src="code/grid.svg" width=500 /><br />  
+  <img src="code/grid.png" width=500 /><br />  
 </p>
 
 
