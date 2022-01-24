@@ -74,4 +74,4 @@ More recently, Netflix created a special episode of the dystopian series Black M
 Describe another example of a nonlinear structure in art or in the world. Provide a link if possible. If you can't find one, describe a _linear_ structure instead.
 
 
-##### Ready to code? Preview the introduction we'll do in class [here](code.md).
+##### The introduction to coding with this unit is [here](code.md).

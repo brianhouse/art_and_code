@@ -79,4 +79,4 @@ Describe another example of indeterminacy in the world. Provide a link if possib
 
 
 
-##### Ready to code? Preview the introduction we'll do in class [here](code.md).
+##### The introduction to coding with this unit is [here](code.md).

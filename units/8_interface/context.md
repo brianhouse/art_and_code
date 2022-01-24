@@ -80,4 +80,4 @@ Additionally, in their series [_Black Gooey Universe_](https://americanartist.us
 Describe an interface that you use on the computer and what you like or do not link about it.
 
 
-##### Ready to code? Preview the introduction we'll do in class [here](code.md).
+##### The introduction to coding with this unit is [here](code.md).

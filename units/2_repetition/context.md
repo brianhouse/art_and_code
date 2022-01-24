@@ -87,4 +87,4 @@ Today, repetition is so ingrained with digital artists' work as to be somewhat d
 Describe another example of the use of repetition in an artwork. Provide a link if possible.
 
 
-##### Ready to code? Preview the introduction we'll do in class [here](code.md).
+##### The introduction to coding with this unit is [here](code.md).

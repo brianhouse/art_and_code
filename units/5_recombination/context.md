@@ -103,4 +103,4 @@ Ok one more: [Computer Generated Olive Garden Commercial](https://twitter.com/ke
 
 If you have 10 different words, how many different sentences can you make?
 
-##### Ready to code? Preview the introduction we'll do in class [here](code.md).
+##### The introduction to coding with this unit is [here](code.md).

@@ -86,4 +86,4 @@ Schwartz's work plays with the abstraction of representational imagery into digi
 Describe another example of the use of a coordinate system. Provide a link if possible.
 
 
-##### Ready to code? Preview the introduction we'll do in class [here](code.md).
+##### The introduction to coding with this unit is [here](code.md).
