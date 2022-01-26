@@ -87,3 +87,10 @@ Describe another example of the use of a coordinate system. Provide a link if po
 
 
 ##### The introduction to coding with this unit is [here](code.md).
+
+
+<!--
+More:
+what is the relationship between grids and coordinates
+(symbolic system vs a particular way of dividing space)
+-->

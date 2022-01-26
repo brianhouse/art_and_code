@@ -392,3 +392,12 @@ save("output.png")
 
 
 Phew, that's a lot to absorb at once. Don't worry, if all of this seems complicated, it will get more intuitive with practice, and we will learn some shortcuts next unit.
+
+<!--
+more: draw a grid on your image in Preview
+set the size of the canvas to the right proportions
+draw a reference grid in your sketch
+
+width, height
+math in the parameters
+-->
