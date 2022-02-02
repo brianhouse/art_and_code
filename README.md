@@ -107,6 +107,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 - Explanation of [crit guidelines](resources/crit_guidelines.md)
 - Crit Sketch #1
 - [Coding with repetition](units/2_repetition/code.md)
+- Begin [Sketch #2](units/2_repetition/assignment.md)
 - **For next class**:
     - Read about [repetition](units/2_repetition/context.md) and post a response
 
@@ -114,7 +115,6 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 - Survey presentations 1
 - Discussion of repetition
 - Explanation of [rubric](resources/rubric.md)
-- Begin [Sketch #2](units/2_repetition/assignment.md)
 - Questions and work time
 
 
@@ -123,13 +123,13 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 #### Monday 2/7 — Fields 205
 - Crit Sketch #2
 - [Coding indeterminacy](units/3_indeterminacy/code.md)
+- Begin [Sketch #3](units/3_indeterminacy/assignment.md)
 - **For next class**:
     - Read about [indeterminacy](units/3_indeterminacy/context.md) and post a response
 
 #### Wednesday 2/9
 - Survey presentations 2
 - Discussion of indeterminacy
-- Begin [Sketch #3](units/3_indeterminacy/assignment.md)
 - Questions and work time
 
 
@@ -200,13 +200,13 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 #### Monday 3/28
 - [Coding glitch](units/6_glitch/code.md)
+- Begin [Sketch #6](units/6_glitch/assignment.md)
 - **For next class**:
     - Read about [glitch](units/6_glitch/context.md) and post a response
 
 #### Wednesday 3/30
 - Survey presentations 7
 - Discussion of glitch
-- Begin [Sketch #6](units/6_glitch/assignment.md)
 
 
 ### Week 11

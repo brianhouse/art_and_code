@@ -21,5 +21,4 @@ Put on your sweatband and come learn some new moves as part of _Internet Aerobic
 
 #### Jonah Brucker-Cohen, _Crank the Web_ (2001)
 
-_Crank the Web_ is a browser that allows people to physically crank
-their bandwidth in order to see a website. Simply enter a URL, start cranking, and text and images appear in the browser window. It is up to you to physically crank your bandwidth so that your internet connection will rely on your personal strength, not personal wealth.
+_Crank the Web_ is a browser that allows people to physically crank their bandwidth in order to see a website. Simply enter a URL, start cranking, and text and images appear in the browser window. It is up to you to physically crank your bandwidth so that your internet connection will rely on your personal strength, not personal wealth.
