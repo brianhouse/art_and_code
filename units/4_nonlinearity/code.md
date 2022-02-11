@@ -280,6 +280,8 @@ It may be too late already, but an important thing everyone needs to learn: **ty
 
 Using functions to represent physical spaces lets us picture how the parts of the program are interrelated. But although _Adventure_ and _Zork_ did it this way, it is not the only option. The "rooms" (or "states") could correspond to topics of conversation, or a character's moods, or a medical diagnosis, or a events in a soccer match.
 
+<!--
+all these examples are linear!
 <p style="float:left;">
   <img src="code/11_dinner.png" width=300 />
 </p>
@@ -291,7 +293,7 @@ Using functions to represent physical spaces lets us picture how the parts of th
 <p style="">
   <img src="code/11_relationship.png" width=300 />
 </p>
-
+ -->
 
 <!--
 

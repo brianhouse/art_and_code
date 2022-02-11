@@ -142,12 +142,13 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 - **For next class**:
     - Play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
     - Read about [nonlinearity](units/4_nonlinearity/context.md) and post a response
+<!-- text input exercise in class: ask a question, handle all answers -->
 
 #### Wednesday 2/16
 - Discussion of nonlinearity
 - [Coding nonlinearity](units/4_nonlinearity/code.md) continued (functions)
 - Begin [Sketch #4](units/4_nonlinearity/assignment.md)
-
+<!-- toy exercise in class: draw a flowchart with four rooms -->
 
 ### Week 6
 

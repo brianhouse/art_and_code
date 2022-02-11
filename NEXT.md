@@ -2,25 +2,8 @@
 
 ## Units
 
-## nonlinearity
-- make them make a toy example with three rooms and be strict about that so they don't immediately go off the deep end
-- maybe outlaw "house" and fantasy adventure as themes, to break from Zork
-- make them put title and description in the code itself
-- spend more time on concept, has to be instruction about good gameplay or narrative for those to be meaningful grading points
-    art: form matches content (maze of feelings, for example)
-    game: what are the stakes?
-    worldbuilding:
-    immersion: meaningful choices
-    maybe add additional "lecture": "On world-building", etc
-    also aesthetics of the text
-- map -> flowchart or diagram, otherwise they make a literal map
-- have a whole section on text formatting
-- have two rounds of playtesting
-- have them present a concept in advance and have it critiqued
-- the results were really too mechanical
-- basically, get a lot more out of this assignment in terms of content and _design_--the code worked
-- (also include "random" in there, which requires a different kind of import statement)
-- this is such an absolute beast to grade (especially with two sections)
+Form matches content (maze of feelings, for example)
+
 
 ## recombination
 /
