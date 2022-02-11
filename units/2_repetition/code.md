@@ -189,7 +189,7 @@ size(360, 300)
 background(255)
 strokeWeight(5)
 
-for i in range(255):
+for i in range(256):
     stroke(200, i, 255)
     line(0, i + 45, 360, i)
 ```

@@ -11,6 +11,10 @@ also example with count and with random if it's not in there
 
 "points about game design"
 
+/
+
+https://learn.adafruit.com/neopixel-levelshifter
+
 
 ### Content
 - nonlinearity expansion?

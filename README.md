@@ -186,6 +186,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 ### Week 9
 
+<!-- sherman fairchild -->
 #### Monday 3/14
 - Desk crits and work time
 
