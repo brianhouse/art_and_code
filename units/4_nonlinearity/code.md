@@ -431,11 +431,12 @@ def bedroom():
     response = raw_input("> ").lower()
     if "hallway" in response:
         hallway()
-    elif ("open" in response or "chest" in response or "drawers" in response) and has_key == False:
-        print("You can't open the chest of drawers without a key.")
-        bedroom()
-    elif "chest" in response and has_key == True:
-        chest()
+    elif "open" in response or "chest" in response or "drawers" in response:
+        if has_key == False:    # a nested if statement
+            print("You can't open the chest of drawers without a key.")
+            bedroom()
+        else:
+            chest()
     else:
         print("You can't do that!")
         bedroom()
