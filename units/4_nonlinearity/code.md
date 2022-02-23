@@ -320,6 +320,112 @@ create a map
 
 -->
 
+### Keyword specificity and order
+
+An important thing to remember is that the computer will check your conditions in the order they are listed. Consider this example:
+
+```py
+def hallway():    
+    print("You are in a hallway. There is a red door and a white door.")
+    response = raw_input("> ").lower()    
+    if "red door" in response:
+        red_door()
+    elif "white door" in response:
+        white_door()
+    else:
+        print("You can't do that.")
+        hallway()
+```
+What if the reader reasonably types "open the red one"?
+```
+You are in a hallway. There is a red door and a white door.
+> open the red one
+You can't do that.
+```
+
+To handle this better, we can just get rid of the word "door" in the keywords, because it's implied:
+```py
+def hallway():    
+    print("You are in a hallway. There is a red door and a white door.")
+    response = raw_input("> ").lower()    
+    if "red" in response: # just 'red'
+        red_door()
+    elif "white" in response:
+        white_door()
+    else:
+        print("You can't do that.")
+        hallway()
+```
+```
+You are in a hallway. There is a red door and a white door.
+> open the red one
+[goes to red_door()]
+```
+
+However, now what if the reader types "open the door"?
+
+```
+You are in a hallway. There is a red door and a white door.
+> open the door
+You can't do that.
+```
+
+In this case, we want a catch all if the reader types door without specifying which one. We might try this:
+
+```py
+def hallway():    
+    print("You are in a hallway. There is a red door and a white door.")
+    response = raw_input("> ").lower()    
+    if "door" in response:
+        print("Which door?")
+        hallway()
+    elif "red" in response:
+        red_door()
+    elif "white" in response:
+        white_door()
+    else:
+        print("You can't do that.")
+        hallway()
+```
+
+This works in this specific case:
+```
+You are in a hallway. There is a red door and a white door.
+> open the door
+Which door?
+```
+
+However, we have a problem if the reader types "open the red door" instead:
+
+```
+You are in a hallway. There is a red door and a white door.
+> open the red door
+Which door?
+You are in a hallway. There is a red door and a white door.
+```
+
+The issue is that we have to put the "door" keyword lower in the code compared to "red". That way, it makes sure there's no color specifier, and then if there is still a reference to the door, it will ask for clarification:
+```py
+def hallway():    
+    print("You are in a hallway. There is a red door and a white door.")
+    response = raw_input("> ").lower()    
+    if "red" in response:
+        red_door()
+    elif "white" in response:
+        white_door()
+    elif "door" in response:
+        print("Which door?")
+        hallway()        
+    else:
+        print("You can't do that.")
+        hallway()
+```
+```
+You are in a hallway. There is a red door and a white door.
+> open the red one
+[goes to red_door()]
+```
+
 ### Keeping track of things with global variables
 
 In the code above, variables are only used to temporarily hold a value returned by `raw_input`. However, we can also use **global variables** that span multiple functions in order to keep track of user actions. This is particularly useful when combined with `True` and `False`, a special kind of value in Python called a "boolean."
@@ -758,9 +864,9 @@ You're crawling on the ground now.
 You found a spring! Drink up.
 ```
 
-### Dynamic descriptions
+### More dynamic descriptions
 
-In this example, the contents of a shelf are listed, which depends on which objects have been previously taken. It demonstrates how you might use nested `if` statements to change the nature of the description and what actions are possible. This is just a more complex version of keeping track of whether a key was present or not in the example above.
+Another example of how a description might change depending on global variables. In this example, the contents of a shelf are listed, which depends on which objects have been previously taken.
 
 ```py
 has_spacesuit = False
@@ -794,3 +900,63 @@ shelf()
 ```
 
 ### Formatting text
+
+Formatting your text descriptions helps keep things clear for the reader.
+
+For example, instead of:
+```py
+print("This is a really long sentence that will end up wrapping around on the reader's terminal and might be difficult to read.")
+```
+<p align="center">
+  <img src="code/13_formatting.png" width=600 />
+</p>
+
+
+Write:
+```py
+print("This is a really long sentence that will not wrap around")
+print("on the reader's terminal and will be easier to read.")
+```
+<p align="center">
+  <img src="code/14_formatting.png" width=600 />
+</p>
+
+
+This results in a block of text that is more clear.
+
+In addition, you can put some white space in there:
+```py
+print("This is a really long sentence that will not wrap around")
+print("on the reader's terminal and will be easier to read.")
+print("") # make a blank line
+print("Here is the prompt:")
+response = raw_input("> ").lower()
+```
+
+<p align="center">
+  <img src="code/15_formatting.png" width=600 />
+</p>
+
+
+This little gap gives us some breathing room.
+
+Finally, you might consider labeling the different rooms of your narrative. For example:
+
+```py
+print("") # make a blank line
+print("===== FIELDS 205 =====")
+print("You are in the classroom listening to the professor")
+print("talk about formatting text.")
+print("")
+print("This is a really long sentence that will not wrap around")
+print("on the reader's terminal and will be easier to read.")
+print("") # make a blank line
+print("Here is the prompt:")
+response = raw_input("> ").lower()
+```
+
+<p align="center">
+  <img src="code/16_formatting.png" width=600 />
+</p>
+
+This is much much nicer and makes it easier for the reader to feel immersed.
