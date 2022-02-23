@@ -270,15 +270,34 @@ Remember, to start the narrative, you'll need to call a function on a line by it
 ```py
 living_room()
 ```
-...and if you want the narrative to end somewhere, whether magnificent victory, horrible defeat, or something more subtle, you can just include a function that doesn't call any other functions:
+...and if you want the narrative to end somewhere, whether magnificent victory, horrible defeat, or something more subtle, you can just include a function that doesn't call any other functions except the `exit()` command:
 ```py
 def the_end():
     print("That's all, folks")
+    exit()
 ```
 
 It may be too late already, but an important thing everyone needs to learn: **type Control-C to exit your program if you get stuck**. You'll need it.
 
 Using functions to represent physical spaces lets us picture how the parts of the program are interrelated. But although _Adventure_ and _Zork_ did it this way, it is not the only option. The "rooms" (or "states") could correspond to topics of conversation, or a character's moods, or a medical diagnosis, or a events in a soccer match.
+
+### Basic template
+
+In all of these cases, your basic template for your functions is this:
+```py
+def a_place():
+    print("DESCRIPTION OF WHERE YOU ARE")
+    print("HINTS AT WHAT OPTIONS YOU HAVE")
+    print("PROMPT?")
+    response = raw_input("> ").lower()
+    if "KEYWORD1" in response:
+        another_place()
+    elif "KEYWORD2" in response:
+        another_place_2()
+    else:
+        print("I DIDN'T UNDERSTAND")
+        a_place()
+```
 
 <!--
 all these examples are linear!
@@ -738,3 +757,40 @@ You're crawling on the ground now.
 > go south
 You found a spring! Drink up.
 ```
+
+### Dynamic descriptions
+
+In this example, the contents of a shelf are listed, which depends on which objects have been previously taken. It demonstrates how you might use nested `if` statements to change the nature of the description and what actions are possible. This is just a more complex version of keeping track of whether a key was present or not in the example above.
+
+```py
+has_spacesuit = False
+has_shovel = False
+
+def shelf():    
+    global has_spacesuit, has_shovel   
+    if has_spacesuit == True and has_shovel == True:
+        print("You observe an empty shelf.")
+    else:
+        print("You observe the contents of a shelf:")
+        if has_spacesuit == False:
+            print("- one spacesuit")
+        if has_shovel == False:
+            print("- one shovel")    
+        print("What do you want to take?")
+    response = raw_input("> ").lower()    
+    if "spacesuit" in response and has_spacesuit == False:
+        has_spacesuit = True
+        print("You took the spacesuit.")
+        shelf()
+    elif "shovel" in response and has_shovel == False:
+        has_shovel = True
+        print("You took the shovel,")
+        shelf()
+    else:
+        print("You can't take that.")
+        shelf()
+
+shelf()
+```
+
+### Formatting text

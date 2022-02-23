@@ -4,6 +4,9 @@
 
 Form matches content (maze of feelings, for example)
 
+## nonlinear
+print("\033[2J\033[H")
+
 
 ## recombination
 /
