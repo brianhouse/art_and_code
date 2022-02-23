@@ -960,3 +960,8 @@ response = raw_input("> ").lower()
 </p>
 
 This is much much nicer and makes it easier for the reader to feel immersed.
+
+Bonus: try adding this to your code:
+```py
+print("\033[2J\033[H")
+```
