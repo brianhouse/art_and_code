@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import re
 from random import choice, shuffle
 
 _stop_words = open("stop_words.txt").read().split()
@@ -16,7 +17,7 @@ def load_string_from_txt(filename):
     print("Loading...")
     data = open(filename).read()
     print("--> complete")
-    return " ".join(data.split()).decode("utf-8")
+    return " ".join(data.split()).replace("“", '"').replace("”", '"').decode("utf-8")
 
 def load_lines_from_txt(filename):
     print("Loading...")
@@ -28,17 +29,14 @@ def load_lines_from_srt(filename):
     lines = load_lines(filename)
     return combine([line.strip().decode("utf-8") for line in lines if len(line) and line[0] not in "0123456789"])
 
-def split_into_sentences(text, max_sentences=1000):
-    assert(type(text) is str or type(text) is unicode)
-    text = text.replace("Mr.", "Mr@@@@")
-    text = text.replace("Dr.", "Mr@@@@")
-    text = text.replace("Mrs.", "Mrs@@@@")
-    text = text.replace("Ms.", "Ms@@@@")
-    text = text.replace("...", "@@@@@@@@@@@@")
-    for delim in (". ", "! ", "? ", '." ', '?" ', '!" '):
-        text = text.replace(delim, delim + "^^^^")  
-    sentences = text.split(" ^^^^")[:max_sentences]
-    return [sentence.replace("@@@@", ".") for sentence in sentences]
+def split_into_sentences(text):
+    assert(type(text) is str or type(text) is unicode) 
+    ps = [-1]        
+    pattern = "[^ \.A-Z].(\. |\? |! |\.\" |\?\" |!\" )[A-Za-z]"
+    for split_point in re.finditer(pattern, text):
+        p = split_point.start(0) + (3 if '"' not in text[split_point.start(0):split_point.end(0)] else 4)
+        ps.append(p)
+    return [text[i:j].strip() for i, j in zip(ps, ps[1:] + [None])]
 
 def split_into_words(text, max_words=5000):
     if type(text) is not str:
@@ -143,20 +141,6 @@ def remove_from_string(text, find):
         raise Exception("Expecting string")
     return text.replace(find, "")
 
-# def fix_quotes(text):
-#     if type(text) is not str:
-#         raise Exception("Expecting string")
-#     text = text.replace('“', '"')
-#     text = text.replace('”', '"')
-#     text = text.replace("’", "'")
-#     text = text.replace("‘", "'")
-#     text = text.replace("–", "-")
-#     text = text.replace("—", " -- ")
-#     text = text.replace("…", "...")
-#     text = text.replace("  ", " ")
-#     text = text.replace("  ", " ")
-#     return text
-
 def count_syllables(word):
     word = word.lower()
     count = 0
@@ -179,24 +163,3 @@ def write_string_to_file(text, filename):
     output.print(text)
     output.flush()
     output.close()
-
-
-
-
-"""
-separate verb types
-filter_verbs(type="past") ?
-chop possessives on nouns? etc
-
-split into phrases? need for them to be able to mix it up
-
-using unicode() instead of string() gets the console to read it right
-
-if type(text) is not unicode and type(text) is not str:
-    raise exception
-if type(text) is str:
-    text = unicode(text)
-
-might be able to eliminate "fix_quotes" etc
-
-"""
