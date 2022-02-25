@@ -2,16 +2,16 @@
 import re
 from random import choice, shuffle
 
-_stop_words = open("stop_words.txt").read().split()
-_plural_nouns = open("nouns_plural.txt").read().split()
-_nouns = open("nouns.txt").read().split()
-_imperative_verbs = open("verbs_imperative.txt").read().split()
-_past_tense_verbs = open("verbs_past.txt").read().split()
-_present_tense_verbs = open("verbs_present.txt").read().split()
-_adjectives = open("adjectives.txt").read().split()
-_pronouns = open("pronouns.txt").read().split()
-_prepositions = open("prepositions.txt").read().split()
-_interjections = open("interjections.txt").read().split()
+stop_words_list = open("stop_words.txt").read().split()
+plural_nouns_list = open("nouns_plural.txt").read().split()
+nouns_list = open("nouns.txt").read().split()
+imperative_verbs_list = open("verbs_imperative.txt").read().split()
+past_tense_verbs_list = open("verbs_past.txt").read().split()
+present_tense_verbs_list = open("verbs_present.txt").read().split()
+adjectives_list = open("adjectives.txt").read().split()
+pronouns_list = open("pronouns.txt").read().split()
+prepositions_list = open("prepositions.txt").read().split()
+interjections_list = open("interjections.txt").read().split()
 
 def load_string_from_txt(filename):
     print("Loading...")
@@ -23,11 +23,11 @@ def load_lines_from_txt(filename):
     print("Loading...")
     open(filename).readlines()
     print("--> complete")
-    return [line.strip().decode("utf-8") for line in data]
+    return [line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in data]
 
 def load_lines_from_srt(filename):
     lines = load_lines(filename)
-    return combine([line.strip().decode("utf-8") for line in lines if len(line) and line[0] not in "0123456789"])
+    return recombine([line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in lines if len(line) and line[0] not in "0123456789"])
 
 def split_into_sentences(text):
     assert(type(text) is str or type(text) is unicode) 
@@ -39,7 +39,7 @@ def split_into_sentences(text):
     return [text[i:j].strip() for i, j in zip(ps, ps[1:] + [None])]
 
 def split_into_words(text, max_words=5000):
-    if type(text) is not str:
+    if type(text) is not str and type(text) is not unicode:
         raise Exception("Expecting string")
     words = text.lower().split()
     words = words[:max_words]
@@ -61,38 +61,40 @@ def filter_distinctive(words):
 def filter_nouns(words):
     if type(words) is not list:
         raise Exception("Expecting list")
-    return [word for word in words if word in _nouns]
+    return [word for word in words if (word in nouns_list) or (word in plural_nouns_list)]
 
 def filter_verbs(words):
     if type(words) is not list:
         raise Exception("Expecting list")
-    return [word for word in words if word in _verbs]
+    return [word for word in words if (word in imperative_verbs_list) or (word in past_tense_verbs_list) or (word in present_tense_verbs_list)]
 
 def filter_adjectives(words):
     if type(words) is not list:
         raise Exception("Expecting list")
-    return [word for word in words if word in _adjectives]
+    return [word for word in words if word in adjectives_list]
 
 def filter_pronouns(words):
     if type(words) is not list:
         raise Exception("Expecting list")
-    return [word for word in words if word in _pronouns]
+    return [word for word in words if word in pronouns_list]
 
 def filter_prepositions(words):
     assert(type(words) is list)
-    return [word for word in words if word in _prepositions]
+    return [word for word in words if word in prepositions_list]
 
 def filter_interjections(words):
     if type(words) is not list:
         raise Exception("Expecting list")
-    return [word for word in words if word in _interjections]
+    return [word for word in words if word in interjections_list]
 
 def filter_starts_with(words, s):
+    s = s.lower()
     if type(words) is not list:
         raise Exception("Expecting list")
     return [word for word in words if word[:len(s)] == s]
 
 def filter_ends_with(words, s):
+    s = s.lower()
     if type(words) is not list:
         raise Exception("Expecting list")
     return [word for word in words if word[-len(s):] == s]
@@ -102,26 +104,44 @@ def filter_unique(words):
         raise Exception("Expecting list")
     return list(set(words))
 
-def combine_list(words, delimiter=None):
+def recombine_list(words, delimiter=None):
     if type(words) is not list:
         raise Exception("Expecting list")
     if delimiter is None:
         delimiter = " "
     return delimiter.join(words)
 
-def sort_list_alpha(words):
+def sort_list_alpha(words, reverse=False):
     if type(words) is not list:
         raise Exception("Expecting list")
     l = words[:]
     l.sort()
+    if reverse:
+        l.reverse()
     return l
 
-def sort_list_length(words):
+def sort_list_length(words, reverse=False):
     if type(words) is not list:
         raise Exception("Expecting list")
     l = words[:]
     l.sort(key=len)
+    if reverse:
+        l.reverse()
     return l
+
+def randomize_list(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    l = words[:]
+    shuffle(l)
+    return l    
+
+def reverse_list(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    l = words[:]
+    l.reverse()
+    return l    
 
 def get_string_after(text, search):
     index = text.find(search)

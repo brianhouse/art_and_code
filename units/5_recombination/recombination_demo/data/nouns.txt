@@ -2905,7 +2905,6 @@ buzzard
 buzzer
 buzzkill
 buzzword
-by
 bye
 byelaw
 bygone
@@ -10053,7 +10052,6 @@ haunch
 haunt
 haunter
 hauteur
-have
 haven
 haversack
 havoc
