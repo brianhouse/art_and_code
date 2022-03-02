@@ -2,7 +2,8 @@
 
 We've already learned how to use variables to store single strings. To do more complicated manipulation of text, however, we'll need additional structures that can store more than one thing at a time. In Python, these are called *lists* (in other programming languages, they are frequently called arrays). Lists can be generated within a program, but they can also be a means of storing data loaded from external sources. Together with strings, conditional logic, and `for` loops, lists open up new possibilities. Although we will continue to work with text, we will be working in the Processing app, not in the terminal (although the terminal will still work, if you prefer).
 
-If you haven't already, [get started with word_tools](getting_started.md) before continuing here.
+Before beginning with these functions, however, you'll need to download and install a Python module and some support files. To do that, check out [Getting Started with word_tools](getting_started.md).
+
 
 ### Functions that return things
 
@@ -242,72 +243,3 @@ filter_distinctive(words)  # more on this one later
 ```
 
 The important thing to realize is how these can all be chained together. You might find all the unique verbs that start with the letter "a," for example. Starting with a list of all words, you create new variables for new lists that increasingly refine what you're looking for.
-
-### Custom filters (and counting syllables)
-
-However, we can also write our filters.
-
-Consider the following fabulous function, which determines the number of syllables in a word (again—it's not a very smart function, so this might be approximate).
-
-It works like this:
-```py
-from word_tools import *
-
-a_word = "nature"
-num_syllables = count_syllables(a_word)
-print(num_syllables)
-```
-```
-2
-```
-
-```md
-/
-choice + madlibs (w/ recombining)
-count_syllables
-
-
-
-then move on to external text
-
-cut-ups with sentences
-joining
-
-filters on sentence level:
-starts with
-ends with
-nouns etc
-get_string_before
-get_string_after
-replace_in_string (capitalism)
-
-words again:
-good_words
-
-haiku example
-
-////
-
-advanced examples:
-
-structure:
-- free verse poem
-- by line length
-
-combine two texts
-- by line
-- by part of speech
-- filter one text by another
-
-
-////
-
-books
-wikipedia articles
-transcribed audio
-legal texts / laws / contracts
-movies: scripts, closed-captioning
-lyrics
-newspaper articles
-social media feeds
-```

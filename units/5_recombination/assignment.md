@@ -4,6 +4,11 @@ Choose one or more source texts—newspaper articles, poems, books, lyrics, emai
 
 Along with your code and [3-sentence description](../../resources/description_guidelines.md), you should supply an example of your program's output by copying and pasting from the console into a Google Doc. Resist the urge to edit the output to smooth over rough edges; looking back, those often become the most interesting features.
 
+### Resources
+- [Recombination context](context.md)
+- [Getting started with word_tools](getting_started.md)
+- [Coding with recombination](code.md)
+
 
 ### Recombination functions
 ```py

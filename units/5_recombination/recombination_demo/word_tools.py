@@ -29,14 +29,15 @@ def load_lines_from_srt(filename):
     lines = load_lines(filename)
     return recombine([line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in lines if len(line) and line[0] not in "0123456789"])
 
-def split_into_sentences(text):
+def split_into_sentences(text, max_sentences=1000):
     assert(type(text) is str or type(text) is unicode) 
-    ps = [-1]        
-    pattern = "[^ \.A-Z].(\. |\? |! |\.\" |\?\" |!\" )[A-Za-z]"
+    ps = [0]        
+    pattern = "[^ \.A-Z].(\. |\? |! |\.\" |\?\" |!\" )[A-Za-z\"]"
     for split_point in re.finditer(pattern, text):
         p = split_point.start(0) + (3 if '"' not in text[split_point.start(0):split_point.end(0)] else 4)
         ps.append(p)
-    return [text[i:j].strip() for i, j in zip(ps, ps[1:] + [None])]
+    sentences = [text[i:j].strip() for i, j in zip(ps, ps[1:] + [None])]
+    return sentences[:max_sentences] 
 
 def split_into_words(text, max_words=5000):
     if type(text) is not str and type(text) is not unicode:

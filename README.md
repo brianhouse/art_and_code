@@ -168,7 +168,6 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 #### Wednesday 3/2
 - Crit Sketch #4
-- [Coding with recombination](units/5_recombination/code.md)
 - **For next class**:
     - Read about [recombination](units/5_recombination/context.md) and post a response
 
@@ -177,6 +176,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 #### Monday 3/7
 - Discussion of recombination
+- [Coding with recombination](units/5_recombination/code.md)
 - Begin [Sketch #5](units/5_recombination/assignment.md)
 - Questions and work time
 

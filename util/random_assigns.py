@@ -3,7 +3,7 @@
 import json
 from random import shuffle, randint
 
-GROUP_SIZE = 5
+GROUP_SIZE = 4
 
 with open("students.txt") as f:
     students = [line.strip() for line in f.readlines()]

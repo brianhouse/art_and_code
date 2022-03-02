@@ -2,24 +2,11 @@
 
 ## Units
 
-Form matches content (maze of feelings, for example)
-
-## nonlinear
-print("\033[2J\033[H")
-
+Have explicit conceptual prompts each assignment. Must fulfill the tech thing (use a loop) and the conceptual aspect (sense of complexity... or whatever)
 
 ## recombination
+did not actually write "getting started with word tools" which would be very helpful
 /
-sources:
-books
-wikipedia articles
-transcribed audio
-legal texts / laws / contracts
-movies: scripts, closed-captioning
-lyrics
-newspaper articles
-social media feeds
-
 have them do it first with scissors and paper?
 
 
