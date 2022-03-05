@@ -32,12 +32,18 @@ reverse_list(list)
 randomize_list(list)
 recombine_list(list)
 
-# filtering lists of words
+# filtering lists of words and sentences
 filter_unique(list)
 filter_starts_with(list, s)
 filter_ends_with(list, s)
+filter_contains(list, s)
 filter_nouns(list of words)
+filter_singular_nouns(list of words)
+filter_plural_nouns(list of words)
 filter_verbs(list of words)
+filter_imperative_verbs(list of words)
+filter_past_tense_verbs(list of words)
+filter_present_tense_verbs(list of words)
 filter_adjectives(list of words)
 filter_pronouns(list of words)
 filter_prepositions(list of words)
@@ -50,3 +56,13 @@ count_syllables(word)
 # writing to a file
 write_string_to_file(text, filename)
 ```
+
+### Possible sources
+- books
+- wikipedia articles
+- transcribed audio
+- legal texts / laws / contracts
+- movies: scripts, closed-captioning
+- lyrics
+- newspaper articles
+- social media feeds

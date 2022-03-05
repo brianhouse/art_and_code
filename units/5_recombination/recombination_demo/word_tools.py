@@ -27,9 +27,9 @@ def load_lines_from_txt(filename):
 
 def load_lines_from_srt(filename):
     lines = load_lines(filename)
-    return recombine([line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in lines if len(line) and line[0] not in "0123456789"])
+    return recombine_list([line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in lines if len(line) and line[0] not in "0123456789"])
 
-def split_into_sentences(text, max_sentences=1000):
+def split_into_sentences(text, max=10000):
     assert(type(text) is str or type(text) is unicode) 
     ps = [0]        
     pattern = "[^ \.A-Z].(\. |\? |! |\.\" |\?\" |!\" )[A-Za-z\"]"
@@ -37,13 +37,13 @@ def split_into_sentences(text, max_sentences=1000):
         p = split_point.start(0) + (3 if '"' not in text[split_point.start(0):split_point.end(0)] else 4)
         ps.append(p)
     sentences = [text[i:j].strip() for i, j in zip(ps, ps[1:] + [None])]
-    return sentences[:max_sentences] 
+    return sentences[:max] 
 
-def split_into_words(text, max_words=5000):
+def split_into_words(text, max=10000):
     if type(text) is not str and type(text) is not unicode:
         raise Exception("Expecting string")
     words = text.lower().split()
-    words = words[:max_words]
+    words = words[:max]
     marks = ".", ",", "?", "!", ";", ":", "(", ")", '"', "<", ">", "/", "[", "]", "|", "\\", "{", "}", "+", "*", "-", "&"
     for w, word in enumerate(words):
         while len(word) and word[0] in marks:
@@ -57,17 +57,42 @@ def split_into_words(text, max_words=5000):
 def filter_distinctive(words):
     if type(words) is not list:
         raise Exception("Expecting list")
-    return [word for word in words if word not in _stop_words]
+    return [word for word in words if word not in stop_words_list]
 
 def filter_nouns(words):
     if type(words) is not list:
         raise Exception("Expecting list")
     return [word for word in words if (word in nouns_list) or (word in plural_nouns_list)]
 
+def filter_singular_nouns(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in nouns_list]
+
+def filter_plural_nouns(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in plural_nouns_list]
+
 def filter_verbs(words):
     if type(words) is not list:
         raise Exception("Expecting list")
     return [word for word in words if (word in imperative_verbs_list) or (word in past_tense_verbs_list) or (word in present_tense_verbs_list)]
+
+def filter_imperative_verbs(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in imperative_verbs_list]
+
+def filter_past_tense_verbs(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in past_tense_verbs_list]
+
+def filter_present_tense_verbs(words):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if word in present_tense_verbs_list]
 
 def filter_adjectives(words):
     if type(words) is not list:
@@ -89,16 +114,19 @@ def filter_interjections(words):
     return [word for word in words if word in interjections_list]
 
 def filter_starts_with(words, s):
-    s = s.lower()
     if type(words) is not list:
         raise Exception("Expecting list")
     return [word for word in words if word[:len(s)] == s]
 
 def filter_ends_with(words, s):
-    s = s.lower()
     if type(words) is not list:
         raise Exception("Expecting list")
     return [word for word in words if word[-len(s):] == s]
+
+def filter_contains(words, s):
+    if type(words) is not list:
+        raise Exception("Expecting list")
+    return [word for word in words if s in word]
 
 def filter_unique(words):
     if type(words) is not list:
@@ -153,16 +181,18 @@ def get_string_before(text, search):
     return text[:index] if index > -1 else text
 
 def replace_in_string(text, find, rep):
-    if type(text) is not str:
+    if type(text) is not str and type(text) is not unicode:
         raise Exception("Expecting string")
     return text.replace(find, rep)
 
 def remove_from_string(text, find):
-    if type(text) is not str:
+    if type(text) is not str and type(text) is not unicode:
         raise Exception("Expecting string")
     return text.replace(find, "")
 
 def count_syllables(word):
+    if not len(word):
+        return 0
     word = word.lower()
     count = 0
     vowels = "aeiouy"
@@ -178,7 +208,7 @@ def count_syllables(word):
     return count
 
 def write_string_to_file(text, filename):
-    if type(text) is not str:
+    if type(text) is not str or type(text) is unicode:
         raise Exception("Expecting string")
     output = createWriter(filename)
     output.print(text)
