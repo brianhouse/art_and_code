@@ -598,3 +598,61 @@ idolatry lost
 soon soil preparing water
 thence bear first  lived
 ```
+
+
+### Making an acrostic
+
+An acrostic is a poem in which the first letter of each line spells out a word.
+
+This is actually very straightforward to do with our functions:
+
+```py
+from word_tools import *
+
+source = load_string_from_txt("LC.txt")
+sentences = split_into_sentences(source)
+
+print(choice(filter_starts_with(sentences, "P")))
+print(choice(filter_starts_with(sentences, "I")))
+print(choice(filter_starts_with(sentences, "O")))
+print(choice(filter_starts_with(sentences, "S")))
+```
+```text
+Paccaun trees were this day seen, and large quantities of deer and turkies on the banks.
+It is situated about two hundred yards from the Missouri, into which it empties over a precipice of rock about twenty-five feet high.
+One of these animals came within thirty yards of the camp last night, and carried off some buffaloe meat which we had placed on a pole.
+Sometimes the men tie them in the same way to the hair of the forepart of the head, and increase the beauty of it by adding the wings and tails of birds, and particularly the feathers of the great eagle or calumet bird, of which they are extremely fond.
+```
+
+### Organizing by line length
+
+In this example, we pull 10 sentences at random from our source text, and then sort them by length. The result is a poem of sorts that grows in size:
+
+```py
+from word_tools import *
+
+source = load_string_from_txt("LC.txt")
+sentences = split_into_sentences(source)
+
+ten_lines = []
+for i in range(10):
+    ten_lines.append(choice(sentences))
+
+ten_lines = sort_list_length(ten_lines)
+
+for line in ten_lines:
+    print(line)
+```
+
+```text
+Medicine dance.
+Saturday, November 17.
+Account of the Petit Chien or Little Dog.
+Description of the Grand Le Tour, or Great Bend.
+Our hunters procured us deer, buffaloe, and beaver.
+The banks are low, and the bed formed of stone and gravel.
+The day was warm and fair, but a slight rain fell in the afternoon.
+Captain Clarke and one of the hunters met this evening the largest brown bear we have seen.
+As far as he had ascended Wisdom river it kept its course obliquely down towards the Jefferson.
+To this distress they are often reduced by their own improvidence, or by their unhappy situation.
+```
