@@ -681,5 +681,10 @@ result = recombine_list(paragraph)
 print(result)
 ```
 ```
-Why did you do that? It really was." Image Team members, in a tent on sea ice, prepared a meal on Monday to celebrate the discovery. Spicer Lovejoy: "What could possibly be so funny?" Crew members retrieved an underwater drone after a search. "They’ve got you trapped, Rose. Afterward, the 700 people in the boats had nothing to do but wait…wait to die…wait to live…wait for an absolution…that would never come." In addition to the expedition team, several ice researchers were on board, including Stefanie Arndt of the Alfred Wegener Institute in Germany. I’ll never let go." 
+Why did you do that? It really was." Image Team members, in a tent on sea ice, prepared a meal on Monday to celebrate the discovery. Spicer Lovejoy: "What could possibly be so funny?" Crew members retrieved an underwater drone after a search. "They’ve got you trapped, Rose. Afterward, the 700 people in the boats had nothing to do but wait…wait to die…wait to live…wait for an absolution…that would never come." In addition to the expedition team, several ice researchers were on board, including Stefanie Arndt of the Alfred Wegener Institute in Germany. I’ll never let go."
 ```
+
+
+<!-- combine two texts
+- by part of speech
+- filter one text by another -->

@@ -31,6 +31,7 @@ sort_list_length(list)
 reverse_list(list)
 randomize_list(list)
 recombine_list(list)
+choice(list)
 
 # filtering lists of words and sentences
 filter_unique(list)
