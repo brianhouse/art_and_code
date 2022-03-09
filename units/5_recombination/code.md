@@ -656,3 +656,30 @@ Captain Clarke and one of the hunters met this evening the largest brown bear we
 As far as he had ascended Wisdom river it kept its course obliquely down towards the Jefferson.
 To this distress they are often reduced by their own improvidence, or by their unhappy situation.
 ```
+
+### Combining two texts
+
+```py
+from word_tools import *
+
+endurance_source = load_string_from_txt("endurance.txt")
+titanic_source = load_string_from_txt("titanic.txt")
+
+endurance_sentences = split_into_sentences(endurance_source)
+titanic_sentences = split_into_sentences(titanic_source)
+
+combined_sentences = endurance_sentences + titanic_sentences
+
+paragraph = []
+
+for i in range(10):
+    random_sentence = choice(combined_sentences)
+    paragraph.append(random_sentence)
+
+
+result = recombine_list(paragraph)
+print(result)
+```
+```
+Why did you do that? It really was." Image Team members, in a tent on sea ice, prepared a meal on Monday to celebrate the discovery. Spicer Lovejoy: "What could possibly be so funny?" Crew members retrieved an underwater drone after a search. "They’ve got you trapped, Rose. Afterward, the 700 people in the boats had nothing to do but wait…wait to die…wait to live…wait for an absolution…that would never come." In addition to the expedition team, several ice researchers were on board, including Stefanie Arndt of the Alfred Wegener Institute in Germany. I’ll never let go." 
+```
