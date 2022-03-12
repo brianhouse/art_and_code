@@ -189,11 +189,12 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 <!-- sherman fairchild -->
 #### Monday 3/14
-- Desk crits and work time
+<!-- - Desk crits and work time -->
+CANCELLED: NO CLASS
 
 #### Wednesday 3/16
 - Survey presentations 6
-- Crit Sketch #5
+<!-- - Crit Sketch #5 -->
 
 
 ### Spring Break
@@ -201,6 +202,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 ### Week 10
 
 #### Monday 3/28
+- Crit Sketch #5
 - [Coding glitch](units/6_glitch/code.md)
 - Begin [Sketch #6](units/6_glitch/assignment.md)
 - **For next class**:
@@ -214,48 +216,40 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 ### Week 11
 
 #### Monday 4/4
+- Review, questions, and work time
+
+#### Wednesday 4/6
+- Survey presentations 8
 - Crit Sketch #6
 - [Coding emergence](units/7_emergence/code.md)
 - **For next class**:
     - Read about [emergence](units/7_emergence/context.md) and post a response
 
-#### Wednesday 4/6
-- Survey presentations 8
-- Discussion of emergence
-- Begin [Sketch #7](units/7_emergence/assignment.md)
-- Questions and work time
-
 ### Week 12
 
 #### Monday 4/11
 - Survey presentations 9
-- Review, questions, and work time
+- Discussion of emergence
+- Begin [Sketch #7](units/7_emergence/assignment.md)
 
 #### Wednesday 4/13
-- Desk crits and work time
-
+- Review, questions, and work time
 
 ### Week 13
 
 #### Monday 4/18
-- Crit Sketch #7
-- [Coding interfaces](units/8_interface/code.md)
-- **For next class**:
-    - Read about [interface](units/8_interface/context.md) and post a response
+- Desk crits and work time
 
 #### Wednesday 4/20
-- Discussion of interface
-- Begin [Sketch #8](units/8_interface/assignment.md)
 - Questions and work time
 
 ### Week 14
 
 #### Monday 4/25
-- Review, questions, and work time
+- Crit Sketch #7
 
 #### Wednesday 4/27
-- Desk crits and work time
-
+- Start final revision
 
 ### Finals Week
-- Crit sketch #8
+- Final revision due

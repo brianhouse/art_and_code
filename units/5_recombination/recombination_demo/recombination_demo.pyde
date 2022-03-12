@@ -1,19 +1,7 @@
 from word_tools import *
 
-endurance_source = load_string_from_txt("endurance.txt")
-titanic_source = load_string_from_txt("titanic.txt")
+beef_source = load_string_from_txt("beef.txt")
+poem_source = load_lines_from_txt("Phenomenal_Woman.txt")
 
-endurance_sentences = split_into_sentences(endurance_source)
-titanic_sentences = split_into_sentences(titanic_source)
-
-combined_sentences = endurance_sentences + titanic_sentences
-
-paragraph = []
-
-for i in range(10):
-    random_sentence = choice(combined_sentences)
-    paragraph.append(random_sentence)
-    
-
-result = recombine_list(paragraph)
-print(result)    
+beef_sentences = split_into_sentences(beef_source)
+combined_sentences = beef_sentences + poem_source

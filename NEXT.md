@@ -4,9 +4,11 @@
 
 Have explicit conceptual prompts each assignment. Must fulfill the tech thing (use a loop) and the conceptual aspect (sense of complexity... or whatever)
 
+
+## repetition
+add lovid
+
 ## recombination
-did not actually write "getting started with word tools" which would be very helpful
-/
 have them do it first with scissors and paper?
 
 

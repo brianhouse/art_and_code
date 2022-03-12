@@ -88,3 +88,5 @@ Describe another example of the use of repetition in an artwork. Provide a link 
 
 
 ##### The introduction to coding with this unit is [here](code.md).
+
+<!-- add lovid -->

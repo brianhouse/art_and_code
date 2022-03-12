@@ -21,9 +21,9 @@ def load_string_from_txt(filename):
 
 def load_lines_from_txt(filename):
     print("Loading...")
-    open(filename).readlines()
+    data = open(filename).readlines()
     print("--> complete")
-    return [line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in data]
+    return [line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in data if len(line.strip())]
 
 def load_lines_from_srt(filename):
     lines = load_lines(filename)
