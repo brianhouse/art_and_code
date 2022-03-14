@@ -25,10 +25,10 @@ Introduction to the form and aesthetics of digital media. By writing code to gen
 ### Sketches
 This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with digital media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **emergence**, and **interface**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
-Sketches cumulatively account for 80% of your final grade. They must include a title and a [3-sentence description](resources/description_guidelines.md) and will be [critiqued](resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4) *prior* to the crit—no late work is accepted, and you must attend the crit for your work to be graded. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
+Sketches cumulatively account for 80% of your final grade. They must include a title and a [3-sentence description](https://github.com/brianhouse/ART112/blob/master/resources/description_guidelines.md) and will be [critiqued](https://github.com/brianhouse/ART112/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4) *prior* to the crit—no late work is accepted, and you must attend the crit for your work to be graded. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
 
 ### Survey presentations
-Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
+Each student will give a 10-minute presentation on an artist working in digital media. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](https://github.com/brianhouse/ART112/blob/master/resources/digital_media_artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Unit introductions
 At the beginning of each unit, there is a (very short) introduction to read; responses to this reading on classroom constitute 10% of your final grade.
@@ -80,7 +80,7 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 - Introduction
 - In-class Sketch #0: Algorithm
 - **For next class**:
-    - [Get set up](units/0_algorithm/getting_started.md) with Python Mode for Processing
+    - [Get set up](https://github.com/brianhouse/ART112/blob/master/units/0_algorithm/getting_started.md) with Python Mode for Processing
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0)
 
 
@@ -89,32 +89,32 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 #### Monday 1/24 — ZOOM
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
-- [Coding with coordinates](units/1_coordinates/code.md)
-- Going forward, use the [Python for Processing Cheat Sheet](resources/processing_cheat_sheet.md) for reference
-- Begin [Sketch #1](units/1_coordinates/assignment.md)
+- [Coding with coordinates](https://github.com/brianhouse/ART112/blob/master/units/1_coordinates/code.md)
+- Going forward, use the [Python for Processing Cheat Sheet](https://github.com/brianhouse/ART112/blob/master/resources/processing_cheat_sheet.md) for reference
+- Begin [Sketch #1](https://github.com/brianhouse/ART112/blob/master/units/1_coordinates/assignment.md)
 - **For next class**:
-    - Read about [coordinates](units/1_coordinates/context.md) and post a response
+    - Read about [coordinates](https://github.com/brianhouse/ART112/blob/master/units/1_coordinates/context.md) and post a response
 
 #### Wednesday 1/26 — ZOOM
 - Discussion of coordinates
-- Explanation of [artist descriptions](resources/description_guidelines.md)
+- Explanation of [artist descriptions](https://github.com/brianhouse/ART112/blob/master/resources/description_guidelines.md)
 - Review, questions, and work time
 
 
 ### Week 3
 
 #### Monday 1/31 — ZOOM
-- Explanation of [crit guidelines](resources/crit_guidelines.md)
+- Explanation of [crit guidelines](https://github.com/brianhouse/ART112/blob/master/resources/crit_guidelines.md)
 - Crit Sketch #1
-- [Coding with repetition](units/2_repetition/code.md)
-- Begin [Sketch #2](units/2_repetition/assignment.md)
+- [Coding with repetition](https://github.com/brianhouse/ART112/blob/master/units/2_repetition/code.md)
+- Begin [Sketch #2](https://github.com/brianhouse/ART112/blob/master/units/2_repetition/assignment.md)
 - **For next class**:
-    - Read about [repetition](units/2_repetition/context.md) and post a response
+    - Read about [repetition](https://github.com/brianhouse/ART112/blob/master/units/2_repetition/context.md) and post a response
 
 #### Wednesday 2/2 — ZOOM
 - Survey presentations 1
 - Discussion of repetition
-- Explanation of [rubric](resources/rubric.md)
+- Explanation of [rubric](https://github.com/brianhouse/ART112/blob/master/resources/rubric.md)
 - Questions and work time
 
 
@@ -122,10 +122,10 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 #### Monday 2/7 — Fields 205
 - Crit Sketch #2
-- [Coding indeterminacy](units/3_indeterminacy/code.md)
-- Begin [Sketch #3](units/3_indeterminacy/assignment.md)
+- [Coding indeterminacy](https://github.com/brianhouse/ART112/blob/master/units/3_indeterminacy/code.md)
+- Begin [Sketch #3](https://github.com/brianhouse/ART112/blob/master/units/3_indeterminacy/assignment.md)
 - **For next class**:
-    - Read about [indeterminacy](units/3_indeterminacy/context.md) and post a response
+    - Read about [indeterminacy](https://github.com/brianhouse/ART112/blob/master/units/3_indeterminacy/context.md) and post a response
 
 #### Wednesday 2/9
 - Survey presentations 2
@@ -137,17 +137,17 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 
 #### Monday 2/14
 - Crit Sketch #3
-- [Getting started with the terminal](units/4_nonlinearity/getting_started.md)
-- [Coding nonlinearity](units/4_nonlinearity/code.md) (text input)
+- [Getting started with the terminal](https://github.com/brianhouse/ART112/blob/master/units/4_nonlinearity/getting_started.md)
+- [Coding nonlinearity](https://github.com/brianhouse/ART112/blob/master/units/4_nonlinearity/code.md) (text input)
 - **For next class**:
     - Play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
-    - Read about [nonlinearity](units/4_nonlinearity/context.md) and post a response
+    - Read about [nonlinearity](https://github.com/brianhouse/ART112/blob/master/units/4_nonlinearity/context.md) and post a response
 <!-- text input exercise in class: ask a question, handle all answers -->
 
 #### Wednesday 2/16
 - Discussion of nonlinearity
-- [Coding nonlinearity](units/4_nonlinearity/code.md) continued (functions)
-- Begin [Sketch #4](units/4_nonlinearity/assignment.md)
+- [Coding nonlinearity](https://github.com/brianhouse/ART112/blob/master/units/4_nonlinearity/code.md) continued (functions)
+- Begin [Sketch #4](https://github.com/brianhouse/ART112/blob/master/units/4_nonlinearity/assignment.md)
 <!-- toy exercise in class: draw a flowchart with four rooms -->
 
 ### Week 6
@@ -169,15 +169,15 @@ If you are experiencing COVID symptoms DO NOT come to campus. Information on COV
 #### Wednesday 3/2
 - Crit Sketch #4
 - **For next class**:
-    - Read about [recombination](units/5_recombination/context.md) and post a response
+    - Read about [recombination](https://github.com/brianhouse/ART112/blob/master/units/5_recombination/context.md) and post a response
 
 
 ### Week 8
 
 #### Monday 3/7
 - Discussion of recombination
-- [Coding with recombination](units/5_recombination/code.md)
-- Begin [Sketch #5](units/5_recombination/assignment.md)
+- [Coding with recombination](https://github.com/brianhouse/ART112/blob/master/units/5_recombination/code.md)
+- Begin [Sketch #5](https://github.com/brianhouse/ART112/blob/master/units/5_recombination/assignment.md)
 - Questions and work time
 
 #### Wednesday 3/9
@@ -203,10 +203,10 @@ CANCELLED: NO CLASS
 
 #### Monday 3/28
 - Crit Sketch #5
-- [Coding glitch](units/6_glitch/code.md)
-- Begin [Sketch #6](units/6_glitch/assignment.md)
+- [Coding glitch](https://github.com/brianhouse/ART112/blob/master/units/6_glitch/code.md)
+- Begin [Sketch #6](https://github.com/brianhouse/ART112/blob/master/units/6_glitch/assignment.md)
 - **For next class**:
-    - Read about [glitch](units/6_glitch/context.md) and post a response
+    - Read about [glitch](https://github.com/brianhouse/ART112/blob/master/units/6_glitch/context.md) and post a response
 
 #### Wednesday 3/30
 - Survey presentations 7
@@ -221,16 +221,16 @@ CANCELLED: NO CLASS
 #### Wednesday 4/6
 - Survey presentations 8
 - Crit Sketch #6
-- [Coding emergence](units/7_emergence/code.md)
+- [Coding emergence](https://github.com/brianhouse/ART112/blob/master/units/7_emergence/code.md)
 - **For next class**:
-    - Read about [emergence](units/7_emergence/context.md) and post a response
+    - Read about [emergence](https://github.com/brianhouse/ART112/blob/master/units/7_emergence/context.md) and post a response
 
 ### Week 12
 
 #### Monday 4/11
 - Survey presentations 9
 - Discussion of emergence
-- Begin [Sketch #7](units/7_emergence/assignment.md)
+- Begin [Sketch #7](https://github.com/brianhouse/ART112/blob/master/units/7_emergence/assignment.md)
 
 #### Wednesday 4/13
 - Review, questions, and work time
