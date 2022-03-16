@@ -63,12 +63,10 @@ The Fields Art Center is built on land belonging to the Multnomah, Kathlamet, Cl
 ### COVID Health and Safety Expectations
 
 The College’s health and safety guidelines are applied in all settings across campus and comply with county guidelines. We each share responsibility to keep our community healthy by adhering to the following expectations:
-
-Wear a face covering when inside, even when physical distancing can be maintained, and outside when physical distancing cannot be maintained.
-Stay at home if you have any of the following COVID symptoms, including cough, fever or chills, shortness of breath, difficulty breathing, muscle pain, headache, sore throat, new loss of taste or smell, diarrhea, nausea, vomiting, nasal congestion, or runny nose.
-The Art Department reserves the right to ask you to leave the studios if you exhibit symptoms. If you are present in the studios without a mask, we will remind you to put on a mask immediately or leave class. If necessary, masks may be removed for a short duration for drinking, but please minimize these temporary removals and do not consume food during class time.
-
-If you are experiencing COVID symptoms DO NOT come to campus. Information on COVID symptoms can be found on the LC Health and Safety Expectations webpage and on the CDC webpage.    
+- Wear a face covering when inside, even when physical distancing can be maintained, and outside when physical distancing cannot be maintained.
+- Stay at home if you have any of the following COVID symptoms, including cough, fever or chills, shortness of breath, difficulty breathing, muscle pain, headache, sore throat, new loss of taste or smell, diarrhea, nausea, vomiting, nasal congestion, or runny nose.
+- The Art Department reserves the right to ask you to leave the studios if you exhibit symptoms. If you are present in the studios without a mask, we will remind you to put on a mask immediately or leave class. If necessary, masks may be removed for a short duration for drinking, but please minimize these temporary removals and do not consume food during class time.
+- If you are experiencing COVID symptoms DO NOT come to campus. Information on COVID symptoms can be found on the LC Health and Safety Expectations webpage and on the CDC webpage.    
 &nbsp;  
 &nbsp;  
 
@@ -251,5 +249,9 @@ CANCELLED: NO CLASS
 #### Wednesday 4/27
 - Start final revision
 
-### Finals Week
+### Finals Week: Tuesday 5/3 1:00–4:00PM
 - Final revision due
+
+<!-- Monday / Wednesday 8:50–11:20 -->
+<!-- https://college.lclark.edu/offices/registrar/final_exam_schedule/spring/ -->
+<!-- 10:20A-11:20A	MWF	3  	TUE	 05/03/22	1:00P-4:00P -->
