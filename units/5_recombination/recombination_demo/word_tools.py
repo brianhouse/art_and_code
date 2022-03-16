@@ -25,6 +25,14 @@ def load_lines_from_txt(filename):
     print("--> complete")
     return [line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in data if len(line.strip())]
 
+def load_blocks_from_txt(filename):
+    print("Loading...")
+    data = open(filename).read()
+    print("--> complete")
+    data = data.strip().replace("“", '"').replace("”", '"').decode("utf-8")
+    blocks = [block.strip() for block in re.split("\n[\t\n\r ]*\n", data) if len(block.strip())]
+    return [" ".join(block.split()) for block in blocks]
+
 def load_lines_from_srt(filename):
     lines = load_lines(filename)
     return recombine_list([line.strip().replace("“", '"').replace("”", '"').decode("utf-8") for line in lines if len(line) and line[0] not in "0123456789"])
@@ -39,12 +47,6 @@ def split_into_sentences(text, max=10000):
         ps.append(p)
     sentences = [text[i:j].strip() for i, j in zip(ps, ps[1:] + [None])]
     return sentences[:max] 
-
-def split_into_blocks(text, max=10000):
-    if type(text) is not str and type(text) is not unicode:
-        raise Exception("Expecting string")
-    blocks = [block.strip() for block in text.split("\n\n") if len(block.strip())]
-    return blocks[:max]    
 
 def split_into_words(text, max=10000):
     if type(text) is not str and type(text) is not unicode:

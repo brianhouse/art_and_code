@@ -39,15 +39,9 @@ from word_tools import *
 
 
 
-block_text = """
-This is a block of text. It's not just one sentence.
-
-Here's another
-block of text
-
-"""
-
-blocks = split_into_blocks(block_text)
+blocks = load_blocks_from_txt("Truman1.txt")
 
 for block in blocks:
     print(">" + block)
+    print("")
+    print("")
