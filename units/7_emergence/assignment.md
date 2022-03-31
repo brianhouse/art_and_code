@@ -10,7 +10,7 @@ Information for making screen recordings:
 
 ### Code library
 
-[agent_helper.py](agent_helper.py)
+[agent_helper.py](emergence_demo/agent_helper.py)
 
 ### Examples
 
