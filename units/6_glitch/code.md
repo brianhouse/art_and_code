@@ -32,7 +32,7 @@ Now, we use the `loadImage()` function to load the image data into a new variabl
 ```py
 size(400, 400)
 source = loadImage("puffin.png")    # load the image into a variable
-image(puffin, 0, 0)                 # draw the image to the canvas
+image(source, 0, 0)                 # draw the image to the canvas
 ```
 
 Running this program should simply show the image:

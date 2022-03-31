@@ -10,7 +10,7 @@ add lovid
 
 ## recombination
 have them do it first with scissors and paper?
-
+more examples from students so they know the possibilities
 
 
 ## emergence
