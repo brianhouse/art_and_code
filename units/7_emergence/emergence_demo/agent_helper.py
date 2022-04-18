@@ -30,8 +30,6 @@ class Agent(object):
             
             
     def __setattr__(self, key, value):
-        if hasattr(self, key) and key not in ['x', 'y', 'size', 'speed', 'draw'] and key[0] != "_":
-            raise Exception("Cannot override property " + key)
         if callable(value):
             if key == "draw":
                 key = "_draw" 
@@ -409,3 +407,5 @@ class Wall(object):
             Wall.walls.remove(self)
             
             
+def step_cycle(n, rate):
+    return (frameCount / int(rate)) % n

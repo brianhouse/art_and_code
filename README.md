@@ -231,6 +231,7 @@ CANCELLED: NO CLASS
 - Begin [Sketch #7](https://github.com/brianhouse/ART112/blob/master/units/7_emergence/assignment.md)
 
 #### Wednesday 4/13
+- Make up presentations
 - Review, questions, and work time
 
 ### Week 13
@@ -239,6 +240,7 @@ CANCELLED: NO CLASS
 - Desk crits and work time
 
 #### Wednesday 4/20
+- Make-up survey presentations
 - Questions and work time
 
 ### Week 14

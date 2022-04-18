@@ -1,6 +1,6 @@
 # Emergence
 
-## Animation with `setup()` and `draw()`
+### Animation with `setup()` and `draw()`
 
 Before we talk about emergence, we need to talk about animation.
 
@@ -116,8 +116,7 @@ The magic is in how we update `x` and `y`—in this case, just taking their prev
 x += 1
 y -= 1.2
 ```
-These operators—increment and decrement—accomplish the exact same thing as before, but without repeating the variable name. This is helpful if those variable names start to get a little complex, as they will in a moment.
-
+These operators—increment and decrement—accomplish the exact same thing as before, but without repeating the variable name.
 
 
 
