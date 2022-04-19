@@ -116,6 +116,7 @@ def draw_bat(bat):
 def draw_shark(shark):
     strokeWeight(1)
     stroke(0)
+    fill(255)
     step = step_cycle(2, 6)
     if step == 0:    
         line(shark.x, shark.y, shark.x + 10, shark.y + 20)

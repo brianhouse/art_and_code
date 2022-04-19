@@ -28,6 +28,7 @@ agent.can_collide(list_of_agents)
 agent.can_collide(a_wall)
 agent.can_collide(list_of_walls)
 
+integrate step cycle into objects and argument
 
 
 ### general
