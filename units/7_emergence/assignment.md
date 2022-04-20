@@ -193,7 +193,7 @@ def setup():
                     draw=draw_bat,
                     size=10,
                     speed=5,
-                    pulse_speed=random(1, 3)
+                    pulse_speed=random(5, 10)
                     )
         bats.append(bat)
         bat.bump(random(360), random(3))
@@ -229,101 +229,5 @@ def draw_bat(bat):
         fill(150, 0, 0)
         circle(bat.x, bat.y, 10)
 
-        from agent_helper import *
-
-def setup():
-    global bats
-    size(500, 500)
-
-    bats = []
-    for i in range(10):
-        bat = Agent(x=random(500),
-                    y=random(500),
-                    draw=draw_bat,
-                    size=10,
-                    speed=5,
-                    pulse_speed=random(1, 5)
-                    )
-        bats.append(bat)
-        bat.bump(random(360), random(3))
-
-
-def draw():
-    global bats
-    background(255)
-
-    for bat in bats:
-        bat.draw()
-        bat.move()
-
-
-
-def draw_bat(bat):
-
-    step = step_cycle(4, bat.pulse_speed)
-
-    if step == 0:    
-        fill(255, 0, 0)
-        circle(bat.x, bat.y, 20)
-
-    elif step == 1:
-        fill(200, 0, 0)
-        circle(bat.x, bat.y, 10)
-
-    elif step == 2:
-        fill(150, 0, 0)
-        circle(bat.x, bat.y, 5)
-
-    elif step == 3:
-        fill(50, 0, 0)
-        circle(bat.x, bat.y, 10)
-
-        from agent_helper import *
-
-def setup():
-    global bats
-    size(500, 500)
-
-    bats = []
-    for i in range(10):
-        bat = Agent(x=random(500),
-                    y=random(500),
-                    draw=draw_bat,
-                    size=10,
-                    speed=5,
-                    pulse_speed=random(1, 5)
-                    )
-        bats.append(bat)
-        bat.bump(random(360), random(3))
-
-
-def draw():
-    global bats
-    background(255)
-
-    for bat in bats:
-        bat.draw()
-        bat.move()
-
-
-
-def draw_bat(bat):
-
-    step = step_cycle(4, bat.pulse_speed)
-
-    if step == 0:    
-        fill(255, 0, 0)
-        circle(bat.x, bat.y, 20)
-
-    elif step == 1:
-        fill(200, 0, 0)
-        circle(bat.x, bat.y, 10)
-
-    elif step == 2:
-        fill(150, 0, 0)
-        circle(bat.x, bat.y, 5)
-
-    elif step == 3:
-        fill(50, 0, 0)
-        circle(bat.x, bat.y, 10)
+        
 ```
