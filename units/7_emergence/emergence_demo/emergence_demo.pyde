@@ -3,6 +3,7 @@ from agent_helper import *
 def setup():
     global bats, sharks, flowers, walls
     size(500, 500)
+    Wall(1, 0, 0, 0)
     pixelDensity(2)
     
     bats = []
@@ -107,7 +108,7 @@ def draw_bat(bat):
     if step == 0:
         line(bat.x, bat.y, bat.x + 5, bat.y + 10)
         line(bat.x, bat.y, bat.x - 5, bat.y + 10)
-    else:
+    elif step == 1:
         line(bat.x, bat.y, bat.x + 1, bat.y + 10)
         line(bat.x, bat.y, bat.x - 1, bat.y + 10)
     circle(bat.x, bat.y, bat.size)
@@ -134,5 +135,5 @@ def draw_flower(flower):
     
     
 def mouseClicked():
-    for bat in bats:
-        bat.bump(random(360), random(3))
+    save("output.png")
+    print("Saved!")

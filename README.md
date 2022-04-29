@@ -246,12 +246,13 @@ CANCELLED: NO CLASS
 ### Week 14
 
 #### Monday 4/25
-- Crit Sketch #7
-
-#### Wednesday 4/27
 - Start final revision
 
-### Finals Week: Tuesday 5/3 1:00–4:00PM
+#### Wednesday 4/27
+- Crit Sketch #7
+
+
+### Finals Week: Tuesday 5/3 2:00–4:00PM
 - Final revision due
 
 <!-- Monday / Wednesday 8:50–11:20 -->
