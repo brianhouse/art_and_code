@@ -48,6 +48,9 @@ def setup():
 def draw():
     global bats, sharks, flowers, walls
     background(255)
+    fill(0)
+    textSize(8)
+    text(int(frameRate), width-12, 10)
             
     for flower in flowers:
         flower.draw()
@@ -134,6 +137,3 @@ def draw_flower(flower):
     square(flower.x-10, flower.y-10, 20) 
     
     
-def mouseClicked():
-    save("output.png")
-    print("Saved!")

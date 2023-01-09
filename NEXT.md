@@ -1,6 +1,8 @@
 ## Organization
 
 MORE SMALL GROUP DESK CRITS
+how, with that room setup? pull some tables to the side?
+
 
 ## Units
 
@@ -75,21 +77,3 @@ use bat.size
 - still missing map(), seems significant
 
 
-#####
-
-## future
-
-https://p5.readthedocs.io/en/latest/index.html
-
-
-## visitors
-
-Afroditi
-
-
-
-## AC
-
-- nonlinear narrative
-- emergence
-- glitch

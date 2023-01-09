@@ -24,13 +24,13 @@ Introduction to computer programming for studio artists. By writing code to gene
 ### Sketches
 This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with computational media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **emergence**, and **interface**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
-Sketches cumulatively account for 75% of your final grade. They must include a title and a [3-sentence description](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4) *prior* to the crit—no late work is accepted, and you must attend the crit for your work to be graded. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
+Sketches cumulatively account for 75% of your final grade. They must include a title and a [3-sentence description](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4) *prior* to the crit—**no late work is accepted**, and you must attend the crit for your work to be graded. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
 
 ### Survey presentations
 Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Participation
-Motivated and mindful participation in crit and classroom disscussion is expected and constitutes 15% of your final grade.
+Motivated and mindful participation in crit and classroom disscussion is expected and constitutes 15% of your final grade. Attendance is mandatory, and missed classes or late arrivals will impact your participation grade at the professor's discretion. 
 
 
 ## Policies
@@ -62,7 +62,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 1
 
-#### Wednesday 1/19
+#### Monday 1/30
 - Introduction
 - In-class Sketch #0: Algorithm
 - **For next class**:
@@ -70,176 +70,166 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0)
 
 
-### Week 2
-
-#### Monday 1/24
+#### Wednesday 2/1
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
 - [Coding with coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
 - Going forward, use the [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
 - Begin [Sketch #1](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/assignment.md)
-- **For next class**:
-    - Read about [coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/context.md) and post a response
-
-#### Wednesday 1/26 — ZOOM
-- Discussion of coordinates
-- Explanation of [artist descriptions](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md)
-- Review, questions, and work time
 
 
-### Week 3
+### Week 2    
 
-#### Monday 1/31
+#### Monday 2/6
+- Discussing [coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/context.md)
 - Explanation of [crit guidelines](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md)
 - Crit Sketch #1
 - [Coding with repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/code.md)
 - Begin [Sketch #2](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/assignment.md)
-- **For next class**:
-    - Read about [repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/context.md) and post a response
 
-#### Wednesday 2/2
-- Survey presentations 1
+
+#### Wednesday 2/8
+- Discussing[repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/context.md)
 - Discussion of repetition
+- Explanation of [artist descriptions](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md)
 - Explanation of [rubric](https://github.com/brianhouse/art_and_code/blob/master/resources/rubric.md)
+- Questions and work time
+
+
+### Week 3
+
+#### Monday 2/13
+- Crit Sketch #2
+- [Coding indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/3_indeterminacy/code.md)
+- Begin [Sketch #3](https://github.com/brianhouse/art_and_code/blob/master/units/3_indeterminacy/assignment.md)
+
+#### Wednesday 2/15
+- Survey presentations 1
+- Discussing [indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/3_indeterminacy/context.md)
 - Questions and work time
 
 
 ### Week 4
 
-#### Monday 2/7
-- Crit Sketch #2
-- [Coding indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/3_indeterminacy/code.md)
-- Begin [Sketch #3](https://github.com/brianhouse/art_and_code/blob/master/units/3_indeterminacy/assignment.md)
-- **For next class**:
-    - Read about [indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/3_indeterminacy/context.md) and post a response
-
-#### Wednesday 2/9
-- Survey presentations 2
-- Discussion of indeterminacy
-- Questions and work time
-
-
-### Week 5
-
-#### Monday 2/14
+#### Monday 2/20
 - Crit Sketch #3
 - [Getting started with the terminal](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/getting_started.md)
 - [Coding nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/code.md) (text input)
 - **For next class**:
     - Play [Zork](https://playclassic.games/games/adventure-dos-games-online/play-zork-great-underground-empire-online/play)
-    - Read about [nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/context.md) and post a response
 <!-- text input exercise in class: ask a question, handle all answers -->
 
-#### Wednesday 2/16
-- Discussion of nonlinearity
-- [Coding nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/code.md) continued (functions)
+#### Wednesday 2/22
+- Discussing [nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/context.md)
+- [Coding nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/code.md) continued
 - Begin [Sketch #4](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/assignment.md)
 <!-- toy exercise in class: draw a flowchart with four rooms -->
 
+### Week 5
+
+#### Monday 2/27
+- [Coding nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/code.md) continued (functions)
+- Questions and work time
+
+#### Wednesday 3/1
+- Survey presentations 2
+- Play test
+
+
 ### Week 6
 
-#### Monday 2/21
+#### Monday 3/6
 - Survey presentations 3
 - Questions and work time
 
-#### Wednesday 2/23
-- Review, questions, and work time
-
-
-### Week 7
-
-#### Monday 2/28
-- Survey presentations 4
-- Play test
-
-#### Wednesday 3/2
+#### Wednesday 3/8
 - Crit Sketch #4
-- **For next class**:
-    - Read about [recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/context.md) and post a response
-
-
-### Week 8
-
-#### Monday 3/7
-- Discussion of recombination
-- [Coding with recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/code.md)
-- Begin [Sketch #5](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/assignment.md)
-- Questions and work time
-
-#### Wednesday 3/9
-- Survey presentations 5
-- Review, questions, and work time
-
-
-### Week 9
-
-<!-- sherman fairchild -->
-#### Monday 3/14
-<!-- - Desk crits and work time -->
-CANCELLED: NO CLASS
-
-#### Wednesday 3/16
-- Survey presentations 6
-<!-- - Crit Sketch #5 -->
+    
 
 
 ### Spring Break
 
-### Week 10
 
-#### Monday 3/28
+### Week 7
+
+#### Monday 3/20
+- Discussing[recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/context.md)
+- [Coding with recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/code.md)
+- Begin [Sketch #5](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/assignment.md)
+
+
+#### Wednesday 3/22
+- Survey presentations 4
+- Questions and work time
+
+
+### Week 8
+
+#### Monday 3/27
+- Survey presentations 5
+- Questions and work time
+
+#### Wednesday 3/29
 - Crit Sketch #5
 - [Coding glitch](https://github.com/brianhouse/art_and_code/blob/master/units/6_glitch/code.md)
 - Begin [Sketch #6](https://github.com/brianhouse/art_and_code/blob/master/units/6_glitch/assignment.md)
-- **For next class**:
-    - Read about [glitch](https://github.com/brianhouse/art_and_code/blob/master/units/6_glitch/context.md) and post a response
 
-#### Wednesday 3/30
+
+### Week 9
+
+#### Monday 4/3
+- Discussing [glitch](https://github.com/brianhouse/art_and_code/blob/master/units/6_glitch/context.md)
+- Survey presentations 6
+- Questions and work time
+
+
+#### Wednesday 4/5
+
+
+### Week 10
+
+#### Monday 4/10
 - Survey presentations 7
-- Discussion of glitch
+- Questions and work time
 
+#### Wednesday 4/12
+- Survey presentations 8
+- Crit Sketch #6
 
 ### Week 11
 
-#### Monday 4/4
-- Review, questions, and work time
+#### Monday 4/17 — April Break (No Class)
 
-#### Wednesday 4/6
-- Survey presentations 8
-- Crit Sketch #6
+
+#### Wednesday 4/19
+- Discussing[emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/context.md) and post a response
 - [Coding emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/code.md)
-- **For next class**:
-    - Read about [emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/context.md) and post a response
+- Begin [Sketch #7](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/assignment.md)
 
 ### Week 12
 
-#### Monday 4/11
-- Survey presentations 9
-- Discussion of emergence
-- Begin [Sketch #7](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/assignment.md)
+#### Monday 4/24
+- Questions and work time
 
-#### Wednesday 4/13
-- Make up presentations
-- Review, questions, and work time
+#### Wednesday 4/26
+- Intemediate crit sketch #7
 
 ### Week 13
 
-#### Monday 4/18
-- Desk crits and work time
-
-#### Wednesday 4/20
-- Make-up survey presentations
+#### Monday 5/1
 - Questions and work time
 
-### Week 14
-
-#### Monday 4/25
-- Start final revision
-
-#### Wednesday 4/27
+#### Wednesday 5/3
 - Crit Sketch #7
 
 
-### Finals Week: Tuesday 5/3 2:00–4:00PM
-- Final revision due
+### Week 14
+
+#### Monday 5/8
+TBD
+
+
+
+### Exam Week:
+TBD
 
