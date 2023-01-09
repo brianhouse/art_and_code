@@ -1,14 +1,8 @@
-# Digital Media Questionnaire
+# Art+Code Questionnaire
 
 #### Basics
 - Email:
 - What I should call you:
-- Pronouns I should use:
-- Year:
-- Major:
-- Registered?:
-- On waitlist?:
-- Previous art courses:
 
 
 #### What brings you to this course?

@@ -1,4 +1,4 @@
-## A randomized selection of media artists
+## A random and randomized selection of code-based artists
 - Brenna Murphy
 - Laurie Spiegel
 - Jonas Lund

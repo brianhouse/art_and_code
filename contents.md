@@ -1,4 +1,4 @@
-# ART 112: Digital Media I
+# ARHA 278: Art+Code
 
 ## Units
 
