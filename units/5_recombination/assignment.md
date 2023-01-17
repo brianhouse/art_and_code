@@ -2,7 +2,7 @@
 
 Choose one or more source texts—newspaper articles, poems, books, lyrics, emails, manifestos, etc—and write a program that recombines its contents to create a new text. The way in which the text is transformed should have an artistic purpose, whether that is to critically comment on the content of your source, explore some formal property of its language, or elicit a particular mood in your audience.
 
-Along with your code and [3-sentence description](../../resources/description_guidelines.md), you should supply an example of your program's output by copying and pasting from the console into a Google Doc. Resist the urge to edit the output to smooth over rough edges; looking back, those often become the most interesting features.
+Turn in your sketch folder to Moodle; your description should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept. You should also supply an example of your program's output by copying and pasting from the console into a text file or Word document. Resist the urge to edit the output to smooth over rough edges; looking back, those often become the most interesting features.
 
 ### Resources
 - [Recombination context](context.md)

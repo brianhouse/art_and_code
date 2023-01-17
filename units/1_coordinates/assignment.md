@@ -2,7 +2,7 @@
 
 In this sketch, you will practice with drawing using coordinates. To explore the relationship of digitally encoded "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you do not necessarily have to try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something of its _digital_-ness. Pay particular attention to your use of color.
 
-Turn in the contents of your sketch folder to Google Classroom (first remember to save it, include `save("output.png")` as the last line of your sketch to make sure an image file is generated. In addition, upload an image file of the original painting as well as a document that includes your title, the artist and year of the original painting, and a [3-sentence description](../../resources/description_guidelines.md) that explains the choices you made in your reinterpretation.
+Turn in your sketch folder to Moodle (first remember to save it, include `save("output.png")` as the last line of your sketch, and run the sketch to make sure an image file is generated). In addition, upload an image file of the original painting. Your description on Moodle should include your title, the artist and year of the original painting, and a [3-sentence statement](../../resources/statement_guidelines.md) that explains the choices you made in your reinterpretation.
 
 
 ### Examples

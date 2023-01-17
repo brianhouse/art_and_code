@@ -152,7 +152,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 7
 
 #### Monday 3/20
-- Discussing[recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/context.md)
+- Discussing [recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/context.md)
 - [Coding with recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/code.md)
 - Begin [Sketch #5](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/assignment.md)
 
@@ -201,7 +201,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 
 #### Wednesday 4/19
-- Discussing[emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/context.md) and post a response
+- Discussing [emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/context.md)
 - [Coding emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/code.md)
 - Begin [Sketch #7](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/assignment.md)
 
@@ -226,7 +226,6 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 5/8
 TBD
-
 
 
 ### Exam Week:

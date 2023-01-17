@@ -2,7 +2,7 @@
 
 Create a virtual "textile." The patterns you create should incorporate multiple loops and layers, with attention paid to the overall composition as well as the texture. You might experiment with looping multiple small shapes at the same time, and consider taking advantage of transparency.
 
-Turn in the contents of your sketch folder to Google Classroom (first remember to save it, include `save("output.png")` as the last line of your sketch to make sure an image file is generated. In addition, include a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that conveys your concept.
+Turn in your sketch folder to Moodle (first remember to save it, include `save("output.png")` as the last line of your sketch, and run the sketch to make sure an image file is generated). Your description on Moodle should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept.
 
 ### Examples
 

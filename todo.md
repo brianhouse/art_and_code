@@ -1,5 +1,5 @@
 ## todo
-modify setup pages for Processing 4
+modify setup pages for Processing 4 to account for the modes only under Tools
 
 follow nexts
 

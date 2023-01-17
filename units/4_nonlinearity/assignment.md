@@ -7,10 +7,10 @@ While your work may be structurally similar to _Zork_, the theme and written con
 Draw a flowchart of the the choices that will be available to your reader (by hand, using Google Draw, or any other medium). Every state in your flowchart should correspond to a function in your code. You should have little, if any, code outside of a function.
 
 
-Submit the following to Google Classroom:
-- a document with your title and description
+Submit the following to Moodle:
+- your title and description
 - your flowchart
-- your code
+- your sketch folder
 
 
 ### What makes a good nonlinear narrative?

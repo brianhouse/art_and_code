@@ -2,7 +2,8 @@
 
 In this sketch, you will explore indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two), but randomness should play a central role in your concept. Use shapes together with loops and the `random` function. Pay special attention to layering. Not all parameters should be random, and by being intentional about the ranges of numbers you choose, the random elements in the resulting images should have a sense of structure and composition.
 
-Turn in your .pyde file as well as your image. In addition, include a document that includes your title and a [3-sentence description](../../resources/description_guidelines.md) that conveys your concept.
+Turn in your sketch folder to Moodle; your description should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept.
+
 
 ### Examples
 

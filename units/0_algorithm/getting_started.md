@@ -8,11 +8,11 @@ We're used to downloading software such as Photoshop or Ableton to our computers
 
 ## Setup
 
-Download **Stable Release version 3.5.4 (January 17, 2020)** from the [Processing website](https://processing.org/download/) for whichever operating system you are using. (The latest version does not yet have full support for Python.)
+Download the latest version from the [Processing website](https://processing.org/download/) for whichever operating system and hardware you are using. (If you're on a Mac and you're not sure if you have a "Intel 64-bit" or "Apple Silicon" machine, click on the Apple menu in the upper lefthand corner of your screen, choose "About This Mac", and look at the information next to "Processor".) Once click download, you'll have a .zip file.
 
-- On Windows, you'll have a .zip file. Double-click it, and drag the folder inside to a location on your hard disk. It could be in Program Files or simply the desktop, but the important thing is for the Processing folder to be pulled out of that .zip file. Then double-click processing.exe to start.
+- On Windows, double-click the .zip file, and drag the folder inside to a location on your hard disk. It could be in Program Files or simply the desktop, but the important thing is for the Processing folder to be pulled out of that .zip file. Then double-click processing.exe to start.
 
-- The Mac OS X version is also a .zip file. Double-click it and drag the Processing icon to the Applications folder. Then double-click the Processing icon to start.
+- On MacOS, double-click the .zip file and drag the Processing icon to the Applications folder. Then double-click the Processing icon to start.
 
 You should see something like this:
 

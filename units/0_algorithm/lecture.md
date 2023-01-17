@@ -76,13 +76,13 @@ _author shows the original_
 
 From here on out, we're going to continue to write **algorithms**, but they will be for a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us to use an unambiguous formal language that it knows how to interpret. That is what a programming language is.
 
-There are many programming languages out there, but in this course we are going to use Python from within the Processing Environment. In fact, your homework for next time is to download that and get it running—there are [instructions](getting_started.md) on how to do that on Google Classroom.
+There are many programming languages out there, but in this course we are going to use Python from within the Processing Environment. In fact, your homework for next time is to download that and get it running—there are [instructions](getting_started.md) on how to do that on the syllabus.
 
 In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **coordinates**, **repetition**, **indeterminacy**,  **nonlinearity**, **recombination**, **glitch**, **emergence**, and **interface**. For each one of these, I'll introduce the structure, show some of the context within art history, explain how you program it in Python, and then you'll complete an artwork (or as we'll call it, a "sketch").
 
-And that is it in a nutshell. The only additional component is that once over the course of the semester, each one of you will give a short presentation about a digital media artist. The idea there is that we get a sense of some of the breadth of practices that are out there. We'll have a couple of those each week, and it may or may not line up with what we're working on that week, but that's ok. You can sign up for presentations on Google Classroom, it's first come first served, so check that out.
+And that is it in a nutshell. The only additional component is that once over the course of the semester, each one of you will give a short presentation about a digital media artist. The idea there is that we get a sense of some of the breadth of practices that are out there. We'll have a couple of those each week, and it may or may not line up with what we're working on that week, but that's ok. You can sign up for presentations via Moodle, it's first come first served, so check that out.
 
-In fact, everything is up on Google Classroom, and we'll be leaning on that heavily to administer the course, so please take some time to be familiar with that. From here on out, I'll do all my communication through the Stream (do people get emails when I post?)
+In fact, everything is up on Moodle, and we'll be leaning on that heavily to administer the course, so please take some time to be familiar with that. From here on out, I'll do all my communication through the Stream (do people get emails when I post?)
 
 Please look at the syllabus in particular for policies, how the grading works, and so forth.
 
