@@ -1,16 +1,18 @@
-## Todo
+## todo
 modify setup pages for Processing 4
 
 follow nexts
 
 make conceptual prompts explicit
 
+rubric?
+
 
 #### moodle
-google survey
-google presentation signup sheet
+survey
+grading rubric
 
-how they turn in stuff 
-how I go through assignments live
 
-grading
+## go time
+
+practice downloading all the assignments

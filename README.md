@@ -1,7 +1,7 @@
-# ARHA 278: ART+CODE
+# ARHA 278: ART + CODE
 
-Monday / Wednesday 9:00–11:00, Fayerweather 215  
-Course materials on [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4)  
+Monday / Wednesday 9:00–11:00
+Fayerweather 215   
 
 Prof. Brian House (he/him), [bhouse@amherst.edu](mailto:bhouse@amherst.edu)  
 Office hours T 11:00–11:45, 306
@@ -24,10 +24,10 @@ Introduction to computer programming for studio artists. By writing code to gene
 ### Sketches
 This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with computational media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **nonlinearity**, **recombination**, **glitch**, **emergence**, and **interface**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
-Sketches cumulatively account for 75% of your final grade. They must include a title and a [3-sentence description](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through [Google Classroom](https://classroom.google.com/u/1/c/NDA5NzQ5Njc5ODk4) *prior* to the crit—**no late work is accepted**, and you must attend the crit for your work to be graded. Submit your .pyde file, an image file (if relevant), and a Google doc with your description. Sketches will be evaluated on both craft and concept.
+Sketches cumulatively account for 75% of your final grade. They must include a title and a [3-sentence statement](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through Moodle *prior* to the crit—**no late work is accepted**, and you must attend the crit for your work to be graded. Submit your sketch folder with an image or text output and type your statement on Moodle (keep a copy to present with during crit). Sketches will be evaluated on both craft and concept.
 
 ### Survey presentations
-Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
+Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Participation
 Motivated and mindful participation in crit and classroom disscussion is expected and constitutes 15% of your final grade. Attendance is mandatory, and missed classes or late arrivals will impact your participation grade at the professor's discretion. 
@@ -67,7 +67,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - In-class Sketch #0: Algorithm
 - **For next class**:
     - [Get set up](https://github.com/brianhouse/art_and_code/blob/master/units/0_algorithm/getting_started.md) with Python Mode for Processing
-    - [Sign up to present](https://docs.google.com/spreadsheets/d/1nggDB1bS2JwEHQEd68H1AvLbPs22qDmSZV5r_P9cJYI/edit#gid=0)
+    - [Sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing)
 
 
 #### Wednesday 2/1
@@ -89,8 +89,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 
 #### Wednesday 2/8
-- Discussing[repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/context.md)
-- Discussion of repetition
+- Discussing [repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/context.md)
 - Explanation of [artist descriptions](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md)
 - Explanation of [rubric](https://github.com/brianhouse/art_and_code/blob/master/resources/rubric.md)
 - Questions and work time

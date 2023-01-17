@@ -1,6 +1,6 @@
 # Guidelines for Critique
 
-Crit is an opportunity to get collective feedback on your work from your peers and for our class community to develop a shared vocabulary for talking about digital media art. While it can be a vulnerable experience to present your work in front of everyone, this is ultimately a more valuable method of evaluating art—which always exists in dialogue with others—than simply having your work graded by the instructor.
+Crit is an opportunity to get collective feedback on your work from your peers and for our class community to develop a shared vocabulary for talking about code-based art. While it can be a vulnerable experience to present your work in front of everyone, this is ultimately a more valuable method of evaluating art—which always exists in dialogue with others—than simply having your work graded by the instructor.
 
 ### Presenting
 - State your title and read your description

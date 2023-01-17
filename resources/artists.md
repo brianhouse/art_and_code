@@ -22,6 +22,7 @@
 - Francis Tseng
 - Xin Liu
 - James Paterson
+- Adam Ferris
 - Ryan Kuo
 - Rafael Lozano-Hemmer
 - Kate Hartman
