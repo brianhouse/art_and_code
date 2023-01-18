@@ -1,4 +1,4 @@
-# Art+Code Questionnaire
+# Art + Code Questionnaire
 
 #### Basics
 - Email:
@@ -8,6 +8,12 @@
 #### What brings you to this course?
 
 <br /><br />
+
+
+#### What studio art courses have you taken in past, if any?
+
+<br /><br />
+
 
 #### What is your past experience with programming languages, if any?
 

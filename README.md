@@ -26,7 +26,7 @@ This course is built around open-ended code "sketches" that progress through a s
 
 Sketches cumulatively account for 75% of your final grade. They must include a title and a [3-sentence statement](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through Moodle *prior* to the crit—**no late work is accepted**, and you must attend the crit for your work to be graded. Submit your sketch folder with an image or text output and type your statement on Moodle (keep a copy to present with during crit). Sketches will be evaluated on both craft and concept.
 
-### Survey presentations
+### Presentations
 Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. These presentations make up 10% of your final grade.
 
 ### Participation

@@ -5,14 +5,8 @@ follow nexts
 
 make conceptual prompts explicit
 
-rubric?
-
-
-#### moodle
-survey
-grading rubric
 
 
 ## go time
-
+practice lecture in html
 practice downloading all the assignments
