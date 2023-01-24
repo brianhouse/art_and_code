@@ -2,13 +2,13 @@
 
 We're used to downloading software such as Photoshop or Ableton to our computers and using it creatively. These applications are programs that have been written in programming languages. Writing code yourself to make your own programs is arguably a more interesting way to interact with a computer, but to do so we have to choose some tools:
 
-**[Python](https://en.wikipedia.org/wiki/Python_(programming_language))** is a programming language. Other languages include C, Java, Go, Swift, PHP, Javascript ... the list goes on and on. Python is notable for its relatively simple syntax and its wide applicability. Though it was invented in 1991, today it's used for cutting edge artificial intelligence research, computational biology, data visualization, and backend server systems at companies like Google, not to mention by many digital media artists. You can compare a programming language to the syntax and basic vocabulary of a "natural language" like English, with the difference that you're addressing the computer instead of a person.
+**[Python](https://en.wikipedia.org/wiki/Python_(programming_language))** is a programming language. A programming language has a syntax and a basic vocabulary, just like a "natural language" such as English, but with the difference that you're addressing the computer instead of a person. Other languages besides Python include C, Java, Go, Swift, PHP, Javascript ... the list goes on and on. Python is notable for its relatively simple syntax and its wide applicability. Though it was invented in 1991, today it's used for cutting edge artificial intelligence research, computational biology, data visualization, and backend server systems at companies like Google, not to mention by many digital media artists. 
 
-**[Processing](https://processing.org/overview/)** is a software application that we'll use to write programs in Python (yes, it turns out you need software to write software), which was created to make programming more accessible for artists. Processing was originally created to work with the Java programming language, not Python, so we'll be using a special mode. Confusingly, Processing itself is often called a programming language, but when people say this they are really referring to the Java mode. In general, programs written with Processing are called "sketches."
+**[Processing](https://processing.org/overview/)** is a software application that we'll use to write programs in Python (yes, it turns out you need software to write software), which was created to make programming more accessible for artists. Processing was originally created to work with the Java programming language, not Python, so we'll be using a special mode. Confusingly, Processing itself is often called a programming language, but when people say this they are really referring to the Java mode. In general, programs written with Processing are called "sketches" to emphasize the experimental method of art-making.
 
 ## Setup
 
-Download the latest version from the [Processing website](https://processing.org/download/) for whichever operating system and hardware you are using. (If you're on a Mac and you're not sure if you have a "Intel 64-bit" or "Apple Silicon" machine, click on the Apple menu in the upper lefthand corner of your screen, choose "About This Mac", and look at the information next to "Processor".) Once click download, you'll have a .zip file.
+Download **>>> version 3.5.4 <<<** from the [Processing website](https://processing.org/download/) for whichever operating system and hardware you are using. Once you click download, you'll have a .zip file. (The latest version of Processing doesn't support Python very well yet, so be sure not to get that one -- the colors of the windows should match the ones you see here.)
 
 - On Windows, double-click the .zip file, and drag the folder inside to a location on your hard disk. It could be in Program Files or simply the desktop, but the important thing is for the Processing folder to be pulled out of that .zip file. Then double-click processing.exe to start.
 
@@ -27,7 +27,7 @@ Processing doesn't include support for the Python programming language by defaul
   <img src="code/canvas_2.png" width=500 /><br />
 </p>
 
-A window with the title "Mode Manager" will appear. Scroll down until you see "Python" and press "Install."
+A window with the title "Mode Manager" will appear. Scroll down until you see "**Python Mode for Processing 3**" (not 4!) and press "Install."
 
 <p align="center">
   <img src="code/canvas_3.png" width=500 /><br />
@@ -91,7 +91,7 @@ Then, to turn in your sketch, go up to the "Sketch" menu and choose the "Show Sk
   <img src="code/canvas_8.png" width=300 /><br />
 </p>
 
-Inside, you'll find several files: upload all of them to Google Classroom to complete the assignment (for future assignments, you will also create a Google Doc with a title and description for your sketch, but you don't have to do that now).
+Inside, you'll find several files: upload all of them to Moodle to complete the assignment (for future assignments, you will also have a title and description, but you don't have to do that now).
 
 <p align="center">
   <img src="code/canvas_9.png" width=500 /><br />
