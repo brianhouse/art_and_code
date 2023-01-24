@@ -82,10 +82,10 @@ Today, repetition is so ingrained with digital artists' work as to be somewhat d
   Jared Tarbell, <i>Guts</i> (2004)
 </p>
 
-### Response
+<!-- ### Response
 
 Describe another example of the use of repetition in an artwork. Provide a link if possible.
-
+ -->
 
 ##### The introduction to coding with this unit is [here](code.md).
 

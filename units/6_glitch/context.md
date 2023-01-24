@@ -69,9 +69,9 @@ Some others:
 </p>
 
 
-### Response
+<!-- ### Response
 
 Describe an example of glitch in art or in the world. Provide a link if possible.
-
+ -->
 
 ##### The introduction to coding with this unit is [here](code.md).

@@ -69,9 +69,9 @@ More recently, Netflix created a special episode of the dystopian series Black M
   A decision point in <i>Bandersnatch</i> (2018)<br />
 </p>
 
-### Response
+<!-- ### Response
 
 Describe another example of a nonlinear structure in art or in the world. Provide a link if possible. If you can't find one, describe a _linear_ structure instead.
 
-
+ -->
 ##### The introduction to coding with this unit is [here](code.md).

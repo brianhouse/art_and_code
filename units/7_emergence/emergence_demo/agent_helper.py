@@ -22,11 +22,13 @@ class Agent(object):
         self.velocity = PVector(0, 0)
         self.acceleration = PVector(0, 0)
         self.size = 10
-        self.speed = 1
+        self.max_speed = 1
         self._collisions = []
         self._heading = 0.0
         for key, value in properties.items():
             setattr(self, key, value)
+        if not len(Wall.walls):
+            Wall(1, 0, 0, 0)            
             
             
     def __setattr__(self, key, value):
@@ -77,7 +79,7 @@ class Agent(object):
         self._collisions = []        
 
         
-    def can_collide(self, entities):
+    def collide(self, entities):
         if type(entities) != list:
             entities = [entities]
         for entity in entities:
@@ -158,7 +160,7 @@ class Agent(object):
             count += 1            
         if count > 0:
             sum.div(count)
-            sum.setMag(self.speed)
+            sum.setMag(self.max_speed)
             steer = sum - self.velocity
             steer.limit(MAX_FORCE)
             steer.mult(strength)
@@ -184,7 +186,7 @@ class Agent(object):
             count += 1            
         if count > 0:
             sum.div(count)            
-            sum.setMag(self.speed)            
+            sum.setMag(self.max_speed)            
             steer = sum - self.velocity
             steer.limit(MAX_FORCE)
             steer.mult(strength)
@@ -204,7 +206,7 @@ class Agent(object):
             count += 1            
         if count > 0:
             sum.div(count)            
-            sum.setMag(self.speed)            
+            sum.setMag(self.max_speed)            
             steer = sum - self.velocity
             steer.limit(MAX_FORCE)
             steer.mult(strength)
@@ -228,7 +230,7 @@ class Agent(object):
             count += 1            
         if count > 0:
             sum.div(count)            
-            sum.setMag(self.speed)            
+            sum.setMag(self.max_speed)            
             steer = sum - self.velocity
             steer.limit(MAX_FORCE)
             steer.mult(strength)

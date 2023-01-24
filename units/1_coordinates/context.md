@@ -81,10 +81,10 @@ To make her images, Lillian would sketch the images on graph paper and then [enc
 Schwartz's work plays with the abstraction of representational imagery into digital form—or even just digital form for its own sake. Color plays a critical role, and in fact color is another example of how intuitive phenomena are encoded numerically, as we'll explore.
 
 
-### Response
+<!-- ### Response
 
 Describe another example of the use of a coordinate system. Provide a link if possible.
-
+ -->
 
 ##### The introduction to coding with this unit is [here](code.md).
 

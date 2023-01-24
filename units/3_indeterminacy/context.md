@@ -73,10 +73,10 @@ Another notable artist who uses Processing goes by the name [LIA](https://en.wik
 
 The work of contemporary artists like Reas and LIA is often called "generative art." This reflects the fact that when a code-based artwork heavily relies upon indetermine processes, each time the program is run, it will produce a difference output. Therefore, the code "generates" an infinite number of similar pieces, which shifts the emphasis away from the output and toward the code itself as the actual artwork.
 
-### Response
+<!-- ### Response
 
 Describe another example of indeterminacy in the world. Provide a link if possible.
-
+ -->
 
 
 ##### The introduction to coding with this unit is [here](code.md).

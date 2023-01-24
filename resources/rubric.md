@@ -11,4 +11,4 @@ Craft
 Aesthetics
 5 Compelling artwork independent of the assignment
 4 Satisfying visual (or textual) result
-3 Successful output
+3 Visual or textual result

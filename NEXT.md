@@ -6,8 +6,6 @@ how, with that room setup? pull some tables to the side?
 
 ## Units
 
-Have explicit conceptual prompts each assignment. Must fulfill the tech thing (use a loop) and the conceptual aspect (sense of complexity... or whatever)
-
 
 ## repetition
 add lovid
@@ -18,8 +16,6 @@ more examples from students so they know the possibilities
 
 
 ## emergence
-
-more for content on complex systems is here: https://natureofcode.com/book/chapter-6-autonomous-agents/
 
 global function to turn on gravity
 
@@ -39,9 +35,6 @@ animation
 walls
 time
 
-bug: initial Wall (have to put it in Agent constructor or something)
-
-can_collide -> collides
 
 calc heading function between two things? that let's them get in between the constraints, but also helps with the drawing.
 it's particularly useful with the mouse
@@ -61,8 +54,6 @@ that's been a source of confusion
 
 need a diagram for how to "draw" in the draw_agent functions
 
-
-"speed" really makes more sense as "max_speed"
 
 use bat.size
 

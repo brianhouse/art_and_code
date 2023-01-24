@@ -3,7 +3,6 @@ from agent_helper import *
 def setup():
     global bats, sharks, flowers, walls
     size(500, 500)
-    Wall(1, 0, 0, 0)
     pixelDensity(2)
     
     bats = []
@@ -12,7 +11,7 @@ def setup():
                     y=random(height), 
                     draw=draw_bat,
                     size=5,
-                    speed=5
+                    max_speed=5
                     )
         bats.append(bat)
         bat.bump(random(360), random(3))
@@ -23,7 +22,7 @@ def setup():
                     y=random(height), 
                     draw=draw_shark,
                     size=10,
-                    speed=3
+                    max_speed=3
                     ) 
         sharks.append(shark)
         shark.bump(random(360), random(3))  
@@ -34,7 +33,7 @@ def setup():
                        y=random(100, height-200), 
                        draw=draw_flower,
                        size=30,
-                       speed=1,
+                       max_speed=1,
                        nectar=255)
         flowers.append(flower)
             
@@ -55,7 +54,7 @@ def draw():
     for flower in flowers:
         flower.draw()
         flower.move()
-        flower.can_collide(walls)
+        flower.collide(walls)
         
     for wall in walls: 
         strokeWeight(wall.thickness)       
@@ -65,13 +64,13 @@ def draw():
     for bat in bats:
         bat.draw()
         bat.move()
-        bat.can_collide(bats)
-        bat.can_collide(walls)      
+        bat.collide(bats)
+        bat.collide(walls)      
         bat.avoid(bats, 20, 1)
         bat.seek(bats, 300, .3)
         bat.align(bats, 200, .3)
         bat.seek(flowers, 500, .4)
-        bat.can_collide(flowers)
+        bat.collide(flowers)
         bat.avoid(sharks, 200, .75)  
         bat.avoid(walls, 40, 1) 
         bat.avoid_edges(40, 1)
@@ -84,7 +83,7 @@ def draw():
                                 y=random(100, height-200), 
                                 draw=draw_flower,
                                 size=30,
-                                speed=1,
+                                max_speed=1,
                                 nectar=255)
                     flowers.append(flower)
                     
@@ -93,8 +92,8 @@ def draw():
     for shark in sharks:        
         shark.draw()
         shark.move()
-        shark.can_collide(walls)
-        shark.can_collide(flowers)
+        shark.collide(walls)
+        shark.collide(flowers)
         shark.seek(shark.closest(bats), 300, 1)
         for bat in bats:
             if shark.touching(bat):

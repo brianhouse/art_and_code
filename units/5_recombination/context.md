@@ -99,10 +99,10 @@ Finally, John Cayley is a pioneer of using digital algorithms to produce innovat
 
 Ok one more: [Computer Generated Olive Garden Commercial](https://twitter.com/keatonpatti/status/1006961202998726665?lang=en)
 
-### Response
+<!-- ### Response
 
 If you have 10 different words, how many different sentences can you make?
-
+ -->
 ##### The introduction to coding with this unit is [here](code.md).
 
 
