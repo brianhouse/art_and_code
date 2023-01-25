@@ -71,8 +71,8 @@ class Agent(object):
         friction.setMag(FRICTION)  
         self.acceleration.add(friction) 
         if GRAVITY: 
-            self.acceleration.add(PVector(0, GRAVITY))    
-        self.velocity.add(self.acceleration)
+            self.acceleration.add(PVector(0, GRAVITY)) 
+        self.velocity.add(self.acceleration)        
         self.position.add(self.velocity)
         self.check_edges()        
         self.acceleration.mult(0)
@@ -291,8 +291,8 @@ class Agent(object):
                                                                                                                                                                   
 
     def bump(self, deg, strength):
-        x = cos(radians(deg) + radians(90)) * strength
-        y = sin(radians(deg) + radians(90)) * strength
+        x = cos(radians(deg) - radians(90)) * strength
+        y = sin(radians(deg) - radians(90)) * strength
         bump = PVector(x, y)
         self.acceleration.add(bump)
   
@@ -411,3 +411,11 @@ class Wall(object):
             
 def step_cycle(n, rate):
     return (frameCount / int(rate)) % n
+
+
+def get_heading(x1, y1, x2, y2):
+    h = degrees(atan2(y2 - y1, x2 - x1)) - 90 + 180
+    return h if h < 0 else h + 360
+    
+    
+    

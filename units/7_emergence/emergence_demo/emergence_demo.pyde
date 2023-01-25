@@ -72,8 +72,8 @@ def draw():
         bat.seek(flowers, 500, .4)
         bat.collide(flowers)
         bat.avoid(sharks, 200, .75)  
-        bat.avoid(walls, 40, 1) 
-        bat.avoid_edges(40, 1)
+        bat.avoid(walls, 30, 10) 
+        bat.avoid_edges(30, 10)
         for flower in flowers:
             if bat.touching(flower):
                 flower.nectar -= 1
@@ -98,8 +98,14 @@ def draw():
         for bat in bats:
             if shark.touching(bat):
                 bats.remove(bat)       
-        shark.avoid(walls, 50, 1) 
-        shark.avoid_edges(50, 1)    
+        shark.avoid(walls, 20, 10) 
+        shark.avoid_edges(20, 10)    
+            
+            
+def mouseReleased():
+    for bat in bats:
+        heading = get_heading(mouseX, mouseY, bat.x, bat.y)
+        bat.bump(heading, 2)                
             
         
 def draw_bat(bat):
