@@ -1,7 +1,5 @@
 ## Hello
 
-<!-- COVID: we'll need two sheets of paper and a pen -->
-
 **Take 2min and make a drawing, keep it simple, it can be figurative or abstract, and then set it aside.**
 
 Let's go around and see who's here: name/pronouns + year + major
@@ -9,11 +7,13 @@ Let's go around and see who's here: name/pronouns + year + major
 
 ## Intro
 
-Welcome to Digital Media I
+Welcome to Art + Code
 
-First, what this course is _not_: we are not going to learn Photoshop, Illustrator, Video editing, or audio workstations. Mastering software like that is a legitimate take on what Digital Media is, and I apologize if that's what anyone is looking for.
+<!-- 
+I'm very excited to meet you all. And in fact, you're the first Amherst students I've ever met, as I'm new to the college. Anybody else new? So you might have to bear with me a bit as I learn the ropes here, and thank you in advance for that.
+-->
 
-...but what we are going to do in this course is to make art by learning to program a computer.
+So, in this course, what we are going to do is to make art by learning to program a computer.
 
 In the computer science department, you learn to program by solving problems having to do with math and engineering. Here, the problem is how to express yourselves by telling the computer what to do (and ultimately learning from the computer what might be interesting to express).
 
@@ -73,25 +73,22 @@ _author shows the original_
 
 ## Course
 
-From here on out, we're going to continue to write **algorithms**, but they will be for a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us to use an unambiguous formal language that it knows how to interpret. That is what a programming language is.
+From here on out, we're going to continue to write **algorithms**, but they will be for a computer instead of a human. As humans, we intuitively rely on a common context to understand what is being said to us. Lacking this, a computer depends on us to use an unambiguous formal language that it knows how to interpret. That is what a programming language is. There are many programming languages out there, but in this course we are going to use Python from within the Processing Environment, which is a platform designed for artists.
 
-There are many programming languages out there, but in this course we are going to use Python from within the Processing Environment. In fact, your homework for next time is to download that and get it running—there are [instructions](getting_started.md) on how to do that on the syllabus.
+The link to the syllabus is up on Moodle. When you click it, it will take you over to a platform called GitHub — this is a common platform used by coders to keep track of software as they develop it. We're not going to use GitHub for code in this class, but _I_ use it to work on the course materials. So I may change things over the course of the semester, but whatever is up on GitHub is the way to go. That includes the course schedule—you'll have to look at the syllabus to know the due dates for things, and it might change as we go.
 
-In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **coordinates**, **repetition**, **indeterminacy**,  **nonlinearity**, **recombination**, **glitch**, **emergence**, and **interface**. For each one of these, I'll introduce the structure, show some of the context within art history, explain how you program it in Python, and then you'll complete an artwork (or as we'll call it, a "sketch").
+That said, the structure of the course is really simple. In addition to **algorithm** are several other qualities associated with digital media, and in this course we'll deal with **coordinates**, **repetition**, **indeterminacy**,  **nonlinearity**, **recombination**, **glitch**, and **emergence**. For each one of these, I'll introduce the structure, show some of the context within art history, explain how you program it in Python, and then you'll complete an artwork (or as we'll call it, a "sketch").
 
 And that is it in a nutshell. The only additional component is that once over the course of the semester, each one of you will give a short presentation about a digital media artist. The idea there is that we get a sense of some of the breadth of practices that are out there. We'll have a couple of those each week, and it may or may not line up with what we're working on that week, but that's ok. You can sign up for presentations via Moodle, it's first come first served, so check that out.
 
-In fact, everything is up on Moodle, and we'll be leaning on that heavily to administer the course, so please take some time to be familiar with that. From here on out, I'll do all my communication through the Stream (do people get emails when I post?)
+Also, please look at the syllabus in particular for policies, how the grading works, and so forth. The one really important thing to mention is there is no late work in this course — you submit things before class, we all look at the results together, and then that's it. 
 
-Please look at the syllabus in particular for policies, how the grading works, and so forth.
 
 ## Finish
 
 What questions do you have for me now?
 
 I'd like everyone to fill out a questionnaire online they haven't already.
-
-One important thing is that you will need to bring a laptop to this class. If that is a problem for anyone, please indicate that on the questionnaire.
 
 You have homework for next class, which is up on Moodle, which is to get set up with Python Mode for Processing. If you have problems getting that going, please email me or comment on the assignment.
 
