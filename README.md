@@ -1,10 +1,12 @@
 # ARHA 278: ART + CODE
 
-Monday / Wednesday 9:00–11:00
+Monday / Wednesday 9:00–11:00  
 Fayerweather 215   
 
-Prof. Brian House (he/him), [bhouse@amherst.edu](mailto:bhouse@amherst.edu)  
-Office hours T 11:00–11:45, 306
+Prof. Brian House (he/him)  
+[bhouse@amherst.edu](mailto:bhouse@amherst.edu)  
+Office hours Tuesday 11:00–11:45  
+Fayerweather 306
 
 
 ## Course Description
