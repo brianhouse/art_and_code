@@ -2,16 +2,13 @@
 
 **Take 2min and make a drawing, keep it simple, it can be figurative or abstract, and then set it aside.**
 
+
 Let's go around and see who's here: name/pronouns + year + major
 
 
 ## Intro
 
 Welcome to Art + Code
-
-<!-- 
-I'm very excited to meet you all. And in fact, you're the first Amherst students I've ever met, as I'm new to the college. Anybody else new? So you might have to bear with me a bit as I learn the ropes here, and thank you in advance for that.
--->
 
 So, in this course, what we are going to do is to make art by learning to program a computer.
 
@@ -31,14 +28,16 @@ How do you come up with a recipe?
 
 That's exactly how I want you to think about programming. You're always borrowing _code_—ie, the pieces of a program—using libraries, looking stuff up, and it's lots and lots and lots of trial and error.
 
+Why learn code and not software like Photoshop, Procreate, Unity, After Effects, Blender, etc? Well, if this class was about getting directly to a particular kind of result, and mastering that, perhaps learning software would be a better approach. But our goal isn't to produce flashy stuff, it's to understand the principles behind code and computers as a medium. And in doing that, we'll understand the principles behind these software programs that other people have made for us, and we're also empowered to make our own versions of software. Maybe a drawing program that I make won't be as advanced as one I can buy. But I can make it singularly mine, it can work the way I think, and that can serve practical, critical, and conceptual purposes.
+
+
 So where does that get us? What's possible with programming? Here are some more or less random examples of artists making things out of code:
-- [Casey Reas](context/0_casey_reas_1.jpg) / [2](context/0_casey_reas_2.jpg)
+- [Casey Reas](context/0_casey_reas_1.png) / [2](context/0_casey_reas_2.jpg)
+- [Rick Silva](http://silvafieldguide.com)
 - [Chris Milk](context/1_chris_milk_treachery_of_sanctuary.mp4)
 - [Nicole Aptekar](https://www.instagram.com/nicole.aptekar/)
-- [Brenna Murphy](context/3_murphy_lattice_domains.pdf)
 - [Mario Klingemann](https://www.flickr.com/photos/quasimondo/albums/72157677689800878)
 - [Sougwen Chung](context/5_sougwen_chung_drawing_operations.mp4)
-- [Onyx Ashanti](context/6_onyx_ashanti.mp4)
 
 What do you think about these examples?
 
@@ -60,7 +59,8 @@ So let's give it a shot.
 
 - Take the drawing you made
 - Get an index card
-- On the card I want you to write, in words, a series of instructions that, when followed by someone else, will result in the drawing
+- On the card I want you to write, in words, a series of instructions that, when 
+- if it's a representational drawing, describe how to draw it, but don't say what it is.
 ...
 - Now we're going to swap
 - When you're done, put the original, the code, and the re-interpretation together
