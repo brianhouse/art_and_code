@@ -1,11 +1,11 @@
 Concept
-5 Thoughtful and compelling statement and title that match the result
-4 Interesting concept; not fully articulated or reflective of the result 
+5 Compelling statement and title indicating depth in intention
+4 Thoughtful approach that articulates the result
 3 Adequate statement and title
 
 Craft
 5 Fruitful experimentation beyond the examples
-4 Basic command of assigned programming techniques
+4 Demonstrates command of assigned programming techniques
 3 Good faith attempt at code
 
 Aesthetics

@@ -75,6 +75,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Wednesday 2/1
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
+- Discussing [coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/context.md)
 - [Coding with coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
 - Going forward, use the [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
 - Begin [Sketch #1](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/assignment.md)
@@ -83,7 +84,6 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 2    
 
 #### Monday 2/6
-- Discussing [coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/context.md)
 - Explanation of [crit guidelines](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md)
 - Crit Sketch #1
 - [Coding with repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/code.md)
