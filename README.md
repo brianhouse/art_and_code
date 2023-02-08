@@ -75,7 +75,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Wednesday 2/1
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
-- Discussing [coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/context.md)
+- Discussing coordinates
 - [Coding with coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
 - Going forward, use the [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
 - Begin [Sketch #1](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/assignment.md)
@@ -91,7 +91,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 
 #### Wednesday 2/8
-- Discussing [repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition/context.md)
+- Discussing repetition
 - Explanation of [artist descriptions](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md)
 - Explanation of [rubric](https://github.com/brianhouse/art_and_code/blob/master/resources/rubric.md)
 - Questions and work time
@@ -106,7 +106,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 2/15
 - Survey presentations 1
-- Discussing [indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/3_indeterminacy/context.md)
+- Discussing indeterminacy
 - Questions and work time
 
 
@@ -121,7 +121,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 <!-- text input exercise in class: ask a question, handle all answers -->
 
 #### Wednesday 2/22
-- Discussing [nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/context.md)
+- Discussing nonlinearity
 - [Coding nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/code.md) continued
 - Begin [Sketch #4](https://github.com/brianhouse/art_and_code/blob/master/units/4_nonlinearity/assignment.md)
 <!-- toy exercise in class: draw a flowchart with four rooms -->
@@ -154,7 +154,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 7
 
 #### Monday 3/20
-- Discussing [recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/context.md)
+- Discussing recombination
 - [Coding with recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/code.md)
 - Begin [Sketch #5](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/assignment.md)
 
@@ -179,7 +179,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 9
 
 #### Monday 4/3
-- Discussing [glitch](https://github.com/brianhouse/art_and_code/blob/master/units/6_glitch/context.md)
+- Discussing glitch
 - Survey presentations 6
 - Questions and work time
 
@@ -203,7 +203,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 
 #### Wednesday 4/19
-- Discussing [emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/context.md)
+- Discussing emergence
 - [Coding emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/code.md)
 - Begin [Sketch #7](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/assignment.md)
 

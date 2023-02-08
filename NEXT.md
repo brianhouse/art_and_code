@@ -1,18 +1,23 @@
 ## Organization
 
 MORE SMALL GROUP DESK CRITS
-how, with that room setup? pull some tables to the side?
 
 
 ## Units
 
 
-## recombination
+### repetition
+context: Walter Benjamin, Harold Cohen, NFTs
+
+map and range parameters
+
+
+### recombination
 have them do it first with scissors and paper?
 more examples from students so they know the possibilities
 
 
-## emergence
+### emergence
 
 avoiding edges works poorly
 

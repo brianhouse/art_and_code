@@ -41,7 +41,7 @@ One particularly prominent figure in contemporary art in this regard is Andy War
 
 In reference to _Campbell's Soup Cans_, one of his most famous works, Warhol commented, "I used to have the same lunch every day, for twenty years, I guess, the same thing over and over again." And yet, Warhol is also known for the coining the phrase "15-minutes of fame" and for creating "screen tests" of his friends, anticipating social media and the influencer culture today.
 
-Warhol's taste for rapid and vapid repetition contrasts another New York City-based artist of a subsequent generation who took industrial repetition in a completely different direction—Taiwanese artist Tehching Hsieh (1950–). One example is _One Year Performance 1980–1981 (Time Clock Piece)_, in which Hsieh punched a time clock and took a photograph of himself every hour on the hour for an entire year.
+Warhol's taste for rapid and vapid repetition contrasts another New York City-based artist of a subsequent generation who took industrial repetition in a completely different direction—Taiwanese artist Tehching Hsieh (1950–) (pronounced dur-ching shay). One example is _One Year Performance 1980–1981 (Time Clock Piece)_, in which Hsieh punched a time clock and took a photograph of himself every hour on the hour for an entire year.
 
 <p align="center">
   <img src="context/5_hsieh.jpg" width=500 /><br />
