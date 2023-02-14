@@ -1,15 +1,34 @@
 ## Organization
 
-MORE SMALL GROUP DESK CRITS
+SMALL GROUP DESK CRITS once the tables support it
 
 
 ## Units
 
+am I consistent with the use of "argument"?
+
+
+### coordinates
+
+width and height (and math with them)
+
+
 
 ### repetition
-context: Walter Benjamin, Harold Cohen, NFTs
+
+context: Walter Benjamin, Harold Cohen, NFTs, Steve Reich (micro effects emerge)
 
 map and range parameters
+
+op art -- more visual examplesa
+
+coolers site for color schemes
+
+
+### indeterminacy
+rotation example
+
+better prompt
 
 
 ### recombination
@@ -53,4 +72,8 @@ use bat.size
 
 - still missing map(), seems significant
 
+
+### future
+
+Where is Art+Code going? IF broken out can be replaced with screen saver with if-then statements based on the timer. could potentially do that now. recombination could be visual text. and then there's room to bring in interface. it's a little more cohesive. what of this can I do now?
 

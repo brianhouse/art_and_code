@@ -1,6 +1,6 @@
 # Indeterminacy
 
-A critical function for making images like these is `random()`. `random()` doesn't draw anything to the canvas itself. Instead, it produces a random number within a given range.
+A critical function for making images like these is `random()`. `random()` doesn't draw anything to the canvas itself. Instead, it _returns_ a random number within a given range.
 
 ```py
 random(0, 100)  # a random number between 0 and 100
@@ -12,7 +12,7 @@ If you put this into a sketch, every time you run it, you'll get a different ran
 print(random(0, 100))
 ```
 
-Notice how we've put `random()` _inside_ `print()`. It can be tricky to keep track of all the parentheses, but this is a very useful thing to be able to do. `random()` will first do its job and come up with a random number between 0 and 100, and then this number will be what `print()` prints out. And every time the sketch is run, this number will be different:
+Notice how we've put `random()` _inside_ `print()`. It can be tricky to keep track of all the parentheses, but this is a very useful thing to be able to do. `random()` will first do its job and come up with a random number between 0 and 100 and return it. And then this number will be what `print()` prints out. Every time the sketch is run, this number will be different:
 
 <p align="center">
   <img src="code/canvas_1_.png" width=700 /><br />

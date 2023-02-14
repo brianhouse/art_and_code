@@ -227,9 +227,8 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 14
 
 #### Monday 5/8
-TBD
+Wrap up
 
+(No meetings or work due during exam week)
 
-### Exam Week:
-TBD
 

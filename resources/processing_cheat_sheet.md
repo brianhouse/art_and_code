@@ -5,6 +5,8 @@ Arguments to functions can be numbers or variables. Below, the arguments are nam
 ### Canvas
 - `size(width, height)` set canvas size in pixels
 - `background(color)` set window background color
+- `width` magic variable with the width of the canvas
+- `height` magic variable with the height of the canvas
 
 
 ### Shapes
@@ -49,6 +51,10 @@ endShape()
 - `fill(100, 50)` 2 arguments is greyscale + opacity
 - `fill(100, 200, 0)` 3 arguments is color
 - `fill(100, 200, 0, 50)` 4 arguments is color + opacity
+
+
+### Map
+- `map(i, 0, height, 0, 255)` variable, initial low, initial high, remapped low, remapped high
 
 
 ### Comparison operators

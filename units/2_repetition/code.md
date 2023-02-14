@@ -2,13 +2,13 @@
 
 ### Print
 
-Before we get to repeating things, let's take a second to talk about `print`, because it will help us understand what we're doing.
+Before we get to repeating things, let's take a second to talk about `print()`, because it will help us understand what we're doing.
 
 ```py
 print(100)
 ```
 
-Like the shape functions from Processing, `print` is a function that takes an argument and does something with it. In this case, however, it doesn't draw anything to the canvas. Instead, it prints it out in Processing's console window:
+Like the shape functions from Processing, `print()` is a function that takes an argument and does something with it. In this case, however, it doesn't draw anything to the canvas. Instead, it prints it out in Processing's console window:
 
 <p align="center">
   <img src="code/canvas_0.png" width=500 /><br />
@@ -197,6 +197,8 @@ for i in range(256):
   <img src="code/canvas_12.png" width=360 /><br />
 </p>
 
+
+
 ### Nesting Loops
 
 Let's make a row of circles:
@@ -303,4 +305,64 @@ for j in range(10):
 
 <p align="center">
   <img src="code/canvas_18_.png" width=400 /><br />
+</p>
+
+
+### `Map()`
+
+In a previous example, we used i for both color values _and_ vertical pixels, iterating from 0–255 for both. In this case, it worked, but what if those ranges don't line up?
+
+Consider this variation:
+
+```py
+size(360, 600)
+background(255)
+
+for i in range(height):
+    stroke(i, 0, 255)
+    line(0, i, width, i)
+```    
+
+<p align="center">
+  <img src="code/canvas_20.png" width=360 /><br />
+</p>
+
+The gradient works, but only for the first 255 pixels—for the remaining 345 pixels, we're just stuck on magenta, because the red value for `stroke()` can't go any higher. How do we still use i but have `stroke()` progress through a different range?
+
+This situation is a good candidate for using the `map()` function. What `map()` does is to take a variable like i along with information about its expected range and remap it to a different range.
+
+```py
+map(i, 0, height, 0, 255)   # variable, initial low, initial high, remapped low, remapped high
+```
+
+Unlike the functions we've seen so far, `map()` doesn't draw anything to the screen. Instead, it _returns_ a value. This means we can substitute this whole construction any time we use `i` in our code, but we want to remap its values. Like this:
+
+```py
+size(360, 600)
+background(255)
+
+for i in range(height):
+    stroke(map(i, 0, height, 0, 255), 0, 255)  # i is replaced by map(i, 0, height, 0, 255)
+    line(0, i, width, i)
+```
+
+This can look a little complicated with all the parentheses. But all we've done is to put `map()` inside of `stroke()` where `i` was before. The arguments we've given to `map()` are `i`, the low and high values we expect for `i` (which are 0 to height as determined by `range()`), and the low and high values we want for `stroke()` (0 and 255). Now, we get this:
+
+<p align="center">
+  <img src="code/canvas_21.png" width=360 /><br />
+</p>
+
+`map()` is not only useful for gradients. Anywhere you're using a loop and want to control two parameters at once it can come in handy. Here, we're mapping 100 circles so they are evenly distributed across the canvas (without doing any math!) and mapping the size so that those same 100 circles are distributed between a diameter of 1 and 200:
+
+```py
+size(360, 300)
+background(255)
+
+noFill()
+for i in range(100):
+    circle(map(i, 0, 100, 0, width), height/2, map(i, 0, 100, 1, 200))
+```
+
+<p align="center">
+  <img src="code/canvas_22.png" width=360 /><br />
 </p>
