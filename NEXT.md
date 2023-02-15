@@ -11,14 +11,14 @@ am I consistent with the use of "argument"?
 ### coordinates
 
 width and height (and math with them)
-
+...and then use that throughout the examples
 
 
 ### repetition
 
 context: Walter Benjamin, Harold Cohen, NFTs, Steve Reich (micro effects emerge)
 
-map and range parameters
+range parameters
 
 op art -- more visual examplesa
 
@@ -26,9 +26,24 @@ coolers site for color schemes
 
 
 ### indeterminacy
-rotation example
 
 better prompt
+
+more gaussian
+
+noise?
+
+
+### glitch
+
+all about variables
+
+
+### conditional / screensaver / nonlinearity?
+
+transformations?
+more on mapping
+
 
 
 ### recombination
@@ -68,12 +83,16 @@ use bat.size
 ### general
 
 - emphasize that the goal is to match concept and form
-/
 
-- still missing map(), seems significant
 
 
 ### future
 
 Where is Art+Code going? IF broken out can be replaced with screen saver with if-then statements based on the timer. could potentially do that now. recombination could be visual text. and then there's room to bring in interface. it's a little more cohesive. what of this can I do now?
+
+glitch becomes the introduction to variables
+
+this time, replace recombination with a screensaver module
+
+
 

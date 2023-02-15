@@ -316,11 +316,11 @@ else:
 square(320, 240, 100)
 ```
 
-This is called a random conditional, and it takes the form of an `if` statement. Notice how there are two blocks of code—one with a red fill and one with a blue fill—and only _one_ of them will actually run. Which one runs depends on whether `random()` returns a value that is above or below 50. We can read this like an English sentence: "if a random number between 0 and 100 is below 50, make it red, else make it blue."
+This is called a random conditional, and it takes the form of an `if` statement. We'll cover conditionals in detail in our next unit, but previewing it here will give us some flexibility to produce more radically different versions of the output each time we run the code.
 
-We'll cover conditionals in detail in our next unit, but previewing it here will give us some flexibility to produce more radically different versions of the output each time we run the code.
+Notice how there are two blocks of code—one with a red fill and one with a blue fill—and only _one_ of them will actually run. Which one runs depends on whether `random()` returns a value that is above or below 50. We can read this like an English sentence: "if a random number between 0 and 100 is below 50, make it red, else make it blue." We've used 100 here to make it even easier to think about: "50% of the time, make it red, the rest of the time make it blue." We can then change 50 to whatever percentage we want.
 
-Why would we want that? This is a strategy often used in generative art: if the same code is being used to produce multiple versions of an artwork in a series, random conditionals can contribute to those versions being more radically unique.
+Why would we want to do this? It's a strategy often used in generative art: if the same code is being used to produce multiple versions of an artwork in a series, random conditionals can contribute to those versions being more radically unique.
 
 <p align="center">
   <img src="code/canvas_18.png" width=250 /><br />
@@ -329,3 +329,89 @@ Why would we want that? This is a strategy often used in generative art: if the 
 <p align="center">
   <img src="code/canvas_19.png" width=250 /><br />
 </p>
+
+
+...but we can also adjust the distribution of choices within our sketches. To demonstrate, let's put this example in a `for` loop:
+
+
+```py
+size(640, 480)
+
+for i in range(80):
+    if random(100) < 20:    
+        fill(255, 0, 0)     # this happens 20% of the time
+    else:
+        fill(0, 0, 255)     # this happens 80% of the time
+
+    square(random(width), random(height), 50)
+```
+
+This gives us a collection of squares, 20% of which are red, and the rest blue.
+
+
+<p align="center">
+  <img src="code/canvas_22.png" width=500 /><br />
+</p>
+
+
+
+### Gaussian Distributions
+
+`random()` gives us an even distribution of numbers. But as we've learned, that's not always what we want. If we consider things in the real world, they often follow "normal" distributions. Take the height of adults, for example: there are very short people and very tall people, but most people are clustered around the middle. (This in itself is a topic with deep philosophical overtones as to how and why we create normalizations and categories, but we'll save that for discussion.)
+
+To do this in code, we use `randomGaussian()`. This works a little differently than `random()` in that it doesn't take an arguments—it always returns values centered on 0 and deviating by a random amount.
+
+Consider the following code using `random()`, which gives an even distribution:
+
+```py
+size(500, 500)
+background(255)
+
+strokeWeight(2)
+
+for i in range(2000):
+    point(random(width), random(height))
+```
+
+<p align="center">
+  <img src="code/canvas_23.png" width=500 /><br />
+</p>
+
+
+To get a Gaussian distribution, we'll use `randomGaussian()` instead. Because this function takes no arguments, we'll add half the canvas in each dimension to get things centered:
+
+```py
+size(500, 500)
+background(255)
+
+strokeWeight(2)
+
+for i in range(2000):
+   point(randomGaussian() + width/2, randomGaussian() + height/2)
+```
+
+<p align="center">
+  <img src="code/canvas_24.png" width=500 /><br />
+</p>
+
+Notice the little cluster in the middle! To spread that out, let's add a multiplier (getting the number that works best will take some trial and error):
+
+```py
+size(500, 500)
+background(255)
+
+strokeWeight(2)
+
+for i in range(2000):
+   point(randomGaussian() * 75 + width/2, randomGaussian() * 75 + height/2)
+```
+
+<p align="center">
+  <img src="code/canvas_25.png" width=500 /><br />
+</p>
+
+Notice how this is still "random", but it tapers off on the edges. It doesn't have to be used in two dimensions or centered in this way—using a gaussian distribution might be useful in all kinds of contexts, any time you want values centered somewhere with a bit of natural-feeling variation.
+
+
+
+
