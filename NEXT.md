@@ -94,5 +94,10 @@ glitch becomes the introduction to variables
 
 this time, replace recombination with a screensaver module
 
+//
+
+the conceptual components to the assignments need to be stronger maybe to make it feel like im doing a substantive thing 
+
+losing “Digital Media” as a purpose was clarifying for the presentation of the course, but not for the content, the lectures seem like an add on, and taking out IF trivializes everything a bit--then it's just a creative coding course.
 
 
