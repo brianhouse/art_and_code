@@ -5,7 +5,7 @@ from random import shuffle, randint
 
 GROUP_SIZE = 4
 
-with open("students.txt") as f:
+with open("students_present.txt") as f:
     students = [line.strip() for line in f.readlines()]
 
 reviewers = students[:]

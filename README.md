@@ -134,13 +134,14 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 3/1
 - Survey presentations 2
-- Play test
+- Play test #1
 
 
 ### Week 6
 
 #### Monday 3/6
 - Survey presentations 3
+- Play test #2
 - Questions and work time
 
 #### Wednesday 3/8

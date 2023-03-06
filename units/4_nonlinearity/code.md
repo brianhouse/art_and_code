@@ -965,3 +965,26 @@ Bonus: try adding this to your code:
 ```py
 print("\033[2J\033[H")
 ```
+
+### Compatibility
+
+Put this as the very first line of your code:
+```py
+# -*- coding: UTF-8 -*-
+```
+
+
+If you're using python3:
+```py
+import sys
+if sys.version_info.major == 2:
+    input = raw_input
+```
+
+
+If you're using python (python 2)    
+```py
+import sys
+if sys.version_info.major == 3:
+    raw_input = input   
+```
