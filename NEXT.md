@@ -34,6 +34,11 @@ more gaussian
 noise?
 
 
+### nonlinear narrative
+
+everyone has to be on the same version of python
+
+
 ### glitch
 
 all about variables
