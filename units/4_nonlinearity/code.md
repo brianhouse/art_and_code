@@ -978,7 +978,7 @@ If you're using python3:
 ```py
 import sys
 if sys.version_info.major == 2:
-    input = raw_input
+    raw_input = input
 ```
 
 
@@ -986,5 +986,5 @@ If you're using python (python 2)
 ```py
 import sys
 if sys.version_info.major == 3:
-    raw_input = input   
+    input = raw_input   
 ```

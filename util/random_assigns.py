@@ -21,7 +21,9 @@ for reviewer in reviewers:
             assignments[reviewer].append(reviewee)
             del reviewees[index]
 
-print(json.dumps(assignments, indent=4))
+for student in assignments:
+    print(student, assignments[student])
+# print(json.dumps(assignments, indent=4))
 
 print()
 for student in students:
