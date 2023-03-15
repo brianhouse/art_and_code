@@ -1,4 +1,4 @@
-## Sketch #6: Glitch
+## Sketch #5: Glitch
 
 For this sketch, you will create a "glitch" version of an image of your choice. Create a transformation of the original that is your own (not a copy of these examples) and which serves an aesthetic and conceptual purpose in relation to the original image.
 

@@ -155,10 +155,13 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 7
 
 #### Monday 3/20
-- Discussing recombination
+- Discussing glitch
+- [Coding glitch](https://github.com/brianhouse/art_and_code/blob/master/units/5_glitch/code.md)
+- Begin [Sketch #5](https://github.com/brianhouse/art_and_code/blob/master/units/5_glitch/assignment.md)
+<!-- - Discussing recombination
 - [Coding with recombination](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/code.md)
 - Begin [Sketch #5](https://github.com/brianhouse/art_and_code/blob/master/units/5_recombination/assignment.md)
-
+ -->
 
 #### Wednesday 3/22
 - Survey presentations 4
@@ -169,34 +172,35 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 3/27
 - Survey presentations 5
-- Questions and work time
+- Crit Sketch #5
+
 
 #### Wednesday 3/29
-- Crit Sketch #5
-- [Coding glitch](https://github.com/brianhouse/art_and_code/blob/master/units/6_glitch/code.md)
-- Begin [Sketch #6](https://github.com/brianhouse/art_and_code/blob/master/units/6_glitch/assignment.md)
-
+- Coding with time
+- Discussing time
+- Begin Sketch #6
 
 ### Week 9
 
 #### Monday 4/3
-- Discussing glitch
 - Survey presentations 6
 - Questions and work time
 
-
 #### Wednesday 4/5
+- Crit Sketch #6
+- [Coding emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/code.md)
 
 
 ### Week 10
 
 #### Monday 4/10
 - Survey presentations 7
-- Questions and work time
+- Discussing emergence
+- Begin [Sketch #7](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/assignment.md)
+
 
 #### Wednesday 4/12
-- Survey presentations 8
-- Crit Sketch #6
+- Questions and work time
 
 ### Week 11
 
@@ -204,18 +208,20 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 
 #### Wednesday 4/19
-- Discussing emergence
-- [Coding emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/code.md)
-- Begin [Sketch #7](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/assignment.md)
+- Intemediate crit sketch #7
+- Questions and work time
+
 
 ### Week 12
 
 #### Monday 4/24
-- Questions and work time
+- Crit Sketch #7
+- Coding interface
+
 
 #### Wednesday 4/26
-- Intemediate crit sketch #7
-
+- Begin Sketch #8
+- Questions and work time
 
 ### Week 13
 
@@ -223,12 +229,13 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Questions and work time
 
 #### Wednesday 5/3
-- Crit Sketch #7
+- Questions and work time
 
 
 ### Week 14
 
 #### Monday 5/8
+Crit sketch #8
 Wrap up
 
 (No meetings or work due during exam week)
