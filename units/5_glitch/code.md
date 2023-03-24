@@ -509,6 +509,38 @@ for y in range(400):
 </p>
 Now we're really getting some glitch going. Imagine using different offsets for different channels, adding vertical offset, combining multiple images, using transparency, etc...
 
+### Shatter example
+
+```py
+size(400, 400)
+background(255)
+source = loadImage("puffin.png")
+
+## shatter example
+
+for i in range(50):
+    start_x = int(random(width))
+    stop_x = start_x + int(random(150))    
+    start_y = int(random(height))
+    stop_y = start_y + int(random(150))
+    offset_x = int(random(-20, 20))
+    offset_y = int(random(-20, 20))
+    channel = int(random(3))
+    
+    for y in range(start_y, stop_y, 1):    
+        for x in range(start_x, stop_x, 1):        
+            pixel = source.get(x + offset_x, y + offset_y)
+            r = red(pixel)
+            g = green(pixel)
+            b = blue(pixel)              
+            fill(r, g, b)
+            noStroke()
+            square(x, y, 1)
+            
+
+```
+
+
 ### Repeated applications
 
 One parting thought. What if you generated an output image from this code, and then put it back through your sketch as the input image?
