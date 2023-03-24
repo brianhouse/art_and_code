@@ -41,7 +41,20 @@ everyone has to be on the same version of python
 
 ### glitch
 
-all about variables
+explicitly talk about variables
+
+cd skips
+circuit bending
+tv snow and vcr
+examples of how it's entered the vernacular
+
+/
+
+threshold example
+sections example
+shatter example
+
+
 
 
 ### conditional / screensaver / nonlinearity?
