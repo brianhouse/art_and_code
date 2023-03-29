@@ -246,6 +246,16 @@ def draw():
 ```
 
 
+###
+
+
+
+do animation with multiple parts of a figure moving by adding changes()
+
+
+
+
+
 ### using get()
 
 ```py

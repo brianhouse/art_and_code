@@ -8,7 +8,7 @@
 
 How does film work?
 FPS
-
+CPU is faster than fps 
 
 
 

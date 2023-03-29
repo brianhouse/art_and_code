@@ -418,4 +418,10 @@ def get_heading(x1, y1, x2, y2):
     return h if h < 0 else h + 360
     
     
-    
+def change(start, stop, duration, offset=0):
+    return map((frameCount + offset) % duration, 0, duration, start, stop)
+
+
+def swing(start, stop, duration, offset=0): 
+    position = sin(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start     
