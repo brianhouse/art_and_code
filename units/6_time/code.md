@@ -268,4 +268,22 @@ do animation with multiple parts of a figure moving by adding changes()
 
 
 
+sections on:
+- simple motion
 
+- conditionals
+
+    if 0 < frameCount < 1000:
+        
+    elif 1000 < frameCount < 2000:
+      
+    elif 2000 < frameCount < 3000:  
+
+    else:    
+
+note that you can (have to) use a negative offset if you're using change for a simple transition that is delayed
+
+
+- color:
+    
+    colorMode(HSB, 360, 100, 100)

@@ -187,19 +187,19 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Questions and work time
 
 #### Wednesday 4/5
-- Crit Sketch #6
-- [Coding emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/code.md)
+- Questions and work time
 
 
 ### Week 10
 
 #### Monday 4/10
-- Survey presentations 7
-- Discussing emergence
+- Crit Sketch #6
+- [Coding emergence](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/code.md)
 - Begin [Sketch #7](https://github.com/brianhouse/art_and_code/blob/master/units/7_emergence/assignment.md)
 
 
 #### Wednesday 4/12
+- Survey presentations 7
 - Questions and work time
 
 ### Week 11
