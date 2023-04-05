@@ -409,19 +409,28 @@ class Wall(object):
             Wall.walls.remove(self)
             
             
-def step_cycle(n, rate):
-    return (frameCount / int(rate)) % n
-
-
 def get_heading(x1, y1, x2, y2):
     h = degrees(atan2(y2 - y1, x2 - x1)) - 90 + 180
     return h if h < 0 else h + 360
+
+                        
+def step_cycle(n, rate):
+    return (frameCount / int(rate)) % n
     
     
 def change(start, stop, duration, offset=0):
+    if duration == 0:
+        duration = 1    
     return map((frameCount + offset) % duration, 0, duration, start, stop)
 
 
 def swing(start, stop, duration, offset=0): 
-    position = sin(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
-    return (position * (stop - start)) + start     
+    # duration is one half of the swing
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start    
+
+
+# def mouseReleased():
+#     for bat in bats:
+#         heading = get_heading(mouseX, mouseY, bat.x, bat.y)
+#         bat.bump(heading, 2)      

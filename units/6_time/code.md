@@ -181,11 +181,15 @@ def draw():
     
     
 def change(start, stop, duration, offset=0):
+    if duration == 0:
+        duration = 1    
     return map((frameCount + offset) % duration, 0, duration, start, stop)
 
+
 def swing(start, stop, duration, offset=0): 
-    position = sin(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
-    return (position * (stop - start)) + start 
+    # duration is one half of the swing
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start    
 ```
 
 make several with offsets
@@ -266,10 +270,13 @@ do animation with multiple parts of a figure moving by adding changes()
         fill(255, 255, 255)
 ```
 
+lose the x increment method
 
 
 sections on:
 - simple motion
+
+- solar system example
 
 - conditionals
 
@@ -287,3 +294,7 @@ note that you can (have to) use a negative offset if you're using change for a s
 - color:
     
     colorMode(HSB, 360, 100, 100)
+
+
+- compound motion
+this should cover "draw_leaf" or whatever -- just take parameters and do it below
