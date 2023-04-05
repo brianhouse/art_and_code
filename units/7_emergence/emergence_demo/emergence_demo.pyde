@@ -2,16 +2,16 @@
 from agent_helper import *
 
 def setup():
-    global bats, sharks, flowers, walls
+    global bat_list, shark_list, flower_list, wall_list
     size(500, 500)
 
     # sometimes improves graphics
     pixelDensity(2)              
     
     # create an empty list
-    bats = []             
+    bat_list = []             
     
-    # we're going to make 20 bats and add them to the list              
+    # we're going to make 20 bat_list and add them to the list              
     for i in range(20):
         
         # create an Agent object with custom attributes
@@ -23,13 +23,13 @@ def setup():
                     )
         
         # add the bat to the list        
-        bats.append(bat)
+        bat_list.append(bat)
         
         # bump it in a random direction                 
         bat.bump(random(360), random(3)) 
         
-    # same thing with sharks        
-    sharks = []
+    # same thing with shark_list        
+    shark_list = []
     for i in range(1):
         shark = Agent(x=random(width), 
                     y=random(height), 
@@ -37,11 +37,11 @@ def setup():
                     size=10,
                     max_speed=3
                     ) 
-        sharks.append(shark)
+        shark_list.append(shark)
         shark.bump(random(360), random(3))  
         
-    # same thing with flowers
-    flowers = []
+    # same thing with flower_list
+    flower_list = []
     for i in range(2):
         flower = Agent(x=random(100, width-200), 
                        y=random(100, height-200), 
@@ -49,20 +49,20 @@ def setup():
                        size=30,
                        max_speed=1,
                        nectar=255)
-        flowers.append(flower)
+        flower_list.append(flower)
             
     
-    # make some walls
-    walls = []
+    # make some wall_list
+    wall_list = []
     for i in range(3):        
         wall = Wall(random(width), random(height),   # start point x, y
                     random(width), random(height),   # end point x, y
                     thickness=random(1, 20))         # how thick the wall is
-        walls.append(wall)
+        wall_list.append(wall)
                 
     
 def draw():
-    global bats, sharks, flowers, walls
+    global bat_list, shark_list, flower_list, wall_list
     background(255)
     fill(0)
     textSize(8)
@@ -70,38 +70,38 @@ def draw():
     # draw the fps to the screen to monitor 
     text(int(frameRate), width-12, 10)
 
-    # draw all the walls in the wall list
-    for wall in walls: 
+    # draw all the wall_list in the wall list
+    for wall in wall_list: 
         strokeWeight(wall.thickness)       
         line(wall.x1, wall.y1, wall.x2, wall.y2)
                                                 
-    # for all the flowers in the flower list...        
-    for flower in flowers:        
+    # for all the flower_list in the flower list...        
+    for flower in flower_list:        
         flower.draw()  # draw using the function we supplied        
         flower.move()  # move it        
-        flower.collide(walls) # a flower can collide with walls         
+        flower.collide(wall_list) # a flower can collide with wall_list         
     
-    # for all the flowers in the flower list...    
-    for bat in bats:
+    # for all the flower_list in the flower list...    
+    for bat in bat_list:
         bat.draw()     # draw using the function we supplied 
         bat.move()     # move it
-        bat.collide(bats)   # a bat can collide with other bats in the bat list
-        bat.collide(walls)  # a bat can collide with the walls    
-        bat.avoid(bats, 20, 1) # a bat avoids other bats if it's too close
-        bat.seek(bats, 300, .3) # a bat seeks other bats
-        bat.align(bats, 200, .3) # a bat aligns with other bats
-        bat.seek(flowers, 500, .4) # a bat seeks flowers
-        bat.collide(flowers)       # ...but can collide with them
-        bat.avoid(sharks, 200, .75)  # it avoids sharks
-        bat.avoid(walls, 30, 10)     # it avoids walls
+        bat.collide(bat_list)   # a bat can collide with other bats in the list of bats
+        bat.collide(wall_list)  # a bat can collide with the walls    
+        bat.avoid(bat_list, 20, 1) # a bat avoids other bats if it's too close
+        bat.seek(bat_list, 300, .3) # a bat seeks other bats
+        bat.align(bat_list, 200, .3) # a bat aligns with other bats
+        bat.seek(flower_list, 500, .4) # a bat seeks flowers
+        bat.collide(flower_list)       # ...but can collide with them
+        bat.avoid(shark_list, 200, .75)  # it avoids sharks
+        bat.avoid(wall_list, 30, 10)     # it avoids walls
         bat.avoid_edges(30, 10)      # it avoids the edges of the canvas
         
         # we're going to individually check every flower
-        for flower in flowers:
+        for flower in flower_list:
             if bat.touching(flower): # is this bat touching this flower?
                 flower.nectar -= 1 # reduce the flower's nectar
                 if flower.nectar < 100: # is it too low on nectar?
-                    flowers.remove(flower) # remove the flower
+                    flower_list.remove(flower) # remove the flower
                     # make a new flower
                     flower = Agent(x=random(100, width-200), 
                                 y=random(100, height-200), 
@@ -109,28 +109,28 @@ def draw():
                                 size=30,
                                 max_speed=1,
                                 nectar=255)
-                    # add the new flower to the flowers list
-                    flowers.append(flower)
+                    # add the new flower to the flower list
+                    flower_list.append(flower)
                     
             
             
-    for shark in sharks:        
+    for shark in shark_list:        
         shark.draw()
         shark.move()
-        shark.collide(walls)
-        shark.collide(flowers)
-        shark.avoid(walls, 20, 10) 
+        shark.collide(wall_list)
+        shark.collide(flower_list)
+        shark.avoid(wall_list, 20, 10) 
         shark.avoid_edges(20, 10)    
         
         # make the shark seek out the closest bat
-        shark.seek(shark.closest(bats), 300, 1)
+        shark.seek(shark.closest(bat_list), 300, 1)
         
-        # check all the bats individually
-        for bat in bats:
+        # check all the bat_list individually
+        for bat in bat_list:
             # is the shark touching this bat?
             if shark.touching(bat):
                 # bye bye bat
-                bats.remove(bat)
+                bat_list.remove(bat)
                        
                         
         

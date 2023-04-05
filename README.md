@@ -200,6 +200,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 4/12
 - Survey presentations 7
+- Discuss emergence proposals
 - Questions and work time
 
 ### Week 11

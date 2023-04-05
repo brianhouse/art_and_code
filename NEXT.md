@@ -75,17 +75,8 @@ avoiding edges works poorly
 
 code reference with all the possibilities
 
-agent.collide(other_agent)
-agent.collide(list_of_agents)
-agent.collide(a_wall)
-agent.collide(list_of_walls)
 
-integrate step cycle into objects and argument
 
-conditionals
-animation
-walls
-time
 
 
 need to have a "proposal" step where they come up with something
@@ -93,9 +84,6 @@ need to have a "proposal" step where they come up with something
 agents -> agent_list or all_agents
 that's been a source of confusion
 
-need a diagram for how to "draw" in the draw_agent functions
-
-use bat.size
 
 
 ### general
