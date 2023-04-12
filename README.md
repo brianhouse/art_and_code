@@ -209,7 +209,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 
 #### Wednesday 4/19
-- Intemediate crit sketch #7
+- Share concept and progress on sketch #7
 - Questions and work time
 
 

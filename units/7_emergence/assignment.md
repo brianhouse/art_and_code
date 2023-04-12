@@ -10,7 +10,7 @@ When we personify, we impose all sorts of biases and expectations. This is what 
 
 ### Assignment
 
-Create a virtual micro-world that demonstrates emergent behavior. Building from the examples, design interactions between several different types of agents and their environment that produces a compelling and unpredictable result. Be deliberate about how you characterize your agents and their purposes; whether you simulate human or animal interaction or makes something entirely abstract, you should have an overarching concept that takes into account the biases and narrative power of simulation.
+Create a virtual micro-world that demonstrates emergent behavior. Building from the examples, design interactions between several different types of agents and their environment that produces a compelling and unpredictable result. Be deliberate about how you characterize your agents and their purposes; whether you simulate human or animal interaction or makes something entirely abstract, you should have an overarching concept that takes into account the biases and narrative power of simulation. Aim for your microworld to be self-sustaining—ie, it should not collapse or explode right away, but should continue to demonstrate interesting behavior as long as possible. At the same time, remember that your computer will have limits—the more agents and walls and behvaiors you have, the slower your computer may run.
 
 Submit your code along with a [3-sentence description](../../resources/description_guidelines.md) as well as a 1-minute screen recording of the Processing window.
 
@@ -101,7 +101,165 @@ agent.bump(direction_in_degrees, strength) # give the agent a bump
 ```
 
 
-### Demo
+### Demo from class
+
+```py
+from agent_helper import *
+
+def setup():
+    global pig_list, robot_list, truffle_list, wall_list
+    size(500, 500)
+    
+    # create 10 pigs and store them in the pig_list 
+    pig_list = []    
+    for i in range(10):    
+        pig = Agent(x=random(width),
+                    y=random(height),
+                    draw=draw_pig,
+                    size=20,      # this is used to compute the physics
+                    max_speed=5,  # how fast can we go?
+                    oinkiness=50) # you can make up variables 
+        pig.bump(random(360), 1.0)# mix up the initial direction        
+        pig_list.append(pig)
+        
+        
+    robot_list = []
+    for i in range(2):
+        robot = Agent(x=random(width),
+                      y=random(height),
+                      draw=draw_robot,
+                      size=30,
+                      max_speed=2)
+        robot.bump(random(360), 1.0)
+        robot_list.append(robot)        
+            
+    truffle_list = []
+    for i in range(2):
+        truffle = Agent(x=random(width),
+                      y=random(height),
+                      draw=draw_truffle,
+                      size=15,
+                      max_speed=0)
+        truffle.bump(random(360), 1.0)
+        truffle_list.append(truffle)   
+        
+    wall_list = []
+    for i in range(2):
+        wall = Wall(100, height/2,   # start point x, y
+                    width-100, height/2,   # end point x, y
+                    thickness=20)         # thickness of the wall
+        wall_list.append(wall)    
+        
+    
+def draw():
+    global pig_list, robot_list, truffle_list, wall_list
+    background(255)    
+    # draw a background
+    # can be animated
+    
+    # draw all the walls in the wall list
+    # (there's no special function like with Agents,
+    # and you don't have to draw them if you don't want to see them)
+    stroke(0)
+    for wall in wall_list: 
+        strokeWeight(wall.thickness)       
+        line(wall.x1, wall.y1, wall.x2, wall.y2)  
+        
+            
+    # every 100 frames add a truffle
+    if frameCount % 100 == 0:        
+        truffle = Agent(x=random(width), y=random(height), draw=draw_truffle, size=15, max_speed=0)
+        truffle.bump(random(360), 1.0)
+        truffle_list.append(truffle)        
+        
+    
+    for pig in pig_list:
+        pig.draw()
+        pig.move()
+        
+        pig.collide(pig_list)
+        pig.avoid_edges(50, 1)
+        pig.collide(wall_list)
+        
+        pig.seek(pig_list, 200, .1)  # who, radius, strength
+        pig.avoid(pig_list, 75, .2)
+        pig.align(pig_list, 200, .1)
+        
+        # little pigs avoid the robots, big ones chase them
+        if pig.size < 30:
+            pig.avoid(robot_list, 300, 1)
+        else:
+            pig.seek( pig.closest(robot_list), 200, 1)
+        
+        pig.seek( pig.closest(truffle_list), 300, .8)
+        for truffle in truffle_list:
+            if pig.touching(truffle):
+                truffle_list.remove(truffle)
+                # let's put a max size on the pigs
+                if pig.size < 100:
+                    pig.size += 7
+                
+
+    for robot in robot_list:
+        robot.draw()
+        robot.move()
+        
+        robot.collide(wall_list)       
+        robot.avoid_edges(50, 1)       
+        robot.collide(robot_list)         
+        
+        robot.seek( robot.closest(pig_list) , 200, 1)        
+        for pig in pig_list:
+            if robot.touching(pig):
+                # eat a little pig
+                if pig.size < 30:
+                    pig_list.remove(pig)
+                # get eaten by a big one    
+                else:
+                    robot_list.remove(robot)
+
+    # truffle doesn't do anything
+    # although it could...                    
+    for truffle in truffle_list:
+        truffle.draw()
+
+
+def draw_pig(pig):
+    noStroke()
+    # using ratios of pig size here so that
+    # the pig can dynamically change size
+    fill(245, 86, 222)
+    circle(pig.x, pig.y, .7*pig.size)
+    circle(pig.x, pig.y-(.34*pig.size), .5*pig.size)
+    fill(0)
+    circle(pig.x-3, pig.y-(.42*pig.size), 3)
+    circle(pig.x+3, pig.y-(.42*pig.size), 3)
+    strokeWeight(.06 * pig.size) 
+    stroke(245, 86, 222)
+    line(pig.x, pig.y, pig.x + swing(-5, 5, 20), pig.y+(.6*pig.size))
+    
+    
+def draw_robot(robot):
+    strokeWeight(2)
+    stroke(200)
+    fill(200)
+    square(robot.x-15, robot.y-15, 30)
+    fill(255, 0, 0)
+    circle(robot.x - 10, robot.y - 10, 7)
+    circle(robot.x + 10, robot.y - 10, 7)
+    fill(255)
+    circle(robot.x, robot.y + 8, swing(2, 15, 10))
+    
+    
+def draw_truffle(truffle):
+    fill(72, 42, 22)
+    stroke(0)
+    circle(truffle.x, truffle.y, 15)
+```
+
+
+### Another (similar) demo
+
 
 ```py
 # import our helper code
@@ -267,11 +425,11 @@ def draw_flower(flower):
 
 ### Examples
 
-<p>
+<!-- <p>
   <img src="examples/julie_goldberg_moth_soiree.gif" width="400" /><br />
   Julie Goldberg, <i>Moth Soirée</i> (2021)<br />
 </p>
-
+ -->
 <p>
   <img src="examples/molly_troxel_under_the_sea.gif" width="400" /><br />
   Molly Troxel, <i>Under the Sea</i> (2021)<br />
@@ -282,7 +440,7 @@ def draw_flower(flower):
   Lauren Curry, <i>Woodland Ecosystem</i> (2021)<br />
 </p>
 
-<p>
+<!-- <p>
   <img src="examples/tal_jones_rock_paper_scissors.gif" width="400" /><br />
   Tal Jones, <i>Rock, Paper, Scissors</i> (2021)<br />
-</p>
+</p> -->

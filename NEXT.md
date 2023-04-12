@@ -119,3 +119,20 @@ ok, so whatever. teach something. do screensaver. swap with glitch.
 /
 
 so now with screensaver/time in and interface in too, next step would be to replace IF with screen-based recombination (and put it after glitch), or just keep it. can decide next time.
+
+
+
+/
+
+
+could there be prompt based drawing in processing? like, draw a circle or a square?
+thinking of how to cover ifs and functions without doing the IF unit. maybe it's just animation.
+
+OR I cut glitch. it can't be built upon.
+
+emergence is awesome and I want to spend more time on it
+interface is awesome, too, I think
+animation really kind of worked
+
+if a text-oriented one can be shorter than IF, that works.
+would that come after animation?
