@@ -216,13 +216,15 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 12
 
 #### Monday 4/24
-- Crit Sketch #7
-- Coding interface
+- Share concept and progress on sketch #7
+- Questions and work time
 
 
 #### Wednesday 4/26
+- Crit Sketch #7
+- Coding interface
 - Begin Sketch #8
-- Questions and work time
+
 
 ### Week 13
 
