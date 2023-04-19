@@ -136,3 +136,9 @@ animation really kind of worked
 
 if a text-oriented one can be shorter than IF, that works.
 would that come after animation?
+
+
+repetition and variation -- combine it
+eliminate IF, keep the rest as is
+add a final project
+forget text

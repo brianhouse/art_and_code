@@ -423,6 +423,128 @@ def draw_flower(flower):
     
 ```
 
+### Competing agents and carrying objects
+
+```py
+from agent_helper import *
+
+def setup():
+    global good_agent, evil_agent, food_list, target
+    size(500, 500)
+    
+    # create two agents, one of them is evil
+    good_agent = Agent(x=random(width),
+                       y=random(height),
+                       draw=draw_good_agent,
+                       size=20,
+                       food=False    # food that's being carried
+                       )    
+    
+    evil_agent = Agent(x=random(width),
+                       y=random(height),
+                       draw=draw_evil_agent,
+                       size=20,
+                       food=False
+                       )
+                                
+    food_list = []
+    for i in range(10):
+        food = Agent(x=random(width),
+                     y=random(height),
+                     draw=draw_food,
+                     size=10
+                     )
+        food_list.append(food)
+        
+    target = Agent(x=width/2,
+                   y=height/2,
+                   draw=draw_target,
+                   size=30
+                   )        
+        
+def draw():
+    global good_agent, evil_agent, food_list, target
+    background(255)
+           
+    good_agent.draw()
+    good_agent.move()
+    good_agent.collide(evil_agent)
+    good_agent.avoid(evil_agent, good_agent.size * 2, .8)
+        
+    # if the agent is not currently carrying food...
+    if good_agent.food == False:           
+        # the agent only want food within a certain range
+        # so we create a new list
+        # add all the food from food_list to it if it's in that range  
+        good_food_list = []
+        for food in food_list:
+            if food.distance(target) > 50 and evil_agent.food != food:
+                good_food_list.append(food)
+        # seek the closest food in the good_food_list                            
+        good_agent.seek(good_agent.closest(good_food_list), 400, .2)
+        # pick up the food
+        for food in good_food_list:
+            if good_agent.touching(food):
+                good_agent.food = food 
+                
+    # if the agent is currently carrying food...
+    else:
+        # move the food along with the agent
+        good_agent.food.x = good_agent.x
+        good_agent.food.y = good_agent.y
+        good_agent.seek(target, 500, 1.0)
+        if good_agent.distance(target) < 30:
+            # drop the food
+            good_agent.food = False                
+                     
+ 
+    ## now for the evil agent, with slightly different behaviors          
+    evil_agent.draw()
+    evil_agent.move()
+    evil_agent.collide(good_agent)
+    if evil_agent.food == False:           
+        evil_food_list = []
+        for food in food_list:
+            if food.distance(target) < 50 and good_agent.food != food:
+                evil_food_list.append(food)
+        evil_agent.seek(evil_agent.closest(evil_food_list), 400, .2)
+        for food in evil_food_list:
+            if evil_agent.touching(food):
+                evil_agent.food = food 
+    else:
+        evil_agent.food.x = evil_agent.x
+        evil_agent.food.y = evil_agent.y
+        evil_agent.avoid(target, 500, 1.0)
+        if evil_agent.distance(target) > 200:
+            evil_agent.food = False                                    
+                                                                             
+                                                        
+    for food in food_list:
+        food.draw()                   
+            
+        
+    
+def draw_good_agent(agent):
+    fill(0, 0, 255)
+    noStroke()    
+    circle(agent.x, agent.y, agent.size)
+
+def draw_evil_agent(agent):
+    fill(255, 0, 0)
+    noStroke()    
+    circle(agent.x, agent.y, agent.size)
+            
+def draw_food(food):
+    fill(0, 255, 0)
+    noStroke()        
+    square(food.x-food.size/2, food.y-food.size/2, food.size)    
+    
+def draw_target(target):
+    fill(0, 255, 0)
+    circle(target.x, target.y, target.size)
+```
+
+
 ### Examples
 
 <!-- <p>
