@@ -24,6 +24,7 @@ class Agent(object):
         self.size = 10
         self.max_speed = 1
         self._collisions = []
+        self._walls = []        
         self._heading = 0.0
         for key, value in properties.items():
             setattr(self, key, value)
@@ -76,7 +77,8 @@ class Agent(object):
         self.position.add(self.velocity)
         self.check_edges()        
         self.acceleration.mult(0)
-        self._collisions = []        
+        self._collisions = []  
+        self._walls = []      
 
         
     def collide(self, entities):
@@ -90,6 +92,8 @@ class Agent(object):
             if type(entity) == Agent:
                 self._resolve_agent_collision(entity)
             else:
+                if entity not in self._walls:
+                    self._walls.append(entity)
                 self._resolve_wall_collision(entity)
             
 
@@ -101,7 +105,7 @@ class Agent(object):
         if overlap > 0:
             if self not in agent._collisions:
                 self._collisions.append(agent) 
-                mass_ratio =  agent.size / float(self.size)
+                mass_ratio = agent.size / float(self.size)
                 tangent = PVector(agent.position.y - self.position.y, -(agent.position.x - self.position.x))  
                 tangent.normalize()               
                  
@@ -260,15 +264,16 @@ class Agent(object):
         x1, y1 = self.position.x, self.position.y
         x2, y2 = agent.position.x, agent.position.y
         for wall in Wall.walls:
-            x3, y3 = wall.x1, wall.y1
-            x4, y4 = wall.x2, wall.y2
-            try:
-                uA = ((x4-x3)*(y1-y3) - (y4-y3)*(x1-x3)) / ((y4-y3)*(x2-x1) - (x4-x3)*(y2-y1))
-                uB = ((x2-x1)*(y1-y3) - (y2-y1)*(x1-x3)) / ((y4-y3)*(x2-x1) - (x4-x3)*(y2-y1))                        
-                if uA >= 0 and uA <= 1 and uB >= 0 and uB <= 1:
-                    return False
-            except ZeroDivisionError:
-                pass
+            if wall in self._walls:
+                x3, y3 = wall.x1, wall.y1
+                x4, y4 = wall.x2, wall.y2
+                try:
+                    uA = ((x4-x3)*(y1-y3) - (y4-y3)*(x1-x3)) / ((y4-y3)*(x2-x1) - (x4-x3)*(y2-y1))
+                    uB = ((x2-x1)*(y1-y3) - (y2-y1)*(x1-x3)) / ((y4-y3)*(x2-x1) - (x4-x3)*(y2-y1))                        
+                    if uA >= 0 and uA <= 1 and uB >= 0 and uB <= 1:
+                        return False
+                except ZeroDivisionError:
+                    pass
         return True                    
                                                                                
     def check_edges(self):

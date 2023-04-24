@@ -71,19 +71,13 @@ more examples from students so they know the possibilities
 
 ### emergence
 
-avoiding edges works poorly
+make .move() implicit?
+add a function to move() to a given location ?
+make a "rotate" property in the agent to adjust for drawing wrong
 
-code reference with all the possibilities
+if you dont collide with walls, they shouldn't make you invisible
 
-
-
-
-
-need to have a "proposal" step where they come up with something
-
-agents -> agent_list or all_agents
-that's been a source of confusion
-
+need to have collides written first for wall visibility
 
 
 ### general
