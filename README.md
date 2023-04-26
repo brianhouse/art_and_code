@@ -241,6 +241,6 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 Crit sketch #8
 Wrap up
 
-(No meetings or work due during exam week)
+(No meetings during exam week -- final version of sketch #8 due)
 
 

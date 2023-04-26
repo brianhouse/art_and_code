@@ -75,9 +75,8 @@ make .move() implicit?
 add a function to move() to a given location ?
 make a "rotate" property in the agent to adjust for drawing wrong
 
-if you dont collide with walls, they shouldn't make you invisible
 
-need to have collides written first for wall visibility
+note the need to have collides written first for wall visibility
 
 
 ### general
