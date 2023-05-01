@@ -138,7 +138,7 @@ ok, so I love Zork, but this could be even better. and they get to play Myst.
 
 /
 
-really need to have the context lectures in actual lecture format, there's a disconnect where it's not flowing for me
+really need to have the context lectures in actual lecture format, there's a disconnect where it's not flowing for me -- should have discussion questions (unless I'm really going to flip the classroom, but that doesn't seem as dynamic)
 
 
 
