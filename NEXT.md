@@ -75,13 +75,71 @@ make .move() implicit?
 add a function to move() to a given location ?
 make a "rotate" property in the agent to adjust for drawing wrong
 
+bounce vs wrap
+
 
 note the need to have collides written first for wall visibility
+
+- more background about what emergence is and the possibilities 
+
+
+### interface
+
+fill bucket using pixels
+
+is this before or after time? maybe before
+
+
+pMouse
+
+agents
+
+buttons that show if they are selected
+
+drippy brush using agents (if after emergence)
+
+using pgraphics could potentially avoid the painting over thing
+
+fill bucket builds off of glitch?
+
+bearing between mouse and pmouse 
+
+circular buttons
+
+have proper speed is important
+
+need to use mouseReleased instead of mouseClicked
+
 
 
 ### general
 
 - emphasize that the goal is to match concept and form
+
+from students:
+- open lab time peer time (maybe online?)
+- publicly accessible code
+
+
+
+I feel like interface can go earlier. even before time.
+coordinates -> repetition/indeterminacy -> glitch -> interface -> time -> emergence -> final
+
+
+this sets up an interesting dynamic where time and emergence could have interface elements from the get go
+
+nonlinearity. no way to make it work the same way within processing. but. if we have interface first, there's some options. Myst style!
+
+or maybe nonlinearity, lists, and text could all be combined?
+ie, multiple choice
+
+ok, so I love Zork, but this could be even better. and they get to play Myst.
+
+
+/
+
+really need to have the context lectures in actual lecture format, there's a disconnect where it's not flowing for me
+
 
 
 
@@ -135,3 +193,10 @@ repetition and variation -- combine it
 eliminate IF, keep the rest as is
 add a final project
 forget text
+
+
+
+
+
+
+
