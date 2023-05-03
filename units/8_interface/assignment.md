@@ -86,4 +86,40 @@ def swing(start, stop, duration, offset=0):
     return (position * (stop - start)) + start    
 ```
 
+### Example with an agent chasing the mouse
+```py
+from agent_helper import *
+
+def setup():
+    global mouse_agent, chase_agent
+    size(500, 500)
+    background(255)
+    
+    mouse_agent = Agent(x=random(width),
+                        y=random(height),
+                        draw=None)
+    
+    chase_agent = Agent(x=random(width),
+                        y=random(height),
+                        draw=draw_chaser,
+                        max_speed=5)
+    chase_agent.bump(random(360), 10)
+    
+    
+def draw():
+    global mouse_agent, chase_agent
+    mouse_agent.x = mouseX
+    mouse_agent.y = mouseY
+    
+    if mousePressed == True:
+        chase_agent.draw()
+        chase_agent.move()
+        chase_agent.avoid_edges(200, 1)
+        chase_agent.seek(mouse_agent, 200, .5)
+        
+    
+def draw_chaser(agent):
+    circle(agent.x, agent.y, 10)     
+```
+
 Additional code tutorial [here](code.md)
