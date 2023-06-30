@@ -82,19 +82,19 @@ note the need to have collides written first for wall visibility
 
 - more background about what emergence is and the possibilities 
 
+make the seek etc work with "cursor" or something
+
 
 ### interface
 
 fill bucket using pixels
-
-is this before or after time? maybe before
 
 
 pMouse
 
 agents
 
-buttons that show if they are selected
+buttons that show if they are selected (in example)
 
 drippy brush using agents (if after emergence)
 
@@ -104,11 +104,13 @@ fill bucket builds off of glitch?
 
 bearing between mouse and pmouse 
 
--circular buttons
+circular buttons (in example)
 
 have proper speed is important
 
 need to use mouseReleased instead of mouseClicked
+
+guassian example
 
 
 
@@ -134,6 +136,63 @@ or maybe nonlinearity, lists, and text could all be combined?
 ie, multiple choice
 
 ok, so I love Zork, but this could be even better. and they get to play Myst.
+
+maybe time should come first. it's easier just to add "change" and the structure than all the complication of the interface
+
+
+losing glitch
+coordinates -> repetition + variation -> time -> interface -> nonlinearity -> emergence -> final
+
+maybe nonlinearity IS interface?
+coordinates -> repetition + variation -> time -> nonlinearity -> emergence -> final
+
+maybe emergence is too much?
+coordinates -> repetition + variation -> time -> interface -> nonlinearity -> final
+
+all?
+coordinates -> repetition + variation -> time -> interface -> nonlinearity -> emergence -> final
+
+
+interface introduces buttons and text, which is totally what is necessary for nonlinearity in this case, they're the same. how is nonlinearity going to be structured?
+
+a function for each scene. but could be multiple parts as well.
+
+if item_selected == True:
+	showSection()
+
+definitely turns into a game very quickly. 
+
+nonlinearity could also use loaded images. maybe that's part of the assignment, to incorporate photos you take.
+
+TheGameTheGame could be an example there.
+
+this has to come after interface.
+
+
+do I even need repetition and variation? it's pretty fundamental. 
+
+in this version, nonlinearity uses the same skillset as interface. introducing lists would be the thing. how does that fit? inventory, for one. maybe that's enough. and image could be introduced (that cuts down on the time spent drawing)
+
+if statements become what's emphasized in interface. that's the point.
+
+that's a little hard when we're also getting mouseX etc. variables aren't even necessary for time.
+
+
+coordinates: basic drawing (need width/height)
+rep+var: loops and random
+time: events, frameCount, change and swing
+interface: if! but also mouse..., and also variables? maybe can just emphasize brush as a variable. and make multiple variables that are True/False.
+
+
+
+
+
+
+
+
+
+ 
+
 
 
 /
@@ -196,7 +255,29 @@ forget text
 
 
 
+### format
+
+the code lectures work well, I think I stick with my format
+
+the context ones should be as discussion based as possible, could actually make sense to have slides
+- just image slides
+- bullet point concept slides
+
+https://pandoc.org/MANUAL.html#synopsis
+
+use HTML as an intermediate format, then I can style with css and outputs a pdf
+
+just image with caption
+for vids, straight link to github online
 
 
 
 
+specify how the examples show A- work?
+well, we're losing the grades
+
+"I grade entirely on how you're applying yourself to the class"
+
+print all of them?
+I want a monitor in a hall at the top of the stairs
+(how powerful is the pi, though?)
