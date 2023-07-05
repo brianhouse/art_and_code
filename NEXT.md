@@ -34,40 +34,6 @@ more gaussian
 noise?
 
 
-### nonlinear narrative
-
-everyone has to be on the same version of python
-
-
-### glitch
-
-explicitly talk about variables
-
-cd skips
-circuit bending
-tv snow and vcr
-examples of how it's entered the vernacular
-
-/
-
-threshold example
-sections example
-shatter example
-
-
-
-
-### conditional / screensaver / nonlinearity?
-
-transformations?
-more on mapping
-
-
-
-### recombination
-have them do it first with scissors and paper?
-more examples from students so they know the possibilities
-
 
 ### emergence
 
@@ -123,6 +89,8 @@ from students:
 - publicly accessible code
 
 
+### order
+
 
 I feel like interface can go earlier. even before time.
 coordinates -> repetition/indeterminacy -> glitch -> interface -> time -> emergence -> final
@@ -153,6 +121,9 @@ all?
 coordinates -> repetition + variation -> time -> interface -> nonlinearity -> emergence -> final
 
 
+### new nonlinear
+
+
 interface introduces buttons and text, which is totally what is necessary for nonlinearity in this case, they're the same. how is nonlinearity going to be structured?
 
 a function for each scene. but could be multiple parts as well.
@@ -169,13 +140,14 @@ TheGameTheGame could be an example there.
 this has to come after interface.
 
 
-do I even need repetition and variation? it's pretty fundamental. 
-
 in this version, nonlinearity uses the same skillset as interface. introducing lists would be the thing. how does that fit? inventory, for one. maybe that's enough. and image could be introduced (that cuts down on the time spent drawing)
 
 if statements become what's emphasized in interface. that's the point.
 
 that's a little hard when we're also getting mouseX etc. variables aren't even necessary for time.
+
+
+### setup
 
 
 coordinates: basic drawing (need width/height)
@@ -272,6 +244,7 @@ for vids, straight link to github online
 
 
 
+### grading
 
 specify how the examples show A- work?
 well, we're losing the grades
@@ -281,3 +254,15 @@ well, we're losing the grades
 print all of them?
 I want a monitor in a hall at the top of the stairs
 (how powerful is the pi, though?)
+
+
+### non-content changes
+
+- class viewable code
+- open studio hours
+- intermediate desk crits
+
+
+
+
+
