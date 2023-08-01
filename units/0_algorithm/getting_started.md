@@ -8,7 +8,7 @@ We're used to downloading software such as Photoshop or Ableton to our computers
 
 ## Setup
 
-Download **>>> version 3.5.4 <<<** from the [Processing website](https://processing.org/download/) for whichever operating system and hardware you are using. Once you click download, you'll have a .zip file. (The latest version of Processing doesn't support Python very well yet, so be sure not to get that one -- the colors of the windows should match the ones you see here.)
+Download **>>> version 3.5.4 <<<** from the [Processing website](https://processing.org/releases) for whichever operating system and hardware you are using. Once you click download, you'll have a .zip file. (The latest version of Processing doesn't support Python very well yet, so be sure not to get that one -- the colors of the windows should match the ones you see here.)
 
 - On Windows, double-click the .zip file, and drag the folder inside to a location on your hard disk. It could be in Program Files or simply the desktop, but the important thing is for the Processing folder to be pulled out of that .zip file. Then double-click processing.exe to start.
 
@@ -79,20 +79,33 @@ Now that you know what to expect, you won't be surprised by the first time you s
 
 ## How to submit your work
 
-First, make sure you save your sketch. Use "Save", not "Save As...", which would only make things more confusing.
+First, make sure you save your sketch. Name your sketch with your first name followed by whatever you want. That part is important so we don't get the sketches mixed up. 
 
 <p align="center">
   <img src="code/canvas_10.png" width=300 /><br />
 </p>
 
-Then, to turn in your sketch, go up to the "Sketch" menu and choose the "Show Sketch Folder" option:
+<p align="center">
+  <img src="code/canvas_11.png" width=500 /><br />
+</p>
+
+
+When Processing saves a sketch, it makes a folder that includes a .pyde file the holds the actual code. Processing wants the title of the folder to match the title of the .pyde file, so if you alter these names using Finder or Windows, things may break or get confusing unless you make sure the names match.
+
+Usually, Processing puts the sketch folder inside your Documents folder unless you specify somewhere else. If you need to find the folder, go up to the "Sketch" menu and choose the "Show Sketch Folder" option:
 
 <p align="center">
   <img src="code/canvas_8.png" width=300 /><br />
 </p>
 
-Inside, you'll find several files: upload all of them to Moodle to complete the assignment (for future assignments, you will also have a title and description, but you don't have to do that now).
+Inside, you'll find several files, including "output.png", which is your image.
+
+<!-- Inside, you'll find several files: upload all of them to Moodle to complete the assignment (for future assignments, you will also have a title and description, but you don't have to do that now).
 
 <p align="center">
   <img src="code/canvas_9.png" width=500 /><br />
 </p>
+ -->
+
+To turn in your sketch, copy the whole folder to Google Drive, under "Art + Code Sketches" —> "0 Getting Started". Hold down the Option key while you drag it so that it doesn't remove your local copy.
+

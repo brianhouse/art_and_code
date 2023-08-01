@@ -1,23 +1,33 @@
 # TODO
 
 
+## logistics
+
+Students put their work up on the shared folder on Google Drive. Then I just go in and open the output image. And then they can see what each other did. I leave feedback on Moodle. 
+
+- establish open studio work times (2 times in the week)
+
+
+
+
 ## planning
 
-**how to do portfolio**
+- Portfolio assignment
+- plan midterm feedback meetings
+- difference and repetition assignment
+- how to make comments -- put in getting started
+- presentation dates
 
+/
 
-asked Asha: how to download and/or give feedback on Moodle forums
-
-keys / access to 303 and policies
-establish open studio work times (2 times in the week)
-
-plan midterm feedback meetings
-
-load sketches into Moodle
+- keys / access to 303 and policies
+- get an intern
 
 /
 
 am I doing prints?
+
+/
 
 Time and Emergence can be displayed
 

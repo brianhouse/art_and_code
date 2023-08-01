@@ -88,9 +88,10 @@ Also, please look at the syllabus in particular for policies, how the grading wo
 
 What questions do you have for me now?
 
-I'd like everyone to fill out a questionnaire online they haven't already.
+So for the remainder of this time, we're going to try and get up and running.
 
-You have homework for next class, which is up on Moodle, which is to get set up with Python Mode for Processing. If you have problems getting that going, please email me or comment on the assignment.
+- Google Drive for Desktop (first time -- do this first, getting started can be homework)
+- Getting Started
 
 
-#### consider using this time to have them get set up right there if they have their computers
+

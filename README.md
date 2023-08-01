@@ -25,10 +25,11 @@ Introduction to computer programming for studio artists. By writing code to gene
 ### Sketches
 This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with computational media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **interface**, **nonlinearity**, and **emergence**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops or lists. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
-Sketches must include a title and a [3-sentence statement](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through Moodle *prior* to the crit; **no late work is accepted**, and you must attend the crit to receive credit for your work. Submit your sketch files and type your statement on Moodle (keep a copy of your statement to present with during crit).
+Sketches must include a title and a [3-sentence statement](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through Google Drive *prior* to the crit; **no late work is accepted**, and you must attend the crit to receive credit for your work. Copy your sketch folder to Google Drive and include your title and statement as a comment at the top of your code.
+
 
 ### Presentations
-Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis.
+Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. Slides should be turned in on Moodle prior to class.
 
 ### Participation
 Attendance is mandatory, and motivated and mindful participation in crit and classroom disscussion is expected.
@@ -80,6 +81,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Monday 9/11
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
+- Establish Open Studio Times
 - Discussing Coordinates
 - [Coding with Coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
 - Going forward, use the [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference

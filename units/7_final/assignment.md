@@ -1,4 +1,4 @@
-## Final project
+## Final Project
 
 Create a Processing sketch that expresses your own artistic concept. Your piece should be in dialog with the discussions that we have had in the course while reflecting some aspect of your personal artistic agenda. Use the programming techniques that we have covered; rather than learning more ways to code, this assignment is about integrating what we know and going deeper into concept.
 
