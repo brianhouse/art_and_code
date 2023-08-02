@@ -8,7 +8,7 @@ Draw a flowchart of the the choices that will be available to your reader (by ha
 
 
 Submit the following to Moodle:
-- your title and description
+- your title and statement
 - your flowchart
 - your sketch folder
 

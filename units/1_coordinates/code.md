@@ -88,6 +88,36 @@ Notice how the shapes overlap each other depending on the order in which we writ
 
 Try experimenting with different shapes and arguments. You can type in as many as you want, in any order and on any line. You can only have one function per line, but blank lines in between functions are fine.
 
+
+
+### `width`, `height`, and math
+
+Because we use the width and height of the canvas so often, whether directly or to calculate some other value, Processing helps us out by providing a shortcut. These are the variables `width` and `height`. We'll be talking a lot about variables in this course, but for now, just know that these words "stand for" the numeric values of the canvas's dimensions.
+
+In the first example with lines above, we originally wrote:
+```py
+size(640, 480)              # width, height
+line(0, 0, 640, 480)        # begin x, begin y, end x, end y
+```
+
+However, using `width` and `height`, we can write it like this:
+
+```py
+size(640, 480)              # width, height
+line(0, 0, width, height)        # begin x, begin y, end x, end y
+```
+
+Likewise, let's rewrite putting our circle in the center of the canvas:
+```py
+size(640, 480)              # width, height
+line(0, 0, 640, 480)        # begin x, begin y, end x, end y
+
+circle(width/2, height/2, 50)        # center x, center y, diameter
+```
+
+In this case, to find the center of the canvas, we divided `width` and `height` by two. Processing allows us to do math on the numbers we're passing as arguments, and this can be very helpful. `+` `-` `*` `/` are all available.
+
+
 <!-- draw a face -->
 
 ### Line size
@@ -99,14 +129,14 @@ Here's a new program to demonstrate:
 size(640, 480)
 
 strokeWeight(5)
-line(0, 50, 640, 50)
-line(0, 100, 640, 100)
+line(0, 50, width, 50)
+line(0, 100, width, 100)
 
 strokeWeight(10)
-line(0, 150, 640, 200)
+line(0, 150, width, 200)
 
 strokeWeight(0.5)
-line(0, 250, 640, 250)
+line(0, 250, width, 250)
 
 noStroke()
 square(50, 300, 50)
@@ -364,7 +394,21 @@ But why are the start and end points doubled, with two `curveVertex()`s with the
 Processing will fill the shape by default, but you can always use `noFill()` or `noStroke()` to adjust the appearance as necessary.
 
 
-## Saving an image
+
+### Pixel density
+
+Some monitors have high-density displays (Such as Apple's "Retina" branding), which means that for every one pixel we can address in code, there are actually four screen pixels that display it. While we don't deal with them directly, these extra pixels alow for smoother curves, and will make your images look nicer if they are available. 
+
+To activate them, put
+```py
+pixelDensity(2) 
+```
+as the first line of your code, and see if there is a difference.
+
+Note that when you do this, the output image will be twice as large.
+
+
+### Saving an image
 
 Remember to periodically save your work. Don't use "Save As...", as that will only make things more confusing.
 

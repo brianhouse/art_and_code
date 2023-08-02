@@ -9,19 +9,20 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 
 
 
-
 ## planning
 
-- Portfolio assignment
-- difference and repetition assignment
-- how to make comments in code for the statement -- put that in getting started
-- plan midterm feedback meetings
-- content: emergence, nonlinearity, time ... there's a lot
-
-- include pixelDensity(2)
+- time
+- nonlinearity
+- interface
+- emergence
 
 /
 
+- on Moodle, "assignment" "tutorial"
+
+/
+
+- plan midterm feedback meetings
 - keys / access to 303 and policies
 - get an intern
 

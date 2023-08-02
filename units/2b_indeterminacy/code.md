@@ -51,12 +51,12 @@ If we want coordinates that fit within the canvas, we want them to be between 0 
 ```py
 size(500, 400)
 
-circle(random(500), random(400), 100) # x position, y position, diameter
+circle(random(width), random(height), 100) # x position, y position, diameter
 ```
 
 This looks a little weird with all the parentheses and commas (be careful to keep track of them all!), but all we've done is _substitute_ the static numbers that we were using with the `random` function and its arguments:
-- `250` is replaced with `random(500)` which chooses a number between 0 and 500
-- `200` is replaced with `random(400)` which chooses a number between 0 and 400
+- `250` is replaced with `random(width)` which chooses a number between 0 and 500
+- `200` is replaced with `random(height)` which chooses a number between 0 and 400
 
 The result is that every time you run this sketch, the circle will be drawn in a different location:
 
@@ -73,7 +73,7 @@ How is that at all useful? Well, what if we repeated that random circle a bunch 
 size(500, 400)
 
 for i in range(10):
-    circle(random(500), random(400), random(10, 300))
+    circle(random(width), random(height), random(10, 300))
 ```
 
 <p align="center">
@@ -106,7 +106,7 @@ for i in range(100):
     fill(random(255), random(255), random(255), random(255))  
 
     # make a random triangle with the bounds of the canvas
-    triangle(random(500), random(400), random(500), random(400), random(500), random(400))
+    triangle(random(width), random(height), random(width), random(height), random(width), random(height))
 
 ```
 
@@ -128,13 +128,13 @@ for i in range(20):
     # make a random triangle with no outline and a random red-ish fill
     noStroke()
     fill(random(255), 0, 0, random(255)) # choose random red value and opacity (green and blue are 0)
-    triangle(random(500), random(400), random(500), random(400), random(500), random(400))
+    triangle(random(width), random(height), random(width), random(height), random(width), random(height))
 
     # make a circle with no fill and random greyscale outline of random weight
     noFill()
     stroke(random(255), random(255))
     strokeWeight(random(1, 10))
-    circle(random(500), random(400), random(10, 50))
+    circle(random(width), random(height), random(10, 50))
 ```
 
 <p align="center">

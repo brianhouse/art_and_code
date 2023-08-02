@@ -2,7 +2,7 @@
 
 Create a sketch with some aspect of time as its central theme. Draw upon techniques from past units and combine them with Processing's events to express your idea.
 
-Your description should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept. In addition, turn in a screen recording of your animation. Just record the processing window; we shouldn't see any extraneous windows.
+Your code should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept. In addition, turn in a screen recording of your animation. Just record the processing window; we shouldn't see any extraneous windows.
 
 
 ### Information for making screen recordings

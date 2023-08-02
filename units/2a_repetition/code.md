@@ -34,7 +34,7 @@ Let's break it down:
 - How many times are we going to repeat it? This is where `range()` comes in. Whatever number we give to range determines the number of repetitions.
 - What are we going to be repeating? Whatever is _indented_ below the `for` command. In many programming languages, indentation doesn't matter, but in Python, it's very important.
 
-Got it? Great. But what the hell is `i`?
+Got it? Great. But what the heck is `i`?
 
 `i` is a **variable**. That means `i` means something different each time the loop repeats. It's just like in math, where we'd typically use "x" to represent a number that might have an unknown value (actually, we could use "x" here too, but "i" is more common in programming so we don't get it mixed up with x/y spatial coordinates). So in this case, when we're repeating our loop 10 times, i is going to be a different integer up to 10.
 
@@ -68,16 +68,16 @@ size(360, 300)
 background(255)
 strokeWeight(10)
 
-line(0, 0, 0, 300)
-line(40, 0, 40, 300)
-line(80, 0, 80, 300)
-line(120, 0, 120, 300)
-line(160, 0, 160, 300)
-line(200, 0, 200, 300)
-line(240, 0, 240, 300)
-line(280, 0, 280, 300)
-line(320, 0, 320, 300)
-line(360, 0, 360, 300)
+line(0, 0, 0, height)
+line(40, 0, 40, height)
+line(80, 0, 80, height)
+line(120, 0, 120, height)
+line(160, 0, 160, height)
+line(200, 0, 200, height)
+line(240, 0, 240, height)
+line(280, 0, 280, height)
+line(320, 0, 320, height)
+line(360, 0, 360, height)
 ```
 <p align="center">
   <img src="code/canvas_11_.png" width=360 /><br />
@@ -92,7 +92,7 @@ background(255)
 strokeWeight(10)    
 
 for i in range(10):
-    line(i * 40, 0, i * 40, 300)    
+    line(i * 40, 0, i * 40, height)    
 ```
 
 You'll notice that this requires a bit of math. Until now, we've only supplied our drawing functions like `line()` with static numbers. But it turns out that Python can do math on the fly, so we can use short equations as arguments instead.
@@ -135,7 +135,7 @@ background(255)
 strokeWeight(10)    
 
 for i in range(10):
-    line(0, i * 15, 360, i * 15)   
+    line(0, i * 15, width, i * 15)   
 ```
 <p align="center">
   <img src="code/canvas_5.png" width=360 /><br />
@@ -148,7 +148,7 @@ background(255)
 strokeWeight(10)    
 
 for i in range(10):
-    line(i * 20, 0, (i * 20) + 180, 300)    
+    line(i * 20, 0, (i * 20) + 180, height)    
 ```
 
 <p align="center">
@@ -164,7 +164,7 @@ background(255)
 
 for i in range(32):
     strokeWeight(i/3)
-    line(0, i * 10, 360, i * 10)     
+    line(0, i * 10, width, i * 10)     
 ```
 <p align="center">
   <img src="code/canvas_6.png" width=360 /><br />
@@ -191,7 +191,7 @@ strokeWeight(5)
 
 for i in range(256):
     stroke(200, i, 255)
-    line(0, i + 45, 360, i)
+    line(0, i + 45, width, i)
 ```
 <p align="center">
   <img src="code/canvas_12.png" width=360 /><br />

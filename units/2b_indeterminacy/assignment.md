@@ -1,10 +1,10 @@
-## Sketch #3: Indeterminacy
+## Sketch #3: Difference and Repetition
 
-In this sketch, you will explore indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two), but randomness should play a central role in your concept. Use shapes together with `for` loops and the `random` function. Pay special attention to layering. Not all parameters should be random, and by being intentional about the ranges of numbers you choose, the random elements in the resulting images should have a sense of structure and composition.
+In this sketch, you will explore the tension between repetition and indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two), but these formal structures should play a central role in your concept. Use shapes together with `for` loops and the `random` function. Pay special attention to layering. Not all parameters should be random, and the resulting images should have a sense of structure and composition.
 
 Copy your sketch folder to Google Drive; your code should include a comment with your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept.
 
-
+<!-- 
 ### Examples
 
 <p>
@@ -26,3 +26,4 @@ Copy your sketch folder to Google Drive; your code should include a comment with
   <img src="examples/isha_elboctorcy_miya.png" width="400" /><br />
   Isha Elboctorcy, <i>Miya</i> (2021)<br />
 </p>
+ -->

@@ -87,6 +87,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Going forward, use the [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
 - Begin [Coordinates Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/assignment.md)
 
+
 #### Wednesday 9/13
 - Explanation of [crit guidelines](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md)
 - Crit Coordinates
@@ -103,7 +104,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Wednesday 9/20
 - Discussing Indeterminacy
 - Begin [Repetition and Indeterminacy Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/assignment.md)
-- Explanation of [artist descriptions](https://github.com/brianhouse/art_and_code/blob/master/resources/description_guidelines.md)
+- Explanation of [artist statements](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md)
 
 
 ### Week 4
@@ -114,7 +115,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Begin [Time Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/assignment.md)
 
 #### Wednesday 9/27
-- Discussing time
+- Discussing Time
 - Questions and work time
 
 
@@ -233,5 +234,5 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Exam Week
 - No meetings during exam week
-- Portfolio due 12/21
+- [Portfolio](https://github.com/brianhouse/art_and_code/blob/master/units/portfolio.md) due 12/21
 

@@ -2,12 +2,31 @@
 
 The purpose of this sketch is to gain intution about screen coordinates by drawing with code. To explore the relationship of digitally encoded "space" to traditional depictions of the world, you will choose a [famous landscape painting from art history](https://www.google.com/search?q=famous+landscape+painting) and reinterpret it in code. _Reinterpret_ means that you should not try and reproduce the painting exactly—rather, you must choose how to work with code in a way that retains a sense of the original composition but which expresses something of its _digital_-ness. Pay particular attention to your use of color.
 
-Copy your sketch folder to Google Drive (first remember to save it, include `save("output.png")` as the last line of your sketch, and run the sketch to make sure an image file is generated). In addition, copy  an image file of the original painting into your folder. Your description should be in a comment at the top of your code and should include your title, the artist and year of the original painting, and a [3-sentence statement](../../resources/statement_guidelines.md) that explains the choices you made in your reinterpretation.
+Copy your sketch folder to Google Drive (first remember to save it, include `save("output.png")` as the last line of your sketch, and run the sketch to make sure an image file is generated). In addition, copy  an image file of the original painting into your folder. Your statement should be in a comment at the top of your code and should include your title, the artist and year of the original painting, and a [3-sentence statement](../../resources/statement_guidelines.md) that explains the choices you made in your reinterpretation.
+
+### Using Comments for Statements
+
+In Python, you can make a multi-line comment by putting three quotation marks at the beginning and end. Use this for your title and statement at the top of your code. Note that line breaks are not created automatically, so you will need to add these manually:
+
+```py
+"""
+Evening Code
+by Breanda Gomez
+
+My artwork reinterprets "Evening Calm," by Gerald Coulson. It simulates the
+softness of clouds and countless leaves through its transparent circles. The 
+brighter colors in my recreation bring a happier energy to my work in 
+comparison to the darker colors in Coulson's original piece. This brighter 
+energy is something I associate with artwork made online––possibly due to 
+programs such as MS Paint. 
+"""
+```
+
 
 
 ### Examples
 
-Here's some inspiration from past semesters, with the original and reinterpreted landscapes side by side:
+Here's some inspiration from past students, with the original and reinterpreted landscapes side by side:
 
 <br />
 
