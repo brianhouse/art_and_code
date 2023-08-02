@@ -3,7 +3,7 @@
 
 ## logistics
 
-Students put their work up on the shared folder on Google Drive. Then I just go in and open the output image. And then they can see what each other did. I leave feedback on Moodle. 
+Students put their work up on the shared folder on Google Drive. Then I just go in to the folder and open the output image. And then they can see what each other did. I leave feedback on Moodle. 
 
 - establish open studio work times (2 times in the week)
 
@@ -13,10 +13,12 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 ## planning
 
 - Portfolio assignment
-- plan midterm feedback meetings
 - difference and repetition assignment
-- how to make comments -- put in getting started
-- presentation dates
+- how to make comments in code for the statement -- put that in getting started
+- plan midterm feedback meetings
+- content: emergence, nonlinearity, time ... there's a lot
+
+- include pixelDensity(2)
 
 /
 

@@ -69,9 +69,9 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 9/6
 - Introduction
-- In-class Sketch #0: Algorithm
+- In-class Exercise: Algorithm
 - **For next class**:
-    - [Get set up](https://github.com/brianhouse/art_and_code/blob/master/units/0_algorithm/getting_started.md) with Python Mode for Processing
+    - Turn in [Get set up](https://github.com/brianhouse/art_and_code/blob/master/units/0_algorithm/getting_started.md) with Python Mode for Processing "sketch"
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing)
 
 
