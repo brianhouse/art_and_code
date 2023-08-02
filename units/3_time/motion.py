@@ -9,9 +9,8 @@ def draw():
     
     
 def change(start, stop, duration, offset=0):
-    return map((frameCount + offset) % duration, 0, duration, start, stop)
+    return map((frameCount + offset) % max(duration, 1), 0, duration, start, stop)
 
 def swing(start, stop, duration, offset=0): 
-    position = sin(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
-    return (position * (stop - start)) + start 
-
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start  

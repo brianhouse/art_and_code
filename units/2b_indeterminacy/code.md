@@ -1,6 +1,6 @@
 # Indeterminacy
 
-A critical function for making images like these is `random()`. `random()` doesn't draw anything to the canvas itself. Instead, it _returns_ a random number within a given range.
+The most straightforward way to incorporate indeterminacy into our sketches is to use the `random()` function. `random()` doesn't draw anything to the canvas itself. Instead, it _returns_ a random number within a given range.
 
 ```py
 random(0, 100)  # a random number between 0 and 100

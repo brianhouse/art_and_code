@@ -11,10 +11,11 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 
 ## planning
 
-- time
+- interface refresh
 - nonlinearity
-- interface
 - emergence
+
+- code ref update, motion functions HSB, etc
 
 /
 
@@ -24,7 +25,7 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 
 - plan midterm feedback meetings
 - keys / access to 303 and policies
-- get an intern
+- get an intern to make the kiosk
 
 /
 
@@ -40,9 +41,9 @@ need a video game kiosk for nonlinearity. Zac could do this. can it run on a pi?
 ## flow
 coordinates: basic drawing (need width/height)
 rep+var: loops and random and i
-time: events, frameCount, change and swing
-interface: if! mouse, variable to keep track of brush
-nonlinear: images, advanced variables, text, state
+time: events, frameCount, change and swing, if
+interface: if, mouse, variable to keep track of brush
+nonlinear: images, advanced variables (and lists?), text, state
 emergence: objects, lists (data structures)
 
 
