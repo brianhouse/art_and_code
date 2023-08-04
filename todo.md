@@ -14,8 +14,9 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 - nonlinearity
 - emergence
 
-- code ref update, motion functions HSB, etc
+/
 
+- code ref update, motion functions HSB, etc, text functions
 - lectures!
 
 /

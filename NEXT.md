@@ -58,15 +58,23 @@ if statements become what's emphasized in interface. that's the point.
 that's a little hard when we're also getting mouseX etc. variables aren't even necessary for time.
 
 
-### setup
+//
 
 
-coordinates: basic drawing (need width/height)
-rep+var: loops and random
-time: events, frameCount, change and swing
-interface: if! but also mouse..., and also variables? maybe can just emphasize brush as a variable. and make multiple variables that are True/False.
+- more about text, fonts, sizes, etc
+- adding images
+- hidden buttons
+- keeping track of things with lists?
+- time example
 
 
+what are the modes?
+- clicking on objects
+- choosing texts from options
+- hypertext
+
+it's all just hidden buttons
+"hotspots"
 
 
 ### format
