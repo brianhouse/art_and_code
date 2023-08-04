@@ -1,4 +1,4 @@
-## Sketch #3: Difference and Repetition
+## Sketch #2: Difference and Repetition
 
 In this sketch, you will explore the tension between repetition and indeterminacy as a means of making visual art with code. Your result can be abstract or representational (or a combination of the two), but these formal structures should play a central role in your concept. Use shapes together with `for` loops and the `random` function. Pay special attention to layering. Not all parameters should be random, and the resulting images should have a sense of structure and composition.
 

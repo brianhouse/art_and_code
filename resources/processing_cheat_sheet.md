@@ -53,7 +53,10 @@ endShape()
 - `fill(100, 200, 0, 50)` 4 arguments is color + opacity
 
 
-### Map
+### Calculations
+- `min(a, b)` return the lesser of two values
+- `max(a, b)` return the greater of two values
+- `dist(x1, y1, x2, y2)` returns the distance between x1,y1 and x2,y2
 - `map(i, 0, height, 0, 255)` variable, initial low, initial high, remapped low, remapped high
 
 
@@ -150,8 +153,8 @@ else:
 ### Event handlers
 - `setup()` called once when the sketch is first run
 - `draw()` called repeatedly 30 times per second
-- `mouseClicked()` called with the mouse is pressed and released in the same location
-- `keyTyped()` called when a key is typed
+- `mouseReleased()` called with the mouse is released after being pressed
+- `keyReleased()` called when a key is typed (when the key is released)
 
 
 ### Magic variables
@@ -166,11 +169,14 @@ else:
 
 
 ### Images
-- `image = loadImage("image.png")` load data from an image file into a variable
-- `pixel = image.get(x, y)` get color data for a single pixel
+- `my_image = loadImage("picture.png")` load data from an image file into a variable
+- `image(my_image, x, y)` display image with the upper left corner at 0,0
+- `image(my_image, x, y, w, h)` give the image a custom width and height
+
+<!-- - `pixel = image.get(x, y)` get color data for a single pixel
 - `r = red(pixel)` get the red value of a pixel
 - `g = green(pixel)` get the blue value of a pixel
-- `b = blue(pixel)` get the green value of a pixel
+- `b = blue(pixel)` get the green value of a pixel -->
 
 
 ### Utilities
@@ -178,7 +184,7 @@ else:
 - `open("filename").read()` read the contents of a file into a string
 - `save("filename.png")` save an image of the canvas
 - `print("text")` print a string to the console
-- `string = raw_input()` get a string from the command prompt and put it into a variable (only works in terminal)
+<!-- - `string = raw_input()` get a string from the command prompt and put it into a variable (only works in terminal) -->
 
 
 ## Full Documentation

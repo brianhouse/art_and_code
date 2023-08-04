@@ -11,11 +11,12 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 
 ## planning
 
-- interface refresh
 - nonlinearity
 - emergence
 
 - code ref update, motion functions HSB, etc
+
+- lectures!
 
 /
 

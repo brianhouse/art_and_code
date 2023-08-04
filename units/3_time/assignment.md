@@ -1,4 +1,4 @@
-## Sketch #6: Time
+## Sketch #3: Time
 
 Create a sketch with some aspect of time as its central theme. Draw upon techniques from past units and combine them with Processing's events to express your idea.
 

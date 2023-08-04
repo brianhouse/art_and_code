@@ -2,7 +2,7 @@
 
 ### Mouse variables and additional events
 
-We're already familiar with the event handlers `setup()` and `draw()`. Now we'll add `mouseClicked()`, and `keyTyped()`. In addition, Processing supplies a few **magic variables** that keep track of changing conditions. These include `mouseX`, `mouseY`, `mousePressed`, `key`, and `keyPressed`. We don't need to assign any values to these variables, as Processing will constantly update them in the background.
+We're already familiar with the event handlers `setup()` and `draw()`. Now we'll add `mouseReleased()`, and `keyReleased()`. In addition, Processing supplies a few **magic variables** that keep track of changing conditions. These include `mouseX`, `mouseY`, `mousePressed`, `key`, and `keyPressed`. We don't need to assign any values to these variables, as Processing will constantly update them in the background.
 
 Combining event handlers and magic variables allows us to build interfaces in our sketches that can respond to the mouse and keyboard.
 
@@ -52,9 +52,9 @@ def draw():
 </p>
 
 
-### mouseClicked() and comparison operators
+### mouseReleased() and comparison operators
 
-Of course, _clicking_ the mouse is a fundamental part of contemporary interfaces. Unlike detecting if the mouse button is pressed as the pointer moves across the canvas, a click is a discrete event triggered when the button is pressed and released in the same location. This gets it's own event handler function, `mouseClicked()` (note that `draw()` must also be present for this to work properly):
+Of course, _clicking_ the mouse is a fundamental part of contemporary interfaces. Unlike detecting if the mouse button is pressed as the pointer moves across the canvas, a click is a discrete event triggered when the button is pressed and released in the same location. This gets it's own event handler function, `mouseReleased()` (note that `draw()` must also be present for this to work properly):
 
 
 ```py
@@ -64,7 +64,7 @@ def setup():
 def draw():
     square(10, 10, 30)
 
-def mouseClicked():
+def mouseReleased():
     print(mouseX, mouseY)
 ```
 
@@ -74,7 +74,7 @@ To demonstrate, when you click on the canvas with this sketch, you'll see the co
   <img src="code/canvas_6.png" width=500 /><br />
 </p>
 
-We also have a square drawn to the canvas, and one thing that `mouseClicked()` is good for is determining whether we have clicked inside it.
+We also have a square drawn to the canvas, and one thing that `mouseReleased()` is good for is determining whether we have clicked inside it.
 
 To do so, we'll use a conditional and check whether the coordinates of the click are within the coordinates of the square. We've already used the `and` keyword within `if` statements to combine multiple conditions. Now, we'll also need some additional **comparison operators**:
 
@@ -90,7 +90,7 @@ def setup():
 def draw():
     square(10, 10, 30)
 
-def mouseClicked():
+def mouseReleased():
     if mouseX > 10 and mouseX < 40 and mouseY > 10 and mouseY < 40:
         print("The square was clicked!")
 ```
@@ -119,7 +119,7 @@ def draw():
     square(10, 90, 30)
 
 
-def mouseClicked():
+def mouseReleased():
     if mouseX > 10 and mouseX < 40 and mouseY > 10 and mouseY < 40:
         print("The red square was clicked!")
     elif mouseX > 10 and mouseX < 40 and mouseY > 50 and mouseY < 80:
@@ -132,13 +132,15 @@ def mouseClicked():
   <img src="code/canvas_7.png" width=400 /><br />
 </p>
 
-Look carefully at the numbers in the conditions for `mouseClicked()`, particularly for the y axis. Whereas the squares are all in the same horizontal location, we've had to work out where to begin and end our conditions for each button vertically—we start with the square's y coordinate, and then add 40 for the size of the square.
+Look carefully at the numbers in the conditions for `mouseReleased()`, particularly for the y axis. Whereas the squares are all in the same horizontal location, we've had to work out where to begin and end our conditions for each button vertically—we start with the square's y coordinate, and then add 40 for the size of the square.
 
-### Keeping track of things with variables
+### Keeping track of things with global variables
 
-What emerges is the capacity to build a basic interface of clickable buttons. If we were to combine our previous example using `mouseClicked()` with the first one that draws things at the location of the mouse, we could change between different "brushes" using buttons. The only ingredient that is missing is a global variable to tie the two together.
+What emerges is the capacity to build a basic interface of clickable buttons. If we were to combine our previous example using `mouseReleased()` with the first one that draws things at the location of the mouse, we could change between different "brushes" using buttons. The only ingredient that is missing is a **global** variable to tie the two together.
 
-We'll declare such a global variable, `brush`, at the top of the sketch from the previous example. Then, instead of just print statements inside the `mouseClicked()` conditionals, we'll set this variable to a descriptive string:
+A global variable is one that is shared between functions. Any time we change its value within a function, we need to let Python know that we're referring to the global version, and not a new local variable only for the function that we're in. The `global` keyword lets us do this as you can see in the example below.
+
+We'll declare such a global variable, `brush`, at the top of the sketch from the previous example. Then, instead of just print statements inside the `mouseReleased()` conditionals, we'll set this variable to a descriptive string:
 
 ```py
 brush = "red_circle" # intialize to default value
@@ -162,7 +164,7 @@ def draw():
     square(10, 90, 30)
 
 
-def mouseClicked():
+def mouseReleased():
 
     global brush    # indicate that we're using the global variable
 
@@ -191,6 +193,7 @@ We want to keep the `mousePressed` condition, so we are going to do a **nested `
 ```py
     if mousePressed == True:
 
+        noStroke()
         if brush == "red_brush":
             fill(255, 0, 0)
             circle(mouseX, mouseY, 50)
@@ -247,7 +250,7 @@ def draw():
     square(10, 90, 30)
 
 
-def mouseClicked():
+def mouseReleased():
     global brush    # indicate that we're using the global variable
 
     if mouseX > 10 and mouseX < 40 and mouseY > 10 and mouseY < 40:
@@ -267,10 +270,55 @@ def mouseClicked():
 
 The layering here is also important. Every time `draw()` is called, it first draws the brush at the mouse location, and then it redraws the buttons. This ensures that the buttons will always be on top.
 
+Note that the global `brush` variable now let's us indicate if a button is currently selected:
+
+```py
+    strokeWeight(5)  # set the strokeWeight
+
+    # red square
+    fill(255, 0, 0)
+    if brush == "red_circle":
+        stroke(0)
+    else:
+        noStroke()
+    square(10, 10, 30)
+
+    # green square
+    fill(0,255, 0)
+    if brush == "green_circle":
+        stroke(0)
+    else:
+        noStroke()    
+    square(10, 50, 30)
+
+    # blue square
+    fill(0, 0, 255)
+    if brush == "blue_circle":
+        stroke(0)
+    else:
+        noStroke()    
+    square(10, 90, 30)
+
+    strokeWeight(1) # reset the strokeWeight
+```
+
+#### Circular buttons and `dist()`
+
+As an aside, how would you make a circular button? 
+
+This is actually easier than coming up with four boundaries for a square one. We just need to know if the mouse is within some distance of the circles center. We could use the Pythagorean theorem for that, but Processing supplies us with a built-in function: `dist()`. 
+
+`dist()` takes four values—the two sets of x and y values to compare. Within `mouseReleased()` we could use it like this:
+
+```py
+    if dist(mouseX, mouseY, 20, 20) <= 10:     # circle with radius 10 centered on 20,20
+        print("The red circle was clicked!")
+        brush = "red_circle"
+```
 
 ### The keyboard
 
-The keyboard works similarly to the mouse. `keyPressed` is `True` or `False` depending on whether a key is down. And every time a key is typed, `keyTyped` is called. The magic variable `key` keeps track of what key is active.
+The keyboard works similarly to the mouse. `keyPressed` is `True` or `False` depending on whether a key is down. And every time a key is typed, `keyReleased` is called. The magic variable `key` keeps track of what key is active.
 
 Given that, we could rewrite the previous example without the buttons, and use keys instead:
 
@@ -297,7 +345,7 @@ def draw():
             square(mouseX, mouseY, 50)
 
 
-def keyTyped():
+def keyReleased():
 
     global brush    # indicate that we're using the global variable
 
@@ -411,6 +459,55 @@ There are endless possibilities for brushes you might make when you combine inte
 
 Note that in these examples, a white or black background is set within `setup()`, but of course it could be any color. Pro tip: to make an eraser, make a brush with a fill set  to the same color.
 
+Another thought: how might the `change()` and `swing()` functions be used?
+
+#### `pmouseX` and `pmouseY`
+
+So far, our brushes have made a single shape each frame. You've probably noticed, however, that if you move your mouse quickly enough, there's a gap between shapes. This isn't very true to how things work in the physical world—no matter how quickly you move your pencil, there's no interruption in the line.
+
+Do that with Processing, we'll need yet another pair of magic variables. These are `pmouseX` and `pmouseY` — the _previous_ x and y coordinates of the mouse, from the frame prior. Using these together with `mouseX` and `mouseY`, we can create unbroken lines:
+
+```py
+if brush == "pencil":
+    stroke(0)
+    strokeWeight(1)
+    line(pmouseX, pmouseX, mouseX, mouseY)
+```
+
+Having `pmouseX` and `pmouseY` also opens up some opportunities with `dist()`. The difference between mouse positions is the same thing as the speed of the cursor per frame (ie, pixels-per-frame). Eg:
+
+```py
+ppf = dist(pmouseX, pmouseY, mouseX, mouseY)
+```
+
+What can we do with this? Well, maybe you want a pen to be thicker the slower it moves:
+
+```py
+if brush == "fountain_pen":
+    stroke(0)
+    ppf = dist(pmouseX, pmouseY, mouseX, mouseY)
+    strokeWeight(20 - min(ppf, 20))
+    line(pmouseX, pmouseY, mouseX, mouseY)
+```
+
+Here we've set `strokeWeight()` to 20 _minus_ the speed. So if the speed is 0, the weight is 20, and vice versa. We've also used the `min()` function, which returns the lower of two numbers. This guarantees that we won't get any negative numbers for the weight, which we would otherwise if the speed went above 20.
+
+
+#### Guassians
+
+Finally, one more example of a brush, this time using Guassian values:
+
+```py
+stroke(0, 128)       # a little transparency
+strokeWeight(1)
+for i in range(100):
+    point(mouseX + (randomGaussian() * 5), mouseY + (randomGaussian() * 5))
+```
+
+<p align="center">
+  <img src="code/canvas_15.png" width=400 /><br />
+</p>
+
 ### Saving the canvas
 
 One last detail that you'll need: the ability to save. Fortunately, Processing makes this easy with the `save()` function. Just put this inside an event, whether it is a save button that is clicked or a particular letter that is typed:
@@ -424,7 +521,7 @@ def draw():
         fill(255, 255, 0)
         triangle(mouseX, mouseY, mouseX - 10, mouseY + 15, mouseX + 10, mouseY + 15)
 
-def keyTyped():
+def keyReleased():
     if key == "s":
         save("output.png")
         print("Saved output.png")

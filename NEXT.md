@@ -31,35 +31,6 @@ note the need to have collides written first for wall visibility
 make the seek etc work with "cursor" or something
 
 
-### interface
-
-fill bucket using pixels
-
-
-pMouse
-
-agents
-
-buttons that show if they are selected (in example)
-
-drippy brush using agents (if after emergence)
-
-using pgraphics could potentially avoid the painting over thing
-
-fill bucket builds off of glitch?
-
-bearing between mouse and pmouse 
-
-circular buttons (in example)
-
-have proper speed is important
-
-need to use mouseReleased instead of mouseClicked
-
-guassian example
-
-
-
 
 ### new nonlinear
 

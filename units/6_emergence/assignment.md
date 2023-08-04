@@ -1,4 +1,4 @@
-## Sketch #8: Emergence
+## Sketch #6: Emergence
 
 ### Preamble
 

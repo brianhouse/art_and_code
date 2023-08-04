@@ -410,7 +410,7 @@ for i in range(2000):
   <img src="code/canvas_25.png" width=500 /><br />
 </p>
 
-Notice how this is still "random", but it tapers off on the edges. It doesn't have to be used in two dimensions or centered in this way—using a gaussian distribution might be useful in all kinds of contexts, any time you want values centered somewhere with a bit of natural-feeling variation.
+Notice how this is still "random", but it tapers off on the edges. It doesn't have to be used in two dimensions or centered in this way—using a Gaussian distribution might be useful in all kinds of contexts, any time you want values centered somewhere with a bit of natural-feeling variation.
 
 
 

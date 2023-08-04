@@ -1,4 +1,4 @@
-## Sketch #3: Nonlinearity
+## Sketch #5: Nonlinearity
 
 Create a nonlinear narrative in the second person using code where the reader chooses their path by inputting text. Your title and concept should be included as the introduction to your narrative. It must include at least 8 different branching points that create meaningful alternative paths.
 
