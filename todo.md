@@ -8,6 +8,8 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 - establish open studio work times (2 times in the week)
 
 
+are we ready with Google Drive for Desktop?
+
 
 ## planning
 
@@ -21,7 +23,7 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 
 /
 
-- on Moodle, "assignment" "tutorial"
+- on Moodle, "assignment" "tutorial" and helper files
 
 /
 
