@@ -5,41 +5,27 @@
 
 Students put their work up on the shared folder on Google Drive. Then I just go in to the folder and open the output image. And then they can see what each other did. I leave feedback on Moodle. 
 
-- establish open studio work times (2 times in the week)
+Establish open studio work times (2 times in the week)
 
-
-are we ready with Google Drive for Desktop?
+Are we ready with Google Drive for Desktop?
 
 
 ## planning
 
-- nonlinearity
+CODE:
 - emergence
-
-/
-
 - code ref update, motion functions HSB, etc, text functions
-- lectures!
 
-/
+LECTURES:
+- lectures
 
+MOODLE:
 - on Moodle, "assignment" "tutorial" and helper files
-
-/
 
 - plan midterm feedback meetings
 - keys / access to 303 and policies
-- get an intern to make the kiosk
 
-/
 
-am I doing prints?
-
-/
-
-Time and Emergence can be displayed
-
-need a video game kiosk for nonlinearity. Zac could do this. can it run on a pi? need to buy one. wait for the 5, right? I have 4s to test with.
 
 
 ## flow
@@ -58,4 +44,13 @@ get Myst working and transferrable?
 repetition / variation assignment
 
 
+## display
+Time and Emergence can be displayed
 
+need a video game kiosk for nonlinearity. Zac could do this. can it run on a pi? need to buy one. wait for the 5, right? I have 4s to test with.
+
+get an intern to make the kiosk
+
+/
+
+am I doing prints?

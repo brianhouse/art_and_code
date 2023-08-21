@@ -1,6 +1,8 @@
 from __main__ import *
 
 room = None
+previous_room = None
+change_frame = 0
 pmousePressed = False
 
 try:
@@ -32,13 +34,24 @@ def draw_hotspot(hotspot):
 def click():
     return mousePressed != pmousePressed and not mousePressed    
     
-def check_hotspot(hotspot):
+def check_hotspot(hotspot, y=None, w=None, h=None):
     if not click():
-        return False
-    x, y, w, h = hotspot
+        return False 
+    if len(hotspot):
+        x, y, w, h = hotspot
     return mouseX > x and mouseX < x + w and mouseY > y and mouseY < y + h
   
 def change_room(r):
-    global room
+    global room, previous_room, change_frame
+    previous_room = room
     room = r
+    change_frame = frameCount
+    
+def go_back():
+    change_room(previous_room)
+    
+def elapsed(duration):
+    return frameCount - change_frame >= duration
+    
+    
     

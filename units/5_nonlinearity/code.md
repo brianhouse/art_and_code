@@ -1,6 +1,6 @@
 # Nonlinearity
 
-The focus of this unit will be on how to string together functions into nonlinear narratives. But before we get to that, let's introduce a few new materials to work with.
+The focus of this unit will be on how to string together functions into nonlinear experiences. But before we get to that, let's introduce a few new materials to work with.
 
 
 ## Images
@@ -382,11 +382,130 @@ def living_room():
 With this code, clicking on one hotspot or the other will activate either the "kitchen" or the "hallway" function. By adding hotspots to all the functions, we activate the map to create a nonlinear structure.
 
 
-### Using functions to repeat elements
+## Using functions to create standard
+
+Consider a nonlinear adventure game that has 'rooms' corresponding to locations on a deserted island:
+
+```py
+def setup():
+    size(500, 500)
+    pixelDensity(2)
+    change_room(dune)
+
+def dune():
+    text("You're on a dune. No drinkable water here.", 180, height/2 - 200, 200, 300)
+        
+def beach():
+    text("You're at a beach. No drinkable water here.", width/2, height/2)
+
+def swamp():
+    text("You're in a swamp. No drinkable water here.", width/2, height/2)
+
+def spring():
+    text("You found a spring! Drink up.", width/2, height/2)
+```
+
+For this game, we want to navigate by clicking the cardinal directions on a compass rose: North, South, East, or West. Since this navigation is standard, it needs to be drawn the same in every function. However, that would involve a lot of repeated code. Instead, we can create a function to encapsulate this element, like this:
+
+```py
+def compass():
+    
+    # create some global hotspot variables
+    global north, south, east, west     
+    north = width/2, height - 100 - 10, 10, 10
+    south = width/2, height - 70 - 10, 10, 10
+    east = width/2 + 20, height - 95, 10, 10
+    west = width/2 - 20, height - 95, 10, 10
+
+    # draw the compass
+    fill(0)
+    textSize(20)
+    textAlign(LEFT)
+    text("N", width/2, height - 100)
+    text("S", width/2, height - 70)    
+    text("E", width/2 + 20, height - 85)
+    text("W", width/2 - 20, height - 85)
+```
+
+Now we can call our `compass()` function within our room functions, and it will use the standard code to draw the compass rose. We can then test those global hotspots, since when we created them we declared them to be global:
+
+```py
+def dune():
+    text("You're on a dune. No drinkable water anywhere.", 180, height/2 - 200, 200, 300)
+    compass()
+    if check_hotspot(north):
+        change_room(beach)
+    elif check_hotspot(west): 
+        change_room(swamp)
+```        
+
+However, one problem that arises here is if a room doesn't have an option to go in all four directions. In this example, for instance, what happens if you click "S"?
+
+### Creating arguments
+
+There's many ways we could solve this. One might be to pass arguments to `compass()` to indicate which directions should be shown. 
+
+```py
+def compass(show_north, show_south, show_east, show_west):   # create arguments
+    
+    # create some global hotspot variables
+    global north, south, east, west     
+    north = width/2, height - 100 - 10, 10, 10
+    south = width/2, height - 70 - 10, 10, 10
+    east = width/2 + 20, height - 95, 10, 10
+    west = width/2 - 20, height - 95, 10, 10
+
+    # draw the compass
+    fill(0)
+    textSize(20)
+    textAlign(LEFT)
+    if show_north == True:                           # have conditionals
+        text("N", width/2, height - 100)
+    if show_south == True:
+        text("S", width/2, height - 70)        
+    if show_east == True:
+        text("E", width/2 + 20, height - 85)
+    if show_west == True:
+        text("W", width/2 - 20, height - 85)
+```
+
+Notice how at the top of the function we list out the arguments that we're expecting. These become variables that we can use in our functions. Below, we're using conditionals to check if each of these variables are True or False, showing the cardinal direction accordingly.
+
+Back in our `dune()` function, we now call `compass()` with a list of True/False values indicating which directions should be shown:
+
+```py
+def dune():
+    text("You're on a dune. No drinkable water anywhere.", 180, height/2 - 200, 200, 300)
+    compass(True, False, False, True)
+    if check_hotspot(north):
+        change_room(beach)
+    elif check_hotspot(west): 
+        change_room(swamp)
+```    
 
 
-### Keeping track of things with global variables
+## Other functions
+
+Our nonlinearity helper also includes a few helper functions that may be useful:
+
+- `go_back()` returns the user to the previous room
+
+- `elapsed(duration)` can be used within a conditional statement to do things after a certain number of frames have elapsed since the room was entered. For example:
+
+```py
+def monster():
+    text("There's a monster in this swamp! You run back the way you came.", width/2, height/2)    
+    if elapsed(100):
+        go_back()
+```
 
 
-### Using global variables to measure progress
+## Keeping track of things with global variables
+
+
+
+## Using global variables to measure progress
+
+
+
 
