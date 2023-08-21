@@ -1,30 +1,14 @@
 ## Sketch #5: Nonlinearity
 
-Create a nonlinear narrative in the second person using code where the reader chooses their path by inputting text. Your title and concept should be included as the introduction to your narrative. It must include at least 8 different branching points that create meaningful alternative paths.
+Create a nonlinear narrative using code where the path can be chosen by clicking on the canvas. It must include at least 8 different branching points that create meaningful alternative paths. While your work may be structurally similar to _Myst_, _Zork_, or other works of art or entertainment, the theme and content should reflect your own artistic concept. 
 
-While your work may be structurally similar to _Zork_, the theme and written content should reflect your own artistic concept—adventures involving dungeons or swords are officially outlawed. Asking the reader "yes" / "no" questions are also outlawed, as are prompts that are similar to "Do you want to continue?" as these do not provide true branching points.
+Approaches you might take:
+- hypertext: use all text with highlighted words that lead to other sections
+- image-only: use hotspots on images to simulate a 3D environment
+- combination: use images to illustrate your world, but provide dialog and options via text
+- cardinal directions: have a symbolic interface for moving around
+- something else
 
-Draw a flowchart of the the choices that will be available to your reader (by hand, using Google Draw, or any other medium). Every state in your flowchart should correspond to a function in your code. You should have little, if any, code outside of a function.
+If you use images, you can use images that you draw yourself in another program, images you steal online, or photos of the real world.
 
-
-Submit the following to Moodle:
-- your title and statement
-- your flowchart
-- your sketch folder
-
-
-### What makes a good nonlinear narrative?
-
-**Have stakes.** In a a good narrative or game, the protagonist ("you") has a clear purpose and a sense of progress toward accomplishing it.
-
-**Manage scope.** Plan everything out ahead of time, and don't get too elaborate—you're making the equivalent of a short story, not a novel; checkers, not chess.
-
-**Have consistent navigation.** Don't use "go north" in one place and "enter the garden" in another—pick a system.
-
-**Describe the options.** If something can be interacted with, it should be described in your text. ie, if you expect me to lift the rug, you have to mention that it's there.
-
-**Pay attention to the aesthetics of your text.** In other words, spelling, punctuation, spacing, length—all of these things contribute to your narrative feeling cohesive.
-
-**Create a world.** Describe where the protagonist is. Don't just say a grocery store, for example—let me hear the sounds of checkout and smell the bread.
-
-**Match content to form.** Are we in a maze of feelings? Exploring our memories? Fixing the future? Nonlinearity has to do with time; play with that in your concept, it's not a straightforward story.
+Draw a flowchart of the available choices (by hand, using Google Draw, or any other medium). Every state/room in your flowchart should correspond to a function in your code. Turn this in along with your code, which should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept.

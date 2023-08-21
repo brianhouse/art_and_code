@@ -1,6 +1,6 @@
 # Nonlinearity
 
-The focus of this unit will be on how to string together functions into nonlinear experiences. But before we get to that, let's introduce a few new materials to work with.
+The focus of this unit will be on how to string together functions into nonlinear narratives. But before we get to that, let's introduce a few new materials to work with.
 
 
 ## Images
@@ -381,4 +381,12 @@ def living_room():
 
 With this code, clicking on one hotspot or the other will activate either the "kitchen" or the "hallway" function. By adding hotspots to all the functions, we activate the map to create a nonlinear structure.
 
+
+### Using functions to repeat elements
+
+
+### Keeping track of things with global variables
+
+
+### Using global variables to measure progress
 
