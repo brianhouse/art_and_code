@@ -1,11 +1,7 @@
-## Organization
-
-SMALL GROUP DESK CRITS once the tables support it
-
-
 ### repetition
 
 context: Walter Benjamin, Harold Cohen, NFTs, Steve Reich (micro effects emerge)
+
 
 range parameters
 
@@ -23,58 +19,12 @@ make a "rotate" property in the agent to adjust for drawing wrong
 
 bounce vs wrap
 
-
 note the need to have collides written first for wall visibility
 
 - more background about what emergence is and the possibilities 
 
 make the seek etc work with "cursor" or something
 
-
-
-### new nonlinear
-
-
-interface introduces buttons and text, which is totally what is necessary for nonlinearity in this case, they're the same. how is nonlinearity going to be structured?
-
-a function for each scene. but could be multiple parts as well.
-
-if item_selected == True:
-	showSection()
-
-definitely turns into a game very quickly. 
-
-nonlinearity could also use loaded images. maybe that's part of the assignment, to incorporate photos you take.
-
-TheGameTheGame could be an example there.
-
-this has to come after interface.
-
-
-in this version, nonlinearity uses the same skillset as interface. introducing lists would be the thing. how does that fit? inventory, for one. maybe that's enough. and image could be introduced (that cuts down on the time spent drawing)
-
-if statements become what's emphasized in interface. that's the point.
-
-that's a little hard when we're also getting mouseX etc. variables aren't even necessary for time.
-
-
-//
-
-
-- more about text, fonts, sizes, etc
-- adding images
-- hidden buttons
-- keeping track of things with lists?
-- time example
-
-
-what are the modes?
-- clicking on objects
-- choosing texts from options
-- hypertext
-
-it's all just hidden buttons
-"hotspots"
 
 
 ### format

@@ -1,5 +1,22 @@
 # TODO
 
+MOODLE:
+- on Moodle, "assignment" "tutorial" and helper files
+
+- plan midterm feedback meetings
+- keys / access to 303 and policies
+
+
+CODE:
+- code ref update, motion functions HSB, etc, text functions
+- emergence
+
+
+LECTURES:
+- repetition improve
+- time
+- interface improve
+
 
 ## logistics
 
@@ -8,24 +25,6 @@ Students put their work up on the shared folder on Google Drive. Then I just go 
 Establish open studio work times (2 times in the week)
 
 Are we ready with Google Drive for Desktop?
-
-
-## planning
-
-CODE:
-- emergence
-- code ref update, motion functions HSB, etc, text functions
-
-LECTURES:
-- lectures
-
-MOODLE:
-- on Moodle, "assignment" "tutorial" and helper files
-
-- plan midterm feedback meetings
-- keys / access to 303 and policies
-
-
 
 
 ## flow
