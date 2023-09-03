@@ -5,7 +5,7 @@ Fayerweather 303
 
 Prof. Brian House (he/him)  
 [bhouse@amherst.edu](mailto:bhouse@amherst.edu)  
-Office hours: [https://calendly.com/bhouse-amherst/student-meeting](https://calendly.com/bhouse-amherst/student-meeting)
+Office hours: [https://calendly.com/bhouse-amherst/student-meeting](https://calendly.com/bhouse-amherst/student-meeting)  
 Fayerweather 308
 
 
