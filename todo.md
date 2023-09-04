@@ -1,5 +1,7 @@
 # TODO
 
+first day paper and materials
+
 MOODLE:
 - on Moodle, "assignment" "tutorial" and helper files
 
@@ -7,15 +9,13 @@ MOODLE:
 - keys / access to 303 and policies
 
 
-CODE:
-- code ref update, motion functions HSB, etc, text functions
-- emergence
-
-
 LECTURES:
-- repetition improve
 - time
-- interface improve
+
+
+CODE:
+- emergence
+- SimCity emulator
 
 
 ## logistics

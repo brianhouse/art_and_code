@@ -51,6 +51,7 @@ endShape()
 - `fill(100, 50)` 2 arguments is greyscale + opacity
 - `fill(100, 200, 0)` 3 arguments is color
 - `fill(100, 200, 0, 50)` 4 arguments is color + opacity
+- `colorMode(HSB)` switch to HSB
 
 
 ### Calculations
@@ -124,6 +125,12 @@ endShape()
 - `if "phrase" in my_list:` test whether a string is within a list
 - `words = list(set(words))` convert a list with repeats into a list with only unique items -->
 
+### Motion
+- `change(start, stop, duration)` start and stop values and duration in number of frames
+- `change(start, stop, duration, offset)` offset in number of frames
+- `swing(start, stop, duration)` oscillate between start and stop values
+- `swing(start, stop, duration, offset)`
+
 
 ### Lists
 - `my_list = []` create an empty list
@@ -166,6 +173,15 @@ else:
 - `key` the most recently typed key
 - `width` the width of the canvas
 - `height` the height of the canvas
+
+
+### Text
+- `my_font = createFont("A_FONT.ttf", 36)` load font data into a variable
+- `textFont(my_font)` select a font that has been loaded
+- `textAlign(CENTER)` switch from left alignment to center alignment
+- `textSize(36)` set text size
+- `text("Hello World!", 0, 10)` place given text on the canvas at x, y coordinates
+
 
 
 ### Images

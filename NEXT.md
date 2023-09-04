@@ -1,15 +1,3 @@
-### repetition
-
-context: Walter Benjamin, Harold Cohen, NFTs, Steve Reich (micro effects emerge)
-
-
-range parameters
-
-op art -- more visual examples
-
-coolers site for color schemes
-
-
 
 ### emergence
 
