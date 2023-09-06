@@ -94,4 +94,7 @@ So for the remainder of this time, we're going to try and get up and running.
 - Getting Started
 
 
+- if you don't have a Mac or Windows laptop, come see me
+- if you're not registered, come see me
+
 

@@ -79,7 +79,7 @@ Now that you know what to expect, you won't be surprised by the first time you s
 
 ## How to submit your work
 
-First, make sure you save your sketch. Name your sketch with your first name followed by whatever you want. That part is important so we don't get the sketches mixed up. 
+First, make sure you save your sketch. **Name your sketch with your first name followed by whatever you want**. That part is important so we don't get the sketches mixed up. 
 
 <p align="center">
   <img src="code/canvas_10.png" width=300 /><br />
@@ -107,5 +107,5 @@ Inside, you'll find several files, including "output.png", which is your image.
 </p>
  -->
 
-To turn in your sketch, copy the whole folder to Google Drive, under "Art + Code Sketches" —> "0 Getting Started". Hold down the Option key while you drag it so that it doesn't remove your local copy.
+To turn in your sketch, copy the whole folder to Google Drive, under "Art + Code Sketches" —> "0 Getting Started". **Hold down the Option key while you drag it so that it doesn't remove your local copy**.
 

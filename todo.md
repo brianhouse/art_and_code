@@ -1,7 +1,5 @@
 # TODO
 
-first day paper and materials
-
 MOODLE:
 - on Moodle, "assignment" "tutorial" and helper files
 
@@ -16,6 +14,7 @@ LECTURES:
 CODE:
 - emergence
 - SimCity emulator
+- MYST
 
 
 ## logistics

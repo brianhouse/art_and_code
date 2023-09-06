@@ -29,13 +29,13 @@ Sketches must include a title and a [3-sentence statement](https://github.com/br
 
 
 ### Presentations
-Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then precede to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. Slides should be turned in on Moodle prior to class.
+Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then proceed to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. Slides should be turned in on Moodle prior to class.
 
 ### Participation
 Attendance is mandatory, and motivated and mindful participation in crit and classroom disscussion is expected.
 
 ### Grading
-In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product. Completing all work on time and participating in class is the baseline standard. Beyond that, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative impulses. As this is an introductory course, experimenting with the craft of code is the primary emphasis and should be your focus. Midway through the semester, students will meet individually with the professor to track their progress.
+In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product. Completing all work on time and participating in class is the baseline standard. Beyond grades, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative direction. As this is an introductory course, experimenting with the craft of code is the primary emphasis and should be your focus. Midway through the semester, students will meet individually with the professor to track their progress.
 
 
 ## Policies
@@ -98,6 +98,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 3
 
 #### Monday 9/18
+- Safety Training
 - In-class ["textile" mini-sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2a_repetition/assignment.md)
 - [Coding with Indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/code.md)
 
