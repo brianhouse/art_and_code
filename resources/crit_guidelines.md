@@ -11,3 +11,4 @@ Crit is an opportunity to get collective feedback on your work from your peers a
 ### Critiquing
 - Just describe what you see! For example, what is the first thing you notice about the work? How do its parts relate to one another? What is surprising about it? Or even, what effect does the work have on you? Comments like these help the artist learn what is coming across in what they have done, which may or may not match with their intentions
 - Don't make statements that start with "I like..."
+- Avoid making suggestions about how you would do things differently

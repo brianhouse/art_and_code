@@ -1,19 +1,13 @@
 # TODO
 
 MOODLE:
-- on Moodle, "assignment" "tutorial" and helper files
-
 - plan midterm feedback meetings
 - keys / access to 303 and policies
 
 
-LECTURES:
-- time
-
-
 CODE:
 - emergence
-- SimCity emulator
+- SimCity emulator (https://dos.zone/sim-city-2000-1993/)
 - MYST
 
 

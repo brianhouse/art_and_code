@@ -103,6 +103,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - [Coding with Indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/code.md)
 
 #### Wednesday 9/20
+<!-- when2meet and keys https://www.when2meet.com/?21427697-lvpMS -->
 - Discussing Indeterminacy
 - Begin [Repetition and Indeterminacy Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/assignment.md)
 - Explanation of [artist statements](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md)
@@ -111,6 +112,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 4
 
 #### Monday 9/25
+<!-- signed up for presentations? -->
 - Crit Repetition and Indeterminacy Sketch
 - [Coding with Time](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/code.md)
 - Begin [Time Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/assignment.md)

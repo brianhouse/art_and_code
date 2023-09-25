@@ -2,7 +2,7 @@
 
 from random import shuffle
 
-with open("students_present.txt") as f:
+with open("students.txt") as f:
     students = [line.strip() for line in f.readlines()]
 
 while True:
