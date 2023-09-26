@@ -153,18 +153,16 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Questions and work time
 
 #### Wednesday 10/18
-- Crit Interface Sketch
-- [Coding Nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/code.md)
-- Begin [Nonlinearity Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/assignment.md)
+- Questions and work time
 - **For next class**:
     - Play Myst
-
 
 ### Week 8
 
 #### Monday 10/23
-- Discuss Nonlinearity
-- Questions and work time
+- Crit Interface Sketch
+- [Coding Nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/code.md)
+- Begin [Nonlinearity Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/assignment.md)
 
 #### Wednesday 10/25
 - Presentations 4
@@ -184,14 +182,13 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 10
 
 #### Monday 11/6
+- Presentations 6
+- Questions and work time
+
+#### Wednesday 11/8
 - Crit Nonlinearity Sketch
 - [Coding Emergence](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/code.md)
 - Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
-
-#### Wednesday 11/8
-- Presentations 6
-- Discuss emergence
-- Questions and work time
 
 
 ### Week 11
@@ -211,13 +208,11 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 12
 
 #### Monday 11/27
-- Crit Emergence Sketch
-- Begin [Final Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/7_final/assignment.md)
-
-
-#### Wednesday 11/29
 - Questions and work time
 
+#### Wednesday 11/29
+- Crit Emergence Sketch
+- Begin [Final Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/7_final/assignment.md)
 
 ### Week 13
 
@@ -231,9 +226,12 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 14
 
-#### Monday 5/8
-- Crit Final Sketch
+#### Monday 12/11
 - Wrap up
+
+#### Wednesday 12/13
+- Crit Final Sketch
+
 
 #### Exam Week
 - No meetings during exam week

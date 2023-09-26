@@ -71,7 +71,6 @@
 - Eduardo Kac
 - Beatriz da Costa
 - Golan Levin
-- Tega Brain
 - Lauren McCarthy
 - Jonathan Harris
 - Complex Movements

@@ -4,13 +4,13 @@
 4A Crit Rep/In -> Time	4B Time
 5A Crit Time desk	5B Time crit -> interface
 -	6B Interface
-7A Interface desk	7B Interface crit -> nonlin
-8A nonlin variables	8B nonlin
+7A Interface desk	7B interface contind
+8A Interface crit -> nonlin	8B nonlin
 9A nonlin	9B nonlin  desk
-10A nonlin final -> emerge	10B emerge
+10A nonlin contind	10B nonlin final -> emerge
 11A emerge desk	11B emerge
 -	-
-12A emerge crit -> final	12B final 
+12A emerge desk	12B  emerge crit -> final 
 13A final desk	13B final conti
-14A final crit	-
+14A final conti	14B final crit
 -	-
