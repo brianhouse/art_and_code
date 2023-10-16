@@ -153,7 +153,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Questions and work time
 
 #### Wednesday 10/18
-- Questions and work time
+- Demo interface at desk
 - **For next class**:
     - Play Myst
 
