@@ -154,8 +154,6 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 10/18
 - Demo interface at desk
-- **For next class**:
-    - Play Myst
 
 ### Week 8
 
@@ -163,6 +161,9 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Crit Interface Sketch
 - [Coding Nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/code.md)
 - Begin [Nonlinearity Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/assignment.md)
+- **For next class**:
+    - Play Myst
+
 
 #### Wednesday 10/25
 - Presentations 4
