@@ -7,12 +7,18 @@ def setup():
 
 def bedroom():
     text("Bedroom", 180, height/2)
+    if elapsed(200):
+        go_back()
 
 def kitchen():
-    text("Kitchen", 180, height/2)
-
+    text("Kitchen", swing(150, 210, 100), height/2)
+    if elapsed(200):
+        go_back()
+    
 def hallway():
     text("Hallway", 180, height/2)
+    if elapsed(200):
+        go_back()    
 
 def living_room():
     text("Living Room", 180, height/2)

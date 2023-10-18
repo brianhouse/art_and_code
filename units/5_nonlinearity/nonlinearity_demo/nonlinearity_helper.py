@@ -53,5 +53,12 @@ def go_back():
 def elapsed(duration):
     return frameCount - change_frame >= duration
     
+def change(start, stop, duration, offset=0):
+    return map((frameCount + offset) % max(duration, 1), 0, duration, start, stop)
+
+def swing(start, stop, duration, offset=0): 
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start  
+    
     
     

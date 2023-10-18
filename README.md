@@ -162,7 +162,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - [Coding Nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/code.md)
 - Begin [Nonlinearity Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/assignment.md)
 - **For next class**:
-    - Play Myst
+    - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
 
 #### Wednesday 10/25

@@ -11,7 +11,7 @@ This is a three step process. First, we have to add the image to the sketch. Nex
 
 ### Adding an image
 
-To begin, get your image file. It's a good idea to resize the file ahead of time to the size you'll use in your sketch—too big, and it will make your sketch load slower; too small, and quality will be reduced. If you have a graphics program like Photoshop or Pixelmator, you can resize using that. Otherwise, Google "image resize" and there are several options online.
+To begin, get your image file. It needs to be a .jpg or .png file. It's also a good idea to resize the file ahead of time to the size you'll use in your sketch—too big, and it will make your sketch load slower; too small, and quality will be reduced. If you have a graphics program like Photoshop or Pixelmator, you can change the format and resize using that. Otherwise, Google "image resize" and there are several options online, such as: [imageresizer.com](https://imageresizer.com/). <!-- make people do this with their phones -->
 
 To add your image to your sketch, use "Sketch" —> "Add File..." and navigate to your file.
 
