@@ -167,6 +167,8 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Wednesday 10/25
 - Presentations 4
+- Discussing Nonlinearity
+- Coding Nonlinearity continued
 - Questions and work time
 
 
@@ -174,10 +176,12 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 10/30
 - Presentations 5
+- Midterm review meetings 
 - Questions and work time
 
 #### Wednesday 11/1
 - Desk crits
+- Midterm review meetings continued
 - Questions and work time
 
 ### Week 10

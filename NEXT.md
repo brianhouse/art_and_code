@@ -1,3 +1,17 @@
+populate with new examples
+
+
+### interface
+
+cover quantization
+
+
+### nonlinearity
+
+room -> scene
+
+a message that comes up and goes away?
+
 
 ### emergence
 

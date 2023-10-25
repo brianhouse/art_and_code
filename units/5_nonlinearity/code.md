@@ -309,7 +309,7 @@ Each room is represented by its own function. At the moment, those functions jus
 
 Note that we do not have a `draw()` function. What we'll do instead is use each of the room functions as the draw function, depending on what room we're in, activating only one at a time.
 
-Currently, if you run this code, nothing with happen. But if we give `change_room()` the name of one of our room functions as an argument, that function will become `draw()`. To begin, we'll use `change_room()` within `setup()`:
+Currently, if you run this code, nothing with happen. But if we give `change_room()` the name of one of our room functions as an argument, that function will, in effect, become `draw()`! To begin, we'll use `change_room()` within `setup()`:
 
 ```py
 def setup():
@@ -381,7 +381,11 @@ def living_room():
 
 With this code, clicking on one hotspot or the other will activate either the "kitchen" or the "hallway" function. By adding hotspots to all the functions, we activate the map to create a nonlinear structure.
 
+Keep in mind that although this example uses text links, you can just as easily use images, animations, drawings ... anything we've covered before can live within one of the room functions, but now we have a straightforward way to switch between different sections of our code.
 
+
+
+<!-- 
 ## Using functions to create standard
 
 Consider a nonlinear adventure game that has 'rooms' corresponding to locations on a deserted island:
@@ -482,7 +486,7 @@ def dune():
     elif check_hotspot(west): 
         change_room(swamp)
 ```    
-
+ -->
 
 ## Other functions
 
@@ -498,7 +502,7 @@ def monster():
     if elapsed(100):
         go_back()
 ```
-
+<!-- 
 
 ## Keeping track of things with global variables
 
@@ -506,6 +510,6 @@ def monster():
 
 ## Using global variables to measure progress
 
-
+ -->
 
 
