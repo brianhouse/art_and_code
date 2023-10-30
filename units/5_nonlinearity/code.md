@@ -154,7 +154,7 @@ To add one of these to your sketch, use "Sketch" —> "Add File..." and navigate
   <img src="code/canvas_5.png" width=300 /><br />
 </p>
 
-Next, we use the `createFont()` function to load it into Processing—this is similar to the `loadImage()` function. It takes the filename of the font and a size, and it stores the font data in a variable. The size is more or less irrelevant, since we can change it later, but for best quality try to set it to approximately what you'll use—you can list more than one as additional arguments.
+Next, we use the `createFont()` function to load it into Processing—this is similar to the `loadImage()` function. It takes the filename of the font and a size, and it stores the font data in a variable. Processing will load the font at this size and then scale it as needed, so put in the largest size you anticipate using (but no larger) in order to maximize quality without compromising too much memory.
 
 `createFont()` should always be called within `setup()`, but you can use `textFont()` anywhere to change fonts on the fly. Just keep in mind that you may need to make a global variable with the font name:
 
@@ -384,6 +384,59 @@ With this code, clicking on one hotspot or the other will activate either the "k
 Keep in mind that although this example uses text links, you can just as easily use images, animations, drawings ... anything we've covered before can live within one of the room functions, but now we have a straightforward way to switch between different sections of our code.
 
 
+## Keeping track of things with global variables
+
+Using functions to create "rooms" goes most of the way to create nonlinear structures. However, another useful mechanic is to keep track of "objects" that the player/reader/user might possess and even carry from room to room. A straightforward example of this is a key.
+
+In the following example, we use a boolean (True/False) variable to keep track of whether the "key" has been clicked (aka picked up). Without the key, there is no hotspot on the door. With the key, the door hotspot now shows up and allows passage to another room function.
+
+
+```py
+def setup():
+    global room_1_img, room_2_img
+    room_1_img = loadImage("classroom.jpg")
+    room_2_img = loadImage("hallway.jpg")
+
+    # create a global variable to keep track of the key
+    # give it an initial value of False    
+    global has_key
+    has_key = False
+            
+    size(600, 450)
+    pixelDensity(2)            
+    change_room(room_1)
+
+
+def room_1():  
+    global has_key  # indicate we'll use our global variable    
+    image(room_1_img, 0, 0)
+    
+    # if we don't have the key, draw the key
+    # ... and create a hotspot link around it            
+    if has_key == False:
+        fill(255, 0, 0)
+        square(500, 300, 20)
+        key_hotspot = 500, 300, 20, 20
+        draw_hotspot(key_hotspot)
+        # if the key is clicked, set the variable to True
+        if check_hotspot(key_hotspot):
+            has_key = True
+
+    # if we have the key, draw a clickable hotspot around the door 
+    if has_key == True:
+        room_2_link = 240, 61, 150, 300
+        draw_hotspot(room_2_link)            
+        if check_hotspot(room_2_link):
+            change_room(room_2)
+
+        
+def room_2():
+    image(room_2_img, 0, 0)
+
+from nonlinearity_helper import *
+```
+
+
 
 <!-- 
 ## Using functions to create standard
@@ -504,7 +557,6 @@ def monster():
 ```
 <!-- 
 
-## Keeping track of things with global variables
 
 
 
