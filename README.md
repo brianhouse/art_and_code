@@ -181,12 +181,12 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Wednesday 11/1
 - Desk crits <!-- talk about your concept -->
 - Questions and work time
+- Midterm review meetings 
 
 ### Week 10
 
 #### Monday 11/6
 - Presentations 6
-<!-- - Midterm review meetings  -->
 - Questions and work time
 
 #### Wednesday 11/8
