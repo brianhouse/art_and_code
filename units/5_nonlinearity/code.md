@@ -541,13 +541,60 @@ def dune():
 ```    
  -->
 
+## Timing
+
+Beyond the use of time in general animation within each room, there are two convenient ways of keeping track of timing as someone navigates your nonlinear narrative. 
+
+Remember that `frameCount` indicates the number of frames since the sketch started (approximately 60 per second). By testing if `frameCount` is greater than or equal to a particular number, you can make things happen at particular times.
+
+Likewise, nonlinear_helper.py provides a function called `elapsed()`. This automatically keeps track of how many frames have elapsed since the current room was entered and compares it against an argument. For example, `elapsed(500)` will return `True` if 500 frames have elapsed, and `False` if less than 500 frames have elapsed. When a new room is entered, this resets.
+
+In the example below, there is no user input. Rather, the room automatically changes from #1 to #2 back and forth by using `elapsed(100)` in both rooms. But when `frameCount` reaches 2000, it transitions to room #3.
+
+
+```py
+def setup():            
+    size(600, 450)
+    fill(0)
+    textSize(40)    
+    textAlign(CENTER)
+    change_room(room_1)
+
+
+def room_1():  
+    text("room 1", width/2, height/2)
+    text(frameCount, width/2, height/2 + 50)
+    
+    if elapsed(100):
+        change_room(room_2)
+        
+    if frameCount >= 2000:
+        change_room(room_3)
+
+
+def room_2():
+    text("room 2", width/2, height/2)
+    text(frameCount, width/2, height/2 + 50)    
+    
+    if elapsed(100):
+        change_room(room_1)
+        
+    if frameCount >= 2000:
+        change_room(room_3)
+            
+    
+def room_3():
+    text("done", width/2, height/2)
+        
+
+from nonlinearity_helper import *
+```
+
 ## Other functions
 
 Our nonlinearity helper also includes a few helper functions that may be useful:
 
 - `go_back()` returns the user to the previous room
-
-- `elapsed(duration)` can be used within a conditional statement to do things after a certain number of frames have elapsed since the room was entered. For example:
 
 ```py
 def monster():
