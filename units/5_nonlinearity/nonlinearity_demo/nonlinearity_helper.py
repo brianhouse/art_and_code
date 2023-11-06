@@ -14,11 +14,9 @@ def draw():
     global pmousePressed
     background(255)
     if room is not None:
-        try:
-            room()
-        except TypeError as e:
-            print("change_room() didn't get a function. Is it a name conflict with a hotspot?")
-            exit()
+        if not callable(room):
+            raise Error("change_room() didn't get a function. Is it a name conflict with a hotspot?")
+        room()
     if main_draw is not None:
         main_draw()
     pmousePressed = mousePressed        

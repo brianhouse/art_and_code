@@ -1,4 +1,10 @@
+ran out of time for emergence — use the final exam for the final project
+
+##
+
 populate with new examples
+
+download presentations
 
 
 ### interface
