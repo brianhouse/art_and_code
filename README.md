@@ -190,20 +190,18 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Questions and work time
 
 #### Wednesday 11/8
-- Crit Nonlinearity Sketch
-- [Coding Emergence](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/code.md)
-- Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
-
+- Desk crits
 
 ### Week 11
 
 #### Monday 11/13
-- Desk crits
+- Crit Nonlinearity Sketch
 - Questions and work time
 
 #### Wednesday 11/15
 - Presentations 7
-- Questions and work time
+- Final project brainstorming <!-- desk crits -->
+- Begin [Final Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/7_final/assignment.md)
 
 
 ### Thanksgiving Break
@@ -212,11 +210,12 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 12
 
 #### Monday 11/27
+- Final project proposals due
 - Questions and work time
 
 #### Wednesday 11/29
-- Crit Emergence Sketch
-- Begin [Final Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/7_final/assignment.md)
+- Questions and work time
+
 
 ### Week 13
 

@@ -10,6 +10,8 @@ Your proposal should consist of:
 - How your concept relates to one or more units that we have covered (nonlinearity, glitch, etc)
 - Your technical approach to realizing it and what the biggest coding challenge will be
 
+Turn in your proposal under "Final Project" on Moodle in the form of slides (pdf, PowerPoint, Keynote, Google Slides)
+
 
 ### Final
 
