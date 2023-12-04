@@ -21,6 +21,15 @@ room -> scene
 a message that comes up and goes away?
 
 
+models of branching:
+straight branching
+total rooms
+carrying things
+
+elapsed -> has_elapsed
+change_frame -> frame_changed, and make it accessible
+
+
 ### emergence
 
 make .move() implicit?

@@ -58,5 +58,15 @@ def swing(start, stop, duration, offset=0):
     position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
     return (position * (stop - start)) + start  
     
-    
+def load_animation(*sources):
+    frames = []
+    for source in sources:
+        frames.append(loadImage(source))
+    def f(x, y, speed=1):
+        if speed > 1:
+            speed = 1
+        speed = int(1/speed)
+        index = (frameCount - change_frame) % (len(frames) * speed)
+        image(frames[index // speed], x, y)
+    return f       
     

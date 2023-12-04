@@ -20,6 +20,7 @@ for reviewer in reviewers:
         if reviewee != reviewer and reviewee not in assignments[reviewer]:
             assignments[reviewer].append(reviewee)
             del reviewees[index]
+    # print(assignments)
 
 for student in assignments:
     print(student, assignments[student])
