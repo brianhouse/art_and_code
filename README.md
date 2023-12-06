@@ -232,6 +232,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 12/11
 - Wrap up
+<!-- talk about portfolio -->
 
 #### Wednesday 12/13
 - Crit Final Sketch

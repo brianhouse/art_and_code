@@ -14,8 +14,8 @@ def draw():
     global pmousePressed
     background(255)
     if room is not None:
-        if not callable(room):
-            raise Error("change_room() didn't get a function. Is it a name conflict with a hotspot?")
+        if not callable(room):        
+            raise Exception("change_room() got a " + str(type(room)).split("'")[1].split('.')[-1] + " instead of a function. Do two variables have the same name?")
         room()
     if main_draw is not None:
         main_draw()
@@ -62,11 +62,15 @@ def load_animation(*sources):
     frames = []
     for source in sources:
         frames.append(loadImage(source))
-    def f(x, y, speed=1):
+    def f(x, y, speed=1, looping=False):
         if speed > 1:
             speed = 1
-        speed = int(1/speed)
-        index = (frameCount - change_frame) % (len(frames) * speed)
-        image(frames[index // speed], x, y)
-    return f       
-    
+        speed = int(1/speed)        
+        index = (frameCount - change_frame)
+        if looping:
+            index %= len(frames) * speed
+        index //= speed
+        if index >= len(frames):
+            index = len(frames) - 1
+        image(frames[index], x, y)
+    return f          
