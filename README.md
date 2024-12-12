@@ -1,4 +1,4 @@
-# ARHA 278: ART + CODE
+# ARHA/FAMS 106: INTRODUCTION TO ART + CODE
 
 Monday / Wednesday 9:00–11:00  
 Fayerweather 303   
@@ -67,7 +67,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 1
 
-#### Wednesday 9/6
+#### Monday 1/27
 - Introduction
 - In-class Exercise: Algorithm
 - **For next class**:
@@ -75,10 +75,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing)
 
 
-### Week 2    
-
-
-#### Monday 9/11
+#### Wednesday 1/29
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
 - Establish Open Studio Times
@@ -88,76 +85,77 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Begin [Coordinates Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/assignment.md)
 
 
-#### Wednesday 9/13
+### Week 2    
+
+#### Monday 2/3
 - Explanation of [crit guidelines](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md)
 - Crit Coordinates
 - Discussing Repetition
 - [Coding with Repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2a_repetition/code.md)
 
 
-### Week 3
-
-#### Monday 9/18
+#### Wednesday 2/5
 - Safety Training
 - In-class ["textile" mini-sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2a_repetition/assignment.md)
 - [Coding with Indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/code.md)
 
-#### Wednesday 9/20
+### Week 3
+
+
+#### Monday 2/10
 <!-- when2meet and keys https://www.when2meet.com/?21427697-lvpMS -->
 - Discussing Indeterminacy
 - Begin [Repetition and Indeterminacy Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/assignment.md)
 - Explanation of [artist statements](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md)
 
 
-### Week 4
 
-#### Monday 9/25
+#### Wednesday 2/12
 <!-- signed up for presentations? -->
 - Crit Repetition and Indeterminacy Sketch
 - [Coding with Time](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/code.md)
 - Begin [Time Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/assignment.md)
 
-#### Wednesday 9/27
+
+### Week 4
+
+#### Monday 2/17
 - Discussing Time
+- Questions and work time
+
+#### Wednesday 2/19
+- Presentations 1
+- Desk crits
 - Questions and work time
 
 
 ### Week 5
 
-#### Monday 10/2
-- Presentations 1
-- Desk crits
-- Questions and work time
-
-#### Wednesday 10/4
+#### Monday 2/24
 - Crit Time Sketch
 - [Coding Interfaces](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/code.md)
 - Begin [Interface Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/assignment.md)
 
 
-### Week 6
-
-#### Monday 10/9: Mid-Semester Break, no class
-
-#### Wednesday 10/11
+#### Wednesday 2/26
 - Presentations 2
 - Discussing Interface
 - Questions and work time
 
 
-### Week 7
+### Week 6
 
-#### Monday 10/16
+#### Monday 3/3
 - Presentations 3
 - Desk crits
 - Questions and work time
 
-#### Wednesday 10/18
+#### Wednesday 3/5
 - Demo interface at desk
 
-### Week 8
+### Week 7
 
-#### Monday 10/23
+#### Monday 3/10
 - Crit Interface Sketch
 - [Coding Nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/code.md)
 - Begin [Nonlinearity Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/assignment.md)
@@ -165,77 +163,81 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
     - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
 
-#### Wednesday 10/25
+#### Wednesday 3/12
 - Presentations 4
 - Discussing Nonlinearity
 - Coding Nonlinearity continued
 - Questions and work time
 
 
-### Week 9
+### Spring Break
 
-#### Monday 10/30
+
+### Week 8
+
+#### Monday 3/24
 - Presentations 5
 - Questions and work time
 
-#### Wednesday 11/1
+#### Wednesday 3/26
 - Desk crits <!-- talk about your concept -->
 - Questions and work time
 - Midterm review meetings 
 
-### Week 10
+### Week 9
 
-#### Monday 11/6
+#### Monday 3/31
 - Presentations 6
 - Questions and work time
 
-#### Wednesday 11/8
+#### Wednesday 4/2
 - Desk crits
 
-### Week 11
+### Week 10
 
-#### Monday 11/13
+#### Monday 4/7
 - Crit Nonlinearity Sketch
 - Questions and work time
 
-#### Wednesday 11/15
+#### Wednesday 4/9
 - Presentations 7
 - Final project brainstorming <!-- desk crits -->
 - Begin [Final Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/7_final/assignment.md)
 
 
-### Thanksgiving Break
+### Week 11
+
+#### Monday 4/14
+- Final project proposals due
+- Questions and work time
+
+#### Wednesday 4/16
+- Questions and work time
 
 
 ### Week 12
 
-#### Monday 11/27
-- Final project proposals due
+#### Monday 4/21    --- April Break
+<!-- - Desk crits
 - Questions and work time
-
-#### Wednesday 11/29
-<!-- Tiia presentation -->
+ -->
+#### Wednesday 4/23
 - Questions and work time
 
 
 ### Week 13
 
-#### Monday 12/4
-- Desk crits
-- Questions and work time
+#### Monday 4/28
+- Wrap up
+<!-- talk about portfolio -->
 
-#### Wednesday 12/6
-- Questions and work time
+#### Wednesday 4/30
+- Crit Final Sketch
 
 
 ### Week 14
 
-#### Monday 12/11
-- Wrap up
-<!-- talk about portfolio -->
-
-#### Wednesday 12/13
-- Crit Final Sketch
+#### Monday 5/5
 
 
 #### Exam Week
