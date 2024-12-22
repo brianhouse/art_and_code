@@ -296,7 +296,7 @@ def kitchen():
 def hallway():
     text("Hallway", 180, height/2)
 
-def living_room():
+def living_scene():
     text("Living Room", 180, height/2)
 
 def bathroom():
@@ -309,7 +309,7 @@ Each room is represented by its own function. At the moment, those functions jus
 
 Note that we do not have a `draw()` function. What we'll do instead is use each of the room functions as the draw function, depending on what room we're in, activating only one at a time.
 
-Currently, if you run this code, nothing with happen. But if we give `change_room()` the name of one of our room functions as an argument, that function will, in effect, become `draw()`! To begin, we'll use `change_room()` within `setup()`:
+Currently, if you run this code, nothing with happen. But if we give `change_scene()` the name of one of our room functions as an argument, that function will, in effect, become `draw()`! To begin, we'll use `change_scene()` within `setup()`:
 
 ```py
 def setup():
@@ -317,7 +317,7 @@ def setup():
     pixelDensity(2)
     fill(0)   
     textSize(24)
-    change_room(living_room) # function name given as argument 
+    change_scene(living_room) # function name given as argument 
 
 def bedroom():
     text("Bedroom", 180, height/2)
@@ -360,7 +360,7 @@ def living_room():
 
 
 
-Now, we can use `check_hotspot()` together with `change_room()` to make the magic happen. 
+Now, we can use `check_hotspot()` together with `change_scene()` to make the magic happen. 
 
 ```py
 def living_room():
@@ -370,13 +370,13 @@ def living_room():
     kitchen_link = 20, height-120, width/3, 20
     draw_hotspot(kitchen_link)
     if check_hotspot(kitchen_link):
-        change_room(kitchen)
+        change_scene(kitchen)
     
     text("Go to hallway", width/2, height-100)
     hallway_link = width/2, height-120, width/3, 20
     draw_hotspot(hallway_link)
     if check_hotspot(hallway_link):
-        change_room(hallway)
+        change_scene(hallway)
 ```
 
 With this code, clicking on one hotspot or the other will activate either the "kitchen" or the "hallway" function. By adding hotspots to all the functions, we activate the map to create a nonlinear structure.
@@ -404,7 +404,7 @@ def setup():
             
     size(600, 450)
     pixelDensity(2)            
-    change_room(room_1)
+    change_scene(room_1)
 
 
 def room_1():  
@@ -427,7 +427,7 @@ def room_1():
         room_2_link = 240, 61, 150, 300
         draw_hotspot(room_2_link)            
         if check_hotspot(room_2_link):
-            change_room(room_2)
+            change_scene(room_2)
 
         
 def room_2():
@@ -447,7 +447,7 @@ Consider a nonlinear adventure game that has 'rooms' corresponding to locations 
 def setup():
     size(500, 500)
     pixelDensity(2)
-    change_room(dune)
+    change_scene(dune)
 
 def dune():
     text("You're on a dune. No drinkable water here.", 180, height/2 - 200, 200, 300)
@@ -491,9 +491,9 @@ def dune():
     text("You're on a dune. No drinkable water anywhere.", 180, height/2 - 200, 200, 300)
     compass()
     if check_hotspot(north):
-        change_room(beach)
+        change_scene(beach)
     elif check_hotspot(west): 
-        change_room(swamp)
+        change_scene(swamp)
 ```        
 
 However, one problem that arises here is if a room doesn't have an option to go in all four directions. In this example, for instance, what happens if you click "S"?
@@ -535,9 +535,9 @@ def dune():
     text("You're on a dune. No drinkable water anywhere.", 180, height/2 - 200, 200, 300)
     compass(True, False, False, True)
     if check_hotspot(north):
-        change_room(beach)
+        change_scene(beach)
     elif check_hotspot(west): 
-        change_room(swamp)
+        change_scene(swamp)
 ```    
  -->
 
@@ -547,9 +547,9 @@ Beyond the use of time in general animation within each room, there are two conv
 
 Remember that `frameCount` indicates the number of frames since the sketch started (approximately 60 per second). By testing if `frameCount` is greater than or equal to a particular number, you can make things happen at particular times.
 
-Likewise, nonlinear_helper.py provides a function called `elapsed()`. This automatically keeps track of how many frames have elapsed since the current room was entered and compares it against an argument. For example, `elapsed(500)` will return `True` if 500 frames have elapsed, and `False` if less than 500 frames have elapsed. When a new room is entered, this resets.
+Likewise, nonlinear_helper.py provides a function called `has_elapsed()`. This automatically keeps track of how many frames have elapsed since the current room was entered and compares it against an argument. For example, `has_elapsed(500)` will return `True` if 500 frames have elapsed, and `False` if less than 500 frames have elapsed. When a new room is entered, this resets.
 
-In the example below, there is no user input. Rather, the room automatically changes from #1 to #2 back and forth by using `elapsed(100)` in both rooms. But when `frameCount` reaches 2000, it transitions to room #3.
+In the example below, there is no user input. Rather, the room automatically changes from #1 to #2 back and forth by using `has_elapsed(100)` in both rooms. But when `frameCount` reaches 2000, it transitions to room #3.
 
 
 ```py
@@ -558,29 +558,29 @@ def setup():
     fill(0)
     textSize(40)    
     textAlign(CENTER)
-    change_room(room_1)
+    change_scene(room_1)
 
 
 def room_1():  
     text("room 1", width/2, height/2)
     text(frameCount, width/2, height/2 + 50)
     
-    if elapsed(100):
-        change_room(room_2)
+    if has_elapsed(100):
+        change_scene(room_2)
         
     if frameCount >= 2000:
-        change_room(room_3)
+        change_scene(room_3)
 
 
 def room_2():
     text("room 2", width/2, height/2)
     text(frameCount, width/2, height/2 + 50)    
     
-    if elapsed(100):
-        change_room(room_1)
+    if has_elapsed(100):
+        change_scene(room_1)
         
     if frameCount >= 2000:
-        change_room(room_3)
+        change_scene(room_3)
             
     
 def room_3():
@@ -599,7 +599,7 @@ Our nonlinearity helper also includes a few helper functions that may be useful:
 ```py
 def monster():
     text("There's a monster in this swamp! You run back the way you came.", width/2, height/2)    
-    if elapsed(100):
+    if has_elapsed(100):
         go_back()
 ```
 <!-- 

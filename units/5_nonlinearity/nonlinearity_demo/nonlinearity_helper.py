@@ -1,8 +1,8 @@
 from __main__ import *
 
-room = None
-previous_room = None
-change_frame = 0
+scene = None
+previous_scene = None
+f_changed = 0
 pmousePressed = False
 
 try:
@@ -13,10 +13,10 @@ except NameError:
 def draw():
     global pmousePressed
     background(255)
-    if room is not None:
-        if not callable(room):        
-            raise Exception("change_room() got a " + str(type(room)).split("'")[1].split('.')[-1] + " instead of a function. Do two variables have the same name?")
-        room()
+    if scene is not None:
+        if not callable(scene):        
+            raise Exception("change_scene() got a " + str(type(scene)).split("'")[1].split('.')[-1] + " instead of a function. Do two variables have the same name?")
+        scene()
     if main_draw is not None:
         main_draw()
     pmousePressed = mousePressed        
@@ -39,24 +39,27 @@ def check_hotspot(hotspot, y=None, w=None, h=None):
         x, y, w, h = hotspot
     return mouseX > x and mouseX < x + w and mouseY > y and mouseY < y + h
   
-def change_room(r):
-    global room, previous_room, change_frame
-    previous_room = room
-    room = r
-    change_frame = frameCount
+def change_scene(s):
+    global scene, previous_scene, f_changed
+    previous_scene = scene
+    scene = s
+    f_changed = frameCount
     
 def go_back():
-    change_room(previous_room)
+    change_scene(previous_scene)
     
-def elapsed(duration):
-    return frameCount - change_frame >= duration
+def has_elapsed(duration):
+    return frameCount - f_changed >= duration
+
+def frame_changed():
+    return f_changed    
     
 def change(start, stop, duration, offset=0):
     return map((frameCount + offset) % max(duration, 1), 0, duration, start, stop)
 
 def swing(start, stop, duration, offset=0): 
     position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
-    return (position * (stop - start)) + start  
+    return (position * (stop - start)) + start 
     
 def load_animation(*sources):
     frames = []
@@ -66,7 +69,7 @@ def load_animation(*sources):
         if speed > 1:
             speed = 1
         speed = int(1/speed)        
-        index = (frameCount - change_frame)
+        index = (frameCount - f_changed)
         if looping:
             index %= len(frames) * speed
         index //= speed
