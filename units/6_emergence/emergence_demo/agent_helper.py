@@ -433,9 +433,3 @@ def swing(start, stop, duration, offset=0):
     # duration is one half of the swing
     position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
     return (position * (stop - start)) + start    
-
-
-# def mouseReleased():
-#     for bat in bats:
-#         heading = get_heading(mouseX, mouseY, bat.x, bat.y)
-#         bat.bump(heading, 2)      

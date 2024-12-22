@@ -133,6 +133,12 @@ def draw():
                 bat_list.remove(bat)
                        
                         
+def mouseReleased():
+    global bat_list
+    for bat in bat_list:
+        heading = get_heading(mouseX, mouseY, bat.x, bat.y)
+        bat.bump(heading, 2)              
+        
         
 def draw_bat(bat):
     strokeWeight(1)
