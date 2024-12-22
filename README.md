@@ -43,11 +43,11 @@ In this course, you are expected to earnestly engage in the practice of studio a
 ### Values
 It is my intent to lead a course that serves students from diverse backgrounds and perspectives, and that our varied life experiences may be a common benefit. Content in this studio art course may at times challenge our aesthetic and/or ethical values; free exchange of ideas and critique is encouraged and expected, but harassment and disrespect will not be tolerated. During class discussion and critique we aim to be mindful and generous in our interactions and to make everyone feel heard.
 
-### Access to 303
-While all students must complete their own work, you are encouraged to help each other. To facilitate collective learning, students are also able to work in Fayerweather 303 outside of class hours. We will choose designated open studios in the first week. Keys to 303 will be distributed to all students.
-
 ### Dynamic Syllabus
 The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
+
+### Access to 303 and Working Together
+While all students must complete their own work, you are encouraged to help each other. To facilitate collective learning, students are also able to work in Fayerweather 303 outside of class hours. While 303 will be open any time class is not being held, we will also choose designated co-working time in the first week to encourage synchrony. Keys to 303 will be distributed to all students. In addition, there is a forum on Moodle for students to post questions for each other, and students may look at each other's code via Google Drive.
 
 ### Technology
 This course requires a personal laptop—recent hardware and MacOS is preferred (Windows and Linux are also fine; Chromebooks will not work). If you do not have access to a laptop, you will need to make arrangements to borrow one for the course. It is expected that you will not use your laptop for other purposes while in class. The use of phones in class is not permitted.
@@ -70,6 +70,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Monday 1/27
 - Introduction
 - In-class Exercise: Algorithm
+- Get set up with [Google Drive for Desktop](https://support.google.com/drive/answer/10838124?hl=en)
 - **For next class**:
     - Turn in [Get set up](https://github.com/brianhouse/art_and_code/blob/master/units/0_algorithm/getting_started.md) with Python Mode for Processing "sketch"
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing)
@@ -78,7 +79,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Wednesday 1/29
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
-- Establish Open Studio times
+- Establish [co-working time](https://www.when2meet.com/?28076569-Qar56)
 - Discussing Coordinates
 - [Coding with Coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
 - [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
@@ -173,6 +174,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Monday 3/24
 - Presentations 5
 - Questions and work time
+- Midterm review meetings
 
 #### Wednesday 3/26
 - Desk crits <!-- talk about your concept -->
@@ -197,7 +199,8 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Discussing Emergence
 - [Coding Emergence](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/code.md)
 - Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
-
+- **For next class**:
+    - Play [SimCity 2000](https://dos.zone/sim-city-2000-1993/)
 
 ### Week 11
 
