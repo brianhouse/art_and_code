@@ -78,10 +78,10 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Wednesday 1/29
 <!-- confirm everyone is signed up for a presentation -->
 - Address setup issues
-- Establish Open Studio Times
+- Establish Open Studio times
 - Discussing Coordinates
 - [Coding with Coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
-- Going forward, use the [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
+- [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
 - Begin [Coordinates Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/assignment.md)
 
 
@@ -90,28 +90,24 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Monday 2/3
 - Explanation of [crit guidelines](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md)
 - Crit Coordinates
-- Discussing Repetition
-- [Coding with Repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2a_repetition/code.md)
+- [Coding with Repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition_and_indeterminacy/repetition/code.md)
 
 
 #### Wednesday 2/5
-- Safety Training
-- In-class ["textile" mini-sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2a_repetition/assignment.md)
-- [Coding with Indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/code.md)
+- Discussing Repetition
+- [Coding with Indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition_and_indeterminacy/indeterminacy/code.md)
+- Begin [Repetition and Indeterminacy Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition_and_indeterminacy/assignment.md)
+
 
 ### Week 3
 
-
 #### Monday 2/10
-<!-- when2meet and keys https://www.when2meet.com/?21427697-lvpMS -->
-- Discussing Indeterminacy
-- Begin [Repetition and Indeterminacy Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2b_indeterminacy/assignment.md)
+<!-- coding with indeterminacy overflow -->
 - Explanation of [artist statements](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md)
-
-
+- Discussing Indeterminacy
+- Questions and work time
 
 #### Wednesday 2/12
-<!-- signed up for presentations? -->
 - Crit Repetition and Indeterminacy Sketch
 - [Coding with Time](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/code.md)
 - Begin [Time Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/assignment.md)
@@ -162,7 +158,6 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - **For next class**:
     - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
-
 #### Wednesday 3/12
 - Presentations 4
 - Discussing Nonlinearity
@@ -197,18 +192,17 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 4/7
 - Crit Nonlinearity Sketch
-- Questions and work time
 
 #### Wednesday 4/9
-- Presentations 7
-- Final project brainstorming <!-- desk crits -->
-- Begin [Final Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/7_final/assignment.md)
+- Discussing Emergence
+- [Coding Emergence](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/code.md)
+- Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
 
 
 ### Week 11
 
 #### Monday 4/14
-- Final project proposals due
+- Presentations 7
 - Questions and work time
 
 #### Wednesday 4/16
@@ -217,11 +211,11 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 12
 
-#### Monday 4/21    --- April Break
-<!-- - Desk crits
-- Questions and work time
- -->
+#### Monday 4/21 -- April Break, no class
+
+
 #### Wednesday 4/23
+- Presentations 8
 - Questions and work time
 
 
@@ -238,9 +232,10 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 14
 
 #### Monday 5/5
+Crit Emergence Sketch
 
 
 #### Exam Week
 - No meetings during exam week
-- [Portfolio](https://github.com/brianhouse/art_and_code/blob/master/units/portfolio.md) due 12/21
+- [Portfolio](https://github.com/brianhouse/art_and_code/blob/master/units/portfolio.md) due 5/15
 

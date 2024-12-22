@@ -1,5 +1,19 @@
 # TODO
 
+in syllabus
+co-working / open studios
+online forum
+
+examples
+
+/
+
+student examples
+
+
+google drive set up
+
+
 MOODLE:
 - plan midterm feedback meetings
 - keys / access to 303 and policies
