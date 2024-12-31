@@ -23,7 +23,7 @@ Introduction to computer programming for studio artists. By writing code to gene
 ## Coursework and Evaluation
 
 ### Sketches
-This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with computational media: **algorithm**, **coordinates**, **repetition**, **indeterminacy**, **interface**, **nonlinearity**, and **emergence**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops or lists. We will work on sketches during class, but it is expected that most of your development will be done as homework.
+This course is built around open-ended code "sketches" that progress through a series of formal qualities associated with computational media: **algorithm**, **coordinates**, **repetition** and **indeterminacy**, **interface**, **nonlinearity**, and **emergence**. In addition, each sketch introduces and makes use of a new programming topic, such as the use of loops or lists. We will work on sketches during class, but it is expected that most of your development will be done as homework.
 
 Sketches must include a title and a [3-sentence statement](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md) and will be [critiqued](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md) during class. All work must be submit online through Google Drive *prior* to the crit; **no late work is accepted**, and you must attend the crit to receive credit for your work. Copy your sketch folder to Google Drive and include your title and statement as a comment at the top of your code.
 

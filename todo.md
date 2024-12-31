@@ -3,8 +3,6 @@
 moodle
 download presentations
 
-emergence assignment example code
-
 
 ## before first day
 give access to Google Drive

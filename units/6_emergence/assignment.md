@@ -189,9 +189,9 @@ def draw():
         if pig.size < 30:
             pig.avoid(robot_list, 300, 1)
         else:
-            pig.seek( pig.closest(robot_list), 200, 1)
+            pig.seek(pig.closest(robot_list), 200, 1)
         
-        pig.seek( pig.closest(truffle_list), 300, .8)
+        pig.seek(pig.closest(truffle_list), 300, .8)
         for truffle in truffle_list:
             if pig.touching(truffle):
                 truffle_list.remove(truffle)
@@ -208,7 +208,7 @@ def draw():
         robot.avoid_edges(50, 1)       
         robot.collide(robot_list)         
         
-        robot.seek( robot.closest(pig_list) , 200, 1)        
+        robot.seek(robot.closest(pig_list) , 200, 1)        
         for pig in pig_list:
             if robot.touching(pig):
                 # eat a little pig
