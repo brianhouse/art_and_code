@@ -547,22 +547,17 @@ def draw_target(target):
 
 ### Examples
 
-<!-- <p>
-  <img src="examples/julie_goldberg_moth_soiree.gif" width="400" /><br />
-  Julie Goldberg, <i>Moth Soirée</i> (2021)<br />
-</p>
- -->
 <p>
-  <img src="examples/molly_troxel_under_the_sea.gif" width="400" /><br />
+  <img src="examples/em_nguyen_kid_soccer.gif" width="500" /><br />
+  Em Nguyen, <i>Kid Soccer</i> (2023)<br />
+</p>
+
+<p>
+  <img src="examples/molly_troxel_under_the_sea.gif" width="500" /><br />
   Molly Troxel, <i>Under the Sea</i> (2021)<br />
 </p>
 
 <p>
-  <img src="examples/lauren_curry_woodland_ecosystem.gif" width="400" /><br />
+  <img src="examples/lauren_curry_woodland_ecosystem.gif" width="500" /><br />
   Lauren Curry, <i>Woodland Ecosystem</i> (2021)<br />
 </p>
-
-<!-- <p>
-  <img src="examples/tal_jones_rock_paper_scissors.gif" width="400" /><br />
-  Tal Jones, <i>Rock, Paper, Scissors</i> (2021)<br />
-</p> -->

@@ -4,26 +4,25 @@ In this sketch, you will explore the tension between repetition and indeterminac
 
 Copy your sketch folder to Google Drive; your code should include a comment with your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept.
 
-<!-- 
+
 ### Examples
 
 <p>
-  <img src="examples/alex_skiles_stars.png" width="400" /><br />
-  Alex Skiles, <i>Stars</i> (2021)<br />
-</p>
-
-<p>
-  <img src="examples/carly_leandro_flowers.png" width="400" /><br />
-  Carly Leandro, <i>Flowers</i> (2021)<br />
-</p>
-
-<p>
-  <img src="examples/carson_reader_line_art.png" width="400" /><br />
-  Carson Reader, <i>Line Art</i> (2021)<br />
+  <img src="examples/dan_dachille_bullish_or_bearish.png" width="500" /><br />
+  Dan Dachille, <i>Bullish or Bearish</i> (2023)<br />
 </p>
 
 <p>
   <img src="examples/isha_elboctorcy_miya.png" width="400" /><br />
   Isha Elboctorcy, <i>Miya</i> (2021)<br />
 </p>
- -->
+
+<p>
+  <img src="examples/renz_johnson_tile.png" width="500" /><br />
+  Renz Johnson, <i>Tile</i> (2021)<br />
+</p>
+
+<p>
+  <img src="examples/em_nguyen_road_to_convergence.png" width="500" /><br />
+  Em Nguyen, <i>Road to Convergence</i> (2023)<br />
+</p>

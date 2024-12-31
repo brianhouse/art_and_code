@@ -493,7 +493,7 @@ if brush == "fountain_pen":
 Here we've set `strokeWeight()` to 20 _minus_ the speed. So if the speed is 0, the weight is 20, and vice versa. We've also used the `min()` function, which returns the lower of two numbers. This guarantees that we won't get any negative numbers for the weight, which we would otherwise if the speed went above 20.
 
 
-#### Guassians
+#### Gaussians
 
 Finally, one more example of a brush, this time using Guassian values:
 

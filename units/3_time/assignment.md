@@ -31,6 +31,16 @@ def swing(start, stop, duration, offset=0):
 </p>
 
 <p>
-  <img src="examples/hypnotic_weave_daniel_dachille.gif" width="400" /><br />
+  <img src="examples/hypnotic_weave_daniel_dachille.gif" width="500" /><br />
   Daniel Dachille, <i>Hypnotic Weave</i> (2023)<br />
+</p>
+
+<p>
+  <img src="examples/piper_moring_beach.gif" width="500" /><br />
+  Piper Moring, <i>Beach</i> (2023)<br />
+</p>
+
+<p>
+  <img src="examples/laurel_davidson_evolution.gif" width="500" /><br />
+  Laurel Davidson, <i>Evolution</i> (2023)<br />
 </p>

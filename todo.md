@@ -1,8 +1,9 @@
 # TODO
 
-
-student examples
+moodle
 download presentations
+
+emergence assignment example code
 
 
 ## before first day
