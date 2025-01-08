@@ -1,6 +1,6 @@
 # ARHA/FAMS 106: INTRODUCTION TO ART + CODE
 
-Monday / Wednesday 9:00–11:00  
+Monday / Wednesday 9:00–11:00am  
 Fayerweather 303   
 
 Prof. Brian House (he/him)  
@@ -29,13 +29,15 @@ Sketches must include a title and a [3-sentence statement](https://github.com/br
 
 
 ### Presentations
-Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in slides, should give an overview of the context in which the artist is working and then proceed to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. Slides should be turned in on Moodle prior to class.
+Each student will give a 10-minute presentation on an artist working with code. These presentations, which must be organized in 5–10 slides (Google Slides, Keynote, PowerPoint, etc), should give an overview of the context in which the artist is working and then proceed to show one or two artworks in detail. Students should comment thoughtfully on how the work relates to the themes discussed in class as well as to their own practices. The presentation should end with a couple of questions posed to the class for discussion that relate to the technique or themes of the artist's work. Students will [sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing) on an artist chosen from [a list](https://github.com/brianhouse/art_and_code/blob/master/resources/artists.md) on a first-come, first-served basis. Slides should be turned in on Moodle prior to class.
+
+For assistance developing presentation skills, students should reach out to [Susan Daniels](https://www.amherst.edu/academiclife/support/writingcenter/public-speaking) at the Writing Center.
 
 ### Participation
 Attendance is mandatory, and motivated and mindful participation in crit and classroom disscussion is expected.
 
 ### Grading
-In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product. Completing all work on time and participating in class is the baseline standard. Beyond grades, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative direction. As this is an introductory course, experimenting with the craft of code is the primary emphasis and should be your focus. Midway through the semester, students will meet individually with the professor to track their progress.
+In this course, you are expected to earnestly engage in the practice of studio artmaking, and doing so is the basis of your grade at the discretion of the professor. In other words, your grade is about process, not about product (and completing all work on time and participating in class is mandatory). Beyond grades, your work will be evaluated subjectively via peer critique and feedback from the instructor, and you are expected to incorporate that feedback into your future work while pursuing your own creative direction. As this is an introductory course, experimenting with the craft of code is the primary emphasis and should be your focus. Midway through the semester, students will meet individually with the professor to track their progress.
 
 
 ## Policies
@@ -47,7 +49,7 @@ It is my intent to lead a course that serves students from diverse backgrounds a
 The version of this syllabus posted online will be updated periodically and is the definitive version. It is your responsibility to consult it and stay up-to-date.
 
 ### Access to 303 and Working Together
-While all students must complete their own work, you are encouraged to help each other. To facilitate collective learning, students are also able to work in Fayerweather 303 outside of class hours. While 303 will be open any time class is not being held, we will also choose designated co-working time in the first week to encourage synchrony. Keys to 303 will be distributed to all students. In addition, there is a forum on Moodle for students to post questions for each other, and students may look at each other's code via Google Drive.
+While all students must complete their own work, you are encouraged to help each other. To facilitate collective learning, students are also able to work in Fayerweather 303 outside of class hours. While 303 will be open any time class is not being held, we will also choose designated co-working time in the first week to encourage synchrony. Keys to 303 will be distributed to all students after Add/Drop. In addition, there is a forum on Moodle for students to post questions for each other, and students may look at each other's code via Google Drive.
 
 ### Technology
 This course requires a personal laptop—recent hardware and MacOS is preferred (Windows and Linux are also fine; Chromebooks will not work). If you do not have access to a laptop, you will need to make arrangements to borrow one for the course. It is expected that you will not use your laptop for other purposes while in class. The use of phones in class is not permitted.
@@ -59,7 +61,7 @@ I strive to make this course welcoming to all students. If you have a documented
 By enrolling in the course, you agree to uphold the principles set forth in the College’s [Honor Code](https://www.amherst.edu/offices/student-affairs/community-standards/intellectual-responsibility-and-plagiarism), including the Statement of Intellectual Responsibility, the Statement of Respect for Persons, and the Statement of Freedom of Expression and Dissent. The work submitted in this course must be conceived of and programmed by you. While learning from and incorporating code from other sources is a natural part of programming (e.g. [Stack Overflow](https://stackoverflow.com/) and [OpenProcessing](https://www.openprocessing.org)), you must demonstrate understanding and intentionality in your work, and you may not copy and paste others' code wholesale. Always credit your inspirations and be confident in your original concepts.
 
 ### Settler Responsibility
-Our college is named after a white colonizer and is built in the Kwinitekw Valley on Nonotuck land; we are here because of the sacrifices forced upon indigenous peoples. As artists working with technology, we must be aware of and resist the many ways computation capitalizes upon and perpetuates violence toward marginalized people.  
+Our college is named after a white colonizer and is built in the Kwinitekw Valley on Nonotuck land; we are here because of the sacrifices forced upon indigenous peoples. As artists working with technology, we must be aware of and resist the many ways it capitalizes upon and perpetuates violence toward marginalized people.  
 &nbsp;  
 &nbsp;  
 
