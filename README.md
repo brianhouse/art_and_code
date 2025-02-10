@@ -74,13 +74,13 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - In-class Exercise: Algorithm
 - Get set up with [Google Drive for Desktop](https://support.google.com/drive/answer/10838124?hl=en)
 - **For next class**:
-    - Turn in [Get set up](https://github.com/brianhouse/art_and_code/blob/master/units/0_algorithm/getting_started.md) with Python Mode for Processing "sketch"
+    - Turn in [Getting started with Python Mode for Processing](https://github.com/brianhouse/art_and_code/blob/master/units/0_algorithm/getting_started.md)
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing)
 
 
 #### Wednesday 1/29
 <!-- confirm everyone is signed up for a presentation -->
-- Address setup issues
+- Address setup issues <!-- only five people did it -->
 - Establish [co-working time](https://www.when2meet.com/?28076569-Qar56)
 - Discussing Coordinates
 - [Coding with Coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
@@ -91,6 +91,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 2    
 
 #### Monday 2/3
+<!-- Rick Mears! Director of Environmental Health and Safety (30 mins) -->
 - Explanation of [crit guidelines](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md)
 - Crit Coordinates
 - [Coding with Repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition_and_indeterminacy/repetition/code.md)
@@ -161,7 +162,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - **For next class**:
     - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
-#### Wednesday 3/12
+#### Wednesday 3/12 <!-- NO CLASS, PROF OUT -->
 - Presentations 4
 - Discussing Nonlinearity
 - Coding Nonlinearity continued
@@ -179,6 +180,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - Midterm review meetings
 
 #### Wednesday 3/26
+<!-- Presentations 4 -->
 - Desk crits <!-- talk about your concept -->
 - Questions and work time
 - Midterm review meetings 
