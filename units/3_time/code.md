@@ -45,7 +45,19 @@ To change the position of the circle, we're going to need some more functions.
 ### Simple Motion
 
 
-Before we go further, let's add some functions to our sketch. These functions aren't built-in, like `circle`, and we're not going to write them from scratch. Rather, we're just going to paste in some pre-written code to add some functionality. We won't go over exactly how they work now, but most of what's in them will be covered as we go on.
+Before we go further, let's add some functions to our sketch:
+
+```py
+def change(start, stop, duration, offset=0):
+    return map((frameCount - offset) % max(duration, 1), 0, duration, start, stop)
+
+def swing(start, stop, duration, offset=0): 
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start  
+```
+
+
+These functions aren't built-in, like `circle`, and we're not going to write them from scratch. Rather, we're just going to paste in some pre-written code to add some functionality. We won't go over exactly how they work now, but most of what's in them will be covered as we go on.
 
 Put them at the bottom, like this:
 
@@ -231,7 +243,7 @@ So in this case, let's replace `frameCount` with `frameCount % 800`. In effect, 
 
 
 
-### Color
+### Advanced Color
 
 Motion doesn't always have to be spatial—applying it to color is another effective approach. However, at this point the limitations of R,G,B can come into play. For example, maybe you want to change the brightness of a color, but not its hue. How can we do that?
 
@@ -262,6 +274,123 @@ def draw():
   <img src="code/canvas_9.gif" width=400 /><br />
 </p>
 
+
+### `random()` alternative
+
+You might notice that `random()` doesn't play nice with `draw()`—generating a new random number 60 times a second doesn't often result in the intended effect. What's needed is a function that generates "random" numbers but does so _in an order that repeats every frame_. So much for unpredictable.
+
+This is possible, just not with the `random()` function as Processing gives it to us. Add the following functions to your sketch at the bottom, just like the animation functions: 
+
+```py
+def resetRandom():
+    global gen
+    def pseudo(seed, a=1664525, c=1013904223, m=2**32):
+        while True:
+            seed = (a * seed + c) % float(m)
+            yield seed / float(m)    
+    gen = pseudo(42)
+            
+def rando(low_limit, high_limit=None):
+    if high_limit is None:
+        high_limit = low_limit
+        low_limit = 0
+    return next(gen) * (high_limit - low_limit) + low_limit
+```
+
+Now, in your sketch you can use `rando()` instead of `random()` and it should work as expected, with the caveat that you also have to call `resetRandom()` at the beginning of every `draw()` function. This jumps the random sequence back to the beginning.
+
+So, for example, say you want to have a field of randomly placed stars—your sketch could look like this:
+
+
+```py
+
+def setup():
+    size(500, 400)
+    
+
+def draw():
+    background(0)
+    resetRandom() # reset the random number generator 
+    
+    beginShape()
+    for i in range(200):
+        circle(rando(width), rando(height), 5) # uses rando() instead of random()
+    endShape()
+    
+    
+def resetRandom():
+    global gen
+    def pseudo(seed, a=1664525, c=1013904223, m=2**32):
+        while True:
+            seed = (a * seed + c) % float(m)
+            yield seed / float(m)    
+    gen = pseudo(42)
+            
+def rando(low_limit, high_limit=None):
+    if high_limit is None:
+        high_limit = low_limit
+        low_limit = 0
+    return next(gen) * (high_limit - low_limit) + low_limit
+```
+
+That might not look like much, but you'll find that animation works just fine on top of it.
+
+
+### Rotation
+
+Rotation in Processing can get pretty weird. But here's a few more helper functions to add that can make it easier:
+
+```py
+def startRotation(anchor_x, anchor_y, deg):
+    push()
+    translate(anchor_x, anchor_y)
+    rotate(radians(deg))
+    translate(-anchor_x, -anchor_y)
+    
+def stopRotation():
+    pop()
+```
+
+In your code, you can add `startRotation()` when you want everything that follows to be rotated by a certain number of degrees around a particular anchor point. When you're done, call `stopRotation()`. In between those functions, draw whatever you want with the coordinates _prior to the rotation_. So, for a example, a swinging pendulum can be made like this:
+
+```py
+def setup():
+    size(500, 400)
+    
+    
+def draw():
+    background(0)
+    
+    stroke(255)
+    
+    x = width/2
+    y = height/2    
+    startRotation(width/2, 0, swing(-45, 45, 200))
+    square(width/2 - 25, height/2 - 25, 50)
+    line(width/2, 0, width/2, height/2)
+    stopRotation()
+    
+    
+    
+def startRotation(anchor_x, anchor_y, deg):
+    push()
+    translate(anchor_x, anchor_y)
+    rotate(radians(deg))
+    translate(-anchor_x, -anchor_y)
+    
+def stopRotation():
+    pop()
+
+def change(start, stop, duration, offset=0):
+    return map((frameCount - offset) % max(duration, 1), 0, duration, start, stop)
+
+def swing(start, stop, duration, offset=0): 
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start      
+
+```
+
+We draw the box in the center of the canvas, and then swing it back and forth using rotation.
 
 
 
