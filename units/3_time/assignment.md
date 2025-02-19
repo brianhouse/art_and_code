@@ -22,6 +22,29 @@ def swing(start, stop, duration, offset=0):
     return (position * (stop - start)) + start  
 ```
 
+### `random()` alternative that works with `draw()`
+
+```py
+def draw():
+  resetRandom()
+```
+
+```py
+def resetRandom():
+    global gen
+    def pseudo(seed, a=1664525, c=1013904223, m=2**32):
+        while True:
+            seed = (a * seed + c) % float(m)
+            yield seed / float(m)    
+    gen = pseudo(42)
+            
+def rando(low_limit, high_limit=None):
+    if high_limit is None:
+        high_limit = low_limit
+        low_limit = 0
+    return next(gen) * (high_limit - low_limit) + low_limit
+```
+
 
 ### Examples
 

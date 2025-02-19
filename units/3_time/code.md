@@ -312,10 +312,8 @@ def draw():
     background(0)
     resetRandom() # reset the random number generator 
     
-    beginShape()
     for i in range(200):
         circle(rando(width), rando(height), 5) # uses rando() instead of random()
-    endShape()
     
     
 def resetRandom():
@@ -393,5 +391,106 @@ def swing(start, stop, duration, offset=0):
 We draw the box in the center of the canvas, and then swing it back and forth using rotation.
 
 
+### More examples
 
+Swinging pendulum:
+```py
+def setup():
+    size(500, 400)
+    
+    
+def draw():
+    background(0)
+    
+    stroke(255)
+    
+    x = width/2
+    y = height/2    
+    startRotation(width/2, 0, swing(-45, 45, 200))    
+    square(width/2 - 25, height/2 - 25, 50)
+    line(width/2, 0, width/2, height/2)
+    stopRotation()
+    
+    
+    
+def startRotation(anchor_x, anchor_y, deg):
+    push()
+    translate(anchor_x, anchor_y)
+    rotate(radians(deg))
+    translate(-anchor_x, -anchor_y)
+    
+def stopRotation():
+    pop()
+
+def change(start, stop, duration, offset=0):
+    return map((frameCount - offset) % max(duration, 1), 0, duration, start, stop)
+
+def swing(start, stop, duration, offset=0): 
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start      
+```
+
+
+Growing palm tree:
+
+```py
+def setup():
+    size(500, 400)
+    
+
+def draw():
+    background(0)
+    resetRandom() # reset the random number generator 
+    
+    stroke(255)
+    strokeWeight(5)
+    
+    tip_x = width/2
+    tip_y = change(height, height/2, 200)
+    
+    line(width/2, height, tip_x, tip_y)
+    
+    for i in range(6):
+        startRotation(tip_x, tip_y, rando(360))
+        beginShape()
+        vertex(tip_x, tip_y)
+        vertex(tip_x + change(0, 50, 200), tip_y - change(0, 15, 200))
+        vertex(tip_x + change(0, 100, 200), tip_y)
+        vertex(tip_x + change(0, 50, 200), tip_y + change(0, 15, 200))
+        vertex(tip_x, tip_y)
+        endShape()
+        stopRotation()
+
+    
+def resetRandom():
+    global gen
+    def pseudo(seed, a=1664525, c=1013904223, m=2**32):
+        while True:
+            seed = (a * seed + c) % float(m)
+            yield seed / float(m)    
+    gen = pseudo(42)
+            
+def rando(low_limit, high_limit=None):
+    if high_limit is None:
+        high_limit = low_limit
+        low_limit = 0
+    return next(gen) * (high_limit - low_limit) + low_limit
+
+def change(start, stop, duration, offset=0):
+    return map((frameCount - offset) % max(duration, 1), 0, duration, start, stop)
+
+def swing(start, stop, duration, offset=0): 
+    position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
+    return (position * (stop - start)) + start  
+
+
+def startRotation(anchor_x, anchor_y, deg):
+    push()
+    translate(anchor_x, anchor_y)
+    rotate(radians(deg))
+    translate(-anchor_x, -anchor_y)
+    
+def stopRotation():
+    pop()
+```
 
