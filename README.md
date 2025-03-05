@@ -163,10 +163,11 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
     - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
 #### Wednesday 3/12 <!-- NO CLASS, PROF OUT -->
-- Presentations 4
+NO CLASS
+<!-- - Presentations 4
 - Discussing Nonlinearity
 - Coding Nonlinearity continued
-- Questions and work time
+- Questions and work time -->
 
 
 ### Spring Break
@@ -176,11 +177,12 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 3/24
 - Presentations 5
+- Discussing Nonlinearity  <!-- rescheduled -->
+- Coding Nonlinearity continued
 - Questions and work time
-- Midterm review meetings
 
 #### Wednesday 3/26
-<!-- Presentations 4 -->
+- Presentations 4 <!-- rescheduled -->
 - Desk crits <!-- talk about your concept -->
 - Questions and work time
 - Midterm review meetings 
@@ -190,6 +192,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Monday 3/31
 - Presentations 6
 - Questions and work time
+- Midterm review meetings
 
 #### Wednesday 4/2
 - Desk crits
