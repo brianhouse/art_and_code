@@ -236,13 +236,13 @@ NO CLASS
 <!-- talk about portfolio -->
 
 #### Wednesday 4/30
-- Crit Final Sketch
+- Crit Emergence Sketch
 
 
 ### Week 14
 
 #### Monday 5/5
-Crit Emergence Sketch
+Crit Portfolio
 
 
 #### Exam Week
