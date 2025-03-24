@@ -12,3 +12,5 @@ Approaches you might take:
 If you use images, you can use images that you draw yourself in another program, images you steal online, or photos of the real world.
 
 Draw a flowchart of the available choices (by hand, using Google Draw, or any other medium). Every state/room in your flowchart should correspond to a function in your code. Turn this in along with your code, which should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept.
+
+Helper code is [here](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/nonlinearity_demo/nonlinearity_helper.py)
