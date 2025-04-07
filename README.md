@@ -185,7 +185,6 @@ NO CLASS
 - Presentations 4 <!-- rescheduled -->
 - Desk crits <!-- talk about your concept -->
 - Questions and work time
-- Midterm review meetings 
 
 ### Week 9
 
@@ -196,23 +195,26 @@ NO CLASS
 
 #### Wednesday 4/2
 - Desk crits
+- Midterm review meetings 
 
 ### Week 10
 
 #### Monday 4/7
-- Crit Nonlinearity Sketch
+- Questions and work time
+- Desk crits
 
 #### Wednesday 4/9
-- Discussing Emergence
+- Crit Nonlinearity Sketch
 - [Coding Emergence](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/code.md)
-- Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
 - **For next class**:
     - Play [SimCity 2000](https://dos.zone/sim-city-2000-1993/)
 
 ### Week 11
 
-#### Monday 4/14
+#### Monday 4/14   <!-- sonya visit -->
 - Presentations 7
+- Discussing Emergence
+- Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
 - Questions and work time
 
 #### Wednesday 4/16

@@ -16,3 +16,8 @@ need a video game kiosk for nonlinearity. Zac could do this. can it run on a pi?
 get an intern to make the kiosk
 
 more prints
+
+
+## nonlinearity
+
+add bandersnatch as assignment
