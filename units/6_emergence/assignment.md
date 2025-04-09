@@ -45,7 +45,7 @@ line(wall.x1, wall.y1, wall.x2, wall.y2)
 Constructor
 ```py
 agent = Agent( x=pixels,            # start position x
-               x=pixels,            # start position y
+               y=pixels,            # start position y
                draw=draw_function,  # name of custom function to use to draw the agent
                size=pixels,         # radius of the agent for collision purposes
                max_speed=velocity   # speed limit

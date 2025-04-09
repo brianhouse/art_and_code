@@ -5,7 +5,7 @@
 Constructor
 ```py
 wall = Wall(x1, y1, x2, y2, thickness) # coordinates for the start and stop points of the line
-									   # thickness of the wall
+                                       # thickness of the wall
 ```
 
 NOTE: these parameters define the abstract "wall" for the purposes of the simulation physics. If you want to see it, you still have to draw it! The most basic wall:
@@ -19,12 +19,12 @@ line(wall.x1, wall.y1, wall.x2, wall.y2)
 
 Constructor
 ```py
-agent = Agent( x=pixels, 	        # start position x
-			   x=pixels,            # start position y
-			   draw=draw_function,  # name of custom function to use to draw the agent
-			   size=pixels,         # radius of the agent for collision purposes
-			   max_speed=velocity   # speed limit
-			   )
+agent = Agent( x=pixels,            # start position x
+               y=pixels,            # start position y
+               draw=draw_function,  # name of custom function to use to draw the agent
+               size=pixels,         # radius of the agent for collision purposes
+               max_speed=velocity   # speed limit
+               )
 ```
 
 Properties of agents that can be referenced or changed
@@ -49,7 +49,7 @@ agent.collide(list_of_walls)
 
 Make the agent avoid other things
 ```py
-agent.avoid(other_agent, threshold, strength)		# threshold is distance in pixels
+agent.avoid(other_agent, threshold, strength)       # threshold is distance in pixels
 agent.avoid(list_of_agents, threshold, strength)    # strength is between 0-1
 agent.avoid(a_wall, threshold, strength)
 agent.avoid(list_of_walls, threshold, strength)
