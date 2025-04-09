@@ -423,13 +423,14 @@ def step_cycle(n, rate):
     return (frameCount / int(rate)) % n
     
     
+
 def change(start, stop, duration, offset=0):
     if duration == 0:
         duration = 1    
-    return map((frameCount + offset) % duration, 0, duration, start, stop)
+    return map((frameCount - offset) % max(duration, 1), 0, duration, start, stop)
 
 
 def swing(start, stop, duration, offset=0): 
     # duration is one half of the swing
     position = -cos(2 * PI * change(0, 1, duration * 2, offset)) * .5 + .5
-    return (position * (stop - start)) + start    
+    return (position * (stop - start)) + start
