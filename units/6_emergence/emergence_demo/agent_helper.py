@@ -15,8 +15,7 @@ GRAVITY = 0 #0.02
 
 
 class Agent(object):
-    
-    
+
     def __init__(self, **properties):
         self.position = PVector(width/2, height/2)
         self.velocity = PVector(0, 0)
@@ -24,49 +23,42 @@ class Agent(object):
         self.size = 10
         self.max_speed = 1
         self._collisions = []
-        self._walls = []        
+        self._walls = []
         self._heading = 0.0
         for key, value in properties.items():
             setattr(self, key, value)
         if not len(Wall.walls):
-            Wall(1, 0, 0, 0)            
-            
-            
+            Wall(1, 0, 0, 0)
+
     def __setattr__(self, key, value):
         if callable(value):
             if key == "draw":
-                key = "_draw" 
+                key = "_draw"
             value = types.MethodType(value, self)
-        object.__setattr__(self, key, value) 
-    
-             
+        object.__setattr__(self, key, value)
+
     @property
     def x(self):
-        return self.position.x    
-        
-        
+        return self.position.x
+
     @x.setter
     def x(self, value):
         self.position.x = value
 
-
     @property
     def y(self):
-        return self.position.y            
-                  
-                              
+        return self.position.y
+
     @y.setter
     def y(self, value):
-        self.position.y = value    
-        
-        
+        self.position.y = value
+
     @property
     def heading(self):
         if self.velocity.mag() > 0.01:
             self._heading = self.velocity.heading() + radians(90)
         return self._heading
-            
-        
+
     def move(self):        
         friction = self.velocity.get() * -1
         friction.setMag(FRICTION)  
@@ -80,7 +72,6 @@ class Agent(object):
         self._collisions = []  
         self._walls = []      
 
-        
     def collide(self, entities):
         if type(entities) != list:
             entities = [entities]
@@ -253,6 +244,7 @@ class Agent(object):
     def closest(self, agents):
         if type(agents) != list or (len(agents) and type(agents[0]) != Agent):
             raise Exception("Expecting list of agents")
+        agents = [agent for agent in agents if agent != self]
         if not len(agents):
             return None
         return min(agents, key=lambda agent: self.distance(agent))                        
@@ -407,27 +399,26 @@ class Wall(object):
         delta_x2 = agent.x - p.x 
         delta_y2 = agent.y - p.y
         return p, sqrt(delta_x2 * delta_x2 + delta_y2 * delta_y2)
-        
-             
+
+
     def destroy(self):
         if self in Wall.walls:
             Wall.walls.remove(self)
-            
-            
+
+
 def get_heading(x1, y1, x2, y2):
     h = degrees(atan2(y2 - y1, x2 - x1)) - 90 + 180
     return h if h < 0 else h + 360
 
-                        
+
 def step_cycle(n, rate):
     return (frameCount / int(rate)) % n
-    
-    
+
 
 def change(start, stop, duration, offset=0):
     if duration == 0:
-        duration = 1    
-    return map((frameCount - offset) % max(duration, 1), 0, duration, start, stop)
+        duration = 1
+    return map((frameCount + offset) % duration, 0, duration, start, stop)
 
 
 def swing(start, stop, duration, offset=0): 

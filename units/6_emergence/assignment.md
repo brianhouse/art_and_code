@@ -544,6 +544,122 @@ def draw_target(target):
     circle(target.x, target.y, target.size)
 ```
 
+### Advanced spaceship example
+
+```py
+from agent_helper import *
+
+def setup():
+    size(500, 500)
+    
+    global spaceship_list, pew_list
+    
+    spaceship_list = []
+    for i in range(3):
+        spaceship = Agent(x=random(width),
+                        y=random(height),
+                        size=random(10, 60),
+                        max_speed=5,
+                        color=color(random(255), random(255), random(255)),
+                        draw=draw_spaceship,
+                        exploding=False,
+                        explosion=10,                                                
+                        offset=int(random(60)))
+        spaceship_list.append(spaceship)
+    
+    
+    pew_list = []    
+    
+    
+def draw():
+    background(70)
+
+    if frameCount % 20 == 0:
+        spaceship = Agent(x=random(width),
+                        y=random(height),
+                        size=random(10, 60),
+                        max_speed=2,
+                        color=color(random(255), random(255), random(255)),
+                        draw=draw_spaceship,
+                        exploding=False,
+                        explosion=10,                        
+                        offset=int(random(60)))
+        spaceship_list.append(spaceship)        
+    
+    for pew in pew_list:
+        pew.draw()
+        pew.move()
+        pew.age -= 1
+        if pew.age == 0:
+            pew_list.remove(pew)    
+        else:        
+            for spaceship in spaceship_list:
+                if spaceship != pew.spaceship:
+                    if pew.touching(spaceship):
+                        spaceship.exploding = True
+                        if pew in pew_list:
+                            pew_list.remove(pew)
+        
+    for spaceship in spaceship_list:
+        spaceship.draw()
+        spaceship.move()
+        spaceship.seek(spaceship_list, 500, 1)  ## should really seek the closest, but need to re-download agent_helper.py for that to work
+        spaceship.avoid(spaceship_list, 100, 2)
+        if spaceship.exploding:
+            spaceship.explosion -= 1
+            if spaceship.explosion == 0:
+                spaceship_list.remove(spaceship) 
+        shooting = False
+        for othership in spaceship_list:
+            if othership is not spaceship:
+                if spaceship.distance(othership) < 300:
+                    shooting = True
+            if shooting and (frameCount + spaceship.offset) % 30 == 0:
+                print("pew")
+                pew = Agent(x=spaceship.x,
+                            y=spaceship.y,
+                            size=3,
+                            max_speed=10,
+                            draw=draw_pew,
+                            age=30,
+                            spaceship=spaceship)
+                pew.bump(degrees(spaceship.heading), 10)
+                pew_list.append(pew)
+            
+
+def draw_spaceship(spaceship):
+    if spaceship.exploding:
+        stroke(255, 0, 0)
+        strokeWeight(2)
+        noFill()
+        circle(spaceship.x, spaceship.y, 20)
+        beginShape()
+        for i in range(50):
+            vertex(random(spaceship.x - spaceship.size, spaceship.x + spaceship.size), 
+                   random(spaceship.y - spaceship.size, spaceship.y + spaceship.size))  
+        endShape()
+    else:
+        stroke(255)
+        strokeWeight(2)
+        fill(255)
+        circle(spaceship.x, spaceship.y - 5, spaceship.size / 2)
+        ellipse(spaceship.x, spaceship.y, spaceship.size, spaceship.size / 2)
+        fill(spaceship.color)
+        step = frameCount % 3
+        if step == 0:    
+            circle(spaceship.x - spaceship.size/3, spaceship.y, spaceship.size / 5)
+        if step == 1:
+            circle(spaceship.x, spaceship.y, spaceship.size / 5)
+        if step == 2:
+            circle(spaceship.x + spaceship.size/3, spaceship.y, spaceship.size / 5)
+    
+        
+def draw_pew(pew):
+    stroke(255, 0, 0)
+    strokeWeight(4)
+    line(pew.x, pew.y, pew.x, pew.y + 5)
+```    
+
 
 ### Examples
 

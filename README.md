@@ -213,7 +213,7 @@ NO CLASS
 
 #### Monday 4/14   <!-- sonya visit -->
 - Presentations 7
-- Discussing Emergence
+- Discussing Emergence <!-- talk about SimCity, look at examples of emergence -->
 - Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
 - Questions and work time
 
