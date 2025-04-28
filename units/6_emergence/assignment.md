@@ -100,7 +100,7 @@ Intervening
 agent.bump(direction_in_degrees, strength) # give the agent a bump
 ```
 
-
+<!-- 
 ### Demo
 
 <img src="examples/pigbot.gif" width="500" /><br />
@@ -258,9 +258,9 @@ def draw_truffle(truffle):
     stroke(0)
     circle(truffle.x, truffle.y, 15)
 ```
+ -->
 
-
-### Another (similar) demo
+### Demo
 
 <img src="examples/shark_attack.gif" width="500" /><br />
 
