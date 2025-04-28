@@ -235,11 +235,13 @@ NO CLASS
 
 #### Monday 4/28
 - Wrap up
-<!-- talk about portfolio -->
 
 #### Wednesday 4/30
-- Preview Emergence sketchs
+- Preview Emergence sketches
 - Evaluations
+<!-- talk about portfolio -->
+<!-- trade sketches -->
+<!-- talk about video capture -->
 
 
 ### Week 14

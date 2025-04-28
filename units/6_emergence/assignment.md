@@ -660,6 +660,66 @@ def draw_pew(pew):
     line(pew.x, pew.y, pew.x, pew.y + 5)
 ```    
 
+### Attractors + continuous motion 
+
+```py
+from agent_helper import *
+
+
+def setup():
+    size(500, 500)
+    pixelDensity(2)
+    
+    global bee_list    
+    bee_list = []    
+    for i in range(20):
+        bee = Agent(x=random(width), 
+                    y=random(height), 
+                    size=5, 
+                    max_speed=5, 
+                    draw=draw_bee)        
+        bee_list.append(bee)
+        
+    global attractor_list
+    attractor_list = []
+    for i in range(100):
+        attractor = Agent(x=map(i, 0, 100, 0, width), y=0, draw=draw_attractor)
+        attractor_list.append(attractor)
+                          
+        
+     
+        
+def draw():
+    background(255)
+    
+    # for attractor in attractor_list:
+    #     attractor.draw()
+    
+    for bee in bee_list:
+        bee.draw()
+        bee.move()        
+        bee.seek(bee.closest(attractor_list), 1000, 1) 
+        bee.avoid(bee_list, 200, 1)
+        bee.avoid_edges(100, 1)
+        if bee.y < 5:
+            bee.y = height - 5         
+        
+        
+def draw_bee(bee):
+    # circle(bee.x, bee.y, 20)
+    strokeWeight(1)
+    fill(255)
+    stroke(0)
+    line(bee.x, bee.y, bee.x + swing(1, 5, 5), bee.y + 10)
+    line(bee.x, bee.y, bee.x - swing(1, 5, 5), bee.y + 10)
+    circle(bee.x, bee.y, bee.size)        
+    
+    
+def draw_attractor(attractor):
+    circle(attractor.x, attractor.y, 5)
+        
+```
+
 
 ### Examples
 
