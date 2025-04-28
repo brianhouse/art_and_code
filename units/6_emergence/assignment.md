@@ -101,7 +101,9 @@ agent.bump(direction_in_degrees, strength) # give the agent a bump
 ```
 
 
-### Demo from class
+### Demo
+
+<img src="examples/pigbot.gif" width="500" /><br />
 
 ```py
 from agent_helper import *
@@ -260,6 +262,7 @@ def draw_truffle(truffle):
 
 ### Another (similar) demo
 
+<img src="examples/shark_attack.gif" width="500" /><br />
 
 ```py
 # import our helper code
@@ -425,6 +428,8 @@ def draw_flower(flower):
 
 ### Competing agents and carrying objects
 
+<img src="examples/competition.gif" width="500" /><br />
+
 ```py
 from agent_helper import *
 
@@ -546,6 +551,8 @@ def draw_target(target):
 
 ### Advanced spaceship example
 
+<img src="examples/spacewar.gif" width="500" /><br />
+
 ```py
 from agent_helper import *
 
@@ -661,6 +668,8 @@ def draw_pew(pew):
 ```    
 
 ### Attractors + continuous motion 
+
+<img src="examples/flow.gif" width="500" /><br />
 
 ```py
 from agent_helper import *
