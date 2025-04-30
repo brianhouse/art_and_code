@@ -14,6 +14,8 @@ Create a virtual micro-world that demonstrates emergent behavior. Building from 
 
 Submit your code along with a [3-sentence statement](../../resources/statement_guidelines.md) as well as a recording of the Processing window, which should be ~1 min (or whatever duration is necessary to give a good sense of your sketch).
 
+#### Making recordings
+
 Screen recordings can be made using the OS:
 - [MacOS](https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac)
 - [Windows](https://betanews.com/2020/01/20/windows-10-screen-record-xbox-game-bar/)
