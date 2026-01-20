@@ -69,7 +69,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 1
 
-#### Monday 1/27
+#### Monday 1/26
 - Introduction
 - In-class Exercise: Algorithm
 - Get set up with [Google Drive for Desktop](https://support.google.com/drive/answer/10838124?hl=en)
@@ -78,10 +78,9 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
     - [Sign up to present](https://docs.google.com/spreadsheets/d/1stVk6uRyHTKgFqAxmZ_sBF8zGIjWaTkDUbEUssZV3kk/edit?usp=sharing)
 
 
-#### Wednesday 1/29
+#### Wednesday 1/28
 <!-- confirm everyone is signed up for a presentation -->
-- Address setup issues <!-- only five people did it -->
-- Establish [co-working time](https://www.when2meet.com/?28076569-Qar56)
+- Address setup issues
 - Discussing Coordinates
 - [Coding with Coordinates](https://github.com/brianhouse/art_and_code/blob/master/units/1_coordinates/code.md)
 - [Python for Processing Cheat Sheet](https://github.com/brianhouse/art_and_code/blob/master/resources/processing_cheat_sheet.md) for reference
@@ -90,14 +89,14 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 2    
 
-#### Monday 2/3
+#### Monday 2/2
 <!-- Rick Mears! Director of Environmental Health and Safety (30 mins) -->
 - Explanation of [crit guidelines](https://github.com/brianhouse/art_and_code/blob/master/resources/crit_guidelines.md)
 - Crit Coordinates
 - [Coding with Repetition](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition_and_indeterminacy/repetition/code.md)
 
 
-#### Wednesday 2/5
+#### Wednesday 2/4
 - Discussing Repetition
 - [Coding with Indeterminacy](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition_and_indeterminacy/indeterminacy/code.md)
 - Begin [Repetition and Indeterminacy Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/2_repetition_and_indeterminacy/assignment.md)
@@ -105,13 +104,13 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 3
 
-#### Monday 2/10
+#### Monday 2/9
 <!-- coding with indeterminacy overflow -->
 - Explanation of [artist statements](https://github.com/brianhouse/art_and_code/blob/master/resources/statement_guidelines.md)
 - Discussing Indeterminacy
 - Questions and work time
 
-#### Wednesday 2/12
+#### Wednesday 2/11
 - Crit Repetition and Indeterminacy Sketch
 - [Coding with Time](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/code.md)
 - Begin [Time Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/3_time/assignment.md)
@@ -119,11 +118,11 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 4
 
-#### Monday 2/17
+#### Monday 2/16
 - Discussing Time
 - Questions and work time
 
-#### Wednesday 2/19
+#### Wednesday 2/18
 - Presentations 1
 - Desk crits
 - Questions and work time
@@ -131,13 +130,13 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 5
 
-#### Monday 2/24
+#### Monday 2/23
 - Crit Time Sketch
 - [Coding Interfaces](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/code.md)
 - Begin [Interface Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/assignment.md)
 
 
-#### Wednesday 2/26
+#### Wednesday 2/25
 - Presentations 2
 - Discussing Interface
 - Questions and work time
@@ -145,24 +144,24 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 ### Week 6
 
-#### Monday 3/3
+#### Monday 3/2
 - Presentations 3
 - Desk crits
 - Questions and work time
 
-#### Wednesday 3/5
+#### Wednesday 3/4
 - Demo interface at desk
 
 ### Week 7
 
-#### Monday 3/10
+#### Monday 3/9
 - Crit Interface Sketch
 - [Coding Nonlinearity](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/code.md)
 - Begin [Nonlinearity Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/5_nonlinearity/assignment.md)
 - **For next class**:
     - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
-#### Wednesday 3/12 <!-- NO CLASS, PROF OUT -->
+#### Wednesday 3/11 <!-- NO CLASS, PROF OUT -->
 NO CLASS
 <!-- - Presentations 4
 - Discussing Nonlinearity
@@ -175,35 +174,35 @@ NO CLASS
 
 ### Week 8
 
-#### Monday 3/24
+#### Monday 3/23
 - Presentations 5
 - Discussing Nonlinearity  <!-- rescheduled -->
 - Coding Nonlinearity continued
 - Questions and work time
 
-#### Wednesday 3/26
+#### Wednesday 3/25
 - Presentations 4 <!-- rescheduled -->
 - Desk crits <!-- talk about your concept -->
 - Questions and work time
 
 ### Week 9
 
-#### Monday 3/31
+#### Monday 3/30
 - Presentations 6
 - Questions and work time
 - Midterm review meetings
 
-#### Wednesday 4/2
+#### Wednesday 4/1
 - Desk crits
 - Midterm review meetings 
 
 ### Week 10
 
-#### Monday 4/7
+#### Monday 4/6
 - Questions and work time
 - Desk crits
 
-#### Wednesday 4/9
+#### Wednesday 4/8
 - Crit Nonlinearity Sketch
 - [Coding Emergence](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/code.md)
 - **For next class**:
@@ -211,32 +210,32 @@ NO CLASS
 
 ### Week 11
 
-#### Monday 4/14   <!-- sonya visit -->
+#### Monday 4/13
 - Presentations 7
 - Discussing Emergence <!-- talk about SimCity, look at examples of emergence -->
 - Begin [Emergence Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/6_emergence/assignment.md)
 - Questions and work time
 
-#### Wednesday 4/16
+#### Wednesday 4/15
 - Questions and work time
 
 
 ### Week 12
 
-#### Monday 4/21 -- April Break, no class
+#### Monday 4/20 -- April Break, no class
 
 
-#### Wednesday 4/23
+#### Wednesday 4/22
 - Presentations 8
 - Questions and work time
 
 
 ### Week 13
 
-#### Monday 4/28
+#### Monday 4/27
 - Wrap up
 
-#### Wednesday 4/30
+#### Wednesday 4/29
 - Preview Emergence sketches
 - Evaluations
 <!-- talk about portfolio -->
@@ -246,11 +245,11 @@ NO CLASS
 
 ### Week 14
 
-#### Monday 5/5
+#### Monday 5/4
 - Crit Emergence Sketch
 
 
 #### Exam Week
 - No meetings during exam week
-- [Portfolio](https://github.com/brianhouse/art_and_code/blob/master/units/portfolio.md) due 5/15
+- [Portfolio](https://github.com/brianhouse/art_and_code/blob/master/units/portfolio.md) due 5/14
 
