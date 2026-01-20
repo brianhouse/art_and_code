@@ -161,13 +161,11 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - **For next class**:
     - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
-#### Wednesday 3/11 <!-- NO CLASS, PROF OUT -->
-NO CLASS
-<!-- - Presentations 4
+#### Wednesday 3/11
+- Presentations 4
 - Discussing Nonlinearity
 - Coding Nonlinearity continued
-- Questions and work time -->
-
+- Questions and work time
 
 ### Spring Break
 
@@ -181,7 +179,6 @@ NO CLASS
 - Questions and work time
 
 #### Wednesday 3/25
-- Presentations 4 <!-- rescheduled -->
 - Desk crits <!-- talk about your concept -->
 - Questions and work time
 

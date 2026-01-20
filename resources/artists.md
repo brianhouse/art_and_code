@@ -26,6 +26,7 @@
 - Ryan Kuo
 - Rafael Lozano-Hemmer
 - Kate Hartman
+- Seo Hyojung
 - Carlos Garcia
 - James Bridle
 - Alison Parrish

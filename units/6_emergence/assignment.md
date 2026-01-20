@@ -12,23 +12,7 @@ When we personify, we impose all sorts of biases and expectations. This is what 
 
 Create a virtual micro-world that demonstrates emergent behavior. Building from the examples, design interactions between several different types of agents and their environment that produces a compelling and unpredictable result. Be deliberate about how you characterize your agents and their purposes; whether you simulate human or animal interaction or makes something entirely abstract, you should have an overarching concept that takes into account the biases and narrative power of simulation. Aim for your microworld to be self-sustaining—ie, it should not collapse or explode right away, but should continue to demonstrate interesting behavior as long as possible. At the same time, remember that your computer will have limits—the more agents and walls and behvaiors you have, the slower your computer may run.
 
-Submit your code along with a [3-sentence statement](../../resources/statement_guidelines.md) as well as a recording of the Processing window, which should be ~1 min (or whatever duration is necessary to give a good sense of your sketch).
-
-#### Making recordings
-
-Screen recordings can be made using the OS:
-- [MacOS](https://support.apple.com/guide/mac-help/take-a-screenshot-or-screen-recording-mh26782/mac)
-- [Windows](https://betanews.com/2020/01/20/windows-10-screen-record-xbox-game-bar/)
-
-However, if your sketch runs slowly, creating a movie from frames may be a better option. 
-1. ` insert `saveFrame("movie/line-######.png"` as the last line within your `draw()` loop. Make sure that it is not indented.
-2. Run your sketch for as long as you want the recording to be.
-3. Open "Tools -> Movie Maker"
-4. Choose "Sketch -> Show Sketch Folder" and find the "movie" folder. Drag this folder into the Movie Maker window. 
-5. In the Movie Maker, make sure "Width" and "Height" match your canvas dimensions (or, for smoother results, make them each twice the value). 
-6. Choose your framerate. 30 is standard, but 60 will give you a very smooth (but fast) result.
-7. Choose "JPEG" for compression.
-8. Click create movie
+Submit your code along with a [3-sentence statement](../../resources/statement_guidelines.md) as well as a [video](https://github.com/brianhouse/art_and_code/blob/master/resources/movie_maker.md]), which should be ~1 min (or whatever duration is necessary to give a good sense of your sketch).
 
 
 ### Code library
