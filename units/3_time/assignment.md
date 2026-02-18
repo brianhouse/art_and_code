@@ -2,7 +2,7 @@
 
 Create a sketch with some aspect of time as its central theme. Draw upon techniques from past units and combine them with Processing's events to express your idea.
 
-Your code should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept. In addition, turn in a video of your animation (see how to make a video [here](https://github.com/brianhouse/art_and_code/blob/master/resources/movie_maker.md])).
+Your code should include your title and a [3-sentence statement](../../resources/statement_guidelines.md) that conveys your concept. In addition, turn in a video of your animation (see how to make a video [here](https://github.com/brianhouse/art_and_code/blob/master/resources/movie_maker.md)).
 
 
 ### Time Functions
