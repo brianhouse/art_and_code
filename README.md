@@ -131,14 +131,20 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 5
 
 #### Monday 2/23
+- SNOW DAY
+<!-- - Crit Time Sketch
+- [Coding Interfaces](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/code.md)
+- Begin [Interface Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/assignment.md)
+ -->
+
+#### Wednesday 2/25
+<!-- justin visit -->
+- Presentations 2
+<!-- all this moved -->
 - Crit Time Sketch
 - [Coding Interfaces](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/code.md)
 - Begin [Interface Sketch](https://github.com/brianhouse/art_and_code/blob/master/units/4_interface/assignment.md)
-
-
-#### Wednesday 2/25
-- Presentations 2
-- Discussing Interface
+<!-- - Discussing Interface -->
 - Questions and work time
 
 
@@ -146,6 +152,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 3/2
 - Presentations 3
+- Discussing Interface <!-- moved -->
 - Desk crits
 - Questions and work time
 
