@@ -168,6 +168,10 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 - **For next class**:
     - Play [The Manhole](https://archive.org/details/TheManholeMacintosh)
 
+##### Rapaport Lecture: Kevin Beasley
+- 5:30pm, Pruyne Lecture Hall, Fayerweather
+
+
 #### Wednesday 3/11
 - Presentations 4
 - Discussing Nonlinearity
