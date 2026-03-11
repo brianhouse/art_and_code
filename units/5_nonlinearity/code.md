@@ -609,6 +609,8 @@ def monster():
 
 ## Using global variables to measure progress
 
+## load animation?
+
  -->
 
 

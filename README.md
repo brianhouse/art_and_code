@@ -185,7 +185,6 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 3/23
 - Presentations 5
-- Discussing Nonlinearity  <!-- rescheduled -->
 - Coding Nonlinearity continued
 - Questions and work time
 

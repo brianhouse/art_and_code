@@ -15,7 +15,7 @@ assignments = {}
 for reviewer in reviewers:
     assignments[reviewer] = []
     while len(assignments[reviewer]) < GROUP_SIZE and len(reviewees):
-        index = randint(0, len(reviewees)-1)
+        index = randint(0, len(reviewees) - 1)
         reviewee = reviewees[index]
         if reviewee != reviewer and reviewee not in assignments[reviewer]:
             assignments[reviewer].append(reviewee)
