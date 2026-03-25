@@ -441,7 +441,7 @@ from nonlinearity_helper import *
 Global variables can also be used to hold points, health, or other scalar values. For example, you might have a limited number of allowed choices before something happens. In this example code, you can switch back and forth between rooms five times before `moves_left` is exhausted and it jumps to the ending:
 
 ```py
-moves_left = 5
+
 
 def setup():
     size(500, 400)
@@ -449,6 +449,10 @@ def setup():
     fill(0)   
     textSize(24)
     textAlign(CENTER)
+
+    global moves_left
+    moves_left = 5
+
     change_scene(room_1) 
 
 def room_1():
@@ -533,6 +537,44 @@ def room_3():
 
 from nonlinearity_helper import *
 ```
+
+## Random
+
+Using `random()` is an effective way to introduce non-deterministic paths into your narrative. In the below example, there is a 50% chance of getting eaten by the bear:
+
+```py
+def setup():
+    size(500, 400)
+    pixelDensity(2)
+    fill(0)   
+    textSize(24)
+    textAlign(CENTER)
+    change_scene(room_1) 
+
+def room_1():
+    global moves_left
+    text("Room 1", width/2, height/2)
+    text("fight the bear", width/2, height/2 + 75)
+    bear_coords = width/2 - 75, height/2 + 50, 150, 40
+    if check_hotspot(bear_coords):
+        if random(100) < 50:
+            change_scene(win)
+        else:
+            change_scene(lose)
+    
+def win():
+    text("You win", width/2, height/2)        
+
+def lose():
+    text("Bear Food", width/2, height/2)        
+    
+    
+from nonlinearity_helper import *    
+```
+
+Combining `random()` with a variable that keeps track of posession of bear treats, for example, might add additional dependencies.
+
+
 
 ## Other functions
 
