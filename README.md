@@ -184,7 +184,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 ### Week 8
 
 #### Monday 3/23
-- Presentations 5
+- Presentations 5 <!-- might need to facilitate Olivia, so push this later? -->
 - Coding Nonlinearity continued
 - Questions and work time
 
@@ -196,7 +196,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 3/30
 - Presentations 6
-- Questions and work time
+- Nonlinear narrative playthrough #1
 - Midterm review meetings
 
 #### Wednesday 4/1
@@ -207,6 +207,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 
 #### Monday 4/6
 - Questions and work time
+- Nonlinear narrative playthrough #2
 - Desk crits
 
 #### Wednesday 4/8
