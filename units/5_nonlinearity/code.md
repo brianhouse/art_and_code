@@ -203,7 +203,7 @@ This particular helper code allows us to make "hotspots". A hotspot is just an a
 
 We can create a hotspot by creating a variable and assigning it to four values: x, y, width, height. (As an aside, setting a variable to multiple values simultaneously is a very Python way to do things—it's a shortcut that's not always available in other languages.) 
 
-Hotspots work well with images, so we'll first load an image into our sketch ("house.jpg") and then make a hotspot on top of it. We'll call the hotspot "door":
+Hotspots work well with images, so we'll first load an image into our sketch ("house.jpg") and then make a hotspot on top of it. We'll call the hotspot coordinates "door_coords":
 
 ```py
 def setup():
@@ -213,7 +213,7 @@ def setup():
 
 def draw():
     image(house, 0, 0)          # draw the image
-    door = 180, 210, 20, 50     # new hotspot variable
+    door_coords = 180, 210, 20, 50     # new hotspot variable
 
 from nonlinearity_helper import *        
 ```
@@ -228,8 +228,8 @@ def setup():
 
 def draw():
     image(house, 0, 0)
-    door = 180, 210, 20, 50
-    draw_hotspot(door)          # door hotspot is argument
+    door_coords = 180, 210, 20, 50
+    draw_hotspot(door_coords)          # door coordinates is argument
 
 from nonlinearity_helper import *        
 ```
@@ -245,9 +245,9 @@ def setup():
 
 def draw():
     image(house, 0, 0)
-    door = 180, 210, 20, 50
-    draw_hotspot(door)
-    if check_hotspot(door):
+    door_coords = 180, 210, 20, 50
+    draw_hotspot(door_coords)
+    if check_hotspot(door_coords):
         print("Door was clicked!")
             
 from nonlinearity_helper import *    
@@ -286,21 +286,22 @@ def setup():
     pixelDensity(2)
     fill(0)   
     textSize(24)
+    textAlign(CENTER)
 
 def bedroom():
-    text("Bedroom", 180, height/2)
+    text("Bedroom", width/2, height/2)
 
 def kitchen():
-    text("Kitchen", 180, height/2)
+    text("Kitchen", width/2, height/2)
 
 def hallway():
-    text("Hallway", 180, height/2)
+    text("Hallway", width/2, height/2)
 
 def living_scene():
-    text("Living Room", 180, height/2)
+    text("Living Room", width/2, height/2)
 
 def bathroom():
-    text("Bathroom", 180, height/2)
+    text("Bathroom", width/2, height/2)
     
 from nonlinearity_helper import *    
 ```
@@ -317,22 +318,23 @@ def setup():
     pixelDensity(2)
     fill(0)   
     textSize(24)
+    textAlign(CENTER)
     change_scene(living_room) # function name given as argument 
 
 def bedroom():
-    text("Bedroom", 180, height/2)
+    text("Bedroom", width/2, height/2)
 
 def kitchen():
-    text("Kitchen", 180, height/2)
+    text("Kitchen", width/2, height/2)
 
 def hallway():
-    text("Hallway", 180, height/2)
+    text("Hallway", width/2, height/2)
 
 def living_room():
-    text("Living Room", 180, height/2)
+    text("Living Room", width/2, height/2)
 
 def bathroom():
-    text("Bathroom", 180, height/2)
+    text("Bathroom", width/2, height/2)
     
 from nonlinearity_helper import *    
 ```
@@ -343,19 +345,19 @@ from nonlinearity_helper import *
 
 So we start in the living room. Going back to our diagram, the living room is connected to the kitchen and the hallway. Using hotspots, we can provide those options. First, we'll make some text, and put hotspots around them. We just have to play with the parameters of the text boxes and hotspots until it looks right.
 
-One note: be careful not to name a hotspt with the same name as a room function. Since we're using text in this example, we've called them "kitchen_link" and "hallway_link":
+One note: be careful not to name a hotspt with the same name as a room function. Since we're using text in this example, we've called them "kitchen_coords" and "hallway_coords":
 
 ```py
 def living_room():
     text("Living Room", 180, height/2)
  
     text("Go to kitchen", 20, height-100)
-    kitchen_link = 20, height-120, width/3, 20
-    draw_hotspot(kitchen_link)
+    kitchen_coords = 20, height-120, width/3, 20
+    draw_hotspot(kitchen_coords)
     
     text("Go to hallway", width/2, height-100)
-    hallway_link = width/2, height-120, width/3, 20
-    draw_hotspot(hallway_link)
+    hallway_coords = width/2, height-120, width/3, 20
+    draw_hotspot(hallway_coords)
 ```    
 
 
@@ -367,15 +369,15 @@ def living_room():
     text("Living Room", 180, height/2)
  
     text("Go to kitchen", 20, height-100)
-    kitchen_link = 20, height-120, width/3, 20
-    draw_hotspot(kitchen_link)
-    if check_hotspot(kitchen_link):
+    kitchen_coords = 20, height-120, width/3, 20
+    draw_hotspot(kitchen_coords)
+    if check_hotspot(kitchen_coords):
         change_scene(kitchen)
     
     text("Go to hallway", width/2, height-100)
-    hallway_link = width/2, height-120, width/3, 20
-    draw_hotspot(hallway_link)
-    if check_hotspot(hallway_link):
+    hallway_coords = width/2, height-120, width/3, 20
+    draw_hotspot(hallway_coords)
+    if check_hotspot(hallway_coords):
         change_scene(hallway)
 ```
 
@@ -424,9 +426,9 @@ def room_1():
 
     # if we have the key, draw a clickable hotspot around the door 
     if has_key == True:
-        room_2_link = 240, 61, 150, 300
-        draw_hotspot(room_2_link)            
-        if check_hotspot(room_2_link):
+        room_2_coords = 240, 61, 150, 300
+        draw_hotspot(room_2_coords)            
+        if check_hotspot(room_2_coords):
             change_scene(room_2)
 
         
