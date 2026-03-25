@@ -438,6 +438,53 @@ def room_2():
 from nonlinearity_helper import *
 ```
 
+Global variables can also be used to hold points, health, or other scalar values. For example, you might have a limited number of allowed choices before something happens. In this example code, you can switch back and forth between rooms five times before `moves_left` is exhausted and it jumps to the ending:
+
+```py
+moves_left = 5
+
+def setup():
+    size(500, 400)
+    pixelDensity(2)
+    fill(0)   
+    textSize(24)
+    textAlign(CENTER)
+    change_scene(room_1) 
+
+def room_1():
+    global moves_left
+    text("Room 1", width/2, height/2)
+    text("moves left:" + str(moves_left), width/2, height/2 + 25)
+    text("go to room 2", width/2, height/2 + 75)
+    switch_coords = width/2 - 75, height/2 + 50, 150, 40
+    if check_hotspot(switch_coords):
+        moves_left -= 1
+        if moves_left == 0:
+            change_scene(ending)
+        else:
+            change_scene(room_2)
+    
+def room_2():
+    global moves_left
+    text("Room 2", width/2, height/2)
+    text("moves left:" + str(moves_left), width/2, height/2 + 25)
+    text("go to room 1", width/2, height/2 + 75)
+    switch_coords = width/2 - 75, height/2 + 50, 150, 40
+    if check_hotspot(switch_coords):
+        moves_left -= 1
+        if moves_left == 0:
+            change_scene(ending)
+        else:
+            change_scene(room_1)
+
+def ending():
+    text("The End", width/2, height/2)        
+    
+    
+from nonlinearity_helper import *    
+```
+
+
 ## Timing
 
 Beyond the use of time in general animation within each room, there are two convenient ways of keeping track of timing as someone navigates your nonlinear narrative. 
