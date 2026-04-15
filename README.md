@@ -197,7 +197,7 @@ Our college is named after a white colonizer and is built in the Kwinitekw Valle
 #### Monday 3/30
 - Presentations 6
 - Nonlinear narrative playthrough #1
-- Midterm review meetings
+- Midterm review meetings <!-- prep, do at least 4 and it's good -->
 
 #### Wednesday 4/1
 - Desk crits

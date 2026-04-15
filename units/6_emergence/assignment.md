@@ -422,6 +422,95 @@ def draw_flower(flower):
     square(flower.x-10, flower.y-10, 20) 
     
 ```
+### Simplifed example of using custom properties
+
+<img src="examples/hungry_rat.gif" width="500" /><br />
+
+
+```py
+from agent_helper import *
+
+def setup():
+    size(500, 500)
+    
+    global rat_list
+    rat_list = []    
+    for i in range(5):            
+        rat = Agent(x=random(width),
+                    y=random(height),
+                    size=10,
+                    max_speed=2,
+                    draw=draw_rat,
+                    health=100,  # create custom property to track health
+                    )         
+        rat_list.append(rat)
+        
+    global cheese_list
+    cheese_list = []
+    for i in range(2):
+        cheese = Agent(x=random(100, width-100),
+                    y=random(100, height-100),
+                    size=20,
+                    draw=draw_cheese,
+                    )         
+        cheese_list.append(cheese)
+        
+        
+        
+def draw():
+    global rat_list
+    background(255)
+    
+    for cheese in cheese_list:
+        cheese.draw()
+        cheese.move()
+    
+    for rat in rat_list:
+        rat.draw()
+        rat.move()
+        rat.collide(rat_list)
+        rat.avoid(rat_list, 100, .3)
+        rat.collide(cheese_list)
+        
+        # decrement health over time
+        rat.health -= .2
+        if rat.health <= 0:
+            rat_list.remove(rat)
+            
+        # if health falls below a threshold, seek cheese
+        if rat.health < 50:
+            rat.seek(rat.closest(cheese_list), width, 1)  # strong motivation
+        
+        # if health is full, wander off
+        if rat.health == 100:
+            rat.avoid(cheese_list, width, .2)
+            
+        for cheese in cheese_list:
+            if rat.touching(cheese):
+                
+                # restore health if touching cheese
+                rat.health += 10
+                if rat.health > 100:
+                    rat.health = 100
+                
+                # cheese remaining is linked to its size
+                cheese.size -= .1
+                if cheese.size <= 10:
+                    cheese_list.remove(cheese)
+                    
+    
+def draw_rat(rat):
+    strokeWeight(1)
+    # map health level to redness 
+    fill(map(rat.health, 100, 0, 100, 255), 100, 100)
+    line(rat.x, rat.y, rat.x + swing(1, 5, 5), rat.y - 10)
+    line(rat.x, rat.y, rat.x - swing(1, 5, 5), rat.y - 10)
+    circle(rat.x, rat.y, rat.size)
+    
+def draw_cheese(cheese):
+    fill(255, 255, 0)
+    square(cheese.x, cheese.y, cheese.size)
+```
 
 ### Competing agents and carrying objects
 
@@ -727,7 +816,7 @@ def draw_attractor(attractor):
 ```
 
 
-### Examples
+### Student Examples
 
 <p>
   <img src="examples/em_nguyen_kid_soccer.gif" width="500" /><br />

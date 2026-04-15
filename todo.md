@@ -21,3 +21,9 @@ more prints
 ## nonlinearity
 
 add bandersnatch as assignment
+
+layering scenes:
+
+room1():
+    bedroom()
+    etc
